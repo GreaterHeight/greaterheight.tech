@@ -1,0 +1,766 @@
+/*-----------------------------------------------------------------------------------*/
+/*	Predefined settings
+/*-----------------------------------------------------------------------------------*/
+body
+{
+    /*position: relative;*/
+}
+
+.wsc_generic_skin, .common_background
+{
+    z-index:1;
+    position: relative;
+    opacity: 0;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+}
+.common_background, .common_background:after
+{
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index:-1;
+    top:0;
+}
+.common_background
+{
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.common_background:after
+{
+    content:"";
+    background-attachment:fixed;
+}
+
+.wsc_generic_skin[data-loading="hidden"], .wsc_generic_skin[data-loading="hidden"] + .common_background
+{
+  -webkit-animation: showContent 0.8s linear; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 0.3s; /* Chrome, Safari, Opera */
+    animation: showContent 0.8s linear;
+    animation-delay: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showContent {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes showContent {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+/* ==============================
+   Page loader
+   ============================== */
+#loading-spinner
+{
+    background-color: #fefefe;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    right: auto;
+    z-index: 10000;
+}
+
+/*Spinner Image*/
+/*
+.spinner 
+{
+    background: url("img/loading-img.gif") center center no-repeat;
+    height: 229px;
+    width: 229px;	
+    margin: -115px 0 0 -115px;
+}
+*/
+/*Spinner CSS3*/
+
+.spinner{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  font-size: 10px;
+  text-indent: -12345px;
+  border-top: 1px solid rgba(0,0,0, 0.08);
+  border-right: 1px solid rgba(0,0,0, 0.08);
+  border-bottom: 1px solid rgba(0,0,0, 0.08);
+  border-left: 1px solid rgba(0,0,0, 0.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+   -webkit-animation: spinner 700ms infinite linear;
+   -moz-animation: spinner 700ms infinite linear;
+   -ms-animation: spinner 700ms infinite linear;
+   -o-animation: spinner 700ms infinite linear;
+   animation: spinner 700ms infinite linear;
+  z-index: 100001;
+}
+#loading-spinner.static, #loading-spinner.static > .spinner { z-index:-1;}
+#loading-spinner[data-loading="hidden"] { display:none;}
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+img { max-width:100%;}
+
+/*-----------------------------------------------------------------------------------*/
+/*	SECTION: CLEAR DNN DEFAULT
+/*-----------------------------------------------------------------------------------*/
+
+/*comment if the switcher is not used*/
+/* Page Fade with Switcher
+.wsc_generic_skin {opacity:0;}*/
+
+/* User Manager icons fix */
+.rgMasterTable img {max-width: inherit;}
+
+/* SkinObject
+----------------------------------------------------------------------------- */
+.SkinObject
+{
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+
+a.SkinObject:link, a.SkinObject:visited, a.SkinObject:hover, a.SkinObject:active
+{
+    color: inherit;
+}
+
+
+/* Normal
+----------------------------------------------------------------------------- */
+.Normal, .NormalDisabled, .NormalDeleted
+{
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+	line-height: inherit;
+}
+
+/* Headers
+----------------------------------------------------------------------------- */
+h1,	h2, h3, h4, h5, h6  
+{
+    font-size: inherit; 
+    line-height: inherit; 
+    letter-spacing:inherit; 
+    margin-top:inherit;
+    margin-bottom: inherit; 
+}
+
+/* List Styles
+----------------------------------------------------------------------------- */
+ul, ol, ul ul, ul ol, ol ol, ol ul, ol ol { margin-bottom: inherit; margin-left: inherit;}
+ul {list-style: disc;}
+ul ul {list-style: circle;}
+ul ul ul {list-style: square;}
+ul, ol {list-style-position: inside;}
+li p { line-height: inherit; }
+
+/* Form styles
+----------------------------------------------------------------------------- */
+.use_form_styles .dnnFormItem input[type="text"],
+.use_form_styles .dnnFormItem input[type="password"],
+.use_form_styles .dnnFormItem input[type="email"],
+.use_form_styles .dnnFormItem input[type="tel"],
+.use_form_styles .dnnFormItem select,
+.use_form_styles .dnnFormItem textarea{
+    width: inherit;
+    max-width: inherit;
+    margin: inherit;
+    float: inherit;
+}
+
+	.use_form_styles .dnnFormItem button, .dnnFormItem input[type="button"], 
+	.use_form_styles .dnnFormItem input[type="reset"], 
+	.use_form_styles .dnnFormItem input[type="submit"],
+	.use_form_styles .dnnPrimaryAction, 
+	.use_form_styles .dnnSecondaryAction, 
+	.use_form_styles .dnnTertiaryAction,
+	.use_form_styles ul.dnnAdminTabNav li a,
+	.use_form_styles .dnnLogin .LoginTabGroup span { 
+		/*padding: inherit;*/
+		margin-bottom: inherit;
+		min-width: inherit;
+		-webkit-border-radius: inherit;
+		border-radius: inherit;
+	}
+	
+	
+/* Manage DNN6 z-index
+----------------------------------------------------------------------------- */
+.DnnModule
+{
+    z-index: inherit;
+}
+.dnnActionMenu
+{
+    z-index: 900;
+}
+
+/* Container's c_contentpane
+----------------------------------------------------------------------------- */
+.c_contentpane
+{
+    padding: 0px !important;
+}
+
+/* Default Links
+----------------------------------------------------------------------------- */
+a:link, a:visited, a:active
+{
+/*    color: inherit; */
+}
+
+/* Default Tables
+----------------------------------------------------------------------------- */
+th, tfoot, thead
+{
+    color: inherit;
+}
+
+/* DNN5 Panel
+----------------------------------------------------------------------------- */
+.ControlPanel table, .ControlPanel table td
+{
+    vertical-align: top;
+}
+
+.dnnRibbonGroup .content
+{
+    height: 110px !important;
+}
+.dnnRibbonGroup .content a:hover
+{
+    margin-bottom: -1px !important;
+}
+
+/* DNN5 Admin
+----------------------------------------------------------------------------- */
+table.FileManager td,
+table.Settings td
+{
+    vertical-align:top;
+}
+
+td.FileManager_Header span
+{
+    display:inline!important;
+}
+
+/* DNN BackEnd */
+.DataGrid_Header, 
+.SubHead, 
+.Head,
+a.CommandButton,
+a.CommandButton:link, 
+a.CommandButton:hover, 
+a.CommandButton:visited,
+.SubSubHead,
+.WizardText,
+a.dnnFormHelp, 
+.dnnForm .dnnFormItem a.dnnFormHelp, 
+.dnnTooltip label a.dnnFormHelp,
+.dnnForm h2.dnnFormSectionHead a, 
+.dnnForm h2.dnnFormSectionHead a:visited  
+{
+    color: inherit;
+}
+
+.DataGrid_Container
+{
+    background-color:#fff;
+}
+    
+/* DNN6 Admin
+----------------------------------------------------------------------------- */
+
+/* DNN BackEnd */
+a.dnnFormHelp, 
+.dnnForm .dnnFormItem a.dnnFormHelp, 
+.dnnTooltip label a.dnnFormHelp,
+.dnnForm h2.dnnFormSectionHead a, 
+.dnnForm h2.dnnFormSectionHead a:visited
+{
+    color: inherit;
+}
+
+.dnnForm h2.dnnFormSectionHead a:hover
+{
+    background-color:transparent!important;
+}
+
+form #dnnCPWrap
+{
+    height:40px;
+    padding:0;
+}
+.dnnadminmega li.root > a
+{
+    line-height:25px;
+}
+
+.dnnadminmega .cbctAddModule .dnnCPAddModule label
+{
+    display:inline;
+    font-size:12px;
+}
+.dnnadminmega .cbctAddModule .dnnCPAddModule input 
+{
+    vertical-align:baseline;
+}
+
+.dnnadminmega .cbctAddModule a.btn.btn-primary
+{
+    position:relative;
+    left:76px;
+    }
+ .dnnadminmega .cpcbCurrentPage a.btn.btn-primary
+{
+    position:relative;
+    left:80px;
+    }   
+    
+.dnnadminmega .cbhSwitchSite a.btn
+{
+    display:inline;
+    color:#fff;
+}
+a.btn.btn-primary, a.btn.btn-inverse
+{
+    color:#fff;
+}
+ul.dnnActions li
+{
+    margin-right:5px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	SECTION: DNN CONTROLS
+/*-----------------------------------------------------------------------------------*/
+
+/* DNN7 default admin panel
+----------------------------------------------------------------------------- */
+#dnnCPWrap .dnnadminmega 
+{
+    line-height: 18px;
+}
+
+#dnnCPWrap .RadComboBox_Default td.rcbArrowCellRight 
+{
+    vertical-align: middle;
+}
+
+#dnnCPWrap .dnnFormItem button, 
+#dnnCPWrap .dnnFormItem input[type="button"], 
+#dnnCPWrap .dnnFormItem input[type="reset"], 
+#dnnCPWrap .dnnFormItem input[type="submit"], 
+#dnnCPWrap .dnnPrimaryAction, 
+#dnnCPWrap .dnnSecondaryAction, 
+#dnnCPWrap .dnnTertiaryAction 
+{
+    padding: 6px;
+}
+
+#dnnCPWrap .dnnPrimaryAction, 
+#dnnCPWrap .dnnFormItem input[type="submit"], 
+#dnnCPWrap a.dnnPrimaryAction 
+{
+    color: #EFEFEF;
+}
+
+#dnnCPWrap .dnnFormItem input[type="text"], 
+#dnnCPWrap .dnnFormItem input[type="password"], 
+#dnnCPWrap .dnnFormItem input[type="email"], 
+#dnnCPWrap .dnnFormItem input[type="tel"], 
+#dnnCPWrap .dnnFormItem select, 
+#dnnCPWrap .dnnFormItem textarea 
+{
+    width: 45%;
+}
+
+#dnnCPWrap div#RibbonBar_SwitchSite_SitesLst + a 
+{
+    float: right;
+}
+
+/* DNN7 admin controls
+----------------------------------------------------------------------------- */
+.dnnForm td
+{
+    vertical-align: middle;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	SECTION: DNN SPECIFIC STYLES
+/*-----------------------------------------------------------------------------------*/
+
+
+/* Default DNN Overwrite
+---------------------------------------------------------- */
+.dnnFormMessage {max-width: 1170px;}
+
+/* Banner Admin
+---------------------------------------------------------- */
+.wsc_admin_content .wsc_slide_body {position: relative;}
+
+/* Generic Specific
+---------------------------------------------------------- */
+#ControlEditPageMenu input 
+{
+    margin-top: 0px;
+}
+
+#ControlEditPageMenu label 
+{
+    display: inline;
+    padding-left: 5px;
+} 
+
+/* ======================================================= */
+/*                     Containers                          */
+/* ======================================================= */
+/* All Containers
+---------------------------------------------------------- */
+.c_head {margin-top: 25px;}
+
+/* Plain Container
+---------------------------------------------------------- */
+.plain_container .c_contentpane,
+.c_head.plain_container,
+.plain_container .c_head
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Boxed Container
+---------------------------------------------------------- */
+
+.boxed_container .tile .c_contentpane,
+.boxed_hot_container .tile .c_contentpane 
+{
+    text-align: center;
+}
+
+.boxed_container .c_title,
+.boxed_hot_container .c_title 
+{
+    letter-spacing: 0.2em;
+    font-weight: normal;
+    line-height: 1;
+    padding-top: 0;
+    margin: 0;
+}
+
+.boxed_container .c_title small,
+.boxed_hot_container .c_title small 
+{
+    font-size: 11px;
+}
+
+.boxed_container .c_title big,
+.boxed_hot_container .c_title big 
+{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: -0.25px;
+}    
+
+/* Transparent Containers
+---------------------------------------------------------- */   
+
+.c_head.transparent_black_container, 
+.c_head.transparent_white_container {
+    border-radius: 9px;
+    padding: 20px 14px;
+}
+
+.transparent_black_container 
+{
+    background-color: rgba(51, 51, 51, 0.6);
+} 
+
+.transparent_black_container h1, .transparent_black_container h2,
+.transparent_black_container h3, .transparent_black_container h4,
+.transparent_black_container h5, .transparent_black_container h6,
+.transparent_black_container p, .transparent_black_container .c_content div 
+{
+    color: #eee;
+} 
+
+.transparent_white_container 
+{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* ======================================================= */
+/*                       MISC.                             */
+/* ======================================================= */
+
+.DNNEmptyPane {height: 0px !important; min-height: 0px !important; padding: 0px !important; margin: 0px !important;}
+.ContentPane.DNNEmptyPane {height: auto !important;}
+.ModuleTitle_MenuItem {border: none;}
+.ModuleTitle_MenuBreak .ModuleTitle_MenuIcon {height:1px;}
+
+.paneOutline {
+	/*margin-left:9px !important;
+	margin-right:9px !important;*/
+	min-height:45px;
+	border:1px dotted;
+    padding-bottom: 0 !important;
+    padding-top: 20px !important;
+}
+
+.paneOutline .SubHead {
+	font-size:22px;
+	font-weight: normal;
+}
+
+/* Back to home button
+---------------------------------------------------------- */  
+.wsc_back_home > a.btn  {
+    border-radius: 0;
+    font-size: 28px;
+    padding: 7px 10px 3px 11px;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 8888;
+    margin-top: 53px;
+}
+
+/* Switcher
+---------------------------------------------------------- */  
+.DnnModule-WebSitesCreativeStyleSwitcher {z-index: 10000;}
+.wsc_switcher_control {}
+.wsc-style-switcher {opacity: 0;}
+.wsc_switcher_control #SwitherModal {z-index: 9999;}
+
+.wsc_switcher_control > a#SwitcherBtn, .wsc_back_home a.btn {border-radius: 8px 0 0 8px;}
+
+.wsc_switcher_control > a.btn {
+    border-radius: 0;
+    font-size: 28px;
+    padding: 0px;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 8888;
+}
+
+.wsc_switcher_control .modal-body .form-group {margin-bottom: 0px;}
+.wsc_switcher_control .modal-body .form-group > img {padding-top: 15px;}
+
+.wsc_switcher_control > a.btn span {
+    padding: 10px 10px 9px 11px;
+}
+
+.wsc-style-switcher .pick-a-color-markup .dropdown-menu {
+    right: 0 !important;
+}
+
+.wsc-style-switcher input.pick-a-color,
+.wsc-style-switcher .pick-a-color-markup button.color-dropdown
+{
+    border: 1px solid #d8d3cb;
+}
+
+.wsc-style-switcher .tab-content 
+{
+    overflow: visible;
+}
+
+.wsc-style-switcher .panel-body .form-inline .radio img {display: inline;}
+.wsc-style-switcher .panel-body .radio img {display: block;}
+.wsc-style-switcher .panel-body .radio {display: inline-block; max-width: 100%;}
+.wsc-style-switcher #themes1 .panel-body .radio {max-width: 32%;}
+.wsc-style-switcher #themes1 .panel-body .radio input {margin-left:0;margin-right:5px}
+.wsc-style-switcher .panel {box-shadow: none;}
+.wsc-style-switcher .wsc-clone-buttons.modal-footer {padding-right: 0px;}
+.wsc-style-switcher .modal-footer a {margin: 0px; font-size: 13px; padding: 6px 12px;}
+.wsc-style-switcher .tab-content {padding-top: 0px;}
+
+.panel-default.panel-subitem {
+    margin-left: 10px;
+}
+.panel-default.panel-subitem > .panel-heading {
+    background: url("StyleSwitcher/img/patterns/transparent/light/light9.png") repeat transparent;
+}
+
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor),
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor),
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor),
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor),
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor)
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor)  {
+    margin-left: 20px;
+}
+
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) > .panel-heading,
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) > .panel-heading,
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) > .panel-heading,
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) > .panel-heading,
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) > .panel-heading
+.panel-subitem.panel-anchor + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) + .panel-subitem:not(.panel-anchor) > .panel-heading  {
+    background: url("StyleSwitcher/img/patterns/transparent/light/light10.png") repeat transparent;
+}
+
+/* Switcher fixed footer */   
+.wsc-style-switcher .wsc-switcher-wrapper > .modal-footer {
+background-color: #efefef;
+position: fixed;
+bottom: 0px;
+margin-left: 1px;
+width: 898px;
+border: none;
+-webkit-transform: translateZ(0);
+}
+
+.wsc-style-switcher .modal-dialog {margin-bottom: 0px;}
+.wsc-style-switcher .modal-content {padding-bottom: 50px;}
+
+.wsc-style-switcher .wsc-switcher-wrapper {width: 900px; margin: 0 auto; position: relative;}
+
+.wsc-style-switcher .sw-go-top {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 30px !important;
+    padding: 0.1em 0.3em 0.1em;
+    float: left;
+}
+
+/*.wsc-switcher-wrapper, .wsc-switcher-wrapper > .modal-dialog {height: 100%; position: relative;}
+.wsc-switcher-wrapper > .modal-dialog > .modal-content {min-height: 100%;} */
+
+@media (max-width: 991px) {
+    .wsc-style-switcher .wsc-switcher-wrapper {
+        width: 600px;
+    }
+        .wsc-style-switcher .wsc-switcher-wrapper > .modal-footer {
+            width: 598px;
+        }
+}
+
+@media (max-width: 767px) {
+    .wsc-style-switcher .wsc-switcher-wrapper, .wsc-style-switcher .wsc-switcher-wrapper > .modal-footer {
+        width: auto;
+    }
+    .wsc-style-switcher .modal-content {
+        padding-bottom: 0px;
+        min-height: initial !important;
+    }
+    .wsc-style-switcher .wsc-switcher-wrapper > .modal-footer {
+        display: none;
+    }
+    .wsc-style-switcher .wsc-clone-buttons.modal-footer {padding: 0px;}
+    .wsc-style-switcher .wsc-clone-buttons.modal-footer a {display: block; margin-bottom: 10px;}
+}
+
+
+/* Switcher fix for NBS3 */   
+.wsc_switcher_control .tab-content {display: block;}
+.wsc_switcher_control .panel {padding: 0px;}
+
+
+/* Background slider
+---------------------------------------------------------- */ 
+#supersized {padding-left: 0px;}
+#supersized img {max-width: inherit;}
+
+/* Snow
+---------------------------------------------------------- */ 
+#flake {z-index: 10000000;}
+
+/* DNN9 Fixes
+---------------------------------------------------------- */ 
+
+/* Always show action menu for modules */   
+.dnnEditState .actionMenu {display: block !important; opacity: 1 !important;}

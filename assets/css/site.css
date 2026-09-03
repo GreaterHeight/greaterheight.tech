@@ -1,0 +1,41 @@
+
+/* GreaterHeight static migration layer — v3 */
+:root {
+  --gh-blue:#0072bc; --gh-blue-dark:#005a93; --gh-dark:#17212b; --gh-text:#303b45;
+  --gh-muted:#687482; --gh-light:#f5f8fa; --gh-border:#dfe6ec; --gh-white:#fff;
+  --gh-container:1200px; --gh-radius:6px; --gh-shadow:0 10px 30px rgba(17,35,52,.10);
+}
+html { scroll-behavior:smooth; }
+body[data-static-site="greaterheight"] { color:var(--gh-text); background:#fff; -webkit-font-smoothing:antialiased; }
+body[data-static-site="greaterheight"] a { text-underline-offset:2px; }
+body[data-static-site="greaterheight"] img { max-width:100%; height:auto; }
+body[data-static-site="greaterheight"] .container { width:min(100% - 32px,var(--gh-container)); max-width:var(--gh-container); }
+.skip-link { position:fixed; left:16px; top:-60px; z-index:99999; padding:10px 14px; background:#111; color:#fff; border-radius:4px; text-decoration:none; transition:top .15s ease; }
+.skip-link:focus { top:16px; }
+:focus-visible { outline:3px solid #ffb000; outline-offset:3px; }
+.header { z-index:1000; }
+.header .logo img { max-height:64px; width:auto; }
+.main_menu a { text-decoration:none; }
+.main_menu .submenu_wrap, .main_menu ul ul { box-shadow:var(--gh-shadow); }
+.main_menu .nav > li > a { transition:color .18s ease, background .18s ease; }
+.main_menu .nav > li > a:hover, .main_menu .nav > li.active > a { color:var(--gh-blue); }
+.navbar-toggle { cursor:pointer; }
+.go-top { opacity:0; pointer-events:none; transition:opacity .2s ease, transform .2s ease; transform:translateY(8px); }
+.go-top.is-visible { opacity:1; pointer-events:auto; transform:none; }
+.migration-note { display:none!important; }
+@media (max-width:991px) {
+  body.menu-open { overflow:hidden; }
+  .header .header_inner { padding:.5rem 0; }
+  .main_menu { max-height:calc(100vh - 90px); overflow:auto; }
+  .main_menu:not(.is-open) { display:none; }
+  .main_menu.is-open { display:block; }
+  .main_menu .submenu_wrap, .main_menu ul ul { box-shadow:none; }
+  .main_menu .nav > li > a { padding:.85rem 1rem; }
+  .main_menu li.sub > ul, .main_menu li.root.sub > ul, .main_menu li.category.sub > ul { display:none; }
+  .main_menu li.sub.is-open > ul, .main_menu li.root.sub.is-open > ul, .main_menu li.category.sub.is-open > ul { display:block; }
+  .header .logo img { max-height:52px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}
