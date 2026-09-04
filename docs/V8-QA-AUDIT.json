@@ -1,0 +1,120 @@
+{
+  "html_pages": 198,
+  "local_missing_targets": 27,
+  "h1_violations": 0,
+  "missing_descriptions": 0,
+  "dnn_or_legacy_refs": 0,
+  "external_urls": 35,
+  "missing_sample": [
+    [
+      "What-We-Do/Expertise-Services/Cloud-DevOps.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "What-We-Do/Enterprise-Services/iBeacon-App-Development.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "What-We-Do/Enterprise-Services/Microsoft-Technologies/WCF-Application-Development.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Big-Data-Data-Analytics/PowerBI.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/BlockChainMLAI/MachineLearning.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/BlockChain-ML-AI/Hyperledger.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/BlockChain-ML-AI/ChatBot.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Backend/NodeJS.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Backend/NET-Development.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Backend/Node.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Backend/Python.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/JS-Frontend/Mern.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/JS-Frontend/MERN-2.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/JS-Frontend/ReactJS.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/JS-Frontend/VueJs.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Mobile/AR.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Mobile/Ionic.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Mobile/Flutter.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "How-We-Do-It/Mobile/Kotlin.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "blog/post/introducing-digitalsiwes.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "blog/month/9/year/2021.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "Who-We-Are/Become-a-Partner/Referral-Partnership.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "Who-We-Are/Become-a-Partner/Strategic-Partnership.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "Who-We-Are/Become-a-Partner/Affiliate-partnership.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "Who-We-Are/Insights/Client-Testimonial.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "Who-We-Are/Insights/White-Papers.html",
+      "../assets/images/social/favicon-192.png"
+    ],
+    [
+      "Who-We-Are/Insights/Media-Coverage.html",
+      "../assets/images/social/favicon-192.png"
+    ]
+  ],
+  "h1_sample": [],
+  "legacy_sample": []
+}

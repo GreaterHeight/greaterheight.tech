@@ -1,0 +1,13 @@
+# GreaterHeight Technologies
+
+GreaterHeight Technologies is a Nigerian software engineering and IT consulting company. The website covers the company, technology services, enterprise services, industries, case studies, processes, careers and contact information.
+
+## Primary pages
+- https://www.greaterheight.tech/
+- https://www.greaterheight.tech/Company-Overview.html
+- https://www.greaterheight.tech/What-We-Do.html
+- https://www.greaterheight.tech/How-We-Do-It.html
+- https://www.greaterheight.tech/Industries-We-Serve.html
+- https://www.greaterheight.tech/Where-We-Are.html
+- https://www.greaterheight.tech/Current-Openings.html
+- https://www.greaterheight.tech/blog.html
