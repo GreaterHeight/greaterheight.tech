@@ -750,7 +750,18 @@
       .footer-lower { flex-direction: column; align-items: flex-start; }
       .footer-copyright { flex-direction: column; }
     }
-  </style>
+  
+/* ── Mega panel header/footer (all pages) ── */
+.mega-panel-hd{padding:1.25rem 1.5rem .75rem;border-bottom:1px solid var(--border);margin-bottom:.5rem;}
+.mega-panel-eyebrow{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--cr);margin-bottom:4px;}
+.mega-hdesc{font-size:.82rem;color:var(--txt-2);line-height:1.5;}
+.mega-hdesc span{color:var(--txt-3);}
+.mega-panel-ft{padding:.75rem 1.5rem 1.25rem;border-top:1px solid var(--border);margin-top:.5rem;display:flex;align-items:center;justify-content:flex-end;gap:1rem;flex-wrap:wrap;}
+.mega-panel-ft p{font-size:.78rem;color:var(--txt-2);line-height:1.5;flex:1;min-width:200px;}
+.mega-cta-link{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:var(--cr);color:var(--white);border-radius:6px;font-size:.78rem;font-weight:700;white-space:nowrap;transition:background .15s;}
+.mega-cta-link:hover{background:var(--cr-mid);}
+.mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
+</style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -780,32 +791,45 @@
             <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
           </button>
           <div class="mega-panel xxwide" id="panel-who-we-are" role="region" aria-label="Who We Are submenu">
+            <div class="mega-panel-hd">
+              <div class="mega-panel-eyebrow">Who We Are</div>
+              <div class="mega-hdesc">Over two decades of IT Consulting and Software Development</div>
+            </div>
             <div class="mega-grid cols-4">
               <div>
-                <p class="mega-col-head">About</p>
-                <a href="/who-we-are/company-overview/" class="mega-link"><strong>Company Overview</strong><span>Our story, mission &amp; reach</span></a>
-                <a href="/who-we-are/core-purpose-mission/" class="mega-link"><strong>Core Purpose &amp; Mission</strong><span>Why we exist</span></a>
-                <a href="/who-we-are/our-values/" class="mega-link"><strong>Our Values</strong><span>The principles we operate by</span></a>
-                <a href="/who-we-are/why-greaterheight/" class="mega-link"><strong>Why GreaterHeight</strong><span>What sets us apart</span></a>
+                <p class="mega-col-head">About Us</p>
+                <a href="/who-we-are/company-overview/" class="mega-link">Company Overview</a>
+                <a href="/who-we-are/core-purpose-mission/" class="mega-link">Core Purpose &amp; Mission</a>
+                <a href="/who-we-are/our-values/" class="mega-link">Our Values</a>
+                <a href="/who-we-are/why-greaterheight/" class="mega-link">Why GreaterHeight</a>
+                <a href="/who-we-are/our-team/" class="mega-link">Our Team</a>
+                <a href="/who-we-are/our-approach/" class="mega-link">Our Approach</a>
               </div>
               <div>
-                <p class="mega-col-head">Infrastructure</p>
-                <a href="/who-we-are/our-infrastructure/" class="mega-link"><strong>Our Infrastructure</strong><span>Tools, platforms &amp; systems</span></a>
-                <a href="/who-we-are/our-approach/" class="mega-link"><strong>Our Approach</strong><span>How we think &amp; deliver</span></a>
-                <a href="/who-we-are/our-culture/" class="mega-link"><strong>Our Culture</strong><span>Life inside GreaterHeight</span></a>
+                <p class="mega-col-head">Insights</p>
+                <a href="/insights/brochure/" class="mega-link">Brochure</a>
+                <a href="/insights/webinars/" class="mega-link">Webinars</a>
+                <a href="/insights/case-studies/" class="mega-link">Case Studies</a>
+                <a href="/insights/faq/" class="mega-link">FAQ</a>
+                <a href="/insights/white-papers/" class="mega-link">White Papers</a>
+                <a href="/insights/testimonials/" class="mega-link">Client Reviews &amp; Testimonials</a>
+                <a href="/insights/blog/" class="mega-link">Blog &amp; Articles</a>
               </div>
               <div>
-                <p class="mega-col-head">People</p>
-                <a href="/who-we-are/our-team/" class="mega-link"><strong>Our Team</strong><span>The people behind the work</span></a>
-                <a href="/who-we-are/career-overview/" class="mega-link"><strong>Career Overview</strong><span>Growing with us</span></a>
-                <a href="/who-we-are/current-openings/" class="mega-link"><strong>Current Openings</strong><span>Join the team</span></a>
+                <p class="mega-col-head">Become a Partner</p>
+                <a href="/partners/strategic/" class="mega-link">Strategic Partnership</a>
+                <a href="/partners/affiliate/" class="mega-link">Affiliate Partnership</a>
+                <a href="/partners/referral/" class="mega-link">Referral Partnership</a>
               </div>
               <div>
-                <p class="mega-col-head">Quick links</p>
-                <a href="/contact/" class="mega-link"><strong>Where We Are</strong><span>Our offices globally</span></a>
-                <a href="/insights/" class="mega-link"><strong>Insights</strong><span>Articles &amp; perspectives</span></a>
-                <a href="/case-studies/" class="mega-link"><strong>Case Studies</strong><span>Client results</span></a>
+                <p class="mega-col-head">Our Culture</p>
+                <a href="/culture/career-overview/" class="mega-link">Career Overview</a>
+                <a href="/culture/career-opportunities/" class="mega-link">Career Opportunities</a>
+                <a href="/culture/csr/" class="mega-link">Corporate Social Responsibility</a>
               </div>
+            </div>
+            <div class="mega-panel-ft">
+              <a href="/contact/" class="mega-cta-link">Talk to Us &#8594;</a>
             </div>
           </div>
         </div>
@@ -817,42 +841,71 @@
             <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
           </button>
           <div class="mega-panel xxwide" id="panel-what-we-do" role="region" aria-label="What We Do submenu">
+            <div class="mega-panel-hd">
+              <div class="mega-panel-eyebrow">What We Do</div>
+              <div class="mega-hdesc">Governed delivery in the AI era.</div>
+            </div>
             <div class="mega-grid cols-4">
               <div>
-                <p class="mega-col-head">AI &amp; Automation</p>
-                <a href="/what-we-do/ai-automation/ai-consulting/" class="mega-link">AI Consulting</a>
-                <a href="/what-we-do/ai-automation/ai-augmented-development/" class="mega-link">AI-Augmented Development</a>
-                <a href="/what-we-do/ai-automation/generative-ai-llms/" class="mega-link">Generative AI &amp; LLMs</a>
-                <a href="/what-we-do/ai-automation/ai-agents-automation/" class="mega-link">AI Agents &amp; Automation</a>
-                <a href="/what-we-do/ai-automation/production-assurance/" class="mega-link">Production Assurance</a>
+                <p class="mega-col-head">Products &amp; Solutions</p>
+                <a href="/products/digitalsiwes/" class="mega-link">DigitalSiWes</a>
+                <a href="/products/searchartisans/" class="mega-link">SearchArtisans</a>
+                <a href="/products/ecertman/" class="mega-link">eCertMan</a>
+                <a href="/products/greaterheight-academy/" class="mega-link">GreaterHeight Academy</a>
+                <p class="mega-col-subhead">AI &amp; Automation</p>
+                <a href="/what-we-do/ai/consulting/" class="mega-link">AI Consulting</a>
+                <a href="/what-we-do/ai/augmented-development/" class="mega-link">AI-Augmented Development</a>
+                <a href="/what-we-do/ai/generative-ai-llms/" class="mega-link">Generative AI &amp; LLMs</a>
+                <a href="/what-we-do/ai/agents-automation/" class="mega-link">AI Agents &amp; Automation</a>
+                <a href="/what-we-do/ai/production-assurance/" class="mega-link">Production Assurance</a>
               </div>
               <div>
                 <p class="mega-col-head">Product Engineering</p>
-                <a href="/what-we-do/product-engineering/custom-software-development/" class="mega-link">Custom Software Development</a>
-                <a href="/what-we-do/product-engineering/web-application-development/" class="mega-link">Web Application Development</a>
-                <a href="/what-we-do/product-engineering/mobile-app-development/" class="mega-link">Mobile App Development</a>
-                <a href="/what-we-do/product-engineering/saas-development/" class="mega-link">SaaS Development</a>
-                <a href="/what-we-do/product-engineering/mvp-development/" class="mega-link">MVP Development</a>
+                <a href="/what-we-do/engineering/custom-software/" class="mega-link">Custom Software Development</a>
+                <a href="/what-we-do/engineering/cross-platform/" class="mega-link">Cross Platform App Development</a>
+                <a href="/what-we-do/engineering/web-application/" class="mega-link">Web Application Development</a>
+                <a href="/what-we-do/engineering/mobile-app/" class="mega-link">Mobile App Development</a>
+                <a href="/what-we-do/engineering/mvp/" class="mega-link">MVP Development</a>
+                <a href="/what-we-do/engineering/saas/" class="mega-link">SaaS Development</a>
+                <a href="/what-we-do/engineering/maintenance/" class="mega-link">Software App Maintenance</a>
+                <a href="/what-we-do/engineering/qa/" class="mega-link">Quality Assurance &amp; Testing</a>
+                <a href="/what-we-do/engineering/support/" class="mega-link">Product Maintenance &amp; Support</a>
+                <a href="/what-we-do/engineering/prototyping/" class="mega-link">Product Prototyping</a>
               </div>
               <div>
                 <p class="mega-col-head">Data &amp; Cloud</p>
-                <a href="/what-we-do/data-cloud/data-engineering/" class="mega-link">Data Engineering</a>
-                <a href="/what-we-do/data-cloud/analytics-bi/" class="mega-link">Analytics &amp; BI</a>
-                <a href="/what-we-do/data-cloud/cloud-migration/" class="mega-link">Cloud Migration</a>
-                <a href="/what-we-do/data-cloud/cloud-devops/" class="mega-link">Cloud DevOps</a>
-                <p class="mega-col-head" style="margin-top:12px;">Digital Marketing</p>
-                <a href="/what-we-do/digital-marketing/seo/" class="mega-link">SEO</a>
-                <a href="/what-we-do/digital-marketing/social-media-marketing/" class="mega-link">Social Media Marketing</a>
+                <a href="/what-we-do/data/engineering/" class="mega-link">Data Engineering</a>
+                <a href="/what-we-do/data/analytics-bi/" class="mega-link">Analytics &amp; BI</a>
+                <a href="/what-we-do/data/warehouse/" class="mega-link">Data Warehouse</a>
+                <a href="/what-we-do/data/cloud-migration/" class="mega-link">Cloud Migration</a>
+                <a href="/what-we-do/data/cloud-devops/" class="mega-link">Cloud &amp; DevOps</a>
+                <a href="/what-we-do/data/devops-solutions/" class="mega-link">DevOps Solutions</a>
+                <a href="/what-we-do/data/cloud-solutions/" class="mega-link">Cloud Solutions</a>
+                <p class="mega-col-subhead">Enterprise &amp; Advisory</p>
+                <a href="/what-we-do/enterprise/legacy-modernisation/" class="mega-link">Legacy Modernisation</a>
+                <a href="/what-we-do/enterprise/digital-transformation/" class="mega-link">Digital Transformation</a>
+                <a href="/what-we-do/enterprise/consulting/" class="mega-link">Business / Technology Consulting</a>
+                <a href="/what-we-do/enterprise/it-strategy/" class="mega-link">IT Strategy &amp; Consulting</a>
+                <a href="/what-we-do/enterprise/iot/" class="mega-link">Internet of Things (IoT)</a>
               </div>
               <div>
-                <p class="mega-col-head">Enterprise &amp; Advisory</p>
-                <a href="/what-we-do/enterprise-advisory/digital-transformation/" class="mega-link">Digital Transformation</a>
-                <a href="/what-we-do/enterprise-advisory/legacy-modernisation/" class="mega-link">Legacy Modernisation</a>
-                <a href="/what-we-do/enterprise-advisory/it-strategy-consulting/" class="mega-link">IT Strategy Consulting</a>
-                <a href="/what-we-do/enterprise-advisory/business-technology-consulting/" class="mega-link">Business Technology Consulting</a>
-                <a href="/what-we-do/enterprise-advisory/blockchain/" class="mega-link">Blockchain</a>
-                <a href="/what-we-do/enterprise-advisory/iot/" class="mega-link">IoT</a>
+                <p class="mega-col-head">Digital Marketing</p>
+                <a href="/what-we-do/marketing/content/" class="mega-link">Content Development Services</a>
+                <a href="/what-we-do/marketing/social-media/" class="mega-link">Social Media Marketing</a>
+                <a href="/what-we-do/marketing/reputation/" class="mega-link">Online Reputation Management</a>
+                <a href="/what-we-do/marketing/seo/" class="mega-link">Search Engine Optimisation</a>
+                <a href="/what-we-do/marketing/ppc/" class="mega-link">Pay Per Click</a>
+                <a href="/what-we-do/marketing/link-building/" class="mega-link">Link Building Service</a>
+                <a href="/what-we-do/marketing/personal-branding/" class="mega-link">Personal Branding</a>
+                <p class="mega-col-subhead">Processes</p>
+                <a href="/what-we-do/processes/methodology/" class="mega-link">Development Methodology</a>
+                <a href="/what-we-do/processes/delivery-models/" class="mega-link">Delivery Models</a>
+                <a href="/what-we-do/processes/pricing-models/" class="mega-link">Pricing Models</a>
               </div>
+            </div>
+            <div class="mega-panel-ft">
+              <p>Not sure where to start? Project Scoping is a fixed-fee 2&#8211;4 week engagement that de-risks any build &#8212; proof before estimate.</p>
+              <a href="/contact/" class="mega-cta-link">Scope Your Project &#8594;</a>
             </div>
           </div>
         </div>
@@ -1417,13 +1470,33 @@
           }
         }
       });
-      item.addEventListener('mouseleave', function () {
-        btn.setAttribute('aria-expanded', 'false');
-        panel.classList.remove('open');
-        panel.style.left = '';
-        panel.style.right = '';
-        panel.style.transform = '';
-      });
+      let _closeTimer;
+      function openPanel() {
+        closeAll();
+        btn.setAttribute('aria-expanded', 'true');
+        panel.classList.add('open');
+        activePanel = panel;
+        const rect = panel.getBoundingClientRect();
+        if (rect.right > window.innerWidth - 16) {
+          panel.style.left = 'auto';
+          panel.style.right = '0';
+          panel.style.transform = 'translateY(0)';
+        }
+      }
+      function closePanel() {
+        _closeTimer = setTimeout(function () {
+          btn.setAttribute('aria-expanded', 'false');
+          panel.classList.remove('open');
+          activePanel = null;
+          panel.style.left = '';
+          panel.style.right = '';
+          panel.style.transform = '';
+        }, 150);
+      }
+      item.addEventListener('mouseenter', function () { clearTimeout(_closeTimer); openPanel(); });
+      item.addEventListener('mouseleave', closePanel);
+      panel.addEventListener('mouseenter', function () { clearTimeout(_closeTimer); });
+      panel.addEventListener('mouseleave', closePanel);
     });
     document.addEventListener('click', closeAll);
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
