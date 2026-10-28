@@ -319,9 +319,10 @@ nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.96);backdrop-
 .partners-label{font-family:var(--font);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--txt-2);flex-shrink:0;max-width:160px;line-height:1.5;}
 .partners-label strong{color:var(--txt);}
 .logo-slider{flex:1;overflow:hidden;}
-.logo-track{display:flex;gap:3rem;align-items:center;animation:logoScroll 20s linear infinite;width:max-content;}
+.logo-track{display:flex;gap:4rem;align-items:center;animation:logoScroll 55s linear infinite;width:max-content;}
 .logo-track:hover{animation-play-state:paused;}
-.logo-item{font-family:var(--font);font-size:1.1rem;font-weight:700;color:var(--txt-3);white-space:nowrap;letter-spacing:.05em;}
+.logo-item{display:block;height:52px;width:auto;max-width:160px;object-fit:contain;filter:grayscale(100%) opacity(0.6);transition:filter .3s;}
+.logo-item:hover{filter:grayscale(0%) opacity(1);}
 @keyframes logoScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* =============================================
@@ -1165,26 +1166,48 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 ============================================= -->
 <div class="partners reveal" aria-label="Partner organisations">
   <div class="wrap partners-inner">
-    <p class="partners-label"><strong>Trusted by</strong> teams at global consultancies</p>
+    <p class="partners-label"><strong>Trusted by</strong> leading organisations across Africa and beyond</p>
     <div class="logo-slider">
-      <div class="logo-track">
-        <span class="logo-item">Deloitte</span>
-        <span class="logo-item">Accenture</span>
-        <span class="logo-item">Capgemini</span>
-        <span class="logo-item">McKinsey</span>
-        <span class="logo-item">Infosys</span>
-        <span class="logo-item">PwC</span>
-        <span class="logo-item">IBM</span>
-        <span class="logo-item">SAP</span>
-        <!-- Duplicate -->
-        <span class="logo-item">Deloitte</span>
-        <span class="logo-item">Accenture</span>
-        <span class="logo-item">Capgemini</span>
-        <span class="logo-item">McKinsey</span>
-        <span class="logo-item">Infosys</span>
-        <span class="logo-item">PwC</span>
-        <span class="logo-item">IBM</span>
-        <span class="logo-item">SAP</span>
+      <div class="logo-track" aria-hidden="true">
+        <img src="/assets/images/logos/mtn.png"                    alt="MTN"                                  class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/zenith-bank.png"            alt="Zenith Bank"                          class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/fcmb.png"                   alt="FCMB"                                 class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/glo.png"                    alt="Glo"                                  class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/ge.png"                     alt="GE"                                   class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/nibss.png"                  alt="NIBSS"                                class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/coralpay.png"               alt="CoralPay"                             class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/unity-bank.png"             alt="Unity Bank"                           class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/payu.png"                   alt="PayU"                                 class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/waec.png"                   alt="WAEC"                                 class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/ministry-interior-nigeria.png" alt="Ministry of Interior Nigeria"      class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/federal-poly-offa.png"      alt="Federal Polytechnic Offa"             class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/kwara-college-education.png" alt="Kwara State College of Education"    class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/yinka-folawiyo-group.png"   alt="Yinka Folawiyo Group"                 class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/awimax-group.png"           alt="Awimax Group"                        class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/abbfem.png"                 alt="Abbfem"                               class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/natony-limited.png"         alt="Natony Limited"                       class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/yishog.png"                 alt="Yishog"                               class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/gods-love-home-care.png"    alt="God's Love Home Care"                 class="logo-item" loading="lazy">
+        <!-- Duplicate set for seamless loop -->
+        <img src="/assets/images/logos/mtn.png"                    alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/zenith-bank.png"            alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/fcmb.png"                   alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/glo.png"                    alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/ge.png"                     alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/nibss.png"                  alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/coralpay.png"               alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/unity-bank.png"             alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/payu.png"                   alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/waec.png"                   alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/ministry-interior-nigeria.png" alt=""                                  class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/federal-poly-offa.png"      alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/kwara-college-education.png" alt=""                                    class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/yinka-folawiyo-group.png"   alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/awimax-group.png"           alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/abbfem.png"                 alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/natony-limited.png"         alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/yishog.png"                 alt=""                                     class="logo-item" loading="lazy">
+        <img src="/assets/images/logos/gods-love-home-care.png"    alt=""                                     class="logo-item" loading="lazy">
       </div>
     </div>
   </div>
