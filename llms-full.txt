@@ -1,0 +1,113 @@
+# GreaterHeight Technologies — Full Content Index
+
+> GreaterHeight Technologies Limited is a Lagos-based IT consulting and software development firm founded in June 2010 by Segun Samuel. The company operates from Lagos, Nigeria, with client engagements across Africa, the UK, USA, and Dubai. The founding vision is captured in the tagline "Raising the bar of Technology."
+
+> Core client segments: Individuals, Businesses, Organisations, Nations (IBON framework).
+
+## What We Do
+
+### AI & Automation
+- [AI Consulting](https://greaterheight.tech/what-we-do/ai/consulting/): Strategy, architecture, and advisory for organisations at any stage of their AI journey. Covers AI readiness assessments, AI roadmaps, model selection, infrastructure planning, and governance frameworks.
+- [AI-Augmented Development](https://greaterheight.tech/what-we-do/ai/augmented-development/): Using AI tools and agents to accelerate software engineering without compromising quality or maintainability. Covers AI pair programming, code generation, automated review, and developer productivity.
+- [Generative AI & LLMs](https://greaterheight.tech/what-we-do/ai/generative-ai-llms/): Custom LLM integration, fine-tuning, retrieval-augmented generation (RAG) pipelines, prompt engineering, and end-to-end generative AI product development.
+- [AI Agents & Automation](https://greaterheight.tech/what-we-do/ai/agents-automation/): Intelligent agent systems, workflow automation, and agentic architectures for complex operational and decision-making processes.
+- [Production Assurance](https://greaterheight.tech/what-we-do/ai/production-assurance/): Testing, monitoring, evaluation frameworks, and reliability engineering for AI systems deployed in production environments.
+
+### Product Engineering
+- [Custom Software Development](https://greaterheight.tech/what-we-do/engineering/custom-software/): Bespoke software built to exact client requirements across web, desktop, and enterprise platforms.
+- [Cross Platform App Development](https://greaterheight.tech/what-we-do/engineering/cross-platform/): Single-codebase applications for multiple platforms using React Native, Flutter, and similar frameworks.
+- [Web Application Development](https://greaterheight.tech/what-we-do/engineering/web-application/): Scalable, performant web applications using modern JavaScript frameworks (React, Vue, Next.js) and backend stacks.
+- [Mobile App Development](https://greaterheight.tech/what-we-do/engineering/mobile-app/): Native iOS and Android applications, as well as cross-platform mobile development.
+- [MVP Development](https://greaterheight.tech/what-we-do/engineering/mvp/): Minimum viable products delivered rapidly for startup validation, investor pitches, and market testing.
+- [SaaS Development](https://greaterheight.tech/what-we-do/engineering/saas/): Multi-tenant SaaS platforms engineered for subscription delivery, growth, and operational scale.
+- [Quality Assurance & Testing](https://greaterheight.tech/what-we-do/engineering/qa/): Comprehensive QA including functional, performance, security, accessibility, and automated testing.
+- [Software App Maintenance](https://greaterheight.tech/what-we-do/engineering/maintenance/): Ongoing maintenance, updates, dependency management, and incremental improvement for live software.
+- [Product Maintenance & Support](https://greaterheight.tech/what-we-do/engineering/support/): Managed support and incident response for business-critical live products.
+- [Product Prototyping](https://greaterheight.tech/what-we-do/engineering/prototyping/): Rapid prototypes — wireframes, clickable mockups, and functional proofs of concept.
+
+### Data & Cloud
+- [Data Engineering](https://greaterheight.tech/what-we-do/data/engineering/): Data pipelines, ingestion, transformation, orchestration, and the infrastructure that makes analysis possible.
+- [Analytics & BI](https://greaterheight.tech/what-we-do/data/analytics-bi/): Business intelligence dashboards, reporting systems, and analytical platforms using Power BI, Tableau, Looker, and custom solutions.
+- [Data Warehouse](https://greaterheight.tech/what-we-do/data/warehouse/): Centralised data warehouses and lakehouses using Snowflake, BigQuery, Redshift, and Azure Synapse.
+- [Cloud Migration](https://greaterheight.tech/what-we-do/data/cloud-migration/): Structured migration of workloads from on-premise infrastructure to AWS, Azure, and GCP.
+- [Cloud & DevOps](https://greaterheight.tech/what-we-do/data/cloud-devops/): Cloud-native architecture design, infrastructure-as-code (Terraform, Pulumi), and DevOps implementation.
+- [DevOps Solutions](https://greaterheight.tech/what-we-do/data/devops-solutions/): CI/CD pipelines, container orchestration (Kubernetes, Docker), monitoring, and site reliability engineering.
+- [Cloud Solutions](https://greaterheight.tech/what-we-do/data/cloud-solutions/): Managed cloud architecture, cost optimisation, security, and ongoing cloud operations.
+
+### Digital Marketing
+- [Content Development](https://greaterheight.tech/what-we-do/marketing/content/): Content strategy, blog writing, thought leadership, copywriting, and content production for digital channels.
+- [Social Media Marketing](https://greaterheight.tech/what-we-do/marketing/social-media/): Strategy, management, content creation, and paid advertising for LinkedIn, X, Instagram, Facebook, and TikTok.
+- [Search Engine Optimisation](https://greaterheight.tech/what-we-do/marketing/seo/): Technical SEO, on-page optimisation, keyword strategy, and content SEO for organic search visibility.
+- [Pay Per Click](https://greaterheight.tech/what-we-do/marketing/ppc/): Paid search (Google Ads) and paid social advertising campaigns managed for ROI.
+- [Online Reputation Management](https://greaterheight.tech/what-we-do/marketing/reputation/): Monitoring, protecting, and improving brand reputation across search results and review platforms.
+- [Link Building](https://greaterheight.tech/what-we-do/marketing/link-building/): High-quality backlink acquisition for domain authority and search visibility.
+- [Personal Branding](https://greaterheight.tech/what-we-do/marketing/personal-branding/): Positioning, content strategy, and digital presence development for founders and executives.
+
+### Enterprise & Advisory
+- [Digital Transformation](https://greaterheight.tech/what-we-do/enterprise/digital-transformation/): Organisation-wide digital transformation programmes covering people, processes, and platforms.
+- [IT Strategy & Consulting](https://greaterheight.tech/what-we-do/enterprise/it-strategy/): Technology strategy, governance, roadmapping, and advisory for boards and executive teams.
+- [Legacy Modernisation](https://greaterheight.tech/what-we-do/enterprise/legacy-modernisation/): Structured replacement or re-platforming of legacy systems while maintaining business continuity.
+- [Business / Technology Consulting](https://greaterheight.tech/what-we-do/enterprise/consulting/): Advisory at the intersection of business strategy and technology execution.
+- [Internet of Things (IoT)](https://greaterheight.tech/what-we-do/enterprise/iot/): IoT strategy, architecture, device integration, and implementation for physical-digital operational systems.
+
+### How We Work
+- [Development Methodology](https://greaterheight.tech/what-we-do/processes/methodology/): Agile-based engineering and delivery practices applied across all engagements.
+- [Delivery Models](https://greaterheight.tech/what-we-do/processes/delivery-models/): Dedicated project teams, staff augmentation, retainer-based, and hybrid delivery options.
+- [Pricing Models](https://greaterheight.tech/what-we-do/processes/pricing-models/): Fixed-price, time-and-materials, and retainer commercial arrangements.
+
+## Who We Serve
+- [Businesses](https://greaterheight.tech/who-we-serve/businesses/): SMEs to large enterprises across Nigerian, African, and international markets.
+- [Individuals](https://greaterheight.tech/who-we-serve/individuals/): Professionals, entrepreneurs, and personal brand builders.
+- [Organisations](https://greaterheight.tech/who-we-serve/organisations/): Non-governmental organisations, associations, and academic institutions.
+- [Nations](https://greaterheight.tech/who-we-serve/nations/): Government agencies, ministries, and public-sector bodies.
+
+## Industries
+- [Financial Technology](https://greaterheight.tech/industries/financial-technology/)
+- [Healthcare](https://greaterheight.tech/industries/healthcare/)
+- [Education & E-Learning](https://greaterheight.tech/industries/education-elearning/)
+- [Logistics](https://greaterheight.tech/industries/logistics/)
+- [Retail & E-Commerce](https://greaterheight.tech/industries/retail-ecommerce/)
+- [Media & Entertainment](https://greaterheight.tech/industries/media-entertainment/)
+- [Real Estate](https://greaterheight.tech/industries/real-estate/)
+- [Agriculture](https://greaterheight.tech/industries/agriculture/)
+- [Automotive](https://greaterheight.tech/industries/automotive/)
+- [Travel & Hospitality](https://greaterheight.tech/industries/travel-hospitality/)
+- [ISVs & Product Companies](https://greaterheight.tech/industries/isvs-product-companies/)
+- [Digital Marketing Agencies](https://greaterheight.tech/industries/digital-marketing-agencies/)
+
+## Products
+- [DigitalSiWes](https://greaterheight.tech/products/digitalsiwes/): A digital management platform for the Nigerian SIWES (Student Industrial Work Experience Scheme) programme. Connects students, employers, institutions, and the Industrial Training Fund (ITF).
+- [SearchArtisans](https://greaterheight.tech/products/searchartisans/): A local business search and discovery platform connecting consumers with skilled artisans, tradespeople, and service providers in Nigeria.
+- [eCertMan](https://greaterheight.tech/products/ecertman/): A digital certificate management system for educational institutions, training providers, and credentialing bodies.
+- [GreaterHeight Academy](https://greaterheight.tech/products/greaterheight-academy/): Structured technology training programmes covering software development, cloud computing, data science, digital marketing, and IT fundamentals.
+
+## About
+- [Company Overview](https://greaterheight.tech/who-we-are/company-overview/): Founded 2010 in Lagos by Segun Samuel. Serves clients in Nigeria, Africa, UK, USA, and Dubai.
+- [Core Purpose & Mission](https://greaterheight.tech/who-we-are/core-purpose-mission/): Mission to raise the bar of technology in Africa and contribute to national development through technology.
+- [Our Values](https://greaterheight.tech/who-we-are/our-values/)
+- [Our Approach](https://greaterheight.tech/who-we-are/our-approach/)
+- [Why GreaterHeight](https://greaterheight.tech/who-we-are/why-greaterheight/)
+- [Our Team](https://greaterheight.tech/who-we-are/our-team/)
+- [Our Culture](https://greaterheight.tech/who-we-are/our-culture/)
+- [Our Infrastructure](https://greaterheight.tech/who-we-are/our-infrastructure/)
+- [How We Do It](https://greaterheight.tech/how-we-do-it/)
+
+## Partners
+- [Strategic Partners](https://greaterheight.tech/partners/strategic/)
+- [Affiliate Partners](https://greaterheight.tech/partners/affiliate/)
+- [Referral Partners](https://greaterheight.tech/partners/referral/)
+
+## Insights & Resources
+- [Blog & Articles](https://greaterheight.tech/insights/blog/)
+- [Case Studies](https://greaterheight.tech/case-studies/)
+- [White Papers](https://greaterheight.tech/insights/white-papers/)
+- [Webinars & Events](https://greaterheight.tech/insights/webinars/)
+- [Client Testimonials](https://greaterheight.tech/insights/testimonials/)
+- [FAQ](https://greaterheight.tech/insights/faq/)
+- [Company Brochure](https://greaterheight.tech/insights/brochure/)
+
+## Contact & Legal
+- [Contact Us](https://greaterheight.tech/contact/)
+- [Privacy Policy](https://greaterheight.tech/privacy/)
+- [Terms of Use](https://greaterheight.tech/terms/)
+- [Disclaimer](https://greaterheight.tech/disclaimer/)

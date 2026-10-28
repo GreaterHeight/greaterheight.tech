@@ -1,0 +1,73 @@
+# GreaterHeight Technologies
+
+> GreaterHeight Technologies Limited is a Lagos-based IT consulting and software development firm founded in 2010. We deliver software engineering, cloud, AI, data, and digital transformation services to individuals, businesses, organisations, and nations in Nigeria, Africa, the UK, USA, and Dubai. Our tagline is "Raising the bar of Technology."
+
+## Services
+
+- [What We Do — Overview](https://greaterheight.tech/what-we-do/): Full catalogue of services.
+- [AI & Automation](https://greaterheight.tech/what-we-do/ai-automation/): AI consulting, generative AI, LLMs, agents, AI-augmented development, production assurance.
+- [Product Engineering](https://greaterheight.tech/what-we-do/product-engineering/): Custom software, web and mobile applications, SaaS products, MVP development, QA, maintenance.
+- [Data & Cloud](https://greaterheight.tech/what-we-do/data-cloud/): Data engineering, analytics and BI, data warehouse, cloud migration, DevOps.
+- [Digital Marketing](https://greaterheight.tech/what-we-do/digital-marketing/): SEO, social media marketing, content development, PPC, reputation management, link building, personal branding.
+- [Enterprise & Advisory](https://greaterheight.tech/what-we-do/enterprise-advisory/): Digital transformation, IT strategy consulting, legacy modernisation, IoT.
+- [How We Work](https://greaterheight.tech/what-we-do/processes/): Development methodology, delivery models, pricing models.
+
+## Who We Serve
+
+- [Who We Serve — Overview](https://greaterheight.tech/who-we-serve/): Overview of client segments.
+- [Businesses](https://greaterheight.tech/who-we-serve/businesses/): SMEs through enterprise organisations.
+- [Individuals](https://greaterheight.tech/who-we-serve/individuals/): Professionals, founders, and personal brand builders.
+- [Organisations](https://greaterheight.tech/who-we-serve/organisations/): NGOs, associations, institutions.
+- [Nations](https://greaterheight.tech/who-we-serve/nations/): Government agencies and public-sector bodies.
+
+## Industries
+
+- [Industries — Overview](https://greaterheight.tech/industries/): Sector-specific technology solutions.
+- [Financial Technology](https://greaterheight.tech/industries/financial-technology/)
+- [Healthcare](https://greaterheight.tech/industries/healthcare/)
+- [Education & E-Learning](https://greaterheight.tech/industries/education-elearning/)
+- [Logistics](https://greaterheight.tech/industries/logistics/)
+- [Retail & E-Commerce](https://greaterheight.tech/industries/retail-ecommerce/)
+- [Media & Entertainment](https://greaterheight.tech/industries/media-entertainment/)
+- [Real Estate](https://greaterheight.tech/industries/real-estate/)
+- [Agriculture](https://greaterheight.tech/industries/agriculture/)
+- [Automotive](https://greaterheight.tech/industries/automotive/)
+- [Travel & Hospitality](https://greaterheight.tech/industries/travel-hospitality/)
+- [ISVs & Product Companies](https://greaterheight.tech/industries/isvs-product-companies/)
+- [Digital Marketing Agencies](https://greaterheight.tech/industries/digital-marketing-agencies/)
+
+## About
+
+- [Company Overview](https://greaterheight.tech/who-we-are/company-overview/): History, founding, and mission.
+- [Core Purpose & Mission](https://greaterheight.tech/who-we-are/core-purpose-mission/): Why GreaterHeight Technologies exists.
+- [Our Values](https://greaterheight.tech/who-we-are/our-values/)
+- [Our Team](https://greaterheight.tech/who-we-are/our-team/)
+- [Our Approach](https://greaterheight.tech/who-we-are/our-approach/)
+- [Why GreaterHeight](https://greaterheight.tech/who-we-are/why-greaterheight/)
+
+## Products
+
+- [Products Overview](https://greaterheight.tech/products-solutions/)
+- [DigitalSiWes](https://greaterheight.tech/products/digitalsiwes/): Digital management platform for the Nigerian SIWES programme.
+- [SearchArtisans](https://greaterheight.tech/products/searchartisans/): Local business search and discovery platform.
+- [eCertMan](https://greaterheight.tech/products/ecertman/): Digital certificate management system.
+- [GreaterHeight Academy](https://greaterheight.tech/products/greaterheight-academy/): Technology training programmes.
+
+## Insights & Resources
+
+- [Insights Hub](https://greaterheight.tech/insights/)
+- [Blog & Articles](https://greaterheight.tech/insights/blog/)
+- [Case Studies](https://greaterheight.tech/case-studies/)
+- [White Papers](https://greaterheight.tech/insights/white-papers/)
+- [FAQ](https://greaterheight.tech/insights/faq/)
+- [Testimonials](https://greaterheight.tech/insights/testimonials/)
+
+## Contact
+
+- [Contact Us](https://greaterheight.tech/contact/)
+
+## Optional
+
+- [Privacy Policy](https://greaterheight.tech/privacy/)
+- [Terms of Use](https://greaterheight.tech/terms/)
+- [Disclaimer](https://greaterheight.tech/disclaimer/)

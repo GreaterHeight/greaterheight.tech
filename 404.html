@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | GreaterHeight Technologies</title>
+  <meta name="description" content="The page you requested could not be found. Return to the GreaterHeight Technologies homepage.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="/assets/images/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/images/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #fafafa;
+    }
+    .error-page__code {
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 900;
+      line-height: 1;
+      color: #1a1a2e;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.04em;
+    }
+    .error-page__title {
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 600;
+      color: #1a1a2e;
+      margin: 0 0 1rem;
+    }
+    .error-page__message {
+      font-size: 1rem;
+      color: #555;
+      max-width: 480px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .error-page__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .error-page__logo {
+      margin-bottom: 3rem;
+    }
+    .error-page__logo img {
+      height: 40px;
+      width: auto;
+    }
+    .error-page__nav {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e5e5e5;
+      width: 100%;
+      max-width: 600px;
+    }
+    .error-page__nav p {
+      font-size: 0.875rem;
+      color: #888;
+      margin-bottom: 0.75rem;
+    }
+    .error-page__nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .error-page__nav-links a {
+      font-size: 0.875rem;
+      color: #1a1a2e;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    .error-page__nav-links a:hover { opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <main class="error-page" id="main-content">
+    <div class="error-page__logo">
+      <a href="/">
+        <img src="/assets/images/logo/greaterheight-logo.svg"
+             alt="GreaterHeight Technologies"
+             onerror="this.style.display='none'">
+      </a>
+    </div>
+
+    <p class="error-page__code" aria-hidden="true">404</p>
+    <h1 class="error-page__title">Page Not Found</h1>
+    <p class="error-page__message">
+      The page you're looking for doesn't exist or has been moved.
+      If you followed a link from somewhere, it may be outdated.
+    </p>
+
+    <div class="error-page__actions">
+      <a href="/" class="btn btn-primary">Go to Homepage</a>
+      <a href="/contact/" class="btn btn-outline">Contact Us</a>
+    </div>
+
+    <nav class="error-page__nav" aria-label="Main sections">
+      <p>Or go directly to a section:</p>
+      <ul class="error-page__nav-links">
+        <li><a href="/what-we-do/">What We Do</a></li>
+        <li><a href="/who-we-are/">Who We Are</a></li>
+        <li><a href="/who-we-serve/">Who We Serve</a></li>
+        <li><a href="/industries/">Industries</a></li>
+        <li><a href="/insights/">Insights</a></li>
+        <li><a href="/products-solutions/">Products</a></li>
+        <li><a href="/how-we-do-it/">How We Do It</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <script>
+    // Minimal nav-closing script not required on 404; nothing interactive here
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block query-string variants (none expected, but belt-and-braces)
+Disallow: /*?
+
+Sitemap: https://greaterheight.tech/sitemap.xml
