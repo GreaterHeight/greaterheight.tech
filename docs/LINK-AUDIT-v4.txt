@@ -1,1 +1,0 @@
-blog/month/9/year/2021.html -> ../../../../2021.html

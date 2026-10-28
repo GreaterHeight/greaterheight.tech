@@ -1,0 +1,1403 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Who We Serve | Individuals, Businesses, Organisations &amp; Nations | GreaterHeight Technologies</title>
+<meta name="description" content="GreaterHeight Technologies serves four distinct client segments — Individuals, Businesses, Organisations, and Nations — with technology solutions tailored to each segment's unique context and ambition.">
+<link rel="canonical" href="https://greaterheight.tech/who-we-serve/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://greaterheight.tech/who-we-serve/">
+<meta property="og:title" content="Who We Serve | GreaterHeight Technologies">
+<meta property="og:description" content="Technology solutions for Individuals, Businesses, Organisations, and Nations — built around each segment's specific context, scale, and goals.">
+<meta property="og:image" content="https://greaterheight.tech/assets/images/og/who-we-serve.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../assets/images/logo/favicon.png">
+<link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Who We Serve",
+  "url":"https://greaterheight.tech/who-we-serve/",
+  "description":"GreaterHeight Technologies client segments: Individuals, Businesses, Organisations, and Nations.",
+  "isPartOf":{"@type":"WebSite","url":"https://greaterheight.tech/","name":"GreaterHeight Technologies"},
+  "breadcrumb":{"@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://greaterheight.tech/"},
+    {"@type":"ListItem","position":2,"name":"Who We Serve","item":"https://greaterheight.tech/who-we-serve/"}
+  ]}
+}
+</script>
+<style>
+/* =============================================
+   DESIGN TOKENS
+============================================= */
+:root {
+  --forest:      #0D3D28;
+  --forest-deep: #003020;
+  --teal:        #005A3C;
+  --teal-mid:    #1A7A5E;
+  --teal-glow:   #1EB496;
+  --mint:        #97EFC9;
+  --teal-lite:   #EAF5F1;
+  --teal-pale:   #F4FBF8;
+  --cr:          #8C0D0C;
+  --cr-mid:      #B41414;
+  --cr-lite:     #F5EDED;
+  --cr-pale:     #FDF6F6;
+  --wine:        #6B0F1A;
+  --cream:       #FDFAF4;
+  --light:       #E8E4DC;
+  --white:       #FFFFFF;
+  --gold:        #C9A84C;
+  --grad-hero:   linear-gradient(135deg,#8C0D0C 0%,#B41414 40%,#CC3030 60%,#1EB496 100%);
+  --grad-rule:   linear-gradient(to right,#8C0D0C,#1EB496);
+  --bg:          #FDFAF4;
+  --bg-alt:      #F7F3EC;
+  --bg-dark:     #003020;
+  --bg-card:     #FFFFFF;
+  --border:      #E8E4DC;
+  --txt:         #2E2E2C;
+  --txt-2:       #6A6A64;
+  --txt-3:       #9A9A94;
+  --font:        "Lato", Arial, sans-serif;
+  --r:           12px;
+  color-scheme: light;
+}
+
+/* =============================================
+   RESET & BASE
+============================================= */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--font);background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{cursor:pointer;border:none;background:none;font-family:var(--font);}
+address{font-style:normal;}
+
+/* =============================================
+   UTILITIES
+============================================= */
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:6px;font-size:.95rem;font-weight:700;letter-spacing:.02em;transition:background .2s,color .2s,box-shadow .2s;white-space:nowrap;}
+.btn-primary{background:var(--cr);color:var(--white);}
+.btn-primary:hover{background:var(--cr-mid);box-shadow:0 4px 20px rgba(140,13,12,.3);}
+.btn-outline{background:transparent;color:var(--teal);border:2px solid var(--teal);}
+.btn-outline:hover{background:var(--teal);color:var(--white);}
+.btn-outline-white{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.6);}
+.btn-outline-white:hover{background:rgba(255,255,255,.12);border-color:var(--white);}
+
+/* =============================================
+   SCROLL REVEAL
+============================================= */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* =============================================
+   PRELOADER
+============================================= */
+#preloader{position:fixed;inset:0;z-index:9999;background:var(--bg-dark);display:flex;align-items:center;justify-content:center;transition:opacity .4s ease,visibility .4s ease;}
+#preloader.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+.preloader-mark{width:52px;height:52px;background:var(--bg-dark);border-radius:10px;display:flex;align-items:center;justify-content:center;animation:preloaderPulse 1s ease-in-out infinite alternate;}
+.preloader-mark img{width:38px;height:38px;object-fit:contain;display:block;}
+@keyframes preloaderPulse{from{opacity:.5;transform:scale(.9);}to{opacity:1;transform:scale(1);}}
+
+/* =============================================
+   SCROLL PROGRESS
+============================================= */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad-rule);z-index:9998;transition:width .1s linear;}
+
+/* =============================================
+   NAV
+============================================= */
+nav{position:sticky;top:0;z-index:900;background:rgba(253,250,244,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);box-shadow:0 1px 12px rgba(0,0,0,.06);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:8px;}
+.logo-img{height:36px;width:auto;display:block;}
+.nav-links{display:flex;align-items:center;gap:4px;list-style:none;}
+.nav-item{position:relative;}
+.nav-item>a,.nav-item>button{display:flex;align-items:center;gap:5px;padding:8px 12px;font-size:.875rem;font-weight:600;color:var(--txt);border-radius:6px;transition:color .2s,background .2s;white-space:nowrap;}
+.nav-item>button svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2.2;transition:transform .2s;}
+.nav-item[aria-expanded="true"]>button svg{transform:rotate(180deg);}
+.nav-item>a:hover,.nav-item>button:hover,.nav-item[aria-expanded="true"]>button{color:var(--cr);background:var(--cr-lite);}
+.nav-item>a[aria-current="page"]{color:var(--cr);font-weight:700;}
+.mega-panel{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:var(--white);border:1px solid var(--border);border-radius:var(--r);box-shadow:0 12px 48px rgba(0,0,0,.12);min-width:280px;padding:20px 24px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,visibility .2s ease;z-index:800;}
+.mega-panel.wide{min-width:560px;}
+.mega-panel.xxwide{min-width:860px;}
+.nav-item[aria-expanded="true"]>.mega-panel{opacity:1;visibility:visible;pointer-events:auto;}
+.mega-inner{display:flex;gap:0;}
+.mega-cols.c3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 24px;}
+.mega-cols.c4{display:grid;grid-template-columns:repeat(4,1fr);gap:0 20px;}
+.mega-col-head{font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--cr);text-transform:uppercase;padding-bottom:8px;border-bottom:2px solid var(--cr-lite);margin-bottom:10px;}
+.mega-col-subhead{font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--teal);text-transform:uppercase;padding-bottom:6px;border-bottom:2px solid var(--teal-lite);margin:14px 0 8px;}
+.mega-links{list-style:none;}
+.mega-links li{margin-bottom:2px;}
+.mega-links a{display:block;padding:5px 8px;font-size:.82rem;color:var(--txt-2);border-radius:5px;transition:background .15s,color .15s;}
+.mega-links a:hover{background:var(--cr-lite);color:var(--cr);}
+.nav-search-trigger button{padding:8px;border-radius:6px;color:var(--txt-2);transition:color .2s,background .2s;}
+.nav-search-trigger button:hover{color:var(--cr);background:var(--cr-lite);}
+.nav-cta .btn{padding:9px 20px;font-size:.85rem;}
+.ham-btn{display:none;padding:8px;border-radius:6px;color:var(--txt);}
+.ham-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;}
+#mobile-nav{position:fixed;inset:0;z-index:950;background:rgba(0,0,0,.5);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s,visibility .3s;}
+#mobile-nav.open{opacity:1;visibility:visible;pointer-events:auto;}
+.mobile-drawer{position:absolute;top:0;right:0;bottom:0;width:min(360px,100vw);background:var(--white);overflow-y:auto;transform:translateX(100%);transition:transform .3s ease;}
+#mobile-nav.open .mobile-drawer{transform:none;}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border);}
+.drawer-close{padding:8px;border-radius:6px;color:var(--txt-2);}
+.drawer-close svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;}
+.drawer-links{padding:12px 20px 40px;}
+.drawer-item{border-bottom:1px solid var(--border);}
+.drawer-item>a,.drawer-item>button{display:flex;justify-content:space-between;width:100%;padding:13px 0;font-size:.9rem;font-weight:600;color:var(--txt);}
+.drawer-sub{display:none;padding:0 0 12px 12px;}
+.drawer-sub.open{display:block;}
+.drawer-sub a,.drawer-sub-head{display:block;padding:7px 0;font-size:.84rem;color:var(--txt-2);}
+.drawer-sub-head{font-size:.7rem;font-weight:700;letter-spacing:.08em;color:var(--cr);text-transform:uppercase;margin-top:10px;}
+.drawer-cta{padding:20px 0 0;}
+@media(max-width:900px){
+  .nav-links .nav-item:not(.nav-cta):not(.nav-search-trigger){display:none;}
+  .ham-btn{display:block;}
+  .nav-item.nav-cta .btn{padding:8px 16px;font-size:.82rem;}
+}
+@media(max-width:480px){.nav-item.nav-cta{display:none;}}
+
+/* =============================================
+   BREADCRUMB
+============================================= */
+.breadcrumb{padding:14px 0;border-bottom:1px solid var(--border);background:var(--bg-alt);}
+.breadcrumb-inner{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--txt-3);}
+.breadcrumb-inner a{color:var(--txt-2);transition:color .2s;}
+.breadcrumb-inner a:hover{color:var(--cr);}
+.breadcrumb-sep{color:var(--txt-3);}
+.breadcrumb-current{color:var(--cr);font-weight:600;}
+
+/* =============================================
+   PAGE HERO
+============================================= */
+.page-hero{background:var(--bg-dark);padding:80px 0 72px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 85% 25%,rgba(30,180,150,.15) 0%,transparent 60%),radial-gradient(ellipse 45% 60% at 0% 100%,rgba(140,13,12,.18) 0%,transparent 55%);pointer-events:none;}
+.page-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.page-hero-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;color:var(--teal-glow);text-transform:uppercase;margin-bottom:14px;}
+.page-hero h1{font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:20px;}
+.page-hero h1 em{font-style:normal;color:var(--teal-glow);}
+.page-hero-lead{font-size:1.05rem;color:rgba(255,255,255,.7);line-height:1.75;margin-bottom:32px;max-width:520px;}
+.page-hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.segment-pills{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.segment-pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px 22px;transition:border-color .2s,background .2s;}
+.segment-pill:hover{border-color:var(--teal-glow);background:rgba(30,180,150,.08);}
+.segment-pill-num{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:6px;}
+.segment-pill-name{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:4px;}
+.segment-pill-desc{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.5;}
+@media(max-width:900px){
+  .page-hero-inner{grid-template-columns:1fr;}
+  .page-hero{padding:56px 0 52px;}
+}
+@media(max-width:420px){.segment-pills{grid-template-columns:1fr;}}
+
+/* =============================================
+   SECTION INTRO
+============================================= */
+.section-intro{text-align:center;max-width:640px;margin:0 auto 52px;}
+.section-kicker{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cr);margin-bottom:12px;}
+.section-intro h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:14px;}
+.section-intro p{font-size:1rem;color:var(--txt-2);line-height:1.7;}
+.rule{width:56px;height:3px;background:var(--grad-rule);border-radius:2px;margin:14px auto 0;}
+
+/* =============================================
+   SEGMENT BLOCKS (alternating)
+============================================= */
+.segment-block{padding:88px 0;}
+.segment-block:nth-child(even){background:var(--bg-alt);}
+.segment-block:nth-child(odd){background:var(--bg);}
+.seg-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.seg-inner.reverse{direction:rtl;}
+.seg-inner.reverse>*{direction:ltr;}
+.seg-img{border-radius:var(--r);overflow:hidden;}
+.arch-frame{width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,var(--bg-alt) 0%,var(--border) 100%);border-radius:var(--r);display:flex;align-items:center;justify-content:center;position:relative;}
+.arch-frame-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--txt-3);}
+.seg-content{}
+.seg-tag{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--cr-lite);color:var(--cr);border-radius:20px;padding:4px 14px;margin-bottom:16px;}
+.seg-content h2{font-size:clamp(1.7rem,2.8vw,2.3rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:16px;}
+.seg-content p{font-size:.95rem;color:var(--txt-2);line-height:1.75;margin-bottom:16px;}
+.seg-features{display:flex;flex-direction:column;gap:10px;margin:20px 0 28px;}
+.seg-feature{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;}
+.seg-feature-icon{width:32px;height:32px;border-radius:8px;background:var(--teal-lite);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.seg-feature-icon svg{width:16px;height:16px;stroke:var(--teal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.seg-feature-body{}
+.seg-feature-name{font-size:.88rem;font-weight:700;color:var(--txt);margin-bottom:2px;}
+.seg-feature-desc{font-size:.8rem;color:var(--txt-2);line-height:1.5;}
+.seg-btn{display:inline-flex;align-items:center;gap:8px;font-size:.9rem;font-weight:700;color:var(--cr);border-bottom:2px solid var(--cr-lite);padding-bottom:2px;transition:border-color .2s,gap .2s;}
+.seg-btn:hover{border-color:var(--cr);gap:12px;}
+.seg-btn svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;}
+@media(max-width:900px){
+  .seg-inner,.seg-inner.reverse{grid-template-columns:1fr;direction:ltr;}
+  .seg-img{order:-1;}
+  .segment-block{padding:60px 0;}
+}
+
+/* =============================================
+   STAT STRIP
+============================================= */
+.stat-strip{padding:56px 0;background:var(--bg-dark);}
+.stat-strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.stat-item{text-align:center;}
+.stat-num{font-size:2.4rem;font-weight:700;color:var(--teal-glow);line-height:1;}
+.stat-label{font-size:.82rem;color:rgba(255,255,255,.5);margin-top:6px;line-height:1.4;}
+@media(max-width:700px){.stat-strip-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* =============================================
+   IBONK PHILOSOPHY
+============================================= */
+.ibonk-section{padding:80px 0;background:var(--teal-pale);}
+.ibonk-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;}
+.ibonk-text h2{font-size:clamp(1.6rem,2.8vw,2.1rem);font-weight:700;color:var(--txt);margin-bottom:16px;line-height:1.2;}
+.ibonk-text p{font-size:.95rem;color:var(--txt-2);line-height:1.75;margin-bottom:14px;}
+.ibonk-acronym{display:flex;flex-direction:column;gap:10px;}
+.ibonk-row{display:flex;align-items:center;gap:16px;padding:14px 18px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);}
+.ibonk-letter{width:40px;height:40px;border-radius:8px;background:var(--bg-dark);color:var(--teal-glow);font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ibonk-word{flex:1;}
+.ibonk-word-title{font-size:.92rem;font-weight:700;color:var(--txt);}
+.ibonk-word-desc{font-size:.8rem;color:var(--txt-2);line-height:1.5;}
+@media(max-width:860px){.ibonk-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   CROSS-SEGMENT SERVICES
+============================================= */
+.cross-section{padding:80px 0;background:var(--bg-alt);}
+.cross-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.cross-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;}
+.cross-card:hover{border-color:var(--cr);box-shadow:0 4px 20px rgba(140,13,12,.08);}
+.cross-icon{width:44px;height:44px;border-radius:10px;background:var(--cr-lite);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.cross-icon svg{width:22px;height:22px;stroke:var(--cr);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.cross-name{font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:8px;}
+.cross-desc{font-size:.85rem;color:var(--txt-2);line-height:1.65;}
+@media(max-width:720px){.cross-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:460px){.cross-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   CTA BAND
+============================================= */
+.cta-band{padding:80px 0;background:var(--cr);text-align:center;position:relative;overflow:hidden;}
+.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(255,255,255,.06) 0%,transparent 70%);pointer-events:none;}
+.cta-band h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:var(--white);margin-bottom:16px;line-height:1.2;}
+.cta-band p{font-size:1.05rem;color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 32px;line-height:1.7;}
+.cta-band-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+/* =============================================
+   FOOTER
+============================================= */
+footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
+.footer-offices{background:rgba(0,0,0,.2);border-bottom:1px solid rgba(255,255,255,.07);}
+.footer-offices-inner{display:flex;align-items:center;gap:32px;padding:16px 24px;flex-wrap:wrap;}
+.footer-office{display:flex;align-items:center;gap:10px;}
+.footer-office-country{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-glow);}
+.footer-office-phone a{font-size:.85rem;color:rgba(255,255,255,.7);transition:color .2s;}
+.footer-office-phone a:hover{color:var(--white);}
+.footer-main{padding:56px 0 32px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.4fr 1.4fr 1.2fr;gap:32px;}
+.footer-brand-logo .logo-img{filter:brightness(0) invert(1);opacity:.85;margin-bottom:10px;}
+.footer-brand-tagline{font-size:.78rem;letter-spacing:.06em;color:var(--teal-glow);margin-bottom:10px;}
+.footer-brand-p{font-size:.84rem;color:rgba(255,255,255,.5);line-height:1.65;margin-bottom:14px;}
+.footer-brand-addr{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.8;}
+.footer-brand-addr a{color:rgba(255,255,255,.55);}
+.footer-brand-addr a:hover{color:var(--teal-glow);}
+.footer-col-head{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--white);margin-bottom:14px;}
+.footer-col-subhead{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-glow);margin:16px 0 10px;}
+.footer-col-list{list-style:none;}
+.footer-col-list li{margin-bottom:5px;}
+.footer-col-list a{font-size:.83rem;color:rgba(255,255,255,.5);transition:color .2s;}
+.footer-col-list a:hover{color:var(--teal-glow);}
+.footer-lower{border-top:1px solid rgba(255,255,255,.08);padding:28px 0;}
+.footer-lower-inner{display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:start;}
+.footer-follow-label,.footer-resources-label{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--txt-3);margin-bottom:10px;}
+.footer-social-row{display:flex;gap:10px;}
+.footer-social-row a{width:34px;height:34px;border-radius:8px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;transition:background .2s;}
+.footer-social-row a:hover{background:var(--teal-glow);}
+.footer-social-row svg{width:16px;height:16px;stroke:rgba(255,255,255,.7);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.footer-social-row a:hover svg{stroke:var(--bg-dark);}
+.footer-resources-links{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.9;}
+.footer-resources-links a{color:rgba(255,255,255,.5);transition:color .2s;}
+.footer-resources-links a:hover{color:var(--teal-glow);}
+.footer-resources-links .sep{margin:0 6px;color:rgba(255,255,255,.2);}
+.footer-copyright{border-top:1px solid rgba(255,255,255,.07);padding:18px 0;}
+.footer-copyright-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.78rem;color:rgba(255,255,255,.35);}
+.footer-copyright-policy{display:flex;gap:16px;}
+.footer-copyright-policy a{color:rgba(255,255,255,.4);transition:color .2s;}
+.footer-copyright-policy a:hover{color:var(--teal-glow);}
+.footer-copyright-inner a{color:rgba(255,255,255,.4);}
+.footer-copyright-inner a:hover{color:var(--teal-glow);}
+@media(max-width:1100px){.footer-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;}}
+@media(max-width:820px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:500px){
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-lower-inner{grid-template-columns:1fr;}
+  .footer-copyright-inner{flex-direction:column;align-items:flex-start;}
+}
+
+/* =============================================
+   COOKIE BANNER
+============================================= */
+#cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:8000;background:var(--bg-dark);border-top:1px solid rgba(255,255,255,.12);padding:16px 24px;display:none;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+#cookie-banner.visible{display:flex;}
+.cookie-msg{font-size:.84rem;color:rgba(255,255,255,.7);max-width:680px;}
+.cookie-msg a{color:var(--teal-glow);text-decoration:underline;}
+.cookie-btns{display:flex;gap:10px;}
+.cookie-btns button{padding:9px 20px;border-radius:6px;font-size:.84rem;font-weight:700;cursor:pointer;}
+#cookie-accept{background:var(--teal-glow);color:var(--bg-dark);}
+#cookie-decline{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.25);}
+
+/* =============================================
+   SEARCH OVERLAY
+============================================= */
+#search-overlay{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding-top:80px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s,visibility .2s;}
+#search-overlay.open{opacity:1;visibility:visible;pointer-events:auto;}
+.search-modal{background:var(--white);border-radius:var(--r);width:100%;max-width:620px;padding:20px;box-shadow:0 24px 64px rgba(0,0,0,.3);}
+.search-input-row{display:flex;align-items:center;gap:12px;border-bottom:2px solid var(--border);padding-bottom:14px;}
+.search-input-row input{flex:1;border:none;outline:none;font-size:1rem;font-family:var(--font);color:var(--txt);background:none;}
+.search-esc-badge{font-size:.75rem;font-weight:700;color:var(--txt-3);border:1px solid var(--border);border-radius:4px;padding:2px 8px;}
+.search-results{min-height:40px;padding-top:10px;}
+
+/* =============================================
+   WHATSAPP FLOAT + BACK TO TOP
+============================================= */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:7000;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,.5);}
+.wa-float svg{width:28px;height:28px;fill:var(--white);}
+#back-top{position:fixed;bottom:88px;right:28px;z-index:7000;width:40px;height:40px;border-radius:50%;background:var(--cr);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 12px rgba(140,13,12,.35);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s,visibility .3s,transform .2s;}
+#back-top.visible{opacity:1;visibility:visible;pointer-events:auto;}
+#back-top:hover{transform:translateY(-3px);}
+#back-top svg{width:18px;height:18px;stroke:var(--white);fill:none;stroke-width:2.5;stroke-linecap:round;}
+</style>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-mark">
+    <img src="../assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- =============================================
+     NAV
+============================================= -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
+      <img src="../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
+    </a>
+    <ul class="nav-links" role="list">
+
+      <!-- 1. WHO WE ARE -->
+      <li class="nav-item" id="nav-who-we-are">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-are">
+          Who We Are
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel xxwide" id="panel-who-we-are" role="region" aria-label="Who We Are submenu">
+          <div class="mega-inner mega-cols c4">
+            <div>
+              <div class="mega-col-head">About Us</div>
+              <ul class="mega-links">
+                <li><a href="/who-we-are/company-overview">Company Overview</a></li>
+                <li><a href="/who-we-are/core-purpose-mission">Core Purpose &amp; Mission</a></li>
+                <li><a href="/who-we-are/our-values">Our Values</a></li>
+                <li><a href="/who-we-are/why-greaterheight">Why GreaterHeight</a></li>
+                <li><a href="/who-we-are/our-team">Our Team</a></li>
+                <li><a href="/who-we-are/our-approach">Our Approach</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Insights</div>
+              <ul class="mega-links">
+                <li><a href="/insights/brochure">Brochure</a></li>
+                <li><a href="/insights/webinars">Webinars</a></li>
+                <li><a href="/insights/case-studies">Case Studies</a></li>
+                <li><a href="/insights/faq">FAQ</a></li>
+                <li><a href="/insights/white-papers">White Papers</a></li>
+                <li><a href="/insights/testimonials">Client Reviews &amp; Testimonials</a></li>
+                <li><a href="/insights/blog">Blog &amp; Articles</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Become a Partner</div>
+              <ul class="mega-links">
+                <li><a href="/partners/strategic">Strategic Partnership</a></li>
+                <li><a href="/partners/affiliate">Affiliate Partnership</a></li>
+                <li><a href="/partners/referral">Referral Partnership</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Our Culture</div>
+              <ul class="mega-links">
+                <li><a href="/culture/career-overview">Career Overview</a></li>
+                <li><a href="/culture/career-opportunities">Career Opportunities</a></li>
+                <li><a href="/culture/csr">Corporate Social Responsibility</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2. WHAT WE DO -->
+      <li class="nav-item" id="nav-what-we-do">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-what-we-do">
+          What We Do
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel xxwide" id="panel-what-we-do" role="region" aria-label="What We Do submenu">
+          <div class="mega-inner mega-cols c4">
+            <div>
+              <div class="mega-col-head">Products &amp; Solutions</div>
+              <ul class="mega-links">
+                <li><a href="/products/digitalsiwes">DigitalSIWES</a></li>
+                <li><a href="/products/searchartisans">SearchArtisans</a></li>
+                <li><a href="/products/ecertman">eCertMan</a></li>
+                <li><a href="/products/greaterheight-academy">GreaterHeight Academy</a></li>
+              </ul>
+              <div class="mega-col-subhead">AI &amp; Automation</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/ai/consulting">AI Consulting</a></li>
+                <li><a href="/what-we-do/ai/augmented-development">AI-Augmented Development</a></li>
+                <li><a href="/what-we-do/ai/generative-ai-llms">Generative AI &amp; LLMs</a></li>
+                <li><a href="/what-we-do/ai/agents-automation">AI Agents &amp; Automation</a></li>
+                <li><a href="/what-we-do/ai/production-assurance">Production Assurance</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Product Engineering</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/engineering/custom-software">Custom Software Development</a></li>
+                <li><a href="/what-we-do/engineering/cross-platform">Cross Platform App Development</a></li>
+                <li><a href="/what-we-do/engineering/web-application">Web Application Development</a></li>
+                <li><a href="/what-we-do/engineering/mobile-app">Mobile App Development</a></li>
+                <li><a href="/what-we-do/engineering/mvp">MVP Development</a></li>
+                <li><a href="/what-we-do/engineering/saas">SaaS Development</a></li>
+                <li><a href="/what-we-do/engineering/maintenance">Software App Maintenance</a></li>
+                <li><a href="/what-we-do/engineering/qa">Quality Assurance &amp; Testing</a></li>
+                <li><a href="/what-we-do/engineering/support">Product Maintenance &amp; Support</a></li>
+                <li><a href="/what-we-do/engineering/prototyping">Product Prototyping</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Data &amp; Cloud</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/data/engineering">Data Engineering</a></li>
+                <li><a href="/what-we-do/data/analytics-bi">Analytics &amp; BI</a></li>
+                <li><a href="/what-we-do/data/warehouse">Data Warehouse</a></li>
+                <li><a href="/what-we-do/data/cloud-migration">Cloud Migration</a></li>
+                <li><a href="/what-we-do/data/cloud-devops">Cloud &amp; DevOps</a></li>
+                <li><a href="/what-we-do/data/devops-solutions">DevOps Solutions</a></li>
+                <li><a href="/what-we-do/data/cloud-solutions">Cloud Solutions</a></li>
+              </ul>
+              <div class="mega-col-subhead">Enterprise &amp; Advisory</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/enterprise/legacy-modernisation">Legacy Modernisation</a></li>
+                <li><a href="/what-we-do/enterprise/digital-transformation">Digital Transformation</a></li>
+                <li><a href="/what-we-do/enterprise/consulting">Business / Technology Consulting</a></li>
+                <li><a href="/what-we-do/enterprise/it-strategy">IT Strategy &amp; Consulting</a></li>
+                <li><a href="/what-we-do/enterprise/iot">Internet of Things (IoT)</a></li>
+                <li><a href="/what-we-do/enterprise/blockchain">Blockchain</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Digital Marketing</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/marketing/content">Content Development Services</a></li>
+                <li><a href="/what-we-do/marketing/social-media">Social Media Marketing</a></li>
+                <li><a href="/what-we-do/marketing/reputation">Online Reputation Management</a></li>
+                <li><a href="/what-we-do/marketing/seo">Search Engine Optimisation</a></li>
+                <li><a href="/what-we-do/marketing/ppc">Pay Per Click</a></li>
+                <li><a href="/what-we-do/marketing/link-building">Link Building Service</a></li>
+                <li><a href="/what-we-do/marketing/personal-branding">Personal Branding</a></li>
+              </ul>
+              <div class="mega-col-subhead">Processes</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/processes/methodology">Development Methodology</a></li>
+                <li><a href="/what-we-do/processes/delivery-models">Delivery Models</a></li>
+                <li><a href="/what-we-do/processes/pricing-models">Pricing Models</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3. HOW WE DO IT -->
+      <li class="nav-item">
+        <a href="/how-we-do-it/">How We Do It</a>
+      </li>
+
+      <!-- 4. WHO WE SERVE (current) -->
+      <li class="nav-item" id="nav-who-we-serve">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-serve" aria-current="page">
+          Who We Serve
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel" id="panel-who-we-serve" role="region" aria-label="Who We Serve submenu">
+          <div class="mega-inner">
+            <ul class="mega-links">
+              <li><a href="/who-we-serve/individuals">Individuals</a></li>
+              <li><a href="/who-we-serve/businesses">Businesses</a></li>
+              <li><a href="/who-we-serve/organisations">Organisations</a></li>
+              <li><a href="/who-we-serve/nations">Nations</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5. INDUSTRIES -->
+      <li class="nav-item" id="nav-industries">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-industries">
+          Industries
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel wide" id="panel-industries" role="region" aria-label="Industries submenu">
+          <div class="mega-inner mega-cols c3">
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/agriculture">Agriculture</a></li>
+                <li><a href="/industries/media-entertainment">Media &amp; Entertainment</a></li>
+                <li><a href="/industries/education-elearning">Education &amp; eLearning</a></li>
+                <li><a href="/industries/travel-hospitality">Travel &amp; Hospitality</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/logistics">Logistics</a></li>
+                <li><a href="/industries/financial-technology">Financial Technology</a></li>
+                <li><a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a></li>
+                <li><a href="/industries/healthcare">HealthCare</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/automotive">Automotive</a></li>
+                <li><a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a></li>
+                <li><a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a></li>
+                <li><a href="/industries/real-estate">Real Estate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6. WHERE WE ARE -->
+      <li class="nav-item">
+        <a href="/contact/">Where We Are</a>
+      </li>
+
+      <!-- Search -->
+      <li class="nav-item nav-search-trigger">
+        <button id="search-btn" aria-label="Search site" aria-haspopup="dialog" aria-controls="search-overlay">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+      </li>
+
+      <!-- CTA -->
+      <li class="nav-item nav-cta">
+        <a href="/contact" class="btn btn-primary">Start a Project</a>
+      </li>
+    </ul>
+
+    <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-drawer">
+    <div class="drawer-head">
+      <a href="/" aria-label="GreaterHeight home">
+        <img src="../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
+      </a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="drawer-links" aria-label="Mobile navigation">
+      <div class="drawer-item"><a href="/who-we-are/company-overview">Who We Are</a></div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">What We Do <span>+</span></button>
+        <div class="drawer-sub">
+          <a href="/what-we-do/ai/consulting">AI &amp; Automation</a>
+          <a href="/what-we-do/engineering/custom-software">Product Engineering</a>
+          <a href="/what-we-do/data/cloud-solutions">Data &amp; Cloud</a>
+          <a href="/what-we-do/marketing/seo">Digital Marketing</a>
+        </div>
+      </div>
+      <div class="drawer-item"><a href="/how-we-do-it/">How We Do It</a></div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Who We Serve <span>+</span></button>
+        <div class="drawer-sub open">
+          <a href="/who-we-serve/individuals">Individuals</a>
+          <a href="/who-we-serve/businesses">Businesses</a>
+          <a href="/who-we-serve/organisations">Organisations</a>
+          <a href="/who-we-serve/nations">Nations</a>
+        </div>
+      </div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Industries <span>+</span></button>
+        <div class="drawer-sub">
+          <a href="/industries/financial-technology">Financial Technology</a>
+          <a href="/industries/healthcare">HealthCare</a>
+          <a href="/industries/education-elearning">Education &amp; eLearning</a>
+          <a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a>
+        </div>
+      </div>
+      <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
+      <div class="drawer-cta">
+        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- =============================================
+     BREADCRUMB
+============================================= -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="wrap breadcrumb-inner">
+    <a href="/">Home</a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">Who We Serve</span>
+  </div>
+</nav>
+
+<!-- =============================================
+     PAGE HERO
+============================================= -->
+<section class="page-hero" aria-labelledby="wws-h1">
+  <div class="wrap">
+    <div class="page-hero-inner">
+      <div class="reveal">
+        <div class="page-hero-label">Our Client Segments</div>
+        <h1 id="wws-h1">Technology Built for <em>Your Context</em></h1>
+        <p class="page-hero-lead">The challenges faced by a solo professional are not the challenges faced by a government ministry. We do not apply one solution to every problem. We build around who you are, the scale at which you operate, and the specific outcome you are trying to reach.</p>
+        <div class="page-hero-btns">
+          <a href="/contact" class="btn btn-primary">Find Your Fit</a>
+          <a href="/what-we-do/" class="btn btn-outline-white">See Our Services</a>
+        </div>
+      </div>
+      <div class="segment-pills reveal" style="transition-delay:.15s;">
+        <a href="/who-we-serve/individuals" class="segment-pill">
+          <div class="segment-pill-num">01</div>
+          <div class="segment-pill-name">Individuals</div>
+          <div class="segment-pill-desc">Professionals, founders, and creators building personal authority and digital presence.</div>
+        </a>
+        <a href="/who-we-serve/businesses" class="segment-pill">
+          <div class="segment-pill-num">02</div>
+          <div class="segment-pill-name">Businesses</div>
+          <div class="segment-pill-desc">Startups to enterprises that need software, data systems, and digital capability.</div>
+        </a>
+        <a href="/who-we-serve/organisations" class="segment-pill">
+          <div class="segment-pill-num">03</div>
+          <div class="segment-pill-name">Organisations</div>
+          <div class="segment-pill-desc">NGOs, associations, religious bodies, and educational institutions with mission-driven technology needs.</div>
+        </a>
+        <a href="/who-we-serve/nations" class="segment-pill">
+          <div class="segment-pill-num">04</div>
+          <div class="segment-pill-name">Nations</div>
+          <div class="segment-pill-desc">Government agencies and public-sector bodies building infrastructure and service delivery systems at scale.</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     STAT STRIP
+============================================= -->
+<div class="stat-strip">
+  <div class="wrap">
+    <div class="stat-strip-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num"><span class="counter" data-target="675">0</span>+</div>
+        <div class="stat-label">Client engagements delivered<br>across all four segments</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:.08s;">
+        <div class="stat-num"><span class="counter" data-target="15">0</span>+</div>
+        <div class="stat-label">Years serving clients<br>from Lagos to the world</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:.16s;">
+        <div class="stat-num"><span class="counter" data-target="4">0</span></div>
+        <div class="stat-label">Offices — Nigeria, USA,<br>UK, and Dubai</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:.24s;">
+        <div class="stat-num"><span class="counter" data-target="30">0</span>+</div>
+        <div class="stat-label">Industries served across<br>all client segments</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =============================================
+     SEGMENT: INDIVIDUALS
+============================================= -->
+<section class="segment-block" id="individuals" aria-labelledby="seg-individuals-h2">
+  <div class="wrap">
+    <div class="seg-inner">
+      <div class="seg-img reveal">
+        <div class="arch-frame" style="background:linear-gradient(135deg,var(--cr-pale) 0%,var(--cr-lite) 100%);">
+          <span class="arch-frame-label">Individuals — Visual</span>
+        </div>
+      </div>
+      <div class="seg-content reveal" style="transition-delay:.1s;">
+        <div class="seg-tag">Individuals</div>
+        <h2 id="seg-individuals-h2">For Professionals, Creators &amp; Founders Who Want to Be Found</h2>
+        <p>Your expertise is real. The question is whether the people who need you can find you, understand what you do, and trust you enough to reach out. That is a technology and positioning problem — and it is one we solve.</p>
+        <p>We build personal brand platforms, portfolio sites, authority-building digital systems, and the content infrastructure that keeps you visible over the long term.</p>
+        <div class="seg-features">
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Personal Brand &amp; Digital Authority Platform</div>
+              <div class="seg-feature-desc">Strategy, positioning, brand identity, website, LinkedIn engineering, and SEO — built as one integrated system.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Portfolio &amp; Showcase Websites</div>
+              <div class="seg-feature-desc">Professional websites designed to convert visitors into conversations — not just showcase work.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Content Development &amp; Knowledge Platforms</div>
+              <div class="seg-feature-desc">Blogs, podcast sites, online courses, and knowledge repositories that establish sustained authority in your field.</div>
+            </div>
+          </div>
+        </div>
+        <a href="/who-we-serve/individuals" class="seg-btn">
+          Explore Individual Services
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SEGMENT: BUSINESSES
+============================================= -->
+<section class="segment-block" id="businesses" aria-labelledby="seg-businesses-h2">
+  <div class="wrap">
+    <div class="seg-inner reverse">
+      <div class="seg-img reveal" style="transition-delay:.1s;">
+        <div class="arch-frame" style="background:linear-gradient(135deg,var(--teal-pale) 0%,var(--teal-lite) 100%);">
+          <span class="arch-frame-label">Businesses — Visual</span>
+        </div>
+      </div>
+      <div class="seg-content reveal">
+        <div class="seg-tag">Businesses</div>
+        <h2 id="seg-businesses-h2">For Startups and Enterprises That Need Software That Works</h2>
+        <p>Whether you are pre-revenue and building your MVP, or a mid-market company with legacy systems you need to replace, the question is the same: can you find an engineering team that understands the product, moves at speed, and delivers without drama?</p>
+        <p>We have built products across every stage — from scrappy MVPs that needed to ship in eight weeks to enterprise platforms processing millions of transactions daily.</p>
+        <div class="seg-features">
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Custom Software &amp; Product Engineering</div>
+              <div class="seg-feature-desc">Web, mobile, SaaS, and enterprise applications built from scratch or extended from an existing codebase.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">AI, Data &amp; Cloud</div>
+              <div class="seg-feature-desc">AI integration, data engineering, analytics pipelines, and cloud infrastructure that scales with your business.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Digital Marketing &amp; Growth</div>
+              <div class="seg-feature-desc">SEO, paid media, social media, content, and reputation management — coordinated around measurable outcomes.</div>
+            </div>
+          </div>
+        </div>
+        <a href="/who-we-serve/businesses" class="seg-btn">
+          Explore Business Services
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SEGMENT: ORGANISATIONS
+============================================= -->
+<section class="segment-block" id="organisations" aria-labelledby="seg-organisations-h2">
+  <div class="wrap">
+    <div class="seg-inner">
+      <div class="seg-img reveal">
+        <div class="arch-frame" style="background:linear-gradient(135deg,#F0F7F4 0%,var(--teal-lite) 100%);">
+          <span class="arch-frame-label">Organisations — Visual</span>
+        </div>
+      </div>
+      <div class="seg-content reveal" style="transition-delay:.1s;">
+        <div class="seg-tag">Organisations</div>
+        <h2 id="seg-organisations-h2">For NGOs, Associations &amp; Institutions With Mission-Critical Technology Needs</h2>
+        <p>Organisations — faith communities, educational institutions, professional associations, development bodies, and non-profits — often operate with constrained budgets and a stakeholder base that demands accountability. They need technology that serves their mission, not technology built around a commercial model that does not fit.</p>
+        <p>We build with the organisation's context in mind: governance structures, multi-stakeholder access requirements, compliance obligations, and the need for systems that volunteers and non-technical staff can actually use.</p>
+        <div class="seg-features">
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Member Management &amp; Portals</div>
+              <div class="seg-feature-desc">Membership databases, subscription management, event registration, and member-facing portals built for the scale of your community.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Digital Certification &amp; Compliance Systems</div>
+              <div class="seg-feature-desc">Credential issuance, verification platforms, and compliance record systems — including our own eCertMan product for institutional use.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Institution Websites &amp; Digital Presence</div>
+              <div class="seg-feature-desc">Accessible, content-manageable websites that serve your community and represent your organisation's credibility online.</div>
+            </div>
+          </div>
+        </div>
+        <a href="/who-we-serve/organisations" class="seg-btn">
+          Explore Organisation Services
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     SEGMENT: NATIONS
+============================================= -->
+<section class="segment-block" id="nations" aria-labelledby="seg-nations-h2">
+  <div class="wrap">
+    <div class="seg-inner reverse">
+      <div class="seg-img reveal" style="transition-delay:.1s;">
+        <div class="arch-frame" style="background:linear-gradient(135deg,var(--bg-alt) 0%,var(--border) 100%);">
+          <span class="arch-frame-label">Nations — Visual</span>
+        </div>
+      </div>
+      <div class="seg-content reveal">
+        <div class="seg-tag">Nations</div>
+        <h2 id="seg-nations-h2">For Government Agencies &amp; Public Institutions Delivering Services at National Scale</h2>
+        <p>When the client is a government body, the stakes are higher — systems must be accessible, resilient, auditable, and built to endure changes in administration and policy. A public-sector project is not just a software contract. It is infrastructure.</p>
+        <p>We bring enterprise-grade engineering discipline, deep experience with secure systems, and a track record of delivering on the complexity that government engagements demand — including systems like DigitalSIWES, built for national-scale deployment.</p>
+        <div class="seg-features">
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">e-Government &amp; Citizen Service Platforms</div>
+              <div class="seg-feature-desc">Digital public service delivery systems — registration, verification, permits, and citizen portals designed for high-volume, nationwide use.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">National Database &amp; Registry Systems</div>
+              <div class="seg-feature-desc">Secure, auditable data infrastructure for national registries, student records, asset databases, and government information systems.</div>
+            </div>
+          </div>
+          <div class="seg-feature">
+            <div class="seg-feature-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="seg-feature-body">
+              <div class="seg-feature-name">Regulatory &amp; Compliance Systems</div>
+              <div class="seg-feature-desc">Technology for regulatory bodies to manage licensing, enforcement, reporting, and inter-agency data sharing with full audit trails.</div>
+            </div>
+          </div>
+        </div>
+        <a href="/who-we-serve/nations" class="seg-btn">
+          Explore Nation-Serving Work
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     IBONK PHILOSOPHY
+============================================= -->
+<section class="ibonk-section" aria-labelledby="ibonk-h2">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <span class="section-kicker">The IBONK Framework</span>
+      <h2 id="ibonk-h2">Why These Four Segments</h2>
+      <p>Our four client segments — Individual, Business, Organisation, Nation — form the IBONK framework: a complete map of the human contexts in which technology creates meaningful impact.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="ibonk-grid">
+      <div class="ibonk-text reveal">
+        <h2>Every Human Context. One Practice.</h2>
+        <p>Technology is not neutral. The same software product means something completely different depending on whether it is deployed for a single professional trying to grow their client base, a startup competing in a crowded market, a church trying to serve thousands of members, or a government agency responsible for national infrastructure.</p>
+        <p>The IBONK segmentation ensures that we think about each client's context — their governance, their accountability, their users, their constraints — before we think about their technology. That context shapes architecture, delivery approach, and post-launch support. It is why our work holds across such different scales of client.</p>
+      </div>
+      <div class="ibonk-acronym reveal" style="transition-delay:.12s;">
+        <div class="ibonk-row">
+          <div class="ibonk-letter">I</div>
+          <div class="ibonk-word">
+            <div class="ibonk-word-title">Individual</div>
+            <div class="ibonk-word-desc">Professionals, creatives, and founders building presence and capability as individuals.</div>
+          </div>
+        </div>
+        <div class="ibonk-row">
+          <div class="ibonk-letter">B</div>
+          <div class="ibonk-word">
+            <div class="ibonk-word-title">Business</div>
+            <div class="ibonk-word-desc">Companies from pre-revenue startups to established enterprises with commercial technology needs.</div>
+          </div>
+        </div>
+        <div class="ibonk-row">
+          <div class="ibonk-letter">O</div>
+          <div class="ibonk-word">
+            <div class="ibonk-word-title">Organisation</div>
+            <div class="ibonk-word-desc">Mission-driven bodies — NGOs, institutions, associations — with non-commercial but high-impact technology requirements.</div>
+          </div>
+        </div>
+        <div class="ibonk-row">
+          <div class="ibonk-letter">N</div>
+          <div class="ibonk-word">
+            <div class="ibonk-word-title">Nation</div>
+            <div class="ibonk-word-desc">Government agencies and public institutions responsible for infrastructure and services at the national scale.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     CROSS-SEGMENT CAPABILITIES
+============================================= -->
+<section class="cross-section" aria-labelledby="cross-h2">
+  <div class="wrap">
+    <div class="section-intro reveal">
+      <span class="section-kicker">Across Every Segment</span>
+      <h2 id="cross-h2">Capabilities That Serve All Four</h2>
+      <p>Some of our work is segment-specific. Other capabilities are built to work across all four — the common thread being that they rely on the same engineering disciplines regardless of client type.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="cross-grid">
+      <div class="cross-card reveal">
+        <div class="cross-icon">
+          <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="cross-name">Software Product Development</div>
+        <div class="cross-desc">Web, mobile, and desktop applications built with the same engineering standards whether the client is a solo founder or a government ministry.</div>
+      </div>
+      <div class="cross-card reveal" style="transition-delay:.07s;">
+        <div class="cross-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div class="cross-name">Digital Presence &amp; Marketing</div>
+        <div class="cross-desc">Websites, SEO, social media, and content systems — the same craft applied to an individual's personal site or a multinational's corporate platform.</div>
+      </div>
+      <div class="cross-card reveal" style="transition-delay:.14s;">
+        <div class="cross-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <div class="cross-name">Cloud &amp; Data Infrastructure</div>
+        <div class="cross-desc">Secure, scalable infrastructure that supports everything from a personal knowledge platform to a national database with millions of records.</div>
+      </div>
+      <div class="cross-card reveal" style="transition-delay:.21s;">
+        <div class="cross-icon">
+          <svg viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3M6.343 6.343l-.707-.707M8.464 15.536a5 5 0 117.072 0L14 17l-2-2-2 2-1.536-1.464z"/></svg>
+        </div>
+        <div class="cross-name">AI Integration &amp; Automation</div>
+        <div class="cross-desc">AI-powered features, workflow automation, and LLM integrations — from a content creator's productivity tools to enterprise-grade decision support.</div>
+      </div>
+      <div class="cross-card reveal" style="transition-delay:.28s;">
+        <div class="cross-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
+        </div>
+        <div class="cross-name">Quality Assurance &amp; Testing</div>
+        <div class="cross-desc">The same QA discipline applied regardless of budget or scale — automated tests, acceptance criteria, and structured delivery gates.</div>
+      </div>
+      <div class="cross-card reveal" style="transition-delay:.35s;">
+        <div class="cross-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 0111.82 19a19.5 19.5 0 01-6-6 19.79 19.79 0 01-2.88-7.96A2 2 0 014.86 3h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.9 10.9a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.92.33 1.87.54 2.84.69A2 2 0 0122 17.92z"/></svg>
+        </div>
+        <div class="cross-name">Ongoing Support &amp; Maintenance</div>
+        <div class="cross-desc">SLA-backed post-launch support for every segment — from a solo founder with a personal site to a public-sector client managing national infrastructure.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     CTA
+============================================= -->
+<section class="cta-band" aria-labelledby="cta-h2">
+  <div class="wrap">
+    <h2 id="cta-h2" class="reveal">Which Segment Describes You?</h2>
+    <p class="reveal" style="transition-delay:.1s;">Whether you are an individual building a personal brand, a business scaling its technology, an organisation serving its community, or a government body digitising a public service — we have built for your context before. Let us show you how.</p>
+    <div class="cta-band-btns reveal" style="transition-delay:.2s;">
+      <a href="/contact" class="btn btn-outline-white">Start a Conversation</a>
+      <a href="/insights/case-studies" class="btn btn-outline-white">See Our Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================
+     FOOTER
+============================================= -->
+<footer>
+  <div class="footer-offices">
+    <div class="wrap footer-offices-inner">
+      <div class="footer-office">
+        <div class="footer-office-country">Nigeria</div>
+        <div class="footer-office-phone"><a href="tel:+2349139999300">+234 913 999 9300</a></div>
+      </div>
+      <div class="footer-office">
+        <div class="footer-office-country">USA</div>
+        <div class="footer-office-phone"><a href="tel:+16315330880">+1 631 533 0880</a></div>
+      </div>
+      <div class="footer-office">
+        <div class="footer-office-country">UK</div>
+        <div class="footer-office-phone"><a href="tel:+2349139999300">+234 913 999 9300</a></div>
+      </div>
+      <div class="footer-office">
+        <div class="footer-office-country">Dubai</div>
+        <div class="footer-office-phone"><a href="tel:+2349139999300">+234 913 999 9300</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="wrap footer-grid">
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
+          <img src="../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
+        </a>
+        <div class="footer-brand-tagline">...helping you succeed</div>
+        <p class="footer-brand-p">AI-augmented engineering teams that ship production software. Lagos, Nigeria — serving the world.</p>
+        <address class="footer-brand-addr">
+          17B Debo Aina Street, Omole Phase 1<br>
+          Ikeja, Lagos, Nigeria<br>
+          <a href="tel:+2349139999700">+234 913 999 9700</a><br>
+          <a href="mailto:info@mail.greaterheight.tech">info@mail.greaterheight.tech</a>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-head">Company</div>
+        <ul class="footer-col-list">
+          <li><a href="/who-we-are/company-overview">Who We Are</a></li>
+          <li><a href="/who-we-are/core-purpose-mission">Purpose &amp; Mission</a></li>
+          <li><a href="/who-we-are/our-team">Leadership Team</a></li>
+          <li><a href="/insights/case-studies">Case Studies</a></li>
+          <li><a href="/insights">Insights</a></li>
+          <li><a href="/culture/career-opportunities">Careers</a></li>
+          <li><a href="/insights/testimonials">Clients &amp; Testimonials</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-head">Our Expertise</div>
+        <ul class="footer-col-list">
+          <li><a href="/what-we-do/engineering/custom-software">Software Product Engineering</a></li>
+          <li><a href="/what-we-do/engineering/mobile-app">Application Development</a></li>
+          <li><a href="/what-we-do/engineering/web-application">Web Application Development</a></li>
+          <li><a href="/what-we-do/engineering/mobile-app">Mobile App Development</a></li>
+          <li><a href="/what-we-do/engineering/cross-platform">Cross Platform App Development</a></li>
+          <li><a href="/what-we-do/enterprise/iot">Internet of Things (IoT)</a></li>
+          <li><a href="/what-we-do/enterprise/blockchain">Blockchain</a></li>
+          <li><a href="/what-we-do/enterprise/digital-transformation">Digital Transformation</a></li>
+          <li><a href="/what-we-do/data/engineering">Data Science &amp; Engineering</a></li>
+          <li><a href="/what-we-do/data/cloud-solutions">Cloud Services</a></li>
+          <li><a href="/what-we-do/ai/agents-automation">Artificial Intelligence &amp; ML</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-head">Digital Marketing</div>
+        <ul class="footer-col-list">
+          <li><a href="/what-we-do/marketing/content">Content Development Services</a></li>
+          <li><a href="/what-we-do/marketing/social-media">Social Media Marketing</a></li>
+          <li><a href="/what-we-do/marketing/reputation">Online Reputation Management</a></li>
+          <li><a href="/what-we-do/marketing/seo">Search Engine Optimisation</a></li>
+          <li><a href="/what-we-do/marketing/ppc">Pay-Per-Click (PPC)</a></li>
+          <li><a href="/what-we-do/marketing/link-building">Link Building Service</a></li>
+          <li><a href="/what-we-do/marketing/display">Display Advertising Campaigns</a></li>
+          <li><a href="/what-we-do/marketing/lead-gen">Lead Gen Campaign</a></li>
+          <li><a href="/what-we-do/marketing/cro">Conversion Rate Optimisation</a></li>
+          <li><a href="/what-we-do/marketing/pr">Digital PR</a></li>
+          <li><a href="/what-we-do/marketing/personal-branding">Personal Branding</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-head">Clients We Serve</div>
+        <ul class="footer-col-list">
+          <li><a href="/who-we-serve/businesses">For Startups</a></li>
+          <li><a href="/who-we-serve/businesses">For Enterprises</a></li>
+        </ul>
+        <div class="footer-col-subhead">Industries</div>
+        <ul class="footer-col-list">
+          <li><a href="/industries/financial-technology">Fintech</a></li>
+          <li><a href="/industries/financial-technology">Banking</a></li>
+          <li><a href="/industries/healthcare">Healthcare</a></li>
+          <li><a href="/industries/telecoms">Telecommunications</a></li>
+          <li><a href="/industries/oil-gas">Oil &amp; Gas</a></li>
+          <li><a href="/industries/public-sector">Public Sector</a></li>
+          <li><a href="/industries/retail-ecommerce">E-Commerce</a></li>
+          <li><a href="/industries/education-elearning">Education</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-lower">
+    <div class="wrap footer-lower-inner">
+      <div>
+        <div class="footer-follow-label">Follow Us</div>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://twitter.com/greaterheightng" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/greaterheight-technologies" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@greaterheighttech" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-resources-label">Resources &amp; Other Useful Links</div>
+        <div class="footer-resources-links">
+          <a href="/insights/blog">Blog and Articles</a><span class="sep">|</span>
+          <a href="/insights/events">Events, News &amp; Technologies</a><span class="sep">|</span>
+          <a href="/insights/white-papers">White Papers</a><span class="sep">|</span>
+          <a href="/insights/webinars">Webinar for Learning</a><span class="sep">|</span>
+          <a href="/insights/brochure">Brochure</a><span class="sep">|</span>
+          <a href="/insights/videos">Videos Articles for Learning</a><br>
+          <a href="/partners">Become a Partner</a><span class="sep">|</span>
+          <a href="/why-nigeria">Why Nigeria?</a><span class="sep">|</span>
+          <a href="/insights/faq">FAQs</a><span class="sep">|</span>
+          <a href="/legal/disclaimer">Disclaimer</a><span class="sep">|</span>
+          <a href="/legal/gdpr">GDPR Compliance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="wrap footer-copyright-inner">
+      <span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span>
+      <div class="footer-copyright-policy">
+        <a href="/legal/privacy-policy">Privacy Policy</a>
+        <a href="/legal/terms">Terms of Use</a>
+        <a href="/legal/disclaimer">Disclaimer</a>
+        <a href="/legal/cookies">Cookie Policy</a>
+      </div>
+      <span>Developed by <a href="/">GreaterHeight Technologies</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Search overlay -->
+<div id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
+  <div class="search-modal">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="search" placeholder="Search services, solutions, pages..." autocomplete="off" spellcheck="false" aria-label="Search">
+      <button class="search-esc-badge" aria-label="Close search">esc</button>
+    </div>
+    <div class="search-results" role="listbox" aria-live="polite"></div>
+  </div>
+</div>
+
+<!-- WhatsApp float -->
+<a href="https://wa.me/2349139999300" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- Cookie banner -->
+<div id="cookie-banner" role="region" aria-label="Cookie consent">
+  <div class="cookie-msg">
+    We use cookies to improve your experience and analyse site usage. Read our <a href="/legal/cookies">Cookie Policy</a> and <a href="/legal/privacy-policy">Privacy Policy</a>.
+  </div>
+  <div class="cookie-btns">
+    <button id="cookie-accept">Accept All</button>
+    <button id="cookie-decline">Decline</button>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+var preloader=document.getElementById('preloader');
+function hidePreloader(){if(preloader) preloader.classList.add('hidden');}
+if(sessionStorage.getItem('gh_visited')||window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+  hidePreloader();
+}else{setTimeout(hidePreloader,1100);sessionStorage.setItem('gh_visited','1');}
+
+var prog=document.getElementById('scroll-progress');
+var backTop=document.getElementById('back-top');
+function onScroll(){
+  var total=document.documentElement.scrollHeight-window.innerHeight;
+  var pct=total>0?(window.scrollY/total)*100:0;
+  if(prog) prog.style.width=pct+'%';
+  if(backTop){
+    if(window.scrollY>400) backTop.classList.add('visible');
+    else backTop.classList.remove('visible');
+  }
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+if(backTop) backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+var banner=document.getElementById('cookie-banner');
+function cookieDecision(a){if(banner) banner.style.display='none';localStorage.setItem('gh_cookies',a?'accepted':'declined');}
+if(!localStorage.getItem('gh_cookies')&&banner) setTimeout(function(){banner.classList.add('visible');},2500);
+var el=document.getElementById('cookie-accept');var dl=document.getElementById('cookie-decline');
+if(el) el.addEventListener('click',function(){cookieDecision(true);});
+if(dl) dl.addEventListener('click',function(){cookieDecision(false);});
+
+var navItems=document.querySelectorAll('.nav-item[id]');
+function closeAllPanels(){
+  navItems.forEach(function(ni){
+    ni.setAttribute('aria-expanded','false');
+    var b=ni.querySelector('button');if(b) b.setAttribute('aria-expanded','false');
+  });
+}
+navItems.forEach(function(item){
+  var btn=item.querySelector('button');var panel=item.querySelector('.mega-panel');
+  if(!btn||!panel) return;
+  function clampAndOpen(){
+    var btnRect=btn.getBoundingClientRect();var btnCenter=btnRect.left+btnRect.width/2;
+    var panelMin=parseFloat(getComputedStyle(panel).minWidth)||280;
+    var vw=document.documentElement.clientWidth;var margin=16;
+    var leftEdge=btnCenter-panelMin/2;var rightEdge=btnCenter+panelMin/2;var shift=0;
+    if(leftEdge<margin) shift=margin-leftEdge;
+    else if(rightEdge>vw-margin) shift=(vw-margin)-rightEdge;
+    panel.style.transform=shift?'translateX(calc(-50% + '+Math.round(shift)+'px)) translateY(0)':'';
+    item.setAttribute('aria-expanded','true');btn.setAttribute('aria-expanded','true');
+  }
+  function close(){item.setAttribute('aria-expanded','false');btn.setAttribute('aria-expanded','false');panel.style.transform='';}
+  item.addEventListener('mouseenter',clampAndOpen);item.addEventListener('mouseleave',close);
+  btn.addEventListener('click',function(){var expanded=btn.getAttribute('aria-expanded')==='true';closeAllPanels();if(!expanded) clampAndOpen();});
+  btn.addEventListener('keydown',function(e){if(e.key==='Escape'){close();btn.focus();}});
+  panel.addEventListener('keydown',function(e){if(e.key==='Escape'){close();btn.focus();}});
+});
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-item')) closeAllPanels();});
+
+var hamBtn=document.getElementById('ham-btn');var mobileNav=document.getElementById('mobile-nav');var drawerClose=document.getElementById('drawer-close');
+function openMobile(){mobileNav.classList.add('open');hamBtn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+function closeMobile(){mobileNav.classList.remove('open');hamBtn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+if(hamBtn) hamBtn.addEventListener('click',openMobile);
+if(drawerClose) drawerClose.addEventListener('click',closeMobile);
+if(mobileNav) mobileNav.addEventListener('click',function(e){if(e.target===mobileNav) closeMobile();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobileNav&&mobileNav.classList.contains('open')) closeMobile();});
+window.toggleDrawer=function(btn){
+  var sub=btn.nextElementSibling;var isOpen=sub.classList.contains('open');
+  document.querySelectorAll('.drawer-sub.open').forEach(function(s){s.classList.remove('open');});
+  if(!isOpen) sub.classList.add('open');
+};
+
+if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+  document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
+}else{
+  var ro=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+}
+
+/* Counters */
+var counters=document.querySelectorAll('.counter');
+var countObserver=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(!entry.isIntersecting) return;
+    var el=entry.target;var target=parseInt(el.getAttribute('data-target'),10);var start=0;
+    var duration=1600;var step=Math.ceil(target/60);var timer=setInterval(function(){
+      start+=step;if(start>=target){el.textContent=target;clearInterval(timer);}else{el.textContent=start;}
+    },duration/60);
+    countObserver.unobserve(el);
+  });
+},{threshold:0.5});
+counters.forEach(function(c){countObserver.observe(c);});
+
+var searchOverlay=document.getElementById('search-overlay');
+var searchBtn=document.getElementById('search-btn');
+var searchInput=searchOverlay?searchOverlay.querySelector('input'):null;
+var searchResults=searchOverlay?searchOverlay.querySelector('.search-results'):null;
+var searchEsc=searchOverlay?searchOverlay.querySelector('.search-esc-badge'):null;
+var SEARCH_INDEX=[
+  {title:'For Individuals',url:'/who-we-serve/individuals',desc:'Personal brand and digital presence'},
+  {title:'For Businesses',url:'/who-we-serve/businesses',desc:'Software, data, cloud, and digital marketing'},
+  {title:'For Organisations',url:'/who-we-serve/organisations',desc:'Member portals, certification, institutional websites'},
+  {title:'For Nations',url:'/who-we-serve/nations',desc:'e-Government, national databases, public infrastructure'},
+  {title:'What We Do',url:'/what-we-do/',desc:'Full service catalogue'},
+  {title:'How We Do It',url:'/how-we-do-it/',desc:'Delivery methodology and engagement models'},
+  {title:'Contact Us',url:'/contact/',desc:'Start a project conversation'}
+];
+function openSearch(){if(!searchOverlay) return;searchOverlay.classList.add('open');searchOverlay.setAttribute('aria-hidden','false');if(searchInput){searchInput.value='';searchInput.focus();}if(searchResults) searchResults.innerHTML='';}
+function closeSearch(){if(!searchOverlay) return;searchOverlay.classList.remove('open');searchOverlay.setAttribute('aria-hidden','true');}
+if(searchBtn) searchBtn.addEventListener('click',openSearch);
+if(searchEsc) searchEsc.addEventListener('click',closeSearch);
+if(searchOverlay) searchOverlay.addEventListener('click',function(e){if(e.target===searchOverlay) closeSearch();});
+document.addEventListener('keydown',function(e){
+  if((e.key==='/'||((e.ctrlKey||e.metaKey)&&e.key==='k'))&&!searchOverlay.classList.contains('open')){e.preventDefault();openSearch();}
+  if(e.key==='Escape'&&searchOverlay&&searchOverlay.classList.contains('open')) closeSearch();
+});
+if(searchInput){
+  searchInput.addEventListener('input',function(){
+    var q=searchInput.value.trim().toLowerCase();
+    if(!q){if(searchResults) searchResults.innerHTML='';return;}
+    var matches=SEARCH_INDEX.filter(function(item){return item.title.toLowerCase().includes(q)||item.desc.toLowerCase().includes(q);}).slice(0,8);
+    if(searchResults){
+      searchResults.innerHTML=matches.length?matches.map(function(m){
+        return '<a href="'+m.url+'" role="option" style="display:block;padding:10px 12px;border-radius:6px;margin-bottom:2px;color:var(--txt);font-size:.88rem;transition:background .15s;" onmouseover="this.style.background=\'var(--cr-lite)\'" onmouseout="this.style.background=\'\'"><strong>'+m.title+'</strong><br><span style="color:var(--txt-3);font-size:.8rem;">'+m.desc+'</span></a>';
+      }).join(''):'<p style="padding:12px;color:var(--txt-3);font-size:.88rem;">No results found for "'+q+'"</p>';
+    }
+  });
+}
+})();
+</script>
+</body>
+</html>
