@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Core Purpose &amp; Mission | GreaterHeight Technologies</title>
-  <meta name="description" content="GreaterHeight Technologies exists to help individuals, businesses, organisations, and nations succeed through technology. Discover our mission, vision, and the conviction that drives every engagement.">
+  <title>Current Openings | GreaterHeight Technologies</title>
+  <meta name="description" content="Browse open positions at GreaterHeight Technologies. We hire across AI & Automation, Product Engineering, Data & Cloud, Digital Marketing, and Enterprise Advisory.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://greaterheight.tech/who-we-are/core-purpose-mission/">
+  <link rel="canonical" href="https://greaterheight.tech/who-we-are/current-openings/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://greaterheight.tech/who-we-are/core-purpose-mission/">
-  <meta property="og:title" content="Core Purpose &amp; Mission | GreaterHeight Technologies">
-  <meta property="og:description" content="We exist to help individuals, businesses, organisations, and nations achieve technology-driven success. This is our purpose — not a tagline, but an operating mandate.">
-  <meta property="og:image" content="https://greaterheight.tech/assets/images/og/og-core-purpose-mission.jpg">
+  <meta property="og:url" content="https://greaterheight.tech/who-we-are/current-openings/">
+  <meta property="og:title" content="Current Openings | GreaterHeight Technologies">
+  <meta property="og:description" content="View current job openings at GreaterHeight Technologies. Roles in AI, software engineering, data, digital marketing, and IT consulting across Lagos, London, New York, and Dubai.">
+  <meta property="og:image" content="https://greaterheight.tech/assets/images/og/og-current-openings.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
@@ -37,20 +37,30 @@
         "url": "https://greaterheight.tech",
         "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
         "foundingDate": "2010",
-        "description": "GreaterHeight Technologies helps individuals, businesses, organisations, and nations achieve technology-driven success through software engineering, cloud, AI, data, and digital transformation.",
+        "foundingLocation": "Lagos, Nigeria",
+        "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
           "addressLocality": "Lagos",
           "addressCountry": "NG"
-        }
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+234-913-999-9700",
+          "contactType": "customer service",
+          "email": "info@mail.greaterheight.tech"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/greaterheight-technologies"
+        ]
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greaterheight.tech/" },
           { "@type": "ListItem", "position": 2, "name": "Who We Are", "item": "https://greaterheight.tech/who-we-are/" },
-          { "@type": "ListItem", "position": 3, "name": "Core Purpose & Mission", "item": "https://greaterheight.tech/who-we-are/core-purpose-mission/" }
+          { "@type": "ListItem", "position": 3, "name": "Current Openings", "item": "https://greaterheight.tech/who-we-are/current-openings/" }
         ]
       }
     ]
@@ -93,20 +103,25 @@
       --r:           12px;
       color-scheme:  light;
 
-      --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px;
-      --sp-5:24px; --sp-6:32px; --sp-7:48px; --sp-8:64px;
-      --sp-9:96px; --sp-10:128px;
+      /* Spacing scale */
+      --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+      --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
+      --sp-9: 96px; --sp-10: 128px;
 
-      --ts-xs:.75rem; --ts-sm:.875rem; --ts-base:1rem;
-      --ts-md:1.125rem; --ts-lg:1.25rem; --ts-xl:1.5rem;
-      --ts-2xl:1.875rem; --ts-3xl:2.25rem; --ts-4xl:3rem;
+      /* Type scale */
+      --ts-xs: 0.75rem; --ts-sm: 0.875rem; --ts-base: 1rem;
+      --ts-md: 1.125rem; --ts-lg: 1.25rem; --ts-xl: 1.5rem;
+      --ts-2xl: 1.875rem; --ts-3xl: 2.25rem; --ts-4xl: 3rem;
+      --ts-5xl: 3.75rem;
 
-      --sh-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
-      --sh-md:0 4px 16px rgba(0,0,0,.07),0 2px 6px rgba(0,0,0,.04);
-      --sh-lg:0 12px 40px rgba(0,0,0,.09),0 4px 12px rgba(0,0,0,.05);
+      /* Shadows */
+      --sh-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --sh-md: 0 4px 16px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.04);
+      --sh-lg: 0 12px 40px rgba(0,0,0,.09), 0 4px 12px rgba(0,0,0,.05);
 
-      --ease-out:cubic-bezier(.16,1,.3,1);
-      --dur-fast:220ms; --dur-med:380ms; --dur-slow:600ms;
+      /* Motion */
+      --ease-out: cubic-bezier(.16,1,.3,1);
+      --dur-fast: 220ms; --dur-med: 380ms; --dur-slow: 600ms;
     }
 
     /* ============================================================
@@ -127,6 +142,7 @@
     ::selection { background: var(--cr-mid); color: var(--white); }
     :focus-visible { outline: 2px solid var(--teal-glow); outline-offset: 3px; }
 
+    /* Skip link */
     .skip-link {
       position: absolute; top: -40px; left: 16px; padding: 8px 16px;
       background: var(--cr); color: var(--white); border-radius: 0 0 8px 8px;
@@ -135,6 +151,7 @@
     }
     .skip-link:focus { top: 0; }
 
+    /* Scroll progress bar */
     #scroll-progress {
       position: fixed; top: 0; left: 0; height: 3px; width: 0%;
       background: var(--grad-rule); z-index: 9998;
@@ -160,7 +177,9 @@
       from { opacity: .5; transform: scale(.92); }
       to   { opacity: 1;  transform: scale(1); }
     }
-    @media (prefers-reduced-motion: reduce) { .preloader-mark { animation: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      .preloader-mark { animation: none; }
+    }
 
     /* ============================================================
        HEADER & MEGA MENU
@@ -180,6 +199,7 @@
     .header-logo { display: flex; align-items: center; flex-shrink: 0; }
     .logo-img { height: 38px; width: auto; }
 
+    /* Primary nav */
     .primary-nav { display: flex; align-items: center; gap: 0; margin-left: auto; }
     .nav-item { position: relative; }
     .nav-link {
@@ -194,11 +214,11 @@
     .nav-link[aria-current="page"] { color: var(--cr); }
     .nav-chevron {
       width: 14px; height: 14px; transition: transform var(--dur-fast);
-      stroke: currentColor; fill: none; stroke-width: 2.5;
-      stroke-linecap: round; stroke-linejoin: round;
+      stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
     }
     .nav-link[aria-expanded="true"] .nav-chevron { transform: rotate(180deg); }
 
+    /* Mega panel */
     .mega-panel {
       position: absolute; top: calc(100% + 8px); left: 50%;
       transform: translateX(-50%) translateY(-8px);
@@ -209,8 +229,11 @@
       min-width: 520px;
     }
     .mega-panel.xxwide { min-width: 880px; }
-    .mega-panel.wide   { min-width: 640px; }
-    .mega-panel.open   { opacity: 1; visibility: visible; pointer-events: all; transform: translateX(-50%) translateY(0); }
+    .mega-panel.wide { min-width: 640px; }
+    .mega-panel.open {
+      opacity: 1; visibility: visible; pointer-events: all;
+      transform: translateX(-50%) translateY(0);
+    }
     .mega-grid { display: grid; gap: var(--sp-4); }
     .mega-grid.cols-4 { grid-template-columns: repeat(4,1fr); }
     .mega-grid.cols-3 { grid-template-columns: repeat(3,1fr); }
@@ -228,8 +251,11 @@
     .mega-link:hover { color: var(--cr); background: var(--cr-pale); }
     .mega-link strong { display: block; color: var(--txt); font-weight: 600; font-size: var(--ts-sm); }
     .mega-link span { font-size: var(--ts-xs); color: var(--txt-3); }
+
+    /* Direct nav links */
     .nav-direct { text-decoration: none; }
 
+    /* Header actions */
     .header-actions { display: flex; align-items: center; gap: var(--sp-3); flex-shrink: 0; }
     .btn-search {
       width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
@@ -246,12 +272,17 @@
     }
     .btn-cta:hover { background: var(--cr-mid); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(140,13,12,.3); }
 
+    /* Mobile toggle */
     .mobile-toggle {
       display: none; flex-direction: column; gap: 5px;
       background: none; border: none; cursor: pointer; padding: 6px;
     }
-    .mobile-toggle span { display: block; width: 24px; height: 2px; background: var(--txt); border-radius: 2px; }
+    .mobile-toggle span {
+      display: block; width: 24px; height: 2px; background: var(--txt);
+      border-radius: 2px; transition: transform var(--dur-fast), opacity var(--dur-fast);
+    }
 
+    /* Mobile nav overlay */
     .mobile-nav {
       display: none; position: fixed; inset: 72px 0 0;
       background: var(--white); overflow-y: auto; z-index: 850;
@@ -273,7 +304,9 @@
     /* ============================================================
        BREADCRUMB
     ============================================================ */
-    .breadcrumb-bar { background: var(--teal-pale); border-bottom: 1px solid var(--teal-lite); }
+    .breadcrumb-bar {
+      background: var(--teal-pale); border-bottom: 1px solid var(--teal-lite);
+    }
     .breadcrumb-inner {
       max-width: 1400px; margin: 0 auto; padding: 10px var(--sp-6);
       display: flex; align-items: center; gap: 6px;
@@ -285,57 +318,78 @@
     .breadcrumb-inner span[aria-current] { color: var(--txt-2); }
 
     /* ============================================================
-       PAGE HERO — purpose statement as centrepiece
+       PAGE HERO — asymmetric editorial layout
     ============================================================ */
     .page-hero {
-      background: var(--bg-dark); padding: var(--sp-10) 0 var(--sp-9);
-      position: relative; overflow: hidden; text-align: center;
+      background: var(--bg-dark);
+      padding: var(--sp-10) 0 var(--sp-9);
+      position: relative; overflow: hidden;
     }
     .page-hero::before {
       content: '';
       position: absolute; inset: 0;
-      background:
-        radial-gradient(ellipse 60% 70% at 50% 0%, rgba(30,180,150,.1) 0%, transparent 55%),
-        radial-gradient(ellipse 45% 55% at 20% 80%, rgba(140,13,12,.12) 0%, transparent 50%),
-        radial-gradient(ellipse 50% 60% at 80% 70%, rgba(30,180,150,.07) 0%, transparent 55%);
+      background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(30,180,150,.12) 0%, transparent 60%),
+                  radial-gradient(ellipse 40% 60% at 15% 30%, rgba(140,13,12,.15) 0%, transparent 55%);
       pointer-events: none;
     }
     .page-hero-inner {
-      max-width: 900px; margin: 0 auto; padding: 0 var(--sp-6);
+      max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
+      display: grid; grid-template-columns: 1fr 420px; gap: var(--sp-8); align-items: center;
       position: relative; z-index: 1;
     }
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
       font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-5);
-      justify-content: center;
+      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-4);
     }
-    .hero-eyebrow::before, .hero-eyebrow::after {
+    .hero-eyebrow::before {
       content: ''; display: block; width: 24px; height: 2px; background: var(--teal-glow);
     }
     .page-hero h1 {
-      font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 300;
-      color: var(--white); line-height: 1.1; letter-spacing: -.025em;
-      margin-bottom: var(--sp-6);
+      font-size: clamp(2.4rem, 5vw, 3.5rem); font-weight: 300;
+      color: var(--white); line-height: 1.15; letter-spacing: -.02em;
+      margin-bottom: var(--sp-5);
     }
-    .page-hero h1 strong { font-weight: 700; }
-    .page-hero h1 em {
-      font-style: normal; color: var(--mint);
-    }
+    .page-hero h1 strong { font-weight: 700; color: var(--mint); }
     .page-hero-lead {
-      font-size: var(--ts-lg); color: rgba(255,255,255,.65);
-      line-height: 1.75; max-width: 660px; margin: 0 auto var(--sp-7);
+      font-size: var(--ts-md); color: rgba(255,255,255,.7);
+      line-height: 1.7; max-width: 560px; margin-bottom: var(--sp-6);
     }
-    .hero-tagline-block {
-      display: inline-block;
-      border: 1px solid rgba(30,180,150,.3);
-      background: rgba(30,180,150,.07);
-      border-radius: 12px; padding: var(--sp-4) var(--sp-6);
-      font-size: var(--ts-xl); font-weight: 300; color: var(--white);
-      letter-spacing: .04em;
+    .hero-meta {
+      display: flex; gap: var(--sp-6); flex-wrap: wrap;
     }
-    .hero-tagline-block em {
-      font-style: normal; color: var(--teal-glow); font-weight: 700;
+    .hero-meta-item { }
+    .hero-meta-value {
+      display: block; font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 700; color: var(--white); line-height: 1;
+    }
+    .hero-meta-value em { font-style: normal; color: var(--teal-glow); }
+    .hero-meta-label {
+      display: block; font-size: var(--ts-xs); color: rgba(255,255,255,.5);
+      text-transform: uppercase; letter-spacing: .08em; margin-top: 4px;
+    }
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card-stack {
+      display: flex; flex-direction: column; gap: var(--sp-4);
+    }
+    .hero-fact-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 16px; padding: var(--sp-5);
+      backdrop-filter: blur(8px);
+    }
+    .hero-fact-card .fact-label {
+      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-2);
+    }
+    .hero-fact-card p {
+      font-size: var(--ts-sm); color: rgba(255,255,255,.75); line-height: 1.6;
+    }
+    .hero-fact-card .fact-year {
+      font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1;
+      margin-bottom: 4px;
     }
 
     /* ============================================================
@@ -346,23 +400,26 @@
     .section-dark { background: var(--bg-dark); color: var(--white); }
     .section-teal { background: var(--teal-pale); }
     .container { max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6); }
-    .container-narrow { max-width: 860px; margin: 0 auto; padding: 0 var(--sp-6); }
     .section-label {
       display: inline-flex; align-items: center; gap: 8px;
       font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
       text-transform: uppercase; color: var(--cr); margin-bottom: var(--sp-4);
     }
-    .section-label::before { content: ''; display: block; width: 20px; height: 2px; background: var(--grad-rule); }
+    .section-label::before {
+      content: ''; display: block; width: 20px; height: 2px;
+      background: var(--grad-rule);
+    }
     .section-title {
       font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700;
-      color: var(--txt); line-height: 1.2; letter-spacing: -.02em; margin-bottom: var(--sp-4);
+      color: var(--txt); line-height: 1.2; letter-spacing: -.02em;
+      margin-bottom: var(--sp-4);
     }
     .section-title.light { color: var(--white); }
     .section-lead {
       font-size: var(--ts-md); color: var(--txt-2); line-height: 1.7;
       max-width: 640px; margin-bottom: var(--sp-7);
     }
-    .section-lead.light { color: rgba(255,255,255,.65); }
+    .section-lead.light { color: rgba(255,255,255,.7); }
     .rule-line {
       width: 56px; height: 3px; border-radius: 2px;
       background: var(--grad-rule); margin-bottom: var(--sp-5);
@@ -374,201 +431,176 @@
     @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
 
     /* ============================================================
-       PURPOSE STATEMENT — full-width editorial block
+       STORY — full-width editorial split
     ============================================================ */
-    .purpose-block {
-      padding: var(--sp-9) 0;
+    .story-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9);
+      align-items: center;
     }
-    .purpose-layout {
-      display: grid; grid-template-columns: 1fr 2fr; gap: var(--sp-8); align-items: start;
-    }
-    .purpose-aside {
-      position: sticky; top: 100px;
-    }
-    .purpose-aside-label {
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--cr); margin-bottom: var(--sp-3);
-    }
-    .purpose-aside-title {
-      font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700;
-      color: var(--txt); line-height: 1.25; margin-bottom: var(--sp-4);
-    }
-    .purpose-aside-sub {
-      font-size: var(--ts-sm); color: var(--txt-3); line-height: 1.6;
-    }
-    .purpose-content { }
-    .purpose-statement {
-      font-size: clamp(1.4rem, 2.5vw, 1.85rem); font-weight: 300;
-      color: var(--txt); line-height: 1.55; letter-spacing: -.01em;
-      margin-bottom: var(--sp-7);
-      padding-left: var(--sp-6);
-      border-left: 4px solid var(--cr);
-    }
-    .purpose-statement strong { font-weight: 700; color: var(--cr); }
-    .purpose-body p {
-      font-size: var(--ts-base); color: var(--txt-2); line-height: 1.85;
-      margin-bottom: var(--sp-5);
-    }
-    .purpose-body p:last-child { margin-bottom: 0; }
-    .purpose-body strong { color: var(--txt); font-weight: 700; }
-
-    /* ============================================================
-       MISSION / VISION — paired cards
-    ============================================================ */
-    .mv-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5);
-    }
-    .mv-card {
-      border-radius: 20px; padding: var(--sp-7);
-      position: relative; overflow: hidden;
-    }
-    .mv-card.mission {
-      background: var(--cr); color: var(--white);
-    }
-    .mv-card.vision {
-      background: var(--bg-dark); color: var(--white);
-      border: 1px solid rgba(30,180,150,.2);
-    }
-    .mv-card::before {
-      content: ''; position: absolute; top: -40px; right: -40px;
-      width: 200px; height: 200px; border-radius: 50%;
-      opacity: .1; pointer-events: none;
-    }
-    .mv-card.mission::before { background: var(--white); }
-    .mv-card.vision::before  { background: var(--teal-glow); }
-    .mv-card-tag {
-      display: inline-block; font-size: var(--ts-xs); font-weight: 700;
-      letter-spacing: .1em; text-transform: uppercase;
-      margin-bottom: var(--sp-4); opacity: .7;
-    }
-    .mv-card h2 {
-      font-size: clamp(1.3rem, 2.2vw, 1.7rem); font-weight: 700;
-      line-height: 1.3; margin-bottom: var(--sp-4);
-    }
-    .mv-card p {
-      font-size: var(--ts-sm); line-height: 1.75; opacity: .8;
-    }
-
-    /* ============================================================
-       IBONK — who we serve at four levels
-    ============================================================ */
-    .ibonk-intro {
-      text-align: center; margin-bottom: var(--sp-8);
-    }
-    .ibonk-intro .section-label { justify-content: center; }
-    .ibonk-intro .rule-line { margin: 0 auto var(--sp-5); }
-    .ibonk-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4);
-    }
-    .ibonk-card {
+    .story-image {
       border-radius: 20px; overflow: hidden;
-      border: 1px solid var(--border); background: var(--bg-card);
-      transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med);
+      box-shadow: var(--sh-lg);
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--forest) 0%, var(--teal-mid) 60%, var(--teal-glow) 100%);
+      position: relative;
     }
-    .ibonk-card:hover {
-      box-shadow: var(--sh-lg); transform: translateY(-6px);
-      border-color: var(--cr-mid);
+    .story-image img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
-    .ibonk-card-top {
-      padding: var(--sp-5) var(--sp-5) var(--sp-4);
-      background: linear-gradient(135deg, var(--cr) 0%, var(--cr-mid) 100%);
+    .story-image .img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--forest-deep) 0%, transparent 60%);
+      opacity: .45;
     }
-    .ibonk-card:nth-child(2) .ibonk-card-top {
-      background: linear-gradient(135deg, #0D3D28 0%, #1A7A5E 100%);
+    .story-badge {
+      position: absolute; bottom: 24px; left: 24px;
+      background: rgba(0,48,32,.9); border: 1px solid rgba(30,180,150,.3);
+      border-radius: 12px; padding: 16px 20px;
+      backdrop-filter: blur(8px);
     }
-    .ibonk-card:nth-child(3) .ibonk-card-top {
-      background: linear-gradient(135deg, #003020 0%, #005A3C 100%);
+    .story-badge .badge-num {
+      font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1;
     }
-    .ibonk-card:nth-child(4) .ibonk-card-top {
-      background: linear-gradient(135deg, #6B0F1A 0%, #8C0D0C 100%);
+    .story-badge .badge-label {
+      font-size: var(--ts-xs); color: var(--mint); text-transform: uppercase;
+      letter-spacing: .07em; margin-top: 3px;
     }
-    .ibonk-letter {
-      font-size: 3.5rem; font-weight: 700; color: var(--white);
-      line-height: 1; opacity: .25; margin-bottom: var(--sp-2);
-    }
-    .ibonk-card-label {
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; color: rgba(255,255,255,.6);
-    }
-    .ibonk-card-name {
-      font-size: var(--ts-xl); font-weight: 700; color: var(--white); line-height: 1.2;
-    }
-    .ibonk-card-body {
-      padding: var(--sp-5);
-    }
-    .ibonk-card-body p {
-      font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.7;
+    .story-content { }
+    .story-content p {
+      font-size: var(--ts-base); color: var(--txt-2); line-height: 1.8;
       margin-bottom: var(--sp-4);
     }
-    .ibonk-card-link {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-size: var(--ts-xs); font-weight: 700; color: var(--cr);
-      text-transform: uppercase; letter-spacing: .05em;
-    }
-    .ibonk-card-link:hover { text-decoration: underline; }
+    .story-content p:last-of-type { margin-bottom: 0; }
+    .story-content strong { color: var(--txt); font-weight: 700; }
 
     /* ============================================================
-       COMMITMENTS — what purpose demands in practice
+       MILESTONES TIMELINE
     ============================================================ */
-    .commitment-list {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5);
+    .timeline-section { }
+    .timeline {
+      position: relative; padding-left: 32px; margin-top: var(--sp-7);
     }
-    .commitment-item {
-      padding: var(--sp-6); border-radius: 16px;
-      border: 1px solid var(--border); background: var(--bg-card);
+    .timeline::before {
+      content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px;
+      width: 2px; background: linear-gradient(to bottom, var(--cr), var(--teal-glow));
+      border-radius: 2px;
     }
-    .commitment-number {
-      font-size: 3rem; font-weight: 700;
-      color: var(--cr); opacity: .18; line-height: 1;
-      margin-bottom: var(--sp-3);
+    .timeline-item { position: relative; margin-bottom: var(--sp-7); }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute; left: -32px; top: 6px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--white); border: 3px solid var(--cr);
+      transition: background var(--dur-fast), border-color var(--dur-fast);
     }
-    .commitment-title {
+    .timeline-item:hover .timeline-dot { background: var(--cr); }
+    .timeline-year {
+      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--cr); margin-bottom: 6px;
+    }
+    .timeline-title {
+      font-size: var(--ts-lg); font-weight: 700; color: var(--txt);
+      margin-bottom: 6px; line-height: 1.3;
+    }
+    .timeline-desc {
+      font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.7;
+    }
+
+    /* ============================================================
+       VALUES STRIP — horizontal scroll at mobile
+    ============================================================ */
+    .values-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5);
+    }
+    .value-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 16px; padding: var(--sp-6);
+      transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med);
+    }
+    .value-card:hover {
+      box-shadow: var(--sh-lg); transform: translateY(-4px);
+      border-color: var(--teal-glow);
+    }
+    .value-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: var(--teal-pale); display: flex; align-items: center;
+      justify-content: center; margin-bottom: var(--sp-4);
+    }
+    .value-icon svg { width: 24px; height: 24px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .value-card h3 {
       font-size: var(--ts-base); font-weight: 700; color: var(--txt);
       margin-bottom: var(--sp-2);
     }
-    .commitment-desc {
-      font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.7;
+    .value-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+
+    /* ============================================================
+       REACH — global presence
+    ============================================================ */
+    .reach-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-5);
+      margin-top: var(--sp-6);
+    }
+    .reach-card {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 16px; padding: var(--sp-6);
+      transition: border-color var(--dur-med), background var(--dur-med);
+    }
+    .reach-card:hover {
+      border-color: rgba(30,180,150,.4);
+      background: rgba(255,255,255,.08);
+    }
+    .reach-card.hq {
+      border-color: rgba(140,13,12,.5);
+      background: rgba(140,13,12,.08);
+    }
+    .reach-flag {
+      font-size: 2rem; margin-bottom: var(--sp-3); line-height: 1;
+    }
+    .reach-country {
+      font-size: var(--ts-sm); font-weight: 700; color: var(--white);
+      margin-bottom: 4px; text-transform: uppercase; letter-spacing: .05em;
+    }
+    .reach-detail {
+      font-size: var(--ts-xs); color: rgba(255,255,255,.55); line-height: 1.6;
+    }
+    .hq-badge {
+      display: inline-block; font-size: 10px; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      background: var(--cr); color: var(--white);
+      padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle;
     }
 
     /* ============================================================
-       FOUNDING CONVICTION — editorial pull-quote
+       SECTOR FOCUS
     ============================================================ */
-    .conviction-section {
-      background: var(--cr); padding: var(--sp-9) 0;
-      position: relative; overflow: hidden;
+    .sector-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-4);
     }
-    .conviction-section::before {
-      content: '"';
-      position: absolute; top: -40px; left: 32px;
-      font-size: 20rem; font-weight: 700; color: rgba(255,255,255,.05);
-      line-height: 1; pointer-events: none; font-family: Georgia, serif;
+    .sector-item {
+      display: flex; align-items: center; gap: var(--sp-3);
+      padding: var(--sp-4); border-radius: 12px;
+      border: 1px solid var(--border); background: var(--bg-card);
+      transition: border-color var(--dur-fast), background var(--dur-fast);
     }
-    .conviction-inner {
-      max-width: 860px; margin: 0 auto; padding: 0 var(--sp-6);
-      position: relative; z-index: 1;
+    .sector-item:hover { border-color: var(--teal-glow); background: var(--teal-pale); }
+    .sector-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--teal-glow); flex-shrink: 0;
     }
-    .conviction-quote {
-      font-size: clamp(1.5rem, 3.5vw, 2.4rem); font-weight: 300;
-      color: var(--white); line-height: 1.5; margin-bottom: var(--sp-5);
-      letter-spacing: -.01em;
-    }
-    .conviction-quote strong { font-weight: 700; }
-    .conviction-attr {
-      font-size: var(--ts-sm); color: rgba(255,255,255,.6); letter-spacing: .04em;
-    }
+    .sector-name { font-size: var(--ts-sm); font-weight: 600; color: var(--txt); }
 
     /* ============================================================
        CTA BAND
     ============================================================ */
     .cta-band {
-      background: var(--bg-dark); padding: var(--sp-9) 0;
+      background: var(--grad-hero); padding: var(--sp-9) 0;
       position: relative; overflow: hidden;
     }
     .cta-band::before {
       content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(30,180,150,.08) 0%, transparent 60%);
-      pointer-events: none;
+      position: absolute; top: -40%; right: -10%; width: 600px; height: 600px;
+      border-radius: 50%; background: rgba(255,255,255,.05); pointer-events: none;
     }
     .cta-band-inner {
       max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
@@ -576,28 +608,58 @@
       gap: var(--sp-6); position: relative; z-index: 1;
     }
     .cta-band h2 {
-      font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700;
-      color: var(--white); max-width: 540px; line-height: 1.3;
+      font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700;
+      color: var(--white); max-width: 540px; line-height: 1.25;
     }
-    .cta-band p { font-size: var(--ts-base); color: rgba(255,255,255,.6); margin-top: var(--sp-2); }
+    .cta-band p { font-size: var(--ts-base); color: rgba(255,255,255,.8); margin-top: var(--sp-2); }
     .cta-pair { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; background: var(--cr); color: var(--white);
+      padding: 14px 28px; background: var(--white); color: var(--cr);
       border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
-      transition: background var(--dur-fast), transform var(--dur-fast);
+      transition: transform var(--dur-fast), box-shadow var(--dur-fast);
       white-space: nowrap;
     }
-    .btn-primary:hover { background: var(--cr-mid); transform: translateY(-2px); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
     .btn-outline-white {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; border: 2px solid rgba(255,255,255,.3);
+      padding: 14px 28px; border: 2px solid rgba(255,255,255,.6);
       color: var(--white); border-radius: 8px;
       font-size: var(--ts-sm); font-weight: 700;
       transition: border-color var(--dur-fast), background var(--dur-fast);
       white-space: nowrap;
     }
-    .btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,.07); }
+    .btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,.1); }
+
+    /* ============================================================
+       WHO WE SERVE TEASER
+    ============================================================ */
+    .serve-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4);
+      margin-top: var(--sp-6);
+    }
+    .serve-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 16px; padding: var(--sp-6); text-align: center;
+      transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med);
+    }
+    .serve-card:hover {
+      box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--cr-mid);
+    }
+    .serve-card svg {
+      width: 40px; height: 40px; stroke: var(--cr); fill: none;
+      stroke-width: 1.6; margin: 0 auto var(--sp-3);
+    }
+    .serve-card h3 {
+      font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2);
+    }
+    .serve-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .serve-card-link {
+      display: inline-flex; align-items: center; gap: 4px; margin-top: var(--sp-3);
+      font-size: var(--ts-xs); font-weight: 700; color: var(--cr); text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .serve-card-link:hover { text-decoration: underline; }
 
     /* ============================================================
        SEARCH MODAL
@@ -630,7 +692,7 @@
     .search-result-item strong { color: var(--cr); display: block; }
 
     /* ============================================================
-       WHATSAPP / BACK TO TOP / COOKIE
+       WHATSAPP FLOAT + BACK TO TOP
     ============================================================ */
     .whatsapp-float {
       position: fixed; bottom: 88px; right: 24px;
@@ -653,6 +715,9 @@
     .back-to-top:hover { background: var(--cr-mid); transform: translateY(-2px); }
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
+    /* ============================================================
+       COOKIE BANNER
+    ============================================================ */
     .cookie-banner {
       position: fixed; bottom: 0; left: 0; right: 0;
       background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,.1);
@@ -680,24 +745,37 @@
        FOOTER
     ============================================================ */
     .footer { background: var(--bg-dark); color: rgba(255,255,255,.75); }
-    .footer-offices { border-bottom: 1px solid rgba(255,255,255,.08); padding: var(--sp-5) 0; }
+    .footer-offices {
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      padding: var(--sp-5) 0;
+    }
     .footer-offices-grid {
       max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
-      display: grid; grid-template-columns: repeat(4,1fr); gap: var(--sp-4);
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4);
     }
-    .fo-country { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--teal-glow); margin-bottom: 4px; }
+    .fo-item { }
+    .fo-country {
+      font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--teal-glow); margin-bottom: 4px;
+    }
     .fo-detail { font-size: var(--ts-xs); color: rgba(255,255,255,.5); line-height: 1.5; }
     .footer-main { padding: var(--sp-8) 0 var(--sp-6); }
     .footer-grid {
       max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
       display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1.4fr; gap: var(--sp-6);
     }
-    .footer-brand .logo-img { height: 32px; width: auto; margin-bottom: var(--sp-3); }
+    .footer-brand .logo-img { height: 32px; width: auto; margin-bottom: var(--sp-3); filter: brightness(1); }
     .footer-tagline { font-size: var(--ts-sm); color: rgba(255,255,255,.5); line-height: 1.6; margin-bottom: var(--sp-4); }
     .footer-address { font-size: var(--ts-xs); color: rgba(255,255,255,.4); line-height: 1.7; }
-    .footer-col-head { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: rgba(255,255,255,.9); margin-bottom: var(--sp-4); }
+    .footer-col-head {
+      font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: rgba(255,255,255,.9); margin-bottom: var(--sp-4);
+    }
     .footer-links { display: flex; flex-direction: column; gap: 10px; }
-    .footer-links a { font-size: var(--ts-sm); color: rgba(255,255,255,.5); transition: color var(--dur-fast); }
+    .footer-links a {
+      font-size: var(--ts-sm); color: rgba(255,255,255,.5);
+      transition: color var(--dur-fast);
+    }
     .footer-links a:hover { color: var(--mint); }
     .footer-lower {
       max-width: 1400px; margin: 0 auto; padding: var(--sp-5) var(--sp-6) 0;
@@ -712,8 +790,13 @@
     }
     .social-icon:hover { border-color: var(--teal-glow); background: rgba(30,180,150,.1); }
     .social-icon svg { width: 16px; height: 16px; fill: rgba(255,255,255,.6); }
-    .footer-resources { display: flex; gap: var(--sp-4); flex-wrap: wrap; align-items: center; }
-    .footer-resources a { font-size: var(--ts-xs); color: rgba(255,255,255,.4); transition: color var(--dur-fast); }
+    .footer-resources {
+      display: flex; gap: var(--sp-4); flex-wrap: wrap; align-items: center;
+    }
+    .footer-resources a {
+      font-size: var(--ts-xs); color: rgba(255,255,255,.4);
+      transition: color var(--dur-fast);
+    }
     .footer-resources a:hover { color: var(--mint); }
     .footer-resources span { color: rgba(255,255,255,.2); font-size: var(--ts-xs); }
     .footer-copyright {
@@ -728,24 +811,29 @@
        RESPONSIVE
     ============================================================ */
     @media (max-width: 1100px) {
-      .ibonk-grid { grid-template-columns: repeat(2,1fr); }
+      .page-hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .values-strip { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
+      .footer-grid > *:nth-child(4), .footer-grid > *:nth-child(5) { grid-column: span 1; }
     }
     @media (max-width: 900px) {
-      .purpose-layout { grid-template-columns: 1fr; }
-      .purpose-aside { position: static; }
-      .mv-grid { grid-template-columns: 1fr; }
-      .commitment-list { grid-template-columns: repeat(2,1fr); }
+      .story-grid { grid-template-columns: 1fr; }
+      .serve-grid { grid-template-columns: repeat(2, 1fr); }
+      .reach-grid { grid-template-columns: 1fr; }
+      .sector-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-offices-grid { grid-template-columns: repeat(2, 1fr); }
       .cta-band-inner { flex-direction: column; text-align: center; }
       .cta-pair { justify-content: center; }
-      .footer-offices-grid { grid-template-columns: repeat(2,1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 768px) {
       .primary-nav, .header-actions .btn-cta { display: none; }
       .mobile-toggle { display: flex; }
-      .ibonk-grid { grid-template-columns: 1fr; }
-      .commitment-list { grid-template-columns: 1fr; }
+      .header-inner { gap: var(--sp-4); }
+      .values-strip { grid-template-columns: 1fr; }
+      .serve-grid { grid-template-columns: 1fr; }
+      .sector-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
       .footer-lower { flex-direction: column; align-items: flex-start; }
       .footer-copyright { flex-direction: column; }
@@ -1004,6 +1092,7 @@
       <a href="/who-we-serve/" class="mobile-nav-link">Who We Serve</a>
       <a href="/industries/" class="mobile-nav-link">Industries</a>
       <a href="/contact/" class="mobile-nav-link">Where We Are</a>
+      <a href="/insights/" class="mobile-nav-link">Insights</a>
     </div>
     <a href="/contact/" class="btn-cta" style="margin-top:16px;display:inline-flex;">Start a Project</a>
   </div>
@@ -1025,7 +1114,7 @@
       <span class="breadcrumb-sep" aria-hidden="true">›</span>
       <a href="/who-we-are/">Who We Are</a>
       <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <span aria-current="page">Core Purpose &amp; Mission</span>
+      <span aria-current="page">Current Openings</span>
     </div>
   </nav>
 
@@ -1034,203 +1123,167 @@
   ============================================================ -->
   <main id="main-content">
 
+
     <!-- PAGE HERO -->
     <section class="page-hero" aria-labelledby="hero-heading">
       <div class="page-hero-inner">
-        <p class="hero-eyebrow">Core Purpose &amp; Mission</p>
-        <h1 id="hero-heading">
-          We exist to help<br>
-          <em>you succeed.</em>
-        </h1>
-        <p class="page-hero-lead">
-          Not as a tagline. Not as a marketing brief. As an operating mandate that informs every conversation we have, every line of code we ship, and every recommendation we make. This is the conviction that built GreaterHeight — and the one that still drives it.
-        </p>
-        <div class="hero-tagline-block" aria-label="GreaterHeight tagline">
-          …<em>helping you succeed</em>
-        </div>
-      </div>
-    </section>
-
-    <!-- PURPOSE STATEMENT — editorial split -->
-    <section class="purpose-block section" aria-labelledby="purpose-heading">
-      <div class="container">
-        <div class="purpose-layout">
-          <div class="purpose-aside reveal">
-            <p class="purpose-aside-label">Our Core Purpose</p>
-            <h2 class="purpose-aside-title" id="purpose-heading">The reason we are here</h2>
-            <p class="purpose-aside-sub">
-              Purpose is not what an organisation does. It is why the organisation must exist at all. This is ours — stated plainly, without embellishment.
-            </p>
-          </div>
-          <div class="purpose-content reveal">
-            <blockquote class="purpose-statement">
-              To be the technology partner that helps <strong>individuals, businesses, organisations, and nations</strong> reach heights they could not reach without us.
-            </blockquote>
-            <div class="purpose-body">
-              <p>
-                This is a simple sentence. It is also a demanding one. It says that our measure of success is not our own revenue, or the sophistication of our architecture, or the number of clients on our roster. It is whether the people and organisations we work with <strong>actually get to where they are trying to go.</strong>
-              </p>
-              <p>
-                GreaterHeight was founded in Lagos in 2010 with a clear-eyed view of what was missing in African enterprise technology: not technical talent — Lagos had plenty of that — but an IT partner willing to take genuine accountability for outcomes rather than simply delivering a specification and moving on.
-              </p>
-              <p>
-                That gap is still the reason we come to work. We build software, yes. We architect cloud infrastructure. We engineer data pipelines and integrate AI into business workflows. We run digital marketing campaigns. But beneath all of that activity, there is one question: <strong>did the client's situation materially improve?</strong>
-              </p>
-              <p>
-                If the answer is no, the technical work — however well executed — has not fulfilled our purpose. This is an uncomfortable standard to hold. It is also the only one that earns trust over a fifteen-year relationship with the African and global technology markets.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MISSION & VISION -->
-    <section class="section section-alt" aria-labelledby="mission-heading">
-      <div class="container">
-        <div class="reveal" style="margin-bottom:var(--sp-7);">
-          <p class="section-label">Mission &amp; Vision</p>
-          <div class="rule-line"></div>
-          <h2 class="section-title" id="mission-heading">Where we stand and where we are going</h2>
-          <p class="section-lead">
-            Our mission describes what we do, for whom, and how. Our vision describes the world we are working towards — one engagement at a time.
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Current Openings</p>
+          <h1 id="hero-heading">
+            Join a team that<br>
+            <strong>builds things.</strong>
+          </h1>
+          <p class="page-hero-lead">
+            Our roles are published here as they open. We hire for specific needs and fill positions deliberately — we would rather wait for the right person than rush to fill a seat. If you do not see an exact match, a spontaneous application is always welcome.
           </p>
         </div>
-        <div class="mv-grid reveal">
-          <div class="mv-card mission" role="article" aria-labelledby="mission-card-title">
-            <span class="mv-card-tag">Mission</span>
-            <h2 id="mission-card-title">To deliver technology solutions that create measurable, lasting value for the clients we serve — at every level of society.</h2>
-            <p>
-              We design, build, and operate software, cloud, data, AI, and digital systems that help individuals grow their professional authority, businesses scale with confidence, organisations govern technology well, and nations build digital infrastructure fit for their ambitions.
-            </p>
-          </div>
-          <div class="mv-card vision" role="article" aria-labelledby="vision-card-title">
-            <span class="mv-card-tag">Vision</span>
-            <h2 id="vision-card-title">To be the most trusted African-born technology consultancy, recognised globally for technical rigour, delivery discipline, and the depth of its client relationships.</h2>
-            <p>
-              A future in which African technology firms are not the exception in global technology conversations — but a natural and expected part of them. GreaterHeight intends to be one of the firms that builds that future.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- IBONK — four levels of ambition -->
-    <section class="section" aria-labelledby="ibonk-heading">
-      <div class="container">
-        <div class="ibonk-intro reveal">
-          <p class="section-label">Who We Serve</p>
-          <div class="rule-line"></div>
-          <h2 class="section-title" id="ibonk-heading">Purpose at four levels</h2>
-          <p class="section-lead" style="margin:0 auto var(--sp-7);">
-            GreaterHeight structures its purpose around four levels of client — Individuals, Businesses, Organisations, and Nations. Each level has distinct technology needs, distinct decision-making patterns, and distinct definitions of success. Our practice is built to serve all four with the same rigour and the same commitment.
-          </p>
-        </div>
-        <div class="ibonk-grid">
-          <div class="ibonk-card reveal">
-            <div class="ibonk-card-top">
-              <p class="ibonk-letter" aria-hidden="true">I</p>
-              <p class="ibonk-card-label">Level 01</p>
-              <p class="ibonk-card-name">Individuals</p>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-stack">
+            <div class="hero-fact-card">
+              <p class="fact-label">Hiring Locations</p>
+              <p>Lagos · London · New York · Dubai<br>Remote roles are clearly marked.</p>
             </div>
-            <div class="ibonk-card-body">
-              <p>Professionals, consultants, executives, and thought leaders who need a distinctive digital presence and the infrastructure to support a recognised personal brand.</p>
-              <p>Technology serves your authority — making it visible, credible, and discoverable at the right moment to the right audience.</p>
-              <a href="/who-we-serve/individuals/" class="ibonk-card-link">Explore →</a>
-            </div>
-          </div>
-          <div class="ibonk-card reveal">
-            <div class="ibonk-card-top">
-              <p class="ibonk-letter" aria-hidden="true">B</p>
-              <p class="ibonk-card-label">Level 02</p>
-              <p class="ibonk-card-name">Businesses</p>
-            </div>
-            <div class="ibonk-card-body">
-              <p>SMEs and scaling companies that need technology to operate faster, serve customers better, and compete in markets where digital capability is now the baseline, not the advantage.</p>
-              <p>We build the digital layer that lets a growing business punch above its current size.</p>
-              <a href="/who-we-serve/businesses/" class="ibonk-card-link">Explore →</a>
-            </div>
-          </div>
-          <div class="ibonk-card reveal">
-            <div class="ibonk-card-top">
-              <p class="ibonk-letter" aria-hidden="true">O</p>
-              <p class="ibonk-card-label">Level 03</p>
-              <p class="ibonk-card-name">Organisations</p>
-            </div>
-            <div class="ibonk-card-body">
-              <p>Enterprises, institutions, and large bodies managing complex technology portfolios — legacy systems that need modernising, AI capabilities that need integrating, and data that needs governing.</p>
-              <p>We help organisations align their technology investment with the outcomes that actually matter.</p>
-              <a href="/who-we-serve/organisations/" class="ibonk-card-link">Explore →</a>
-            </div>
-          </div>
-          <div class="ibonk-card reveal">
-            <div class="ibonk-card-top">
-              <p class="ibonk-letter" aria-hidden="true">N</p>
-              <p class="ibonk-card-label">Level 04</p>
-              <p class="ibonk-card-name">Nations</p>
-            </div>
-            <div class="ibonk-card-body">
-              <p>Governments and public sector bodies building national digital infrastructure — e-government platforms, citizen service systems, digital ID, and the strategic advisory that helps nations move from analogue governance to digital-first.</p>
-              <p>Technology at this level carries the weight of public trust. We take that seriously.</p>
-              <a href="/who-we-serve/nations/" class="ibonk-card-link">Explore →</a>
+            <div class="hero-fact-card">
+              <p class="fact-label">Application Process</p>
+              <p>Five structured steps. Clear feedback at each stage. Decisions typically within ten working days of final interview.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOUNDING CONVICTION — pull-quote -->
-    <section class="conviction-section" aria-label="Founding conviction">
-      <div class="conviction-inner reveal">
-        <blockquote class="conviction-quote">
-          "African businesses deserve the same quality of technology partnership available to enterprises anywhere in the world. <strong>We built GreaterHeight to prove it — and fifteen years later, we are still proving it.</strong>"
-        </blockquote>
-        <p class="conviction-attr">Segun Samuel — Founder &amp; CEO, GreaterHeight Technologies Limited</p>
-      </div>
-    </section>
-
-    <!-- COMMITMENTS — purpose made concrete -->
-    <section class="section section-teal" aria-labelledby="commitments-heading">
+    <!-- JOB LISTINGS -->
+    <section class="section" aria-labelledby="roles-heading">
       <div class="container">
         <div class="reveal">
-          <p class="section-label">What This Means in Practice</p>
+          <p class="section-label">Open Positions</p>
           <div class="rule-line"></div>
-          <h2 class="section-title" id="commitments-heading">Purpose is a daily commitment, not a declaration</h2>
+          <h2 class="section-title" id="roles-heading">Current opportunities</h2>
           <p class="section-lead">
-            These are the practical demands our purpose places on how we work — not aspirations, but accountabilities.
+            Roles are listed below as they become available. This page is updated in real time — if it shows a position, we are actively hiring for it.
           </p>
         </div>
-        <div class="commitment-list">
-          <div class="commitment-item reveal">
-            <p class="commitment-number" aria-hidden="true">01</p>
-            <h3 class="commitment-title">Understand before we recommend</h3>
-            <p class="commitment-desc">We do not arrive with a preferred technology and find problems to fit it. Every engagement begins with a genuine effort to understand the client's situation, their constraints, their definition of success, and the gap between where they are and where they need to be.</p>
+
+        <!-- Role cards — placeholder listings -->
+        <div style="margin-top:var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-4);">
+
+          <!-- Role card 1 -->
+          <div class="value-card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);flex-wrap:wrap;">
+            <div style="flex:1;min-width:260px;">
+              <p style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cr);margin-bottom:6px;">AI &amp; Automation</p>
+              <h3 style="font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:6px;">AI Solutions Engineer</h3>
+              <p style="font-size:var(--ts-sm);color:var(--txt-2);">Lagos, Nigeria &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Hybrid</p>
+            </div>
+            <div style="display:flex;gap:var(--sp-3);flex-shrink:0;">
+              <a href="/contact/?role=ai-solutions-engineer" class="btn-cta" style="padding:10px 20px;font-size:var(--ts-sm);">Apply Now</a>
+            </div>
           </div>
-          <div class="commitment-item reveal">
-            <p class="commitment-number" aria-hidden="true">02</p>
-            <h3 class="commitment-title">Commit to outcomes, not outputs</h3>
-            <p class="commitment-desc">Delivering a software specification on time is a minimum, not a measure of success. We stay engaged with whether what we delivered is actually working — in the market, inside the organisation, for the end user. Outcomes are what we are accountable for.</p>
+
+          <!-- Role card 2 -->
+          <div class="value-card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);flex-wrap:wrap;">
+            <div style="flex:1;min-width:260px;">
+              <p style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cr);margin-bottom:6px;">Product Engineering</p>
+              <h3 style="font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:6px;">Senior Full-Stack Developer</h3>
+              <p style="font-size:var(--ts-sm);color:var(--txt-2);">Lagos, Nigeria &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Hybrid</p>
+            </div>
+            <div style="display:flex;gap:var(--sp-3);flex-shrink:0;">
+              <a href="/contact/?role=senior-fullstack-developer" class="btn-cta" style="padding:10px 20px;font-size:var(--ts-sm);">Apply Now</a>
+            </div>
           </div>
-          <div class="commitment-item reveal">
-            <p class="commitment-number" aria-hidden="true">03</p>
-            <h3 class="commitment-title">Say the difficult thing early</h3>
-            <p class="commitment-desc">When a plan has a problem, the worst time to surface it is at delivery. We have a cultural obligation to raise concerns early — with clients, with each other, with stakeholders — because early honesty is cheaper than late correction, in every sense.</p>
+
+          <!-- Role card 3 -->
+          <div class="value-card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);flex-wrap:wrap;">
+            <div style="flex:1;min-width:260px;">
+              <p style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cr);margin-bottom:6px;">Data &amp; Cloud</p>
+              <h3 style="font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:6px;">Data Engineer</h3>
+              <p style="font-size:var(--ts-sm);color:var(--txt-2);">Lagos, Nigeria &nbsp;·&nbsp; Remote eligible &nbsp;·&nbsp; Full-time</p>
+            </div>
+            <div style="display:flex;gap:var(--sp-3);flex-shrink:0;">
+              <a href="/contact/?role=data-engineer" class="btn-cta" style="padding:10px 20px;font-size:var(--ts-sm);">Apply Now</a>
+            </div>
           </div>
-          <div class="commitment-item reveal">
-            <p class="commitment-number" aria-hidden="true">04</p>
-            <h3 class="commitment-title">Transfer knowledge, not dependency</h3>
-            <p class="commitment-desc">A client who cannot operate what we built has not been well served. We design systems that client teams can own, maintain, and extend. We document. We train. Our goal is a client who is stronger for having worked with us — not one who needs us to keep things running.</p>
+
+          <!-- Role card 4 -->
+          <div class="value-card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);flex-wrap:wrap;">
+            <div style="flex:1;min-width:260px;">
+              <p style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cr);margin-bottom:6px;">Digital Marketing</p>
+              <h3 style="font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:6px;">SEO &amp; Content Strategist</h3>
+              <p style="font-size:var(--ts-sm);color:var(--txt-2);">Lagos, Nigeria &nbsp;·&nbsp; Hybrid &nbsp;·&nbsp; Full-time</p>
+            </div>
+            <div style="display:flex;gap:var(--sp-3);flex-shrink:0;">
+              <a href="/contact/?role=seo-content-strategist" class="btn-cta" style="padding:10px 20px;font-size:var(--ts-sm);">Apply Now</a>
+            </div>
           </div>
-          <div class="commitment-item reveal">
-            <p class="commitment-number" aria-hidden="true">05</p>
-            <h3 class="commitment-title">Build for the context, not the brochure</h3>
-            <p class="commitment-desc">A solution designed for a Nigerian logistics company operates in a different reality from one designed for a London fintech firm. Infrastructure constraints, connectivity, regulatory environments, team maturity — these shape what good technology looks like. We design for the actual context, not a theoretical ideal.</p>
+
+          <!-- Role card 5 -->
+          <div class="value-card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);flex-wrap:wrap;">
+            <div style="flex:1;min-width:260px;">
+              <p style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cr);margin-bottom:6px;">Enterprise &amp; Advisory</p>
+              <h3 style="font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:6px;">IT Strategy Consultant</h3>
+              <p style="font-size:var(--ts-sm);color:var(--txt-2);">Lagos / London &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Hybrid</p>
+            </div>
+            <div style="display:flex;gap:var(--sp-3);flex-shrink:0;">
+              <a href="/contact/?role=it-strategy-consultant" class="btn-cta" style="padding:10px 20px;font-size:var(--ts-sm);">Apply Now</a>
+            </div>
           </div>
-          <div class="commitment-item reveal">
-            <p class="commitment-number" aria-hidden="true">06</p>
-            <h3 class="commitment-title">Represent African excellence internationally</h3>
-            <p class="commitment-desc">Every time GreaterHeight delivers work that is rigorous, timely, and well-documented, it makes it slightly easier for the next African technology firm to win the trust of an international client. We do not take that weight lightly. The standard we hold ourselves to is the one we want the market to associate with African technology.</p>
+
+          <!-- Role card 6 -->
+          <div class="value-card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);flex-wrap:wrap;">
+            <div style="flex:1;min-width:260px;">
+              <p style="font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cr);margin-bottom:6px;">Operations &amp; Delivery</p>
+              <h3 style="font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:6px;">Project Manager (Technology)</h3>
+              <p style="font-size:var(--ts-sm);color:var(--txt-2);">Lagos, Nigeria &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; On-site / Hybrid</p>
+            </div>
+            <div style="display:flex;gap:var(--sp-3);flex-shrink:0;">
+              <a href="/contact/?role=project-manager" class="btn-cta" style="padding:10px 20px;font-size:var(--ts-sm);">Apply Now</a>
+            </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONTANEOUS APPLICATION -->
+    <section class="section section-teal" aria-labelledby="spontaneous-heading">
+      <div class="container">
+        <div class="story-grid reveal">
+          <div class="story-content">
+            <p class="section-label">No Suitable Role Listed?</p>
+            <div class="rule-line"></div>
+            <h2 class="section-title" id="spontaneous-heading">Submit a spontaneous application</h2>
+            <p>
+              We review spontaneous applications on a rolling basis. If your skills are relevant to any of our practice areas, we will reach out when a matching position opens — typically within 90 days.
+            </p>
+            <p>
+              Send a brief note introducing yourself, the kind of work you do, and the type of role you are interested in to <a href="mailto:careers@mail.greaterheight.tech" style="color:var(--cr);font-weight:600;">careers@mail.greaterheight.tech</a>. Attach a CV. We will acknowledge receipt within two working days.
+            </p>
+            <div style="margin-top:var(--sp-6);">
+              <a href="mailto:careers@mail.greaterheight.tech" class="btn-cta">Send Spontaneous Application</a>
+            </div>
+          </div>
+          <div class="story-image" role="img" aria-label="GreaterHeight Technologies office environment showing a welcoming, professional workspace">
+            <img src="../../../assets/images/hero/career-opportunities.jpg" alt="GreaterHeight Technologies open, modern workspace" width="800" height="600" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <p class="badge-num">Hiring</p>
+              <p class="badge-label">Across six practice areas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS CALLOUT -->
+    <section class="section section-alt" aria-labelledby="process-callout-heading">
+      <div class="container" style="text-align:center;max-width:720px;">
+        <div class="reveal">
+          <p class="section-label" style="justify-content:center;">Hiring Process</p>
+          <div class="rule-line" style="margin:0 auto var(--sp-5);"></div>
+          <h2 class="section-title" id="process-callout-heading">Five steps. Clear feedback. Fast decisions.</h2>
+          <p style="font-size:var(--ts-base);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-6);">
+            Application review → Introductory call → Technical assessment → Panel interview → Offer. We give written feedback at every stage. Final decisions are communicated within two working days of your panel interview.
+          </p>
+          <a href="/who-we-are/career-overview/#process" class="btn-cta">See the full process</a>
         </div>
       </div>
     </section>
@@ -1239,16 +1292,17 @@
     <section class="cta-band" aria-labelledby="cta-heading">
       <div class="cta-band-inner">
         <div>
-          <h2 id="cta-heading">If this is the kind of technology partner you have been looking for, let us talk.</h2>
-          <p>No commitment required. Just a conversation about where you are trying to go.</p>
+          <h2 id="cta-heading">Questions before you apply?</h2>
+          <p>Read our Career Overview or reach us directly — we are happy to talk before you submit.</p>
         </div>
         <div class="cta-pair">
-          <a href="/contact/" class="btn-primary">Start a Project</a>
-          <a href="/who-we-are/our-values/" class="btn-outline-white">Our Values</a>
+          <a href="/who-we-are/career-overview/" class="btn-primary">Career Overview</a>
+          <a href="/contact/" class="btn-outline-white">Get in Touch</a>
         </div>
       </div>
     </section>
 
+  </main>
   </main>
 
   <!-- ============================================================
@@ -1257,19 +1311,19 @@
   <footer class="footer" role="contentinfo">
     <div class="footer-offices">
       <div class="footer-offices-grid">
-        <div>
+        <div class="fo-item">
           <p class="fo-country">Nigeria (HQ)</p>
           <p class="fo-detail">17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos · +234 913 999 9700</p>
         </div>
-        <div>
+        <div class="fo-item">
           <p class="fo-country">United States</p>
           <p class="fo-detail">New York, NY</p>
         </div>
-        <div>
+        <div class="fo-item">
           <p class="fo-country">United Kingdom</p>
           <p class="fo-detail">London, UK</p>
         </div>
-        <div>
+        <div class="fo-item">
           <p class="fo-country">UAE</p>
           <p class="fo-detail">Dubai, UAE</p>
         </div>
@@ -1278,15 +1332,18 @@
 
     <div class="footer-main">
       <div class="footer-grid">
+        <!-- Brand -->
         <div class="footer-brand">
           <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
-          <p class="footer-tagline">…helping you succeed. African-born, globally connected IT consultancy delivering software, cloud, data, AI, and digital marketing services.</p>
+          <p class="footer-tagline">…helping you succeed. We are an African-born, globally connected IT consultancy delivering software, cloud, data, AI, and digital marketing services.</p>
           <address class="footer-address" style="font-style:normal;">
             17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos, Nigeria<br>
             <a href="tel:+2349139999700" style="color:rgba(255,255,255,.4)">+234 913 999 9700</a><br>
             <a href="mailto:info@mail.greaterheight.tech" style="color:rgba(255,255,255,.4)">info@mail.greaterheight.tech</a>
           </address>
         </div>
+
+        <!-- Company -->
         <div>
           <p class="footer-col-head">Company</p>
           <ul class="footer-links">
@@ -1299,6 +1356,8 @@
             <li><a href="/contact/">Contact Us</a></li>
           </ul>
         </div>
+
+        <!-- Expertise -->
         <div>
           <p class="footer-col-head">Our Expertise</p>
           <ul class="footer-links">
@@ -1315,6 +1374,8 @@
             <li><a href="/what-we-do/processes/">Our Processes</a></li>
           </ul>
         </div>
+
+        <!-- Digital Marketing -->
         <div>
           <p class="footer-col-head">Digital Marketing</p>
           <ul class="footer-links">
@@ -1331,6 +1392,8 @@
             <li><a href="/insights/">Insights</a></li>
           </ul>
         </div>
+
+        <!-- Clients / Industries -->
         <div>
           <p class="footer-col-head">Clients We Serve</p>
           <ul class="footer-links">
@@ -1352,19 +1415,24 @@
 
     <div class="footer-lower">
       <div class="footer-social" aria-label="Social media links">
+        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/company/greaterheight-technologies" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
+        <!-- Twitter/X -->
         <a href="https://twitter.com/greaterheightng" class="social-icon" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
         </a>
+        <!-- Facebook -->
         <a href="https://facebook.com/greaterheighttechnologies" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
         </a>
+        <!-- Instagram -->
         <a href="https://instagram.com/greaterheighttech" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </a>
       </div>
+
       <div class="footer-resources">
         <a href="/insights/">Insights</a>
         <span aria-hidden="true">|</span>
@@ -1390,7 +1458,7 @@
   </footer>
 
   <!-- WhatsApp float -->
-  <a href="https://wa.me/2349139999700?text=Hello%20GreaterHeight%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20project." class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/2349139999700?text=Hello%20GreaterHeight%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20project." class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer" id="whatsapp-btn">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
@@ -1415,9 +1483,10 @@
   (function () {
     'use strict';
 
-    /* Preloader */
+    /* ------- Preloader (first visit only) ------- */
     const preloader = document.getElementById('preloader');
-    if (sessionStorage.getItem('gh_visited')) {
+    const visited = sessionStorage.getItem('gh_visited');
+    if (visited) {
       preloader.classList.add('hidden');
     } else {
       window.addEventListener('load', function () {
@@ -1428,21 +1497,27 @@
       });
     }
 
-    /* Scroll progress + header shadow + back-to-top */
+    /* ------- Scroll progress ------- */
     const progressBar = document.getElementById('scroll-progress');
     const header = document.getElementById('site-header');
-    const btt = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function () {
+    function onScroll() {
       const scrolled = window.scrollY;
       const docH = document.documentElement.scrollHeight - window.innerHeight;
       progressBar.style.width = (docH > 0 ? (scrolled / docH) * 100 : 0) + '%';
       header.classList.toggle('scrolled', scrolled > 20);
-      btt.classList.toggle('visible', scrolled > 400);
-    }, { passive: true });
-    btt.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      document.getElementById('back-to-top').classList.toggle('visible', scrolled > 400);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
 
-    /* Mega menu */
+    /* ------- Back to top ------- */
+    document.getElementById('back-to-top').addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ------- Mega menu ------- */
     const navItems = document.querySelectorAll('.nav-item');
+    let activePanel = null;
+
     function closeAll() {
       navItems.forEach(function (item) {
         const btn = item.querySelector('.nav-link');
@@ -1450,11 +1525,14 @@
         if (btn) btn.setAttribute('aria-expanded', 'false');
         if (panel) panel.classList.remove('open');
       });
+      activePanel = null;
     }
+
     navItems.forEach(function (item) {
       const btn = item.querySelector('button.nav-link');
       const panel = item.querySelector('.mega-panel');
       if (!btn || !panel) return;
+
       btn.addEventListener('click', function (e) {
         e.stopPropagation();
         const isOpen = panel.classList.contains('open');
@@ -1462,6 +1540,8 @@
         if (!isOpen) {
           btn.setAttribute('aria-expanded', 'true');
           panel.classList.add('open');
+          activePanel = panel;
+          /* viewport clamp */
           const rect = panel.getBoundingClientRect();
           if (rect.right > window.innerWidth - 16) {
             panel.style.left = 'auto';
@@ -1470,6 +1550,7 @@
           }
         }
       });
+
       let _closeTimer;
       function openPanel() {
         closeAll();
@@ -1498,10 +1579,13 @@
       panel.addEventListener('mouseenter', function () { clearTimeout(_closeTimer); });
       panel.addEventListener('mouseleave', closePanel);
     });
-    document.addEventListener('click', closeAll);
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
 
-    /* Mobile nav */
+    document.addEventListener('click', closeAll);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeAll();
+    });
+
+    /* ------- Mobile nav ------- */
     const mobileToggle = document.getElementById('mobile-toggle');
     const mobileNav = document.getElementById('mobile-nav');
     mobileToggle.addEventListener('click', function () {
@@ -1509,7 +1593,7 @@
       mobileToggle.setAttribute('aria-expanded', open.toString());
     });
 
-    /* Search */
+    /* ------- Search ------- */
     const SEARCH_INDEX = [
       { title: 'Company Overview', url: '/who-we-are/company-overview/', desc: 'Our story, founding, and global reach' },
       { title: 'Core Purpose & Mission', url: '/who-we-are/core-purpose-mission/', desc: 'Why GreaterHeight exists' },
@@ -1521,11 +1605,11 @@
       { title: 'Cloud Migration', url: '/what-we-do/data-cloud/cloud-migration/', desc: 'Move to the cloud with confidence' },
       { title: 'Digital Transformation', url: '/what-we-do/enterprise-advisory/digital-transformation/', desc: 'Enterprise-wide technology change' },
       { title: 'SEO', url: '/what-we-do/digital-marketing/seo/', desc: 'Search engine optimisation services' },
-      { title: 'Individuals', url: '/who-we-serve/individuals/', desc: 'Personal brand and digital authority' },
-      { title: 'Businesses', url: '/who-we-serve/businesses/', desc: 'Technology for growing companies' },
-      { title: 'Organisations', url: '/who-we-serve/organisations/', desc: 'Enterprise technology and transformation' },
-      { title: 'Nations', url: '/who-we-serve/nations/', desc: 'Government and public sector technology' },
+      { title: 'Financial Technology', url: '/industries/financial-technology/', desc: 'Technology for fintech companies' },
+      { title: 'Healthcare', url: '/industries/healthcare/', desc: 'Health technology solutions' },
       { title: 'Contact & Offices', url: '/contact/', desc: 'Lagos, London, New York, Dubai' },
+      { title: 'Insights', url: '/insights/', desc: 'Articles, perspectives, and research' },
+      { title: 'Case Studies', url: '/case-studies/', desc: 'Client results and project stories' },
     ];
 
     const searchOverlay = document.getElementById('search-overlay');
@@ -1539,18 +1623,21 @@
     searchOverlay.addEventListener('click', function (e) {
       if (e.target === searchOverlay) searchOverlay.classList.remove('open');
     });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') searchOverlay.classList.remove('open');
+    });
     searchInput.addEventListener('input', function () {
       const q = this.value.trim().toLowerCase();
       searchResults.innerHTML = '';
       if (!q) return;
       const hits = SEARCH_INDEX.filter(function (item) {
         return item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q);
-      }).slice(0, 7);
+      });
       if (!hits.length) {
         searchResults.innerHTML = '<p style="padding:8px 12px;color:var(--txt-3);font-size:.875rem;">No results found.</p>';
         return;
       }
-      hits.forEach(function (item) {
+      hits.slice(0, 7).forEach(function (item) {
         const a = document.createElement('a');
         a.href = item.url;
         a.className = 'search-result-item';
@@ -1560,11 +1647,14 @@
       });
     });
 
-    /* Scroll reveal */
+    /* ------- Scroll reveal ------- */
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
-          if (entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
         });
       }, { threshold: 0.12 });
       document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
@@ -1572,13 +1662,17 @@
       document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
     }
 
-    /* Cookie banner */
+    /* ------- Cookie banner ------- */
     if (!localStorage.getItem('gh_cookies')) {
-      setTimeout(function () { document.getElementById('cookie-banner').classList.add('visible'); }, 2000);
+      setTimeout(function () {
+        document.getElementById('cookie-banner').classList.add('visible');
+      }, 2000);
     }
     document.getElementById('cookie-accept').addEventListener('click', function () {
       localStorage.setItem('gh_cookies', 'accepted');
       document.getElementById('cookie-banner').classList.remove('visible');
+      /* GA4 / GTM consent placeholder — replace with real IDs */
+      // window.gtag && gtag('consent', 'update', { analytics_storage: 'granted' });
     });
     document.getElementById('cookie-reject').addEventListener('click', function () {
       localStorage.setItem('gh_cookies', 'rejected');
