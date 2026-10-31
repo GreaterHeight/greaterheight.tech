@@ -1,129 +1,439 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found | GreaterHeight Technologies</title>
   <meta name="description" content="The page you requested could not be found. Return to the GreaterHeight Technologies homepage.">
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="icon" href="/assets/images/favicon/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/images/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
   <style>
-    .error-page {
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:    #0D3D28;
+      --forest-deep:#003020;
+      --teal-glow: #1EB496;
+      --teal-mid:  #1A7A5E;
+      --cr:        #8C0D0C;
+      --cr-mid:    #B41414;
+      --cream:     #FDFAF4;
+      --txt:       #2E2E2C;
+      --txt-2:     #6A6A64;
+      --font:      "Lato", Arial, sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: var(--font);
+      background: var(--forest-deep);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* ── Grid background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(30,180,150,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30,180,150,.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Glow orb ── */
+    body::after {
+      content: '';
+      position: fixed;
+      top: -20vh;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(ellipse at center, rgba(30,180,150,.12) 0%, transparent 65%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Page layout ── */
+    .page {
+      position: relative;
+      z-index: 1;
       min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      text-decoration: none;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--cr);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .9rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -.02em;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-size: .92rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: .01em;
+    }
+
+    .logo-text span {
+      font-weight: 300;
+      color: rgba(255,255,255,.5);
+    }
+
+    .header-nav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .header-nav a {
+      font-size: .8rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      letter-spacing: .04em;
+      transition: color .2s;
+    }
+
+    .header-nav a:hover { color: #fff; }
+
+    /* ── Main content ── */
+    .main {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 4rem 1.5rem;
       text-align: center;
-      padding: 2rem 1rem;
-      background: #fafafa;
     }
-    .error-page__code {
-      font-size: clamp(6rem, 20vw, 12rem);
-      font-weight: 900;
-      line-height: 1;
-      color: #1a1a2e;
-      margin: 0 0 0.5rem;
-      letter-spacing: -0.04em;
+
+    /* Status badge */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: rgba(30,180,150,.1);
+      border: 1px solid rgba(30,180,150,.25);
+      border-radius: 100px;
+      padding: .35rem 1rem;
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal-glow);
+      margin-bottom: 2rem;
     }
-    .error-page__title {
-      font-size: clamp(1.25rem, 3vw, 1.75rem);
-      font-weight: 600;
-      color: #1a1a2e;
-      margin: 0 0 1rem;
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal-glow);
+      animation: pulse 2s ease-in-out infinite;
     }
-    .error-page__message {
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .4; }
+    }
+
+    /* 404 numeral */
+    .error-code {
+      font-size: clamp(7rem, 22vw, 14rem);
+      font-weight: 100;
+      line-height: .9;
+      letter-spacing: -.05em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255,255,255,.12);
+      background: linear-gradient(135deg, rgba(255,255,255,.18) 0%, rgba(30,180,150,.25) 50%, rgba(255,255,255,.06) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      margin-bottom: 1.5rem;
+      position: relative;
+      user-select: none;
+    }
+
+    .error-heading {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: .75rem;
+      letter-spacing: -.02em;
+    }
+
+    .error-lead {
       font-size: 1rem;
-      color: #555;
-      max-width: 480px;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
+      font-weight: 300;
+      color: rgba(255,255,255,.55);
+      max-width: 42ch;
+      line-height: 1.65;
+      margin-bottom: 2.5rem;
     }
-    .error-page__actions {
+
+    /* CTA buttons */
+    .cta-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      gap: .75rem;
       justify-content: center;
+      margin-bottom: 3.5rem;
     }
-    .error-page__logo {
-      margin-bottom: 3rem;
-    }
-    .error-page__logo img {
-      height: 40px;
-      width: auto;
-    }
-    .error-page__nav {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid #e5e5e5;
-      width: 100%;
-      max-width: 600px;
-    }
-    .error-page__nav p {
-      font-size: 0.875rem;
-      color: #888;
-      margin-bottom: 0.75rem;
-    }
-    .error-page__nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1.5rem;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .error-page__nav-links a {
-      font-size: 0.875rem;
-      color: #1a1a2e;
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: var(--font);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
       text-decoration: none;
-      border-bottom: 1px solid currentColor;
+      border-radius: 6px;
+      padding: .85rem 1.75rem;
+      cursor: pointer;
+      border: none;
+      transition: all .2s;
     }
-    .error-page__nav-links a:hover { opacity: 0.7; }
+
+    .btn-primary {
+      background: var(--cr);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--cr-mid, #B41414);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px rgba(140,13,12,.35);
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,.05);
+      color: rgba(255,255,255,.75);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255,255,255,.1);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    /* Quick links */
+    .quick-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      max-width: 560px;
+      width: 100%;
+    }
+
+    .quick-links-label {
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.3);
+    }
+
+    .quick-links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: .5rem;
+      width: 100%;
+    }
+
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .65rem 1rem;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 8px;
+      text-decoration: none;
+      color: rgba(255,255,255,.6);
+      font-size: .8rem;
+      font-weight: 400;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+
+    .quick-link:hover {
+      background: rgba(30,180,150,.08);
+      border-color: rgba(30,180,150,.2);
+      color: #fff;
+    }
+
+    .quick-link svg {
+      width: 13px;
+      height: 13px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0;
+      opacity: .6;
+    }
+
+    /* ── Footer strip ── */
+    .footer-strip {
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-strip p {
+      font-size: .75rem;
+      color: rgba(255,255,255,.25);
+    }
+
+    .footer-strip a {
+      font-size: .75rem;
+      color: rgba(255,255,255,.35);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .footer-strip a:hover { color: var(--teal-glow); }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .site-header { padding: 1.25rem 1rem; }
+      .header-nav { display: none; }
+      .main { padding: 3rem 1rem; }
+      .footer-strip { padding: 1rem; flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .quick-links-grid { grid-template-columns: 1fr 1fr; }
+    }
   </style>
 </head>
 <body>
-  <main class="error-page" id="main-content">
-    <div class="error-page__logo">
-      <a href="/">
-        <img src="/assets/images/logo/greaterheight-logo.svg"
-             alt="GreaterHeight Technologies"
-             onerror="this.style.display='none'">
+  <div class="page">
+
+    <!-- Header -->
+    <header class="site-header">
+      <a href="/" class="logo-link" aria-label="GreaterHeight Technologies — Home">
+        <div class="logo-mark" aria-hidden="true">GH</div>
+        <div class="logo-text">GreaterHeight <span>Technologies</span></div>
       </a>
-    </div>
+      <nav class="header-nav" aria-label="Quick navigation">
+        <a href="/what-we-do/">Services</a>
+        <a href="/who-we-are/">Company</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </header>
 
-    <p class="error-page__code" aria-hidden="true">404</p>
-    <h1 class="error-page__title">Page Not Found</h1>
-    <p class="error-page__message">
-      The page you're looking for doesn't exist or has been moved.
-      If you followed a link from somewhere, it may be outdated.
-    </p>
+    <!-- Main -->
+    <main class="main" id="main-content">
 
-    <div class="error-page__actions">
-      <a href="/" class="btn btn-primary">Go to Homepage</a>
-      <a href="/contact/" class="btn btn-outline">Contact Us</a>
-    </div>
+      <div class="status-badge">
+        <span class="status-dot" aria-hidden="true"></span>
+        Error 404
+      </div>
 
-    <nav class="error-page__nav" aria-label="Main sections">
-      <p>Or go directly to a section:</p>
-      <ul class="error-page__nav-links">
-        <li><a href="/what-we-do/">What We Do</a></li>
-        <li><a href="/who-we-are/">Who We Are</a></li>
-        <li><a href="/who-we-serve/">Who We Serve</a></li>
-        <li><a href="/industries/">Industries</a></li>
-        <li><a href="/insights/">Insights</a></li>
-        <li><a href="/products-solutions/">Products</a></li>
-        <li><a href="/how-we-do-it/">How We Do It</a></li>
-      </ul>
-    </nav>
-  </main>
+      <p class="error-code" aria-hidden="true">404</p>
 
-  <script>
-    // Minimal nav-closing script not required on 404; nothing interactive here
-  </script>
+      <h1 class="error-heading">Page Not Found</h1>
+
+      <p class="error-lead">
+        The page you're looking for has moved, been renamed, or doesn't exist.
+        Let's get you somewhere useful.
+      </p>
+
+      <div class="cta-group">
+        <a href="/" class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          Go to Homepage
+        </a>
+        <a href="/contact/" class="btn btn-ghost">
+          Get in Touch
+        </a>
+      </div>
+
+      <div class="quick-links" aria-label="Quick section links">
+        <p class="quick-links-label">Or jump to a section</p>
+        <nav class="quick-links-grid" aria-label="Site sections">
+          <a href="/what-we-do/" class="quick-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Services
+          </a>
+          <a href="/who-we-are/" class="quick-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Company
+          </a>
+          <a href="/industries/" class="quick-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            Industries
+          </a>
+          <a href="/insights/" class="quick-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Insights
+          </a>
+          <a href="/who-we-serve/" class="quick-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Who We Serve
+          </a>
+          <a href="/products-solutions/" class="quick-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            Products
+          </a>
+        </nav>
+      </div>
+
+    </main>
+
+    <!-- Footer strip -->
+    <footer class="footer-strip">
+      <p>&copy; 2025 GreaterHeight Technologies. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="/legal/privacy-policy/">Privacy</a>
+        <a href="/legal/terms/">Terms</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </footer>
+
+  </div>
 </body>
 </html>

@@ -223,15 +223,29 @@
     .btn-outline-white:hover{border-color:var(--white);background:rgba(255,255,255,.07)}
 
     /* SEARCH */
-    .search-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding-top:120px;z-index:9000;opacity:0;visibility:hidden;transition:opacity var(--dur-med),visibility var(--dur-med)}
+    /* Search overlay — command-palette style */
+    .search-overlay{position:fixed;inset:0;background:rgba(10,20,40,.85);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:9000;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
     .search-overlay.open{opacity:1;visibility:visible}
-    .search-modal{background:var(--white);border-radius:16px;padding:var(--sp-5);width:90%;max-width:600px;box-shadow:var(--sh-lg)}
-    .search-modal input{width:100%;border:2px solid var(--border);border-radius:10px;padding:14px 16px;font-size:var(--ts-base);font-family:var(--font);color:var(--txt);background:var(--bg);outline:none;transition:border-color var(--dur-fast)}
-    .search-modal input:focus{border-color:var(--teal-glow)}
-    .search-results{margin-top:var(--sp-4);max-height:300px;overflow-y:auto}
-    .search-result-item{display:block;padding:10px 12px;border-radius:8px;font-size:var(--ts-sm);color:var(--txt);transition:background var(--dur-fast)}
-    .search-result-item:hover{background:var(--bg-alt)}
-    .search-result-item strong{color:var(--cr);display:block}
+    .search-modal{background:#fff;border-radius:14px;width:min(680px,94vw);box-shadow:0 24px 80px rgba(0,0,0,.35);overflow:hidden;max-height:80vh;display:flex;flex-direction:column}
+    .search-input-row{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;border-bottom:1px solid #e5e7eb}
+    .search-input-row svg{flex-shrink:0;color:#9ca3af}
+    .search-input-row input{flex:1;border:none;outline:none;font-size:1rem;color:#111;background:transparent;font-family:Lato,sans-serif}
+    .search-input-row input::placeholder{color:#9ca3af}
+    .search-esc-badge{font-size:.72rem;border:1px solid #e5e7eb;border-radius:5px;padding:.2rem .55rem;color:#6b7280;cursor:pointer;flex-shrink:0;background:none;font-family:Lato,sans-serif}
+    .search-results{overflow-y:auto;flex:1;min-height:0}
+    .search-results:empty::before{content:"Start typing to search6";display:block;padding:2.5rem 1.25rem;color:#9ca3af;font-size:.9rem}
+    .search-result-group-head{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af;padding:.7rem 1.25rem .3rem;background:#f9fafb}
+    .search-result-item{display:flex;align-items:center;gap:.9rem;padding:.65rem 1.25rem;cursor:pointer;transition:background .12s;text-decoration:none;color:inherit}
+    .search-result-item:hover,.search-result-item.sr-active{background:#f0f4ff}
+    .search-result-icon{width:34px;height:34px;border-radius:8px;background:#eef2ff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .search-result-icon svg{width:16px;height:16px;stroke:#4f6ef7;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .search-result-text{flex:1;min-width:0}
+    .search-result-title{font-size:.9rem;font-weight:600;color:#111}
+    .search-result-desc{font-size:.75rem;color:#6b7280;margin-top:.1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .search-result-enter{font-size:.72rem;color:#6b7280;flex-shrink:0;opacity:0;white-space:nowrap}
+    .search-result-item.sr-active .search-result-enter{opacity:1}
+    .search-kbd-bar{padding:.55rem 1.25rem;border-top:1px solid #e5e7eb;display:flex;gap:1.2rem;font-size:.72rem;color:#6b7280}
+    .search-kbd-bar kbd{border:1px solid #e5e7eb;border-radius:4px;padding:.1rem .35rem;font-size:.68rem;font-family:Lato,sans-serif}
 
     /* WHATSAPP / BTT / COOKIE */
     .whatsapp-float{position:fixed;bottom:88px;right:24px;width:52px;height:52px;border-radius:50%;background:#25D366;box-shadow:0 4px 16px rgba(37,211,102,.4);display:flex;align-items:center;justify-content:center;z-index:800;transition:transform var(--dur-fast)}
@@ -530,12 +544,21 @@
     <a href="/contact/" class="btn-cta" style="margin-top:16px;display:inline-flex;">Start a Project</a>
   </div>
 
-  <div class="search-overlay" id="search-overlay" role="dialog" aria-label="Search" aria-modal="true">
-    <div class="search-modal">
-      <input type="search" id="search-input" placeholder="Search pages, services, insights…" autocomplete="off" aria-label="Search query">
-      <div class="search-results" id="search-results" role="listbox"></div>
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
+  <div class="search-modal">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="search" id="search-input" placeholder="Search services, solutions, pages…" autocomplete="off" spellcheck="false" aria-label="Search">
+      <button class="search-esc-badge" id="search-close-btn" aria-label="Close search">esc</button>
+    </div>
+    <div class="search-results" id="search-results" role="listbox" aria-live="polite"></div>
+    <div class="search-kbd-bar" aria-hidden="true">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+      <span><kbd>↵</kbd> open</span>
+      <span><kbd>esc</kbd> close</span>
     </div>
   </div>
+</div>
 
   <nav class="breadcrumb-bar" aria-label="Breadcrumb">
     <div class="breadcrumb-inner">
@@ -873,9 +896,7 @@
     <div class="footer-offices">
       <div class="footer-offices-grid">
         <div><p class="fo-country">Nigeria (HQ)</p><p class="fo-detail">17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos · +234 913 999 9700</p></div>
-        <div><p class="fo-country">United States</p><p class="fo-detail">New York, NY</p></div>
-        <div><p class="fo-country">United Kingdom</p><p class="fo-detail">London, UK</p></div>
-        <div><p class="fo-country">UAE</p><p class="fo-detail">Dubai, UAE</p></div>
+        <div><p class="fo-country">United States</p><p class="fo-detail">1309 Coffeen Avenue STE 1200<br>Sheridan, Wyoming 82801</p></div>
       </div>
     </div>
     <div class="footer-main">
@@ -944,7 +965,7 @@
     </div>
     <div class="footer-lower">
       <div class="footer-social" aria-label="Social media links">
-        <a href="https://www.linkedin.com/company/greaterheight-technologies" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://www.linkedin.com/company/greaterheight-tech" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
         <a href="https://twitter.com/greaterheightng" class="social-icon" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
         <a href="https://facebook.com/greaterheighttechnologies" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
         <a href="https://instagram.com/greaterheighttech" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -1011,8 +1032,8 @@
     mobileToggle.addEventListener('click',function(){var open=mobileNav.classList.toggle('open');mobileToggle.setAttribute('aria-expanded',open.toString())});
     var SEARCH_INDEX=[{title:'Company Overview',url:'/who-we-are/company-overview/',desc:'Our story, founding, and global reach'},{title:'Our Values',url:'/who-we-are/our-values/',desc:'Reliability, Technical Depth, Client Partnership'},{title:'Why GreaterHeight',url:'/who-we-are/why-greaterheight/',desc:'What sets us apart from other IT firms'},{title:'Our Infrastructure',url:'/who-we-are/our-infrastructure/',desc:'Tools, platforms and systems we run on'},{title:'Our Approach',url:'/who-we-are/our-approach/',desc:'How we think and deliver on every engagement'},{title:'Our Team',url:'/who-we-are/our-team/',desc:'The people behind the work'},{title:'AI & Automation',url:'/what-we-do/ai-automation/',desc:'AI consulting, LLMs, agents and automation'},{title:'Custom Software Development',url:'/what-we-do/product-engineering/custom-software-development/',desc:'Bespoke software engineering'},{title:'Data Engineering',url:'/what-we-do/data-cloud/data-engineering/',desc:'Data pipelines and infrastructure'},{title:'Cloud Migration',url:'/what-we-do/data-cloud/cloud-migration/',desc:'Move to the cloud with confidence'},{title:'Digital Transformation',url:'/what-we-do/enterprise-advisory/digital-transformation/',desc:'Enterprise-wide technology change'},{title:'SEO',url:'/what-we-do/digital-marketing/seo/',desc:'Search engine optimisation services'},{title:'Individuals',url:'/who-we-serve/individuals/',desc:'Personal brand and digital authority'},{title:'Businesses',url:'/who-we-serve/businesses/',desc:'Technology for growing companies'},{title:'Nations',url:'/who-we-serve/nations/',desc:'Government and public sector technology'}];
     var searchOverlay=document.getElementById('search-overlay'),searchInput=document.getElementById('search-input'),searchResults=document.getElementById('search-results');
-    document.getElementById('search-trigger').addEventListener('click',function(){searchOverlay.classList.add('open');searchInput.focus()});
-    searchOverlay.addEventListener('click',function(e){if(e.target===searchOverlay)searchOverlay.classList.remove('open')});
+    
+    
     searchInput.addEventListener('input',function(){var q=this.value.trim().toLowerCase();searchResults.innerHTML='';if(!q)return;var hits=SEARCH_INDEX.filter(function(item){return item.title.toLowerCase().includes(q)||item.desc.toLowerCase().includes(q)}).slice(0,7);if(!hits.length){searchResults.innerHTML='<p style="padding:8px 12px;color:var(--txt-3);font-size:.875rem;">No results found.</p>';return}hits.forEach(function(item){var a=document.createElement('a');a.href=item.url;a.className='search-result-item';a.setAttribute('role','option');a.innerHTML='<strong>'+item.title+'</strong>'+item.desc;searchResults.appendChild(a)})});
     if('IntersectionObserver'in window){var io=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('visible');io.unobserve(entry.target)}})},{threshold:0.1});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)})}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible')})}
         var cookieOverlay=document.getElementById('cookie-overlay');

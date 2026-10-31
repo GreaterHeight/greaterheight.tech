@@ -109,15 +109,29 @@
     .content-section a{color:var(--teal-mid);text-decoration:underline;}
     .content-section a:hover{color:var(--teal);}
     .content-section em{font-style:italic;}
-    .search-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding-top:120px;z-index:9000;opacity:0;visibility:hidden;transition:opacity var(--dur-med),visibility var(--dur-med);}
-    .search-overlay.open{opacity:1;visibility:visible;}
-    .search-modal{background:var(--white);border-radius:16px;padding:var(--sp-5);width:90%;max-width:600px;box-shadow:var(--sh-lg);}
-    .search-modal input{width:100%;border:2px solid var(--border);border-radius:10px;padding:14px 16px;font-size:var(--ts-base);font-family:var(--font);color:var(--txt);background:var(--bg);outline:none;transition:border-color var(--dur-fast);}
-    .search-modal input:focus{border-color:var(--teal-glow);}
-    .search-results{margin-top:var(--sp-4);max-height:300px;overflow-y:auto;}
-    .search-result-item{display:block;padding:10px 12px;border-radius:8px;font-size:var(--ts-sm);color:var(--txt);transition:background var(--dur-fast);}
-    .search-result-item:hover{background:var(--bg-alt);}
-    .search-result-item strong{color:var(--cr);display:block;}
+    /* Search overlay — command-palette style */
+    .search-overlay{position:fixed;inset:0;background:rgba(10,20,40,.85);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;z-index:9000;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s}
+    .search-overlay.open{opacity:1;visibility:visible}
+    .search-modal{background:#fff;border-radius:14px;width:min(680px,94vw);box-shadow:0 24px 80px rgba(0,0,0,.35);overflow:hidden;max-height:80vh;display:flex;flex-direction:column}
+    .search-input-row{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;border-bottom:1px solid #e5e7eb}
+    .search-input-row svg{flex-shrink:0;color:#9ca3af}
+    .search-input-row input{flex:1;border:none;outline:none;font-size:1rem;color:#111;background:transparent;font-family:Lato,sans-serif}
+    .search-input-row input::placeholder{color:#9ca3af}
+    .search-esc-badge{font-size:.72rem;border:1px solid #e5e7eb;border-radius:5px;padding:.2rem .55rem;color:#6b7280;cursor:pointer;flex-shrink:0;background:none;font-family:Lato,sans-serif}
+    .search-results{overflow-y:auto;flex:1;min-height:0}
+    .search-results:empty::before{content:"Start typing to search6";display:block;padding:2.5rem 1.25rem;color:#9ca3af;font-size:.9rem}
+    .search-result-group-head{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#9ca3af;padding:.7rem 1.25rem .3rem;background:#f9fafb}
+    .search-result-item{display:flex;align-items:center;gap:.9rem;padding:.65rem 1.25rem;cursor:pointer;transition:background .12s;text-decoration:none;color:inherit}
+    .search-result-item:hover,.search-result-item.sr-active{background:#f0f4ff}
+    .search-result-icon{width:34px;height:34px;border-radius:8px;background:#eef2ff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .search-result-icon svg{width:16px;height:16px;stroke:#4f6ef7;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .search-result-text{flex:1;min-width:0}
+    .search-result-title{font-size:.9rem;font-weight:600;color:#111}
+    .search-result-desc{font-size:.75rem;color:#6b7280;margin-top:.1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .search-result-enter{font-size:.72rem;color:#6b7280;flex-shrink:0;opacity:0;white-space:nowrap}
+    .search-result-item.sr-active .search-result-enter{opacity:1}
+    .search-kbd-bar{padding:.55rem 1.25rem;border-top:1px solid #e5e7eb;display:flex;gap:1.2rem;font-size:.72rem;color:#6b7280}
+    .search-kbd-bar kbd{border:1px solid #e5e7eb;border-radius:4px;padding:.1rem .35rem;font-size:.68rem;font-family:Lato,sans-serif}
     .whatsapp-float{position:fixed;bottom:88px;right:24px;width:52px;height:52px;border-radius:50%;background:#25D366;box-shadow:0 4px 16px rgba(37,211,102,.4);display:flex;align-items:center;justify-content:center;z-index:800;transition:transform var(--dur-fast),box-shadow var(--dur-fast);}
     .whatsapp-float:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(37,211,102,.5);}
     .whatsapp-float svg{width:28px;height:28px;fill:var(--white);}
@@ -213,7 +227,21 @@
     <a href="/contact/" class="btn-cta" style="margin-top:16px;display:inline-flex;">Start a Project</a>
   </div>
 
-  <div class="search-overlay" id="search-overlay" role="dialog" aria-label="Search" aria-modal="true"><div class="search-modal"><input type="search" id="search-input" placeholder="Search pages, services, insights…" autocomplete="off" aria-label="Search query"><div class="search-results" id="search-results" role="listbox"></div></div></div>
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
+  <div class="search-modal">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="search" id="search-input" placeholder="Search services, solutions, pages…" autocomplete="off" spellcheck="false" aria-label="Search">
+      <button class="search-esc-badge" id="search-close-btn" aria-label="Close search">esc</button>
+    </div>
+    <div class="search-results" id="search-results" role="listbox" aria-live="polite"></div>
+    <div class="search-kbd-bar" aria-hidden="true">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+      <span><kbd>↵</kbd> open</span>
+      <span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
 
   <nav class="breadcrumb-bar" aria-label="Breadcrumb">
     <div class="breadcrumb-inner">
@@ -332,9 +360,9 @@
   </main>
 
   <footer class="footer" role="contentinfo">
-    <div class="footer-offices"><div class="footer-offices-grid"><div class="fo-item"><p class="fo-country">Nigeria (HQ)</p><p class="fo-detail">17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos · +234 913 999 9700</p></div><div class="fo-item"><p class="fo-country">United States</p><p class="fo-detail">New York, NY</p></div><div class="fo-item"><p class="fo-country">United Kingdom</p><p class="fo-detail">London, UK</p></div><div class="fo-item"><p class="fo-country">UAE</p><p class="fo-detail">Dubai, UAE</p></div></div></div>
+    <div class="footer-offices"><div class="footer-offices-grid"><div class="fo-item"><p class="fo-country">Nigeria (HQ)</p><p class="fo-detail">17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos · +234 913 999 9700</p></div><div class="fo-item"><p class="fo-country">United States</p><p class="fo-detail">1309 Coffeen Avenue STE 1200<br>Sheridan, Wyoming 82801</p></div></div></div>
     <div class="footer-main"><div class="footer-grid"><div class="footer-brand"><img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img"><p class="footer-tagline">…helping you succeed. We are an African-born, globally connected IT consultancy delivering software, cloud, data, AI, and digital marketing services.</p><address class="footer-address" style="font-style:normal;">17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos, Nigeria<br><a href="tel:+2349139999700" style="color:rgba(255,255,255,.4)">+234 913 999 9700</a><br><a href="mailto:info@mail.greaterheight.tech" style="color:rgba(255,255,255,.4)">info@mail.greaterheight.tech</a></address></div><div><p class="footer-col-head">Company</p><ul class="footer-links"><li><a href="/who-we-are/company-overview/">Company Overview</a></li><li><a href="/who-we-are/core-purpose-mission/">Mission &amp; Vision</a></li><li><a href="/who-we-are/our-values/">Our Values</a></li><li><a href="/who-we-are/our-team/">Our Team</a></li><li><a href="/who-we-are/our-culture/">Our Culture</a></li><li><a href="/who-we-are/career-overview/">Careers</a></li><li><a href="/contact/">Contact Us</a></li></ul></div><div><p class="footer-col-head">Our Expertise</p><ul class="footer-links"><li><a href="/what-we-do/ai-automation/">AI &amp; Automation</a></li><li><a href="/what-we-do/product-engineering/custom-software-development/">Custom Software</a></li><li><a href="/what-we-do/product-engineering/web-application-development/">Web Applications</a></li><li><a href="/what-we-do/product-engineering/mobile-app-development/">Mobile Apps</a></li><li><a href="/what-we-do/data-cloud/data-engineering/">Data Engineering</a></li><li><a href="/what-we-do/data-cloud/analytics-bi/">Analytics &amp; BI</a></li><li><a href="/what-we-do/data-cloud/cloud-migration/">Cloud Migration</a></li><li><a href="/what-we-do/enterprise-advisory/digital-transformation/">Digital Transformation</a></li><li><a href="/what-we-do/enterprise-advisory/it-strategy-consulting/">IT Strategy</a></li><li><a href="/what-we-do/processes/">Our Processes</a></li></ul></div><div><p class="footer-col-head">Digital Marketing</p><ul class="footer-links"><li><a href="/what-we-do/digital-marketing/">Overview</a></li><li><a href="/what-we-do/digital-marketing/content-development/">Content Development</a></li><li><a href="/what-we-do/digital-marketing/social-media-marketing/">Social Media Marketing</a></li><li><a href="/what-we-do/digital-marketing/seo/">SEO</a></li><li><a href="/what-we-do/digital-marketing/pay-per-click/">Pay-Per-Click</a></li><li><a href="/what-we-do/digital-marketing/online-reputation-management/">Reputation Management</a></li><li><a href="/insights/">Insights</a></li></ul></div><div><p class="footer-col-head">Clients We Serve</p><ul class="footer-links"><li><a href="/who-we-serve/individuals/">Individuals</a></li><li><a href="/who-we-serve/businesses/">Businesses</a></li><li><a href="/who-we-serve/organisations/">Organisations</a></li><li><a href="/who-we-serve/nations/">Nations</a></li></ul><p class="footer-col-head" style="margin-top:var(--sp-4);">Industries</p><ul class="footer-links"><li><a href="/industries/financial-technology/">Fintech</a></li><li><a href="/industries/healthcare/">Healthcare</a></li><li><a href="/industries/education-elearning/">Education</a></li><li><a href="/industries//">All Industries →</a></li></ul></div></div></div>
-    <div class="footer-lower"><div class="footer-social" aria-label="Social media links"><a href="https://www.linkedin.com/company/greaterheight-technologies" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://twitter.com/greaterheightng" class="social-icon" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a><a href="https://facebook.com/greaterheighttechnologies" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://instagram.com/greaterheighttech" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div><div class="footer-resources"><a href="/insights/">Insights</a><span aria-hidden="true">|</span><a href="/case-studies/">Case Studies</a><span aria-hidden="true">|</span><a href="/products-solutions/">Products &amp; Solutions</a><span aria-hidden="true">|</span><a href="/how-we-do-it/">How We Do It</a><span aria-hidden="true">|</span><a href="/sitemap.xml">Sitemap</a></div></div>
+    <div class="footer-lower"><div class="footer-social" aria-label="Social media links"><a href="https://www.linkedin.com/company/greaterheight-tech" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://twitter.com/greaterheightng" class="social-icon" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a><a href="https://facebook.com/greaterheighttechnologies" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://instagram.com/greaterheighttech" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div><div class="footer-resources"><a href="/insights/">Insights</a><span aria-hidden="true">|</span><a href="/case-studies/">Case Studies</a><span aria-hidden="true">|</span><a href="/products-solutions/">Products &amp; Solutions</a><span aria-hidden="true">|</span><a href="/how-we-do-it/">How We Do It</a><span aria-hidden="true">|</span><a href="/sitemap.xml">Sitemap</a></div></div>
     <div class="footer-copyright"><p>© 2026 GreaterHeight Technologies Limited. All rights reserved. Registered in Nigeria.</p><p><a href="/privacy/">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms/">Terms of Use</a> &nbsp;·&nbsp; <a href="/disclaimer/">Disclaimer</a> &nbsp;·&nbsp; Developed by <a href="/">GreaterHeight</a></p></div>
   </footer>
 
@@ -361,7 +389,7 @@
     document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll();});
     var mobileToggle=document.getElementById('mobile-toggle'),mobileNav=document.getElementById('mobile-nav');
     mobileToggle.addEventListener('click',function(){var open=mobileNav.classList.toggle('open');mobileToggle.setAttribute('aria-expanded',open.toString());});
-    var SEARCH_INDEX=[{title:'Company Overview',url:'/who-we-are/company-overview/',desc:'Our story, founding, and global reach'},{title:'AI & Automation',url:'/what-we-do/ai-automation/',desc:'AI consulting, LLMs, agents and automation'},{title:'Custom Software Development',url:'/what-we-do/product-engineering/custom-software-development/',desc:'Bespoke software engineering'},{title:'Contact & Offices',url:'/contact/',desc:'Lagos, London, New York, Dubai'},{title:'Insights',url:'/insights/',desc:'Articles, perspectives, and research'}];
+    var SEARCH_INDEX=[{title:'Company Overview',url:'/who-we-are/company-overview/',desc:'Our story, founding, and global reach'},{title:'AI & Automation',url:'/what-we-do/ai-automation/',desc:'AI consulting, LLMs, agents and automation'},{title:'Custom Software Development',url:'/what-we-do/product-engineering/custom-software-development/',desc:'Bespoke software engineering'},{title:'Contact & Offices',url:'/contact/',desc:'Lagos, Sheridan (Wyoming)'},{title:'Insights',url:'/insights/',desc:'Articles, perspectives, and research'}];
     var searchOverlay=document.getElementById('search-overlay'),searchInput=document.getElementById('search-input'),searchResults=document.getElementById('search-results');
     document.getElementById('search-trigger').addEventListener('click',function(){searchOverlay.classList.add('open');searchInput.focus();});
     searchOverlay.addEventListener('click',function(e){if(e.target===searchOverlay)searchOverlay.classList.remove('open');});
