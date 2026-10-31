@@ -619,28 +619,24 @@
     .back-to-top:hover { background: var(--cr-mid); transform: translateY(-2px); }
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
-    .cookie-banner {
-      position: fixed; bottom: 0; left: 0; right: 0;
-      background: var(--bg-dark); border-top: 1px solid rgba(255,255,255,.1);
-      padding: var(--sp-4) var(--sp-6); z-index: 850;
-      transform: translateY(100%);
-      transition: transform var(--dur-slow) var(--ease-out);
-      display: flex; gap: var(--sp-5); align-items: center; flex-wrap: wrap;
-    }
-    .cookie-banner.visible { transform: translateY(0); }
-    .cookie-banner p { font-size: var(--ts-sm); color: rgba(255,255,255,.75); flex: 1 1 400px; line-height: 1.5; }
-    .cookie-banner p a { color: var(--mint); text-decoration: underline; }
-    .cookie-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; }
-    .btn-cookie-accept {
-      padding: 10px 20px; background: var(--teal-glow); color: var(--bg-dark);
-      border: none; border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
-      cursor: pointer; font-family: var(--font);
-    }
-    .btn-cookie-reject {
-      padding: 10px 20px; background: transparent; color: rgba(255,255,255,.7);
-      border: 1px solid rgba(255,255,255,.2); border-radius: 8px;
-      font-size: var(--ts-sm); cursor: pointer; font-family: var(--font);
-    }
+    /* ====== COOKIE CONSENT ====== */
+#cookie-overlay{position:fixed;inset:0;z-index:3000;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .35s ease;}
+#cookie-overlay.visible{opacity:1;pointer-events:auto;}
+#cookie-banner{background:#fff;color:#1a1a1a;border-radius:12px 12px 0 0;width:100%;max-width:900px;padding:1.75rem 2rem 1.5rem;box-shadow:0 -8px 32px rgba(0,0,0,.18);transform:translateY(24px);transition:transform .35s ease;}
+#cookie-overlay.visible #cookie-banner{transform:none;}
+.cookie-title{font-size:1rem;font-weight:700;color:#002a1e;margin-bottom:.75rem;}
+#cookie-banner>p{font-size:.82rem;line-height:1.7;color:#444;margin-bottom:1.25rem;}
+#cookie-banner>p a{color:#0e8a6c;text-decoration:underline;}
+#cookie-banner>p a:hover{color:#007557;}
+.cookie-btns{display:flex;gap:.625rem;flex-wrap:wrap;justify-content:flex-end;align-items:center;}
+.cookie-btn{font-size:.78rem;font-weight:600;border-radius:6px;padding:.55rem 1.1rem;cursor:pointer;transition:all .2s;border:1px solid transparent;white-space:nowrap;font-family:inherit;}
+.cookie-btn.accept{background:#003020;color:#fff;border-color:#003020;}
+.cookie-btn.accept:hover{background:#004d33;}
+.cookie-btn.necessary{background:#fff;color:#333;border-color:#ccc;}
+.cookie-btn.necessary:hover{background:#f5f5f5;}
+.cookie-btn.settings{background:transparent;color:#666;border-color:transparent;}
+.cookie-btn.settings:hover{color:#222;}
+@media(max-width:520px){.cookie-btns{flex-direction:column-reverse;}.cookie-btn{width:100%;text-align:center;}}
 
     /* ============================================================
        FOOTER
@@ -1509,13 +1505,18 @@
     <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <!-- Cookie banner -->
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
-    <p>We use cookies to improve your experience. By continuing to use this site you accept our use of cookies. <a href="/privacy/">Read our Privacy Policy</a>.</p>
-    <div class="cookie-actions">
-      <button class="btn-cookie-accept" id="cookie-accept">Accept All</button>
-      <button class="btn-cookie-reject" id="cookie-reject">Reject Non-Essential</button>
+  <!-- Cookie Consent -->
+<div id="cookie-overlay" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
+  <div id="cookie-banner">
+    <p class="cookie-title" id="cookie-title">Cookie Consent</p>
+    <p>To improve your browsing experience on this website, GreaterHeight Technologies and its partners would like to place cookies and similar technologies (&ldquo;Cookies&rdquo;) on your device. That enables us to analyse website usage and optimise our marketing efforts for the best possible user experience. By clicking &ldquo;Accept All Cookies&rdquo; you agree to Cookie placement and respective use, as well as the subsequent processing of the collected data for the purposes of personalised advertising and marketing. Detailed information about the Cookies, the exact purposes, third-party recipients, Cookie lifetime, and more can be found in our <a href="/legal/cookies">Cookie Policy</a> and <a href="/privacy/">Privacy Policy</a>. You can always change your Cookie Settings to your own preference.</p>
+    <div class="cookie-btns">
+      <button class="cookie-btn settings" id="cookie-settings">Cookie Settings</button>
+      <button class="cookie-btn necessary" id="cookie-necessary">Only Necessary Cookies</button>
+      <button class="cookie-btn accept" id="cookie-accept">Accept All Cookies</button>
     </div>
+  </div>
+</div>
   </div>
 
   <!-- ============================================================
@@ -1682,18 +1683,17 @@
       document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
     }
 
-    /* Cookie banner */
-    if (!localStorage.getItem('gh_cookies')) {
-      setTimeout(function () { document.getElementById('cookie-banner').classList.add('visible'); }, 2000);
-    }
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      localStorage.setItem('gh_cookies', 'accepted');
-      document.getElementById('cookie-banner').classList.remove('visible');
-    });
-    document.getElementById('cookie-reject').addEventListener('click', function () {
-      localStorage.setItem('gh_cookies', 'rejected');
-      document.getElementById('cookie-banner').classList.remove('visible');
-    });
+        /* ---- COOKIE BANNER ---- */
+    var cookieOverlay=document.getElementById('cookie-overlay');
+    function closeCookie(){if(cookieOverlay)cookieOverlay.classList.remove('visible');}
+    function cookieDecision(v){closeCookie();localStorage.setItem('gh_cookies',v);if(v==='accepted'&&typeof loadAnalytics==='function')loadAnalytics();}
+    if(!localStorage.getItem('gh_cookies')&&cookieOverlay){setTimeout(function(){cookieOverlay.classList.add('visible');},2500);}
+    var ghAccept=document.getElementById('cookie-accept');
+    var ghNecessary=document.getElementById('cookie-necessary');
+    var ghSettings=document.getElementById('cookie-settings');
+    if(ghAccept)ghAccept.addEventListener('click',function(){cookieDecision('accepted');});
+    if(ghNecessary)ghNecessary.addEventListener('click',function(){cookieDecision('necessary');});
+    if(ghSettings)ghSettings.addEventListener('click',function(){closeCookie();window.location.href='/legal/cookies';});
 
   }());
   </script>
