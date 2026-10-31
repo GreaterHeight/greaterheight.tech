@@ -845,7 +845,85 @@
 .mega-cta-link{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:var(--cr);color:var(--white);border-radius:6px;font-size:.78rem;font-weight:700;white-space:nowrap;transition:background .15s;}
 .mega-cta-link:hover{background:var(--cr-mid);}
 .mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
-</style>
+
+/* ============================================================
+   CANONICAL NAV & MEGA MENU (injected for nav consistency)
+============================================================ */
+#main-nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding-block:.85rem;}
+.logo{display:inline-flex;align-items:center;text-decoration:none;}
+.logo-img{height:40px;width:auto;display:block;}
+.nav-links{display:flex;align-items:center;gap:.2rem;list-style:none;margin:0;padding:0;}
+.nav-item{position:relative;}
+.nav-item:not(.nav-cta) > a,.nav-item > button{font-family:var(--font);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);background:none;border:none;cursor:pointer;padding:.5rem .8rem;border-radius:6px;transition:color .2s,background .2s;display:flex;align-items:center;gap:.3rem;}
+.nav-item:not(.nav-cta) > a:hover,.nav-item > button:hover,.nav-item:not(.nav-cta) > a:focus,.nav-item > button:focus{color:var(--cr);background:var(--cr-lite);outline:none;}
+.nav-item > button svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .2s;}
+.nav-item[aria-expanded="true"] > button svg{transform:rotate(180deg);}
+.nav-cta{margin-left:.8rem;}
+.btn.btn-primary{display:inline-flex;align-items:center;padding:.55rem 1.1rem;background:var(--cr);color:#fff;border-radius:6px;font-family:var(--font);font-size:.75rem;font-weight:700;letter-spacing:.04em;text-decoration:none;transition:background .2s;}
+.btn.btn-primary:hover{background:var(--cr-mid);}
+.mega-panel{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(6px);background:#fff;border:1px solid var(--border);border-radius:var(--r);box-shadow:0 16px 48px rgba(0,0,0,.12);min-width:280px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:200;}
+.mega-panel.wide{min-width:640px;}
+.mega-panel.xwide{min-width:860px;}
+.mega-panel.xxwide{min-width:1060px;}
+.nav-item[aria-expanded="true"] .mega-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+.mega-inner{padding:1.5rem;}
+.mega-cols{display:grid;gap:1.5rem;}
+.mega-cols.c2{grid-template-columns:1fr 1fr;}
+.mega-cols.c3{grid-template-columns:repeat(3,1fr);}
+.mega-cols.c4{grid-template-columns:repeat(4,1fr);}
+.mega-col-head{font-family:var(--font);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.75rem;}
+.mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
+.mega-links{display:flex;flex-direction:column;gap:.2rem;list-style:none;margin:0;padding:0;}
+.mega-links a{font-size:.82rem;color:var(--txt);padding:.28rem .5rem;border-radius:6px;transition:background .15s,color .15s;display:flex;align-items:center;gap:.5rem;white-space:nowrap;text-decoration:none;}
+.mega-links a:hover{background:var(--teal-lite);color:var(--forest);}
+.mega-panel-hd{padding:1.25rem 1.5rem .75rem;border-bottom:1px solid var(--border);margin-bottom:.5rem;}
+.mega-panel-eyebrow{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--cr);margin-bottom:4px;}
+.mega-hdesc{font-size:.82rem;color:var(--txt-2);}
+.mega-panel-ft{padding:.75rem 1.5rem 1.25rem;border-top:1px solid var(--border);margin-top:.5rem;display:flex;align-items:center;justify-content:flex-end;gap:1rem;flex-wrap:wrap;}
+.mega-panel-ft p{font-size:.78rem;color:var(--txt-2);line-height:1.5;flex:1;min-width:200px;}
+.mega-cta-link{font-size:.78rem;font-weight:700;color:var(--cr);text-decoration:none;white-space:nowrap;}
+.mega-cta-link:hover{text-decoration:underline;}
+.drawer-sub-head{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .2rem;font-weight:700;}
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--txt);}
+.ham-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;}
+@media(max-width:900px){.nav-links{display:none;}.ham-btn{display:flex;align-items:center;}}
+.nav-search-trigger button{padding:.4rem .55rem;}
+#search-overlay{position:fixed;inset:0;z-index:8000;background:rgba(10,20,40,.88);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:8vh;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;}
+#search-overlay.open{opacity:1;visibility:visible;}
+.search-modal{background:#fff;border-radius:14px;width:min(840px,94vw);box-shadow:0 24px 80px rgba(0,0,0,.3);overflow:hidden;max-height:80vh;display:flex;flex-direction:column;}
+.search-input-row{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;border-bottom:1px solid var(--border);}
+.search-input-row svg{flex-shrink:0;color:var(--txt-3);}
+.search-input-row input{flex:1;border:none;outline:none;font-family:var(--font);font-size:1rem;color:var(--txt);background:transparent;}
+.search-input-row input::placeholder{color:var(--txt-3);}
+.search-esc-badge{font-family:var(--font);font-size:.72rem;border:1px solid var(--border);border-radius:5px;padding:.2rem .55rem;color:var(--txt-3);cursor:pointer;flex-shrink:0;background:none;}
+.search-results{overflow-y:auto;flex:1;}
+.search-results:empty::before{content:"Start typing to search...";display:block;padding:2rem 1.25rem;color:var(--txt-3);font-size:.9rem;}
+.search-result-group-head{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 1.25rem .3rem;background:var(--bg);}
+.search-result-item{display:flex;align-items:center;gap:.9rem;padding:.65rem 1.25rem;cursor:pointer;transition:background .12s;text-decoration:none;}
+.search-result-item:hover,.search-result-item.active{background:#F0F4FF;}
+.search-result-title{font-size:.9rem;font-weight:600;color:var(--txt);}
+.search-result-path{font-size:.75rem;color:var(--txt-3);margin-top:.1rem;}
+.search-kbd-bar{padding:.55rem 1.25rem;border-top:1px solid var(--border);display:flex;gap:1.2rem;font-size:.72rem;color:var(--txt-3);}
+.search-kbd-bar kbd{font-family:var(--font);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.68rem;}
+#mobile-nav{position:fixed;inset:0;z-index:5000;background:rgba(0,48,32,.92);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;}
+#mobile-nav.open{opacity:1;visibility:visible;}
+.mobile-drawer{position:absolute;top:0;right:0;width:min(340px,92vw);height:100%;background:var(--bg);overflow-y:auto;transform:translateX(100%);transition:transform .3s ease;}
+#mobile-nav.open .mobile-drawer{transform:none;}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border-bottom:1px solid var(--border);}
+.drawer-close{background:none;border:none;cursor:pointer;padding:.3rem;color:var(--txt-2);}
+.drawer-close svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;}
+.drawer-links{padding:1rem 0 2rem;}
+.drawer-item{border-bottom:1px solid var(--border);}
+.drawer-item > a,.drawer-item > button{width:100%;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.25rem;font-family:var(--font);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);background:none;border:none;cursor:pointer;}
+.drawer-item > a:hover,.drawer-item > button:hover{color:var(--cr);}
+.drawer-sub{padding:0 1.25rem .5rem 1.5rem;display:none;}
+.drawer-sub.open{display:block;}
+.drawer-sub a{display:block;padding:.4rem 0;font-size:.82rem;color:var(--txt-2);text-decoration:none;}
+.drawer-sub a:hover{color:var(--cr);}
+.drawer-cta{padding:1.25rem 1.25rem .5rem;}
+
+    </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -861,251 +939,351 @@
   <!-- ============================================================
        HEADER
   ============================================================ -->
-  <header class="site-header" id="site-header">
-    <div class="header-inner">
-      <a href="/" class="header-logo" aria-label="GreaterHeight Technologies — Home">
-        <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
-      </a>
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
+      <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
+    </a>
 
-      <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
-        <!-- WHO WE ARE -->
-        <div class="nav-item">
-          <button class="nav-link" aria-expanded="false" aria-controls="panel-who-we-are">
-            Who We Are
-            <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
-          </button>
-          <div class="mega-panel xxwide" id="panel-who-we-are" role="region" aria-label="Who We Are submenu">
-            <div class="mega-panel-hd">
-              <div class="mega-panel-eyebrow">Who We Are</div>
-              <div class="mega-hdesc">Over two decades of IT Consulting and Software Development</div>
-            </div>
-            <div class="mega-grid cols-4">
-              <div>
-                <p class="mega-col-head">About Us</p>
-                <a href="/who-we-are/company-overview/" class="mega-link">Company Overview</a>
-                <a href="/who-we-are/core-purpose-mission/" class="mega-link">Core Purpose &amp; Mission</a>
-                <a href="/who-we-are/our-values/" class="mega-link">Our Values</a>
-                <a href="/who-we-are/why-greaterheight/" class="mega-link">Why GreaterHeight</a>
-                <a href="/who-we-are/our-team/" class="mega-link">Our Team</a>
-                <a href="/who-we-are/our-approach/" class="mega-link">Our Approach</a>
-              </div>
-              <div>
-                <p class="mega-col-head">Insights</p>
-                <a href="/insights/brochure/" class="mega-link">Brochure</a>
-                <a href="/insights/webinars/" class="mega-link">Webinars</a>
-                <a href="/insights/case-studies/" class="mega-link">Case Studies</a>
-                <a href="/insights/faq/" class="mega-link">FAQ</a>
-                <a href="/insights/white-papers/" class="mega-link">White Papers</a>
-                <a href="/insights/testimonials/" class="mega-link">Client Reviews &amp; Testimonials</a>
-                <a href="/insights/blog/" class="mega-link">Blog &amp; Articles</a>
-              </div>
-              <div>
-                <p class="mega-col-head">Become a Partner</p>
-                <a href="/partners/strategic/" class="mega-link">Strategic Partnership</a>
-                <a href="/partners/affiliate/" class="mega-link">Affiliate Partnership</a>
-                <a href="/partners/referral/" class="mega-link">Referral Partnership</a>
-              </div>
-              <div>
-                <p class="mega-col-head">Our Culture</p>
-                <a href="/culture/career-overview/" class="mega-link">Career Overview</a>
-                <a href="/culture/career-opportunities/" class="mega-link">Career Opportunities</a>
-                <a href="/culture/csr/" class="mega-link">Corporate Social Responsibility</a>
-              </div>
-            </div>
-            <div class="mega-panel-ft">
-              <a href="/contact/" class="mega-cta-link">Talk to Us &#8594;</a>
-            </div>
-          </div>
-        </div>
+    <!-- Desktop nav -->
+    <ul class="nav-links" role="list">
 
-        <!-- WHAT WE DO -->
-        <div class="nav-item">
-          <button class="nav-link" aria-expanded="false" aria-controls="panel-what-we-do" aria-current="page">
-            What We Do
-            <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
-          </button>
-          <div class="mega-panel xxwide" id="panel-what-we-do" role="region" aria-label="What We Do submenu">
-            <div class="mega-panel-hd">
-              <div class="mega-panel-eyebrow">What We Do</div>
-              <div class="mega-hdesc">Governed delivery in the AI era.</div>
-            </div>
-            <div class="mega-grid cols-4">
-              <div>
-                <p class="mega-col-head">Products &amp; Solutions</p>
-                <a href="/products/digitalsiwes/" class="mega-link">DigitalSiWes</a>
-                <a href="/products/searchartisans/" class="mega-link">SearchArtisans</a>
-                <a href="/products/ecertman/" class="mega-link">eCertMan</a>
-                <a href="/products/greaterheight-academy/" class="mega-link">GreaterHeight Academy</a>
-                <p class="mega-col-subhead">AI &amp; Automation</p>
-                <a href="/what-we-do/ai/consulting/" class="mega-link">AI Consulting</a>
-                <a href="/what-we-do/ai/augmented-development/" class="mega-link">AI-Augmented Development</a>
-                <a href="/what-we-do/ai/generative-ai-llms/" class="mega-link">Generative AI &amp; LLMs</a>
-                <a href="/what-we-do/ai/agents-automation/" class="mega-link">AI Agents &amp; Automation</a>
-                <a href="/what-we-do/ai/production-assurance/" class="mega-link">Production Assurance</a>
-              </div>
-              <div>
-                <p class="mega-col-head">Product Engineering</p>
-                <a href="/what-we-do/engineering/custom-software/" class="mega-link">Custom Software Development</a>
-                <a href="/what-we-do/engineering/cross-platform/" class="mega-link">Cross Platform App Development</a>
-                <a href="/what-we-do/engineering/web-application/" class="mega-link">Web Application Development</a>
-                <a href="/what-we-do/engineering/mobile-app/" class="mega-link">Mobile App Development</a>
-                <a href="/what-we-do/engineering/mvp/" class="mega-link">MVP Development</a>
-                <a href="/what-we-do/engineering/saas/" class="mega-link">SaaS Development</a>
-                <a href="/what-we-do/engineering/maintenance/" class="mega-link">Software App Maintenance</a>
-                <a href="/what-we-do/engineering/qa/" class="mega-link">Quality Assurance &amp; Testing</a>
-                <a href="/what-we-do/engineering/support/" class="mega-link">Product Maintenance &amp; Support</a>
-                <a href="/what-we-do/engineering/prototyping/" class="mega-link">Product Prototyping</a>
-              </div>
-              <div>
-                <p class="mega-col-head">Data &amp; Cloud</p>
-                <a href="/what-we-do/data/engineering/" class="mega-link">Data Engineering</a>
-                <a href="/what-we-do/data/analytics-bi/" class="mega-link">Analytics &amp; BI</a>
-                <a href="/what-we-do/data/warehouse/" class="mega-link">Data Warehouse</a>
-                <a href="/what-we-do/data/cloud-migration/" class="mega-link">Cloud Migration</a>
-                <a href="/what-we-do/data/cloud-devops/" class="mega-link">Cloud &amp; DevOps</a>
-                <a href="/what-we-do/data/devops-solutions/" class="mega-link">DevOps Solutions</a>
-                <a href="/what-we-do/data/cloud-solutions/" class="mega-link">Cloud Solutions</a>
-                <p class="mega-col-subhead">Enterprise &amp; Advisory</p>
-                <a href="/what-we-do/enterprise/legacy-modernisation/" class="mega-link">Legacy Modernisation</a>
-                <a href="/what-we-do/enterprise/digital-transformation/" class="mega-link">Digital Transformation</a>
-                <a href="/what-we-do/enterprise/consulting/" class="mega-link">Business / Technology Consulting</a>
-                <a href="/what-we-do/enterprise/it-strategy/" class="mega-link">IT Strategy &amp; Consulting</a>
-                <a href="/what-we-do/enterprise/iot/" class="mega-link">Internet of Things (IoT)</a>
-              </div>
-              <div>
-                <p class="mega-col-head">Digital Marketing</p>
-                <a href="/what-we-do/marketing/content/" class="mega-link">Content Development Services</a>
-                <a href="/what-we-do/marketing/social-media/" class="mega-link">Social Media Marketing</a>
-                <a href="/what-we-do/marketing/reputation/" class="mega-link">Online Reputation Management</a>
-                <a href="/what-we-do/marketing/seo/" class="mega-link">Search Engine Optimisation</a>
-                <a href="/what-we-do/marketing/ppc/" class="mega-link">Pay Per Click</a>
-                <a href="/what-we-do/marketing/link-building/" class="mega-link">Link Building Service</a>
-                <a href="/what-we-do/marketing/personal-branding/" class="mega-link">Personal Branding</a>
-                <p class="mega-col-subhead">Processes</p>
-                <a href="/what-we-do/processes/methodology/" class="mega-link">Development Methodology</a>
-                <a href="/what-we-do/processes/delivery-models/" class="mega-link">Delivery Models</a>
-                <a href="/what-we-do/processes/pricing-models/" class="mega-link">Pricing Models</a>
-              </div>
-            </div>
-            <div class="mega-panel-ft">
-              <p>Not sure where to start? Project Scoping is a fixed-fee 2&#8211;4 week engagement that de-risks any build &#8212; proof before estimate.</p>
-              <a href="/contact/" class="mega-cta-link">Scope Your Project &#8594;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- HOW WE DO IT -->
-        <a href="/how-we-do-it/" class="nav-link nav-direct">How We Do It</a>
-
-        <!-- WHO WE SERVE -->
-        <div class="nav-item">
-          <button class="nav-link" aria-expanded="false" aria-controls="panel-who-we-serve">
-            Who We Serve
-            <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
-          </button>
-          <div class="mega-panel wide" id="panel-who-we-serve" role="region" aria-label="Who We Serve submenu">
-            <div class="mega-grid cols-2">
-              <div>
-                <a href="/who-we-serve/individuals/" class="mega-link"><strong>Individuals</strong><span>Personal brand &amp; skills</span></a>
-                <a href="/who-we-serve/businesses/" class="mega-link"><strong>Businesses</strong><span>SMEs &amp; growing companies</span></a>
-              </div>
-              <div>
-                <a href="/who-we-serve/organisations/" class="mega-link"><strong>Organisations</strong><span>Enterprises &amp; institutions</span></a>
-                <a href="/who-we-serve/nations/" class="mega-link"><strong>Nations</strong><span>Government &amp; public sector</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- INDUSTRIES -->
-        <div class="nav-item">
-          <button class="nav-link" aria-expanded="false" aria-controls="panel-industries">
-            Industries
-            <svg class="nav-chevron" viewBox="0 0 16 16" aria-hidden="true"><polyline points="4 6 8 10 12 6"/></svg>
-          </button>
-          <div class="mega-panel wide" id="panel-industries" role="region" aria-label="Industries submenu">
-            <div class="mega-grid cols-3">
-              <div>
-                <a href="/industries/financial-technology/" class="mega-link">Financial Technology</a>
-                <a href="/industries/healthcare/" class="mega-link">Healthcare</a>
-                <a href="/industries/education-elearning/" class="mega-link">Education &amp; eLearning</a>
-                <a href="/industries/agriculture/" class="mega-link">Agriculture</a>
-              </div>
-              <div>
-                <a href="/industries/retail-ecommerce/" class="mega-link">Retail &amp; E-Commerce</a>
-                <a href="/industries/logistics/" class="mega-link">Logistics</a>
-                <a href="/industries/real-estate/" class="mega-link">Real Estate</a>
-                <a href="/industries/media-entertainment/" class="mega-link">Media &amp; Entertainment</a>
-              </div>
-              <div>
-                <a href="/industries/travel-hospitality/" class="mega-link">Travel &amp; Hospitality</a>
-                <a href="/industries/automotive/" class="mega-link">Automotive</a>
-                <a href="/industries/isvs-product-companies/" class="mega-link">ISVs &amp; Product Companies</a>
-                <a href="/industries/digital-marketing-agencies/" class="mega-link">Digital Marketing Agencies</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- WHERE WE ARE -->
-        <a href="/contact/" class="nav-link nav-direct">Where We Are</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="btn-search" id="search-trigger" aria-label="Open search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <!-- 1. WHO WE ARE -->
+      <li class="nav-item" id="nav-who-we-are">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-are">
+          Who We Are
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-        <a href="/contact/" class="btn-cta">Start a Project</a>
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-nav">
-          <span></span><span></span><span></span>
+        <div class="mega-panel xxwide" id="panel-who-we-are" role="region" aria-label="Who We Are submenu">
+          <div class="mega-panel-hd">
+            <div class="mega-panel-eyebrow">Who We Are</div>
+            <div class="mega-hdesc">Over two decades of IT Consulting and Software Development</div>
+          </div>
+          <div class="mega-inner mega-cols c4">
+            <div>
+              <div class="mega-col-head">About Us</div>
+              <ul class="mega-links">
+                <li><a href="/who-we-are/company-overview/">Company Overview</a></li>
+                <li><a href="/who-we-are/core-purpose-mission/">Core Purpose &amp; Mission</a></li>
+                <li><a href="/who-we-are/our-values/">Our Values</a></li>
+                <li><a href="/who-we-are/why-greaterheight/">Why GreaterHeight</a></li>
+                <li><a href="/who-we-are/our-team/">Our Team</a></li>
+                <li><a href="/who-we-are/our-approach/">Our Approach</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Insights</div>
+              <ul class="mega-links">
+                <li><a href="/insights/brochure/">Brochure</a></li>
+                <li><a href="/insights/webinars/">Webinars</a></li>
+                <li><a href="/insights/case-studies/">Case Studies</a></li>
+                <li><a href="/insights/faq/">FAQ</a></li>
+                <li><a href="/insights/white-papers/">White Papers</a></li>
+                <li><a href="/insights/testimonials/">Client Reviews &amp; Testimonials</a></li>
+                <li><a href="/insights/blog/">Blog &amp; Articles</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Become a Partner</div>
+              <ul class="mega-links">
+                <li><a href="/partners/strategic/">Strategic Partnership</a></li>
+                <li><a href="/partners/affiliate/">Affiliate Partnership</a></li>
+                <li><a href="/partners/referral/">Referral Partnership</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Our Culture</div>
+              <ul class="mega-links">
+                <li><a href="/culture/career-overview/">Career Overview</a></li>
+                <li><a href="/culture/career-opportunities/">Career Opportunities</a></li>
+                <li><a href="/culture/csr/">Corporate Social Responsibility</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega-panel-ft">
+            <a href="/contact/" class="mega-cta-link">Talk to Us &#8594;</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2. WHAT WE DO -->
+      <li class="nav-item" id="nav-what-we-do">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-what-we-do">
+          What We Do
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-      </div>
-    </div>
-  </header>
+        <div class="mega-panel xxwide" id="panel-what-we-do" role="region" aria-label="What We Do submenu">
+          <div class="mega-panel-hd">
+            <div class="mega-panel-eyebrow">What We Do</div>
+            <div class="mega-hdesc">Governed delivery in the AI era.</div>
+          </div>
+          <div class="mega-inner mega-cols c4">
+            <div>
+              <div class="mega-col-head">Products &amp; Solutions</div>
+              <ul class="mega-links">
+                <li><a href="/products/digitalsiwes/">DigitalSiWes</a></li>
+                <li><a href="/products/searchartisans/">SearchArtisans</a></li>
+                <li><a href="/products/ecertman/">eCertMan</a></li>
+                <li><a href="/products/greaterheight-academy/">GreaterHeight Academy</a></li>
+              </ul>
+              <div class="mega-col-subhead">AI &amp; Automation</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/ai/consulting/">AI Consulting</a></li>
+                <li><a href="/what-we-do/ai/augmented-development/">AI-Augmented Development</a></li>
+                <li><a href="/what-we-do/ai/generative-ai-llms/">Generative AI &amp; LLMs</a></li>
+                <li><a href="/what-we-do/ai/agents-automation/">AI Agents &amp; Automation</a></li>
+                <li><a href="/what-we-do/ai/production-assurance/">Production Assurance</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Product Engineering</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/engineering/custom-software/">Custom Software Development</a></li>
+                <li><a href="/what-we-do/engineering/cross-platform/">Cross Platform App Development</a></li>
+                <li><a href="/what-we-do/engineering/web-application/">Web Application Development</a></li>
+                <li><a href="/what-we-do/engineering/mobile-app/">Mobile App Development</a></li>
+                <li><a href="/what-we-do/engineering/mvp/">MVP Development</a></li>
+                <li><a href="/what-we-do/engineering/saas/">SaaS Development</a></li>
+                <li><a href="/what-we-do/engineering/maintenance/">Software App Maintenance</a></li>
+                <li><a href="/what-we-do/engineering/qa/">Quality Assurance &amp; Testing</a></li>
+                <li><a href="/what-we-do/engineering/support/">Product Maintenance &amp; Support</a></li>
+                <li><a href="/what-we-do/engineering/prototyping/">Product Prototyping</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Data &amp; Cloud</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/data/engineering/">Data Engineering</a></li>
+                <li><a href="/what-we-do/data/analytics-bi/">Analytics &amp; BI</a></li>
+                <li><a href="/what-we-do/data/warehouse/">Data Warehouse</a></li>
+                <li><a href="/what-we-do/data/cloud-migration/">Cloud Migration</a></li>
+                <li><a href="/what-we-do/data/cloud-devops/">Cloud &amp; DevOps</a></li>
+                <li><a href="/what-we-do/data/devops-solutions/">DevOps Solutions</a></li>
+                <li><a href="/what-we-do/data/cloud-solutions/">Cloud Solutions</a></li>
+              </ul>
+              <div class="mega-col-subhead">Enterprise &amp; Advisory</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a></li>
+                <li><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a></li>
+                <li><a href="/what-we-do/enterprise/consulting/">Business / Technology Consulting</a></li>
+                <li><a href="/what-we-do/enterprise/it-strategy/">IT Strategy &amp; Consulting</a></li>
+                <li><a href="/what-we-do/enterprise/iot/">Internet of Things (IoT)</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Digital Marketing</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/marketing/content/">Content Development Services</a></li>
+                <li><a href="/what-we-do/marketing/social-media/">Social Media Marketing</a></li>
+                <li><a href="/what-we-do/marketing/reputation/">Online Reputation Management</a></li>
+                <li><a href="/what-we-do/marketing/seo/">Search Engine Optimisation</a></li>
+                <li><a href="/what-we-do/marketing/ppc/">Pay Per Click</a></li>
+                <li><a href="/what-we-do/marketing/link-building/">Link Building Service</a></li>
+                <li><a href="/what-we-do/marketing/personal-branding/">Personal Branding</a></li>
+              </ul>
+              <div class="mega-col-subhead">Processes</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/processes/methodology/">Development Methodology</a></li>
+                <li><a href="/what-we-do/processes/delivery-models/">Delivery Models</a></li>
+                <li><a href="/what-we-do/processes/pricing-models/">Pricing Models</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega-panel-ft">
+            <p>Not sure where to start? Project Scoping is a fixed-fee 2&#8211;4 week engagement that de-risks any build &#8212; proof before estimate.</p>
+            <a href="/contact/" class="mega-cta-link">Scope Your Project &#8594;</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3. HOW WE DO IT -->
+      <li class="nav-item">
+        <a href="/how-we-do-it/">How We Do It</a>
+      </li>
+
+      <!-- 4. WHO WE SERVE -->
+      <li class="nav-item" id="nav-who-we-serve">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-serve">
+          Who We Serve
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel" id="panel-who-we-serve" role="region" aria-label="Who We Serve submenu">
+          <div class="mega-inner">
+            <ul class="mega-links">
+              <li><a href="/who-we-serve/individuals">Individuals</a></li>
+              <li><a href="/who-we-serve/businesses">Businesses</a></li>
+              <li><a href="/who-we-serve/organisations">Organisations</a></li>
+              <li><a href="/who-we-serve/nations">Nations</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5. INDUSTRIES -->
+      <li class="nav-item" id="nav-industries">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-industries">
+          Industries
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel wide" id="panel-industries" role="region" aria-label="Industries submenu">
+          <div class="mega-inner mega-cols c3">
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/agriculture">Agriculture</a></li>
+                <li><a href="/industries/media-entertainment">Media &amp; Entertainment</a></li>
+                <li><a href="/industries/education-elearning">Education &amp; eLearning</a></li>
+                <li><a href="/industries/travel-hospitality">Travel &amp; Hospitality</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/logistics">Logistics</a></li>
+                <li><a href="/industries/financial-technology">Financial Technology</a></li>
+                <li><a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a></li>
+                <li><a href="/industries/healthcare">HealthCare</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/automotive">Automotive</a></li>
+                <li><a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a></li>
+                <li><a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a></li>
+                <li><a href="/industries/real-estate">Real Estate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6. WHERE WE ARE -->
+      <li class="nav-item">
+        <a href="/contact/">Where We Are</a>
+      </li>
+
+      <!-- Search trigger -->
+      <li class="nav-item nav-search-trigger">
+        <button id="search-btn" aria-label="Search site" aria-haspopup="dialog" aria-controls="search-overlay">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+      </li>
+
+      <!-- CTA -->
+      <li class="nav-item nav-cta">
+        <a href="/contact" class="btn btn-primary">Start a Project</a>
+      </li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
 
   <!-- Mobile nav -->
-  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-    <div class="mobile-nav-section">
-      <p class="mobile-nav-head">Who We Are</p>
-      <a href="/who-we-are/company-overview/" class="mobile-nav-link">Company Overview</a>
-      <a href="/who-we-are/core-purpose-mission/" class="mobile-nav-link">Core Purpose &amp; Mission</a>
-      <a href="/who-we-are/our-values/" class="mobile-nav-link">Our Values</a>
-      <a href="/who-we-are/our-team/" class="mobile-nav-link">Our Team</a>
-      <a href="/who-we-are/career-overview/" class="mobile-nav-link">Careers</a>
+  <!-- Mobile Nav -->
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-drawer">
+    <div class="drawer-head">
+      <a href="/" class="logo" aria-label="GreaterHeight home">
+        <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
+      </a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
     </div>
-    <div class="mobile-nav-section">
-      <p class="mobile-nav-head">What We Do</p>
-      <a href="/what-we-do/" class="mobile-nav-link">All Services</a>
-      <a href="/what-we-do/ai-automation/" class="mobile-nav-link">AI &amp; Automation</a>
-      <a href="/what-we-do/product-engineering/" class="mobile-nav-link">Product Engineering</a>
-      <a href="/what-we-do/data-cloud/" class="mobile-nav-link">Data &amp; Cloud</a>
-      <a href="/what-we-do/digital-marketing/" class="mobile-nav-link">Digital Marketing</a>
-      <a href="/what-we-do/enterprise-advisory/" class="mobile-nav-link">Enterprise &amp; Advisory</a>
-    </div>
-    <div class="mobile-nav-section">
-      <p class="mobile-nav-head">More</p>
-      <a href="/how-we-do-it/" class="mobile-nav-link">How We Do It</a>
-      <a href="/who-we-serve/" class="mobile-nav-link">Who We Serve</a>
-      <a href="/industries/" class="mobile-nav-link">Industries</a>
-      <a href="/contact/" class="mobile-nav-link">Where We Are</a>
-      <a href="/insights/" class="mobile-nav-link">Insights</a>
-    </div>
-    <a href="/contact/" class="btn-cta" style="margin-top:16px;display:inline-flex;">Start a Project</a>
+    <nav class="drawer-links" aria-label="Mobile navigation">
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Who We Are <span>+</span></button>
+        <div class="drawer-sub">
+          <div class="drawer-sub-head">About Us</div>
+          <a href="/who-we-are/company-overview">Company Overview</a>
+          <a href="/who-we-are/core-purpose-mission">Core Purpose &amp; Mission</a>
+          <a href="/who-we-are/our-values">Our Values</a>
+          <a href="/who-we-are/our-team">Our Team</a>
+          <div class="drawer-sub-head">Insights</div>
+          <a href="/insights/case-studies">Case Studies</a>
+          <a href="/insights/blog">Blog &amp; Articles</a>
+          <a href="/insights/testimonials">Testimonials</a>
+          <div class="drawer-sub-head">Culture &amp; Partners</div>
+          <a href="/culture/career-opportunities">Career Opportunities</a>
+          <a href="/partners/strategic">Become a Partner</a>
+        </div>
+      </div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">What We Do <span>+</span></button>
+        <div class="drawer-sub">
+          <div class="drawer-sub-head">Products &amp; Solutions</div>
+          <a href="/products/digitalsiwes">DigitalSIWES</a>
+          <a href="/products/searchartisans">SearchArtisans</a>
+          <a href="/products/greaterheight-academy">GreaterHeight Academy</a>
+          <div class="drawer-sub-head">AI &amp; Automation</div>
+          <a href="/what-we-do/ai/consulting">AI Consulting</a>
+          <a href="/what-we-do/ai/augmented-development">AI-Augmented Development</a>
+          <a href="/what-we-do/ai/generative-ai-llms">Generative AI &amp; LLMs</a>
+          <div class="drawer-sub-head">Product Engineering</div>
+          <a href="/what-we-do/engineering/custom-software">Custom Software Development</a>
+          <a href="/what-we-do/engineering/web-application">Web Application Development</a>
+          <a href="/what-we-do/engineering/mobile-app">Mobile App Development</a>
+          <div class="drawer-sub-head">Data &amp; Cloud</div>
+          <a href="/what-we-do/data/engineering">Data Engineering</a>
+          <a href="/what-we-do/data/analytics-bi">Analytics &amp; BI</a>
+          <a href="/what-we-do/data/cloud-solutions">Cloud Solutions</a>
+          <div class="drawer-sub-head">Digital Marketing</div>
+          <a href="/what-we-do/marketing/content">Content Development</a>
+          <a href="/what-we-do/marketing/seo">SEO</a>
+          <a href="/what-we-do/marketing/social-media">Social Media Marketing</a>
+        </div>
+      </div>
+      <div class="drawer-item"><a href="/how-we-do-it/">How We Do It</a></div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Who We Serve <span>+</span></button>
+        <div class="drawer-sub">
+          <a href="/who-we-serve/individuals">Individuals</a>
+          <a href="/who-we-serve/businesses">Businesses</a>
+          <a href="/who-we-serve/organisations">Organisations</a>
+          <a href="/who-we-serve/nations">Nations</a>
+        </div>
+      </div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Industries <span>+</span></button>
+        <div class="drawer-sub">
+          <a href="/industries/agriculture">Agriculture</a>
+          <a href="/industries/media-entertainment">Media &amp; Entertainment</a>
+          <a href="/industries/education-elearning">Education &amp; eLearning</a>
+          <a href="/industries/travel-hospitality">Travel &amp; Hospitality</a>
+          <a href="/industries/logistics">Logistics</a>
+          <a href="/industries/financial-technology">Financial Technology</a>
+          <a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a>
+          <a href="/industries/healthcare">HealthCare</a>
+          <a href="/industries/automotive">Automotive</a>
+          <a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a>
+          <a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a>
+          <a href="/industries/real-estate">Real Estate</a>
+        </div>
+      </div>
+      <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
+      <div class="drawer-cta">
+        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+      </div>
+    </nav>
   </div>
+</div>
 
-  <!-- Search overlay -->
-  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
+<!-- Search overlay -->
+<div id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
   <div class="search-modal">
     <div class="search-input-row">
       <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-      <input type="search" id="search-input" placeholder="Search services, solutions, pages…" autocomplete="off" spellcheck="false" aria-label="Search">
-      <button class="search-esc-badge" id="search-close-btn" aria-label="Close search">esc</button>
+      <input type="search" placeholder="Search services, solutions, roles, pages..." autocomplete="off" spellcheck="false" aria-label="Search">
+      <button class="search-esc-badge" aria-label="Close search">esc</button>
     </div>
-    <div class="search-results" id="search-results" role="listbox" aria-live="polite"></div>
+    <div class="search-results" role="listbox" aria-live="polite"></div>
     <div class="search-kbd-bar" aria-hidden="true">
-      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
-      <span><kbd>↵</kbd> open</span>
+      <span><kbd>&#8593;</kbd><kbd>&#8595;</kbd> navigate</span>
+      <span><kbd>&#8629;</kbd> open</span>
       <span><kbd>esc</kbd> close</span>
+      <span><kbd>/</kbd> or <kbd>Ctrl K</kbd> to open</span>
     </div>
   </div>
 </div>
@@ -1476,13 +1654,11 @@
 
     /* ------- Scroll progress ------- */
     const progressBar = document.getElementById('scroll-progress');
-    const header = document.getElementById('site-header');
-    function onScroll() {
+function onScroll() {
       const scrolled = window.scrollY;
       const docH = document.documentElement.scrollHeight - window.innerHeight;
       progressBar.style.width = (docH > 0 ? (scrolled / docH) * 100 : 0) + '%';
-      header.classList.toggle('scrolled', scrolled > 20);
-      document.getElementById('back-to-top').classList.toggle('visible', scrolled > 400);
+document.getElementById('back-to-top').classList.toggle('visible', scrolled > 400);
     }
     window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -1491,138 +1667,11 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    /* ------- Mega menu ------- */
-    const navItems = document.querySelectorAll('.nav-item');
-    let activePanel = null;
+    
 
-    function closeAll() {
-      navItems.forEach(function (item) {
-        const btn = item.querySelector('.nav-link');
-        const panel = item.querySelector('.mega-panel');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-        if (panel) panel.classList.remove('open');
-      });
-      activePanel = null;
-    }
+    
 
-    navItems.forEach(function (item) {
-      const btn = item.querySelector('button.nav-link');
-      const panel = item.querySelector('.mega-panel');
-      if (!btn || !panel) return;
-
-      btn.addEventListener('click', function (e) {
-        e.stopPropagation();
-        const isOpen = panel.classList.contains('open');
-        closeAll();
-        if (!isOpen) {
-          btn.setAttribute('aria-expanded', 'true');
-          panel.classList.add('open');
-          activePanel = panel;
-          /* viewport clamp */
-          const rect = panel.getBoundingClientRect();
-          if (rect.right > window.innerWidth - 16) {
-            panel.style.left = 'auto';
-            panel.style.right = '0';
-            panel.style.transform = 'translateY(0)';
-          }
-        }
-      });
-
-      let _closeTimer;
-      function openPanel() {
-        closeAll();
-        btn.setAttribute('aria-expanded', 'true');
-        panel.classList.add('open');
-        activePanel = panel;
-        const rect = panel.getBoundingClientRect();
-        if (rect.right > window.innerWidth - 16) {
-          panel.style.left = 'auto';
-          panel.style.right = '0';
-          panel.style.transform = 'translateY(0)';
-        }
-      }
-      function closePanel() {
-        _closeTimer = setTimeout(function () {
-          btn.setAttribute('aria-expanded', 'false');
-          panel.classList.remove('open');
-          activePanel = null;
-          panel.style.left = '';
-          panel.style.right = '';
-          panel.style.transform = '';
-        }, 150);
-      }
-      item.addEventListener('mouseenter', function () { clearTimeout(_closeTimer); openPanel(); });
-      item.addEventListener('mouseleave', closePanel);
-      panel.addEventListener('mouseenter', function () { clearTimeout(_closeTimer); });
-      panel.addEventListener('mouseleave', closePanel);
-    });
-
-    document.addEventListener('click', closeAll);
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeAll();
-    });
-
-    /* ------- Mobile nav ------- */
-    const mobileToggle = document.getElementById('mobile-toggle');
-    const mobileNav = document.getElementById('mobile-nav');
-    mobileToggle.addEventListener('click', function () {
-      const open = mobileNav.classList.toggle('open');
-      mobileToggle.setAttribute('aria-expanded', open.toString());
-    });
-
-    /* ------- Search ------- */
-    const SEARCH_INDEX = [
-      { title: 'Company Overview', url: '/who-we-are/company-overview/', desc: 'Our story, founding, and global reach' },
-      { title: 'Core Purpose & Mission', url: '/who-we-are/core-purpose-mission/', desc: 'Why GreaterHeight exists' },
-      { title: 'Our Values', url: '/who-we-are/our-values/', desc: 'The principles we operate by' },
-      { title: 'Our Team', url: '/who-we-are/our-team/', desc: 'The people behind the work' },
-      { title: 'AI & Automation', url: '/what-we-do/ai-automation/', desc: 'AI consulting, LLMs, agents and automation' },
-      { title: 'Custom Software Development', url: '/what-we-do/product-engineering/custom-software-development/', desc: 'Bespoke software engineering' },
-      { title: 'Data Engineering', url: '/what-we-do/data-cloud/data-engineering/', desc: 'Data pipelines and infrastructure' },
-      { title: 'Cloud Migration', url: '/what-we-do/data-cloud/cloud-migration/', desc: 'Move to the cloud with confidence' },
-      { title: 'Digital Transformation', url: '/what-we-do/enterprise-advisory/digital-transformation/', desc: 'Enterprise-wide technology change' },
-      { title: 'SEO', url: '/what-we-do/digital-marketing/seo/', desc: 'Search engine optimisation services' },
-      { title: 'Financial Technology', url: '/industries/financial-technology/', desc: 'Technology for fintech companies' },
-      { title: 'Healthcare', url: '/industries/healthcare/', desc: 'Health technology solutions' },
-      { title: 'Contact & Offices', url: '/contact/', desc: 'Lagos, Sheridan (Wyoming)' },
-      { title: 'Insights', url: '/insights/', desc: 'Articles, perspectives, and research' },
-      { title: 'Case Studies', url: '/case-studies/', desc: 'Client results and project stories' },
-    ];
-
-    const searchOverlay = document.getElementById('search-overlay');
-    const searchInput = document.getElementById('search-input');
-    const searchResults = document.getElementById('search-results');
-
-    document.getElementById('search-trigger').addEventListener('click', function () {
-      searchOverlay.classList.add('open');
-      searchInput.focus();
-    });
-    searchOverlay.addEventListener('click', function (e) {
-      if (e.target === searchOverlay) searchOverlay.classList.remove('open');
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') searchOverlay.classList.remove('open');
-    });
-    searchInput.addEventListener('input', function () {
-      const q = this.value.trim().toLowerCase();
-      searchResults.innerHTML = '';
-      if (!q) return;
-      const hits = SEARCH_INDEX.filter(function (item) {
-        return item.title.toLowerCase().includes(q) || item.desc.toLowerCase().includes(q);
-      });
-      if (!hits.length) {
-        searchResults.innerHTML = '<p style="padding:8px 12px;color:var(--txt-3);font-size:.875rem;">No results found.</p>';
-        return;
-      }
-      hits.slice(0, 7).forEach(function (item) {
-        const a = document.createElement('a');
-        a.href = item.url;
-        a.className = 'search-result-item';
-        a.setAttribute('role', 'option');
-        a.innerHTML = '<strong>' + item.title + '</strong>' + item.desc;
-        searchResults.appendChild(a);
-      });
-    });
+    
 
     /* ------- Scroll reveal ------- */
     if ('IntersectionObserver' in window) {
@@ -1651,7 +1700,200 @@ if(ghAccept)ghAccept.addEventListener('click',function(){cookieDecision('accepte
 if(ghNecessary)ghNecessary.addEventListener('click',function(){cookieDecision('necessary');});
 if(ghSettings)ghSettings.addEventListener('click',function(){closeCookie();window.location.href='/legal/cookies';});
 
-  }());
+
+/* ---- MEGA MENU (canonical) ---- */
+var navItems = document.querySelectorAll('.nav-item[id]');
+function closeAllPanels(){
+  navItems.forEach(function(ni){
+    ni.setAttribute('aria-expanded','false');
+    var b=ni.querySelector('button'); if(b) b.setAttribute('aria-expanded','false');
+    var p=ni.querySelector('.mega-panel'); if(p) p.style.transform='';
+  });
+}
+navItems.forEach(function(item){
+  var btn = item.querySelector('button');
+  var panel = item.querySelector('.mega-panel');
+  if(!btn || !panel) return;
+  function clampAndOpen(){
+    var btnRect = btn.getBoundingClientRect();
+    var btnCenter = btnRect.left + btnRect.width / 2;
+    var panelMin = parseFloat(getComputedStyle(panel).minWidth) || 280;
+    var vw = document.documentElement.clientWidth;
+    var margin = 16;
+    var leftEdge = btnCenter - panelMin / 2;
+    var rightEdge = btnCenter + panelMin / 2;
+    var shift = 0;
+    if(leftEdge < margin)            shift = margin - leftEdge;
+    else if(rightEdge > vw - margin) shift = (vw - margin) - rightEdge;
+    panel.style.transform = shift
+      ? 'translateX(calc(-50% + ' + Math.round(shift) + 'px)) translateY(0)'
+      : '';
+    item.setAttribute('aria-expanded','true');
+    btn.setAttribute('aria-expanded','true');
+  }
+  var _closeTimer;
+  function close(){
+    _closeTimer = setTimeout(function(){
+      item.setAttribute('aria-expanded','false');
+      btn.setAttribute('aria-expanded','false');
+      panel.style.transform = '';
+    }, 150);
+  }
+  item.addEventListener('mouseenter', function(){ clearTimeout(_closeTimer); clampAndOpen(); });
+  item.addEventListener('mouseleave', close);
+  panel.addEventListener('mouseenter', function(){ clearTimeout(_closeTimer); });
+  panel.addEventListener('mouseleave', close);
+  btn.addEventListener('click', function(){
+    var expanded = btn.getAttribute('aria-expanded')==='true';
+    closeAllPanels();
+    if(!expanded){ clampAndOpen(); }
+  });
+  btn.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){close();btn.focus();}
+  });
+  panel.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){close();btn.focus();}
+  });
+});
+document.addEventListener('click', function(e){
+  if(!e.target.closest('.nav-item')){ closeAllPanels(); }
+});
+
+/* ---- MOBILE NAV (canonical) ---- */
+var hamBtn = document.getElementById('ham-btn');
+var mobileNav = document.getElementById('mobile-nav');
+var drawerClose = document.getElementById('drawer-close');
+function openMobile(){
+  if(mobileNav) mobileNav.classList.add('open');
+  if(hamBtn) hamBtn.setAttribute('aria-expanded','true');
+  document.body.style.overflow='hidden';
+}
+function closeMobile(){
+  if(mobileNav) mobileNav.classList.remove('open');
+  if(hamBtn) hamBtn.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
+if(hamBtn) hamBtn.addEventListener('click', openMobile);
+if(drawerClose) drawerClose.addEventListener('click', closeMobile);
+if(mobileNav) mobileNav.addEventListener('click', function(e){
+  if(e.target===mobileNav) closeMobile();
+});
+
+/* ---- MOBILE DRAWER TOGGLE ---- */
+window.toggleDrawer = function(btn){
+  var sub = btn.nextElementSibling;
+  var isOpen = sub.classList.contains('open');
+  document.querySelectorAll('.drawer-sub.open').forEach(function(s){s.classList.remove('open');});
+  if(!isOpen) sub.classList.add('open');
+};
+
+/* ---- SEARCH (canonical) ---- */
+var searchOverlay = document.getElementById('search-overlay');
+var searchInput = searchOverlay ? searchOverlay.querySelector('input[type="search"]') : null;
+var searchResults = searchOverlay ? searchOverlay.querySelector('.search-results') : null;
+var searchBtn = document.getElementById('search-btn');
+var searchEscBtn = searchOverlay ? searchOverlay.querySelector('.search-esc-badge') : null;
+
+var SEARCH_INDEX = [
+  {title:'Home',url:'/',cat:'Pages'},
+  {title:'Company Overview',url:'/who-we-are/company-overview/',cat:'Who We Are'},
+  {title:'Core Purpose & Mission',url:'/who-we-are/core-purpose-mission/',cat:'Who We Are'},
+  {title:'Our Values',url:'/who-we-are/our-values/',cat:'Who We Are'},
+  {title:'Why GreaterHeight',url:'/who-we-are/why-greaterheight/',cat:'Who We Are'},
+  {title:'Our Team',url:'/who-we-are/our-team/',cat:'Who We Are'},
+  {title:'Our Approach',url:'/who-we-are/our-approach/',cat:'Who We Are'},
+  {title:'AI Consulting',url:'/what-we-do/ai/consulting/',cat:'AI & Automation'},
+  {title:'AI-Augmented Development',url:'/what-we-do/ai/augmented-development/',cat:'AI & Automation'},
+  {title:'Generative AI & LLMs',url:'/what-we-do/ai/generative-ai-llms/',cat:'AI & Automation'},
+  {title:'AI Agents & Automation',url:'/what-we-do/ai/agents-automation/',cat:'AI & Automation'},
+  {title:'Custom Software Development',url:'/what-we-do/engineering/custom-software/',cat:'Product Engineering'},
+  {title:'Cross Platform App Development',url:'/what-we-do/engineering/cross-platform/',cat:'Product Engineering'},
+  {title:'Web Application Development',url:'/what-we-do/engineering/web-application/',cat:'Product Engineering'},
+  {title:'Mobile App Development',url:'/what-we-do/engineering/mobile-app/',cat:'Product Engineering'},
+  {title:'MVP Development',url:'/what-we-do/engineering/mvp/',cat:'Product Engineering'},
+  {title:'SaaS Development',url:'/what-we-do/engineering/saas/',cat:'Product Engineering'},
+  {title:'Quality Assurance & Testing',url:'/what-we-do/engineering/qa/',cat:'Product Engineering'},
+  {title:'Data Engineering',url:'/what-we-do/data/engineering/',cat:'Data & Cloud'},
+  {title:'Analytics & BI',url:'/what-we-do/data/analytics-bi/',cat:'Data & Cloud'},
+  {title:'Cloud Migration',url:'/what-we-do/data/cloud-migration/',cat:'Data & Cloud'},
+  {title:'Cloud Solutions',url:'/what-we-do/data/cloud-solutions/',cat:'Data & Cloud'},
+  {title:'Digital Transformation',url:'/what-we-do/enterprise/digital-transformation/',cat:'Enterprise & Advisory'},
+  {title:'Legacy Modernisation',url:'/what-we-do/enterprise/legacy-modernisation/',cat:'Enterprise & Advisory'},
+  {title:'Content Development Services',url:'/what-we-do/marketing/content/',cat:'Digital Marketing'},
+  {title:'SEO',url:'/what-we-do/marketing/seo/',cat:'Digital Marketing'},
+  {title:'Social Media Marketing',url:'/what-we-do/marketing/social-media/',cat:'Digital Marketing'},
+  {title:'DigitalSiWes',url:'/products/digitalsiwes/',cat:'Products'},
+  {title:'SearchArtisans',url:'/products/searchartisans/',cat:'Products'},
+  {title:'eCertMan',url:'/products/ecertman/',cat:'Products'},
+  {title:'GreaterHeight Academy',url:'/products/greaterheight-academy/',cat:'Products'},
+  {title:'Financial Technology',url:'/industries/financial-technology/',cat:'Industries'},
+  {title:'Healthcare',url:'/industries/healthcare/',cat:'Industries'},
+  {title:'Education & eLearning',url:'/industries/education-elearning/',cat:'Industries'},
+  {title:'Retail & eCommerce',url:'/industries/retail-ecommerce/',cat:'Industries'},
+  {title:'Logistics',url:'/industries/logistics/',cat:'Industries'},
+  {title:'Automotive',url:'/industries/automotive/',cat:'Industries'},
+  {title:'Agriculture',url:'/industries/agriculture/',cat:'Industries'},
+  {title:'Real Estate',url:'/industries/real-estate/',cat:'Industries'},
+  {title:'How We Do It',url:'/how-we-do-it/',cat:'Pages'},
+  {title:'Individuals',url:'/who-we-serve/individuals/',cat:'Who We Serve'},
+  {title:'Businesses',url:'/who-we-serve/businesses/',cat:'Who We Serve'},
+  {title:'Organisations',url:'/who-we-serve/organisations/',cat:'Who We Serve'},
+  {title:'Nations',url:'/who-we-serve/nations/',cat:'Who We Serve'},
+  {title:'Case Studies',url:'/insights/case-studies/',cat:'Insights'},
+  {title:'Testimonials',url:'/insights/testimonials/',cat:'Insights'},
+  {title:'Blog & Articles',url:'/insights/blog/',cat:'Insights'},
+  {title:'White Papers',url:'/insights/white-papers/',cat:'Insights'},
+  {title:'FAQ',url:'/insights/faq/',cat:'Insights'},
+  {title:'Contact & Offices',url:'/contact/',cat:'Pages'},
+  {title:'Strategic Partnership',url:'/partners/strategic/',cat:'Partners'},
+  {title:'Affiliate Partnership',url:'/partners/affiliate/',cat:'Partners'},
+  {title:'Referral Partnership',url:'/partners/referral/',cat:'Partners'},
+  {title:'Career Overview',url:'/culture/career-overview/',cat:'Culture'},
+  {title:'Career Opportunities',url:'/culture/career-opportunities/',cat:'Culture'},
+];
+
+function openSearch(){
+  if(!searchOverlay) return;
+  searchOverlay.setAttribute('aria-hidden','false');
+  searchOverlay.classList.add('open');
+  if(searchInput){ searchInput.value=''; searchInput.focus(); }
+  if(searchResults) searchResults.innerHTML='';
+}
+function closeSearch(){
+  if(!searchOverlay) return;
+  searchOverlay.setAttribute('aria-hidden','true');
+  searchOverlay.classList.remove('open');
+}
+if(searchBtn) searchBtn.addEventListener('click', openSearch);
+if(searchEscBtn) searchEscBtn.addEventListener('click', closeSearch);
+if(searchOverlay) searchOverlay.addEventListener('click', function(e){
+  if(e.target===searchOverlay) closeSearch();
+});
+document.addEventListener('keydown', function(e){
+  if(e.key==='Escape' && searchOverlay && searchOverlay.classList.contains('open')) closeSearch();
+  if((e.key==='/' || (e.ctrlKey && e.key==='k')) && !searchOverlay.classList.contains('open')){
+    e.preventDefault(); openSearch();
+  }
+});
+if(searchInput) searchInput.addEventListener('input', function(){
+  var q = this.value.trim().toLowerCase();
+  if(!searchResults) return;
+  searchResults.innerHTML = '';
+  if(!q) return;
+  var hits = SEARCH_INDEX.filter(function(item){
+    return item.title.toLowerCase().includes(q) || (item.cat && item.cat.toLowerCase().includes(q));
+  }).slice(0,8);
+  hits.forEach(function(item){
+    var a = document.createElement('a');
+    a.href = item.url;
+    a.className = 'search-result-item';
+    a.setAttribute('role','option');
+    a.innerHTML = '<div class="search-result-text"><div class="search-result-title">'+item.title+'</div><div class="search-result-path">'+item.url+'</div></div>';
+    searchResults.appendChild(a);
+  });
+});
+
+    }());
   </script>
 </body>
 </html>
