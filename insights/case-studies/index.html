@@ -923,6 +923,213 @@
 .drawer-sub a:hover{color:var(--cr);}
 .drawer-cta{padding:1.25rem 1.25rem .5rem;}
 
+    /* ============================================================
+       CASE STUDIES PAGE — redesign v2
+    ============================================================ */
+
+    .cs-page { background: #f4f5f7; }
+    .cs-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ---- Trusted-by strip ---- */
+    .cs-trust-strip {
+      background: #fff;
+      padding: 2.5rem 0 3rem;
+      text-align: center;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .cs-trust-eyebrow {
+      font-size: .65rem;
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      color: #bbb;
+      margin: 0 0 1.4rem;
+    }
+    .cs-trust-names {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: .35rem 2rem;
+    }
+    .cs-trust-names span {
+      font-size: clamp(.95rem, 1.7vw, 1.25rem);
+      font-weight: 700;
+      color: #1a1a2e;
+      letter-spacing: -.01em;
+    }
+    .cs-trust-names .cs-trust-sep {
+      color: #ddd;
+      font-weight: 300;
+    }
+
+    /* ---- Main section ---- */
+    .cs-main-section { padding: 3rem 0 5rem; }
+
+    /* White header card */
+    .cs-header-card {
+      background: #fff;
+      border-radius: .75rem;
+      box-shadow: 0 2px 20px rgba(0,0,0,.08);
+      padding: 1.75rem 2rem 1.6rem;
+      margin-bottom: 2rem;
+    }
+    .cs-header-card h1 {
+      font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 0 0 1.2rem;
+      letter-spacing: -.02em;
+    }
+
+    /* Filter tabs */
+    .cs-tabs {
+      display: flex;
+      gap: .4rem;
+      flex-wrap: wrap;
+    }
+    .cs-tab-btn {
+      padding: .45rem 1.1rem;
+      border-radius: .3rem;
+      border: 1.5px solid #ddd;
+      background: #fff;
+      color: #555;
+      font-family: var(--font);
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      letter-spacing: .01em;
+    }
+    .cs-tab-btn:hover { border-color: #1a1a2e; color: #1a1a2e; }
+    .cs-tab-on {
+      background: #1a1a2e;
+      border-color: #1a1a2e;
+      color: #fff;
+    }
+    .cs-tab-on:hover { background: #0d2a4a; color: #fff; }
+
+    /* Card grid */
+    .cs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 900px) { .cs-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 560px) { .cs-grid { grid-template-columns: 1fr; } }
+
+    /* Card */
+    .cs-card {
+      background: #fff;
+      border-radius: .5rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      transition: box-shadow .25s, transform .2s;
+    }
+    .cs-card:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,.12);
+      transform: translateY(-2px);
+    }
+
+    /* Gradient thumbnails */
+    .cs-thumb { height: 175px; }
+    .cs-th-1 { background: linear-gradient(135deg,#1a1a2e,#2d3561); }
+    .cs-th-2 { background: linear-gradient(135deg,#0d2f4a,#1565c0); }
+    .cs-th-3 { background: linear-gradient(135deg,#1a0a2e,#6a1fa2); }
+    .cs-th-4 { background: linear-gradient(135deg,#003d20,#1a7a5e); }
+    .cs-th-5 { background: linear-gradient(135deg,#2a1600,#7a3a00); }
+    .cs-th-6 { background: linear-gradient(135deg,#001a4a,#003d96); }
+    .cs-th-7 { background: linear-gradient(135deg,#0a1628,#1a4a80); }
+    .cs-th-8 { background: linear-gradient(135deg,#4a0000,#a00000); }
+    .cs-th-9 { background: linear-gradient(135deg,#001f3f,#003d7a); }
+
+    /* Card body */
+    .cs-card-bd {
+      padding: 1.15rem 1.25rem 1.35rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .cs-card-ttl {
+      font-size: .97rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      line-height: 1.4;
+      margin: 0 0 .5rem;
+    }
+    .cs-card-dsc {
+      font-size: .83rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0 0 .9rem;
+      flex: 1;
+    }
+    .cs-tech-row { margin-bottom: .85rem; }
+    .cs-tech-row strong {
+      display: block;
+      font-size: .68rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: .3rem;
+    }
+    .cs-tech-row span {
+      font-size: .7rem;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      line-height: 1.7;
+    }
+    .cs-read {
+      font-size: .84rem;
+      font-weight: 700;
+      color: #e67e22;
+      text-decoration: none;
+      display: block;
+      text-align: right;
+      margin-top: auto;
+      transition: color .15s;
+    }
+    .cs-read:hover { color: #d35400; }
+
+    /* Pagination / load more */
+    .cs-pager {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+    .cs-pager-txt {
+      font-size: .85rem;
+      color: #888;
+      margin: 0 0 .75rem;
+    }
+    .cs-pager-txt strong { color: #1a1a2e; }
+    .cs-pbar-wrap {
+      max-width: 380px;
+      margin: 0 auto;
+      height: 3px;
+      background: #ddd;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .cs-pbar-fill { height: 100%; width: 4.2%; background: #1a1a2e; }
+    .cs-lm-wrap { text-align: center; margin-top: 2rem; }
+    .cs-lm-btn {
+      display: inline-block;
+      padding: .9rem 2.5rem;
+      background: #1a1a2e;
+      color: #fff;
+      font-family: var(--font);
+      font-size: .9rem;
+      font-weight: 700;
+      border: none;
+      border-radius: .35rem;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+    }
+    .cs-lm-btn:hover { background: #0d2a4a; transform: translateY(-1px); }
+
     </style>
 </head>
 <body>
@@ -1289,67 +1496,178 @@
 </div>
 
   <!-- ============================================================
-       BREADCRUMB
+       MAIN CONTENT — Case Studies redesign v2
   ============================================================ -->
-  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
-      <a href="/">Home</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <a href="/insights/">Insights</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <span aria-current="page">Case Studies</span>
-    </div>
-  </nav>
+  <main id="main-content" class="cs-page">
 
-  <!-- ============================================================
-       MAIN CONTENT
-  ============================================================ -->
-  <main id="main-content">
+    <!-- Trusted-by names strip -->
+    <section class="cs-trust-strip" aria-label="Trusted by global tech leaders">
+      <div class="cs-wrap">
+        <p class="cs-trust-eyebrow">Trusted by Global Tech Leaders</p>
+        <div class="cs-trust-names">
+          <span>Infosys</span><span class="cs-trust-sep">|</span>
+          <span>Selectra</span><span class="cs-trust-sep">|</span>
+          <span>Tejuri</span><span class="cs-trust-sep">|</span>
+          <span>Google</span><span class="cs-trust-sep">|</span>
+          <span>Panasonic</span><span class="cs-trust-sep">|</span>
+          <span>Kuwait Police</span><span class="cs-trust-sep">|</span>
+          <span>Dubai Police</span><span class="cs-trust-sep">|</span>
+          <span>Yale University</span>
+        </div>
+      </div>
+    </section>
 
-    <section class="page-hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <h1 id="hero-heading">Case Studies</h1>
-            <p class="page-hero-lead">Technology results are earned, not claimed. Our case studies document the actual challenges our clients faced, the approach we took, and the outcomes we delivered — with the specificity that makes them useful to businesses facing similar problems.</p>
-            <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
+    <!-- Success Stories with filter and grid -->
+    <section class="cs-main-section" aria-labelledby="cs-h1">
+      <div class="cs-wrap">
+
+        <!-- White header card with filter tabs -->
+        <div class="cs-header-card">
+          <h1 id="cs-h1">Success Stories</h1>
+          <nav class="cs-tabs" aria-label="Filter case studies">
+            <button class="cs-tab-btn cs-tab-on" data-filter="all" aria-pressed="true">All</button>
+            <button class="cs-tab-btn" data-filter="services" aria-pressed="false">Services</button>
+            <button class="cs-tab-btn" data-filter="industries" aria-pressed="false">Industries</button>
+            <button class="cs-tab-btn" data-filter="technologies" aria-pressed="false">Technologies</button>
+          </nav>
+        </div>
+
+        <!-- Card grid -->
+        <div class="cs-grid" role="list" aria-live="polite">
+
+          <article class="cs-card" role="listitem" data-tags="services mobile">
+            <div class="cs-thumb cs-th-1" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">Real-Time Salon Booking Marketplace</h2>
+              <p class="cs-card-dsc">Developed a mobile-first salon booking platform with real-time availability and intelligent scheduling, reducing cancellations by 30%.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Flutter, Node JS, React</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
             </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="services technologies healthcare">
+            <div class="cs-thumb cs-th-2" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">AI-Enabled Telehealth Documentation Platform</h2>
+              <p class="cs-card-dsc">A secure telehealth platform with AI-driven documentation and multi-region deployment, reducing clinical documentation time by 60%.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Angular, DeepGram, Node JS, PostgreSQL, WebRTC</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="industries technologies">
+            <div class="cs-thumb cs-th-3" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">Next-Gen Esports Betting Platform</h2>
+              <p class="cs-card-dsc">Built a secure esports betting platform, increasing user retention by 45% through blockchain-backed trust and community engagement.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Blockchain, MongoDB, Node JS, React JS</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="services technologies">
+            <div class="cs-thumb cs-th-4" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">Tijoree</h2>
+              <p class="cs-card-dsc">A mobile and web-based financial platform combining investment, banking, and education in one unified ecosystem for modern investors.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Firebase, Flutter, Node JS, React JS, REST &amp; GraphQL APIs</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="services technologies">
+            <div class="cs-thumb cs-th-5" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">TriFundit</h2>
+              <p class="cs-card-dsc">A web app linking everyday endurance activities to charitable giving via per-mile sponsorships, turning workouts into meaningful impact.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Bullmq, Fitbit, Garmin, GitHub Actions, Next.js, Neon Postgres, Stripe</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="services technologies">
+            <div class="cs-thumb cs-th-6" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">NobelPage</h2>
+              <p class="cs-card-dsc">A professional networking platform designed to empower talent by emphasising skills over bias, serving professionals worldwide.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Firebase, Flutter, Node JS, React JS, REST &amp; GraphQL APIs</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="services technologies">
+            <div class="cs-thumb cs-th-7" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">ChurchSocial.ai</h2>
+              <p class="cs-card-dsc">A SaaS platform that helps churches turn sermons into short-form clips, generate branded graphics, schedule posts, and grow online community.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>AWS S3, Bullmq, Clerk, Cloudinary, Next.js 15, Neon Postgres, Prisma</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="industries technologies">
+            <div class="cs-thumb cs-th-8" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">Hershey's</h2>
+              <p class="cs-card-dsc">Transformed Hershey's digital experience with a modern AEM implementation, improving content publishing speed by 70% across markets.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>AEM, Akamai CDN, Java, Jenkins, Sightly (HTL)</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+          <article class="cs-card" role="listitem" data-tags="industries technologies">
+            <div class="cs-thumb cs-th-9" aria-hidden="true"></div>
+            <div class="cs-card-bd">
+              <h2 class="cs-card-ttl">Costco</h2>
+              <p class="cs-card-dsc">Boosted conversions with a modern Progressive Web App, achieving faster load times and a seamless shopping experience across all devices.</p>
+              <div class="cs-tech-row">
+                <strong>Core tech</strong>
+                <span>Gatsby JS, GraphQL, React JS, Redux</span>
+              </div>
+              <a href="/contact/" class="cs-read">Read Story &#8594;</a>
+            </div>
+          </article>
+
+        </div><!-- /.cs-grid -->
+
+        <!-- Pagination -->
+        <div class="cs-pager">
+          <p class="cs-pager-txt">Showing <strong>9</strong> of <strong>216</strong> stories</p>
+          <div class="cs-pbar-wrap" role="progressbar" aria-valuenow="9" aria-valuemin="0" aria-valuemax="216">
+            <div class="cs-pbar-fill"></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="content-section bg-light" aria-labelledby="what-you-will-find-here-heading">
-      <div class="container">
-        <h2 id="what-you-will-find-here-heading">What You Will Find Here</h2>
-        <p>Our case studies cover engagements across financial technology, healthcare, education, logistics, government, and enterprise digital transformation — drawn from over a decade of project delivery across Nigerian, African, and international markets.</p>
-        <p>Each case study describes the client context, the specific problem or opportunity, the solution architecture and delivery approach, and the measurable outcomes — without overstating what technology can achieve or attributing client success entirely to our work.</p>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="working-with-real-constraints-heading">
-      <div class="container">
-        <h2 id="working-with-real-constraints-heading">Working With Real Constraints</h2>
-        <p>The projects that matter are rarely the ones that proceed exactly to plan in ideal conditions. Our case studies give an honest account of the technical and operational realities we navigated — whether that was integrating with legacy systems that could not be replaced, delivering under budget constraints that required genuine prioritisation, or adapting to shifting requirements mid-engagement.</p>
-        <p>We believe that kind of honesty is more useful to prospective clients than a gallery of polished success stories with no texture.</p>
-      </div>
-    </section>
-
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Discuss your project</h2>
-            <p>If a case study is relevant to something you are working on, we would welcome a conversation about your specific context.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
-          </div>
+        <div class="cs-lm-wrap">
+          <button class="cs-lm-btn" type="button">Load More Success Stories</button>
         </div>
-      </div>
+
+      </div><!-- /.cs-wrap -->
     </section>
-  </main>
+
   </main>
 
   <!-- ============================================================
@@ -1780,6 +2098,49 @@ if(searchInput) searchInput.addEventListener('input', function(){
 });
 
     }());
+  </script>
+
+  <!-- Case Studies — filter tabs -->
+  <script>
+  (function () {
+    var filterBtns = document.querySelectorAll('.cs-tab-btn');
+    var cards = document.querySelectorAll('.cs-card');
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+
+        // Update active state
+        filterBtns.forEach(function (b) {
+          b.classList.remove('cs-tab-on');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('cs-tab-on');
+        btn.setAttribute('aria-pressed', 'true');
+
+        // Show/hide cards
+        cards.forEach(function (card) {
+          var tags = card.getAttribute('data-tags') || '';
+          if (filter === 'all' || tags.indexOf(filter) !== -1) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Load more (stub — replace with real pagination in production)
+    var loadMoreBtn = document.querySelector('.cs-lm-btn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', function () {
+        loadMoreBtn.textContent = 'Loading…';
+        setTimeout(function () {
+          loadMoreBtn.textContent = 'Load More Success Stories';
+        }, 800);
+      });
+    }
+  }());
   </script>
 </body>
 </html>

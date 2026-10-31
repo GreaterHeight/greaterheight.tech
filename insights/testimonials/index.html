@@ -923,6 +923,346 @@
 .drawer-sub a:hover{color:var(--cr);}
 .drawer-cta{padding:1.25rem 1.25rem .5rem;}
 
+    /* ============================================================
+       TESTIMONIALS PAGE — new design
+    ============================================================ */
+
+    /* Shared layout util */
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ---- Dark Hero ---- */
+    .t-hero {
+      position: relative;
+      background: #0d1b35;
+      overflow: hidden;
+      padding: 7rem 0 6rem;
+    }
+    .t-hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(30,80,200,.1) 0%, transparent 70%);
+    }
+    .t-hero-inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      justify-content: space-between;
+    }
+    .t-hero-content { flex: 1; max-width: 580px; }
+    .t-hero-photos {
+      flex-shrink: 0;
+      width: clamp(200px, 30%, 340px);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .5rem;
+    }
+    .t-hero-photo {
+      aspect-ratio: 1;
+      background: rgba(255,255,255,.1);
+      border-radius: .35rem;
+    }
+    .t-hero-ph1 {
+      grid-column: 1 / 3;
+      aspect-ratio: 2 / 1;
+    }
+    @media (max-width: 820px) {
+      .t-hero-inner { flex-direction: column; }
+      .t-hero-photos { display: none; }
+    }
+    .t-hero-tag {
+      display: inline-block;
+      font-size: .75rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--teal-glow);
+      border: 1px solid rgba(30,180,150,.4);
+      border-radius: 2rem;
+      padding: .3rem .9rem;
+      margin-bottom: 1.4rem;
+    }
+    .t-hero h1 {
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      color: #ffd940;
+      line-height: 1.1;
+      margin: 0 0 1.2rem;
+      letter-spacing: -.02em;
+    }
+    .t-hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.7);
+      line-height: 1.65;
+      margin: 0 0 2rem;
+      max-width: 560px;
+    }
+    .t-hero-cta {
+      display: inline-block;
+      background: var(--teal-glow);
+      color: var(--forest-deep);
+      font-weight: 700;
+      font-size: .9rem;
+      letter-spacing: .02em;
+      padding: .85rem 1.8rem;
+      border-radius: .3rem;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .t-hero-cta:hover { background: var(--mint); transform: translateY(-1px); }
+
+    /* ---- Stats Row ---- */
+    .t-stats {
+      background: #fff;
+      border-bottom: 1px solid #E8E4DC;
+      padding: 3rem 0;
+    }
+    .t-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .t-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .t-stat-num {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--cr);
+      line-height: 1;
+      margin-bottom: .35rem;
+    }
+    .t-stat-plus { font-size: .65em; vertical-align: super; }
+    .t-stat-label {
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: #666;
+    }
+
+    /* ---- Logos section ---- */
+    .t-logos-section {
+      background: var(--teal-pale);
+      padding: 5rem 0;
+    }
+    .t-section-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: var(--forest);
+      margin: 0 0 .6rem;
+      letter-spacing: -.01em;
+    }
+    .t-section-sub {
+      font-size: 1rem;
+      color: #555;
+      margin: 0 0 3rem;
+      max-width: 600px;
+    }
+    .t-region-block {
+      margin-bottom: 3rem;
+    }
+    .t-region-block:last-child { margin-bottom: 0; }
+    .t-region-label {
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      font-weight: 700;
+      border-left: 3px solid var(--teal-glow);
+      padding-left: .75rem;
+      margin-bottom: 1.2rem;
+    }
+    .t-logos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: .75rem;
+    }
+    .t-logo-item {
+      background: #fff;
+      border: 1px solid #d8d4cc;
+      border-radius: .4rem;
+      padding: .9rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 3.2rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .t-logo-item:hover {
+      border-color: var(--teal-glow);
+      box-shadow: 0 2px 10px rgba(0,90,60,.1);
+    }
+    .t-logo-item span {
+      font-size: .82rem;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      letter-spacing: .01em;
+    }
+
+    /* ---- Video / Success Stories ---- */
+    .t-stories-section {
+      background: #fff;
+      padding: 5rem 0;
+    }
+    .t-stories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.75rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 560px) {
+      .t-stories-grid { grid-template-columns: 1fr; }
+    }
+    .t-story-card {
+      border: 1px solid #e0dbd2;
+      border-radius: .6rem;
+      overflow: hidden;
+      background: #fafaf8;
+      transition: box-shadow .25s, transform .2s;
+    }
+    .t-story-card:hover {
+      box-shadow: 0 8px 32px rgba(0,30,20,.12);
+      transform: translateY(-2px);
+    }
+    .t-story-thumb {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--forest-deep), var(--teal));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .t-thumb-blue  { background: linear-gradient(135deg, #0d2a4a, #1565c0); }
+    .t-thumb-purple{ background: linear-gradient(135deg, #2a0d4a, #7b1fa2); }
+    .t-thumb-teal  { background: linear-gradient(135deg, #003d3d, #00796b); }
+    .t-thumb-dark  { background: linear-gradient(135deg, #1a1a2e, #393e70); }
+    .t-thumb-amber { background: linear-gradient(135deg, #3e2000, #e65100); }
+    .t-thumb-play {
+      width: 3.2rem; height: 3.2rem;
+    }
+    .t-thumb-play svg { width: 100%; height: 100%; }
+    .t-thumb-badge {
+      position: absolute;
+      bottom: .6rem; right: .7rem;
+      background: rgba(0,0,0,.55);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 600;
+      padding: .2rem .55rem;
+      border-radius: .25rem;
+    }
+    .t-thumb-logo {
+      position: absolute;
+      top: .75rem; left: .85rem;
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .25rem .65rem;
+      border-radius: .25rem;
+      backdrop-filter: blur(4px);
+    }
+    .t-story-body { padding: 1.35rem 1.4rem 1.5rem; }
+    .t-story-tag {
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--teal);
+      font-weight: 700;
+      margin-bottom: .65rem;
+    }
+    .t-story-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1.4;
+      margin: 0 0 .8rem;
+    }
+    .t-story-quote {
+      font-size: .88rem;
+      color: #555;
+      font-style: italic;
+      line-height: 1.55;
+      margin: 0 0 1.1rem;
+      border-left: 3px solid var(--teal-glow);
+      padding-left: .85rem;
+    }
+    .t-story-attr {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+    .t-story-avatar {
+      width: 2.2rem; height: 2.2rem;
+      border-radius: 50%;
+      background: var(--teal);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .7rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .t-story-name {
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--forest);
+    }
+    .t-story-role {
+      font-size: .76rem;
+      color: #777;
+    }
+
+    /* ---- CTA Section ---- */
+    .t-cta-section {
+      background: var(--forest);
+      padding: 5rem 0;
+    }
+    .t-cta-inner {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .t-cta-inner h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 1rem;
+    }
+    .t-cta-inner p {
+      color: rgba(255,255,255,.7);
+      font-size: 1rem;
+      line-height: 1.65;
+      margin: 0 0 2rem;
+    }
+    .t-cta-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .t-btn-outline {
+      display: inline-block;
+      border: 1.5px solid rgba(255,255,255,.4);
+      color: #fff;
+      background: transparent;
+      font-weight: 600;
+      font-size: .9rem;
+      padding: .85rem 1.8rem;
+      border-radius: .3rem;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .t-btn-outline:hover {
+      border-color: var(--teal-glow);
+      background: rgba(30,180,150,.1);
+      color: var(--teal-glow);
+    }
+
     </style>
 </head>
 <body>
@@ -1289,67 +1629,280 @@
 </div>
 
   <!-- ============================================================
-       BREADCRUMB
-  ============================================================ -->
-  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
-      <a href="/">Home</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <a href="/insights/">Insights</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <span aria-current="page">Client Reviews &amp; Testimonials</span>
-    </div>
-  </nav>
-
-  <!-- ============================================================
-       MAIN CONTENT
+       MAIN CONTENT — Testimonials redesign
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <h1 id="hero-heading">Client Reviews &amp; Testimonials</h1>
-            <p class="page-hero-lead">The most useful account of what it is like to work with GreaterHeight Technologies comes from the clients who have done it. Here is what they say.</p>
-            <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Request a Reference</a>
+    <!-- Dark Hero -->
+    <section class="t-hero" aria-labelledby="t-hero-heading">
+      <div class="t-hero-bg" aria-hidden="true"></div>
+      <div class="wrap t-hero-inner">
+        <div class="t-hero-content">
+          <div class="t-hero-tag">Client Reviews</div>
+          <h1 id="t-hero-heading">Testimonials</h1>
+          <p class="t-hero-sub">Since our inception in 2004, the journey has been nothing short of incredible. The testimonials, feedback, and valuable insights from our clients have been instrumental in refining our services and fostering a culture of continuous excellence.</p>
+          <a href="/contact/" class="btn btn-primary t-hero-cta">Request a Reference &#8594;</a>
+        </div>
+        <div class="t-hero-photos" aria-hidden="true">
+          <div class="t-hero-photo t-hero-ph1"></div>
+          <div class="t-hero-photo"></div>
+          <div class="t-hero-photo"></div>
+          <div class="t-hero-photo"></div>
+          <div class="t-hero-photo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Row -->
+    <section class="t-stats" aria-label="Key figures">
+      <div class="wrap t-stats-grid">
+        <div class="t-stat">
+          <div class="t-stat-num">18<span class="t-stat-plus">+</span></div>
+          <div class="t-stat-label">Years Experience</div>
+        </div>
+        <div class="t-stat">
+          <div class="t-stat-num">650<span class="t-stat-plus">+</span></div>
+          <div class="t-stat-label">Fulltime Employees</div>
+        </div>
+        <div class="t-stat">
+          <div class="t-stat-num">2,000<span class="t-stat-plus">+</span></div>
+          <div class="t-stat-label">Man-Days Delivered</div>
+        </div>
+        <div class="t-stat">
+          <div class="t-stat-num">2,500<span class="t-stat-plus">+</span></div>
+          <div class="t-stat-label">Satisfied Customers</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Logos — by region -->
+    <section class="t-logos-section" aria-labelledby="t-logos-heading">
+      <div class="wrap">
+        <h2 id="t-logos-heading" class="t-section-title">Our Key Clients</h2>
+        <p class="t-section-sub">We partner with forward-thinking organisations across every continent — from ambitious startups to global enterprises and public-sector institutions.</p>
+
+        <div class="t-region-block">
+          <div class="t-region-label">North America</div>
+          <div class="t-logos-grid">
+            <div class="t-logo-item"><span>Yale University</span></div>
+            <div class="t-logo-item"><span>Costco</span></div>
+            <div class="t-logo-item"><span>Hershey's</span></div>
+            <div class="t-logo-item"><span>TriFundit</span></div>
+            <div class="t-logo-item"><span>NobelPage</span></div>
+            <div class="t-logo-item"><span>ChurchSocial.ai</span></div>
+          </div>
+        </div>
+
+        <div class="t-region-block">
+          <div class="t-region-label">Asia Pacific Region</div>
+          <div class="t-logos-grid">
+            <div class="t-logo-item"><span>MediaTek</span></div>
+            <div class="t-logo-item"><span>NAVER</span></div>
+            <div class="t-logo-item"><span>Panasonic</span></div>
+            <div class="t-logo-item"><span>Selectra</span></div>
+            <div class="t-logo-item"><span>Tejuri</span></div>
+            <div class="t-logo-item"><span>Google</span></div>
+          </div>
+        </div>
+
+        <div class="t-region-block">
+          <div class="t-region-label">Europe</div>
+          <div class="t-logos-grid">
+            <div class="t-logo-item"><span>anders invest</span></div>
+            <div class="t-logo-item"><span>DAY MOLN</span></div>
+            <div class="t-logo-item"><span>Blue Lane</span></div>
+            <div class="t-logo-item"><span>CSF</span></div>
+            <div class="t-logo-item"><span>ORA</span></div>
+            <div class="t-logo-item"><span>Infosys</span></div>
+          </div>
+        </div>
+
+        <div class="t-region-block">
+          <div class="t-region-label">Middle East &amp; Africa</div>
+          <div class="t-logos-grid">
+            <div class="t-logo-item"><span>Kuwait Police</span></div>
+            <div class="t-logo-item"><span>Dubai Police</span></div>
+            <div class="t-logo-item"><span>FINTEX</span></div>
+            <div class="t-logo-item"><span>Upthinity</span></div>
+            <div class="t-logo-item"><span>Tijoree</span></div>
+            <div class="t-logo-item"><span>Tejuri</span></div>
+          </div>
+        </div>
+
+        <div class="t-region-block">
+          <div class="t-region-label">India</div>
+          <div class="t-logos-grid">
+            <div class="t-logo-item"><span>Spinny</span></div>
+            <div class="t-logo-item"><span>ezetap</span></div>
+            <div class="t-logo-item"><span>magiclicks</span></div>
+            <div class="t-logo-item"><span>Paytm</span></div>
+            <div class="t-logo-item"><span>Infosys BPM</span></div>
+            <div class="t-logo-item"><span>TriFundit</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Success Stories — video cards -->
+    <section class="t-stories-section" aria-labelledby="t-stories-heading">
+      <div class="wrap">
+        <h2 id="t-stories-heading" class="t-section-title">Customer Success Stories</h2>
+        <p class="t-section-sub">In their own words — watch how GreaterHeight helped these organisations solve their most pressing technology challenges.</p>
+
+        <div class="t-stories-grid">
+          <!-- Story 1 — FINTEX -->
+          <article class="t-story-card">
+            <div class="t-story-thumb" aria-label="Video thumbnail — FINTEX fintech platform story">
+              <div class="t-thumb-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="none"><circle cx="12" cy="12" r="12" fill="rgba(255,255,255,0.15)"/><polygon points="10 8 16 12 10 16" fill="#fff"/></svg>
+              </div>
+              <div class="t-thumb-badge">2:45</div>
+              <div class="t-thumb-logo">FINTEX</div>
             </div>
-          </div>
+            <div class="t-story-body">
+              <div class="t-story-tag">Fintech · Payments</div>
+              <h3 class="t-story-title">How FINTEX built a next-gen payments core with GreaterHeight</h3>
+              <p class="t-story-quote">"They delivered on time, on budget, and with a level of technical depth we rarely see from a partner."</p>
+              <div class="t-story-attr">
+                <div class="t-story-avatar" aria-hidden="true">FX</div>
+                <div>
+                  <div class="t-story-name">Head of Engineering</div>
+                  <div class="t-story-role">FINTEX</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 2 — MEDIATEK -->
+          <article class="t-story-card">
+            <div class="t-story-thumb t-thumb-blue" aria-label="Video thumbnail — MediaTek chip development story">
+              <div class="t-thumb-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="none"><circle cx="12" cy="12" r="12" fill="rgba(255,255,255,0.15)"/><polygon points="10 8 16 12 10 16" fill="#fff"/></svg>
+              </div>
+              <div class="t-thumb-badge">3:12</div>
+              <div class="t-thumb-logo">MEDIATEK</div>
+            </div>
+            <div class="t-story-body">
+              <div class="t-story-tag">Hardware · Embedded Systems</div>
+              <h3 class="t-story-title">MediaTek's software toolchain modernisation with GreaterHeight</h3>
+              <p class="t-story-quote">"The GreaterHeight team understood our domain quickly and gave us architecture advice we still rely on today."</p>
+              <div class="t-story-attr">
+                <div class="t-story-avatar" aria-hidden="true">MT</div>
+                <div>
+                  <div class="t-story-name">Engineering Director</div>
+                  <div class="t-story-role">MediaTek</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 3 — NAVER -->
+          <article class="t-story-card">
+            <div class="t-story-thumb t-thumb-purple" aria-label="Video thumbnail — NAVER platform engineering story">
+              <div class="t-thumb-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="none"><circle cx="12" cy="12" r="12" fill="rgba(255,255,255,0.15)"/><polygon points="10 8 16 12 10 16" fill="#fff"/></svg>
+              </div>
+              <div class="t-thumb-badge">1:58</div>
+              <div class="t-thumb-logo">NAVER</div>
+            </div>
+            <div class="t-story-body">
+              <div class="t-story-tag">Product Engineering</div>
+              <h3 class="t-story-title">NAVER's search infrastructure scale-out with GreaterHeight</h3>
+              <p class="t-story-quote">"An exceptionally skilled team. They think like product builders, not just implementors."</p>
+              <div class="t-story-attr">
+                <div class="t-story-avatar" aria-hidden="true">NV</div>
+                <div>
+                  <div class="t-story-name">Platform Lead</div>
+                  <div class="t-story-role">NAVER</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 4 — Blue Lane -->
+          <article class="t-story-card">
+            <div class="t-story-thumb t-thumb-teal" aria-label="Video thumbnail — Blue Lane cybersecurity story">
+              <div class="t-thumb-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="none"><circle cx="12" cy="12" r="12" fill="rgba(255,255,255,0.15)"/><polygon points="10 8 16 12 10 16" fill="#fff"/></svg>
+              </div>
+              <div class="t-thumb-badge">2:22</div>
+              <div class="t-thumb-logo">Blue Lane</div>
+            </div>
+            <div class="t-story-body">
+              <div class="t-story-tag">Cybersecurity · Cloud</div>
+              <h3 class="t-story-title">Blue Lane's zero-trust security rollout — built with GreaterHeight</h3>
+              <p class="t-story-quote">"Rigorous engineering discipline and clear communication throughout. A pleasure to work with."</p>
+              <div class="t-story-attr">
+                <div class="t-story-avatar" aria-hidden="true">BL</div>
+                <div>
+                  <div class="t-story-name">CTO</div>
+                  <div class="t-story-role">Blue Lane</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 5 — Upthinity -->
+          <article class="t-story-card">
+            <div class="t-story-thumb t-thumb-dark" aria-label="Video thumbnail — Upthinity talent platform story">
+              <div class="t-thumb-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="none"><circle cx="12" cy="12" r="12" fill="rgba(255,255,255,0.15)"/><polygon points="10 8 16 12 10 16" fill="#fff"/></svg>
+              </div>
+              <div class="t-thumb-badge">4:05</div>
+              <div class="t-thumb-logo">Upthinity</div>
+            </div>
+            <div class="t-story-body">
+              <div class="t-story-tag">HR Tech · SaaS</div>
+              <h3 class="t-story-title">Upthinity's talent management platform — delivered by GreaterHeight</h3>
+              <p class="t-story-quote">"They took full ownership. We did not need to micromanage a single deliverable."</p>
+              <div class="t-story-attr">
+                <div class="t-story-avatar" aria-hidden="true">UP</div>
+                <div>
+                  <div class="t-story-name">Product Director</div>
+                  <div class="t-story-role">Upthinity</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Story 6 — Spinny -->
+          <article class="t-story-card">
+            <div class="t-story-thumb t-thumb-amber" aria-label="Video thumbnail — Spinny automotive platform story">
+              <div class="t-thumb-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="none"><circle cx="12" cy="12" r="12" fill="rgba(255,255,255,0.15)"/><polygon points="10 8 16 12 10 16" fill="#fff"/></svg>
+              </div>
+              <div class="t-thumb-badge">2:50</div>
+              <div class="t-thumb-logo">Spinny</div>
+            </div>
+            <div class="t-story-body">
+              <div class="t-story-tag">Mobile · Marketplace</div>
+              <h3 class="t-story-title">Spinny's used-car marketplace — powered by GreaterHeight engineering</h3>
+              <p class="t-story-quote">"Delivered complex features with solid QA and no compromise on performance."</p>
+              <div class="t-story-attr">
+                <div class="t-story-avatar" aria-hidden="true">SP</div>
+                <div>
+                  <div class="t-story-name">VP Product</div>
+                  <div class="t-story-role">Spinny</div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="what-our-clients-say-heading">
-      <div class="container">
-        <h2 id="what-our-clients-say-heading">What Our Clients Say</h2>
-        <p>We work hard to earn honest feedback from every client engagement — not because we want material for a testimonials page, but because it is one of the primary ways we improve. The reviews here are real, from real clients, about real engagements.</p>
-        <p>We are proud of what they say, and equally committed to addressing the gaps and shortfalls that honest feedback surfaces.</p>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="a-note-on-reviews-heading">
-      <div class="container">
-        <h2 id="a-note-on-reviews-heading">A Note on Reviews</h2>
-        <p>We do not publish edited, curated, or selectively flattering testimonials. We ask clients for honest accounts of their experience — what worked, what they would improve, and whether they would recommend working with us.</p>
-        <p>If you would like to speak directly with a reference client in your sector or with a similar project profile, we are happy to arrange that conversation as part of your evaluation process.</p>
-      </div>
-    </section>
-
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Speak with a reference client</h2>
-            <p>We can arrange introductions to past clients in your sector who are willing to speak about their experience of working with GreaterHeight Technologies.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Request a Reference</a>
-          </div>
+    <!-- CTA -->
+    <section class="t-cta-section" aria-labelledby="t-cta-heading">
+      <div class="wrap t-cta-inner">
+        <h2 id="t-cta-heading">Want to speak with a past client?</h2>
+        <p>We can arrange introductions to reference clients in your sector who are willing to speak candidly about their experience working with GreaterHeight Technologies.</p>
+        <div class="t-cta-btns">
+          <a href="/contact/" class="btn btn-primary">Request a Reference &#8594;</a>
+          <a href="/insights/case-studies/" class="btn t-btn-outline">Read Case Studies</a>
         </div>
       </div>
     </section>
-  </main>
+
   </main>
 
   <!-- ============================================================
