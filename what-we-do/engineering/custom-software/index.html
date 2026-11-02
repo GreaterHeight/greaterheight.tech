@@ -1063,11 +1063,15 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     /* ============================================================
        TECH STACK
     ============================================================ */
-    .tech-cats{display:flex;flex-direction:column;gap:var(--sp-6);margin-top:var(--sp-7);}
-    .tech-cat-title{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--txt-3);margin-bottom:var(--sp-3);padding-bottom:var(--sp-2);border-bottom:1px solid var(--border);}
-    .tech-tags{display:flex;flex-wrap:wrap;gap:var(--sp-2);}
-    .tech-tag{display:inline-flex;align-items:center;padding:8px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:.875rem;font-weight:600;color:var(--txt);transition:border-color var(--dur-fast),background var(--dur-fast),color var(--dur-fast);}
-    .tech-tag:hover{border-color:var(--teal-glow);background:var(--teal-pale);color:var(--teal-mid);}
+    .tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .tech-card{border:1px solid var(--border);border-radius:16px;padding:var(--sp-5);background:var(--bg-card);}
+    .tech-card-head{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--txt);margin-bottom:var(--sp-4);padding-bottom:var(--sp-3);border-bottom:1px solid var(--border);}
+    .tech-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--sp-3);}
+    .tech-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 12px 5px 8px;border:1px solid var(--border);border-radius:8px;font-size:.8rem;color:var(--txt);background:transparent;font-weight:500;white-space:nowrap;transition:border-color var(--dur-fast),background var(--dur-fast);}
+    .tech-pill:hover{border-color:var(--teal-glow);background:var(--teal-pale);}
+    .tech-pill img,.tech-pill svg{width:16px;height:16px;flex-shrink:0;object-fit:contain;display:block;}
+    @media(max-width:900px){.tech-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:540px){.tech-grid{grid-template-columns:1fr;}}
 
     /* ============================================================
        ENGAGEMENT MODELS
@@ -1904,64 +1908,88 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <h2 class="section-title" id="tech-heading">Technology we build with</h2>
           <p class="section-lead">We select technology based on your requirements, not our preferences. What follows reflects what we have deep production experience with — tools we would stake a delivery on.</p>
         </div>
-        <div class="tech-cats reveal">
-          <div class="tech-cat">
-            <div class="tech-cat-title">Frontend &amp; Web</div>
-            <div class="tech-tags">
-              <span class="tech-tag">React.js</span>
-              <span class="tech-tag">Vue.js</span>
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">Next.js</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Tailwind CSS</span>
-              <span class="tech-tag">HTML5 / CSS3</span>
+        <div class="tech-grid reveal">
+
+          <!-- Frontend & Web -->
+          <div class="tech-card">
+            <div class="tech-card-head">Frontend &amp; Web</div>
+            <div class="tech-pills">
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg" alt="" loading="lazy">React.js</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vuejs/vuejs-original.svg" alt="" loading="lazy">Vue.js</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angularjs/angularjs-original.svg" alt="" loading="lazy">Angular</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nextjs/nextjs-original.svg" alt="" loading="lazy">Next.js</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" alt="" loading="lazy">TypeScript</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy">Tailwind CSS</span>
             </div>
           </div>
-          <div class="tech-cat">
-            <div class="tech-cat-title">Backend &amp; APIs</div>
-            <div class="tech-tags">
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Django / FastAPI</span>
-              <span class="tech-tag">PHP / Laravel</span>
-              <span class="tech-tag">Java / Spring Boot</span>
-              <span class="tech-tag">.NET / C#</span>
-              <span class="tech-tag">REST &amp; GraphQL</span>
+
+          <!-- Backend & APIs -->
+          <div class="tech-card">
+            <div class="tech-card-head">Backend &amp; APIs</div>
+            <div class="tech-pills">
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" alt="" loading="lazy">Node.js</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="" loading="lazy">Python</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/django/django-plain.svg" alt="" loading="lazy">Django</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/fastapi/fastapi-original.svg" alt="" loading="lazy">FastAPI</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="" loading="lazy">Java</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/dotnetcore/dotnetcore-original.svg" alt="" loading="lazy">.NET / C#</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/php/php-original.svg" alt="" loading="lazy">PHP</span>
             </div>
           </div>
-          <div class="tech-cat">
-            <div class="tech-cat-title">Mobile</div>
-            <div class="tech-tags">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Flutter</span>
-              <span class="tech-tag">Swift (iOS)</span>
-              <span class="tech-tag">Kotlin (Android)</span>
+
+          <!-- Mobile -->
+          <div class="tech-card">
+            <div class="tech-card-head">Mobile</div>
+            <div class="tech-pills">
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg" alt="" loading="lazy">React Native</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flutter/flutter-original.svg" alt="" loading="lazy">Flutter</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/swift/swift-original.svg" alt="" loading="lazy">iOS / Swift</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/kotlin/kotlin-original.svg" alt="" loading="lazy">Android / Kotlin</span>
             </div>
           </div>
-          <div class="tech-cat">
-            <div class="tech-cat-title">Cloud &amp; DevOps</div>
-            <div class="tech-tags">
-              <span class="tech-tag">AWS</span>
-              <span class="tech-tag">Microsoft Azure</span>
-              <span class="tech-tag">Google Cloud</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Kubernetes</span>
-              <span class="tech-tag">CI/CD Pipelines</span>
-              <span class="tech-tag">Terraform</span>
+
+          <!-- Cloud & DevOps -->
+          <div class="tech-card">
+            <div class="tech-card-head">Cloud &amp; DevOps</div>
+            <div class="tech-pills">
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" loading="lazy">AWS</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/azure/azure-original.svg" alt="" loading="lazy">Azure</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/googlecloud/googlecloud-original.svg" alt="" loading="lazy">Google Cloud</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy">Docker</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/kubernetes/kubernetes-plain.svg" alt="" loading="lazy">Kubernetes</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/terraform/terraform-original.svg" alt="" loading="lazy">Terraform</span>
+              <span class="tech-pill"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 8a6 6 0 0 1 6-6" stroke="#1EB496" stroke-width="1.5" stroke-linecap="round"/><path d="M14 8a6 6 0 0 1-6 6" stroke="#1EB496" stroke-width="1.5" stroke-linecap="round"/><polyline points="8,2 6,2 6,4" stroke="#1EB496" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline points="8,14 10,14 10,12" stroke="#1EB496" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>CI/CD Pipelines</span>
             </div>
           </div>
-          <div class="tech-cat">
-            <div class="tech-cat-title">Data &amp; Storage</div>
-            <div class="tech-tags">
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Redis</span>
-              <span class="tech-tag">Elasticsearch</span>
-              <span class="tech-tag">Apache Kafka</span>
-              <span class="tech-tag">Power BI</span>
+
+          <!-- Data & Storage -->
+          <div class="tech-card">
+            <div class="tech-card-head">Data &amp; Storage</div>
+            <div class="tech-pills">
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy">PostgreSQL</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" alt="" loading="lazy">MySQL</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" alt="" loading="lazy">MongoDB</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/redis/redis-original.svg" alt="" loading="lazy">Redis</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/elasticsearch/elasticsearch-original.svg" alt="" loading="lazy">Elasticsearch</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy">Apache Kafka</span>
+              <span class="tech-pill"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="1" y="10" width="3" height="5" rx="0.5" fill="#F2C80F"/><rect x="6" y="6" width="3" height="9" rx="0.5" fill="#F2C80F"/><rect x="11" y="2" width="4" height="13" rx="0.5" fill="#E8A218"/></svg>Power BI</span>
             </div>
           </div>
+
+          <!-- Testing & QA -->
+          <div class="tech-card">
+            <div class="tech-card-head">Testing &amp; QA</div>
+            <div class="tech-pills">
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jest/jest-plain.svg" alt="" loading="lazy">Jest</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/cypress/cypress-original.svg" alt="" loading="lazy">Cypress</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/selenium/selenium-original.svg" alt="" loading="lazy">Selenium</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postman/postman-original.svg" alt="" loading="lazy">Postman</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/githubactions/githubactions-original.svg" alt="" loading="lazy">GitHub Actions</span>
+              <span class="tech-pill"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/playwright/playwright-original.svg" alt="" loading="lazy">Playwright</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
