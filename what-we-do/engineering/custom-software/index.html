@@ -1155,6 +1155,61 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     @media(min-width:601px) and (max-width:900px){.why-cards{grid-template-columns:repeat(2,1fr);}.cases-grid{grid-template-columns:1fr 1fr;}}
 
     /* ============================================================
+       DELIVERY APPROACH (dark)
+    ============================================================ */
+    .approach-strip{background:var(--bg-dark);padding:var(--sp-9) 0;}
+    .approach-inner{max-width:1400px;margin:0 auto;padding:0 var(--sp-6);}
+    .failure-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4);margin-top:var(--sp-7);margin-bottom:var(--sp-2);}
+    .failure-stat{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:var(--sp-5) var(--sp-5);text-align:center;background:rgba(255,255,255,.04);}
+    .failure-num{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--cr);line-height:1;}
+    .failure-label{font-size:.8125rem;color:rgba(255,255,255,.6);margin-top:var(--sp-2);line-height:1.5;}
+    .failure-source{font-size:.7rem;color:rgba(255,255,255,.3);text-align:right;margin-top:var(--sp-3);margin-bottom:var(--sp-7);}
+    .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .approach-card{border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:var(--sp-6);background:rgba(255,255,255,.04);}
+    .approach-num{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-glow);margin-bottom:var(--sp-4);}
+    .approach-title{font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:var(--sp-3);line-height:1.3;}
+    .approach-desc{font-size:.875rem;color:rgba(255,255,255,.65);line-height:1.75;}
+
+    /* ============================================================
+       SECURITY & IP PROTECTION (dark)
+    ============================================================ */
+    .security-section{background:var(--bg-dark);padding:var(--sp-9) 0;}
+    .security-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .security-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:var(--sp-6);}
+    .security-icon{width:48px;height:48px;background:rgba(30,180,150,.12);border:1px solid rgba(30,180,150,.25);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);}
+    .security-icon svg{width:22px;height:22px;stroke:var(--teal-glow);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;}
+    .security-title{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:var(--sp-2);line-height:1.3;}
+    .security-desc{font-size:.875rem;color:rgba(255,255,255,.65);line-height:1.75;}
+    .compliance-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--sp-7);padding-top:var(--sp-6);border-top:1px solid rgba(255,255,255,.1);align-items:center;}
+    .compliance-label{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-right:var(--sp-2);flex-shrink:0;}
+    .compliance-badge{font-size:.7rem;font-weight:600;padding:4px 12px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:rgba(255,255,255,.6);background:rgba(255,255,255,.05);}
+
+    /* ============================================================
+       MID-PAGE CTA BAND
+    ============================================================ */
+    .mid-cta{background:var(--cr);padding:var(--sp-8) 0;position:relative;overflow:hidden;}
+    .mid-cta::before{content:'';position:absolute;top:-60%;right:-5%;width:500px;height:500px;border-radius:50%;background:rgba(0,0,0,.08);pointer-events:none;}
+    .mid-cta-inner{max-width:1400px;margin:0 auto;padding:0 var(--sp-6);display:flex;justify-content:space-between;align-items:center;gap:var(--sp-6);position:relative;z-index:1;}
+    .mid-cta h2{font-size:clamp(1.4rem,2.5vw,2rem);font-weight:700;color:var(--white);max-width:520px;line-height:1.3;}
+    .mid-cta p{font-size:var(--ts-sm);color:rgba(255,255,255,.8);margin-top:var(--sp-2);}
+    .btn-white{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--white);color:var(--cr);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:transform var(--dur-fast),box-shadow var(--dur-fast);white-space:nowrap;}
+    .btn-white:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.2);}
+    .btn-outline-cr{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:2px solid rgba(255,255,255,.6);color:var(--white);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:border-color var(--dur-fast),background var(--dur-fast);white-space:nowrap;}
+    .btn-outline-cr:hover{border-color:var(--white);background:rgba(255,255,255,.1);}
+
+    @media(max-width:900px){
+      .failure-stats{grid-template-columns:1fr;}
+      .approach-grid{grid-template-columns:1fr;}
+      .security-grid{grid-template-columns:1fr;}
+      .mid-cta-inner{flex-direction:column;text-align:center;}
+    }
+    @media(min-width:601px) and (max-width:900px){
+      .failure-stats{grid-template-columns:repeat(3,1fr);}
+      .approach-grid{grid-template-columns:1fr 1fr;}
+      .security-grid{grid-template-columns:1fr 1fr;}
+    }
+
+    /* ============================================================
        FAQ ACCORDION
     ============================================================ */
     .faq-list{display:flex;flex-direction:column;margin-top:var(--sp-7);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
@@ -1629,6 +1684,52 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     </section>
 
     <!-- ============================================================
+         DELIVERY APPROACH
+    ============================================================ -->
+    <div class="approach-strip">
+      <div class="approach-inner">
+        <div class="reveal">
+          <p class="section-label" style="color:var(--mint)">Delivery Approach</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title light">Most software projects fail before a line of code is written.</h2>
+          <p class="section-lead light">Business goals, technical decisions, and project planning are rarely aligned from the beginning. That misalignment — not the difficulty of development — is the root cause of most delivery failures.</p>
+        </div>
+        <div class="failure-stats">
+          <div class="failure-stat reveal">
+            <div class="failure-num">68%</div>
+            <div class="failure-label">of software projects miss budget or schedule targets</div>
+          </div>
+          <div class="failure-stat reveal">
+            <div class="failure-num">70%</div>
+            <div class="failure-label">of digital transformation projects fail to meet business goals</div>
+          </div>
+          <div class="failure-stat reveal">
+            <div class="failure-num">52%</div>
+            <div class="failure-label">of projects experience uncontrolled scope changes during delivery</div>
+          </div>
+        </div>
+        <p class="failure-source reveal">Source: Standish Group CHAOS Report &nbsp;·&nbsp; McKinsey Digital &nbsp;·&nbsp; Deloitte Insights</p>
+        <div class="approach-grid">
+          <div class="approach-card reveal">
+            <div class="approach-num">Principle one</div>
+            <h3 class="approach-title">Business goals aligned before development starts</h3>
+            <p class="approach-desc">We document a clear understanding of business requirements, user needs, project scope, and technical priorities before a single line of production code is written. What we build is always traceable to what you need to achieve.</p>
+          </div>
+          <div class="approach-card reveal">
+            <div class="approach-num">Principle two</div>
+            <h3 class="approach-title">Progress proven through working software, not completed tasks</h3>
+            <p class="approach-desc">Working features, business value, and user adoption matter more than development milestones. From sprint two, you see and test running software at the end of every two-week cycle — not a progress report on tasks checked off.</p>
+          </div>
+          <div class="approach-card reveal">
+            <div class="approach-num">Principle three</div>
+            <h3 class="approach-title">No uncontrolled changes in requirements or delivery</h3>
+            <p class="approach-desc">Every requirement is signed off before build begins. Changes go through formal change control — assessed for impact, documented in writing, and approved before implementation. No surprise scope creep, no cost shocks late in the project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
          COMPARE: CUSTOM VS OFF-THE-SHELF
     ============================================================ -->
     <section class="section" aria-labelledby="compare-heading">
@@ -1928,6 +2029,22 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     </section>
 
     <!-- ============================================================
+         MID-PAGE CTA
+    ============================================================ -->
+    <div class="mid-cta">
+      <div class="mid-cta-inner">
+        <div>
+          <h2>Ready to build software that solves your exact problem?</h2>
+          <p>Share what you're working on and we'll respond within one business day.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-white">Start the Conversation</a>
+          <a href="#cs-enquiry-form" class="btn-outline-cr">Describe your requirements</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
          ENGAGEMENT MODELS
     ============================================================ -->
     <section class="section" aria-labelledby="models-heading">
@@ -1998,6 +2115,66 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <a href="/industries/real-estate/" class="industry-pill">Real Estate</a>
           <a href="/industries/isvs-product-companies/" class="industry-pill">ISVs &amp; Product Companies</a>
           <a href="/industries/public-sector/" class="industry-pill">Public Sector</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECURITY & IP PROTECTION
+    ============================================================ -->
+    <section class="security-section" aria-labelledby="security-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label" style="color:var(--mint)">Security &amp; Ownership</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title light" id="security-heading">Your software, your code, your data.<br>Protected from day one.</h2>
+          <p class="section-lead light">Security is not an afterthought added at the end of the project. IP protection, data governance, and access controls are designed into every engagement from the first working session.</p>
+        </div>
+        <div class="security-grid">
+
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="security-title">100% IP Ownership — Contractual</h3>
+            <p class="security-desc">Everything built for you belongs to you from the first commit. An NDA is signed before work begins. All ownership terms are clearly defined in every engagement contract — no retained rights, no licensing back to us, no access after the engagement ends.</p>
+          </div>
+
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="5" y1="9" x2="9" y2="9"/><line x1="5" y1="12" x2="7" y2="12"/></svg>
+            </div>
+            <h3 class="security-title">Secure Development Practices</h3>
+            <p class="security-desc">Repositories, cloud environments, credentials, and deployment pipelines are managed through controlled permissions and explicit access ownership. Every team member is onboarded with least-privilege access and offboarded completely when their role ends.</p>
+          </div>
+
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="security-title">Data Protection &amp; NDPR Compliance</h3>
+            <p class="security-desc">Software handling personal data is built with NDPR (Nigeria Data Protection Regulation) requirements applied throughout. We advise on consent flows, data retention policies, and breach notification obligations — and provide data processing agreements where required.</p>
+          </div>
+
+          <div class="security-card reveal">
+            <div class="security-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="security-title">Protection Beyond Documentation</h3>
+            <p class="security-desc">Source code is delivered to your repository, not stored in ours after engagement. You retain the complete commit history of every change made to your system. Post-engagement, our access is fully revoked — you control who can read and modify your system.</p>
+          </div>
+
+        </div>
+        <div class="compliance-row reveal">
+          <span class="compliance-label">Standards awareness:</span>
+          <span class="compliance-badge">NDPR</span>
+          <span class="compliance-badge">NITDA Guidelines</span>
+          <span class="compliance-badge">CBN IT Standards</span>
+          <span class="compliance-badge">ISO 27001 Framework</span>
+          <span class="compliance-badge">OWASP Top 10</span>
+          <span class="compliance-badge">PCI-DSS (payments)</span>
+          <span class="compliance-badge">GDPR (EU clients)</span>
+          <span class="compliance-badge">HIPAA-aware (health)</span>
         </div>
       </div>
     </section>
