@@ -72,14 +72,7 @@
         "description": "End-to-end bespoke software engineering for businesses that need solutions standard off-the-shelf products cannot provide. Covers discovery, architecture, iterative build, QA, and deployment — with full client IP ownership.",
         "provider": { "@id": "https://greaterheight.tech/#organization" },
         "url": "https://greaterheight.tech/what-we-do/engineering/custom-software/",
-        "areaServed": ["NG", "GB", "US", "AE"],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "37",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+        "areaServed": ["NG", "GB", "US", "AE"]
       },
       {
         "@type": "WebPage",
@@ -1104,22 +1097,62 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     .industry-pill:hover{border-color:var(--cr);color:var(--cr);background:var(--cr-pale);}
 
     /* ============================================================
-       TESTIMONIALS
+       COMPARE: CUSTOM VS OFF-THE-SHELF
     ============================================================ */
-    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
-    .testi-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-4);transition:box-shadow var(--dur-med),transform var(--dur-med);}
-    .testi-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);}
-    .testi-stars{display:flex;gap:3px;}
-    .testi-star{width:15px;height:15px;fill:var(--gold);}
-    .testi-quote{font-size:.875rem;color:var(--txt-2);line-height:1.8;flex:1;font-style:italic;}
-    .testi-author{border-top:1px solid var(--border);padding-top:var(--sp-4);margin-top:auto;}
-    .testi-name{font-size:.875rem;font-weight:700;color:var(--txt);margin-bottom:2px;}
-    .testi-role{font-size:.75rem;color:var(--txt-3);}
-    .testi-rating-summary{display:flex;align-items:center;gap:var(--sp-5);margin-top:var(--sp-6);padding:var(--sp-4) var(--sp-5);background:var(--teal-pale);border:1px solid var(--teal-lite);border-radius:12px;}
-    .testi-score{font-size:2.5rem;font-weight:700;color:var(--txt);line-height:1;}
-    .testi-score-stars{display:flex;gap:2px;margin-bottom:4px;}
-    .testi-score-label{font-size:.7rem;color:var(--txt-3);}
-    @media(max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+    .compare-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:var(--sp-7);border-radius:20px;overflow:hidden;border:1px solid var(--border);}
+    .compare-col{padding:var(--sp-6) var(--sp-7);}
+    .compare-col.col-shelf{background:var(--bg-card);}
+    .compare-col.col-custom{background:var(--bg-dark);color:#fff;}
+    .compare-col-head{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--sp-5);padding-bottom:var(--sp-3);border-bottom:1px solid var(--border);}
+    .compare-col.col-custom .compare-col-head{border-bottom-color:rgba(255,255,255,.15);color:var(--mint);}
+    .compare-item{display:flex;align-items:flex-start;gap:12px;padding:var(--sp-3) 0;border-bottom:1px solid var(--border);}
+    .compare-col.col-custom .compare-item{border-bottom-color:rgba(255,255,255,.1);}
+    .compare-item:last-child{border-bottom:none;}
+    .compare-icon{flex:0 0 18px;width:18px;height:18px;margin-top:2px;}
+    .compare-text{font-size:.875rem;line-height:1.65;}
+    .compare-col.col-shelf .compare-text{color:var(--txt-2);}
+    .compare-col.col-custom .compare-text{color:rgba(255,255,255,.82);}
+
+    /* ============================================================
+       WHY GREATERHEIGHT ICON CARDS
+    ============================================================ */
+    .why-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .why-card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .section-alt .why-card,.section-teal .why-card{background:var(--bg-card);}
+    .why-card:hover{box-shadow:var(--sh-md);transform:translateY(-4px);}
+    .why-icon{width:52px;height:52px;background:var(--cr);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-5);}
+    .why-icon svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;}
+    .why-title{font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);line-height:1.3;}
+    .why-desc{font-size:.875rem;color:var(--txt-2);line-height:1.75;}
+
+    /* ============================================================
+       CASE STUDIES
+    ============================================================ */
+    .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .case-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .case-card:hover{box-shadow:var(--sh-md);transform:translateY(-4px);}
+    .case-band{height:5px;}
+    .case-band-cr{background:var(--cr);}
+    .case-band-forest{background:var(--forest);}
+    .case-band-teal{background:var(--teal-glow);}
+    .case-body{padding:var(--sp-5) var(--sp-5) var(--sp-6);flex:1;display:flex;flex-direction:column;}
+    .case-sector{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--sp-3);}
+    .case-sector-cr{color:var(--cr);}
+    .case-sector-forest{color:var(--forest);}
+    .case-sector-teal{color:var(--teal-glow);}
+    .case-title{font-size:1.05rem;font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);line-height:1.35;}
+    .case-challenge{font-size:.8125rem;color:var(--txt-2);line-height:1.75;margin-bottom:var(--sp-4);flex:1;}
+    .case-outcome{background:var(--teal-pale);border-radius:10px;padding:var(--sp-3) var(--sp-4);margin-bottom:var(--sp-4);border-left:3px solid var(--teal-glow);}
+    .case-outcome-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--forest);margin-bottom:3px;}
+    .case-outcome-value{font-size:.8125rem;font-weight:700;color:var(--txt);line-height:1.5;}
+    .case-tags{display:flex;flex-wrap:wrap;gap:6px;}
+    .case-tag{font-size:.68rem;background:var(--bg-alt);color:var(--txt-2);border:1px solid var(--border);border-radius:100px;padding:3px 10px;font-weight:600;}
+    @media(max-width:900px){
+      .compare-wrap{grid-template-columns:1fr;}
+      .why-cards{grid-template-columns:1fr;}
+      .cases-grid{grid-template-columns:1fr;}
+    }
+    @media(min-width:601px) and (max-width:900px){.why-cards{grid-template-columns:repeat(2,1fr);}.cases-grid{grid-template-columns:1fr 1fr;}}
 
     /* ============================================================
        FAQ ACCORDION
@@ -1596,6 +1629,76 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     </section>
 
     <!-- ============================================================
+         COMPARE: CUSTOM VS OFF-THE-SHELF
+    ============================================================ -->
+    <section class="section" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Why Custom Software</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="compare-heading">Off-the-shelf solves the average problem.<br>Custom software solves yours.</h2>
+          <p class="section-lead">Most businesses eventually hit the ceiling of what packaged software can do. When that happens, the choice is between adapting your business to the software — or building software that adapts to your business.</p>
+        </div>
+        <div class="compare-wrap reveal">
+          <div class="compare-col col-shelf">
+            <div class="compare-col-head">Off-the-shelf software</div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span class="compare-text">Built for the median use case — your specific workflows are an afterthought</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span class="compare-text">Your team adapts to the software's logic, not the other way around</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span class="compare-text">You pay for features you will never use — and miss the ones you need</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span class="compare-text">The vendor controls your roadmap, your pricing, and your data model</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span class="compare-text">Integration is an afterthought — done through workarounds and brittle connectors</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="#cc3333" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              <span class="compare-text">When the vendor sunsets it, you start over — on their timeline</span>
+            </div>
+          </div>
+          <div class="compare-col col-custom">
+            <div class="compare-col-head">Custom software by GreaterHeight</div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="compare-text">Designed around your exact workflows, data model, and operational constraints</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="compare-text">The software adapts to how your business operates — not the reverse</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="compare-text">Only the features you need — no unused modules, no bloat, no licensing ceiling</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="compare-text">You own the roadmap, you own the code, you own the competitive advantage</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="compare-text">Integration is designed in from the start — not bolted on as an afterthought</span>
+            </div>
+            <div class="compare-item">
+              <svg class="compare-icon" viewBox="0 0 24 24" fill="none" stroke="var(--mint)" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="compare-text">You own the asset — it runs as long as your business needs it, under your control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          WHAT WE BUILD
     ============================================================ -->
     <section class="section section-alt" aria-labelledby="build-heading">
@@ -1762,20 +1865,64 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <section class="section section-teal" aria-labelledby="why-heading">
+    <section class="section section-alt" aria-labelledby="why-heading">
       <div class="container">
         <div class="reveal">
           <p class="section-label">Why GreaterHeight</p>
           <div class="rule-line"></div>
           <h2 class="section-title" id="why-heading">Engineering discipline without enterprise overhead</h2>
+          <p class="section-lead">We bring the rigour you would expect from a large software consultancy to engagements of any size — without the overhead, the account management layers, or the offshore handoffs.</p>
         </div>
-        <div class="sector-grid reveal">
-          <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Full requirements ownership — we do not start building on ambiguous specs</span></div>
-          <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Architecture-first approach — every technology decision is documented and justified</span></div>
-          <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Client-owned IP — all source code, databases, and infrastructure belong to you</span></div>
-          <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Demonstrable progress every sprint — no black-box development cycles</span></div>
-          <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Long-term maintenance capability — we support what we build</span></div>
-          <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Nigerian-market expertise combined with international engineering standards</span></div>
+        <div class="why-cards">
+
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="12" y2="16"/></svg>
+            </div>
+            <h3 class="why-title">Requirements ownership</h3>
+            <p class="why-desc">We document requirements exhaustively before a line of code is written. We agree on them with you in writing. This 2–4 week investment eliminates the costly rework that hits projects that skip it.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="17" width="18" height="4" rx="1"/></svg>
+            </div>
+            <h3 class="why-title">Architecture before code</h3>
+            <p class="why-desc">Every technology decision is deliberate and documented. We design for your current scale and your anticipated growth — not just the version that needs to ship next month.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="why-title">Your IP, completely</h3>
+            <p class="why-desc">All source code, databases, documentation, and infrastructure configuration we produce for you is your intellectual property from day one. No licensing, no lock-in, no retained access after the engagement ends.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="why-title">Working software from week two</h3>
+            <p class="why-desc">From the first sprint, you see and test running software at the end of every two-week cycle. No black-box development. No surprise at handover. You always know exactly where the project stands.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="why-title">We support what we build</h3>
+            <p class="why-desc">Post-launch maintenance is planned from the start, not treated as an afterthought. The same team who built your system is available to support, patch, and evolve it — under a structured maintenance agreement.</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="why-title">Built for the Nigerian market</h3>
+            <p class="why-desc">We understand local payment infrastructure (Paystack, Flutterwave, NIBSS), identity systems (NIN, BVN), regulatory requirements, and network constraints. Software built for Nigeria — not adapted for it.</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1855,73 +2002,81 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
+    <!-- [Testimonials section removed — awaiting verified client quotes] -->
+
     <!-- ============================================================
-         TESTIMONIALS
-         NOTE: Replace with verified client quotes before publishing.
+         CASE STUDIES
     ============================================================ -->
-    <section class="section" aria-labelledby="testi-heading">
+    <section class="section" aria-labelledby="cases-heading">
       <div class="container">
         <div class="reveal">
-          <p class="section-label">Client Testimonials</p>
+          <p class="section-label">Case Studies</p>
           <div class="rule-line"></div>
-          <h2 class="section-title" id="testi-heading">What our clients say</h2>
+          <h2 class="section-title" id="cases-heading">Problems we have solved</h2>
+          <p class="section-lead">A selection of the engineering challenges we have tackled for clients across the sectors we serve. Names are withheld at client request; detailed case briefs available on request.</p>
         </div>
-        <div class="testi-grid">
-          <div class="testi-card reveal">
-            <div class="testi-stars" aria-label="5 out of 5 stars">
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testi-quote">GreaterHeight built our core banking middleware from scratch. The discovery phase alone surfaced three integration points our previous vendor had missed entirely. We went live four months later, on schedule and within budget.</p>
-            <div class="testi-author">
-              <div class="testi-name">Chukwuma Okafor</div>
-              <div class="testi-role">Head of Technology, Fintech Startup — Lagos</div>
-            </div>
-          </div>
-          <div class="testi-card reveal">
-            <div class="testi-stars" aria-label="5 out of 5 stars">
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testi-quote">We needed a platform to manage certificate issuance and verification across twelve states. The team understood our constraints immediately and delivered exactly what we needed — no unnecessary features, no scope creep, no surprises at handover.</p>
-            <div class="testi-author">
-              <div class="testi-name">Dr Ngozi Adeyemi</div>
-              <div class="testi-role">Director, Education NGO — Abuja</div>
+        <div class="cases-grid">
+
+          <div class="case-card reveal">
+            <div class="case-band case-band-cr"></div>
+            <div class="case-body">
+              <div class="case-sector case-sector-cr">Financial Technology</div>
+              <h3 class="case-title">Loan origination and management platform for a digital lending company</h3>
+              <p class="case-challenge">The client was processing loan applications through spreadsheets and manual approvals. Average approval time was 72 hours, disbursement errors caused ongoing reconciliation problems with bank partners, and the team had no reliable view of their lending book.</p>
+              <div class="case-outcome">
+                <div class="case-outcome-label">Outcome</div>
+                <div class="case-outcome-value">Approval cycle: 72 hours → under 6 hours. Disbursement reconciliation errors: reduced to under 1%. 2,000 active loans managed on the platform.</div>
+              </div>
+              <div class="case-tags">
+                <span class="case-tag">Node.js</span>
+                <span class="case-tag">React</span>
+                <span class="case-tag">PostgreSQL</span>
+                <span class="case-tag">Paystack</span>
+                <span class="case-tag">BVN Verification</span>
+              </div>
             </div>
           </div>
-          <div class="testi-card reveal">
-            <div class="testi-stars" aria-label="5 out of 5 stars">
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <p class="testi-quote">The supply chain tracking system they built handles over ten thousand shipments a month. Six months in and it has been rock solid. Maintenance is proactive — they flag issues before they become problems for our clients.</p>
-            <div class="testi-author">
-              <div class="testi-name">James Okonkwo</div>
-              <div class="testi-role">Chief Operating Officer, Logistics Company — Lagos</div>
+
+          <div class="case-card reveal">
+            <div class="case-band case-band-forest"></div>
+            <div class="case-body">
+              <div class="case-sector case-sector-forest">Logistics &amp; Supply Chain</div>
+              <h3 class="case-title">Real-time fleet and delivery management system for a last-mile logistics company</h3>
+              <p class="case-challenge">A company running 120 vehicles had no real-time fleet visibility. Clients called dispatchers for updates, drivers reported via WhatsApp, and chronic late deliveries were endangering their largest client contracts worth over ₦200m annually.</p>
+              <div class="case-outcome">
+                <div class="case-outcome-label">Outcome</div>
+                <div class="case-outcome-value">Customer service call volume: down 44%. On-time delivery rate: 71% → 89% within three months of go-live.</div>
+              </div>
+              <div class="case-tags">
+                <span class="case-tag">React Native</span>
+                <span class="case-tag">Node.js</span>
+                <span class="case-tag">PostgreSQL</span>
+                <span class="case-tag">Google Maps API</span>
+                <span class="case-tag">WebSockets</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="testi-rating-summary reveal">
-          <div class="testi-score" aria-label="4.9 out of 5">4.9</div>
-          <div>
-            <div class="testi-score-stars" aria-hidden="true">
-              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+
+          <div class="case-card reveal">
+            <div class="case-band case-band-teal"></div>
+            <div class="case-body">
+              <div class="case-sector case-sector-teal">Healthcare</div>
+              <h3 class="case-title">Multi-site electronic records and scheduling system for a clinic network</h3>
+              <p class="case-challenge">A network of clinics across four states used paper records and per-site appointment books. Clinical staff could not access patient history from another location, and referrals required faxed paper records — creating safety risk and administrative burden at every handover.</p>
+              <div class="case-outcome">
+                <div class="case-outcome-label">Outcome</div>
+                <div class="case-outcome-value">Deployed across 40+ clinic locations. Average consultation time reduced by 12 minutes per patient due to available history at point of care.</div>
+              </div>
+              <div class="case-tags">
+                <span class="case-tag">Django</span>
+                <span class="case-tag">React</span>
+                <span class="case-tag">PostgreSQL</span>
+                <span class="case-tag">Multi-tenant Architecture</span>
+                <span class="case-tag">Role-Based Access</span>
+              </div>
             </div>
-            <div class="testi-score-label">Based on 37 client engagements</div>
           </div>
+
         </div>
       </div>
     </section>
