@@ -922,6 +922,50 @@
 .drawer-sub a{display:block;padding:.4rem 0;font-size:.82rem;color:var(--txt-2);text-decoration:none;}
 .drawer-sub a:hover{color:var(--cr);}
 .drawer-cta{padding:1.25rem 1.25rem .5rem;}
+/* Footer */
+footer{background:var(--wine);color:rgba(255,255,255,.88);}
+.footer-offices{background:var(--forest);}
+.footer-offices-inner{display:grid;grid-template-columns:repeat(4,1fr);}
+.footer-office{padding:.9rem 1.2rem;border-right:1px solid rgba(255,255,255,.1);text-align:center;}
+.footer-office:last-child{border-right:none;}
+.footer-office-country{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.72);margin-bottom:.22rem;}
+.footer-office-phone{font-size:.88rem;font-weight:700;color:#fff;}
+.footer-office-phone a{color:inherit;text-decoration:none;}
+.footer-main{padding:3.5rem 0 2.5rem;}
+.footer-grid{display:grid;grid-template-columns:190px 1fr 1.4fr 1.4fr 1fr;gap:2rem;}
+.footer-brand-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-bottom:1.1rem;}
+.footer-brand-tagline{font-style:italic;font-size:.7rem;color:var(--mint);margin-top:.15rem;letter-spacing:.02em;}
+.footer-brand-p{font-size:.8rem;color:rgba(255,255,255,.68);line-height:1.8;margin-bottom:1rem;}
+.footer-brand-addr{font-style:normal;font-size:.76rem;color:rgba(255,255,255,.58);line-height:2;}
+.footer-brand-addr a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s;}
+.footer-brand-addr a:hover{color:var(--mint);}
+.footer-col-head{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff;margin-bottom:.85rem;padding-bottom:.45rem;border-bottom:1px solid rgba(255,255,255,.14);}
+.footer-col-list{list-style:none;padding:0;margin:0 0 .3rem;display:flex;flex-direction:column;gap:.32rem;}
+.footer-col-list li{display:flex;align-items:baseline;gap:.32rem;font-size:.77rem;color:rgba(255,255,255,.75);}
+.footer-col-list li::before{content:"\2713";font-size:.6rem;color:var(--mint);flex-shrink:0;}
+.footer-col-list a{color:inherit;text-decoration:none;transition:color .2s;}
+.footer-col-list a:hover{color:var(--mint);}
+.footer-col-subhead{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff;margin:1rem 0 .65rem;padding-bottom:.38rem;border-bottom:1px solid rgba(255,255,255,.1);}
+.footer-lower{background:rgba(0,0,0,.28);padding:1.3rem 0;}
+.footer-lower-inner{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:start;}
+.footer-follow-label,.footer-resources-label{font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.65);margin-bottom:.6rem;}
+.footer-social-row{display:flex;gap:.4rem;}
+.footer-social-row a{width:33px;height:33px;border-radius:50%;border:1px solid rgba(255,255,255,.28);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.65);transition:background .2s,border-color .2s,color .2s;text-decoration:none;}
+.footer-social-row a:hover{background:var(--teal);border-color:var(--teal);color:#fff;}
+.footer-social-row svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.footer-resources-links{display:flex;flex-wrap:wrap;align-items:center;gap:.08rem;font-size:.75rem;line-height:2;}
+.footer-resources-links a{color:rgba(255,255,255,.68);text-decoration:none;transition:color .2s;}
+.footer-resources-links a:hover{color:var(--mint);}
+.footer-resources-links .sep{color:rgba(255,255,255,.17);padding:0 .22rem;user-select:none;}
+.footer-copyright{background:rgba(0,0,0,.4);padding:.85rem 0;}
+.footer-copyright-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.55rem;font-size:.71rem;color:rgba(255,255,255,.52);}
+.footer-copyright-inner a{color:rgba(255,255,255,.65);}
+.footer-copyright-policy{display:flex;flex-wrap:wrap;gap:0;}
+.footer-copyright-policy a{padding:0 .35rem;}
+.footer-copyright-policy a+a::before{content:"·";color:rgba(255,255,255,.18);}
+@media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
+@media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
+@media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 
     /* ============================================================
        CASE STUDIES PAGE — redesign v2
@@ -1715,134 +1759,159 @@
   <!-- ============================================================
        FOOTER
   ============================================================ -->
-  <footer class="footer" role="contentinfo">
-    
-    <div class="footer-main">
-      <div class="footer-grid">
-        <!-- Brand -->
-        <div class="footer-brand">
-          <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
-          <p class="footer-tagline">…helping you succeed. We are an African-born, globally connected IT consultancy delivering software, cloud, data, AI, and digital marketing services.</p>
-          <address class="footer-address" style="font-style:normal;">
-            17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos, Nigeria<br>
-            <a href="tel:+2349139999700" style="color:rgba(255,255,255,.4)">+234 913 999 9700</a><br>
-            <a href="mailto:info@mail.greaterheight.tech" style="color:rgba(255,255,255,.4)">info@mail.greaterheight.tech</a>
-          </address>
-        </div>
+  <footer>
 
-        <!-- Company -->
-        <div>
-          <p class="footer-col-head">Company</p>
-          <ul class="footer-links">
-            <li><a href="/who-we-are/company-overview/">Company Overview</a></li>
-            <li><a href="/who-we-are/core-purpose-mission/">Mission &amp; Vision</a></li>
-            <li><a href="/who-we-are/our-values/">Our Values</a></li>
-            <li><a href="/who-we-are/our-team/">Our Team</a></li>
-            <li><a href="/who-we-are/our-culture/">Our Culture</a></li>
-            <li><a href="/who-we-are/career-overview/">Careers</a></li>
-            <li><a href="/contact/">Contact Us</a></li>
-          </ul>
-        </div>
+  <!-- ── Offices bar ──────────────────────────── -->
+  
+  <!-- ── Main footer body ────────────────── -->
+  <div class="footer-main">
+    <div class="wrap footer-grid">
 
-        <!-- Expertise -->
-        <div>
-          <p class="footer-col-head">Our Expertise</p>
-          <ul class="footer-links">
-            <li><a href="/what-we-do/ai-automation/">AI &amp; Automation</a></li>
-            <li><a href="/what-we-do/product-engineering/custom-software-development/">Custom Software</a></li>
-            <li><a href="/what-we-do/product-engineering/web-application-development/">Web Applications</a></li>
-            <li><a href="/what-we-do/product-engineering/mobile-app-development/">Mobile Apps</a></li>
-            <li><a href="/what-we-do/data-cloud/data-engineering/">Data Engineering</a></li>
-            <li><a href="/what-we-do/data-cloud/analytics-bi/">Analytics &amp; BI</a></li>
-            <li><a href="/what-we-do/data-cloud/cloud-migration/">Cloud Migration</a></li>
-            <li><a href="/what-we-do/enterprise-advisory/digital-transformation/">Digital Transformation</a></li>
-            <li><a href="/what-we-do/enterprise-advisory/legacy-modernisation/">Legacy Modernisation</a></li>
-            <li><a href="/what-we-do/enterprise-advisory/it-strategy-consulting/">IT Strategy</a></li>
-            <li><a href="/what-we-do/processes/">Our Processes</a></li>
-          </ul>
-        </div>
+      <!-- Col 1: Brand -->
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
+          <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
+        </a>
+        <div class="footer-brand-tagline">...helping you succeed</div>
+        <p class="footer-brand-p">AI-augmented engineering teams that ship production software. Lagos, Nigeria — serving the world.</p>
+        <address class="footer-brand-addr">
+          17B Debo Aina Street, Omole Phase 1<br>
+          Ikeja, Lagos, Nigeria<br>
+          <a href="tel:+2349139999700">+234 913 999 9700</a><br>
+          <a href="mailto:info@mail.greaterheight.tech">info@mail.greaterheight.tech</a>
+        </address>
+      </div>
 
-        <!-- Digital Marketing -->
-        <div>
-          <p class="footer-col-head">Digital Marketing</p>
-          <ul class="footer-links">
-            <li><a href="/what-we-do/digital-marketing/">Overview</a></li>
-            <li><a href="/what-we-do/digital-marketing/content-development/">Content Development</a></li>
-            <li><a href="/what-we-do/digital-marketing/social-media-marketing/">Social Media Marketing</a></li>
-            <li><a href="/what-we-do/digital-marketing/seo/">SEO</a></li>
-            <li><a href="/what-we-do/digital-marketing/pay-per-click/">Pay-Per-Click</a></li>
-            <li><a href="/what-we-do/digital-marketing/online-reputation-management/">Reputation Management</a></li>
-            <li><a href="/what-we-do/digital-marketing/link-building/">Link Building</a></li>
-            <li><a href="/what-we-do/digital-marketing/personal-branding/">Personal Branding</a></li>
-            <li><a href="/products-solutions/digitalsiwes/">DigitalSiWes</a></li>
-            <li><a href="/products-solutions/searchartisans/">SearchArtisans</a></li>
-            <li><a href="/insights/">Insights</a></li>
-          </ul>
-        </div>
+      <!-- Col 2: Company -->
+      <div>
+        <div class="footer-col-head">Company</div>
+        <ul class="footer-col-list">
+          <li><a href="/who-we-are/company-overview">Who We Are</a></li>
+          <li><a href="/who-we-are/core-purpose-mission">Purpose &amp; Mission</a></li>
+          <li><a href="/who-we-are/our-team">Leadership Team</a></li>
+          <li><a href="/insights/case-studies">Case Studies</a></li>
+          <li><a href="/insights">Insights</a></li>
+          <li><a href="/culture/career-opportunities">Careers</a></li>
+          <li><a href="/insights/testimonials">Clients &amp; Testimonials</a></li>
+        </ul>
+      </div>
 
-        <!-- Clients / Industries -->
-        <div>
-          <p class="footer-col-head">Clients We Serve</p>
-          <ul class="footer-links">
-            <li><a href="/who-we-serve/individuals/">Individuals</a></li>
-            <li><a href="/who-we-serve/businesses/">Businesses</a></li>
-            <li><a href="/who-we-serve/organisations/">Organisations</a></li>
-            <li><a href="/who-we-serve/nations/">Nations</a></li>
-          </ul>
-          <p class="footer-col-head" style="margin-top:var(--sp-4);">Industries</p>
-          <ul class="footer-links">
-            <li><a href="/industries/financial-technology/">Fintech</a></li>
-            <li><a href="/industries/healthcare/">Healthcare</a></li>
-            <li><a href="/industries/education-elearning/">Education</a></li>
-            <li><a href="/industries/">All Industries →</a></li>
-          </ul>
+      <!-- Col 3: Our Expertise -->
+      <div>
+        <div class="footer-col-head">Our Expertise</div>
+        <ul class="footer-col-list">
+          <li><a href="/what-we-do/engineering/custom-software">Software Product Engineering</a></li>
+          <li><a href="/what-we-do/engineering/mobile-app">Application Development</a></li>
+          <li><a href="/what-we-do/engineering/web-application">Web Application Development</a></li>
+          <li><a href="/what-we-do/engineering/mobile-app">Mobile App Development</a></li>
+          <li><a href="/what-we-do/engineering/cross-platform">Cross Platform App Development</a></li>
+          <li><a href="/what-we-do/enterprise/iot">Internet of Things (IoT)</a></li>
+          <li><a href="/what-we-do/enterprise/blockchain">Blockchain</a></li>
+          <li><a href="/what-we-do/enterprise/digital-transformation">Digital Transformation</a></li>
+          <li><a href="/what-we-do/data/engineering">Data Science &amp; Engineering</a></li>
+          <li><a href="/what-we-do/data/cloud-solutions">Cloud Services</a></li>
+          <li><a href="/what-we-do/ai/agents-automation">Artificial Intelligence &amp; ML</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Digital Marketing -->
+      <div>
+        <div class="footer-col-head">Digital Marketing</div>
+        <ul class="footer-col-list">
+          <li><a href="/what-we-do/marketing/content">Content Development Services</a></li>
+          <li><a href="/what-we-do/marketing/social-media">Social Media Marketing</a></li>
+          <li><a href="/what-we-do/marketing/reputation">Online Reputation Management</a></li>
+          <li><a href="/what-we-do/marketing/seo">Search Engine Optimisation</a></li>
+          <li><a href="/what-we-do/marketing/ppc">Pay-Per-Click (PPC)</a></li>
+          <li><a href="/what-we-do/marketing/link-building">Link Building Service</a></li>
+          <li><a href="/what-we-do/marketing/display">Display Advertising Campaigns</a></li>
+          <li><a href="/what-we-do/marketing/lead-gen">Lead Gen Campaign</a></li>
+          <li><a href="/what-we-do/marketing/cro">Conversion Rate Optimisation</a></li>
+          <li><a href="/what-we-do/marketing/pr">Digital PR</a></li>
+          <li><a href="/what-we-do/marketing/personal-branding">Personal Branding</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: Clients + Industries -->
+      <div>
+        <div class="footer-col-head">Clients We Serve</div>
+        <ul class="footer-col-list">
+          <li><a href="/who-we-serve/businesses">For Startups</a></li>
+          <li><a href="/who-we-serve/businesses">For Enterprises</a></li>
+        </ul>
+        <div class="footer-col-subhead">Industries</div>
+        <ul class="footer-col-list">
+          <li><a href="/industries/financial-technology">Fintech</a></li>
+          <li><a href="/industries/financial-technology">Banking</a></li>
+          <li><a href="/industries/healthcare">Healthcare</a></li>
+          <li><a href="/industries/telecoms">Telecommunications</a></li>
+          <li><a href="/industries/oil-gas">Oil &amp; Gas</a></li>
+          <li><a href="/industries/public-sector">Public Sector</a></li>
+          <li><a href="/industries/retail-ecommerce">E-Commerce</a></li>
+          <li><a href="/industries/education-elearning">Education</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Social + Resources ───────────────────── -->
+  <div class="footer-lower">
+    <div class="wrap footer-lower-inner">
+      <div>
+        <div class="footer-follow-label">Follow Us</div>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://twitter.com/greaterheightng" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/greaterheight-tech" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@greaterheighttech" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-resources-label">Resources &amp; Other Useful Links</div>
+        <div class="footer-resources-links">
+          <a href="/insights/blog">Blog and Articles</a><span class="sep">|</span>
+          <a href="/insights/events">Events, News &amp; Technologies</a><span class="sep">|</span>
+          <a href="/insights/white-papers">White Papers</a><span class="sep">|</span>
+          <a href="/insights/webinars">Webinar for Learning</a><span class="sep">|</span>
+          <a href="/insights/brochure">Brochure</a><span class="sep">|</span>
+          <a href="/insights/videos">Videos Articles for Learning</a><br>
+          <a href="/partners">Become a Partner</a><span class="sep">|</span>
+          <a href="/why-nigeria">Why Nigeria?</a><span class="sep">|</span>
+          <a href="/insights/faq">FAQs</a><span class="sep">|</span>
+          <a href="/legal/disclaimer">Disclaimer</a><span class="sep">|</span>
+          <a href="/legal/gdpr">GDPR Compliance</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="footer-lower">
-      <div class="footer-social" aria-label="Social media links">
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/company/greaterheight-tech" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-        <!-- Twitter/X -->
-        <a href="https://twitter.com/greaterheightng" class="social-icon" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-        </a>
-        <!-- Facebook -->
-        <a href="https://facebook.com/greaterheighttechnologies" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-        </a>
-        <!-- Instagram -->
-        <a href="https://instagram.com/greaterheighttech" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
+  <!-- ── Copyright bar ──────────────────────── -->
+  <div class="footer-copyright">
+    <div class="wrap footer-copyright-inner">
+      <span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span>
+      <div class="footer-copyright-policy">
+        <a href="/legal/privacy-policy">Privacy Policy</a>
+        <a href="/legal/terms">Terms of Use</a>
+        <a href="/legal/disclaimer">Disclaimer</a>
+        <a href="/legal/cookies">Cookie Policy</a>
       </div>
-
-      <div class="footer-resources">
-        <a href="/insights/">Insights</a>
-        <span aria-hidden="true">|</span>
-        <a href="/case-studies/">Case Studies</a>
-        <span aria-hidden="true">|</span>
-        <a href="/products-solutions/">Products &amp; Solutions</a>
-        <span aria-hidden="true">|</span>
-        <a href="/how-we-do-it/">How We Do It</a>
-        <span aria-hidden="true">|</span>
-        <a href="/sitemap.xml">Sitemap</a>
-      </div>
+      <span>Developed by <a href="/">GreaterHeight Technologies</a></span>
     </div>
+  </div>
 
-    <div class="footer-copyright">
-      <p>© 2026 GreaterHeight Technologies Limited. All rights reserved. Registered in Nigeria.</p>
-      <p>
-        <a href="/privacy/">Privacy Policy</a> &nbsp;·&nbsp;
-        <a href="/terms/">Terms of Use</a> &nbsp;·&nbsp;
-        <a href="/disclaimer/">Disclaimer</a> &nbsp;·&nbsp;
-        Developed by <a href="/">GreaterHeight</a>
-      </p>
-    </div>
-  </footer>
+</footer>
 
   <!-- WhatsApp float -->
   <a href="https://wa.me/2349139999700?text=Hello%20GreaterHeight%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20project." class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer" id="whatsapp-btn">
