@@ -57,10 +57,83 @@
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://greaterheight.tech/what-we-do/engineering/custom-software/#breadcrumb",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greaterheight.tech/" },
           { "@type": "ListItem", "position": 2, "name": "What We Do", "item": "https://greaterheight.tech/what-we-do/" },
           { "@type": "ListItem", "position": 3, "name": "Custom Software Development", "item": "https://greaterheight.tech/what-we-do/engineering/custom-software/" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://greaterheight.tech/what-we-do/engineering/custom-software/#service",
+        "name": "Custom Software Development",
+        "serviceType": "Custom Software Development",
+        "description": "End-to-end bespoke software engineering for businesses that need solutions standard off-the-shelf products cannot provide. Covers discovery, architecture, iterative build, QA, and deployment — with full client IP ownership.",
+        "provider": { "@id": "https://greaterheight.tech/#organization" },
+        "url": "https://greaterheight.tech/what-we-do/engineering/custom-software/",
+        "areaServed": ["NG", "GB", "US", "AE"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "37",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://greaterheight.tech/what-we-do/engineering/custom-software/#webpage",
+        "url": "https://greaterheight.tech/what-we-do/engineering/custom-software/",
+        "name": "Custom Software Development | GreaterHeight Technologies",
+        "description": "GreaterHeight Technologies builds bespoke software applications — from initial specification to production deployment — for businesses that need solutions standard off-the-shelf products cannot provide.",
+        "about": { "@id": "https://greaterheight.tech/what-we-do/engineering/custom-software/#service" },
+        "breadcrumb": { "@id": "https://greaterheight.tech/what-we-do/engineering/custom-software/#breadcrumb" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://greaterheight.tech/what-we-do/engineering/custom-software/#faqpage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does a custom software project typically take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Timelines vary with scope and complexity. A focused internal tool can be delivered in 8–12 weeks. A multi-user platform with integrations typically takes 16–28 weeks. We front-load the discovery and architecture phase, which adds two to four weeks at the start but prevents costly rework and delays later. After discovery, we provide a detailed project plan with weekly milestones." }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does custom software development cost?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cost is driven by scope, complexity, and the type of engagement. A fixed-price discovery engagement typically runs between ₦2.5m and ₦6m, after which we provide a full cost estimate for the build phase. Full bespoke application projects typically range from ₦15m to ₦60m depending on features and integrations. We do not provide binding estimates before discovery, because pre-discovery estimates are almost always wrong in ways that hurt both sides." }
+          },
+          {
+            "@type": "Question",
+            "name": "Who owns the intellectual property and source code?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You do — completely. All source code, databases, documentation, and infrastructure configuration we produce for you is your intellectual property. This is written into every engagement contract with no ambiguity. We do not retain rights, licences, or access to your systems after a project ends unless you specifically engage us for ongoing maintenance." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you integrate custom software with our existing systems?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Integration is a core part of what we do. We map your existing integration landscape during discovery — ERPs, CRMs, payment gateways, identity providers, government APIs, legacy databases — and design the integration architecture before any code is written. We document all API contracts in advance and build integration testing into the QA phase." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle changes to requirements during development?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We use a structured change control process. Minor clarifications within the agreed spec are absorbed at no cost. Scope additions are assessed for impact on timeline and cost, documented in a change request, and require written approval before implementation. Our sprint-based delivery model means you see working software every two weeks, which surfaces misalignments early — well before they become expensive to fix." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide ongoing maintenance after the software launches?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer structured post-launch support under a separate maintenance agreement. This covers bug fixes, security patches, performance monitoring, and feature enhancements. Maintenance agreements are priced based on the complexity of the system and the response SLA you need. Many of our clients have been on maintenance agreements for several years after initial delivery." }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the project managed and how do we stay informed?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You are assigned a dedicated project manager who is your primary contact. We use a shared project management board, weekly status meetings, and sprint review calls where you see and test working software. You have visibility into every task in the backlog, every sprint, and every test run. We do not do black-box development." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you work with clients outside Nigeria?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with clients in the UK, the United States, the UAE, and across West Africa. All project communication is in English, contracts are available in international formats, and we accommodate time zone differences in our meeting scheduling. Payments can be received in NGN, GBP, USD, or EUR." }
+          }
         ]
       }
     ]
@@ -968,6 +1041,121 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+    /* ============================================================
+       STATS STRIP
+    ============================================================ */
+    .stats-strip{background:var(--forest);border-bottom:1px solid rgba(255,255,255,.06);}
+    .stats-strip-inner{max-width:1400px;margin:0 auto;padding:var(--sp-6) var(--sp-6);display:flex;align-items:center;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;}
+    .stat-item{display:flex;flex-direction:column;align-items:center;text-align:center;flex:1;min-width:130px;}
+    .stat-divider{width:1px;height:44px;background:rgba(255,255,255,.12);flex-shrink:0;}
+    .stat-num{font-size:clamp(1.6rem,3vw,2.25rem);font-weight:700;color:var(--white);line-height:1;}
+    .stat-num em{font-style:normal;color:var(--teal-glow);}
+    .stat-lbl{font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-top:5px;}
+    @media(max-width:768px){.stat-divider{display:none;}.stat-item{min-width:90px;}}
+
+    /* ============================================================
+       WHAT WE BUILD
+    ============================================================ */
+    .build-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .build-card{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:var(--sp-6);display:flex;flex-direction:column;transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+    .build-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--cr-mid);}
+    .build-card-num{font-size:.65rem;font-weight:700;color:var(--cr);letter-spacing:.1em;text-transform:uppercase;margin-bottom:var(--sp-3);}
+    .build-card-title{font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);line-height:1.3;}
+    .build-card-desc{font-size:.875rem;color:var(--txt-2);line-height:1.7;flex:1;}
+    .build-card-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:var(--sp-4);}
+    .build-tag{font-size:.6rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px;background:var(--teal-pale);color:var(--teal-mid);border:1px solid var(--teal-lite);}
+    @media(max-width:900px){.build-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:600px){.build-grid{grid-template-columns:1fr;}}
+
+    /* ============================================================
+       TECH STACK
+    ============================================================ */
+    .tech-cats{display:flex;flex-direction:column;gap:var(--sp-6);margin-top:var(--sp-7);}
+    .tech-cat-title{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--txt-3);margin-bottom:var(--sp-3);padding-bottom:var(--sp-2);border-bottom:1px solid var(--border);}
+    .tech-tags{display:flex;flex-wrap:wrap;gap:var(--sp-2);}
+    .tech-tag{display:inline-flex;align-items:center;padding:8px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:.875rem;font-weight:600;color:var(--txt);transition:border-color var(--dur-fast),background var(--dur-fast),color var(--dur-fast);}
+    .tech-tag:hover{border-color:var(--teal-glow);background:var(--teal-pale);color:var(--teal-mid);}
+
+    /* ============================================================
+       ENGAGEMENT MODELS
+    ============================================================ */
+    .models-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .model-card{border-radius:20px;padding:var(--sp-7) var(--sp-6);border:1px solid var(--border);background:var(--bg-card);display:flex;flex-direction:column;gap:var(--sp-4);transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .model-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+    .model-card.featured{background:var(--bg-dark);border-color:rgba(30,180,150,.3);}
+    .model-badge{display:inline-block;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:var(--teal-pale);color:var(--teal-mid);border:1px solid var(--teal-lite);width:fit-content;}
+    .model-card.featured .model-badge{background:rgba(30,180,150,.15);color:var(--teal-glow);border-color:rgba(30,180,150,.3);}
+    .model-title{font-size:1.125rem;font-weight:700;color:var(--txt);line-height:1.25;}
+    .model-card.featured .model-title{color:var(--white);}
+    .model-desc{font-size:.875rem;color:var(--txt-2);line-height:1.75;}
+    .model-card.featured .model-desc{color:rgba(255,255,255,.65);}
+    .model-features{display:flex;flex-direction:column;gap:var(--sp-2);margin-top:auto;}
+    .model-feature{display:flex;align-items:flex-start;gap:var(--sp-2);font-size:.875rem;color:var(--txt-2);}
+    .model-card.featured .model-feature{color:rgba(255,255,255,.7);}
+    .model-feature::before{content:'✓';font-weight:700;color:var(--teal-mid);flex-shrink:0;margin-top:1px;}
+    .model-card.featured .model-feature::before{color:var(--teal-glow);}
+    @media(max-width:900px){.models-grid{grid-template-columns:1fr;}}
+
+    /* ============================================================
+       INDUSTRIES
+    ============================================================ */
+    .industry-pills{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-5);}
+    .industry-pill{display:inline-flex;align-items:center;padding:10px 20px;border:1px solid var(--border);border-radius:100px;font-size:.875rem;color:var(--txt-2);background:var(--bg-card);font-weight:600;transition:border-color var(--dur-fast),background var(--dur-fast),color var(--dur-fast);text-decoration:none;}
+    .industry-pill:hover{border-color:var(--cr);color:var(--cr);background:var(--cr-pale);}
+
+    /* ============================================================
+       TESTIMONIALS
+    ============================================================ */
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .testi-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);display:flex;flex-direction:column;gap:var(--sp-4);transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .testi-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);}
+    .testi-stars{display:flex;gap:3px;}
+    .testi-star{width:15px;height:15px;fill:var(--gold);}
+    .testi-quote{font-size:.875rem;color:var(--txt-2);line-height:1.8;flex:1;font-style:italic;}
+    .testi-author{border-top:1px solid var(--border);padding-top:var(--sp-4);margin-top:auto;}
+    .testi-name{font-size:.875rem;font-weight:700;color:var(--txt);margin-bottom:2px;}
+    .testi-role{font-size:.75rem;color:var(--txt-3);}
+    .testi-rating-summary{display:flex;align-items:center;gap:var(--sp-5);margin-top:var(--sp-6);padding:var(--sp-4) var(--sp-5);background:var(--teal-pale);border:1px solid var(--teal-lite);border-radius:12px;}
+    .testi-score{font-size:2.5rem;font-weight:700;color:var(--txt);line-height:1;}
+    .testi-score-stars{display:flex;gap:2px;margin-bottom:4px;}
+    .testi-score-label{font-size:.7rem;color:var(--txt-3);}
+    @media(max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+
+    /* ============================================================
+       FAQ ACCORDION
+    ============================================================ */
+    .faq-list{display:flex;flex-direction:column;margin-top:var(--sp-7);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
+    .faq-item{border-bottom:1px solid var(--border);}
+    .faq-item:last-child{border-bottom:none;}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:left;padding:var(--sp-5) var(--sp-6);font-size:.9375rem;font-weight:700;color:var(--txt);background:none;border:none;cursor:pointer;gap:var(--sp-4);font-family:var(--font);transition:background var(--dur-fast),color var(--dur-fast);}
+    .faq-q:hover{background:var(--bg-alt);}
+    .faq-q[aria-expanded="true"]{color:var(--cr);background:var(--cr-pale);}
+    .faq-icon{width:18px;height:18px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;transition:transform var(--dur-fast);}
+    .faq-q[aria-expanded="true"] .faq-icon{transform:rotate(45deg);}
+    .faq-a{padding:0 var(--sp-6) var(--sp-5);font-size:.875rem;color:var(--txt-2);line-height:1.8;display:none;}
+    .faq-item.open .faq-a{display:block;}
+
+    /* ============================================================
+       LEAD FORM
+    ============================================================ */
+    .lead-form-section{background:var(--bg-alt);padding:var(--sp-9) 0;}
+    .lead-form-inner{max-width:860px;margin:0 auto;padding:0 var(--sp-6);}
+    .lead-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5);margin-top:var(--sp-7);}
+    .lead-form-field{display:flex;flex-direction:column;gap:var(--sp-2);}
+    .lead-form-field.span-2{grid-column:span 2;}
+    .lead-form-label{font-size:.65rem;font-weight:700;color:var(--txt);text-transform:uppercase;letter-spacing:.08em;}
+    .lead-form-input,.lead-form-select,.lead-form-textarea{width:100%;padding:12px 16px;border:1px solid var(--border);border-radius:8px;font-size:.875rem;color:var(--txt);background:var(--white);font-family:var(--font);transition:border-color var(--dur-fast),box-shadow var(--dur-fast);outline:none;-webkit-appearance:none;}
+    .lead-form-input:focus,.lead-form-select:focus,.lead-form-textarea:focus{border-color:var(--cr);box-shadow:0 0 0 3px var(--cr-pale);}
+    .lead-form-textarea{resize:vertical;min-height:120px;}
+    .lead-form-submit{display:inline-flex;align-items:center;gap:8px;padding:14px 36px;background:var(--cr);color:var(--white);border:none;border-radius:8px;font-size:.9375rem;font-weight:700;font-family:var(--font);cursor:pointer;transition:background var(--dur-fast),transform var(--dur-fast);}
+    .lead-form-submit:hover{background:var(--cr-mid);transform:translateY(-2px);}
+    .lead-form-note{font-size:.7rem;color:var(--txt-3);margin-top:var(--sp-2);}
+    .lead-form-success{display:none;text-align:center;padding:var(--sp-7);background:var(--teal-pale);border:1px solid var(--teal-lite);border-radius:16px;margin-top:var(--sp-6);}
+    .lead-form-success.visible{display:block;}
+    .lead-form-success h3{font-size:1.25rem;color:var(--forest);margin-bottom:var(--sp-2);}
+    .lead-form-success p{font-size:.875rem;color:var(--txt-2);}
+    @media(max-width:600px){.lead-form-grid{grid-template-columns:1fr;}.lead-form-field.span-2{grid-column:span 1;}}
+
     </style>
 </head>
 <body>
@@ -1375,6 +1563,114 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
+    <!-- ============================================================
+         STATS STRIP
+    ============================================================ -->
+    <section class="stats-strip" aria-label="Key metrics">
+      <div class="stats-strip-inner">
+        <div class="stat-item">
+          <span class="stat-num">15<em>+</em></span>
+          <span class="stat-lbl">Years Engineering</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">50<em>+</em></span>
+          <span class="stat-lbl">Applications Built</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">6<em>+</em></span>
+          <span class="stat-lbl">Industries Served</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">100<em>%</em></span>
+          <span class="stat-lbl">Client IP Ownership</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">Wk<em> 2</em></span>
+          <span class="stat-lbl">First Working Demo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHAT WE BUILD
+    ============================================================ -->
+    <section class="section section-alt" aria-labelledby="build-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">What We Build</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="build-heading">Software for every layer of your business</h2>
+          <p class="section-lead">From internal operational tools to client-facing platforms, we build the full range of bespoke applications businesses need to run efficiently and scale.</p>
+        </div>
+        <div class="build-grid">
+          <div class="build-card reveal">
+            <span class="build-card-num">01</span>
+            <h3 class="build-card-title">Enterprise Applications</h3>
+            <p class="build-card-desc">Large-scale workflow management systems, ERP-adjacent platforms, and multi-user operational tools for complex organisations that need more than off-the-shelf can provide.</p>
+            <div class="build-card-tags">
+              <span class="build-tag">Workflow Automation</span>
+              <span class="build-tag">Multi-User</span>
+              <span class="build-tag">Role-Based Access</span>
+            </div>
+          </div>
+          <div class="build-card reveal">
+            <span class="build-card-num">02</span>
+            <h3 class="build-card-title">Internal Tools &amp; Admin Portals</h3>
+            <p class="build-card-desc">Dashboards, back-office management systems, inventory tools, and operations portals — the software your team uses every day but that no vendor builds quite right for your context.</p>
+            <div class="build-card-tags">
+              <span class="build-tag">Dashboards</span>
+              <span class="build-tag">Admin Panels</span>
+              <span class="build-tag">Operations</span>
+            </div>
+          </div>
+          <div class="build-card reveal">
+            <span class="build-card-num">03</span>
+            <h3 class="build-card-title">Client-Facing Platforms</h3>
+            <p class="build-card-desc">Customer portals, self-service platforms, marketplace software, and SaaS products where the quality of the experience directly affects your revenue and client retention.</p>
+            <div class="build-card-tags">
+              <span class="build-tag">Customer Portals</span>
+              <span class="build-tag">SaaS</span>
+              <span class="build-tag">Marketplace</span>
+            </div>
+          </div>
+          <div class="build-card reveal">
+            <span class="build-card-num">04</span>
+            <h3 class="build-card-title">Systems Integration</h3>
+            <p class="build-card-desc">API middleware, data pipeline connectors, legacy system bridge layers, and integration hubs that allow your existing software to work together instead of against each other.</p>
+            <div class="build-card-tags">
+              <span class="build-tag">API Integration</span>
+              <span class="build-tag">Middleware</span>
+              <span class="build-tag">Legacy Systems</span>
+            </div>
+          </div>
+          <div class="build-card reveal">
+            <span class="build-card-num">05</span>
+            <h3 class="build-card-title">Data &amp; Analytics Applications</h3>
+            <p class="build-card-desc">Custom reporting tools, business intelligence platforms, data pipelines, and embedded analytics that give decision-makers real insight into how the business is performing.</p>
+            <div class="build-card-tags">
+              <span class="build-tag">Reporting</span>
+              <span class="build-tag">BI Dashboards</span>
+              <span class="build-tag">Data Pipelines</span>
+            </div>
+          </div>
+          <div class="build-card reveal">
+            <span class="build-card-num">06</span>
+            <h3 class="build-card-title">Mobile &amp; Cross-Platform Apps</h3>
+            <p class="build-card-desc">Applications that need to run on phones and tablets, alongside or instead of a web browser — native iOS and Android, or cross-platform where performance requirements allow.</p>
+            <div class="build-card-tags">
+              <span class="build-tag">React Native</span>
+              <span class="build-tag">Flutter</span>
+              <span class="build-tag">iOS &amp; Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" aria-labelledby="process-heading">
       <div class="container">
         <div class="reveal">
@@ -1393,6 +1689,79 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
+    <!-- ============================================================
+         TECH STACK
+    ============================================================ -->
+    <section class="section" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Technology Stack</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="tech-heading">Technology we build with</h2>
+          <p class="section-lead">We select technology based on your requirements, not our preferences. What follows reflects what we have deep production experience with — tools we would stake a delivery on.</p>
+        </div>
+        <div class="tech-cats reveal">
+          <div class="tech-cat">
+            <div class="tech-cat-title">Frontend &amp; Web</div>
+            <div class="tech-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <div class="tech-cat-title">Backend &amp; APIs</div>
+            <div class="tech-tags">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django / FastAPI</span>
+              <span class="tech-tag">PHP / Laravel</span>
+              <span class="tech-tag">Java / Spring Boot</span>
+              <span class="tech-tag">.NET / C#</span>
+              <span class="tech-tag">REST &amp; GraphQL</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <div class="tech-cat-title">Mobile</div>
+            <div class="tech-tags">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Swift (iOS)</span>
+              <span class="tech-tag">Kotlin (Android)</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <div class="tech-cat-title">Cloud &amp; DevOps</div>
+            <div class="tech-tags">
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">Microsoft Azure</span>
+              <span class="tech-tag">Google Cloud</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Kubernetes</span>
+              <span class="tech-tag">CI/CD Pipelines</span>
+              <span class="tech-tag">Terraform</span>
+            </div>
+          </div>
+          <div class="tech-cat">
+            <div class="tech-cat-title">Data &amp; Storage</div>
+            <div class="tech-tags">
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Elasticsearch</span>
+              <span class="tech-tag">Apache Kafka</span>
+              <span class="tech-tag">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-teal" aria-labelledby="why-heading">
       <div class="container">
         <div class="reveal">
@@ -1407,6 +1776,276 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Demonstrable progress every sprint — no black-box development cycles</span></div>
           <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Long-term maintenance capability — we support what we build</span></div>
           <div class="sector-item"><div class="sector-dot"></div><span class="sector-name">Nigerian-market expertise combined with international engineering standards</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ENGAGEMENT MODELS
+    ============================================================ -->
+    <section class="section" aria-labelledby="models-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">How We Engage</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="models-heading">Three ways to work with us</h2>
+          <p class="section-lead">We structure engagements around how well-defined the problem is and how much ongoing involvement you need. Every engagement starts with discovery.</p>
+        </div>
+        <div class="models-grid">
+          <div class="model-card reveal">
+            <div class="model-badge">Defined Scope</div>
+            <h3 class="model-title">Fixed-Price Discovery &amp; Build</h3>
+            <p class="model-desc">We invest heavily in the discovery and requirements phase, agree a specification, and deliver the build to a fixed price. Best for well-defined problems where the scope is clear before we start.</p>
+            <div class="model-features">
+              <span class="model-feature">Detailed requirements specification before build</span>
+              <span class="model-feature">Fixed price agreed post-discovery</span>
+              <span class="model-feature">Milestone-based payment structure</span>
+              <span class="model-feature">Formal change control for scope additions</span>
+            </div>
+          </div>
+          <div class="model-card featured reveal">
+            <div class="model-badge">Flexible</div>
+            <h3 class="model-title">Time &amp; Materials</h3>
+            <p class="model-desc">Pay for actual engineering time as the project evolves. Works best for complex or fast-moving projects where the full scope cannot be defined upfront, or where the product needs to respond to user feedback.</p>
+            <div class="model-features">
+              <span class="model-feature">Bi-weekly sprint cadence with working demos</span>
+              <span class="model-feature">Full visibility into time and progress</span>
+              <span class="model-feature">Scope can evolve with your business needs</span>
+              <span class="model-feature">You control priorities every sprint</span>
+            </div>
+          </div>
+          <div class="model-card reveal">
+            <div class="model-badge">Ongoing</div>
+            <h3 class="model-title">Dedicated Engineering Team</h3>
+            <p class="model-desc">A dedicated pod of engineers, architects, and QA specialists works exclusively on your product on a monthly retainer. Ideal for product companies and businesses with a continuous development roadmap.</p>
+            <div class="model-features">
+              <span class="model-feature">Fixed monthly cost, predictable capacity</span>
+              <span class="model-feature">Team continuity — same engineers throughout</span>
+              <span class="model-feature">Covers development, maintenance, and support</span>
+              <span class="model-feature">Scales with 30-day notice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INDUSTRIES
+    ============================================================ -->
+    <section class="section section-alt" aria-labelledby="industries-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Industries</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="industries-heading">Sectors we have built for</h2>
+          <p class="section-lead">Our software runs in production across industries that have fundamentally different regulatory environments, data models, and operational constraints. We understand what changes between them.</p>
+        </div>
+        <div class="industry-pills reveal">
+          <a href="/industries/financial-technology/" class="industry-pill">Financial Technology</a>
+          <a href="/industries/healthcare/" class="industry-pill">Healthcare</a>
+          <a href="/industries/education-elearning/" class="industry-pill">Education &amp; eLearning</a>
+          <a href="/industries/retail-ecommerce/" class="industry-pill">Retail &amp; eCommerce</a>
+          <a href="/industries/logistics/" class="industry-pill">Logistics &amp; Supply Chain</a>
+          <a href="/industries/agriculture/" class="industry-pill">Agriculture</a>
+          <a href="/industries/media-entertainment/" class="industry-pill">Media &amp; Entertainment</a>
+          <a href="/industries/real-estate/" class="industry-pill">Real Estate</a>
+          <a href="/industries/isvs-product-companies/" class="industry-pill">ISVs &amp; Product Companies</a>
+          <a href="/industries/public-sector/" class="industry-pill">Public Sector</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS
+         NOTE: Replace with verified client quotes before publishing.
+    ============================================================ -->
+    <section class="section" aria-labelledby="testi-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Client Testimonials</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="testi-heading">What our clients say</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testi-quote">GreaterHeight built our core banking middleware from scratch. The discovery phase alone surfaced three integration points our previous vendor had missed entirely. We went live four months later, on schedule and within budget.</p>
+            <div class="testi-author">
+              <div class="testi-name">Chukwuma Okafor</div>
+              <div class="testi-role">Head of Technology, Fintech Startup — Lagos</div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testi-quote">We needed a platform to manage certificate issuance and verification across twelve states. The team understood our constraints immediately and delivered exactly what we needed — no unnecessary features, no scope creep, no surprises at handover.</p>
+            <div class="testi-author">
+              <div class="testi-name">Dr Ngozi Adeyemi</div>
+              <div class="testi-role">Director, Education NGO — Abuja</div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars" aria-label="5 out of 5 stars">
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testi-quote">The supply chain tracking system they built handles over ten thousand shipments a month. Six months in and it has been rock solid. Maintenance is proactive — they flag issues before they become problems for our clients.</p>
+            <div class="testi-author">
+              <div class="testi-name">James Okonkwo</div>
+              <div class="testi-role">Chief Operating Officer, Logistics Company — Lagos</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-rating-summary reveal">
+          <div class="testi-score" aria-label="4.9 out of 5">4.9</div>
+          <div>
+            <div class="testi-score-stars" aria-hidden="true">
+              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg class="testi-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="testi-score-label">Based on 37 client engagements</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+    ============================================================ -->
+    <section class="section section-teal" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">FAQ</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="faq-heading">Common questions about custom software</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How long does a custom software project typically take?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">Timelines vary with scope and complexity. A focused internal tool can be delivered in 8–12 weeks. A multi-user platform with integrations typically takes 16–28 weeks. We front-load the discovery and architecture phase, which adds two to four weeks at the start but prevents costly rework later. After discovery, we provide a detailed project plan with weekly milestones.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How much does custom software development cost?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">Cost is driven by scope, complexity, and the type of engagement. A fixed-price discovery engagement typically runs between ₦2.5m and ₦6m, after which we provide a full cost estimate for the build phase. Full bespoke application projects typically range from ₦15m to ₦60m depending on features and integrations. We do not provide binding estimates before discovery, because pre-discovery estimates are almost always wrong in ways that hurt both sides.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Who owns the intellectual property and source code?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">You do — completely. All source code, databases, documentation, and infrastructure configuration we produce for you is your intellectual property. This is written into every engagement contract with no ambiguity. We do not retain rights, licences, or access to your systems after a project ends unless you specifically engage us for ongoing maintenance.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can you integrate custom software with our existing systems?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">Yes. Integration is a core part of what we do. We map your existing integration landscape during discovery — ERPs, CRMs, payment gateways, identity providers, government APIs, legacy databases — and design the integration architecture before any code is written. We document all API contracts in advance and build integration testing into the QA phase.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How do you handle changes to requirements during development?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">We use a structured change control process. Minor clarifications within the agreed spec are absorbed at no cost. Scope additions are assessed for impact on timeline and cost, documented in a change request, and require written approval before implementation. Our sprint-based delivery model means you see working software every two weeks, which surfaces misalignments early — well before they become expensive to fix.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Do you provide ongoing maintenance after the software launches?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">Yes. We offer structured post-launch support under a separate maintenance agreement. This covers bug fixes, security patches, performance monitoring, and feature enhancements. Maintenance agreements are priced based on the complexity of the system and the response SLA you need. Many of our clients have been on maintenance agreements for several years after initial delivery.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              How is the project managed and how do we stay informed?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">You are assigned a dedicated project manager who is your primary contact. We use a shared project management board, weekly status meetings, and sprint review calls where you see and test working software. You have visibility into every task in the backlog, every sprint, and every test run. We do not do black-box development.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false">
+              Can you work with clients outside Nigeria?
+              <svg class="faq-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-a">Yes. We work with clients in the UK, the United States, the UAE, and across West Africa. All project communication is in English, contracts are available in international formats, and we accommodate time zone differences in our meeting scheduling. Payments can be received in NGN, GBP, USD, or EUR.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LEAD FORM
+    ============================================================ -->
+    <section class="lead-form-section" aria-labelledby="form-heading">
+      <div class="lead-form-inner">
+        <div class="reveal">
+          <p class="section-label">Start a Conversation</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="form-heading">Tell us about your software project</h2>
+          <p class="section-lead">Give us a brief outline and we will respond within one business day to discuss next steps — no obligation, no sales pitch.</p>
+        </div>
+        <form class="lead-form-grid reveal" id="cs-enquiry-form" novalidate>
+          <div class="lead-form-field">
+            <label class="lead-form-label" for="cs-name">Your Name <span aria-hidden="true">*</span></label>
+            <input class="lead-form-input" type="text" id="cs-name" name="name" placeholder="Full name" required autocomplete="name">
+          </div>
+          <div class="lead-form-field">
+            <label class="lead-form-label" for="cs-email">Email Address <span aria-hidden="true">*</span></label>
+            <input class="lead-form-input" type="email" id="cs-email" name="email" placeholder="you@company.com" required autocomplete="email">
+          </div>
+          <div class="lead-form-field">
+            <label class="lead-form-label" for="cs-company">Company / Organisation</label>
+            <input class="lead-form-input" type="text" id="cs-company" name="company" placeholder="Company name" autocomplete="organization">
+          </div>
+          <div class="lead-form-field">
+            <label class="lead-form-label" for="cs-type">Project Type</label>
+            <select class="lead-form-select" id="cs-type" name="project_type">
+              <option value="">Select a type&hellip;</option>
+              <option value="enterprise-app">Enterprise Application</option>
+              <option value="internal-tool">Internal Tool / Portal</option>
+              <option value="client-platform">Client-Facing Platform</option>
+              <option value="integration">Systems Integration</option>
+              <option value="mobile-app">Mobile Application</option>
+              <option value="data-analytics">Data &amp; Analytics</option>
+              <option value="other">Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="lead-form-field span-2">
+            <label class="lead-form-label" for="cs-message">Brief Project Description <span aria-hidden="true">*</span></label>
+            <textarea class="lead-form-textarea" id="cs-message" name="message" placeholder="Describe the problem you need to solve — what does the software need to do, and what does success look like for you?" required rows="5"></textarea>
+          </div>
+          <div class="lead-form-field span-2">
+            <button type="submit" class="lead-form-submit">Send Enquiry &rarr;</button>
+            <p class="lead-form-note">We respond within one business day. Your information is never shared with third parties.</p>
+          </div>
+        </form>
+        <div class="lead-form-success" id="cs-form-success" role="status" aria-live="polite">
+          <h3>Thank you — your message has been sent.</h3>
+          <p>We will review your enquiry and respond within one business day. If you need to speak to someone sooner, please <a href="https://wa.me/2349139999700">message us on WhatsApp</a> or call <a href="tel:+2349139999700">+234 913 999 9700</a>.</p>
         </div>
       </div>
     </section>
@@ -1863,6 +2502,37 @@ if(searchInput) searchInput.addEventListener('input', function(){
     searchResults.appendChild(a);
   });
 });
+
+
+/* ---- FAQ ACCORDION ---- */
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.closest('.faq-item');
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){
+      i.classList.remove('open');
+      i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
+  });
+});
+
+/* ---- ENQUIRY FORM ---- */
+var csForm=document.getElementById('cs-enquiry-form');
+var csSuccess=document.getElementById('cs-form-success');
+if(csForm){csForm.addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=(csForm.querySelector('[name="name"]')||{}).value||'';
+  var em=(csForm.querySelector('[name="email"]')||{}).value||'';
+  var co=(csForm.querySelector('[name="company"]')||{}).value||'';
+  var ty=(csForm.querySelector('[name="project_type"]')||{}).value||'';
+  var ms=(csForm.querySelector('[name="message"]')||{}).value||'';
+  var sub=encodeURIComponent('Custom Software Enquiry — '+(n||'Website'));
+  var body=encodeURIComponent('Name: '+n+'\nEmail: '+em+'\nCompany: '+co+'\nProject type: '+ty+'\n\nMessage:\n'+ms);
+  window.location.href='mailto:info@mail.greaterheight.tech?subject='+sub+'&body='+body;
+  csForm.style.display='none';
+  if(csSuccess)csSuccess.classList.add('visible');
+});}
 
     }());
   </script>
