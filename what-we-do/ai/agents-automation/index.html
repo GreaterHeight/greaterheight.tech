@@ -28,43 +28,79 @@
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://greaterheight.tech/#organization",
-        "name": "GreaterHeight Technologies Limited",
-        "url": "https://greaterheight.tech",
-        "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
-        "foundingDate": "2010",
-        "foundingLocation": "Lagos, Nigeria",
-        "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
-          "addressLocality": "Lagos",
-          "addressCountry": "NG"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+234-913-999-9700",
-          "contactType": "customer service",
-          "email": "info@mail.greaterheight.tech"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/greaterheight-tech"
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://greaterheight.tech/#organization",
+      "name": "GreaterHeight Technologies Limited",
+      "url": "https://greaterheight.tech",
+      "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
+      "foundingDate": "2010",
+      "foundingLocation": "Lagos, Nigeria",
+      "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greaterheight.tech/" },
-          { "@type": "ListItem", "position": 2, "name": "What We Do", "item": "https://greaterheight.tech/what-we-do/" },
-          { "@type": "ListItem", "position": 3, "name": "AI Agents &amp; Automation", "item": "https://greaterheight.tech/what-we-do/ai/agents-automation/" }
-        ]
-      }
-    ]
-  }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+234-913-999-9700",
+        "contactType": "customer service",
+        "email": "info@mail.greaterheight.tech"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/greaterheight-tech"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://greaterheight.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What We Do",
+          "item": "https://greaterheight.tech/what-we-do/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI Agents &amp; Automation",
+          "item": "https://greaterheight.tech/what-we-do/ai/agents-automation/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://greaterheight.tech/what-we-do/ai/agents-automation/#service",
+      "name": "AI Agents & Automation",
+      "description": "GreaterHeight Technologies builds AI agents and intelligent automation systems — autonomous workflows, RPA integrations, and AI-powered process automation for enterprise and product teams.",
+      "provider": {
+        "@id": "https://greaterheight.tech/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Nigeria"
+        },
+        {
+          "@type": "Continent",
+          "name": "Africa"
+        }
+      ],
+      "serviceType": "AI Agents & Automation",
+      "url": "https://greaterheight.tech/what-we-do/ai/agents-automation/"
+    }
+  ]
+}
   </script>
 
   <style>

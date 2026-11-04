@@ -4,4 +4,35 @@ Allow: /
 # Block query-string variants (none expected, but belt-and-braces)
 Disallow: /*?
 
+# ── AI Search / Retrieval crawlers ─────────────────────────────────────────
+# These crawlers power live AI search citations (ChatGPT search, Perplexity,
+# Claude.ai search). Allow them so GreaterHeight Technologies can be cited
+# in AI-generated answers and recommendations.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ── AI Training crawlers ────────────────────────────────────────────────────
+# These crawlers ingest content to train large language models.
+# Allowing them increases brand awareness in future model generations.
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
 Sitemap: https://greaterheight.tech/sitemap.xml

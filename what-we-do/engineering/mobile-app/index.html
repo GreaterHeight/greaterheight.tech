@@ -28,43 +28,79 @@
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://greaterheight.tech/#organization",
-        "name": "GreaterHeight Technologies Limited",
-        "url": "https://greaterheight.tech",
-        "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
-        "foundingDate": "2010",
-        "foundingLocation": "Lagos, Nigeria",
-        "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
-          "addressLocality": "Lagos",
-          "addressCountry": "NG"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+234-913-999-9700",
-          "contactType": "customer service",
-          "email": "info@mail.greaterheight.tech"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/greaterheight-tech"
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://greaterheight.tech/#organization",
+      "name": "GreaterHeight Technologies Limited",
+      "url": "https://greaterheight.tech",
+      "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
+      "foundingDate": "2010",
+      "foundingLocation": "Lagos, Nigeria",
+      "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greaterheight.tech/" },
-          { "@type": "ListItem", "position": 2, "name": "What We Do", "item": "https://greaterheight.tech/what-we-do/" },
-          { "@type": "ListItem", "position": 3, "name": "Mobile App Development", "item": "https://greaterheight.tech/what-we-do/engineering/mobile-app/" }
-        ]
-      }
-    ]
-  }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+234-913-999-9700",
+        "contactType": "customer service",
+        "email": "info@mail.greaterheight.tech"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/greaterheight-tech"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://greaterheight.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What We Do",
+          "item": "https://greaterheight.tech/what-we-do/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mobile App Development",
+          "item": "https://greaterheight.tech/what-we-do/engineering/mobile-app/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://greaterheight.tech/what-we-do/engineering/mobile-app/#service",
+      "name": "Mobile App Development",
+      "description": "GreaterHeight Technologies builds native iOS and Android mobile applications — performant, well-designed, and built with the engineering discipline that production mobile apps require.",
+      "provider": {
+        "@id": "https://greaterheight.tech/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Nigeria"
+        },
+        {
+          "@type": "Continent",
+          "name": "Africa"
+        }
+      ],
+      "serviceType": "Mobile App Development",
+      "url": "https://greaterheight.tech/what-we-do/engineering/mobile-app/"
+    }
+  ]
+}
   </script>
 
   <style>

@@ -28,43 +28,75 @@
   <!-- Schema.org -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://greaterheight.tech/#organization",
-        "name": "GreaterHeight Technologies Limited",
-        "url": "https://greaterheight.tech",
-        "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
-        "foundingDate": "2010",
-        "foundingLocation": "Lagos, Nigeria",
-        "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
-          "addressLocality": "Lagos",
-          "addressCountry": "NG"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+234-913-999-9700",
-          "contactType": "customer service",
-          "email": "info@mail.greaterheight.tech"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/greaterheight-tech"
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://greaterheight.tech/#organization",
+      "name": "GreaterHeight Technologies Limited",
+      "url": "https://greaterheight.tech",
+      "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
+      "foundingDate": "2010",
+      "foundingLocation": "Lagos, Nigeria",
+      "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://greaterheight.tech/" },
-          { "@type": "ListItem", "position": 2, "name": "What We Do", "item": "https://greaterheight.tech/what-we-do/" },
-          { "@type": "ListItem", "position": 3, "name": "GreaterHeight Academy", "item": "https://greaterheight.tech/products/greaterheight-academy/" }
-        ]
-      }
-    ]
-  }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+234-913-999-9700",
+        "contactType": "customer service",
+        "email": "info@mail.greaterheight.tech"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/greaterheight-tech"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://greaterheight.tech/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What We Do",
+          "item": "https://greaterheight.tech/what-we-do/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GreaterHeight Academy",
+          "item": "https://greaterheight.tech/products/greaterheight-academy/"
+        }
+      ]
+    },
+    {
+      "@type": "Course",
+      "@id": "https://greaterheight.tech/products/greaterheight-academy/#course",
+      "name": "GreaterHeight Academy",
+      "description": "GreaterHeight Academy is the technology training arm of GreaterHeight Technologies — offering structured, career-transforming programmes in software development, cloud computing, data engineering, cybersecurity, and AI for individuals and corporate teams across Africa and beyond.",
+      "provider": {
+        "@id": "https://greaterheight.tech/#organization"
+      },
+      "courseMode": [
+        "onsite",
+        "online",
+        "blended"
+      ],
+      "availableLanguage": "English",
+      "educationalLevel": "Professional",
+      "url": "https://greaterheight.tech/products/greaterheight-academy/"
+    }
+  ]
+}
   </script>
 
   <style>
