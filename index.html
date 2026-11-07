@@ -440,6 +440,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.96);backdrop-
 .cap-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:box-shadow .25s,transform .25s;}
 .cap-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.08);transform:translateY(-3px);}
 .cap-card figure{aspect-ratio:16/7;background:linear-gradient(135deg,var(--forest) 0%,var(--teal) 100%);overflow:hidden;position:relative;}
+.cap-card figure img,.story-img img,.industry-img img,.blog-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
 .cap-card figure span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);}
 .cap-card figure svg{position:absolute;width:80px;height:80px;stroke:rgba(255,255,255,.08);fill:none;stroke-width:.6;top:50%;left:50%;transform:translate(-50%,-50%);}
 .cap-card-body{padding:1.3rem 1.4rem 1.5rem;}
@@ -1463,7 +1464,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
     <div class="caps-left reveal">
       <span class="eyebrow">Core Capabilities</span>
       <h2 id="caps-h2">The full stack of modern software delivery</h2>
-      <p>From AI strategy to cloud architecture, from mobile to enterprise integration — our six capability pillars cover every layer of the modern technology stack.</p>
+      <p>From AI strategy to cloud architecture, from mobile to enterprise integration — our eight capability pillars cover every layer of the modern technology stack.</p>
       <a href="/services" class="btn btn-outline">All Services</a>
       <div class="caps-deco" aria-hidden="true">
         <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke-dasharray="251" stroke-dashoffset="62.75"/><circle cx="50" cy="50" r="28" stroke-dasharray="176" stroke-dashoffset="44"/><circle cx="50" cy="50" r="16"/></svg>
@@ -1472,6 +1473,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
     <div class="caps-right">
       <div class="cap-card reveal">
         <figure>
+          <img src="assets/images/capabilities/ai-data-engineering.jpg" alt="AI & Data Engineering" loading="lazy" onerror="this.style.display='none'">
           <svg viewBox="0 0 200 100" aria-hidden="true"><rect x="20" y="20" width="60" height="60" rx="8"/><rect x="120" y="20" width="60" height="60" rx="8"/><line x1="80" y1="50" x2="120" y2="50"/></svg>
           <span>AI &amp; Data Engineering</span>
         </figure>
@@ -1483,6 +1485,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="cap-card reveal" style="transition-delay:.07s;">
         <figure style="background:linear-gradient(135deg,#1A7A5E 0%,#005A3C 100%);">
+          <img src="assets/images/capabilities/it-consulting.jpg" alt="IT Consulting" loading="lazy" onerror="this.style.display='none'">
           <svg viewBox="0 0 200 100" aria-hidden="true"><circle cx="50" cy="50" r="25"/><circle cx="150" cy="50" r="25"/><line x1="75" y1="50" x2="125" y2="50"/></svg>
           <span>IT Consulting</span>
         </figure>
@@ -1494,6 +1497,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="cap-card reveal" style="transition-delay:.05s;">
         <figure style="background:linear-gradient(135deg,#6B0F1A 0%,#8C0D0C 100%);">
+          <img src="assets/images/capabilities/software-development.jpg" alt="Software Development" loading="lazy" onerror="this.style.display='none'">
           <svg viewBox="0 0 200 100" aria-hidden="true"><polyline points="20,80 60,40 100,60 140,20 180,50"/></svg>
           <span>Software Development</span>
         </figure>
@@ -1505,6 +1509,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="cap-card reveal" style="transition-delay:.12s;">
         <figure style="background:linear-gradient(135deg,#003020 0%,#0D3D28 100%);">
+          <img src="assets/images/capabilities/application-development.jpg" alt="Application Development" loading="lazy" onerror="this.style.display='none'">
           <svg viewBox="0 0 200 100" aria-hidden="true"><rect x="30" y="15" width="60" height="100" rx="10"/><rect x="110" y="15" width="60" height="100" rx="10"/></svg>
           <span>Application Development</span>
         </figure>
@@ -1516,6 +1521,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="cap-card reveal">
         <figure style="background:linear-gradient(135deg,#005A3C 0%,#1EB496 100%);">
+          <img src="assets/images/capabilities/cloud-devops.jpg" alt="Cloud & DevOps" loading="lazy" onerror="this.style.display='none'">
           <svg viewBox="0 0 200 100" aria-hidden="true"><ellipse cx="100" cy="50" rx="75" ry="35"/><ellipse cx="100" cy="50" rx="50" ry="22"/><ellipse cx="100" cy="50" rx="25" ry="10"/></svg>
           <span>Cloud &amp; DevOps</span>
         </figure>
@@ -1527,6 +1533,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="cap-card reveal" style="transition-delay:.07s;">
         <figure style="background:linear-gradient(135deg,#C9A84C 0%,#8C0D0C 100%);">
+          <img src="assets/images/capabilities/enterprise-integration.jpg" alt="Enterprise Integration & Automation" loading="lazy" onerror="this.style.display='none'">
           <svg viewBox="0 0 200 100" aria-hidden="true"><rect x="20" y="30" width="40" height="40" rx="5"/><rect x="80" y="30" width="40" height="40" rx="5"/><rect x="140" y="30" width="40" height="40" rx="5"/><line x1="60" y1="50" x2="80" y2="50"/><line x1="120" y1="50" x2="140" y2="50"/></svg>
           <span>Enterprise Integration</span>
         </figure>
@@ -1534,6 +1541,30 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
           <h3>Enterprise Integration &amp; Automation</h3>
           <p>Connecting disparate enterprise systems — ERP, CRM, core banking, payment rails — via event-driven and API-first architectures.</p>
           <ul><li>API Gateway &amp; ESB Design</li><li>ERP &amp; CRM Integration</li><li>RPA &amp; Workflow Automation</li><li>Real-Time Event Streaming</li></ul>
+        </div>
+      </div>
+      <div class="cap-card reveal" style="transition-delay:.05s;">
+        <figure style="background:linear-gradient(135deg,#005A3C 0%,#C9A84C 100%);">
+          <img src="assets/images/capabilities/digital-marketing.jpg" alt="Digital Marketing" loading="lazy" onerror="this.style.display='none'">
+          <svg viewBox="0 0 200 100" aria-hidden="true"><path d="M20 70 Q60 20 100 50 Q140 80 180 30" stroke="rgba(255,255,255,.25)" stroke-width="2" fill="none"/><circle cx="60" cy="38" r="6" fill="rgba(255,255,255,.2)"/><circle cx="120" cy="62" r="6" fill="rgba(255,255,255,.2)"/><circle cx="170" cy="35" r="6" fill="rgba(255,255,255,.2)"/></svg>
+          <span>Digital Marketing</span>
+        </figure>
+        <div class="cap-card-body">
+          <h3>Digital Marketing</h3>
+          <p>Data-driven marketing that builds visibility, drives qualified traffic, and converts audiences into loyal customers.</p>
+          <ul><li>SEO &amp; Content Marketing</li><li>Social Media Management</li><li>PPC &amp; Paid Campaigns</li><li>Email &amp; Marketing Automation</li></ul>
+        </div>
+      </div>
+      <div class="cap-card reveal" style="transition-delay:.12s;">
+        <figure style="background:linear-gradient(135deg,#1A7A5E 0%,#6B0F1A 100%);">
+          <img src="assets/images/capabilities/digital-authority.jpg" alt="Digital Authority & Personal Branding" loading="lazy" onerror="this.style.display='none'">
+          <svg viewBox="0 0 200 100" aria-hidden="true"><circle cx="100" cy="50" r="30" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/><circle cx="100" cy="50" r="12" fill="rgba(255,255,255,.12)"/><line x1="100" y1="20" x2="100" y2="10" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/><line x1="130" y1="30" x2="138" y2="22" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/><line x1="130" y1="70" x2="138" y2="78" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/><line x1="70" y1="30" x2="62" y2="22" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/><line x1="70" y1="70" x2="62" y2="78" stroke="rgba(255,255,255,.2)" stroke-width="1.5"/></svg>
+          <span>Digital Authority &amp; Personal Branding</span>
+        </figure>
+        <div class="cap-card-body">
+          <h3>Digital Authority &amp; Personal Branding</h3>
+          <p>Positioning executives, founders, and organisations as thought leaders — from strategy to LinkedIn engineering and digital presence.</p>
+          <ul><li>Personal Brand Strategy</li><li>LinkedIn Engineering</li><li>Digital Authority Platform</li><li>Content &amp; Thought Leadership</li></ul>
         </div>
       </div>
     </div>
@@ -1555,6 +1586,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
     <div class="stories-grid">
       <div class="story-card story-card--featured reveal">
         <div class="story-img" style="background:linear-gradient(135deg,#0D3D28 0%,#1A7A5E 100%);">
+          <img src="assets/images/case-studies/fintech-platform.jpg" alt="Next-Generation Fintech Platform" loading="lazy" onerror="this.style.display='none'">
           <div class="story-img-overlay"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
         </div>
         <div class="story-body">
@@ -1570,6 +1602,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="story-card reveal" style="transition-delay:.08s;">
         <div class="story-img" style="background:linear-gradient(135deg,#8C0D0C 0%,#005A3C 100%);aspect-ratio:16/9;">
+          <img src="assets/images/case-studies/ai-telehealth.jpg" alt="AI Telehealth Platform for Rural Diagnostics" loading="lazy" onerror="this.style.display='none'">
           <div class="story-img-overlay"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
         </div>
         <div class="story-body">
@@ -1581,6 +1614,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       </div>
       <div class="story-card reveal" style="transition-delay:.16s;">
         <div class="story-img" style="background:linear-gradient(135deg,#1A7A5E 0%,#C9A84C 100%);aspect-ratio:16/9;">
+          <img src="assets/images/case-studies/salon-booking.jpg" alt="Real-Time Salon Booking & POS Platform" loading="lazy" onerror="this.style.display='none'">
           <div class="story-img-overlay"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
         </div>
         <div class="story-body">
@@ -1614,84 +1648,84 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
       <div class="glider-track" id="ind-track">
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div></div>
+            <div class="industry-img"><img src="assets/images/industries/fintech.jpg" alt="Fintech" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div></div>
             <div class="industry-card-body"><h3>Fintech</h3></div>
             <div class="industry-hover"><h4>Fintech</h4><p>Payments, lending, trading platforms, and financial infrastructure for Africa and beyond.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#1A7A5E,#0D3D28);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M3 7l9-5 9 5"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#1A7A5E,#0D3D28);"><img src="assets/images/industries/banking.jpg" alt="Banking" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M3 7l9-5 9 5"/></svg></div></div>
             <div class="industry-card-body"><h3>Banking</h3></div>
             <div class="industry-hover"><h4>Banking</h4><p>Core banking modernisation, digital channels, and compliance-ready integrations.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#8C0D0C,#6B0F1A);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#8C0D0C,#6B0F1A);"><img src="assets/images/industries/healthcare.jpg" alt="Healthcare" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div></div>
             <div class="industry-card-body"><h3>Healthcare</h3></div>
             <div class="industry-hover"><h4>Healthcare</h4><p>EMR systems, telehealth, AI diagnostics, and health informatics platforms.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#005A3C,#1EB496);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M1 6C1 4.9 1.9 4 3 4s2 .9 2 2c0 5.5 4.5 10 10 10 1.1 0 2 .9 2 2s-.9 2-2 2C8.6 20 1 12.4 1 6z"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#005A3C,#1EB496);"><img src="assets/images/industries/telecommunications.jpg" alt="Telecommunications" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M1 6C1 4.9 1.9 4 3 4s2 .9 2 2c0 5.5 4.5 10 10 10 1.1 0 2 .9 2 2s-.9 2-2 2C8.6 20 1 12.4 1 6z"/></svg></div></div>
             <div class="industry-card-body"><h3>Telecommunications</h3></div>
             <div class="industry-hover"><h4>Telecommunications</h4><p>BSS/OSS modernisation, self-care apps, and network analytics for telcos.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#C9A84C,#8C0D0C);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20v-4m4 4v-8m4 8V8m4 12v-4"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#C9A84C,#8C0D0C);"><img src="assets/images/industries/oil-gas.jpg" alt="Oil &amp; Gas" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20v-4m4 4v-8m4 8V8m4 12v-4"/></svg></div></div>
             <div class="industry-card-body"><h3>Oil &amp; Gas</h3></div>
             <div class="industry-hover"><h4>Oil &amp; Gas</h4><p>EPCIC project management systems, IoT integrations, and field operations platforms.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#003020,#0D3D28);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#003020,#0D3D28);"><img src="assets/images/industries/public-sector.jpg" alt="Public Sector" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div></div>
             <div class="industry-card-body"><h3>Public Sector</h3></div>
             <div class="industry-hover"><h4>Public Sector</h4><p>Government portals, e-governance, certificate management, and citizen services platforms.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#1A7A5E,#C9A84C);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#1A7A5E,#C9A84C);"><img src="assets/images/industries/e-commerce.jpg" alt="E-Commerce" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></div></div>
             <div class="industry-card-body"><h3>E-Commerce</h3></div>
             <div class="industry-hover"><h4>E-Commerce &amp; Retail</h4><p>High-performance storefronts, marketplace platforms, and supply chain automation.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#8C0D0C,#1A7A5E);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#8C0D0C,#1A7A5E);"><img src="assets/images/industries/education.jpg" alt="Education" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div></div>
             <div class="industry-card-body"><h3>Education</h3></div>
             <div class="industry-hover"><h4>Education</h4><p>LMS platforms, examination systems, credential management, and EdTech products.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#005A3C,#003020);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#005A3C,#003020);"><img src="assets/images/industries/logistics.jpg" alt="Logistics" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div></div>
             <div class="industry-card-body"><h3>Logistics</h3></div>
             <div class="industry-hover"><h4>Logistics</h4><p>Fleet management, last-mile delivery apps, and supply chain visibility platforms.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#6B0F1A,#C9A84C);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#6B0F1A,#C9A84C);"><img src="assets/images/industries/insurance.jpg" alt="Insurance" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div></div>
             <div class="industry-card-body"><h3>Insurance</h3></div>
             <div class="industry-hover"><h4>Insurance</h4><p>Policy management systems, claims automation, and InsurTech product development.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#1EB496,#005A3C);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#1EB496,#005A3C);"><img src="assets/images/industries/enterprise.jpg" alt="Enterprise" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div></div>
             <div class="industry-card-body"><h3>Enterprise</h3></div>
             <div class="industry-hover"><h4>Enterprise Software</h4><p>ERP integrations, internal tooling, and business process automation at scale.</p><span class="expand-btn">Explore →</span></div>
           </div>
         </div>
         <div class="industry-item">
           <div class="industry-card">
-            <div class="industry-img" style="background:linear-gradient(135deg,#0D3D28,#1EB496);"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div>
+            <div class="industry-img" style="background:linear-gradient(135deg,#0D3D28,#1EB496);"><img src="assets/images/industries/non-profit.jpg" alt="Non-Profit &amp; NGO" loading="lazy" onerror="this.style.display='none'"><div class="industry-img-inner"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div></div>
             <div class="industry-card-body"><h3>Non-Profit</h3></div>
             <div class="industry-hover"><h4>Non-Profit &amp; NGO</h4><p>Donor management, church/ministry administration, and impact reporting platforms.</p><span class="expand-btn">Explore →</span></div>
           </div>
@@ -1796,7 +1830,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
     </div>
     <div class="blog-grid">
       <div class="blog-card reveal">
-        <div class="blog-img"><div class="blog-img-num">01</div></div>
+        <div class="blog-img"><img src="assets/images/insights/ai-prototypes.jpg" alt="Why 90% of AI prototypes never reach production" loading="lazy" onerror="this.style.display='none'"><div class="blog-img-num">01</div></div>
         <div class="blog-body">
           <span class="blog-tag">AI Engineering</span>
           <h3>Why 90% of AI prototypes never reach production — and how to fix that</h3>
@@ -1810,7 +1844,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
         </div>
       </div>
       <div class="blog-card reveal" style="transition-delay:.07s;">
-        <div class="blog-img" style="background:linear-gradient(135deg,#005A3C,#1A7A5E);"><div class="blog-img-num" style="color:rgba(255,255,255,.06);">02</div></div>
+        <div class="blog-img" style="background:linear-gradient(135deg,#005A3C,#1A7A5E);"><img src="assets/images/insights/slow-hiring.jpg" alt="The hidden costs of a slow hiring process" loading="lazy" onerror="this.style.display='none'"><div class="blog-img-num" style="color:rgba(255,255,255,.06);">02</div></div>
         <div class="blog-body">
           <span class="blog-tag">Team Extension</span>
           <h3>The hidden costs of a slow hiring process — measured in shipped features</h3>
@@ -1824,7 +1858,7 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
         </div>
       </div>
       <div class="blog-card reveal" style="transition-delay:.14s;">
-        <div class="blog-img" style="background:linear-gradient(135deg,#8C0D0C,#1A7A5E);"><div class="blog-img-num" style="color:rgba(255,255,255,.06);">03</div></div>
+        <div class="blog-img" style="background:linear-gradient(135deg,#8C0D0C,#1A7A5E);"><img src="assets/images/insights/african-infrastructure.jpg" alt="Building for African infrastructure" loading="lazy" onerror="this.style.display='none'"><div class="blog-img-num" style="color:rgba(255,255,255,.06);">03</div></div>
         <div class="blog-body">
           <span class="blog-tag">Cloud &amp; DevOps</span>
           <h3>Building for African infrastructure: latency, reliability, and offline-first architecture</h3>
