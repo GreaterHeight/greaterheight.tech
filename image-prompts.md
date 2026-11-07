@@ -9,7 +9,7 @@ Every image placeholder in the site references a specific filename. Generate eac
 
 **Global style block — append to every prompt unless a section overrides it:**
 
-> Ultra-realistic cinematic editorial photograph, 8K detail, shallow depth of field, professional colour grading in a deep forest-green and warm-gold palette (#003020, #005A3C, #1A7A5E) with a single restrained gold accent (#C9A84C) — a card surround, a small prop detail, a rim highlight. Rich contrast, no pure black; shadows lean dark forest-green. Premium magazine quality, shot on medium-format or mirrorless camera. No text, no watermarks, no logos.
+> Ultra-realistic documentary editorial photograph, 8K detail, shallow depth of field. Natural colour grading — neutral shadows, clean highlights, no colour tinting on light sources or shadow areas. Brand colours (#003020, #005A3C, #C9A84C) appear only in physical props and set dressing (a chair fabric, a pocket square, a branded card) — never as ambient light or colour cast. No glow effects, no neon, no sci-fi aesthetics. Available-light or controlled-strobe feel; nothing that reads as a CGI render or game engine screenshot. Premium magazine quality, shot on medium-format or mirrorless camera. No text, no watermarks, no logos.
 
 **Diversity options.** Each people prompt is written with the placeholder `[SUBJECT]`. Generate whichever option matches your need:
 - **Option A — Nigerian professionals:** replace `[SUBJECT]` for group scenes with "a diverse team of Black African professionals in Lagos" or "a distinguished Nigerian man and woman in business attire".
@@ -42,7 +42,7 @@ Interior editorial photograph of a high-rise boardroom in Lagos, Nigeria, at dus
 
 ### `software-development.jpg`
 
-Three monitors arranged in an arc on a minimal black desk in a dimly lit developer workspace. The screens show clean code — the leftmost monitor displays Python with green syntax highlighting on a dark theme, the centre monitor shows a terminal with green scrolling output, the right monitor shows a React component tree. No text is readable at this distance — the colours read as a tonal palette (forest-green, amber, pale grey) rather than legible characters. A mechanical keyboard with per-key RGB lighting in forest-green sits in the foreground in sharp focus, its aluminium case catching a rim of warm light. An open matte-black notebook with hand-written notes lies to the right, blurred. No people. Shot on Sony A7R V, 50mm f/1.4, ISO 3200, natural ambient from the screens only. Cinematic, moody. Horizontal 16:7.
+Three monitors arranged in an arc on a minimal dark desk in a developer workspace lit by a single warm desk lamp off frame-left. The screens show code editors on a dark theme — coloured syntax highlighting in muted greens and ambers, unreadable at this distance but legible as real software, not graphic design. A mechanical keyboard in a natural aluminium case sits in the foreground in sharp focus. An open notebook with handwritten notes and a plain ceramic mug sit beside it, slightly out of focus. A small potted plant at the left edge. The light is warm from the desk lamp, cool from the monitors — a natural tension between the two sources; no LED colour bleeding. No people. Shot on Sony A7R V, 50mm f/1.4, ISO 1600, mixed available light. Horizontal 16:7.
 
 ---
 
@@ -60,7 +60,7 @@ Wide interior photograph of a Tier-III data centre server hall. Looking down a l
 
 ### `enterprise-integration.jpg`
 
-Interior of a Network Operations Centre (NOC) in a Lagos corporate headquarters at night. A curved bank of six large monitors fills the background wall, each displaying abstract real-time dashboards — coloured graphs, network topology maps, and data stream indicators (no readable text, all abstract). The monitors cast a cool teal-green glow across the dark room. In the foreground, a glass-top desk with two illuminated keyboards and a mouse catches the monitor-glow. No people. Shot on Sony A7R V, 24mm f/2.8, ISO 6400, natural ambient from monitor light only. The reflection of the monitor wall is faintly visible in the glass desk surface. Horizontal 16:7.
+Interior of a Network Operations Centre (NOC) in a Lagos corporate headquarters. A bank of six large monitors fills the background wall — each showing real-looking software: network topology diagrams, line graphs, status tables in white type on dark backgrounds. The monitors are lit normally, like actual office screens — no dramatic glow, no neon, no colour bleed onto the walls. The room has subdued overhead fluorescent lighting; the monitors are the brightest things in the frame, but their light is contained to the screens. A clean desk in the foreground with a keyboard and mouse, a plain water bottle, and a notepad. No people. Shot on Sony A7R V, 24mm f/2.8, ISO 1600, office available light. The scene reads as a real, well-run operations room, not a sci-fi film set. Horizontal 16:7.
 
 ---
 
