@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Reputation Management | GreaterHeight Technologies</title>
+<meta name="description" content="GreaterHeight's Online Reputation Management service monitors, manages, and improves your brand's digital presence across reviews, social media, and search results.">
+<link rel="canonical" href="https://greaterheight.tech/what-we-do/marketing/online-reputation/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://greaterheight.tech/what-we-do/marketing/online-reputation/">
+<meta property="og:title" content="Online Reputation Management | GreaterHeight Technologies">
+<meta property="og:description" content="GreaterHeight's Online Reputation Management service monitors, manages, and improves your brand's digital presence across reviews, social media, and search results.">
+<meta property="og:image" content="https://greaterheight.tech/assets/images/og/marketing.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../../assets/images/logo/favicon.png">
+<link rel="apple-touch-icon" href="../../../assets/images/logo/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://greaterheight.tech/what-we-do/marketing/online-reputation/",
+  "name": "Online Reputation Management",
+  "description": "Brand monitoring, review management, and digital reputation for African businesses.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "GreaterHeight Technologies",
+    "url": "https://greaterheight.tech"
+  }
+}
+</script>
+<style>
+
+/* =============================================
+   DESIGN TOKENS
+============================================= */
+:root {
+  --forest:      #0D3D28;
+  --forest-deep: #003020;
+  --teal:        #005A3C;
+  --teal-mid:    #1A7A5E;
+  --teal-glow:   #1EB496;
+  --mint:        #97EFC9;
+  --teal-lite:   #EAF5F1;
+  --teal-pale:   #F4FBF8;
+  --cr:          #8C0D0C;
+  --cr-mid:      #B41414;
+  --cr-lite:     #F5EDED;
+  --cr-pale:     #FDF6F6;
+  --wine:        #6B0F1A;
+  --cream:       #FDFAF4;
+  --light:       #E8E4DC;
+  --white:       #FFFFFF;
+  --gold:        #C9A84C;
+  --grad-hero:   linear-gradient(135deg,#8C0D0C 0%,#B41414 40%,#CC3030 60%,#1EB496 100%);
+  --grad-rule:   linear-gradient(to right,#8C0D0C,#1EB496);
+  --bg:          #FDFAF4;
+  --bg-alt:      #F7F3EC;
+  --bg-dark:     #003020;
+  --bg-card:     #FFFFFF;
+  --border:      #E8E4DC;
+  --txt:         #2E2E2C;
+  --txt-2:       #6A6A64;
+  --txt-3:       #9A9A94;
+  --font:        "Lato", Arial, sans-serif;
+  --r:           12px;
+  color-scheme: light;
+}
+
+/* =============================================
+   RESET & BASE
+============================================= */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--font);background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{cursor:pointer;border:none;background:none;font-family:var(--font);}
+address{font-style:normal;}
+
+/* =============================================
+   UTILITIES
+============================================= */
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px;}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:6px;font-size:.95rem;font-weight:700;letter-spacing:.02em;transition:background .2s,color .2s,box-shadow .2s;white-space:nowrap;}
+.btn-primary{background:var(--cr);color:var(--white);}
+.btn-primary:hover{background:var(--cr-mid);box-shadow:0 4px 20px rgba(140,13,12,.3);}
+.btn-outline{background:transparent;color:var(--teal);border:2px solid var(--teal);}
+.btn-outline:hover{background:var(--teal);color:var(--white);}
+.btn-outline-white{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.6);}
+.btn-outline-white:hover{background:rgba(255,255,255,.12);border-color:var(--white);}
+
+/* =============================================
+   SCROLL REVEAL
+============================================= */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* =============================================
+   PRELOADER
+============================================= */
+#preloader{position:fixed;inset:0;z-index:9999;background:var(--bg-dark);display:flex;align-items:center;justify-content:center;transition:opacity .4s ease,visibility .4s ease;}
+#preloader.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+.preloader-mark{width:52px;height:52px;background:var(--bg-dark);border-radius:10px;display:flex;align-items:center;justify-content:center;animation:preloaderPulse 1s ease-in-out infinite alternate;}
+.preloader-mark img{width:38px;height:38px;object-fit:contain;display:block;}
+@keyframes preloaderPulse{from{opacity:.5;transform:scale(.9);}to{opacity:1;transform:scale(1);}}
+
+/* =============================================
+   SCROLL PROGRESS
+============================================= */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad-rule);z-index:9998;transition:width .1s linear;}
+
+/* =============================================
+   NAV & MEGA MENU
+============================================= */
+nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;}#main-nav .nav-inner{padding-block:.85rem;}
+.logo{display:inline-flex;align-items:center;text-decoration:none;}
+.logo-img{height:40px;width:auto;display:block;}
+.nav-tagline{font-size:.65rem;color:var(--txt-3);letter-spacing:.06em;font-style:italic;margin-left:.2rem;display:none;}
+@media(min-width:1100px){.nav-tagline{display:block;}}
+
+/* Desktop nav links */
+.nav-links{display:flex;align-items:center;gap:.2rem;}
+.nav-item{position:relative;}
+.nav-item:not(.nav-cta) > a,.nav-item > button{font-family:var(--font);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);background:none;border:none;cursor:pointer;padding:.5rem .8rem;border-radius:6px;transition:color .2s,background .2s;display:flex;align-items:center;gap:.3rem;}
+.nav-item:not(.nav-cta) > a:hover,.nav-item > button:hover,.nav-item:not(.nav-cta) > a:focus,.nav-item > button:focus{color:var(--cr);background:var(--cr-lite);outline:none;}
+.nav-item > button svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .2s;}
+.nav-item[aria-expanded="true"] > button svg{transform:rotate(180deg);}
+.nav-cta{margin-left:.8rem;}
+
+/* Mega panel */
+.mega-panel{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(6px);background:#fff;border:1px solid var(--border);border-radius:var(--r);box-shadow:0 16px 48px rgba(0,0,0,.12);min-width:280px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:200;}
+.mega-panel.wide{min-width:640px;}
+.mega-panel.xwide{min-width:860px;}
+.mega-panel.xxwide{min-width:1060px;}
+.nav-item[aria-expanded="true"] .mega-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+.mega-inner{padding:1.5rem;}
+.mega-cols{display:grid;gap:1.5rem;}
+.mega-cols.c2{grid-template-columns:1fr 1fr;}
+.mega-cols.c3{grid-template-columns:repeat(3,1fr);}
+.mega-cols.c4{grid-template-columns:repeat(4,1fr);}
+.mega-col-head{font-family:var(--font);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.75rem;}
+.mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
+.mega-links{display:flex;flex-direction:column;gap:.2rem;}
+.mega-links a{font-size:.82rem;color:var(--txt);padding:.28rem .5rem;border-radius:6px;transition:background .15s,color .15s;display:flex;align-items:center;gap:.5rem;white-space:nowrap;}
+.mega-links a:hover{background:var(--teal-lite);color:var(--forest);}
+.mega-links a svg{width:14px;height:14px;stroke:var(--teal-mid);fill:none;stroke-width:2;flex-shrink:0;}
+.mega-featured{background:var(--forest);border-radius:8px;padding:1rem 1.2rem;margin-top:.5rem;}
+.mega-featured p{font-size:.78rem;color:rgba(255,255,255,.65);margin-bottom:.7rem;line-height:1.5;}
+.mega-featured a{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mint);}
+.drawer-sub-head{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .2rem;font-weight:700;}
+
+/* Mobile hamburger */
+.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--txt);}
+.ham-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;}
+@media(max-width:900px){.nav-links{display:none;}.ham-btn{display:flex;align-items:center;}}
+.nav-search-trigger button{padding:.4rem .55rem;}
+
+/* Search overlay */
+#search-overlay{position:fixed;inset:0;z-index:8000;background:rgba(10,20,40,.88);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:8vh;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;}
+#search-overlay.open{opacity:1;visibility:visible;}
+.search-modal{background:#fff;border-radius:14px;width:min(840px,94vw);box-shadow:0 24px 80px rgba(0,0,0,.3);overflow:hidden;max-height:80vh;display:flex;flex-direction:column;}
+.search-input-row{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;border-bottom:1px solid var(--border);}
+.search-input-row svg{flex-shrink:0;color:var(--txt-3);}
+.search-input-row input{flex:1;border:none;outline:none;font-family:var(--font);font-size:1rem;color:var(--txt);background:transparent;}
+.search-input-row input::placeholder{color:var(--txt-3);}
+.search-esc-badge{font-family:var(--font);font-size:.72rem;border:1px solid var(--border);border-radius:5px;padding:.2rem .55rem;color:var(--txt-3);cursor:pointer;flex-shrink:0;background:none;}
+.search-results{overflow-y:auto;flex:1;}
+.search-results:empty::before{content:"Start typing to search...";display:block;padding:2rem 1.25rem;color:var(--txt-3);font-size:.9rem;}
+.search-result-group-head{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 1.25rem .3rem;background:var(--bg);}
+.search-result-item{display:flex;align-items:center;gap:.9rem;padding:.65rem 1.25rem;cursor:pointer;transition:background .12s;text-decoration:none;}
+.search-result-item:hover,.search-result-item.active{background:#F0F4FF;}
+.search-result-icon{width:34px;height:34px;border-radius:8px;background:#EEF2FF;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.search-result-icon svg{width:16px;height:16px;stroke:#4F6EF7;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.search-result-text{flex:1;min-width:0;}
+.search-result-title{font-size:.9rem;font-weight:600;color:var(--txt);}
+.search-result-path{font-size:.75rem;color:var(--txt-3);margin-top:.1rem;}
+.search-result-enter{font-size:.72rem;color:var(--txt-3);flex-shrink:0;opacity:0;white-space:nowrap;}
+.search-result-item.active .search-result-enter{opacity:1;}
+.search-kbd-bar{padding:.55rem 1.25rem;border-top:1px solid var(--border);display:flex;gap:1.2rem;font-size:.72rem;color:var(--txt-3);}
+.search-kbd-bar kbd{font-family:var(--font);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.68rem;}
+
+/* Mobile drawer */
+#mobile-nav{position:fixed;inset:0;z-index:5000;background:rgba(0,48,32,.92);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;}
+#mobile-nav.open{opacity:1;visibility:visible;}
+.mobile-drawer{position:absolute;top:0;right:0;width:min(340px,92vw);height:100%;background:var(--bg);overflow-y:auto;transform:translateX(100%);transition:transform .3s ease;}
+#mobile-nav.open .mobile-drawer{transform:none;}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border-bottom:1px solid var(--border);}
+.drawer-close{background:none;border:none;cursor:pointer;padding:.3rem;color:var(--txt-2);}
+.drawer-close svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;}
+.drawer-links{padding:1rem 0 2rem;}
+.drawer-item{border-bottom:1px solid var(--border);}
+.drawer-item > a,.drawer-item > button{width:100%;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.25rem;font-family:var(--font);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);background:none;border:none;cursor:pointer;}
+.drawer-item > a:hover,.drawer-item > button:hover{color:var(--cr);}
+.drawer-sub{padding:0 1.25rem .5rem 1.5rem;display:none;}
+.drawer-sub.open{display:block;}
+.drawer-sub a{display:block;padding:.4rem 0;font-size:.82rem;color:var(--txt-2);}
+.drawer-sub a:hover{color:var(--cr);}
+.drawer-cta{padding:1.25rem 1.25rem .5rem;}
+
+/* =============================================
+   BREADCRUMB
+============================================= */
+.breadcrumb{padding:14px 0;border-bottom:1px solid var(--border);background:var(--bg-alt);}
+.breadcrumb-inner{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--txt-3);}
+.breadcrumb-inner a{color:var(--txt-2);transition:color .2s;}
+.breadcrumb-inner a:hover{color:var(--cr);}
+.breadcrumb-sep{color:var(--txt-3);}
+.breadcrumb-current{color:var(--cr);font-weight:600;}
+
+/* =============================================
+   PAGE HERO
+============================================= */
+.page-hero{background:var(--bg-dark);padding:80px 0 72px;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 80% 30%,rgba(30,180,150,.15) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 0% 100%,rgba(140,13,12,.18) 0%,transparent 55%);pointer-events:none;}
+.page-hero-top{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.page-hero-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;color:var(--teal-glow);text-transform:uppercase;margin-bottom:14px;}
+.page-hero h1{font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:20px;}
+.page-hero h1 em{font-style:normal;color:var(--teal-glow);}
+.page-hero-lead{font-size:1.05rem;color:rgba(255,255,255,.7);line-height:1.75;margin-bottom:32px;max-width:520px;}
+.page-hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-principle-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.hero-principle-item{display:flex;align-items:flex-start;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:18px 20px;}
+.hero-principle-icon{width:36px;height:36px;border-radius:8px;background:rgba(30,180,150,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.hero-principle-icon svg{width:18px;height:18px;stroke:var(--teal-glow);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.hero-principle-body{flex:1;}
+.hero-principle-name{font-size:.9rem;font-weight:700;color:var(--white);margin-bottom:3px;}
+.hero-principle-desc{font-size:.82rem;color:rgba(255,255,255,.5);line-height:1.5;}
+
+@media(max-width:900px){
+  .page-hero-top{grid-template-columns:1fr;}
+  .page-hero{padding:56px 0 52px;}
+}
+
+/* =============================================
+   SECTION INTRO
+============================================= */
+.section-intro{text-align:center;max-width:640px;margin:0 auto 52px;}
+.section-kicker{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cr);margin-bottom:12px;}
+.section-intro h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:14px;}
+.section-intro p{font-size:1rem;color:var(--txt-2);line-height:1.7;}
+.rule{width:56px;height:3px;background:var(--grad-rule);border-radius:2px;margin:14px auto 0;}
+
+/* =============================================
+   PHASE TRACK — DELIVERY LIFECYCLE
+============================================= */
+.phases-section{padding:80px 0;background:var(--bg);}
+.phases-track{position:relative;margin-top:56px;}
+.phases-track::before{content:'';position:absolute;top:32px;left:32px;right:32px;height:2px;background:linear-gradient(to right,var(--cr),var(--teal-glow));z-index:0;}
+.phases-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;position:relative;z-index:1;}
+.phase-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:24px 16px;text-align:center;transition:border-color .2s,box-shadow .2s,transform .25s;}
+.phase-card:hover{border-color:var(--teal);box-shadow:0 6px 24px rgba(0,90,60,.1);transform:translateY(-3px);}
+.phase-num{width:44px;height:44px;border-radius:50%;background:var(--bg-dark);color:var(--teal-glow);font-size:.88rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+.phase-name{font-size:.92rem;font-weight:700;color:var(--txt);margin-bottom:8px;}
+.phase-desc{font-size:.78rem;color:var(--txt-2);line-height:1.55;}
+
+@media(max-width:960px){
+  .phases-grid{grid-template-columns:repeat(3,1fr);}
+  .phases-track::before{display:none;}
+}
+@media(max-width:540px){
+  .phases-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+/* =============================================
+   METHODOLOGY DETAIL
+============================================= */
+.method-section{padding:80px 0;background:var(--bg-alt);}
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+.method-info h2{font-size:clamp(1.6rem,2.8vw,2.1rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:16px;}
+.method-info p{font-size:.95rem;color:var(--txt-2);line-height:1.75;margin-bottom:16px;}
+.method-pillars{display:flex;flex-direction:column;gap:14px;}
+.method-pillar{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:0 var(--r) var(--r) 0;padding:18px 20px;}
+.method-pillar-name{font-size:.92rem;font-weight:700;color:var(--txt);margin-bottom:5px;}
+.method-pillar-desc{font-size:.83rem;color:var(--txt-2);line-height:1.6;}
+
+@media(max-width:860px){.method-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   QUALITY ASSURANCE
+============================================= */
+.qa-section{padding:80px 0;background:var(--bg);}
+.qa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.qa-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:28px 24px;}
+.qa-card:hover{border-color:var(--cr);box-shadow:0 4px 20px rgba(140,13,12,.08);}
+.qa-icon{width:44px;height:44px;border-radius:10px;background:var(--cr-lite);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.qa-icon svg{width:22px;height:22px;stroke:var(--cr);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.qa-name{font-size:1rem;font-weight:700;color:var(--txt);margin-bottom:10px;}
+.qa-desc{font-size:.85rem;color:var(--txt-2);line-height:1.65;}
+
+@media(max-width:720px){.qa-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:460px){.qa-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   COMMUNICATION
+============================================= */
+.comms-section{padding:80px 0;background:var(--teal-pale);}
+.comms-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px;}
+.comms-text h3{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:16px;}
+.comms-text p{font-size:.95rem;color:var(--txt-2);line-height:1.75;margin-bottom:14px;}
+.comms-items{display:flex;flex-direction:column;gap:12px;}
+.comms-item{display:flex;align-items:flex-start;gap:14px;padding:16px 18px;background:var(--white);border:1px solid var(--border);border-radius:var(--r);}
+.comms-item-dot{width:8px;height:8px;border-radius:50%;background:var(--teal-glow);flex-shrink:0;margin-top:6px;}
+.comms-item-body{flex:1;}
+.comms-item-label{font-size:.88rem;font-weight:700;color:var(--txt);margin-bottom:3px;}
+.comms-item-desc{font-size:.8rem;color:var(--txt-2);line-height:1.5;}
+
+@media(max-width:800px){.comms-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   TEAM STRUCTURE
+============================================= */
+.team-section{padding:80px 0;background:var(--bg-alt);}
+.team-roles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px;}
+.role-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;text-align:center;}
+.role-card:hover{border-color:var(--teal);box-shadow:0 4px 18px rgba(0,90,60,.08);}
+.role-icon{width:48px;height:48px;border-radius:12px;background:var(--teal-lite);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+.role-icon svg{width:24px;height:24px;stroke:var(--teal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.role-title{font-size:.92rem;font-weight:700;color:var(--txt);margin-bottom:8px;}
+.role-desc{font-size:.8rem;color:var(--txt-2);line-height:1.6;}
+
+@media(max-width:800px){.team-roles-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:460px){.team-roles-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   TECHNOLOGY STACK
+============================================= */
+.tech-section{padding:80px 0;background:var(--bg-dark);}
+.tech-section .section-intro h2{color:var(--white);}
+.tech-section .section-intro p{color:rgba(255,255,255,.6);}
+.tech-section .section-kicker{color:var(--teal-glow);}
+.tech-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.tech-group{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:24px;}
+.tech-group-name{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-glow);margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.1);}
+.tech-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.tech-tag{font-size:.78rem;font-weight:600;color:rgba(255,255,255,.7);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:5px 11px;}
+
+@media(max-width:800px){.tech-groups{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.tech-groups{grid-template-columns:1fr;}}
+
+/* =============================================
+   MODELS STRIP
+============================================= */
+.models-section{padding:72px 0;background:var(--bg);}
+.models-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.model-card{border-radius:var(--r);padding:28px 24px;border:1px solid var(--border);background:var(--bg-card);}
+.model-card.featured{background:var(--cr);border-color:var(--cr);}
+.model-card.featured .model-name,.model-card.featured .model-desc,.model-card.featured .model-best{color:var(--white);}
+.model-card.featured .model-best{color:rgba(255,255,255,.65);}
+.model-badge{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--teal-lite);color:var(--teal);border-radius:4px;padding:3px 10px;margin-bottom:14px;}
+.model-card.featured .model-badge{background:rgba(255,255,255,.18);color:var(--white);}
+.model-name{font-size:1.05rem;font-weight:700;color:var(--txt);margin-bottom:10px;}
+.model-desc{font-size:.88rem;color:var(--txt-2);line-height:1.65;margin-bottom:14px;}
+.model-best{font-size:.8rem;color:var(--txt-3);}
+.model-best strong{font-weight:700;}
+.model-link{display:inline-flex;align-items:center;gap:6px;font-size:.84rem;font-weight:700;color:var(--teal);margin-top:14px;transition:gap .2s;}
+.model-link:hover{gap:10px;}
+.model-card.featured .model-link{color:rgba(255,255,255,.85);}
+.model-link svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;}
+
+@media(max-width:720px){.models-grid{grid-template-columns:1fr;}}
+
+/* =============================================
+   CTA BAND
+============================================= */
+.cta-band{padding:80px 0;background:var(--cr);position:relative;overflow:hidden;text-align:center;}
+.cta-band::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,rgba(255,255,255,.06) 0%,transparent 70%);pointer-events:none;}
+.cta-band h2{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:var(--white);margin-bottom:16px;line-height:1.2;}
+.cta-band p{font-size:1.05rem;color:rgba(255,255,255,.8);max-width:560px;margin:0 auto 32px;line-height:1.7;}
+.cta-band-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+/* =============================================
+   FOOTER
+============================================= */
+footer{background:var(--wine);color:rgba(255,255,255,.88);}
+
+/* Offices bar */
+.footer-offices{background:var(--forest);}
+.footer-offices-inner{display:grid;grid-template-columns:repeat(2,1fr);}
+.footer-office{padding:.9rem 1.2rem;border-right:1px solid rgba(255,255,255,.1);text-align:center;}
+.footer-office:last-child{border-right:none;}
+.footer-office-country{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.72);margin-bottom:.22rem;}
+.footer-office-phone{font-size:.88rem;font-weight:700;color:#fff;}
+.footer-office-phone a{color:inherit;text-decoration:none;}
+
+/* Main footer body */
+.footer-main{padding:3.5rem 0 2.5rem;}
+.footer-grid{display:grid;grid-template-columns:190px 1fr 1.4fr 1.4fr 1fr;gap:2rem;}
+
+/* Brand col */
+.footer-brand-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-bottom:1.1rem;}
+.footer-brand-logo .logo-mark{width:26px;height:32px;flex-shrink:0;}
+.footer-brand-wordmark{line-height:1;font-family:var(--font);font-weight:900;font-size:1.1rem;}
+.fbl-greater{color:var(--mint);}
+.fbl-height{color:var(--cr-mid);}
+.footer-brand-tagline{font-style:italic;font-size:.7rem;color:var(--mint);margin-top:.15rem;letter-spacing:.02em;}
+.footer-brand-p{font-size:.8rem;color:rgba(255,255,255,.68);line-height:1.8;margin-bottom:1rem;}
+.footer-brand-addr{font-style:normal;font-size:.76rem;color:rgba(255,255,255,.58);line-height:2;}
+.footer-brand-addr a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s;}
+.footer-brand-addr a:hover{color:var(--mint);}
+
+/* Column heads & lists */
+.footer-col-head{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff;margin-bottom:.85rem;padding-bottom:.45rem;border-bottom:1px solid rgba(255,255,255,.14);}
+.footer-col-list{list-style:none;padding:0;margin:0 0 .3rem;display:flex;flex-direction:column;gap:.32rem;}
+.footer-col-list li{display:flex;align-items:baseline;gap:.32rem;font-size:.77rem;color:rgba(255,255,255,.75);}
+.footer-col-list li::before{content:"✓";font-size:.6rem;color:var(--mint);flex-shrink:0;}
+.footer-col-list a{color:inherit;text-decoration:none;transition:color .2s;}
+.footer-col-list a:hover{color:var(--mint);}
+.footer-col-subhead{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff;margin:1rem 0 .65rem;padding-bottom:.38rem;border-bottom:1px solid rgba(255,255,255,.1);}
+
+/* Lower strip */
+.footer-lower{background:rgba(0,0,0,.28);padding:1.3rem 0;}
+.footer-lower-inner{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:start;}
+.footer-follow-label,.footer-resources-label{font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.65);margin-bottom:.6rem;}
+.footer-social-row{display:flex;gap:.4rem;}
+.footer-social-row a{width:33px;height:33px;border-radius:50%;border:1px solid rgba(255,255,255,.28);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.65);transition:background .2s,border-color .2s,color .2s;text-decoration:none;}
+.footer-social-row a:hover{background:var(--teal);border-color:var(--teal);color:#fff;}
+.footer-social-row svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.footer-resources-links{display:flex;flex-wrap:wrap;align-items:center;gap:.08rem;font-size:.75rem;line-height:2;}
+.footer-resources-links a{color:rgba(255,255,255,.68);text-decoration:none;transition:color .2s;}
+.footer-resources-links a:hover{color:var(--mint);}
+.footer-resources-links .sep{color:rgba(255,255,255,.17);padding:0 .22rem;user-select:none;}
+
+/* Copyright bar */
+.footer-copyright{background:rgba(0,0,0,.4);padding:.85rem 0;}
+.footer-copyright-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.55rem;font-size:.71rem;color:rgba(255,255,255,.52);}
+.footer-copyright-inner a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s;}
+.footer-copyright-inner a:hover{color:var(--mint);}
+.footer-copyright-policy{display:flex;flex-wrap:wrap;gap:0;}
+.footer-copyright-policy a{padding:0 .35rem;}
+.footer-copyright-policy a+a::before{content:"·";color:rgba(255,255,255,.18);}
+
+/* Footer responsive */
+@media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
+@media(max-width:900px){
+  .footer-offices-inner{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .footer-lower-inner{grid-template-columns:1fr;}
+}
+@media(max-width:540px){
+  .footer-offices-inner{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-copyright-inner{flex-direction:column;text-align:center;}
+}
+
+/* =============================================
+   COOKIE BANNER
+============================================= */
+/* ====== COOKIE CONSENT ====== */
+#cookie-overlay{position:fixed;inset:0;z-index:3000;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .35s ease;}
+#cookie-overlay.visible{opacity:1;pointer-events:auto;}
+#cookie-banner{background:#fff;color:#1a1a1a;border-radius:12px 12px 0 0;width:100%;max-width:900px;padding:1.75rem 2rem 1.5rem;box-shadow:0 -8px 32px rgba(0,0,0,.18);transform:translateY(24px);transition:transform .35s ease;}
+#cookie-overlay.visible #cookie-banner{transform:none;}
+.cookie-title{font-size:1rem;font-weight:700;color:#002a1e;margin-bottom:.75rem;}
+#cookie-banner>p{font-size:.82rem;line-height:1.7;color:#444;margin-bottom:1.25rem;}
+#cookie-banner>p a{color:#0e8a6c;text-decoration:underline;}
+#cookie-banner>p a:hover{color:#007557;}
+.cookie-btns{display:flex;gap:.625rem;flex-wrap:wrap;justify-content:flex-end;align-items:center;}
+.cookie-btn{font-size:.78rem;font-weight:600;border-radius:6px;padding:.55rem 1.1rem;cursor:pointer;transition:all .2s;border:1px solid transparent;white-space:nowrap;font-family:inherit;}
+.cookie-btn.accept{background:#003020;color:#fff;border-color:#003020;}
+.cookie-btn.accept:hover{background:#004d33;}
+.cookie-btn.necessary{background:#fff;color:#333;border-color:#ccc;}
+.cookie-btn.necessary:hover{background:#f5f5f5;}
+.cookie-btn.settings{background:transparent;color:#666;border-color:transparent;}
+.cookie-btn.settings:hover{color:#222;}
+@media(max-width:520px){.cookie-btns{flex-direction:column-reverse;}.cookie-btn{width:100%;text-align:center;}}
+
+/* =============================================
+   SEARCH OVERLAY
+============================================= */
+#search-overlay{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.7);display:flex;align-items:flex-start;justify-content:center;padding-top:80px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s,visibility .2s;}
+#search-overlay.open{opacity:1;visibility:visible;pointer-events:auto;}
+.search-modal{background:var(--white);border-radius:var(--r);width:100%;max-width:620px;padding:20px;box-shadow:0 24px 64px rgba(0,0,0,.3);}
+.search-input-row{display:flex;align-items:center;gap:12px;border-bottom:2px solid var(--border);padding-bottom:14px;}
+.search-input-row input{flex:1;border:none;outline:none;font-size:1rem;font-family:var(--font);color:var(--txt);background:none;}
+.search-esc-badge{font-size:.75rem;font-weight:700;color:var(--txt-3);border:1px solid var(--border);border-radius:4px;padding:2px 8px;}
+.search-results{min-height:40px;padding-top:10px;}
+
+/* =============================================
+   WHATSAPP FLOAT + BACK TO TOP
+============================================= */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:7000;width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 28px rgba(37,211,102,.5);}
+.wa-float svg{width:28px;height:28px;fill:var(--white);}
+#back-top{position:fixed;bottom:88px;right:28px;z-index:7000;width:40px;height:40px;border-radius:50%;background:var(--cr);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 12px rgba(140,13,12,.35);opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s,visibility .3s,transform .2s;}
+#back-top.visible{opacity:1;visibility:visible;pointer-events:auto;}
+#back-top:hover{transform:translateY(-3px);}
+#back-top svg{width:18px;height:18px;stroke:var(--white);fill:none;stroke-width:2.5;stroke-linecap:round;}
+
+/* ── Mega panel header/footer (all pages) ── */
+.mega-panel-hd{padding:1.25rem 1.5rem .75rem;border-bottom:1px solid var(--border);margin-bottom:.5rem;}
+.mega-panel-eyebrow{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--cr);margin-bottom:4px;}
+.mega-hdesc{font-size:.82rem;color:var(--txt-2);line-height:1.5;}
+.mega-hdesc span{color:var(--txt-3);}
+.mega-panel-ft{padding:.75rem 1.5rem 1.25rem;border-top:1px solid var(--border);margin-top:.5rem;display:flex;align-items:center;justify-content:flex-end;gap:1rem;flex-wrap:wrap;}
+.mega-panel-ft p{font-size:.78rem;color:var(--txt-2);line-height:1.5;flex:1;min-width:200px;}
+.mega-cta-link{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:var(--cr);color:var(--white);border-radius:6px;font-size:.78rem;font-weight:700;white-space:nowrap;transition:background .15s;}
+.mega-cta-link:hover{background:var(--cr-mid);}
+.mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
+
+/* =============================================
+   PAGE-SPECIFIC
+============================================= */
+
+.page-hero{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal) 100%);padding:5rem 0 4rem;color:#fff;text-align:center;}
+.page-hero .eyebrow{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);font-weight:700;margin-bottom:1rem;}
+.page-hero h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:700;line-height:1.15;margin-bottom:1.25rem;}
+.page-hero .hero-lead{font-size:1.1rem;line-height:1.75;max-width:680px;margin:0 auto 2rem;color:rgba(255,255,255,.85);}
+.hero-cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.85rem 2.2rem;background:var(--cr);color:#fff;border-radius:4px;font-size:.88rem;font-weight:700;text-decoration:none;transition:background .2s;}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-secondary{display:inline-block;padding:.85rem 2.2rem;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);border-radius:4px;font-size:.88rem;font-weight:700;text-decoration:none;transition:border-color .2s,color .2s;}
+.btn-secondary:hover{border-color:#fff;color:#fff;}
+
+.section{padding:4rem 0;}
+.section-alt{background:var(--bg-2);}
+.section h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--forest-deep);margin-bottom:1.2rem;}
+.section h3{font-size:1.1rem;font-weight:700;color:var(--forest-deep);margin-bottom:.6rem;}
+.section p{line-height:1.8;color:var(--txt-2);margin-bottom:1rem;}
+.lead-p{font-size:1.05rem;max-width:720px;}
+
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;margin-top:2rem;}
+.card{background:#fff;border-radius:8px;padding:2rem;border:1px solid var(--border);transition:box-shadow .2s,transform .2s;}
+.card:hover{box-shadow:0 8px 28px rgba(0,0,0,.1);transform:translateY(-3px);}
+.card-icon{width:48px;height:48px;background:linear-gradient(135deg,var(--forest),var(--teal));border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;}
+.card-icon svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8;}
+.card h3{font-size:1rem;font-weight:700;color:var(--forest-deep);margin-bottom:.5rem;}
+.card p{font-size:.88rem;line-height:1.7;color:var(--txt-2);margin:0;}
+
+.cta-band{background:linear-gradient(135deg,var(--forest-deep),var(--teal));padding:4rem 0;text-align:center;color:#fff;}
+.cta-band h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;margin-bottom:1rem;}
+.cta-band p{font-size:1rem;color:rgba(255,255,255,.85);max-width:580px;margin:0 auto 2rem;}
+
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+@media(max-width:768px){.two-col{grid-template-columns:1fr;}.cards-grid{grid-template-columns:1fr;}}
+
+.stats-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1.5rem;margin-top:2.5rem;}
+.stat-box{text-align:center;padding:1.5rem 1rem;background:#fff;border-radius:8px;border:1px solid var(--border);}
+.stat-num{font-size:2.2rem;font-weight:900;color:var(--cr);line-height:1;}
+.stat-label{font-size:.78rem;color:var(--txt-3);margin-top:.4rem;line-height:1.4;}
+
+</style>
+</head>
+<body>
+<div id="scroll-progress" aria-hidden="true">
+<div id="preloader" role="status" aria-label="Loading">
+  <div class="preloader-mark">
+    <img src="../../../assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
+  </div>
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
+      <img src="../../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="nav-links" role="list">
+
+      <!-- 1. WHO WE ARE -->
+      <li class="nav-item" id="nav-who-we-are">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-are">
+          Who We Are
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel xxwide" id="panel-who-we-are" role="region" aria-label="Who We Are submenu">
+          <div class="mega-panel-hd">
+            <div class="mega-panel-eyebrow">Who We Are</div>
+            <div class="mega-hdesc">Over two decades of IT Consulting and Software Development</div>
+          </div>
+          <div class="mega-inner mega-cols c4">
+            <div>
+              <div class="mega-col-head">About Us</div>
+              <ul class="mega-links">
+                <li><a href="/who-we-are/company-overview/">Company Overview</a></li>
+                <li><a href="/who-we-are/core-purpose-mission/">Core Purpose &amp; Mission</a></li>
+                <li><a href="/who-we-are/our-values/">Our Values</a></li>
+                <li><a href="/who-we-are/why-greaterheight/">Why GreaterHeight</a></li>
+                <li><a href="/who-we-are/our-team/">Our Team</a></li>
+                <li><a href="/who-we-are/our-approach/">Our Approach</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Insights</div>
+              <ul class="mega-links">
+                <li><a href="/insights/brochure/">Brochure</a></li>
+                <li><a href="/insights/webinars/">Webinars</a></li>
+                <li><a href="/case-studies/">Case Studies</a></li>
+                <li><a href="/insights/faq/">FAQ</a></li>
+                <li><a href="/insights/white-papers/">White Papers</a></li>
+                <li><a href="/insights/testimonials/">Client Reviews &amp; Testimonials</a></li>
+                <li><a href="/insights/blog/">Blog &amp; Articles</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Become a Partner</div>
+              <ul class="mega-links">
+                <li><a href="/partners/strategic/">Strategic Partnership</a></li>
+                <li><a href="/partners/affiliate/">Affiliate Partnership</a></li>
+                <li><a href="/partners/referral/">Referral Partnership</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Our Culture</div>
+              <ul class="mega-links">
+                <li><a href="/culture/career-overview/">Career Overview</a></li>
+                <li><a href="/culture/career-opportunities/">Career Opportunities</a></li>
+                <li><a href="/culture/csr/">Corporate Social Responsibility</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega-panel-ft">
+            <a href="/contact/" class="mega-cta-link">Talk to Us &#8594;</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2. WHAT WE DO -->
+      <li class="nav-item" id="nav-what-we-do">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-what-we-do">
+          What We Do
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel xxwide" id="panel-what-we-do" role="region" aria-label="What We Do submenu">
+          <div class="mega-panel-hd">
+            <div class="mega-panel-eyebrow">What We Do</div>
+            <div class="mega-hdesc">Governed delivery in the AI era.</div>
+          </div>
+          <div class="mega-inner mega-cols c4">
+            <div>
+              <div class="mega-col-head">Products &amp; Solutions</div>
+              <ul class="mega-links">
+                <li><a href="/products/digitalsiwes/">DigitalSIWES</a></li>
+                <li><a href="/products/searchartisans/">SearchArtisans</a></li>
+                <li><a href="/products/ecertman/">eCertMan</a></li>
+                <li><a href="/products/matrimonyroll/">MatrimonyRoll</a></li>
+                <li><a href="/products/greaterheight-academy/">GreaterHeight Academy</a></li>
+              </ul>
+              <div class="mega-col-subhead">AI &amp; Automation</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/ai/consulting/">AI Consulting</a></li>
+                <li><a href="/what-we-do/ai/augmented-development/">AI-Augmented Development</a></li>
+                <li><a href="/what-we-do/ai/generative-ai-llms/">Generative AI &amp; LLMs</a></li>
+                <li><a href="/what-we-do/ai/agents-automation/">AI Agents &amp; Automation</a></li>
+                <li><a href="/what-we-do/ai/production-assurance/">Production Assurance</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Product Engineering</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/engineering/custom-software/">Custom Software Development</a></li>
+                <li><a href="/what-we-do/engineering/cross-platform/">Cross Platform App Development</a></li>
+                <li><a href="/what-we-do/engineering/web-application/">Web Application Development</a></li>
+                <li><a href="/what-we-do/engineering/mobile-app/">Mobile App Development</a></li>
+                <li><a href="/what-we-do/engineering/mvp/">MVP Development</a></li>
+                <li><a href="/what-we-do/engineering/saas/">SaaS Development</a></li>
+                <li><a href="/what-we-do/engineering/maintenance/">Software App Maintenance</a></li>
+                <li><a href="/what-we-do/engineering/qa/">Quality Assurance &amp; Testing</a></li>
+                <li><a href="/what-we-do/engineering/support/">Product Maintenance &amp; Support</a></li>
+                <li><a href="/what-we-do/engineering/prototyping/">Product Prototyping</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Data &amp; Cloud</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/data/engineering/">Data Engineering</a></li>
+                <li><a href="/what-we-do/data/analytics-bi/">Analytics &amp; BI</a></li>
+                <li><a href="/what-we-do/data/warehouse/">Data Warehouse</a></li>
+                <li><a href="/what-we-do/data/cloud-migration/">Cloud Migration</a></li>
+                <li><a href="/what-we-do/data/cloud-devops/">Cloud &amp; DevOps</a></li>
+                <li><a href="/what-we-do/data/devops-solutions/">DevOps Solutions</a></li>
+                <li><a href="/what-we-do/data/cloud-solutions/">Cloud Solutions</a></li>
+              </ul>
+              <div class="mega-col-subhead">Enterprise &amp; Advisory</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a></li>
+                <li><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a></li>
+                <li><a href="/what-we-do/enterprise/consulting/">Business / Technology Consulting</a></li>
+                <li><a href="/what-we-do/enterprise/it-strategy/">IT Strategy &amp; Consulting</a></li>
+                <li><a href="/what-we-do/enterprise/iot/">Internet of Things (IoT)</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="mega-col-head">Digital Marketing</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/marketing/content/">Content Development Services</a></li>
+                <li><a href="/what-we-do/marketing/social-media/">Social Media Marketing</a></li>
+                <li><a href="/what-we-do/marketing/reputation/">Online Reputation Management</a></li>
+                <li><a href="/what-we-do/marketing/seo/">Search Engine Optimisation</a></li>
+                <li><a href="/what-we-do/marketing/ppc/">Pay Per Click</a></li>
+                <li><a href="/what-we-do/marketing/link-building/">Link Building Service</a></li>
+                <li><a href="/what-we-do/marketing/personal-branding/">Personal Branding</a></li>
+              </ul>
+              <div class="mega-col-subhead">Processes</div>
+              <ul class="mega-links">
+                <li><a href="/what-we-do/processes/methodology/">Development Methodology</a></li>
+                <li><a href="/what-we-do/processes/delivery-models/">Delivery Models</a></li>
+                <li><a href="/what-we-do/processes/pricing-models/">Pricing Models</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mega-panel-ft">
+            <p>Not sure where to start? Project Scoping is a fixed-fee 2&#8211;4 week engagement that de-risks any build &#8212; proof before estimate.</p>
+            <a href="/contact/" class="mega-cta-link">Scope Your Project &#8594;</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- 3. HOW WE DO IT -->
+      <li class="nav-item">
+        <a href="/how-we-do-it/">How We Do It</a>
+      </li>
+
+      <!-- 4. WHO WE SERVE -->
+      <li class="nav-item" id="nav-who-we-serve">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-serve">
+          Who We Serve
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel" id="panel-who-we-serve" role="region" aria-label="Who We Serve submenu">
+          <div class="mega-inner">
+            <ul class="mega-links">
+              <li><a href="/who-we-serve/individuals">Individuals</a></li>
+              <li><a href="/who-we-serve/businesses">Businesses</a></li>
+              <li><a href="/who-we-serve/organisations">Organisations</a></li>
+              <li><a href="/who-we-serve/nations">Nations</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <!-- 5. INDUSTRIES -->
+      <li class="nav-item" id="nav-industries">
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-industries">
+          Industries
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-panel wide" id="panel-industries" role="region" aria-label="Industries submenu">
+          <div class="mega-inner mega-cols c3">
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/agriculture">Agriculture</a></li>
+                <li><a href="/industries/media-entertainment">Media &amp; Entertainment</a></li>
+                <li><a href="/industries/education-elearning">Education &amp; eLearning</a></li>
+                <li><a href="/industries/travel-hospitality">Travel &amp; Hospitality</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/logistics">Logistics</a></li>
+                <li><a href="/industries/financial-technology">Financial Technology</a></li>
+                <li><a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a></li>
+                <li><a href="/industries/healthcare">HealthCare</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul class="mega-links">
+                <li><a href="/industries/automotive">Automotive</a></li>
+                <li><a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a></li>
+                <li><a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a></li>
+                <li><a href="/industries/real-estate">Real Estate</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 6. WHERE WE ARE -->
+      <li class="nav-item">
+        <a href="/contact/">Where We Are</a>
+      </li>
+
+      <!-- Search trigger -->
+      <li class="nav-item nav-search-trigger">
+        <button id="search-btn" aria-label="Search site" aria-haspopup="dialog" aria-controls="search-overlay">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+      </li>
+
+      <!-- CTA -->
+      <li class="nav-item nav-cta">
+        <a href="/contact" class="btn btn-primary">Start a Project</a>
+      </li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-drawer">
+    <div class="drawer-head">
+      <a href="/" class="logo" aria-label="GreaterHeight home">
+        <img src="../../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
+      </a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="drawer-links" aria-label="Mobile navigation">
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Who We Are <span>+</span></button>
+        <div class="drawer-sub">
+          <div class="drawer-sub-head">About Us</div>
+          <a href="/who-we-are/company-overview">Company Overview</a>
+          <a href="/who-we-are/core-purpose-mission">Core Purpose &amp; Mission</a>
+          <a href="/who-we-are/our-values">Our Values</a>
+          <a href="/who-we-are/our-team">Our Team</a>
+          <div class="drawer-sub-head">Insights</div>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/insights/blog">Blog &amp; Articles</a>
+          <a href="/insights/testimonials">Testimonials</a>
+          <div class="drawer-sub-head">Culture &amp; Partners</div>
+          <a href="/culture/career-opportunities">Career Opportunities</a>
+          <a href="/partners/strategic">Become a Partner</a>
+        </div>
+      </div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">What We Do <span>+</span></button>
+        <div class="drawer-sub">
+          <div class="drawer-sub-head">Products &amp; Solutions</div>
+          <a href="/products/digitalsiwes">DigitalSIWES</a>
+          <a href="/products/searchartisans">SearchArtisans</a>
+          <a href="/products/ecertman">eCertMan</a>
+          <a href="/products/matrimonyroll">MatrimonyRoll</a>
+          <a href="/products/greaterheight-academy">GreaterHeight Academy</a>
+          <div class="drawer-sub-head">AI &amp; Automation</div>
+          <a href="/what-we-do/ai/consulting">AI Consulting</a>
+          <a href="/what-we-do/ai/augmented-development">AI-Augmented Development</a>
+          <a href="/what-we-do/ai/generative-ai-llms">Generative AI &amp; LLMs</a>
+          <div class="drawer-sub-head">Product Engineering</div>
+          <a href="/what-we-do/engineering/custom-software">Custom Software Development</a>
+          <a href="/what-we-do/engineering/web-application">Web Application Development</a>
+          <a href="/what-we-do/engineering/mobile-app">Mobile App Development</a>
+          <div class="drawer-sub-head">Data &amp; Cloud</div>
+          <a href="/what-we-do/data/engineering">Data Engineering</a>
+          <a href="/what-we-do/data/analytics-bi">Analytics &amp; BI</a>
+          <a href="/what-we-do/data/cloud-solutions">Cloud Solutions</a>
+          <div class="drawer-sub-head">Digital Marketing</div>
+          <a href="/what-we-do/marketing/content">Content Development</a>
+          <a href="/what-we-do/marketing/seo">SEO</a>
+          <a href="/what-we-do/marketing/social-media">Social Media Marketing</a>
+        </div>
+      </div>
+      <div class="drawer-item"><a href="/how-we-do-it/">How We Do It</a></div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Who We Serve <span>+</span></button>
+        <div class="drawer-sub">
+          <a href="/who-we-serve/individuals">Individuals</a>
+          <a href="/who-we-serve/businesses">Businesses</a>
+          <a href="/who-we-serve/organisations">Organisations</a>
+          <a href="/who-we-serve/nations">Nations</a>
+        </div>
+      </div>
+      <div class="drawer-item">
+        <button onclick="toggleDrawer(this)">Industries <span>+</span></button>
+        <div class="drawer-sub">
+          <a href="/industries/agriculture">Agriculture</a>
+          <a href="/industries/media-entertainment">Media &amp; Entertainment</a>
+          <a href="/industries/education-elearning">Education &amp; eLearning</a>
+          <a href="/industries/travel-hospitality">Travel &amp; Hospitality</a>
+          <a href="/industries/logistics">Logistics</a>
+          <a href="/industries/financial-technology">Financial Technology</a>
+          <a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a>
+          <a href="/industries/healthcare">HealthCare</a>
+          <a href="/industries/automotive">Automotive</a>
+          <a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a>
+          <a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a>
+          <a href="/industries/real-estate">Real Estate</a>
+        </div>
+      </div>
+      <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
+      <div class="drawer-cta">
+        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Digital Marketing — Reputation Management</div>
+      <h1>Protect and Build Your<br>Brand's Online Reputation</h1>
+      <p class="hero-lead">Your online reputation influences every sales conversation, every partnership discussion, and every hiring decision. We monitor, manage, and strategically improve what people find when they search for your brand — across reviews, social media, news, and search results.</p>
+      <div class="hero-cta-row">
+        <a href="/contact/" class="btn-primary">Get Started</a>
+        <a href="/what-we-do/marketing/" class="btn-secondary">All Marketing Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="stats-row reveal"><div class="stat-box"><div class="stat-num">24/7</div><div class="stat-label">Brand Monitoring</div></div>
+<div class="stat-box"><div class="stat-num">4.2★</div><div class="stat-label">Average Review Rating Achieved</div></div>
+<div class="stat-box"><div class="stat-num">P1 SERP</div><div class="stat-label">Positive Content Placement Target</div></div>
+<div class="stat-box"><div class="stat-num">48hrs</div><div class="stat-label">Crisis Response Activation</div></div></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="wrap two-col reveal">
+      <div>
+        <h2>What Is Online Reputation Management?</h2>
+        <p>Online reputation management is not PR spin — it is systematic, long-term brand stewardship across the digital channels where your audience forms opinions. It includes monitoring for brand mentions in real time, managing review responses with professionalism, suppressing negative content through strategic positive content creation, and building a credible, consistent brand narrative across search and social.</p>
+      </div>
+      <div>
+        <ul style="list-style:none;padding:0;margin:0;"><li style="padding:.6rem 0;border-bottom:1px solid var(--border);"><strong style="color:var(--forest-deep);">Proactive, not reactive:</strong> <span style="color:var(--txt-2);">We build positive reputation before a crisis, not just respond when something goes wrong.</span></li>
+<li style="padding:.6rem 0;border-bottom:1px solid var(--border);"><strong style="color:var(--forest-deep);">Search-first:</strong> <span style="color:var(--txt-2);">What ranks on page one matters most. Our content strategy is designed to own the SERP for your brand name.</span></li>
+<li style="padding:.6rem 0;border-bottom:1px solid var(--border);"><strong style="color:var(--forest-deep);">Crisis-ready:</strong> <span style="color:var(--txt-2);">Response playbooks and activation procedures ready before you need them.</span></li>
+<li style="padding:.6rem 0;border-bottom:1px solid var(--border);"><strong style="color:var(--forest-deep);">Long-term focus:</strong> <span style="color:var(--txt-2);">Reputation is built over months and years — not in a single campaign. Our programmes are designed for sustained improvement.</span></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Our Approach</h2>
+      <div class="cards-grid"><div class="card reveal"><h3>Reputation Audit</h3><p>A comprehensive audit of your current online presence — search results, review platforms, social mentions, and news coverage.</p></div>
+<div class="card reveal"><h3>Review Management</h3><p>Response frameworks, review solicitation programmes, and conflict resolution protocols for Google, Trustpilot, and industry-specific platforms.</p></div>
+<div class="card reveal"><h3>Content Strategy</h3><p>Strategic content — press coverage, thought leadership, case studies, and testimonials — that builds positive search equity over time.</p></div>
+<div class="card reveal"><h3>Monitoring & Alerting</h3><p>Real-time brand monitoring with escalation protocols for negative sentiment spikes, potential crises, and competitor activity.</p></div></div>
+    </div>
+  </section>
+
+  <section class="cta-band reveal">
+    <div class="wrap">
+      <h2>Need to protect or rebuild your brand's online reputation?</h2>
+      <p>Tell us your objective. We'll build the right programme for your audience, budget, and timeline.</p>
+      <div class="hero-cta-row">
+        <a href="/contact/" class="btn-primary">Start the Conversation</a>
+        <a href="/what-we-do/marketing/" class="btn-secondary">All Marketing Services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+
+  <!-- ── Offices bar ─────────────────────────────── -->
+  
+  <!-- ── Main footer body ───────────────────────── -->
+  <div class="footer-main">
+    <div class="wrap footer-grid">
+
+      <!-- Col 1: Brand -->
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
+          <img src="../../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
+        </a>
+        <div class="footer-brand-tagline">...helping you succeed</div>
+        <p class="footer-brand-p">AI-augmented engineering teams that ship production software. Lagos, Nigeria — serving the world.</p>
+        <address class="footer-brand-addr">
+          17B Debo Aina Street, Omole Phase 1<br>
+          Ikeja, Lagos, Nigeria<br>
+          <a href="tel:+2349139999700">+234 913 999 9700</a><br>
+          <a href="mailto:info@mail.greaterheight.tech">info@mail.greaterheight.tech</a>
+        </address>
+      </div>
+
+      <!-- Col 2: Company -->
+      <div>
+        <div class="footer-col-head">Company</div>
+        <ul class="footer-col-list">
+          <li><a href="/who-we-are/company-overview">Who We Are</a></li>
+          <li><a href="/who-we-are/core-purpose-mission">Purpose &amp; Mission</a></li>
+          <li><a href="/who-we-are/our-team">Leadership Team</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="/insights">Insights</a></li>
+          <li><a href="/culture/career-opportunities">Careers</a></li>
+          <li><a href="/insights/testimonials">Clients &amp; Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Our Expertise -->
+      <div>
+        <div class="footer-col-head">Our Expertise</div>
+        <ul class="footer-col-list">
+          <li><a href="/what-we-do/engineering/custom-software">Software Product Engineering</a></li>
+          <li><a href="/what-we-do/engineering/mobile-app">Application Development</a></li>
+          <li><a href="/what-we-do/engineering/web-application">Web Application Development</a></li>
+          <li><a href="/what-we-do/engineering/mobile-app">Mobile App Development</a></li>
+          <li><a href="/what-we-do/engineering/cross-platform">Cross Platform App Development</a></li>
+          <li><a href="/what-we-do/enterprise/iot">Internet of Things (IoT)</a></li>
+          <li><a href="/what-we-do/enterprise/blockchain">Blockchain</a></li>
+          <li><a href="/what-we-do/enterprise/digital-transformation">Digital Transformation</a></li>
+          <li><a href="/what-we-do/data/engineering">Data Science &amp; Engineering</a></li>
+          <li><a href="/what-we-do/data/cloud-solutions">Cloud Services</a></li>
+          <li><a href="/what-we-do/ai/agents-automation">Artificial Intelligence &amp; ML</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Digital Marketing -->
+      <div>
+        <div class="footer-col-head">Digital Marketing</div>
+        <ul class="footer-col-list">
+          <li><a href="/what-we-do/marketing/content">Content Development Services</a></li>
+          <li><a href="/what-we-do/marketing/social-media">Social Media Marketing</a></li>
+          <li><a href="/what-we-do/marketing/online-reputation">Online Reputation Management</a></li>
+          <li><a href="/what-we-do/marketing/seo">Search Engine Optimisation</a></li>
+          <li><a href="/what-we-do/marketing/ppc">Pay-Per-Click (PPC)</a></li>
+          <li><a href="/what-we-do/marketing/link-building">Link Building Service</a></li>
+          <li><a href="/what-we-do/marketing/display">Display Advertising Campaigns</a></li>
+          <li><a href="/what-we-do/marketing/lead-gen">Lead Gen Campaign</a></li>
+          <li><a href="/what-we-do/marketing/cro">Conversion Rate Optimisation</a></li>
+          <li><a href="/what-we-do/marketing/pr">Digital PR</a></li>
+          <li><a href="/what-we-do/marketing/personal-branding">Personal Branding</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: Clients + Industries -->
+      <div>
+        <div class="footer-col-head">Clients We Serve</div>
+        <ul class="footer-col-list">
+          <li><a href="/who-we-serve/businesses">For Startups</a></li>
+          <li><a href="/who-we-serve/businesses">For Enterprises</a></li>
+        </ul>
+        <div class="footer-col-subhead">Industries</div>
+        <ul class="footer-col-list">
+          <li><a href="/industries/financial-technology">Fintech</a></li>
+          <li><a href="/industries/financial-technology">Banking</a></li>
+          <li><a href="/industries/healthcare">Healthcare</a></li>
+          <li><a href="/industries/telecoms">Telecommunications</a></li>
+          <li><a href="/industries/oil-gas">Oil &amp; Gas</a></li>
+          <li><a href="/industries/public-sector">Public Sector</a></li>
+          <li><a href="/industries/retail-ecommerce">E-Commerce</a></li>
+          <li><a href="/industries/education-elearning">Education</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── Social + Resources ─────────────────────── -->
+  <div class="footer-lower">
+    <div class="wrap footer-lower-inner">
+      <div>
+        <div class="footer-follow-label">Follow Us</div>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://twitter.com/greaterheightng" target="_blank" rel="noopener" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/greaterheight-tech" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://www.instagram.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@greaterheighttech" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-resources-label">Resources &amp; Other Useful Links</div>
+        <div class="footer-resources-links">
+          <a href="/insights/blog">Blog and Articles</a><span class="sep">|</span>
+          <a href="/insights/events">Events, News &amp; Technologies</a><span class="sep">|</span>
+          <a href="/insights/white-papers">White Papers</a><span class="sep">|</span>
+          <a href="/insights/webinars">Webinar for Learning</a><span class="sep">|</span>
+          <a href="/insights/brochure">Brochure</a><span class="sep">|</span>
+          <a href="/insights/videos">Videos Articles for Learning</a><br>
+          <a href="/partners">Become a Partner</a><span class="sep">|</span>
+          <a href="/why-nigeria">Why Nigeria?</a><span class="sep">|</span>
+          <a href="/insights/faq">FAQs</a><span class="sep">|</span>
+          <a href="/legal/disclaimer">Disclaimer</a><span class="sep">|</span>
+          <a href="/legal/gdpr">GDPR Compliance</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Copyright bar ──────────────────────────── -->
+  <div class="footer-copyright">
+    <div class="wrap footer-copyright-inner">
+      <span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span>
+      <div class="footer-copyright-policy">
+        <a href="/legal/privacy-policy">Privacy Policy</a>
+        <a href="/legal/terms">Terms of Use</a>
+        <a href="/legal/disclaimer">Disclaimer</a>
+        <a href="/legal/cookies">Cookie Policy</a>
+      </div>
+      <span>Developed by <a href="/">GreaterHeight Technologies</a></span>
+    </div>
+  </div>
+
+</footer>
+<button id="back-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<div id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
+  <div class="search-modal">
+    <div class="search-input-row">
+      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="search" placeholder="Search services, solutions, pages..." autocomplete="off" spellcheck="false" aria-label="Search">
+      <button class="search-esc-badge" aria-label="Close search">esc</button>
+    </div>
+    <div class="search-results" role="listbox" aria-live="polite"></div>
+  </div>
+</div>
+<div id="cookie-overlay" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
+  <div id="cookie-banner">
+    <p class="cookie-title" id="cookie-title">Cookie Consent</p>
+    <p>To improve your browsing experience on this website, GreaterHeight Technologies and its partners would like to place cookies and similar technologies (&ldquo;Cookies&rdquo;) on your device. That enables us to analyse website usage and optimise our marketing efforts for the best possible user experience. By clicking &ldquo;Accept All Cookies&rdquo; you agree to Cookie placement and respective use, as well as the subsequent processing of the collected data for the purposes of personalised advertising and marketing. Detailed information about the Cookies, the exact purposes, third-party recipients, Cookie lifetime, and more can be found in our <a href="/legal/cookies">Cookie Policy</a> and <a href="/privacy/">Privacy Policy</a>. You can always change your Cookie Settings to your own preference.</p>
+    <div class="cookie-btns">
+      <button class="cookie-btn settings" id="cookie-settings">Cookie Settings</button>
+      <button class="cookie-btn necessary" id="cookie-necessary">Only Necessary Cookies</button>
+      <button class="cookie-btn accept" id="cookie-accept">Accept All Cookies</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+'use strict';
+var preloader=document.getElementById('preloader');
+function hidePreloader(){if(preloader) preloader.classList.add('hidden');}
+if(sessionStorage.getItem('gh_visited')||window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+  hidePreloader();
+}else{setTimeout(hidePreloader,1100);sessionStorage.setItem('gh_visited','1');}
+
+var prog=document.getElementById('scroll-progress');
+var backTop=document.getElementById('back-top');
+function onScroll(){
+  var total=document.documentElement.scrollHeight-window.innerHeight;
+  var pct=total>0?(window.scrollY/total)*100:0;
+  if(prog) prog.style.width=pct+'%';
+  if(backTop){
+    if(window.scrollY>400) backTop.classList.add('visible');
+    else backTop.classList.remove('visible');
+  }
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+if(backTop) backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+/* ---- COOKIE BANNER ---- */
+var cookieOverlay=document.getElementById('cookie-overlay');
+function closeCookie(){if(cookieOverlay)cookieOverlay.classList.remove('visible');}
+function cookieDecision(v){closeCookie();localStorage.setItem('gh_cookies',v);if(v==='accepted'&&typeof loadAnalytics==='function')loadAnalytics();}
+if(!localStorage.getItem('gh_cookies')&&cookieOverlay){setTimeout(function(){cookieOverlay.classList.add('visible');},2500);}
+var ghAccept=document.getElementById('cookie-accept');
+var ghNecessary=document.getElementById('cookie-necessary');
+var ghSettings=document.getElementById('cookie-settings');
+if(ghAccept)ghAccept.addEventListener('click',function(){cookieDecision('accepted');});
+if(ghNecessary)ghNecessary.addEventListener('click',function(){cookieDecision('necessary');});
+if(ghSettings)ghSettings.addEventListener('click',function(){closeCookie();window.location.href='/legal/cookies';});
+
+var navItems=document.querySelectorAll('.nav-item[id]');
+function closeAllPanels(){
+  navItems.forEach(function(ni){
+    ni.setAttribute('aria-expanded','false');
+    var b=ni.querySelector('button');if(b) b.setAttribute('aria-expanded','false');
+    var p=ni.querySelector('.mega-panel');if(p) p.style.transform='';
+  });
+}
+navItems.forEach(function(item){
+  var btn=item.querySelector('button');var panel=item.querySelector('.mega-panel');
+  if(!btn||!panel) return;
+  function clampAndOpen(){
+    var btnRect=btn.getBoundingClientRect();var btnCenter=btnRect.left+btnRect.width/2;
+    var panelMin=parseFloat(getComputedStyle(panel).minWidth)||280;
+    var vw=document.documentElement.clientWidth;var margin=16;
+    var leftEdge=btnCenter-panelMin/2;var rightEdge=btnCenter+panelMin/2;var shift=0;
+    if(leftEdge<margin) shift=margin-leftEdge;
+    else if(rightEdge>vw-margin) shift=(vw-margin)-rightEdge;
+    panel.style.transform=shift?'translateX(calc(-50% + '+Math.round(shift)+'px)) translateY(0)':'';
+    item.setAttribute('aria-expanded','true');btn.setAttribute('aria-expanded','true');
+  }
+  var _closeTimer;
+  function close(){_closeTimer=setTimeout(function(){item.setAttribute('aria-expanded','false');btn.setAttribute('aria-expanded','false');panel.style.transform='';},150);}
+  item.addEventListener('mouseenter',function(){clearTimeout(_closeTimer);clampAndOpen();});
+  item.addEventListener('mouseleave',close);
+  panel.addEventListener('mouseenter',function(){clearTimeout(_closeTimer);});
+  panel.addEventListener('mouseleave',close);
+  btn.addEventListener('click',function(){var expanded=btn.getAttribute('aria-expanded')==='true';closeAllPanels();if(!expanded) clampAndOpen();});
+  btn.addEventListener('keydown',function(e){if(e.key==='Escape'){close();btn.focus();}});
+  panel.addEventListener('keydown',function(e){if(e.key==='Escape'){close();btn.focus();}});
+});
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-item')) closeAllPanels();});
+
+var hamBtn=document.getElementById('ham-btn');var mobileNav=document.getElementById('mobile-nav');var drawerClose=document.getElementById('drawer-close');
+function openMobile(){mobileNav.classList.add('open');hamBtn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+function closeMobile(){mobileNav.classList.remove('open');hamBtn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+if(hamBtn) hamBtn.addEventListener('click',openMobile);
+if(drawerClose) drawerClose.addEventListener('click',closeMobile);
+if(mobileNav) mobileNav.addEventListener('click',function(e){if(e.target===mobileNav) closeMobile();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobileNav&&mobileNav.classList.contains('open')) closeMobile();});
+window.toggleDrawer=function(btn){
+  var sub=btn.nextElementSibling;var isOpen=sub.classList.contains('open');
+  document.querySelectorAll('.drawer-sub.open').forEach(function(s){s.classList.remove('open');});
+  if(!isOpen) sub.classList.add('open');
+};
+
+if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){
+  document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});
+}else{
+  var ro=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+}
+
+var searchOverlay=document.getElementById('search-overlay');
+var searchBtn=document.getElementById('search-btn');
+var searchInput=searchOverlay?searchOverlay.querySelector('input'):null;
+var searchResults=searchOverlay?searchOverlay.querySelector('.search-results'):null;
+var searchEsc=searchOverlay?searchOverlay.querySelector('.search-esc-badge'):null;
+var SEARCH_INDEX=[
+  {title:'AI Consulting',url:'/what-we-do/ai/consulting',desc:'AI strategy and roadmap'},
+  {title:'Custom Software Development',url:'/what-we-do/engineering/custom-software',desc:'Bespoke software builds'},
+  {title:'Cloud Solutions',url:'/what-we-do/data/cloud-solutions',desc:'Cloud architecture and managed ops'},
+  {title:'Digital Transformation',url:'/what-we-do/enterprise/digital-transformation',desc:'Technology transformation programmes'},
+  {title:'SEO',url:'/what-we-do/marketing/seo',desc:'Search engine optimisation'},
+  {title:'How We Do It',url:'/how-we-do-it/',desc:'Delivery methodology and engagement models'},
+  {title:'Delivery Models',url:'/what-we-do/processes/delivery-models',desc:'Project, dedicated team, staff augmentation'},
+  {title:'Contact Us',url:'/contact/',desc:'Start a project conversation'}
+];
+function openSearch(){if(!searchOverlay) return;searchOverlay.classList.add('open');searchOverlay.setAttribute('aria-hidden','false');if(searchInput){searchInput.value='';searchInput.focus();}if(searchResults) searchResults.innerHTML='';}
+function closeSearch(){if(!searchOverlay) return;searchOverlay.classList.remove('open');searchOverlay.setAttribute('aria-hidden','true');}
+if(searchBtn) searchBtn.addEventListener('click',openSearch);
+if(searchEsc) searchEsc.addEventListener('click',closeSearch);
+if(searchOverlay) searchOverlay.addEventListener('click',function(e){if(e.target===searchOverlay) closeSearch();});
+document.addEventListener('keydown',function(e){
+  if((e.key==='/'||((e.ctrlKey||e.metaKey)&&e.key==='k'))&&!searchOverlay.classList.contains('open')){e.preventDefault();openSearch();}
+  if(e.key==='Escape'&&searchOverlay&&searchOverlay.classList.contains('open')) closeSearch();
+});
+if(searchInput){
+  searchInput.addEventListener('input',function(){
+    var q=searchInput.value.trim().toLowerCase();
+    if(!q){if(searchResults) searchResults.innerHTML='';return;}
+    var matches=SEARCH_INDEX.filter(function(item){return item.title.toLowerCase().includes(q)||item.desc.toLowerCase().includes(q);}).slice(0,8);
+    if(searchResults){
+      searchResults.innerHTML=matches.length?matches.map(function(m){
+        return '<a href="'+m.url+'" role="option" style="display:block;padding:10px 12px;border-radius:6px;margin-bottom:2px;color:var(--txt);font-size:.88rem;transition:background .15s;" onmouseover="this.style.background=\'var(--cr-lite)\'" onmouseout="this.style.background=\'\'"><strong>'+m.title+'</strong><br><span style="color:var(--txt-3);font-size:.8rem;">'+m.desc+'</span></a>';
+      }).join(''):'<p style="padding:12px;color:var(--txt-3);font-size:.88rem;">No results found for "'+q+'"</p>';
+    }
+  });
+}
+})();
+</script>
+</body>
+</html>
