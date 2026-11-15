@@ -716,6 +716,98 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       PAGE-SPECIFIC — PILLAR CARDS (3 col)
+    ============================================================ */
+    .pillar-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5);
+      margin-top: var(--sp-6);
+    }
+    .pillar-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 16px; padding: var(--sp-6);
+      transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med);
+    }
+    .pillar-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
+    .pillar-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      background: var(--teal-pale); display: flex; align-items: center;
+      justify-content: center; margin-bottom: var(--sp-4);
+    }
+    .pillar-icon svg { width: 26px; height: 26px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .pillar-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .pillar-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+
+    /* CRITERIA CARDS */
+    .criteria-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5);
+      margin-top: var(--sp-6);
+    }
+    .criteria-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border); border-left: 4px solid var(--cr);
+      border-radius: 0 12px 12px 0; padding: var(--sp-5);
+      transition: box-shadow var(--dur-med);
+    }
+    .criteria-card:hover { box-shadow: var(--sh-md); }
+    .criteria-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .criteria-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+
+    /* MARKET REACH 5-COL */
+    .reach-grid-5 {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--sp-4);
+      margin-top: var(--sp-6);
+    }
+
+    /* PROCESS STEPS */
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5);
+      margin-top: var(--sp-7); position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute; top: 24px; left: calc(12.5% + 24px); right: calc(12.5% + 24px);
+      height: 2px; background: var(--grad-rule); z-index: 0; pointer-events: none;
+    }
+    .process-step {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 16px; padding: var(--sp-5); text-align: center;
+      position: relative; z-index: 1;
+      transition: box-shadow var(--dur-med), transform var(--dur-med);
+    }
+    .process-step:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--cr); color: var(--white);
+      font-size: var(--ts-lg); font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto var(--sp-4);
+    }
+    .process-step h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .process-step p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+
+    /* BTN in hero */
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px;
+      border-radius: 8px; font-size: var(--ts-sm); font-weight: 700; cursor: pointer;
+      transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+      white-space: nowrap; text-decoration: none;
+    }
+    .btn.btn-primary { background: var(--cr); color: var(--white); }
+    .btn.btn-primary:hover { background: var(--cr-mid); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+
+    @media (max-width: 1100px) {
+      .reach-grid-5 { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 900px) {
+      .pillar-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 600px) {
+      .pillar-grid, .criteria-grid, .process-steps { grid-template-columns: 1fr; }
+      .reach-grid-5 { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1354,57 +1446,212 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
+    <!-- ── HERO ──────────────────────────────────────────── -->
     <section class="page-hero" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <h1 id="hero-heading">Strategic Partnership</h1>
-            <p class="page-hero-lead">A strategic partnership with GreaterHeight Technologies is a formal alliance between two organisations whose capabilities are genuinely complementary — and whose collaboration creates more value for shared clients than either organisation could create independently.</p>
-            <div class="hero-ctas">
+            <div class="hero-eyebrow">Partners</div>
+            <h1 id="hero-heading">Strategic <strong>Partnership</strong></h1>
+            <p class="page-hero-lead">A formal alliance between two organisations whose capabilities are genuinely complementary — and whose collaboration creates more value for shared clients than either could create independently.</p>
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">14<em>+</em></span>
+                <span class="hero-meta-label">Years in Market</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">7</span>
+                <span class="hero-meta-label">Active Geographies</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">50<em>+</em></span>
+                <span class="hero-meta-label">Delivery Partnerships</span>
+              </div>
+            </div>
+            <div style="margin-top:var(--sp-6);">
               <a href="/contact/" class="btn btn-primary">Contact Partnership Team</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">What We Bring</div>
+                <p>Delivery-ready engineering teams. 14+ years of enterprise and product delivery across Africa and globally.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">What You Bring</div>
+                <p>Market access, platform capabilities, or domain expertise that creates a compelling combined proposition for shared clients.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">What Clients Get</div>
+                <p>A seamlessly integrated partnership — one relationship, two complementary strengths, better outcomes.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="what-strategic-partnership-means-heading">
+    <!-- ── WHAT STRATEGIC PARTNERSHIP MEANS — 3 ICON PILLARS ── -->
+    <section class="section section-alt" aria-labelledby="what-heading">
       <div class="container">
-        <h2 id="what-strategic-partnership-means-heading">What Strategic Partnership Means</h2>
-        <p>Strategic partnerships are substantive, not nominal. They involve joint go-to-market activity, co-delivery of client engagements, shared investment in building combined capabilities, and a genuine commitment from both organisations to prioritise the relationship.</p>
-        <p>We partner strategically with technology platform providers, systems integrators, management consultancies, and specialist service firms whose work intersects with ours in a way that creates a compelling proposition for the clients we both serve.</p>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="what-we-look-for-in-strategic-partners-heading">
-      <div class="container">
-        <h2 id="what-we-look-for-in-strategic-partners-heading">What We Look For in Strategic Partners</h2>
-        <p>We look for partners who serve similar clients and markets to ours, whose service offering is genuinely complementary rather than overlapping, and whose quality standards and values align with the commitments we make to our clients.</p>
-        <p>Geography matters: we actively seek strategic partners with established presence in markets we are growing into — particularly the UK, UAE, East Africa, and Southern Africa — and value partners based in those markets who want access to our deep presence in Nigeria and West Africa.</p>
-      </div>
-    </section>
-
-    <section class="content-section bg-light" aria-labelledby="how-to-explore-a-strategic-partnership-heading">
-      <div class="container">
-        <h2 id="how-to-explore-a-strategic-partnership-heading">How to Explore a Strategic Partnership</h2>
-        <p>If you are representing an organisation that believes a strategic partnership could create genuine mutual value, we welcome an exploratory conversation. We will be direct about whether we think the fit is there — and equally candid about what we bring and what we would need from a partner.</p>
-      </div>
-    </section>
-
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Explore a strategic partnership</h2>
-            <p>Contact our partnership team to start an exploratory conversation about whether a strategic alliance makes sense for both organisations.</p>
+        <div class="section-label reveal">Strategic Alliance</div>
+        <h2 class="section-title reveal" id="what-heading">What Strategic Partnership Means</h2>
+        <p class="section-lead reveal">Strategic partnerships with GreaterHeight are substantive, not nominal. They are formal alliances built on genuine complementarity, joint commitment, and shared investment in outcomes.</p>
+        <div class="pillar-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 11H7M7 11L10 8M7 11L10 14"/><circle cx="17" cy="8" r="3"/><circle cx="7" cy="16" r="3"/></svg>
+            </div>
+            <h3>Joint Go-to-Market</h3>
+            <p>We co-develop propositions, pursue accounts together, and share in the commercial outcomes. Neither party is a subcontractor to the other.</p>
           </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Contact Partnership Team</a>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Co-Delivery of Engagements</h3>
+            <p>Client engagements draw on both organisations' capabilities in a coordinated way. We define clear responsibilities, shared standards, and mutual accountability.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Shared Capability Investment</h3>
+            <p>Both organisations invest in building combined capabilities — joint methodologies, integrated tools, trained teams — that neither could develop as efficiently alone.</p>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- ── WHAT WE LOOK FOR — CRITERIA CARDS ── -->
+    <section class="section" aria-labelledby="criteria-heading">
+      <div class="container">
+        <div class="section-label reveal">Partner Criteria</div>
+        <h2 class="section-title reveal" id="criteria-heading">What We Look For in Strategic Partners</h2>
+        <p class="section-lead reveal">We are selective about strategic partnerships. The criteria below are what we assess in every prospective alliance — and what we expect you to assess in us.</p>
+        <div class="criteria-grid">
+          <div class="criteria-card reveal">
+            <h3>Complementary Capabilities</h3>
+            <p>Your service offering adds to ours without duplicating it. Together we serve client needs neither organisation could address as effectively alone — the combination creates a genuinely superior proposition.</p>
+          </div>
+          <div class="criteria-card reveal">
+            <h3>Aligned Client Base</h3>
+            <p>You serve organisations similar in scale and sector to ours — typically mid-market through enterprise, across financial services, healthcare, telecoms, public sector, and technology.</p>
+          </div>
+          <div class="criteria-card reveal">
+            <h3>Geographic Fit</h3>
+            <p>We actively seek partners with presence in the UK, UAE, East Africa, and Southern Africa. Equally, we offer unmatched access to Nigeria and West Africa for partners seeking a foothold there.</p>
+          </div>
+          <div class="criteria-card reveal">
+            <h3>Values &amp; Quality Standards</h3>
+            <p>Your delivery standards and professional values must align with the commitments we make to our clients. We will be direct about this during exploration — and expect the same candour from you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MARKET REACH — DARK SECTION WITH FLAGS ── -->
+    <section class="section section-dark" aria-labelledby="reach-heading">
+      <div class="container">
+        <div class="section-label reveal" style="color:var(--teal-glow);">Geographic Reach</div>
+        <h2 class="section-title light reveal" id="reach-heading">Where We Operate &amp; Where We're Growing</h2>
+        <p class="section-lead light reveal">GreaterHeight has deep roots in Nigeria and West Africa, with active presence and growing reach across five strategic markets. Strategic partners who bring access to these geographies are of particular interest.</p>
+        <div class="reach-grid-5">
+          <div class="reach-card hq reveal">
+            <div class="reach-flag">🇳🇬</div>
+            <div class="reach-country">Nigeria <span class="hq-badge">HQ</span></div>
+            <div class="reach-detail">Lagos headquarters. Full delivery capability since 2010. Our deepest market.</div>
+          </div>
+          <div class="reach-card reveal">
+            <div class="reach-flag">🇬🇧</div>
+            <div class="reach-country">United Kingdom</div>
+            <div class="reach-detail">Active commercial relationships. Priority growth market for joint GTM.</div>
+          </div>
+          <div class="reach-card reveal">
+            <div class="reach-flag">🇦🇪</div>
+            <div class="reach-country">UAE</div>
+            <div class="reach-detail">Growing presence in Dubai and Abu Dhabi. Technology and finance sector focus.</div>
+          </div>
+          <div class="reach-card reveal">
+            <div class="reach-flag">🇰🇪</div>
+            <div class="reach-country">Kenya</div>
+            <div class="reach-detail">East Africa hub. Fintech and health-tech engagements ongoing.</div>
+          </div>
+          <div class="reach-card reveal">
+            <div class="reach-flag">🇿🇦</div>
+            <div class="reach-country">South Africa</div>
+            <div class="reach-detail">Southern Africa access point. Enterprise and financial services focus.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HOW TO EXPLORE — PROCESS STEPS ── -->
+    <section class="section section-alt" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-label reveal">The Process</div>
+        <h2 class="section-title reveal" id="process-heading">How to Explore a Strategic Partnership</h2>
+        <p class="section-lead reveal">We make the exploration process straightforward. We will be direct about whether we think the fit is there — and equally candid about what we bring and what we would need from a partner.</p>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">1</div>
+            <h3>Initial Enquiry</h3>
+            <p>Submit a brief note via our contact form describing your organisation and why you believe a strategic alliance makes sense for both parties.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">2</div>
+            <h3>Exploratory Call</h3>
+            <p>A 30-minute conversation to understand your capabilities, your client base, and what a combined proposition might realistically look like.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">3</div>
+            <h3>Capability Review</h3>
+            <p>A structured assessment of technical and commercial fit, covering delivery standards, geographic alignment, and joint opportunity pipeline.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">4</div>
+            <h3>Alliance Agreement</h3>
+            <p>Formalise the partnership with clear joint objectives, shared commitments, and a defined framework for collaboration and commercial arrangements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHO WE PARTNER WITH — SECTORS ── -->
+    <section class="section" aria-labelledby="sectors-heading">
+      <div class="container">
+        <div class="section-label reveal">Partner Types</div>
+        <h2 class="section-title reveal" id="sectors-heading">Who We Partner Strategically With</h2>
+        <p class="section-lead reveal">We partner with organisations whose work intersects with ours in a way that creates a compelling combined proposition for the clients we both serve.</p>
+        <div class="sector-grid" style="margin-top:var(--sp-6);">
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Technology Platform Providers</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Systems Integrators</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Management Consultancies</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Cloud &amp; Infrastructure Firms</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Digital Transformation Agencies</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Specialist Service Firms</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">AI &amp; Data Platform Vendors</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Talent &amp; Workforce Solutions</span></div>
+          <div class="sector-item reveal"><div class="sector-dot"></div><span class="sector-name">Research &amp; Advisory Firms</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ── -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band-inner">
+        <div>
+          <h2 id="cta-heading" class="reveal">Explore a strategic partnership</h2>
+          <p class="reveal">Contact our partnership team to start an exploratory conversation about whether a strategic alliance makes sense for both organisations.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Contact Partnership Team</a>
+          <a href="/partners/" class="btn-outline-white">All Partnership Types</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

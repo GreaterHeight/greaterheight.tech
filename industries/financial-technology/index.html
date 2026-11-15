@@ -716,6 +716,61 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       INDUSTRY PAGE — MISSING BASE STYLES
+    ============================================================ */
+    .page-hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-4);
+    }
+    .page-hero-eyebrow::before {
+      content: ''; display: block; width: 24px; height: 2px; background: var(--teal-glow);
+    }
+    .content-section { padding: var(--sp-9) 0; }
+    .content-section.bg-light { background: var(--bg-alt); }
+    .two-col-prose {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9); align-items: start;
+    }
+    .two-col-prose h2 {
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem); font-weight: 700;
+      color: var(--txt); margin-bottom: var(--sp-4); line-height: 1.3;
+    }
+    .two-col-prose p {
+      font-size: var(--ts-base); color: var(--txt-2); line-height: 1.8; margin-bottom: var(--sp-3);
+    }
+    .section-heading {
+      font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700;
+      color: var(--txt); margin-bottom: var(--sp-6); line-height: 1.25;
+    }
+    .feature-grid.grid-3 {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5);
+    }
+    .feature-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-top: 3px solid var(--teal-glow);
+      border-radius: 0 0 14px 14px; padding: var(--sp-6);
+      transition: box-shadow var(--dur-med), transform var(--dur-med);
+    }
+    .feature-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .feature-card h3 {
+      font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2);
+    }
+    .feature-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .cta-band-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border: 2px solid rgba(255,255,255,.55);
+      color: var(--white); border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
+      transition: border-color var(--dur-fast), background var(--dur-fast); white-space: nowrap;
+    }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.12); }
+    @media (max-width: 900px) {
+      .two-col-prose { grid-template-columns: 1fr; gap: var(--sp-5); }
+      .feature-grid.grid-3 { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) { .feature-grid.grid-3 { grid-template-columns: 1fr; } }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1361,9 +1416,40 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
             <span class="page-hero-eyebrow">Industries</span>
             <h1 id="hero-heading">Financial Technology</h1>
             <p class="page-hero-lead">Financial services technology in Africa operates under a unique set of constraints — regulatory complexity, infrastructure variability, and the imperative to serve both banked and unbanked populations simultaneously. We have built production systems in this environment, and we understand what it actually takes.</p>
+                        <div class="hero-meta" style="margin-top:var(--sp-5);">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">CBN</span>
+                <span class="hero-meta-label">Regulation Aware</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">PCI-DSS</span>
+                <span class="hero-meta-label">Knowledge Base</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">14<em>+</em></span>
+                <span class="hero-meta-label">Years in Fintech</span>
+              </div>
+            </div>
             <div class="hero-ctas">
               <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
               <a href="#services" class="btn btn-ghost">Our Services</a>
+            </div>
+          </div>
+        
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">The Fintech Challenge</div>
+                <p>Financial services in Africa operate under strict regulation, with high security expectations and an underbanked population demanding accessible, mobile-first products.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Our Expertise</div>
+                <p>Core banking integration, payment gateway development, mobile money infrastructure, and regulatory-aware architecture across Nigeria and African markets.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Who We Work With</div>
+                <p>Fintechs, neobanks, payment processors, digital lenders, insurance tech firms, and enterprise treasury teams.</p>
+              </div>
             </div>
           </div>
         </div>

@@ -716,6 +716,34 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       PAGE-SPECIFIC — PILLAR / CRITERIA / PROCESS
+    ============================================================ */
+    .pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-top: var(--sp-6); }
+    .pillar-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med); }
+    .pillar-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
+    .pillar-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); }
+    .pillar-icon svg { width: 26px; height: 26px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .pillar-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .pillar-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .criteria-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5); margin-top: var(--sp-6); }
+    .criteria-card { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--cr); border-radius: 0 12px 12px 0; padding: var(--sp-5); transition: box-shadow var(--dur-med); }
+    .criteria-card:hover { box-shadow: var(--sh-md); }
+    .criteria-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .criteria-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .process-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-top: var(--sp-7); position: relative; }
+    .process-steps::before { content: ''; position: absolute; top: 24px; left: calc(16.7% + 24px); right: calc(16.7% + 24px); height: 2px; background: var(--grad-rule); z-index: 0; pointer-events: none; }
+    .process-step { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-5); text-align: center; position: relative; z-index: 1; transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .process-step:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--cr); color: var(--white); font-size: var(--ts-lg); font-weight: 700; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sp-4); }
+    .process-step h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .process-step p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-size: var(--ts-sm); font-weight: 700; cursor: pointer; transition: transform var(--dur-fast), box-shadow var(--dur-fast); white-space: nowrap; text-decoration: none; }
+    .btn.btn-primary { background: var(--cr); color: var(--white); }
+    .btn.btn-primary:hover { background: var(--cr-mid); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+    @media (max-width: 900px) { .pillar-grid { grid-template-columns: 1fr 1fr; } .process-steps { grid-template-columns: 1fr 1fr; } .process-steps::before { display: none; } }
+    @media (max-width: 600px) { .pillar-grid, .criteria-grid, .process-steps { grid-template-columns: 1fr; } }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1354,57 +1382,151 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
+    <!-- ── HERO ── -->
     <section class="page-hero" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <h1 id="hero-heading">Referral Partnership</h1>
-            <p class="page-hero-lead">Our referral programme rewards people who introduce us to businesses that need what we do. It is intentionally simple: make a quality introduction, and earn a fee when it leads to an engagement.</p>
-            <div class="hero-ctas">
+            <div class="hero-eyebrow">Partners</div>
+            <h1 id="hero-heading">Referral <strong>Programme</strong></h1>
+            <p class="page-hero-lead">Make a quality introduction, and earn a fee when it leads to a signed engagement. No complex programme to join, no volume requirements, no ongoing obligations.</p>
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Simple</span>
+                <span class="hero-meta-label">No Registration Required</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value"><em>%</em></span>
+                <span class="hero-meta-label">Fee on First Engagement</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Fast</span>
+                <span class="hero-meta-label">Transparent Payment</span>
+              </div>
+            </div>
+            <div style="margin-top:var(--sp-6);">
               <a href="/contact/" class="btn btn-primary">Register a Referral</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">Zero Friction</div>
+                <p>No programme to join. No forms to fill. Just contact us with the introduction, and we take it from there.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Your Introduction</div>
+                <p>A business that needs software development, cloud, AI, or digital transformation. Warm introductions are most effective.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Your Reward</div>
+                <p>A fee as a percentage of the first engagement value — agreed upfront and paid promptly on commencement.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="how-it-works-heading">
+    <!-- ── HOW IT WORKS — 3 PROCESS STEPS ── -->
+    <section class="section section-alt" aria-labelledby="how-heading">
       <div class="container">
-        <h2 id="how-it-works-heading">How It Works</h2>
-        <p>A referral is straightforward: you introduce a business to GreaterHeight Technologies — either directly or by letting us know about a company that could benefit from our services. If that introduction leads to a signed engagement, you receive a referral fee.</p>
-        <p>There is no complex programme to join, no volume requirements, and no ongoing obligations. It is a simple way to create value for both the businesses you refer and yourself.</p>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="who-can-refer-heading">
-      <div class="container">
-        <h2 id="who-can-refer-heading">Who Can Refer</h2>
-        <p>Anyone can make a referral — there are no eligibility requirements. Our most consistent referrers tend to be past and current clients who have experienced our work firsthand, professionals in adjacent fields (accountants, lawyers, business advisors) whose clients need technology services, and individuals who encounter businesses struggling with technology challenges we could solve.</p>
-      </div>
-    </section>
-
-    <section class="content-section bg-light" aria-labelledby="the-referral-fee-heading">
-      <div class="container">
-        <h2 id="the-referral-fee-heading">The Referral Fee</h2>
-        <p>Referral fees are paid as a percentage of the first engagement value with the referred client, upon commencement of that engagement. The specific rate is discussed when the referral is made, and payment is prompt and transparent.</p>
-        <p>Contact us to register a referral or to find out the current fee structure before making an introduction.</p>
-      </div>
-    </section>
-
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
-      <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Make a referral</h2>
-            <p>Know a business that needs software development, cloud, AI, or digital transformation support? Introduce them to us and earn a referral fee.</p>
+        <div class="section-label reveal">The Process</div>
+        <h2 class="section-title reveal" id="how-heading">How It Works</h2>
+        <p class="section-lead reveal">Three steps. No complexity. No obligations beyond the introduction.</p>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num">1</div>
+            <h3>Make the Introduction</h3>
+            <p>Tell us about the business you are referring — who they are, what they need, and why you think we are the right fit. A single message is enough.</p>
           </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Register a Referral</a>
+          <div class="process-step reveal">
+            <div class="step-num">2</div>
+            <h3>We Close the Engagement</h3>
+            <p>We follow up with the referred business directly. We keep you informed at key stages, and we do not need you to manage the conversation.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="step-num">3</div>
+            <h3>You Receive the Fee</h3>
+            <p>Once a contract is signed and work commences, your referral fee is calculated on the engagement value and paid to you promptly.</p>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- ── WHO CAN REFER — 3 ICON PILLARS ── -->
+    <section class="section" aria-labelledby="who-heading">
+      <div class="container">
+        <div class="section-label reveal">Who Can Refer</div>
+        <h2 class="section-title reveal" id="who-heading">Anyone Can Make a Referral</h2>
+        <p class="section-lead reveal">There are no eligibility requirements. Our most consistent referrers come from three groups, but any warm introduction is welcome.</p>
+        <div class="pillar-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Past &amp; Current Clients</h3>
+            <p>Clients who have experienced our work firsthand are our strongest advocates. If you have worked with us before, your introduction carries real weight.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3>Adjacent Professionals</h3>
+            <p>Accountants, lawyers, business advisors, strategy consultants — professionals whose clients regularly need technology services but are not technology providers themselves.</p>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>Anyone Who Spots the Need</h3>
+            <p>If you encounter a business struggling with technology challenges we could solve — a stalled digital project, a team scaling problem, a data initiative going nowhere — that is a referral opportunity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REFERRAL FEE — CRITERIA CARDS ── -->
+    <section class="section section-alt" aria-labelledby="fee-heading">
+      <div class="container">
+        <div class="section-label reveal">The Fee</div>
+        <h2 class="section-title reveal" id="fee-heading">What You Earn</h2>
+        <p class="section-lead reveal">Referral fees are structured to reward quality introductions. The specifics are agreed when you register a referral.</p>
+        <div class="criteria-grid">
+          <div class="criteria-card reveal">
+            <h3>Percentage of First Engagement</h3>
+            <p>Fees are calculated as a percentage of the first engagement value with the referred client. The larger the engagement, the more you earn — quality introductions are rewarded accordingly.</p>
+          </div>
+          <div class="criteria-card reveal">
+            <h3>Agreed at Registration</h3>
+            <p>The rate is discussed and confirmed when you register the referral. There are no surprises — you know what you will earn before the introduction is made.</p>
+          </div>
+          <div class="criteria-card reveal">
+            <h3>Paid on Commencement</h3>
+            <p>Payment is triggered when the referred client's engagement commences — not on completion of the full project. You are not waiting months for a large project to finish before seeing your fee.</p>
+          </div>
+          <div class="criteria-card reveal">
+            <h3>Transparent &amp; Prompt</h3>
+            <p>We keep you informed of the referred client's progress. When payment is due, it is made promptly. No chasing, no disputes, no ambiguity about what you are owed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ── -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band-inner">
+        <div>
+          <h2 id="cta-heading" class="reveal">Know a business that needs us?</h2>
+          <p class="reveal">Software development, cloud, AI, digital transformation — if the need is there, make the introduction and earn your referral fee.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Register a Referral</a>
+          <a href="/partners/" class="btn-outline-white">All Partnership Types</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================
