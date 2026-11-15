@@ -463,6 +463,8 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
     <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
       <img src="../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
     </a>
+
+    <!-- Desktop nav -->
     <ul class="nav-links" role="list">
 
       <!-- 1. WHO WE ARE -->
@@ -493,7 +495,7 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
               <ul class="mega-links">
                 <li><a href="/insights/brochure/">Brochure</a></li>
                 <li><a href="/insights/webinars/">Webinars</a></li>
-                <li><a href="/insights/case-studies/">Case Studies</a></li>
+                <li><a href="/case-studies/">Case Studies</a></li>
                 <li><a href="/insights/faq/">FAQ</a></li>
                 <li><a href="/insights/white-papers/">White Papers</a></li>
                 <li><a href="/insights/testimonials/">Client Reviews &amp; Testimonials</a></li>
@@ -614,7 +616,7 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
         </div>
       </li>
 
-      <!-- 3. HOW WE DO IT (current) -->
+      <!-- 3. HOW WE DO IT -->
       <li class="nav-item">
         <a href="/how-we-do-it/" aria-current="page">How We Do It</a>
       </li>
@@ -678,7 +680,7 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
         <a href="/contact/">Where We Are</a>
       </li>
 
-      <!-- Search -->
+      <!-- Search trigger -->
       <li class="nav-item nav-search-trigger">
         <button id="search-btn" aria-label="Search site" aria-haspopup="dialog" aria-controls="search-overlay">
           <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -691,6 +693,7 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
       </li>
     </ul>
 
+    <!-- Hamburger -->
     <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
       <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
@@ -712,9 +715,16 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
       <div class="drawer-item">
         <button onclick="toggleDrawer(this)">Who We Are <span>+</span></button>
         <div class="drawer-sub">
+          <div class="drawer-sub-head">About Us</div>
           <a href="/who-we-are/company-overview">Company Overview</a>
+          <a href="/who-we-are/core-purpose-mission">Core Purpose &amp; Mission</a>
+          <a href="/who-we-are/our-values">Our Values</a>
           <a href="/who-we-are/our-team">Our Team</a>
-          <a href="/insights/case-studies">Case Studies</a>
+          <div class="drawer-sub-head">Insights</div>
+          <a href="/case-studies/">Case Studies</a>
+          <a href="/insights/blog">Blog &amp; Articles</a>
+          <a href="/insights/testimonials">Testimonials</a>
+          <div class="drawer-sub-head">Culture &amp; Partners</div>
           <a href="/culture/career-opportunities">Career Opportunities</a>
           <a href="/partners/strategic">Become a Partner</a>
         </div>
@@ -722,15 +732,26 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
       <div class="drawer-item">
         <button onclick="toggleDrawer(this)">What We Do <span>+</span></button>
         <div class="drawer-sub">
+          <div class="drawer-sub-head">Products &amp; Solutions</div>
+          <a href="/products/digitalsiwes">DigitalSIWES</a>
+          <a href="/products/searchartisans">SearchArtisans</a>
+          <a href="/products/ecertman">eCertMan</a>
+          <a href="/products/matrimonyroll">MatrimonyRoll</a>
+          <a href="/products/greaterheight-academy">GreaterHeight Academy</a>
           <div class="drawer-sub-head">AI &amp; Automation</div>
           <a href="/what-we-do/ai/consulting">AI Consulting</a>
-          <a href="/what-we-do/ai/agents-automation">AI Agents &amp; Automation</a>
+          <a href="/what-we-do/ai/augmented-development">AI-Augmented Development</a>
+          <a href="/what-we-do/ai/generative-ai-llms">Generative AI &amp; LLMs</a>
           <div class="drawer-sub-head">Product Engineering</div>
-          <a href="/what-we-do/engineering/custom-software">Custom Software</a>
+          <a href="/what-we-do/engineering/custom-software">Custom Software Development</a>
+          <a href="/what-we-do/engineering/web-application">Web Application Development</a>
           <a href="/what-we-do/engineering/mobile-app">Mobile App Development</a>
           <div class="drawer-sub-head">Data &amp; Cloud</div>
+          <a href="/what-we-do/data/engineering">Data Engineering</a>
+          <a href="/what-we-do/data/analytics-bi">Analytics &amp; BI</a>
           <a href="/what-we-do/data/cloud-solutions">Cloud Solutions</a>
           <div class="drawer-sub-head">Digital Marketing</div>
+          <a href="/what-we-do/marketing/content">Content Development</a>
           <a href="/what-we-do/marketing/seo">SEO</a>
           <a href="/what-we-do/marketing/social-media">Social Media Marketing</a>
         </div>
@@ -748,11 +769,18 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
       <div class="drawer-item">
         <button onclick="toggleDrawer(this)">Industries <span>+</span></button>
         <div class="drawer-sub">
-          <a href="/industries/financial-technology">Financial Technology</a>
-          <a href="/industries/healthcare">HealthCare</a>
+          <a href="/industries/agriculture">Agriculture</a>
+          <a href="/industries/media-entertainment">Media &amp; Entertainment</a>
           <a href="/industries/education-elearning">Education &amp; eLearning</a>
-          <a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a>
+          <a href="/industries/travel-hospitality">Travel &amp; Hospitality</a>
           <a href="/industries/logistics">Logistics</a>
+          <a href="/industries/financial-technology">Financial Technology</a>
+          <a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a>
+          <a href="/industries/healthcare">HealthCare</a>
+          <a href="/industries/automotive">Automotive</a>
+          <a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a>
+          <a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a>
+          <a href="/industries/real-estate">Real Estate</a>
         </div>
       </div>
       <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
@@ -1216,7 +1244,7 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
     <p class="reveal" style="transition-delay:.1s;">Whether you have a detailed brief or a rough idea, a 30-minute conversation is usually enough to tell you what the right engagement model looks like and what it will cost.</p>
     <div class="cta-band-btns reveal" style="transition-delay:.2s;">
       <a href="/contact" class="btn btn-outline-white">Start a Conversation</a>
-      <a href="/insights/case-studies" class="btn btn-outline-white">See What We've Built</a>
+      <a href="/case-studies/" class="btn btn-outline-white">See What We've Built</a>
     </div>
   </div>
 </section>
@@ -1225,8 +1253,14 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
      FOOTER
 ============================================= -->
 <footer>
-    <div class="footer-main">
+
+  <!-- ── Offices bar ─────────────────────────────── -->
+  
+  <!-- ── Main footer body ───────────────────────── -->
+  <div class="footer-main">
     <div class="wrap footer-grid">
+
+      <!-- Col 1: Brand -->
       <div>
         <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
           <img src="../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
@@ -1240,18 +1274,22 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
           <a href="mailto:info@mail.greaterheight.tech">info@mail.greaterheight.tech</a>
         </address>
       </div>
+
+      <!-- Col 2: Company -->
       <div>
         <div class="footer-col-head">Company</div>
         <ul class="footer-col-list">
           <li><a href="/who-we-are/company-overview">Who We Are</a></li>
           <li><a href="/who-we-are/core-purpose-mission">Purpose &amp; Mission</a></li>
           <li><a href="/who-we-are/our-team">Leadership Team</a></li>
-          <li><a href="/insights/case-studies">Case Studies</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
           <li><a href="/insights">Insights</a></li>
           <li><a href="/culture/career-opportunities">Careers</a></li>
           <li><a href="/insights/testimonials">Clients &amp; Testimonials</a></li>
         </ul>
       </div>
+
+      <!-- Col 3: Our Expertise -->
       <div>
         <div class="footer-col-head">Our Expertise</div>
         <ul class="footer-col-list">
@@ -1268,12 +1306,14 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
           <li><a href="/what-we-do/ai/agents-automation">Artificial Intelligence &amp; ML</a></li>
         </ul>
       </div>
+
+      <!-- Col 4: Digital Marketing -->
       <div>
         <div class="footer-col-head">Digital Marketing</div>
         <ul class="footer-col-list">
           <li><a href="/what-we-do/marketing/content">Content Development Services</a></li>
           <li><a href="/what-we-do/marketing/social-media">Social Media Marketing</a></li>
-          <li><a href="/what-we-do/marketing/reputation">Online Reputation Management</a></li>
+          <li><a href="/what-we-do/marketing/online-reputation">Online Reputation Management</a></li>
           <li><a href="/what-we-do/marketing/seo">Search Engine Optimisation</a></li>
           <li><a href="/what-we-do/marketing/ppc">Pay-Per-Click (PPC)</a></li>
           <li><a href="/what-we-do/marketing/link-building">Link Building Service</a></li>
@@ -1284,6 +1324,8 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
           <li><a href="/what-we-do/marketing/personal-branding">Personal Branding</a></li>
         </ul>
       </div>
+
+      <!-- Col 5: Clients + Industries -->
       <div>
         <div class="footer-col-head">Clients We Serve</div>
         <ul class="footer-col-list">
@@ -1302,8 +1344,11 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
           <li><a href="/industries/education-elearning">Education</a></li>
         </ul>
       </div>
+
     </div>
   </div>
+
+  <!-- ── Social + Resources ─────────────────────── -->
   <div class="footer-lower">
     <div class="wrap footer-lower-inner">
       <div>
@@ -1344,6 +1389,8 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
       </div>
     </div>
   </div>
+
+  <!-- ── Copyright bar ──────────────────────────── -->
   <div class="footer-copyright">
     <div class="wrap footer-copyright-inner">
       <span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span>
@@ -1356,6 +1403,7 @@ footer{background:var(--bg-dark);color:rgba(255,255,255,.7);}
       <span>Developed by <a href="/">GreaterHeight Technologies</a></span>
     </div>
   </div>
+
 </footer>
 
 <!-- Search overlay -->
