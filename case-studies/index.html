@@ -716,6 +716,25 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       PAGE — MISSING BASE STYLES
+    ============================================================ */
+    .page-hero-eyebrow { display:inline-flex; align-items:center; gap:8px; font-size:var(--ts-xs); font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--teal-glow); margin-bottom:var(--sp-4); }
+    .page-hero-eyebrow::before { content:''; display:block; width:24px; height:2px; background:var(--teal-glow); }
+    .content-section { padding:var(--sp-9) 0; }
+    .content-section.bg-light { background:var(--bg-alt); }
+    .section-heading { font-size:clamp(1.5rem,3vw,2rem); font-weight:800; color:var(--txt); margin-bottom:var(--sp-3); }
+    .feature-grid.grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-5); }
+    .feature-card { background:var(--bg-card); border:1px solid var(--border); border-top:3px solid var(--teal-glow); border-radius:0 0 14px 14px; padding:var(--sp-6); transition:box-shadow var(--dur-med),transform var(--dur-med); }
+    .feature-card:hover { box-shadow:var(--sh-md); transform:translateY(-3px); }
+    .feature-card h3 { font-size:var(--ts-base); font-weight:700; color:var(--txt); margin-bottom:var(--sp-2); }
+    .feature-card p { font-size:var(--ts-sm); color:var(--txt-2); line-height:1.6; }
+    .cta-band-actions { display:flex; gap:var(--sp-3); flex-wrap:wrap; flex-shrink:0; }
+    .btn-ghost { display:inline-flex; align-items:center; gap:8px; padding:14px 28px; border:2px solid rgba(255,255,255,.55); color:var(--white); border-radius:8px; font-size:var(--ts-sm); font-weight:700; transition:border-color var(--dur-fast),background var(--dur-fast); white-space:nowrap; text-decoration:none; }
+    .btn-ghost:hover { border-color:var(--white); background:rgba(255,255,255,.12); }
+    @media (max-width:900px) { .feature-grid.grid-3 { grid-template-columns:1fr 1fr; } }
+    @media (max-width:600px) { .feature-grid.grid-3 { grid-template-columns:1fr; } }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1356,39 +1375,97 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
+            <span class="page-hero-eyebrow">Who We Are</span>
             <h1 id="hero-heading">Case Studies</h1>
             <p class="page-hero-lead">Honest accounts of the challenges our clients faced, the approach we took, and the results we delivered — with the specificity that makes them useful to businesses facing similar problems.</p>
+            <div class="hero-meta" style="margin-top:var(--sp-5);">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">10<em>+</em></span>
+                <span class="hero-meta-label">Sectors Served</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">14<em>+</em></span>
+                <span class="hero-meta-label">Years of Delivery</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">NG</span>
+                <span class="hero-meta-label">to Global</span>
+              </div>
+            </div>
             <div class="hero-ctas">
               <a href="/contact/" class="btn btn-primary">Discuss Your Project</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">Honest Accounts</div>
+                <p>We document what we actually built, the technical decisions we made, the constraints we navigated, and the results we delivered.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Specific, Not Generic</div>
+                <p>Each case study names the problem, the technical approach, the tools used, and the measurable outcome — not marketing language.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Reference Clients</div>
+                <p>We can arrange introductions to reference clients in your sector for businesses evaluating us as a technology partner.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="cs-intro">
+    <section class="content-section bg-light">
       <div class="container">
-        <h2 id="cs-intro">Projects That Prove What We Can Do</h2>
-        <p>Our case studies cover engagements across financial technology, healthcare, education, logistics, government, and enterprise digital transformation — drawn from over a decade of project delivery in Nigerian, African, and international markets.</p>
-        <p>We document what we actually built, the technical decisions we made, the constraints we navigated, and the outcomes we achieved. Contact us to receive the full case study library or to discuss a reference client in your sector.</p>
+        <span class="section-label">Our Work</span>
+        <h2 class="section-heading">Projects That Prove What We Can Do</h2>
+        <p style="color:var(--txt-2);line-height:1.75;max-width:72ch;margin-bottom:var(--sp-7);">Our case studies are drawn from over a decade of project delivery across Nigeria, Africa, and international markets. Contact us to receive the full case study library or to discuss a reference client in your sector.</p>
+        <div class="feature-grid grid-3">
+          <article class="feature-card">
+            <h3>Financial Technology</h3>
+            <p>Core banking integration, digital payments, lending platforms, investment portals, and regulatory-compliant financial infrastructure for fintechs, banks, and neobanks.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Healthcare & Life Sciences</h3>
+            <p>Patient management systems, clinical record platforms, telemedicine portals, lab data systems, and health data integration for hospitals, clinics, and health-tech providers.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Education & e-Learning</h3>
+            <p>Learning management systems, digital certification platforms, student portals, and institutional ERP implementations for universities, schools, and EdTech companies.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Logistics & Supply Chain</h3>
+            <p>Fleet tracking, warehouse management, last-mile delivery systems, and shipment visibility platforms for logistics operators and enterprise supply chains.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Enterprise Digital Transformation</h3>
+            <p>Legacy system modernisation, cloud migration, process automation, ERP implementation, and organisation-wide digital transformation programmes for mid-market and enterprise clients.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Government & Public Sector</h3>
+            <p>E-government platforms, public records management, civil service systems, and digital service delivery projects for federal, state, and local government agencies.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="content-section cta-band" aria-labelledby="cs-cta">
+    <section class="cta-band">
       <div class="container">
         <div class="cta-band-inner">
           <div>
-            <h2 id="cs-cta">Discuss your project with us</h2>
-            <p>If you are evaluating GreaterHeight Technologies and want to speak directly with a reference client in your sector, contact us to arrange an introduction.</p>
+            <h2>Discuss your project with us</h2>
+            <p>Evaluating GreaterHeight Technologies? We can arrange a direct introduction to a reference client in your sector.</p>
           </div>
           <div class="cta-band-actions">
             <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+            <a href="/who-we-are/clients-testimonials/" class="btn-ghost">Client Testimonials</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  </main>
+
 
   <!-- ============================================================
        FOOTER
