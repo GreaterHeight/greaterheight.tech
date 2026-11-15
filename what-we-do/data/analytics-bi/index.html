@@ -787,19 +787,7 @@
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2397EFC9' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       pointer-events: none;
     }
-    .img-ph-label {
-      position: absolute;
-      bottom: 12px; left: 12px;
-      background: rgba(0,0,0,.55);
-      color: rgba(255,255,255,.75);
-      font-size: .7rem;
-      letter-spacing: .05em;
-      padding: .2rem .6rem;
-      border-radius: 4px;
-      font-family: monospace;
-      pointer-events: none;
-      z-index: 2;
-    }
+    .img-ph-label { display: none; }
 
     /* ── Logos strip ─────────────────────────────── */
     .logos-strip { padding: var(--sp-5) 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-alt); }
@@ -841,12 +829,12 @@
 
     /* ── Unlock Insights mid-CTA (image on right) ── */
     .unlock-band { background: var(--forest); overflow: hidden; }
-    .unlock-inner { display: grid; grid-template-columns: 1fr 480px; align-items: stretch; min-height: 380px; }
+    .unlock-inner { display: grid; grid-template-columns: 58% 42%; align-items: stretch; min-height: 380px; }
     .unlock-copy { padding: var(--sp-9) var(--sp-8); display: flex; flex-direction: column; justify-content: center; }
     .unlock-copy h2 { font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 300; color: var(--white); line-height: 1.2; margin-bottom: var(--sp-4); }
     .unlock-copy h2 strong { font-weight: 700; color: var(--mint); }
     .unlock-copy p { font-size: var(--ts-md); color: rgba(255,255,255,.7); line-height: 1.7; max-width: 48ch; margin-bottom: var(--sp-6); }
-    .unlock-img { height: 100%; min-height: 380px; }
+    .unlock-img { height: 100%; min-height: 380px; background-size: cover; background-position: center; }
 
     /* ── Industries image cards ───────────────────── */
     .ind-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4); }
@@ -881,12 +869,12 @@
 
     /* ── Evaluate Data Strategy CTA ──────────────── */
     .evaluate-band { background: var(--forest-deep); overflow: hidden; }
-    .evaluate-inner { display: grid; grid-template-columns: 1fr 400px; align-items: stretch; min-height: 320px; }
+    .evaluate-inner { display: grid; grid-template-columns: 60% 40%; align-items: stretch; min-height: 320px; }
     .evaluate-copy { padding: var(--sp-9) var(--sp-8); display: flex; flex-direction: column; justify-content: center; }
     .evaluate-copy h2 { font-size: clamp(1.6rem,2.8vw,2.2rem); font-weight: 300; color: var(--white); margin-bottom: var(--sp-3); }
     .evaluate-copy h2 strong { font-weight: 700; color: var(--teal-glow); }
     .evaluate-copy p { font-size: var(--ts-md); color: rgba(255,255,255,.65); line-height: 1.7; max-width: 46ch; margin-bottom: var(--sp-6); }
-    .evaluate-img { position: relative; overflow: hidden; }
+    .evaluate-img { position: relative; overflow: hidden; height: 100%; min-height: 320px; background-size: cover; background-position: center top; }
 
     /* ── Why GreaterHeight ───────────────────────── */
     .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-7) var(--sp-8); align-items: start; }
@@ -1856,9 +1844,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
             <a href="/what-we-do/data/" class="btn-ghost">All Data Services</a>
           </div>
         </div>
-        <div class="unlock-img img-ph" style="background-image:url('/assets/images/analytics/unlock-insights.jpg');" role="presentation">
-          <span class="img-ph-label">/assets/images/analytics/unlock-insights.jpg</span>
-        </div>
+        <div class="unlock-img img-ph" style="background-image:url('/assets/images/analytics/unlock-insights.jpg');" role="presentation"></div>
       </div>
     </section>
 
@@ -2044,9 +2030,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
             <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
           </div>
         </div>
-        <div class="evaluate-img img-ph" style="background-image:url('/assets/images/analytics/data-strategy-expert.jpg');" role="presentation">
-          <span class="img-ph-label">/assets/images/analytics/data-strategy-expert.jpg</span>
-        </div>
+        <div class="evaluate-img img-ph" style="background-image:url('/assets/images/analytics/data-strategy-expert.jpg');" role="presentation"></div>
       </div>
     </section>
 
