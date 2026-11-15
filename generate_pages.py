@@ -56,20 +56,28 @@ footer_start = TMPL.find('<footer>')
 footer_end = TMPL.find('</footer>') + 9
 FOOTER_HTML = TMPL[footer_start:footer_end]
 
-# Preloader + scroll-progress HTML (lines 508–519)
-preloader_start = TMPL.find('<div id="preloader"')
-preloader_end = TMPL.find('</div>', preloader_start) + 6
-PRELOADER_HTML = TMPL[preloader_start:preloader_end]
+# Scroll progress bar — self-contained empty div
+SCROLLPROG_HTML = '<div id="scroll-progress" aria-hidden="true"></div>'
+
+# Preloader — use depth-counting to capture the full outer div
+_pl_start = TMPL.find('<div id="preloader"')
+_i = _pl_start
+_depth = 0
+while _i < len(TMPL):
+    if TMPL[_i:_i+4] == '<div':
+        _depth += 1; _i += 4
+    elif TMPL[_i:_i+6] == '</div>':
+        _depth -= 1; _i += 6
+        if _depth == 0:
+            break
+    else:
+        _i += 1
+PRELOADER_HTML = TMPL[_pl_start:_i]
 
 # Back-to-top button
 backtop_start = TMPL.find('<button id="back-top"')
 backtop_end = TMPL.find('</button>', backtop_start) + 9
 BACKTOP_HTML = TMPL[backtop_start:backtop_end]
-
-# Scroll progress bar
-scrollprog_start = TMPL.find('<div id="scroll-progress"')
-scrollprog_end = TMPL.find('>', scrollprog_start) + 1
-SCROLLPROG_HTML = TMPL[scrollprog_start:scrollprog_end]
 
 # Search overlay
 search_start = TMPL.find('<div id="search-overlay"')
