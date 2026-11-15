@@ -716,6 +716,42 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       PAGE — MISSING BASE STYLES
+    ============================================================ */
+    .page-hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-4);
+    }
+    .page-hero-eyebrow::before { content:''; display:block; width:24px; height:2px; background:var(--teal-glow); }
+    .content-section { padding: var(--sp-9) 0; }
+    .content-section.bg-light { background: var(--bg-alt); }
+    .two-col-prose { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9); align-items: start; }
+    .two-col-prose h2 { font-size: clamp(1.4rem,2.5vw,1.8rem); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-4); line-height: 1.3; }
+    .two-col-prose p { font-size: var(--ts-base); color: var(--txt-2); line-height: 1.8; margin-bottom: var(--sp-3); }
+    .section-heading { font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-6); line-height: 1.25; }
+    .feature-grid.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); }
+    .feature-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--teal-glow); border-radius: 0 0 14px 14px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .feature-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .feature-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .feature-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .pillar-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); margin-top: var(--sp-6); }
+    .pillar-grid.grid-2 { grid-template-columns: repeat(2,1fr); }
+    .pillar-grid.grid-4 { grid-template-columns: repeat(4,1fr); }
+    .pillar-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med); }
+    .pillar-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
+    .pillar-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); }
+    .pillar-icon svg { width: 26px; height: 26px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .pillar-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .pillar-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .cta-band-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border: 2px solid rgba(255,255,255,.55); color: var(--white); border-radius: 8px; font-size: var(--ts-sm); font-weight: 700; transition: border-color var(--dur-fast), background var(--dur-fast); white-space: nowrap; text-decoration: none; }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.12); }
+    @media (max-width: 1100px) { .pillar-grid.grid-4 { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 900px) { .two-col-prose { grid-template-columns: 1fr; gap: var(--sp-5); } .feature-grid.grid-3 { grid-template-columns: 1fr 1fr; } .pillar-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 600px) { .feature-grid.grid-3, .pillar-grid, .pillar-grid.grid-2 { grid-template-columns: 1fr; } }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1358,45 +1394,74 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
+            <span class="page-hero-eyebrow">Culture</span>
             <h1 id="hero-heading">Career Opportunities</h1>
             <p class="page-hero-lead">We hire engineers, architects, project leads, data specialists, and digital marketing professionals who want to do meaningful work on real challenges. If that describes you, we would like to hear from you.</p>
+            <div class="hero-meta" style="margin-top:var(--sp-5);">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Technical</span>
+                <span class="hero-meta-label">& Digital Roles</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Paid</span>
+                <span class="hero-meta-label">Internships</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Clear</span>
+                <span class="hero-meta-label">Interview Process</span>
+              </div>
+            </div>
             <div class="hero-ctas">
               <a href="/contact/" class="btn btn-primary">Contact the Talent Team</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">What We Hire For</div>
+                <p>Engineers, architects, project leads, data specialists, and digital marketing professionals across our practice areas.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Our Process</div>
+                <p>Respectful of your time: an initial conversation, a practical exercise, and a final conversation with the team you would join.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Graduate Track</div>
+                <p>Structured, mentored, and paid internships in software engineering, data science, cloud computing, and digital marketing.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="current-openings-heading">
+    <section class="section section-alt">
       <div class="container">
-        <h2 id="current-openings-heading">Current Openings</h2>
-        <p>We maintain a small but active roster of open roles across our practice areas. These change as project demand evolves, so if you do not see a specific role listed but believe you have something to contribute, a speculative application is always welcome.</p>
-        <p>To view and apply for current openings, contact our talent team directly — we will point you to the relevant opportunities and ensure your application reaches the right people.</p>
+        <span class="section-label">Join the Team</span>
+        <h2 class="section-title">How We Hire</h2>
+        <p class="section-lead">Our process is designed to be respectful of your time while giving us enough signal to make a good decision.</p>
+        <div class="feature-grid grid-3" style="margin-top:var(--sp-6);">
+          <article class="feature-card">
+            <h3>Current Openings</h3>
+            <p>We maintain an active roster of open roles across our practice areas. Contact our talent team directly for current opportunities, or to submit a speculative application — we welcome strong profiles at any time.</p>
+          </article>
+          <article class="feature-card">
+            <h3>The Interview Process</h3>
+            <p>An initial conversation, a practical exercise relevant to the role (not abstract whiteboard problems), and a final conversation with the team. We communicate clearly at every stage — including when the answer is no.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Internships & Graduates</h3>
+            <p>Structured, mentored, and paid programmes in software engineering, data science, cloud computing, and digital marketing. A significant number of our current team began their careers at GreaterHeight as interns.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="what-the-interview-process-looks-like-heading">
-      <div class="container">
-        <h2 id="what-the-interview-process-looks-like-heading">What the Interview Process Looks Like</h2>
-        <p>Our process is designed to be respectful of your time while giving us enough signal to make a good decision. For technical roles, it typically involves an initial conversation, a practical exercise relevant to the role (not abstract whiteboard problems), and a final conversation with the team you would be joining.</p>
-        <p>We commit to communicating clearly at every stage — including when the answer is no — and to giving useful feedback where we can.</p>
-      </div>
-    </section>
-
-    <section class="content-section bg-light" aria-labelledby="internships-and-graduate-roles-heading">
-      <div class="container">
-        <h2 id="internships-and-graduate-roles-heading">Internships and Graduate Roles</h2>
-        <p>We run internship programmes for graduates and final-year students in software engineering, data science, cloud computing, and digital marketing. Internships are structured, mentored, and paid — and a significant number of our current team members began their careers at GreaterHeight as interns.</p>
-        <p>Contact us to find out about the current internship intake schedule.</p>
-      </div>
-    </section>
-
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <section class="cta-band">
       <div class="container">
         <div class="cta-band-inner">
           <div>
-            <h2 id="cta-heading">Apply or make a speculative enquiry</h2>
+            <h2>Apply or make a speculative enquiry</h2>
             <p>Whether you are applying for a specific role or making a speculative enquiry about future opportunities, contact our talent team to start the conversation.</p>
           </div>
           <div class="cta-band-actions">
@@ -1406,7 +1471,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
   </main>
-  </main>
+
 
   <!-- ============================================================
        FOOTER

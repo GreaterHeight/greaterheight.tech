@@ -716,6 +716,60 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       PAGE — MISSING BASE STYLES
+    ============================================================ */
+    .page-hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-4);
+    }
+    .page-hero-eyebrow::before { content:''; display:block; width:24px; height:2px; background:var(--teal-glow); }
+    .content-section { padding: var(--sp-9) 0; }
+    .content-section.bg-light { background: var(--bg-alt); }
+    .two-col-prose { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9); align-items: start; }
+    .two-col-prose h2 { font-size: clamp(1.4rem,2.5vw,1.8rem); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-4); line-height: 1.3; }
+    .two-col-prose p { font-size: var(--ts-base); color: var(--txt-2); line-height: 1.8; margin-bottom: var(--sp-3); }
+    .section-heading { font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-6); line-height: 1.25; }
+    .feature-grid.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); }
+    .feature-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--teal-glow); border-radius: 0 0 14px 14px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .feature-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .feature-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .feature-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .pillar-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); margin-top: var(--sp-6); }
+    .pillar-grid.grid-2 { grid-template-columns: repeat(2,1fr); }
+    .pillar-grid.grid-4 { grid-template-columns: repeat(4,1fr); }
+    .pillar-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med); }
+    .pillar-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
+    .pillar-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); }
+    .pillar-icon svg { width: 26px; height: 26px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .pillar-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .pillar-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .cta-band-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border: 2px solid rgba(255,255,255,.55); color: var(--white); border-radius: 8px; font-size: var(--ts-sm); font-weight: 700; transition: border-color var(--dur-fast), background var(--dur-fast); white-space: nowrap; text-decoration: none; }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.12); }
+    @media (max-width: 1100px) { .pillar-grid.grid-4 { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 900px) { .two-col-prose { grid-template-columns: 1fr; gap: var(--sp-5); } .feature-grid.grid-3 { grid-template-columns: 1fr 1fr; } .pillar-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 600px) { .feature-grid.grid-3, .pillar-grid, .pillar-grid.grid-2 { grid-template-columns: 1fr; } }
+
+    /* ── Product Cards ───────────────────────── */
+    .product-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: var(--sp-6); margin-top: var(--sp-7); }
+    .product-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 18px; padding: var(--sp-7); display: flex; flex-direction: column; gap: var(--sp-4); transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .product-card:hover { box-shadow: var(--sh-md); transform: translateY(-4px); }
+    .product-card-head { display: flex; align-items: flex-start; gap: var(--sp-4); }
+    .product-icon { width: 60px; height: 60px; border-radius: 16px; background: linear-gradient(135deg, var(--teal) 0%, var(--forest) 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .product-icon svg { width: 30px; height: 30px; stroke: var(--white); fill: none; stroke-width: 1.6; }
+    .product-tag { font-size: var(--ts-xs); font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--teal-glow); margin-bottom: 4px; }
+    .product-card-head h3 { font-size: var(--ts-lg); font-weight: 700; color: var(--txt); margin: 4px 0 0; }
+    .product-tagline { font-size: var(--ts-sm); color: var(--txt-2); font-style: italic; margin-top: 4px; }
+    .product-desc { font-size: var(--ts-base); color: var(--txt-2); line-height: 1.7; }
+    .product-bullets { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .product-bullets li { font-size: var(--ts-sm); color: var(--txt-2); padding-left: 1.4em; position: relative; }
+    .product-bullets li::before { content: ''; position: absolute; left: 0; top: .45em; width: 7px; height: 7px; border-radius: 50%; background: var(--teal-glow); }
+    .product-card .btn { align-self: flex-start; background: var(--cr); color: var(--white); display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 8px; font-size: var(--ts-sm); font-weight: 700; text-decoration: none; transition: background var(--dur-fast), transform var(--dur-fast); }
+    .product-card .btn:hover { background: var(--cr-mid); transform: translateY(-2px); }
+    @media (max-width: 900px) { .product-grid { grid-template-columns: 1fr; } }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1356,40 +1410,131 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
+            <span class="page-hero-eyebrow">Products</span>
             <h1 id="hero-heading">Products &amp; Solutions</h1>
             <p class="page-hero-lead">Software products developed by GreaterHeight Technologies — built to address specific gaps in African and global markets, and available as standalone products or integrated into client solutions.</p>
+            <div class="hero-meta" style="margin-top:var(--sp-5);">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">4</span>
+                <span class="hero-meta-label">Active Products</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Lagos</span>
+                <span class="hero-meta-label">Built</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Africa</span>
+                <span class="hero-meta-label">First Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">Built from Scratch</div>
+                <p>Every GreaterHeight product is designed and built in-house — not white-labelled or repackaged foreign software.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Client Integration</div>
+                <p>Our products can be deployed as standalone solutions or integrated into the technology stack of client organisations.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">African Context</div>
+                <p>Designed for the connectivity, infrastructure, and institutional realities of African markets — not retrofitted for them.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="service-grid-section">
+
+    <section class="section section-alt">
       <div class="container">
-        <div class="service-cards-grid">
-        <article class="service-card">
-          <h3><a href="/products/digitalsiwes/">DigitalSIWES</a></h3>
-          <p>A digital management platform for the Nigerian SIWES (Student Industrial Work Experience Scheme) programme.</p>
-          <a href="/products/digitalsiwes/" class="card-link">Learn more →</a>
-        </article>
-        <article class="service-card">
-          <h3><a href="/products/searchartisans/">SearchArtisans</a></h3>
-          <p>A local business search and discovery platform connecting consumers with skilled artisans and service providers.</p>
-          <a href="/products/searchartisans/" class="card-link">Learn more →</a>
-        </article>
-        <article class="service-card">
-          <h3><a href="/products/ecertman/">eCertMan</a></h3>
-          <p>A digital certificate management system for institutions, training providers, and credentialing organisations.</p>
-          <a href="/products/ecertman/" class="card-link">Learn more →</a>
-        </article>
-        <article class="service-card">
-          <h3><a href="/products/greaterheight-academy/">GreaterHeight Academy</a></h3>
-          <p>Our structured training programmes for software development, cloud computing, data science, and digital marketing.</p>
-          <a href="/products/greaterheight-academy/" class="card-link">Learn more →</a>
-        </article>
+        <span class="section-label">Our Portfolio</span>
+        <h2 class="section-title">Products Built for African Markets</h2>
+        <p class="section-lead">Four software products built in-house by GreaterHeight Technologies, each addressing a specific gap in African and global markets.</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card-head">
+              <div class="product-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+              <div>
+                <div class="product-tag">Education Technology</div>
+                <h3>DigitalSIWES</h3>
+                <p class="product-tagline">Digitising Nigeria's student industrial training ecosystem</p>
+              </div>
+            </div>
+            <p class="product-desc">A digital management platform for the Nigerian SIWES (Student Industrial Work Experience Scheme) programme, replacing paper-based processes with a fully digital workflow for students, employers, and supervising institutions.</p>
+            <ul class="product-bullets">
+              <li>Student placement and monitoring</li>
+              <li>Supervisor reporting and assessment</li>
+              <li>Institution oversight dashboard</li>
+              <li>Digital logbook and timesheet management</li>
+            </ul>
+            <a href="/products/digitalsiwes/" class="btn">Learn More</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card-head">
+              <div class="product-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 17.25a6.25 6.25 0 1 1 0-12.5 6.25 6.25 0 0 1 0 12.5z"/>
+<path d="M16 16l4.5 4.5"/></svg></div>
+              <div>
+                <div class="product-tag">Local Commerce</div>
+                <h3>SearchArtisans</h3>
+                <p class="product-tagline">Connecting consumers with skilled local service providers</p>
+              </div>
+            </div>
+            <p class="product-desc">A local business search and discovery platform that makes it easy for consumers to find, evaluate, and engage skilled artisans and service providers in their area — building a trusted, verifiable directory of local talent.</p>
+            <ul class="product-bullets">
+              <li>Provider discovery and location search</li>
+              <li>Ratings, reviews, and verification</li>
+              <li>Direct booking and enquiry</li>
+              <li>Provider profile and portfolio management</li>
+            </ul>
+            <a href="/products/searchartisans/" class="btn">Learn More</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card-head">
+              <div class="product-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15l-2 5-5-7h4l-2-6z"/>
+<path d="M12 3l1.09 3.26L16.5 4.5l-1.59 3.09L18 9l-3.41.41L15 12.5l-3-1.5-3 1.5.41-3.09L6 9l3.09-1.41L7.5 4.5l3.41 1.76z"/></svg></div>
+              <div>
+                <div class="product-tag">Credentials & Trust</div>
+                <h3>eCertMan</h3>
+                <p class="product-tagline">Verifiable digital credentials for training providers and institutions</p>
+              </div>
+            </div>
+            <p class="product-desc">A digital certificate management system for institutions, training providers, and credentialing organisations — enabling the issuance, management, and third-party verification of credentials in digital formats.</p>
+            <ul class="product-bullets">
+              <li>Digital certificate issuance at scale</li>
+              <li>Shareable, link-based credentials</li>
+              <li>Third-party verification portal</li>
+              <li>Bulk management and audit trail</li>
+            </ul>
+            <a href="/products/ecertman/" class="btn">Learn More</a>
+          </article>
+          <article class="product-card">
+            <div class="product-card-head">
+              <div class="product-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+              <div>
+                <div class="product-tag">Technology Training</div>
+                <h3>GreaterHeight Academy</h3>
+                <p class="product-tagline">Structured training for the next generation of African technologists</p>
+              </div>
+            </div>
+            <p class="product-desc">Structured, mentored training programmes for software development, cloud computing, data science, and digital marketing — designed to produce job-ready technology professionals for African and global markets.</p>
+            <ul class="product-bullets">
+              <li>Software development programmes</li>
+              <li>Cloud computing and data science</li>
+              <li>Digital marketing certification</li>
+              <li>Mentorship-led learning model</li>
+            </ul>
+            <a href="/products/greaterheight-academy/" class="btn">Learn More</a>
+          </article>
         </div>
       </div>
     </section>
   </main>
-  </main>
+
 
   <!-- ============================================================
        FOOTER

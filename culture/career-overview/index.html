@@ -716,6 +716,42 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       PAGE — MISSING BASE STYLES
+    ============================================================ */
+    .page-hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-4);
+    }
+    .page-hero-eyebrow::before { content:''; display:block; width:24px; height:2px; background:var(--teal-glow); }
+    .content-section { padding: var(--sp-9) 0; }
+    .content-section.bg-light { background: var(--bg-alt); }
+    .two-col-prose { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9); align-items: start; }
+    .two-col-prose h2 { font-size: clamp(1.4rem,2.5vw,1.8rem); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-4); line-height: 1.3; }
+    .two-col-prose p { font-size: var(--ts-base); color: var(--txt-2); line-height: 1.8; margin-bottom: var(--sp-3); }
+    .section-heading { font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-6); line-height: 1.25; }
+    .feature-grid.grid-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); }
+    .feature-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--teal-glow); border-radius: 0 0 14px 14px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .feature-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .feature-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .feature-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .pillar-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); margin-top: var(--sp-6); }
+    .pillar-grid.grid-2 { grid-template-columns: repeat(2,1fr); }
+    .pillar-grid.grid-4 { grid-template-columns: repeat(4,1fr); }
+    .pillar-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med); }
+    .pillar-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
+    .pillar-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); }
+    .pillar-icon svg { width: 26px; height: 26px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .pillar-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .pillar-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+    .cta-band-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border: 2px solid rgba(255,255,255,.55); color: var(--white); border-radius: 8px; font-size: var(--ts-sm); font-weight: 700; transition: border-color var(--dur-fast), background var(--dur-fast); white-space: nowrap; text-decoration: none; }
+    .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.12); }
+    @media (max-width: 1100px) { .pillar-grid.grid-4 { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 900px) { .two-col-prose { grid-template-columns: 1fr; gap: var(--sp-5); } .feature-grid.grid-3 { grid-template-columns: 1fr 1fr; } .pillar-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 600px) { .feature-grid.grid-3, .pillar-grid, .pillar-grid.grid-2 { grid-template-columns: 1fr; } }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1358,45 +1394,74 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
+            <span class="page-hero-eyebrow">Culture</span>
             <h1 id="hero-heading">Career Overview</h1>
             <p class="page-hero-lead">GreaterHeight Technologies is a place where technology professionals grow — not just in technical skill, but in the judgment, leadership, and commercial awareness that make the difference between a good engineer and a great one.</p>
+            <div class="hero-meta" style="margin-top:var(--sp-5);">
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Remote</span>
+                <span class="hero-meta-label">First Culture</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">4</span>
+                <span class="hero-meta-label">Global Locations</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-value">Mentorship</span>
+                <span class="hero-meta-label">Driven Growth</span>
+              </div>
+            </div>
             <div class="hero-ctas">
               <a href="/culture/career-opportunities/" class="btn btn-primary">View Current Openings</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card-stack">
+              <div class="hero-fact-card">
+                <div class="fact-label">Real Work</div>
+                <p>Our team works on real systems, at real scale, for demanding clients across some of the world's most dynamic technology markets.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Genuine Investment</div>
+                <p>Structured mentorship, continuous learning budgets, and diverse project exposure — not performance review checkboxes.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Global Reach</div>
+                <p>Our team is distributed across Lagos, London, the US, and Dubai — with a culture built for collaboration across time zones.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="why-greaterheight-heading">
+    <section class="section section-alt">
       <div class="container">
-        <h2 id="why-greaterheight-heading">Why GreaterHeight</h2>
-        <p>We are an African technology company operating at global standards — which means the technical challenges are genuine, the clients are demanding, and the opportunity to learn is constant. Our team members work on real systems, at real scale, for real businesses across some of the most complex and dynamic markets in the world.</p>
-        <p>We are also a company that invests in its people: structured mentorship, continuous learning budgets, exposure to diverse project types, and a culture that takes development seriously rather than treating it as a performance review checkbox.</p>
+        <span class="section-label">Life at GreaterHeight</span>
+        <h2 class="section-title">What Makes Us Different</h2>
+        <p class="section-lead">An African technology company operating at global standards — which means the technical challenges are genuine, the clients are demanding, and the opportunity to learn is constant.</p>
+        <div class="feature-grid grid-3" style="margin-top:var(--sp-6);">
+          <article class="feature-card">
+            <h3>Why GreaterHeight</h3>
+            <p>An African technology company at global standards — real technical challenges, demanding clients, and an opportunity to grow that few firms in the continent can match.</p>
+          </article>
+          <article class="feature-card">
+            <h3>What We Look For</h3>
+            <p>Strong fundamentals, genuine curiosity, and clear communication. We care more about how you think and whether you take responsibility for quality than the specific technologies on your CV.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Our Team</h3>
+            <p>Distributed across Lagos, London, the US, and Dubai. Primarily remote. A diverse team by background and perspective — which makes us better at the work and better as a company.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="what-we-look-for-heading">
-      <div class="container">
-        <h2 id="what-we-look-for-heading">What We Look For</h2>
-        <p>We hire people with strong fundamentals and a genuine curiosity about the problems they are working on. We care less about the specific technologies on your CV than about how you think, how you approach ambiguity, and whether you take responsibility for the quality of your work.</p>
-        <p>We particularly value communication skills — the ability to explain technical decisions to non-technical stakeholders, to write clearly, and to engage clients as a professional rather than hiding behind process.</p>
-      </div>
-    </section>
-
-    <section class="content-section bg-light" aria-labelledby="our-team-heading">
-      <div class="container">
-        <h2 id="our-team-heading">Our Team</h2>
-        <p>Our team is distributed across Lagos, London, the US, and Dubai, and the work is primarily remote. We come together in person for project kick-offs, company events, and key milestones — and we work hard to build a culture of connection and inclusion across time zones and locations.</p>
-        <p>We are a diverse team by background, experience, and perspective — and we believe that diversity makes us better at the work and better as a company.</p>
-      </div>
-    </section>
-
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <section class="cta-band">
       <div class="container">
         <div class="cta-band-inner">
           <div>
-            <h2 id="cta-heading">See current openings</h2>
+            <h2>See current openings</h2>
             <p>If the GreaterHeight culture sounds like a fit, explore our current open roles.</p>
           </div>
           <div class="cta-band-actions">
@@ -1406,7 +1471,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
   </main>
-  </main>
+
 
   <!-- ============================================================
        FOOTER
