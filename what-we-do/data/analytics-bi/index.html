@@ -752,22 +752,67 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
-       ANALYTICS-BI PAGE — ENHANCED COMPONENTS
+       ANALYTICS-BI PAGE v2 — FULL ENHANCED COMPONENTS
     ============================================================ */
 
-    /* ── Shared layout helpers ───────────────────────── */
+    /* ── Shared layout ───────────────────────────── */
     .content-section          { padding: var(--sp-9) 0; }
     .content-section.bg-light { background: var(--bg-alt); }
     .content-section.bg-dark  { background: var(--forest); }
+    .content-section.bg-deeper{ background: var(--forest-deep); }
     .section-lead { font-size: var(--ts-md); color: var(--txt-2); line-height: 1.75; max-width: 70ch; margin: var(--sp-3) 0 var(--sp-7); }
-    .section-lead.light { color: rgba(255,255,255,.75); }
-    .hero-ctas { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-5); }
-    .btn-ghost-dark { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border:2px solid var(--border); color:var(--txt); border-radius:8px; font-size:var(--ts-sm); font-weight:700; transition:border-color var(--dur-fast),background var(--dur-fast); text-decoration:none; }
-    .btn-ghost-dark:hover { border-color:var(--teal-glow); color:var(--teal-glow); }
+    .section-lead.light { color: rgba(255,255,255,.7); }
+    .hero-ctas { display:flex; gap:var(--sp-3); flex-wrap:wrap; margin-top:var(--sp-5); }
+    .btn-ghost-dark { display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border:2px solid var(--border);color:var(--txt);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:border-color .2s,color .2s;text-decoration:none; }
+    .btn-ghost-dark:hover { border-color:var(--teal-glow);color:var(--teal-mid); }
+    .btn-ghost { display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:2px solid rgba(255,255,255,.55);color:var(--white);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:border-color .2s,background .2s;text-decoration:none; }
+    .btn-ghost:hover { border-color:var(--white);background:rgba(255,255,255,.12); }
+    .cta-band-actions { display:flex;gap:var(--sp-3);flex-wrap:wrap;flex-shrink:0; }
 
-    /* ── Outcomes section (dark forest bg) ──────────── */
+    /* ── Image placeholder base ──────────────────── */
+    /* When images are generated and placed at the documented path,
+       they will show automatically via background-image on these divs. */
+    .img-ph {
+      background-color: var(--teal);
+      background-image: linear-gradient(135deg, var(--forest-deep) 0%, var(--teal-mid) 60%, var(--teal-glow) 100%);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .img-ph::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2397EFC9' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .img-ph-label {
+      position: absolute;
+      bottom: 12px; left: 12px;
+      background: rgba(0,0,0,.55);
+      color: rgba(255,255,255,.75);
+      font-size: .7rem;
+      letter-spacing: .05em;
+      padding: .2rem .6rem;
+      border-radius: 4px;
+      font-family: monospace;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* ── Logos strip ─────────────────────────────── */
+    .logos-strip { padding: var(--sp-5) 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg-alt); }
+    .logos-strip-inner { display: flex; align-items: center; gap: var(--sp-6); flex-wrap: wrap; justify-content: center; }
+    .logos-strip-label { font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--txt-3); white-space: nowrap; }
+    .client-logo-ph { height: 32px; padding: .4rem 1.2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+    .client-logo-ph img { height: 22px; width: auto; object-fit: contain; filter: grayscale(1); opacity: .6; transition: opacity .2s, filter .2s; }
+    .client-logo-ph img:hover { opacity: 1; filter: grayscale(0); }
+    .client-logo-ph span { font-size: .78rem; font-weight: 700; color: var(--txt-3); letter-spacing: .04em; white-space: nowrap; }
+
+    /* ── Outcomes (dark bg) ──────────────────────── */
     .outcomes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-bottom: var(--sp-8); }
-    .outcome-card { border: 1px solid rgba(255,255,255,.12); border-left: 3px solid var(--teal-glow); border-radius: 0 12px 12px 0; padding: var(--sp-5) var(--sp-5); background: rgba(255,255,255,.04); transition: background var(--dur-med); }
+    .outcome-card { border: 1px solid rgba(255,255,255,.1); border-left: 3px solid var(--teal-glow); border-radius: 0 12px 12px 0; padding: var(--sp-5); background: rgba(255,255,255,.04); transition: background .2s; }
     .outcome-card:hover { background: rgba(255,255,255,.07); }
     .outcome-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--white); margin-bottom: var(--sp-2); }
     .outcome-card p { font-size: var(--ts-sm); color: rgba(255,255,255,.65); line-height: 1.65; }
@@ -777,43 +822,57 @@
     .stat-value em { font-style: normal; color: var(--mint); font-size: .7em; }
     .stat-label { font-size: var(--ts-xs); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.55); }
 
-    /* ── Services grid ───────────────────────────────── */
+    /* ── Services grid ───────────────────────────── */
     .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); }
-    .service-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--teal-glow); border-radius: 0 0 14px 14px; padding: var(--sp-6); display: flex; flex-direction: column; transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .service-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--teal-glow); border-radius: 0 0 14px 14px; padding: var(--sp-6); display: flex; flex-direction: column; transition: box-shadow .2s, transform .2s; }
     .service-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
     .service-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); }
     .service-icon svg { width: 24px; height: 24px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
     .service-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
-    .service-card > p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; margin-bottom: var(--sp-3); }
+    .service-card > p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; margin-bottom: var(--sp-3); flex: 1; }
     .service-bullets { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .4rem; }
     .service-bullets li { font-size: .8rem; color: var(--txt-2); display: flex; align-items: flex-start; gap: .5rem; line-height: 1.4; }
     .service-bullets li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--teal-glow); margin-top: .35rem; flex-shrink: 0; }
 
-    /* ── Tech stack ──────────────────────────────────── */
+    /* ── Tech stack ──────────────────────────────── */
     .tech-stack-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); }
     .tech-category h3 { font-size: var(--ts-sm); font-weight: 700; color: var(--txt); text-transform: uppercase; letter-spacing: .07em; margin-bottom: var(--sp-3); padding-bottom: var(--sp-2); border-bottom: 2px solid var(--teal-glow); }
     .tech-pills { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
-    .tech-pill { background: var(--bg-card); border: 1px solid var(--border); border-radius: 100px; padding: .3rem .85rem; font-size: .8rem; font-weight: 600; color: var(--txt-2); transition: border-color var(--dur-fast), color var(--dur-fast); }
+    .tech-pill { background: var(--bg-card); border: 1px solid var(--border); border-radius: 100px; padding: .3rem .85rem; font-size: .8rem; font-weight: 600; color: var(--txt-2); transition: border-color .2s, color .2s; }
     .tech-pill:hover { border-color: var(--teal-glow); color: var(--teal-mid); }
 
-    /* ── Process track ───────────────────────────────── */
+    /* ── Unlock Insights mid-CTA (image on right) ── */
+    .unlock-band { background: var(--forest); overflow: hidden; }
+    .unlock-inner { display: grid; grid-template-columns: 1fr 480px; align-items: stretch; min-height: 380px; }
+    .unlock-copy { padding: var(--sp-9) var(--sp-8); display: flex; flex-direction: column; justify-content: center; }
+    .unlock-copy h2 { font-size: clamp(1.8rem,3vw,2.6rem); font-weight: 300; color: var(--white); line-height: 1.2; margin-bottom: var(--sp-4); }
+    .unlock-copy h2 strong { font-weight: 700; color: var(--mint); }
+    .unlock-copy p { font-size: var(--ts-md); color: rgba(255,255,255,.7); line-height: 1.7; max-width: 48ch; margin-bottom: var(--sp-6); }
+    .unlock-img { height: 100%; min-height: 380px; }
+
+    /* ── Industries image cards ───────────────────── */
+    .ind-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4); }
+    .ind-card { display: block; border-radius: 14px; overflow: hidden; position: relative; text-decoration: none; aspect-ratio: 4/5; }
+    .ind-card .ind-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform .4s; }
+    .ind-card:hover .ind-bg { transform: scale(1.06); }
+    .ind-card .ind-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(3,20,10,.85) 30%, rgba(3,20,10,.2) 100%); }
+    .ind-card .ind-body { position: absolute; bottom: 0; left: 0; right: 0; padding: var(--sp-4) var(--sp-4) var(--sp-5); }
+    .ind-card .ind-tag { display: inline-block; background: var(--teal-glow); color: var(--forest-deep); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: .2rem .6rem; border-radius: 100px; margin-bottom: var(--sp-2); }
+    .ind-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--white); line-height: 1.25; margin-bottom: .4rem; }
+    .ind-card p { font-size: .82rem; color: rgba(255,255,255,.7); line-height: 1.4; }
+
+    /* ── Process track ───────────────────────────── */
     .process-track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; margin-top: var(--sp-7); }
     .process-track::before { content: ''; position: absolute; top: 28px; left: calc(10% + 1rem); right: calc(10% + 1rem); height: 2px; background: linear-gradient(90deg, var(--teal-glow), var(--mint)); z-index: 0; }
     .process-step { text-align: center; padding: 0 var(--sp-3); position: relative; z-index: 1; }
-    .step-number { width: 56px; height: 56px; border-radius: 50%; background: var(--teal-pale); border: 2px solid var(--teal-glow); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sp-4); font-size: var(--ts-md); font-weight: 700; color: var(--teal-mid); transition: background var(--dur-med), color var(--dur-med); }
+    .step-number { width: 56px; height: 56px; border-radius: 50%; background: var(--teal-pale); border: 2px solid var(--teal-glow); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sp-4); font-size: var(--ts-md); font-weight: 700; color: var(--teal-mid); transition: background .2s, color .2s; }
     .process-step:hover .step-number { background: var(--teal-glow); color: var(--white); }
     .process-step h3 { font-size: var(--ts-sm); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
     .process-step p { font-size: .82rem; color: var(--txt-2); line-height: 1.6; }
 
-    /* ── Industries strip ────────────────────────────── */
-    .industry-strip { display: flex; flex-wrap: wrap; gap: var(--sp-3); justify-content: center; margin-top: var(--sp-6); }
-    .industry-tag { display: inline-flex; align-items: center; gap: .5rem; padding: .65rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; font-size: var(--ts-sm); font-weight: 600; color: var(--txt-2); text-decoration: none; transition: border-color var(--dur-fast), color var(--dur-fast), background var(--dur-fast); }
-    .industry-tag:hover { border-color: var(--teal-glow); color: var(--teal-mid); background: var(--teal-pale); }
-    .industry-tag svg { width: 18px; height: 18px; stroke: var(--teal-glow); fill: none; stroke-width: 1.8; flex-shrink: 0; }
-
-    /* ── Engagement models ───────────────────────────── */
+    /* ── Engagement models ───────────────────────── */
     .engage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-top: var(--sp-7); }
-    .engage-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med); }
+    .engage-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow .2s, transform .2s, border-color .2s; }
     .engage-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
     .engage-num { font-size: 2.5rem; font-weight: 300; color: var(--teal-glow); line-height: 1; margin-bottom: var(--sp-3); letter-spacing: -.03em; }
     .engage-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
@@ -822,8 +881,39 @@
     .engage-bullets li { font-size: .82rem; color: var(--txt-2); display: flex; align-items: flex-start; gap: .5rem; }
     .engage-bullets li::before { content: '✓'; color: var(--teal-glow); font-weight: 700; flex-shrink: 0; }
 
-    /* ── FAQ accordion ───────────────────────────────── */
-    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: var(--sp-6); }
+    /* ── Evaluate Data Strategy CTA ──────────────── */
+    .evaluate-band { background: var(--forest-deep); overflow: hidden; }
+    .evaluate-inner { display: grid; grid-template-columns: 1fr 400px; align-items: stretch; min-height: 320px; }
+    .evaluate-copy { padding: var(--sp-9) var(--sp-8); display: flex; flex-direction: column; justify-content: center; }
+    .evaluate-copy h2 { font-size: clamp(1.6rem,2.8vw,2.2rem); font-weight: 300; color: var(--white); margin-bottom: var(--sp-3); }
+    .evaluate-copy h2 strong { font-weight: 700; color: var(--teal-glow); }
+    .evaluate-copy p { font-size: var(--ts-md); color: rgba(255,255,255,.65); line-height: 1.7; max-width: 46ch; margin-bottom: var(--sp-6); }
+    .evaluate-img { position: relative; overflow: hidden; }
+
+    /* ── Why GreaterHeight ───────────────────────── */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-7) var(--sp-8); align-items: start; }
+    .why-copy h2 { font-size: clamp(1.6rem,2.8vw,2.2rem); font-weight: 300; color: var(--txt); margin-bottom: var(--sp-4); }
+    .why-copy h2 strong { font-weight: 700; color: var(--forest); }
+    .why-copy p { font-size: var(--ts-md); color: var(--txt-2); line-height: 1.75; margin-bottom: var(--sp-5); }
+    .why-reasons { display: flex; flex-direction: column; gap: var(--sp-4); }
+    .why-reason { display: flex; gap: var(--sp-4); align-items: flex-start; }
+    .why-reason-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .why-reason-icon svg { width: 22px; height: 22px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .why-reason h3 { font-size: var(--ts-sm); font-weight: 700; color: var(--txt); margin-bottom: .3rem; }
+    .why-reason p { font-size: .85rem; color: var(--txt-2); line-height: 1.6; }
+
+    /* ── IP Protection ───────────────────────────── */
+    .ip-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5); margin-bottom: var(--sp-7); }
+    .ip-card { text-align: center; padding: var(--sp-5); }
+    .ip-icon { width: 60px; height: 60px; border-radius: 16px; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sp-4); }
+    .ip-icon svg { width: 28px; height: 28px; stroke: var(--teal-glow); fill: none; stroke-width: 1.6; }
+    .ip-card h3 { font-size: var(--ts-sm); font-weight: 700; color: var(--white); margin-bottom: var(--sp-2); }
+    .ip-card p { font-size: .82rem; color: rgba(255,255,255,.6); line-height: 1.6; }
+    .compliance-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--sp-3); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,.12); }
+    .compliance-badge { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.15); border-radius: 8px; padding: .5rem 1.1rem; font-size: .78rem; font-weight: 700; color: rgba(255,255,255,.75); letter-spacing: .05em; }
+
+    /* ── FAQ accordion ───────────────────────────── */
+    .faq-list { display: flex; flex-direction: column; margin-top: var(--sp-6); }
     .faq-item { border-bottom: 1px solid var(--border); }
     .faq-item:first-child { border-top: 1px solid var(--border); }
     .faq-q { cursor: pointer; padding: 1.3rem 2.5rem 1.3rem 0; font-size: var(--ts-base); font-weight: 600; color: var(--txt); position: relative; list-style: none; user-select: none; line-height: 1.4; }
@@ -835,26 +925,33 @@
     .faq-a ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: .4rem; margin-bottom: var(--sp-2); }
     .faq-a ul li { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
 
-    /* ── CTA band extensions ─────────────────────────── */
-    .cta-band-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
-    .btn-ghost { display:inline-flex; align-items:center; gap:8px; padding:14px 28px; border:2px solid rgba(255,255,255,.55); color:var(--white); border-radius:8px; font-size:var(--ts-sm); font-weight:700; transition:border-color var(--dur-fast),background var(--dur-fast); white-space:nowrap; text-decoration:none; }
-    .btn-ghost:hover { border-color:var(--white); background:rgba(255,255,255,.12); }
-
-    /* ── Responsive ──────────────────────────────────── */
+    /* ── Responsive ──────────────────────────────── */
     @media (max-width: 1100px) {
-      .service-grid { grid-template-columns: repeat(2, 1fr); }
-      .tech-stack-grid { grid-template-columns: repeat(2, 1fr); }
-      .process-track { grid-template-columns: 1fr; gap: var(--sp-5); }
+      .service-grid      { grid-template-columns: repeat(2, 1fr); }
+      .tech-stack-grid   { grid-template-columns: repeat(2, 1fr); }
+      .ind-cards-grid    { grid-template-columns: repeat(2, 1fr); }
+      .ip-grid           { grid-template-columns: repeat(2, 1fr); }
+      .unlock-inner,
+      .evaluate-inner    { grid-template-columns: 1fr; }
+      .unlock-img,
+      .evaluate-img      { min-height: 260px; }
+      .why-grid          { grid-template-columns: 1fr; }
+      .process-track     { grid-template-columns: 1fr; gap: var(--sp-5); }
       .process-track::before { display: none; }
-      .step-number { margin: 0 0 var(--sp-3); }
-      .process-step { text-align: left; display: flex; gap: var(--sp-4); align-items: flex-start; }
+      .process-step      { text-align: left; display: flex; gap: var(--sp-4); align-items: flex-start; }
+      .step-number       { margin: 0; flex-shrink: 0; }
     }
     @media (max-width: 768px) {
-      .outcomes-grid { grid-template-columns: 1fr; }
-      .stats-row { grid-template-columns: repeat(2, 1fr); gap: var(--sp-5) var(--sp-6); }
-      .service-grid { grid-template-columns: 1fr; }
-      .tech-stack-grid { grid-template-columns: 1fr; }
-      .engage-grid { grid-template-columns: 1fr; }
+      .outcomes-grid     { grid-template-columns: 1fr; }
+      .stats-row         { grid-template-columns: repeat(2, 1fr); gap: var(--sp-5) var(--sp-6); }
+      .service-grid      { grid-template-columns: 1fr; }
+      .tech-stack-grid   { grid-template-columns: 1fr; }
+      .ind-cards-grid    { grid-template-columns: 1fr 1fr; }
+      .engage-grid       { grid-template-columns: 1fr; }
+      .ip-grid           { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .ind-cards-grid    { grid-template-columns: 1fr; }
     }
 
     /* ============================================================
@@ -1498,9 +1595,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <!-- ═══════════════════════════════════════════
-         HERO
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ HERO ════════ -->
     <section class="page-hero" aria-labelledby="hero-heading">
       <div class="page-hero-inner">
         <div class="hero-copy">
@@ -1508,22 +1603,13 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <h1 id="hero-heading">Data that answers<br><strong>business questions.</strong></h1>
           <p class="page-hero-lead">Analytics only has value when business teams can access it. GreaterHeight builds BI platforms and data models that put the right metrics in front of the right people — without requiring an analyst ticket for every question.</p>
           <div class="hero-meta" role="list">
-            <div class="hero-meta-item" role="listitem">
-              <span class="hero-meta-value">BI</span>
-              <span class="hero-meta-label">Platform Build</span>
-            </div>
-            <div class="hero-meta-item" role="listitem">
-              <span class="hero-meta-value">dbt</span>
-              <span class="hero-meta-label">Semantic Layer</span>
-            </div>
-            <div class="hero-meta-item" role="listitem">
-              <span class="hero-meta-value">Self</span>
-              <span class="hero-meta-label">-Service Access</span>
-            </div>
+            <div class="hero-meta-item"><span class="hero-meta-value">BI</span><span class="hero-meta-label">Platform Build</span></div>
+            <div class="hero-meta-item"><span class="hero-meta-value">dbt</span><span class="hero-meta-label">Semantic Layer</span></div>
+            <div class="hero-meta-item"><span class="hero-meta-value">Self</span><span class="hero-meta-label">-Service Access</span></div>
           </div>
           <div class="hero-ctas">
             <a href="/contact/" class="btn btn-primary">Discuss Analytics</a>
-            <a href="/what-we-do/data/warehouse/" class="btn-ghost-dark">Data Warehouse</a>
+            <a href="/what-we-do/data/warehouse/" class="btn-ghost-dark">Data Warehouse →</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -1541,13 +1627,25 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         BUSINESS OUTCOMES + STATS
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ LOGOS STRIP ════════ -->
+    <div class="logos-strip">
+      <div class="container">
+        <div class="logos-strip-inner">
+          <span class="logos-strip-label">Trusted by</span>
+          <div class="client-logo-ph"><img src="/assets/images/logos/waec-logo.png" alt="WAEC" onerror="this.style.display='none';this.parentElement.innerHTML+='<span>WAEC</span>'"></div>
+          <div class="client-logo-ph"><img src="/assets/images/logos/oa-group-logo.png" alt="OA Group" onerror="this.style.display='none';this.parentElement.innerHTML+='<span>OA Group</span>'"></div>
+          <div class="client-logo-ph"><img src="/assets/images/logos/client-3.png" alt="" onerror="this.style.display='none';this.parentElement.innerHTML+='<span>Client</span>'"></div>
+          <div class="client-logo-ph"><img src="/assets/images/logos/client-4.png" alt="" onerror="this.style.display='none';this.parentElement.innerHTML+='<span>Client</span>'"></div>
+          <div class="client-logo-ph"><img src="/assets/images/logos/client-5.png" alt="" onerror="this.style.display='none';this.parentElement.innerHTML+='<span>Client</span>'"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ OUTCOMES + STATS (dark) ════════ -->
     <section class="content-section bg-dark" aria-labelledby="outcomes-heading">
       <div class="container">
         <p class="section-label" style="color:var(--teal-glow);">Our Delivery Approach</p>
-        <h2 id="outcomes-heading" class="section-title light">Built Around Business Outcomes, Not Just Project Delivery</h2>
+        <h2 id="outcomes-heading" class="section-title light">Built Around Business Outcomes,<br>Not Just Project Delivery</h2>
         <p class="section-lead light">Most analytics initiatives fail not because organisations lack data, but because business priorities, governance, and data quality are never properly aligned.</p>
         <div class="outcomes-grid">
           <div class="outcome-card">
@@ -1564,39 +1662,25 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           </div>
         </div>
         <div class="stats-row">
-          <div class="stat-block">
-            <span class="stat-value">94<em>%</em></span>
-            <span class="stat-label">On-Time Delivery</span>
-          </div>
-          <div class="stat-block">
-            <span class="stat-value">45<em>%</em></span>
-            <span class="stat-label">Faster Reporting Cycles</span>
-          </div>
-          <div class="stat-block">
-            <span class="stat-value">48<em>h</em></span>
-            <span class="stat-label">Analytics Expert Matching</span>
-          </div>
-          <div class="stat-block">
-            <span class="stat-value">99<em>%</em></span>
-            <span class="stat-label">Data Accuracy Validation</span>
-          </div>
+          <div class="stat-block"><span class="stat-value">94<em>%</em></span><span class="stat-label">On-Time Delivery</span></div>
+          <div class="stat-block"><span class="stat-value">45<em>%</em></span><span class="stat-label">Faster Reporting Cycles</span></div>
+          <div class="stat-block"><span class="stat-value">48<em>h</em></span><span class="stat-label">Analytics Expert Matching</span></div>
+          <div class="stat-block"><span class="stat-value">99<em>%</em></span><span class="stat-label">Data Accuracy Validation</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         SIX SERVICES
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ SIX SERVICES ════════ -->
     <section class="content-section" aria-labelledby="services-heading">
       <div class="container">
         <p class="section-label">What We Deliver</p>
-        <h2 id="services-heading" class="section-title">Analytics &amp; BI Services</h2>
-        <p class="section-lead">Six analytics services designed to help organisations collect, understand, and use data to improve business performance — from strategy through to managed delivery.</p>
+        <h2 id="services-heading" class="section-title">Analytics &amp; BI Services for Smarter Decisions</h2>
+        <p class="section-lead">Six services designed to help organisations collect, understand, and use data to improve business performance — from strategy through to managed delivery.</p>
         <div class="service-grid">
           <article class="service-card">
             <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg></div>
             <h3>Analytics Strategy &amp; Planning</h3>
-            <p>Build the right foundation before investing in analytics infrastructure — aligning business objectives with data architecture and tooling.</p>
+            <p>Build the right foundation before investing in analytics infrastructure — aligning business objectives, data architecture, and tooling.</p>
             <ul class="service-bullets">
               <li>Business data assessment and gap analysis</li>
               <li>Analytics roadmap and KPI framework</li>
@@ -1608,7 +1692,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <article class="service-card">
             <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
             <h3>Data Engineering &amp; Integration</h3>
-            <p>Prepare reliable, high-quality data for reporting and advanced analytics — connecting all your business systems into a single, trusted source of truth.</p>
+            <p>Prepare reliable, high-quality data for reporting and advanced analytics — connecting all business systems into a single, trusted source.</p>
             <ul class="service-bullets">
               <li>ETL/ELT pipeline development</li>
               <li>Data cleansing and transformation</li>
@@ -1623,7 +1707,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
 <path d="M14 12h7v9h-7z"/>
 <path d="M3 16h7v5H3z"/></svg></div>
             <h3>Reporting &amp; Dashboard Services</h3>
-            <p>End-to-end delivery of BI platforms — from semantic layer design to executive dashboards — using the tool that fits your team and your stack.</p>
+            <p>End-to-end delivery of BI platforms — from semantic layer design to executive dashboards — using the tool that fits your team and stack.</p>
             <ul class="service-bullets">
               <li>Looker, Power BI, Tableau, Metabase, Superset</li>
               <li>Executive and operational dashboards</li>
@@ -1635,7 +1719,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <article class="service-card">
             <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
             <h3>Predictive &amp; Advanced Analytics</h3>
-            <p>Statistical models, machine learning, and cohort analysis to answer the questions that standard dashboards cannot — and to surface what is coming, not just what happened.</p>
+            <p>Statistical models, machine learning, and cohort analysis to answer the questions standard dashboards cannot — surfacing what is coming, not just what happened.</p>
             <ul class="service-bullets">
               <li>Forecasting and demand modelling</li>
               <li>Customer cohort and funnel analysis</li>
@@ -1671,9 +1755,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         TECHNOLOGY STACK
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ TECH STACK ════════ -->
     <section class="content-section bg-light" aria-labelledby="tech-heading">
       <div class="container">
         <p class="section-label">Our Stack</p>
@@ -1682,87 +1764,181 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
         <div class="tech-stack-grid">
           <div class="tech-category">
             <h3>BI &amp; Visualisation</h3>
-            <div class="tech-pills">
-            <span class="tech-pill">Power BI</span>
+            <div class="tech-pills">            <span class="tech-pill">Power BI</span>
             <span class="tech-pill">Looker</span>
             <span class="tech-pill">Tableau</span>
             <span class="tech-pill">Metabase</span>
             <span class="tech-pill">Apache Superset</span>
-            <span class="tech-pill">Qlik Sense</span>
-            </div>
+            <span class="tech-pill">Qlik Sense</span></div>
           </div>
 
           <div class="tech-category">
             <h3>Data Warehousing</h3>
-            <div class="tech-pills">
-            <span class="tech-pill">Snowflake</span>
+            <div class="tech-pills">            <span class="tech-pill">Snowflake</span>
             <span class="tech-pill">Google BigQuery</span>
             <span class="tech-pill">Amazon Redshift</span>
             <span class="tech-pill">Azure Synapse Analytics</span>
-            <span class="tech-pill">DuckDB</span>
-            </div>
+            <span class="tech-pill">DuckDB</span></div>
           </div>
 
           <div class="tech-category">
             <h3>Data Engineering &amp; ETL</h3>
-            <div class="tech-pills">
-            <span class="tech-pill">dbt</span>
+            <div class="tech-pills">            <span class="tech-pill">dbt</span>
             <span class="tech-pill">Apache Airflow</span>
             <span class="tech-pill">Apache Kafka</span>
             <span class="tech-pill">Apache Spark</span>
             <span class="tech-pill">Fivetran</span>
-            <span class="tech-pill">Airbyte</span>
-            </div>
+            <span class="tech-pill">Airbyte</span></div>
           </div>
 
           <div class="tech-category">
             <h3>Cloud Platforms</h3>
-            <div class="tech-pills">
-            <span class="tech-pill">Amazon Web Services</span>
+            <div class="tech-pills">            <span class="tech-pill">Amazon Web Services</span>
             <span class="tech-pill">Google Cloud Platform</span>
-            <span class="tech-pill">Microsoft Azure</span>
-            </div>
+            <span class="tech-pill">Microsoft Azure</span></div>
           </div>
 
           <div class="tech-category">
             <h3>Databases</h3>
-            <div class="tech-pills">
-            <span class="tech-pill">PostgreSQL</span>
+            <div class="tech-pills">            <span class="tech-pill">PostgreSQL</span>
             <span class="tech-pill">MySQL</span>
             <span class="tech-pill">SQL Server</span>
             <span class="tech-pill">MongoDB</span>
-            <span class="tech-pill">Redis</span>
-            </div>
+            <span class="tech-pill">Redis</span></div>
           </div>
 
           <div class="tech-category">
             <h3>AI &amp; Advanced Analytics</h3>
-            <div class="tech-pills">
-            <span class="tech-pill">Python (pandas, scikit-learn)</span>
+            <div class="tech-pills">            <span class="tech-pill">Python (pandas / scikit-learn)</span>
             <span class="tech-pill">Jupyter</span>
             <span class="tech-pill">TensorFlow</span>
             <span class="tech-pill">OpenAI API</span>
-            <span class="tech-pill">Databricks</span>
-            </div>
+            <span class="tech-pill">Databricks</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         PROCESS
-    ══════════════════════════════════════════════ -->
-    <section class="content-section" aria-labelledby="process-heading">
+    <!-- ════════ UNLOCK INSIGHTS mid-CTA with image ════════ -->
+    <section class="unlock-band" aria-labelledby="unlock-heading">
+      <div class="unlock-inner">
+        <div class="unlock-copy">
+          <p class="section-label" style="color:var(--teal-glow);">Discover What Your Data Can Do</p>
+          <h2 id="unlock-heading">Unlock <strong>Better Business Insights</strong></h2>
+          <p>Discover how your data can improve decisions, efficiency, and business performance — with an analytics foundation built to last.</p>
+          <div class="hero-ctas">
+            <a href="/contact/" class="btn btn-primary">Talk to an Expert</a>
+            <a href="/what-we-do/data/" class="btn-ghost">All Data Services</a>
+          </div>
+        </div>
+        <div class="unlock-img img-ph" style="background-image:url('/assets/images/analytics/unlock-insights.jpg');" role="presentation">
+          <span class="img-ph-label">/assets/images/analytics/unlock-insights.jpg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ INDUSTRIES (image cards) ════════ -->
+    <section class="content-section" aria-labelledby="ind-heading">
+      <div class="container">
+        <p class="section-label">Sectors</p>
+        <h2 id="ind-heading" class="section-title">Industries We Cater To</h2>
+        <p class="section-lead">We deliver analytics solutions across the industries where data complexity is highest and business insight has the most direct impact on performance.</p>
+        <div class="ind-cards-grid">
+          <a href="/industries/financial-technology/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/fintech.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Financial Technology</h3>
+              <p>Faster, safer, smarter financial decisions</p>
+            </div>
+          </a>
+
+          <a href="/industries/healthcare/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/healthcare.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Healthcare</h3>
+              <p>Data-driven care across every touchpoint</p>
+            </div>
+          </a>
+
+          <a href="/industries/retail-ecommerce/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/e-commerce.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Retail &amp; eCommerce</h3>
+              <p>Unified commerce analytics at scale</p>
+            </div>
+          </a>
+
+          <a href="/industries/logistics/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/logistics.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Logistics</h3>
+              <p>Real-time visibility across supply chains</p>
+            </div>
+          </a>
+
+          <a href="/industries/education-elearning/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/education.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Education</h3>
+              <p>Insight into every stage of the learner journey</p>
+            </div>
+          </a>
+
+          <a href="/industries/media-entertainment/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/analytics/media-analytics.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Media &amp; Entertainment</h3>
+              <p>Audience intelligence and content analytics</p>
+            </div>
+          </a>
+
+          <a href="/who-we-serve/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/banking.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Banking</h3>
+              <p>Compliance, risk, and performance analytics</p>
+            </div>
+          </a>
+
+          <a href="/who-we-serve/for-enterprises/" class="ind-card">
+            <div class="ind-bg img-ph" style="background-image:url('/assets/images/industries/enterprise.jpg');position:absolute;inset:0;"></div>
+            <div class="ind-overlay"></div>
+            <div class="ind-body">
+              <span class="ind-tag">Analytics</span>
+              <h3>Enterprise</h3>
+              <p>Org-wide data governance and BI strategy</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ PROCESS ════════ -->
+    <section class="content-section bg-light" aria-labelledby="process-heading">
       <div class="container">
         <p class="section-label">How We Work</p>
-        <h2 id="process-heading" class="section-title">Our Analytics Process</h2>
+        <h2 id="process-heading" class="section-title">Our Analytics Delivery Process</h2>
         <p class="section-lead">A structured five-step approach that turns raw data into reliable insights — and reliable insights into measurable business outcomes.</p>
         <div class="process-track">
           <div class="process-step">
             <div class="step-number">01</div>
             <div>
               <h3>Discover</h3>
-              <p>Understand business goals, identify data sources, and define the KPIs and success metrics that matter.</p>
+              <p>Understand business goals, identify data sources, and define the KPIs and success metrics that matter most.</p>
             </div>
           </div>
 
@@ -1801,73 +1977,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         INDUSTRIES
-    ══════════════════════════════════════════════ -->
-    <section class="content-section bg-light" aria-labelledby="industries-heading">
-      <div class="container" style="text-align:center;">
-        <p class="section-label">Sectors</p>
-        <h2 id="industries-heading" class="section-title">Industries We Serve</h2>
-        <p class="section-lead" style="margin-left:auto;margin-right:auto;">We deliver analytics solutions across the industries where data complexity is highest and business insight has the most direct impact on performance.</p>
-        <div class="industry-strip">
-          <a href="/industries/financial-technology/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
-            Financial Technology
-          </a>
-
-          <a href="/industries/healthcare/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            Healthcare
-          </a>
-
-          <a href="/industries/retail-ecommerce/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-<path d="M3 6h18"/>
-<path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            Retail &amp; eCommerce
-          </a>
-
-          <a href="/industries/logistics/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1 3h15v13H1z"/>
-<path d="M16 8h4l3 3v5h-7V8z"/>
-<path d="M5.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-<path d="M18.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
-            Logistics
-          </a>
-
-          <a href="/industries/education-elearning/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-            Education &amp; e-Learning
-          </a>
-
-          <a href="/industries/media-entertainment/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23 7l-7 5 7 5V7z"/>
-<path d="M1 5h15v14H1z"/></svg>
-            Media &amp; Entertainment
-          </a>
-
-          <a href="/who-we-serve/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-<path d="M9 22V12h6v10"/></svg>
-            Government
-          </a>
-
-          <a href="/industries/real-estate/" class="industry-tag">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 7h-9"/>
-<path d="M14 17H5"/>
-<path d="M17 17h.01"/>
-<path d="M17 11h.01"/>
-<path d="M17 5h.01"/></svg>
-            Real Estate
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════
-         ENGAGEMENT MODELS
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ ENGAGEMENT MODELS ════════ -->
     <section class="content-section" aria-labelledby="engage-heading">
       <div class="container">
         <p class="section-label">How to Engage</p>
@@ -1878,35 +1988,145 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
             <div class="engage-num">01</div>
             <h3>Project-Based Delivery</h3>
             <p>A defined scope, timeline, and cost — for organisations with a clear analytics objective they need delivered end-to-end.</p>
-            <ul class="engage-bullets">
-              <li>Fixed-price or time-and-materials</li><li>Dedicated delivery team</li><li>Full handover and documentation</li><li>Post-launch support window</li>
-            </ul>
+            <ul class="engage-bullets"><li>Fixed-price or time-and-materials</li><li>Dedicated delivery team</li><li>Full handover and documentation</li><li>Post-launch support window</li></ul>
           </div>
 
           <div class="engage-card">
             <div class="engage-num">02</div>
             <h3>Managed Analytics Retainer</h3>
             <p>Ongoing analytics development and maintenance on a monthly retainer — the equivalent of an in-house analytics function without the headcount.</p>
-            <ul class="engage-bullets">
-              <li>Monthly development hours guaranteed</li><li>Prioritised backlog management</li><li>Data quality monitoring and SLAs</li><li>Quarterly strategy and roadmap review</li>
-            </ul>
+            <ul class="engage-bullets"><li>Monthly development hours guaranteed</li><li>Prioritised backlog management</li><li>Data quality monitoring and SLAs</li><li>Quarterly strategy and roadmap review</li></ul>
           </div>
 
           <div class="engage-card">
             <div class="engage-num">03</div>
             <h3>Staff Augmentation</h3>
             <p>Embed one or more of our analytics engineers directly into your team — using your tools, your stack, and your processes.</p>
-            <ul class="engage-bullets">
-              <li>Analytics engineers and BI developers</li><li>Data engineers and dbt specialists</li><li>Scales up and down as workload changes</li><li>Works inside your existing delivery workflow</li>
-            </ul>
+            <ul class="engage-bullets"><li>Analytics engineers and BI developers</li><li>Data engineers and dbt specialists</li><li>Scales up and down with workload</li><li>Works inside your existing delivery workflow</li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         FAQ
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ EVALUATE CTA with person image ════════ -->
+    <section class="evaluate-band" aria-labelledby="evaluate-heading">
+      <div class="evaluate-inner">
+        <div class="evaluate-copy">
+          <p class="section-label" style="color:var(--teal-glow);">Book a Free Session</p>
+          <h2 id="evaluate-heading">Evaluate Your <strong>Data Strategy</strong></h2>
+          <p>Identify data gaps, improve your reporting, and build a roadmap for better analytics — in a free, no-obligation strategy session with our data team.</p>
+          <div class="hero-ctas">
+            <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
+          </div>
+        </div>
+        <div class="evaluate-img img-ph" style="background-image:url('/assets/images/analytics/data-strategy-expert.jpg');" role="presentation">
+          <span class="img-ph-label">/assets/images/analytics/data-strategy-expert.jpg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ WHY GREATERHEIGHT ════════ -->
+    <section class="content-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-copy">
+            <p class="section-label">Why Us</p>
+            <h2 id="why-heading">Why Work With GreaterHeight for <strong>Data Analytics?</strong></h2>
+            <p>Backed by 14+ years of technology delivery experience, we help businesses across Africa and beyond unlock the full value of their data through reliable analytics solutions that combine technical expertise with business understanding.</p>
+            <a href="/who-we-are/" class="btn btn-primary" style="margin-top:var(--sp-2);">About GreaterHeight</a>
+          </div>
+          <div class="why-reasons">
+            <div class="why-reason">
+              <div class="why-reason-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+              <div>
+                <h3>Built for African Business Realities</h3>
+                <p>We understand the infrastructure constraints, data quality challenges, and connectivity limitations that affect analytics in Nigerian and African markets — and we build for them.</p>
+              </div>
+            </div>
+            <div class="why-reason">
+              <div class="why-reason-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
+              <div>
+                <h3>Business-Aligned, Not Tech-First</h3>
+                <p>Every analytics engagement starts with the decisions your business needs to make, not the tools we prefer to use. The technology follows the outcome.</p>
+              </div>
+            </div>
+            <div class="why-reason">
+              <div class="why-reason-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+<path d="M9 7a4 4 0 1 0 8 0 4 4 0 0 0-8 0"/>
+<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+<path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div>
+                <h3>14+ Years of Delivery Track Record</h3>
+                <p>Founded in 2010, we have delivered analytics and data projects across fintech, healthcare, logistics, and enterprise — with client relationships that span years, not engagements.</p>
+              </div>
+            </div>
+            <div class="why-reason">
+              <div class="why-reason-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
+<path d="M12 6v6l4 2"/></svg></div>
+              <div>
+                <h3>Transparent Delivery Process</h3>
+                <p>Fixed timelines, clear milestones, and regular reporting — you always know where the project stands and what comes next.</p>
+              </div>
+            </div>
+            <div class="why-reason">
+              <div class="why-reason-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/>
+<path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
+<path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></div>
+              <div>
+                <h3>Full IP Ownership, NDA Before Work</h3>
+                <p>Everything we build belongs to you. We sign a non-disclosure agreement before work begins and transfer all intellectual property upon project completion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ IP PROTECTION (dark) ════════ -->
+    <section class="content-section bg-dark" aria-labelledby="ip-heading">
+      <div class="container">
+        <p class="section-label" style="color:var(--teal-glow);">Compliance &amp; Security</p>
+        <h2 id="ip-heading" class="section-title light">Your Data, Insights, and IP Protected From Day One</h2>
+        <p class="section-lead light">We operate to enterprise-grade security and data governance standards — giving you full confidence in every engagement.</p>
+        <div class="ip-grid">
+          <div class="ip-card">
+            <div class="ip-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Complete IP Ownership</h3>
+            <p>Every data model, dashboard, pipeline, report, and implementation artefact remains your property. NDA signed before work begins.</p>
+          </div>
+
+          <div class="ip-card">
+            <div class="ip-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+<path d="M1 1l22 22"/></svg></div>
+            <h3>Zero Data Retention Policy</h3>
+            <p>Your business data and analytics assets never enter AI training pipelines. Enterprise AI tools are used under zero-data-retention agreements.</p>
+          </div>
+
+          <div class="ip-card">
+            <div class="ip-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 11H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2z"/>
+<path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <h3>Secure Data Practices</h3>
+            <p>Encrypted data transfer, role-based access control, and audit logging on all production analytics environments we build and manage.</p>
+          </div>
+
+          <div class="ip-card">
+            <div class="ip-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div>
+            <h3>Enterprise-Grade Compliance</h3>
+            <p>We build to industry compliance standards — GDPR, NDPR, SOC 2 readiness, ISO 27001 alignment, and sector-specific requirements where applicable.</p>
+          </div>
+        </div>
+        <div class="compliance-badges">
+          <span class="compliance-badge">GDPR</span>
+          <span class="compliance-badge">NDPR</span>
+          <span class="compliance-badge">SOC 2 Ready</span>
+          <span class="compliance-badge">ISO 27001 Aligned</span>
+          <span class="compliance-badge">NDA on Day One</span>
+          <span class="compliance-badge">Zero Data Retention</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════ FAQ ════════ -->
     <section class="content-section bg-light" aria-labelledby="faq-heading">
       <div class="container">
         <p class="section-label">Common Questions</p>
@@ -1914,67 +2134,41 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
         <div class="faq-list">
         <details class="faq-item">
           <summary class="faq-q">How do you approach a data analytics implementation project?</summary>
-          <div class="faq-a">
-            <p>Every engagement starts with understanding your business goals, your existing data landscape, and the decisions you need analytics to support. We focus on building solutions that deliver reliable business insights, not just dashboards.</p>
-<ul>
-  <li>Assess existing data sources and business needs</li>
-  <li>Design scalable analytics architecture</li>
-  <li>Validate insights before deployment</li>
-</ul>
-          </div>
+          <div class="faq-a"><p>Every engagement starts with understanding your business goals, your existing data landscape, and the decisions you need analytics to support.</p>
+        <ul><li>Assess existing data sources and business needs</li><li>Design scalable analytics architecture</li><li>Validate insights before deployment</li></ul></div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-q">Can you modernise our legacy reporting and analytics systems?</summary>
-          <div class="faq-a">
-            <p>Yes. We help organisations modernise outdated analytics platforms without disrupting live business operations.</p>
-<ul>
-  <li>Upgrade legacy reporting environments to modern BI tools</li>
-  <li>Migrate analytics workloads to the cloud</li>
-  <li>Improve performance, scalability, and data freshness</li>
-</ul>
-          </div>
+          <div class="faq-a"><p>Yes. We help organisations upgrade outdated analytics platforms without disrupting live operations.</p>
+        <ul><li>Migrate legacy reporting to modern BI tools</li><li>Migrate analytics workloads to the cloud</li><li>Improve performance, scalability, and data freshness</li></ul></div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-q">Which BI tools do you work with?</summary>
-          <div class="faq-a">
-            <p>We work with Power BI, Looker, Tableau, Metabase, and Apache Superset — and we select the tool that fits your team's technical comfort and your budget, not the one that generates the most consulting revenue for us. We also implement dbt for the semantic layer that underpins whichever tool you use.</p>
-          </div>
+          <div class="faq-a"><p>We work with Power BI, Looker, Tableau, Metabase, and Apache Superset — and we select the tool that fits your team's technical comfort and your budget, not the one that generates the most consulting revenue for us. We also implement dbt for the semantic layer that underpins whichever tool you choose.</p></div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-q">How do you ensure data quality in analytics projects?</summary>
-          <div class="faq-a">
-            <p>Data quality is built into the pipeline, not checked at the end. We use dbt tests for model validation, monitoring for schema changes and pipeline failures, and business-logic tests that catch discrepancies before they reach a dashboard.</p>
-<ul>
-  <li>dbt schema and business logic tests</li>
-  <li>Pipeline monitoring and alerting</li>
-  <li>Data quality SLAs for managed retainer clients</li>
-</ul>
-          </div>
+          <div class="faq-a"><p>Data quality is built into the pipeline, not checked at the end. We use dbt tests for model validation, monitoring for schema changes and pipeline failures, and business-logic tests that catch discrepancies before they reach a dashboard.</p>
+        <ul><li>dbt schema and business logic tests</li><li>Pipeline monitoring and alerting</li><li>Data quality SLAs for managed retainer clients</li></ul></div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-q">Can you integrate data from multiple business systems?</summary>
-          <div class="faq-a">
-            <p>Yes. Integrating disparate data sources — ERP, CRM, marketing platforms, payment systems, custom applications — is typically the first and most critical step in any analytics project. We use Fivetran, Airbyte, and custom-built connectors to centralise data reliably.</p>
-          </div>
+          <div class="faq-a"><p>Yes. Integrating disparate data sources — ERP, CRM, marketing platforms, payment systems, custom applications — is typically the first and most critical step in any analytics project. We use Fivetran, Airbyte, and custom-built connectors to centralise data reliably.</p></div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-q">Who owns the data models, dashboards, and code you build?</summary>
-          <div class="faq-a">
-            <p>Everything we build — data models, dbt code, dashboard definitions, pipeline scripts, and documentation — belongs to you. We sign an NDA before work begins, and all intellectual property transfers to your organisation upon final payment.</p>
-          </div>
+          <div class="faq-a"><p>Everything we build — data models, dbt code, dashboard definitions, pipeline scripts, and documentation — belongs to you. We sign an NDA before work begins, and all intellectual property transfers to your organisation upon final payment.</p></div>
         </details>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         CTA BAND
-    ══════════════════════════════════════════════ -->
+    <!-- ════════ CTA BAND ════════ -->
     <section class="cta-band" aria-labelledby="cta-heading">
       <div class="cta-band-inner">
         <div>
@@ -1989,6 +2183,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     </section>
 
   </main>
+
 
 
   <!-- ============================================================
