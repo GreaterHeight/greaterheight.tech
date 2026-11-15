@@ -734,6 +734,29 @@
     @media (max-width:900px) { .feature-grid.grid-3 { grid-template-columns:1fr 1fr; } }
     @media (max-width:600px) { .feature-grid.grid-3 { grid-template-columns:1fr; } }
 
+    /* ── Story / Case-study cards (matches home page) ──── */
+    .stories-grid { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:auto auto; gap:1.25rem; }
+    .story-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--r); overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .2s; }
+    .story-card:hover { box-shadow:0 12px 40px rgba(0,0,0,.08); }
+    .story-card--featured { grid-row:span 2; }
+    .story-img { background:linear-gradient(135deg,var(--forest) 0%,var(--teal-mid) 100%); aspect-ratio:16/9; position:relative; overflow:hidden; }
+    .story-card--featured .story-img { aspect-ratio:4/3; }
+    .story-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+    .story-img-overlay { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.05); }
+    .story-img-overlay svg { width:48px; height:48px; stroke:rgba(255,255,255,.2); fill:none; stroke-width:.8; }
+    .story-body { padding:1.4rem 1.5rem 1.6rem; display:flex; flex-direction:column; flex:1; }
+    .story-card h3 { font-family:var(--font); font-size:1.1rem; font-weight:300; color:var(--forest); margin-bottom:.5rem; line-height:1.3; }
+    .story-card--featured h3 { font-size:1.35rem; }
+    .story-card p { font-size:.88rem; color:var(--txt-2); line-height:1.65; margin-bottom:.8rem; }
+    .story-meta { display:flex; gap:.6rem; flex-wrap:wrap; margin-bottom:.7rem; }
+    .story-tag { font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; background:var(--teal-lite); color:var(--teal); padding:.2rem .6rem; border-radius:100px; }
+    .story-link { font-family:var(--font); font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; color:var(--cr); margin-top:auto; }
+    .story-link:hover { text-decoration:underline; }
+    .story-outcomes { margin:.6rem 0 .8rem; padding-left:1.1rem; }
+    .story-outcomes li { font-size:.82rem; color:var(--txt-2); line-height:1.6; margin-bottom:.25rem; }
+    .story-outcomes li::marker { color:var(--teal-glow); }
+    @media (max-width:700px) { .stories-grid { grid-template-columns:1fr; } .story-card--featured { grid-row:auto; } }
+
     /* ============================================================
        COOKIE BANNER
     ============================================================ */
@@ -1380,16 +1403,16 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
             <p class="page-hero-lead">Honest accounts of the challenges our clients faced, the approach we took, and the results we delivered — with the specificity that makes them useful to businesses facing similar problems.</p>
             <div class="hero-meta" style="margin-top:var(--sp-5);">
               <div class="hero-meta-item">
+                <span class="hero-meta-value">3</span>
+                <span class="hero-meta-label">Featured Studies</span>
+              </div>
+              <div class="hero-meta-item">
                 <span class="hero-meta-value">10<em>+</em></span>
                 <span class="hero-meta-label">Sectors Served</span>
               </div>
               <div class="hero-meta-item">
                 <span class="hero-meta-value">14<em>+</em></span>
                 <span class="hero-meta-label">Years of Delivery</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">NG</span>
-                <span class="hero-meta-label">to Global</span>
               </div>
             </div>
             <div class="hero-ctas">
@@ -1399,16 +1422,16 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <div class="hero-visual">
             <div class="hero-card-stack">
               <div class="hero-fact-card">
-                <div class="fact-label">Honest Accounts</div>
-                <p>We document what we actually built, the technical decisions we made, the constraints we navigated, and the results we delivered.</p>
-              </div>
-              <div class="hero-fact-card">
                 <div class="fact-label">Specific, Not Generic</div>
-                <p>Each case study names the problem, the technical approach, the tools used, and the measurable outcome — not marketing language.</p>
+                <p>We document the technical decisions, constraints, and measurable outcomes — not marketing language.</p>
               </div>
               <div class="hero-fact-card">
                 <div class="fact-label">Reference Clients</div>
-                <p>We can arrange introductions to reference clients in your sector for businesses evaluating us as a technology partner.</p>
+                <p>We can arrange introductions to reference clients in your sector for businesses evaluating us as a partner.</p>
+              </div>
+              <div class="hero-fact-card">
+                <div class="fact-label">Nigeria to Global</div>
+                <p>Projects delivered across Nigeria, East Africa, and international markets from our Lagos engineering base.</p>
               </div>
             </div>
           </div>
@@ -1416,36 +1439,88 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <section class="content-section bg-light">
+    <section class="content-section bg-light" aria-labelledby="cs-featured">
       <div class="container">
-        <span class="section-label">Our Work</span>
-        <h2 class="section-heading">Projects That Prove What We Can Do</h2>
-        <p style="color:var(--txt-2);line-height:1.75;max-width:72ch;margin-bottom:var(--sp-7);">Our case studies are drawn from over a decade of project delivery across Nigeria, Africa, and international markets. Contact us to receive the full case study library or to discuss a reference client in your sector.</p>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
-            <h3>Financial Technology</h3>
-            <p>Core banking integration, digital payments, lending platforms, investment portals, and regulatory-compliant financial infrastructure for fintechs, banks, and neobanks.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Healthcare & Life Sciences</h3>
-            <p>Patient management systems, clinical record platforms, telemedicine portals, lab data systems, and health data integration for hospitals, clinics, and health-tech providers.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Education & e-Learning</h3>
-            <p>Learning management systems, digital certification platforms, student portals, and institutional ERP implementations for universities, schools, and EdTech companies.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Logistics & Supply Chain</h3>
-            <p>Fleet tracking, warehouse management, last-mile delivery systems, and shipment visibility platforms for logistics operators and enterprise supply chains.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Enterprise Digital Transformation</h3>
-            <p>Legacy system modernisation, cloud migration, process automation, ERP implementation, and organisation-wide digital transformation programmes for mid-market and enterprise clients.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Government & Public Sector</h3>
-            <p>E-government platforms, public records management, civil service systems, and digital service delivery projects for federal, state, and local government agencies.</p>
-          </article>
+        <span class="section-label">Featured Work</span>
+        <h2 id="cs-featured" style="font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:var(--txt);margin-bottom:var(--sp-3);">Projects That Prove What We Can Do</h2>
+        <p style="color:var(--txt-2);line-height:1.75;max-width:72ch;margin-bottom:var(--sp-7);">Three engagements from across our portfolio — each documented at the level of technical detail and business outcome that makes them useful to teams evaluating us.</p>
+
+        <div class="stories-grid">
+
+          <!-- FEATURED: Fintech Platform -->
+          <div class="story-card story-card--featured">
+            <div class="story-img" style="background:linear-gradient(135deg,#0D3D28 0%,#1A7A5E 100%);">
+              <img src="/assets/images/case-studies/fintech-platform.jpg" alt="Next-Generation Fintech Platform" loading="lazy" onerror="this.style.display='none'">
+              <div class="story-img-overlay">
+                <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+            </div>
+            <div class="story-body">
+              <div class="story-meta">
+                <span class="story-tag">Fintech</span>
+                <span class="story-tag">AI</span>
+                <span class="story-tag">Mobile</span>
+              </div>
+              <h3>Next-Generation Fintech Platform Serving 2M+ Users</h3>
+              <p>A leading African payments company needed to rebuild their core transaction engine to handle 10× volume growth without disrupting live transaction processing for existing customers.</p>
+              <ul class="story-outcomes">
+                <li>Microservices architecture designed and shipped in 18 weeks</li>
+                <li>Transaction latency reduced by 67%</li>
+                <li>Platform scaled to support 2 million concurrent users</li>
+                <li>Zero downtime migration from the legacy monolith</li>
+              </ul>
+              <a href="/case-studies/fintech-platform" class="story-link">Read Full Case Study →</a>
+            </div>
+          </div>
+
+          <!-- AI Telehealth -->
+          <div class="story-card">
+            <div class="story-img" style="background:linear-gradient(135deg,#8C0D0C 0%,#005A3C 100%);aspect-ratio:16/9;">
+              <img src="/assets/images/case-studies/ai-telehealth.jpg" alt="AI Telehealth Platform for Rural Diagnostics" loading="lazy" onerror="this.style.display='none'">
+              <div class="story-img-overlay">
+                <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+            </div>
+            <div class="story-body">
+              <div class="story-meta">
+                <span class="story-tag">Healthcare</span>
+                <span class="story-tag">AI</span>
+              </div>
+              <h3>AI Telehealth Platform for Rural Diagnostics</h3>
+              <p>Built an offline-capable telehealth app with AI-assisted triage for healthcare workers in low-connectivity environments across three African countries.</p>
+              <ul class="story-outcomes">
+                <li>Offline-first architecture with conflict-free sync</li>
+                <li>AI triage reducing unnecessary referrals by 40%</li>
+                <li>Deployed across clinics in Nigeria, Kenya, and Ghana</li>
+              </ul>
+              <a href="/case-studies/ai-telehealth" class="story-link">Read Case Study →</a>
+            </div>
+          </div>
+
+          <!-- Salon Booking -->
+          <div class="story-card">
+            <div class="story-img" style="background:linear-gradient(135deg,#1A7A5E 0%,#C9A84C 100%);aspect-ratio:16/9;">
+              <img src="/assets/images/case-studies/salon-booking.jpg" alt="Real-Time Salon Booking &amp; POS Platform" loading="lazy" onerror="this.style.display='none'">
+              <div class="story-img-overlay">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+            </div>
+            <div class="story-body">
+              <div class="story-meta">
+                <span class="story-tag">SaaS</span>
+                <span class="story-tag">Real-Time</span>
+              </div>
+              <h3>Real-Time Salon Booking &amp; POS Platform</h3>
+              <p>A multi-location beauty business needed one platform for appointments, POS, inventory, and staff management across all branches.</p>
+              <ul class="story-outcomes">
+                <li>Custom React Native app delivered in 12 weeks</li>
+                <li>Real-time booking, POS, inventory, and staff scheduling in one system</li>
+                <li>Reduced no-shows by 35% through automated reminders</li>
+              </ul>
+              <a href="/case-studies/salon-booking" class="story-link">Read Case Study →</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1465,6 +1540,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
   </main>
+
 
 
   <!-- ============================================================
