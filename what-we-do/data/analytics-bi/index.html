@@ -752,6 +752,112 @@
     .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
 
     /* ============================================================
+       ANALYTICS-BI PAGE — ENHANCED COMPONENTS
+    ============================================================ */
+
+    /* ── Shared layout helpers ───────────────────────── */
+    .content-section          { padding: var(--sp-9) 0; }
+    .content-section.bg-light { background: var(--bg-alt); }
+    .content-section.bg-dark  { background: var(--forest); }
+    .section-lead { font-size: var(--ts-md); color: var(--txt-2); line-height: 1.75; max-width: 70ch; margin: var(--sp-3) 0 var(--sp-7); }
+    .section-lead.light { color: rgba(255,255,255,.75); }
+    .hero-ctas { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-5); }
+    .btn-ghost-dark { display:inline-flex; align-items:center; gap:8px; padding:12px 24px; border:2px solid var(--border); color:var(--txt); border-radius:8px; font-size:var(--ts-sm); font-weight:700; transition:border-color var(--dur-fast),background var(--dur-fast); text-decoration:none; }
+    .btn-ghost-dark:hover { border-color:var(--teal-glow); color:var(--teal-glow); }
+
+    /* ── Outcomes section (dark forest bg) ──────────── */
+    .outcomes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-bottom: var(--sp-8); }
+    .outcome-card { border: 1px solid rgba(255,255,255,.12); border-left: 3px solid var(--teal-glow); border-radius: 0 12px 12px 0; padding: var(--sp-5) var(--sp-5); background: rgba(255,255,255,.04); transition: background var(--dur-med); }
+    .outcome-card:hover { background: rgba(255,255,255,.07); }
+    .outcome-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--white); margin-bottom: var(--sp-2); }
+    .outcome-card p { font-size: var(--ts-sm); color: rgba(255,255,255,.65); line-height: 1.65; }
+    .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5); padding-top: var(--sp-6); border-top: 1px solid rgba(255,255,255,.12); }
+    .stat-block { text-align: center; }
+    .stat-value { display: block; font-size: clamp(2rem,3.5vw,3rem); font-weight: 300; color: var(--teal-glow); line-height: 1; margin-bottom: .4rem; letter-spacing: -.02em; }
+    .stat-value em { font-style: normal; color: var(--mint); font-size: .7em; }
+    .stat-label { font-size: var(--ts-xs); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+
+    /* ── Services grid ───────────────────────────────── */
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); }
+    .service-card { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--teal-glow); border-radius: 0 0 14px 14px; padding: var(--sp-6); display: flex; flex-direction: column; transition: box-shadow var(--dur-med), transform var(--dur-med); }
+    .service-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); }
+    .service-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); }
+    .service-icon svg { width: 24px; height: 24px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
+    .service-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .service-card > p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; margin-bottom: var(--sp-3); }
+    .service-bullets { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .4rem; }
+    .service-bullets li { font-size: .8rem; color: var(--txt-2); display: flex; align-items: flex-start; gap: .5rem; line-height: 1.4; }
+    .service-bullets li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--teal-glow); margin-top: .35rem; flex-shrink: 0; }
+
+    /* ── Tech stack ──────────────────────────────────── */
+    .tech-stack-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); }
+    .tech-category h3 { font-size: var(--ts-sm); font-weight: 700; color: var(--txt); text-transform: uppercase; letter-spacing: .07em; margin-bottom: var(--sp-3); padding-bottom: var(--sp-2); border-bottom: 2px solid var(--teal-glow); }
+    .tech-pills { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+    .tech-pill { background: var(--bg-card); border: 1px solid var(--border); border-radius: 100px; padding: .3rem .85rem; font-size: .8rem; font-weight: 600; color: var(--txt-2); transition: border-color var(--dur-fast), color var(--dur-fast); }
+    .tech-pill:hover { border-color: var(--teal-glow); color: var(--teal-mid); }
+
+    /* ── Process track ───────────────────────────────── */
+    .process-track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; position: relative; margin-top: var(--sp-7); }
+    .process-track::before { content: ''; position: absolute; top: 28px; left: calc(10% + 1rem); right: calc(10% + 1rem); height: 2px; background: linear-gradient(90deg, var(--teal-glow), var(--mint)); z-index: 0; }
+    .process-step { text-align: center; padding: 0 var(--sp-3); position: relative; z-index: 1; }
+    .step-number { width: 56px; height: 56px; border-radius: 50%; background: var(--teal-pale); border: 2px solid var(--teal-glow); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sp-4); font-size: var(--ts-md); font-weight: 700; color: var(--teal-mid); transition: background var(--dur-med), color var(--dur-med); }
+    .process-step:hover .step-number { background: var(--teal-glow); color: var(--white); }
+    .process-step h3 { font-size: var(--ts-sm); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .process-step p { font-size: .82rem; color: var(--txt-2); line-height: 1.6; }
+
+    /* ── Industries strip ────────────────────────────── */
+    .industry-strip { display: flex; flex-wrap: wrap; gap: var(--sp-3); justify-content: center; margin-top: var(--sp-6); }
+    .industry-tag { display: inline-flex; align-items: center; gap: .5rem; padding: .65rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; font-size: var(--ts-sm); font-weight: 600; color: var(--txt-2); text-decoration: none; transition: border-color var(--dur-fast), color var(--dur-fast), background var(--dur-fast); }
+    .industry-tag:hover { border-color: var(--teal-glow); color: var(--teal-mid); background: var(--teal-pale); }
+    .industry-tag svg { width: 18px; height: 18px; stroke: var(--teal-glow); fill: none; stroke-width: 1.8; flex-shrink: 0; }
+
+    /* ── Engagement models ───────────────────────────── */
+    .engage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-5); margin-top: var(--sp-7); }
+    .engage-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: var(--sp-6); transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med); }
+    .engage-card:hover { box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--teal-glow); }
+    .engage-num { font-size: 2.5rem; font-weight: 300; color: var(--teal-glow); line-height: 1; margin-bottom: var(--sp-3); letter-spacing: -.03em; }
+    .engage-card h3 { font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2); }
+    .engage-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.65; margin-bottom: var(--sp-4); }
+    .engage-bullets { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .4rem; }
+    .engage-bullets li { font-size: .82rem; color: var(--txt-2); display: flex; align-items: flex-start; gap: .5rem; }
+    .engage-bullets li::before { content: '✓'; color: var(--teal-glow); font-weight: 700; flex-shrink: 0; }
+
+    /* ── FAQ accordion ───────────────────────────────── */
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: var(--sp-6); }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-q { cursor: pointer; padding: 1.3rem 2.5rem 1.3rem 0; font-size: var(--ts-base); font-weight: 600; color: var(--txt); position: relative; list-style: none; user-select: none; line-height: 1.4; }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-q::after { content: ''; position: absolute; right: 4px; top: 50%; transform: translateY(-50%) rotate(45deg); width: 10px; height: 10px; border-right: 2px solid var(--teal-glow); border-bottom: 2px solid var(--teal-glow); transition: transform .25s; }
+    details[open] > .faq-q::after { transform: translateY(-25%) rotate(225deg); }
+    .faq-a { padding: 0 0 1.4rem; }
+    .faq-a p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.75; margin-bottom: var(--sp-2); }
+    .faq-a ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: .4rem; margin-bottom: var(--sp-2); }
+    .faq-a ul li { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
+
+    /* ── CTA band extensions ─────────────────────────── */
+    .cta-band-actions { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
+    .btn-ghost { display:inline-flex; align-items:center; gap:8px; padding:14px 28px; border:2px solid rgba(255,255,255,.55); color:var(--white); border-radius:8px; font-size:var(--ts-sm); font-weight:700; transition:border-color var(--dur-fast),background var(--dur-fast); white-space:nowrap; text-decoration:none; }
+    .btn-ghost:hover { border-color:var(--white); background:rgba(255,255,255,.12); }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 1100px) {
+      .service-grid { grid-template-columns: repeat(2, 1fr); }
+      .tech-stack-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-track { grid-template-columns: 1fr; gap: var(--sp-5); }
+      .process-track::before { display: none; }
+      .step-number { margin: 0 0 var(--sp-3); }
+      .process-step { text-align: left; display: flex; gap: var(--sp-4); align-items: flex-start; }
+    }
+    @media (max-width: 768px) {
+      .outcomes-grid { grid-template-columns: 1fr; }
+      .stats-row { grid-template-columns: repeat(2, 1fr); gap: var(--sp-5) var(--sp-6); }
+      .service-grid { grid-template-columns: 1fr; }
+      .tech-stack-grid { grid-template-columns: 1fr; }
+      .engage-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
        COOKIE BANNER
     ============================================================ */
     /* ====== COOKIE CONSENT ====== */
@@ -1392,55 +1498,498 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════ -->
     <section class="page-hero" aria-labelledby="hero-heading">
       <div class="page-hero-inner">
         <div class="hero-copy">
-          <p class="hero-eyebrow">Data &amp; Cloud</p>
+          <p class="hero-eyebrow">Data &amp; BI Services</p>
           <h1 id="hero-heading">Data that answers<br><strong>business questions.</strong></h1>
           <p class="page-hero-lead">Analytics only has value when business teams can access it. GreaterHeight builds BI platforms and data models that put the right metrics in front of the right people — without requiring an analyst ticket for every question.</p>
           <div class="hero-meta" role="list">
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">BI</span><span class="hero-meta-label">Platform Build</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">dbt</span><span class="hero-meta-label">Semantic Layer</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">Self</span><span class="hero-meta-label">-Service Access</span></div>
+            <div class="hero-meta-item" role="listitem">
+              <span class="hero-meta-value">BI</span>
+              <span class="hero-meta-label">Platform Build</span>
+            </div>
+            <div class="hero-meta-item" role="listitem">
+              <span class="hero-meta-value">dbt</span>
+              <span class="hero-meta-label">Semantic Layer</span>
+            </div>
+            <div class="hero-meta-item" role="listitem">
+              <span class="hero-meta-value">Self</span>
+              <span class="hero-meta-label">-Service Access</span>
+            </div>
+          </div>
+          <div class="hero-ctas">
+            <a href="/contact/" class="btn btn-primary">Discuss Analytics</a>
+            <a href="/what-we-do/data/warehouse/" class="btn-ghost-dark">Data Warehouse</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">Platforms We Use</p><p>Looker, Metabase, Apache Superset, Power BI, and Tableau — selected to fit your team's technical comfort and your data stack.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">The Foundation</p><p>A well-designed semantic layer and data model mean dashboards are fast, trustworthy, and maintainable — not quick wins that become technical debt.</p></div>
+            <div class="hero-fact-card">
+              <div class="fact-label">Platforms We Use</div>
+              <p>Looker, Metabase, Apache Superset, Power BI, and Tableau — selected to fit your team's technical comfort and your data stack.</p>
+            </div>
+            <div class="hero-fact-card">
+              <div class="fact-label">The Foundation</div>
+              <p>A well-designed semantic layer and data model mean dashboards are fast, trustworthy, and maintainable — not quick wins that become technical debt.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="capabilities-heading">
+    <!-- ═══════════════════════════════════════════
+         BUSINESS OUTCOMES + STATS
+    ══════════════════════════════════════════════ -->
+    <section class="content-section bg-dark" aria-labelledby="outcomes-heading">
       <div class="container">
-        <div class="reveal">
-          <p class="section-label">Capabilities</p>
-          <div class="rule-line"></div>
-          <h2 class="section-title" id="capabilities-heading">Analytics and BI services</h2>
+        <p class="section-label" style="color:var(--teal-glow);">Our Delivery Approach</p>
+        <h2 id="outcomes-heading" class="section-title light">Built Around Business Outcomes, Not Just Project Delivery</h2>
+        <p class="section-lead light">Most analytics initiatives fail not because organisations lack data, but because business priorities, governance, and data quality are never properly aligned.</p>
+        <div class="outcomes-grid">
+          <div class="outcome-card">
+            <h3>Ownership defined across data and business goals</h3>
+            <p>Clear ownership across data sources, reporting, analytics, and business stakeholders — so every metric has a responsible team and a source of truth.</p>
+          </div>
+          <div class="outcome-card">
+            <h3>Progress proven through business insights, not dashboards</h3>
+            <p>We measure success by the decisions your teams can now make, not by the number of dashboards delivered or connections configured.</p>
+          </div>
+          <div class="outcome-card">
+            <h3>No silent drift in data quality or reporting</h3>
+            <p>Automated testing, monitoring, and alerting on every pipeline and model — so data quality issues are caught before they reach a business decision.</p>
+          </div>
         </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>BI Platform Implementation</h3><p>End-to-end setup of Looker, Metabase, Superset, Power BI, or Tableau — connected to your data warehouse, with data models, user roles, and governance configured from the start.</p></div>
-          <div class="value-card reveal"><h3>Data Modelling &amp; Semantic Layer</h3><p>dbt-based data modelling that defines your business metrics consistently — ensuring that "revenue" means the same thing in every dashboard and every team's query.</p></div>
-          <div class="value-card reveal"><h3>Executive Dashboards</h3><p>High-level dashboards for C-suite and board reporting — designed for clarity and immediate insight, with automated refresh and alerting on key metrics.</p></div>
-          <div class="value-card reveal"><h3>Self-Service Analytics</h3><p>Governed self-service environments where business analysts can explore data safely — without risking production systems or waiting for engineering capacity.</p></div>
-          <div class="value-card reveal"><h3>Ad Hoc Analysis</h3><p>Structured analytical work for business questions that need deeper investigation — cohort analysis, funnel analysis, attribution modelling, and statistical analysis.</p></div>
-          <div class="value-card reveal"><h3>Analytics Engineering</h3><p>Ongoing development and maintenance of your analytics codebase — new metrics, data source integrations, performance optimisation, and model refactoring as the business evolves.</p></div>
+        <div class="stats-row">
+          <div class="stat-block">
+            <span class="stat-value">94<em>%</em></span>
+            <span class="stat-label">On-Time Delivery</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-value">45<em>%</em></span>
+            <span class="stat-label">Faster Reporting Cycles</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-value">48<em>h</em></span>
+            <span class="stat-label">Analytics Expert Matching</span>
+          </div>
+          <div class="stat-block">
+            <span class="stat-value">99<em>%</em></span>
+            <span class="stat-label">Data Accuracy Validation</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════
+         SIX SERVICES
+    ══════════════════════════════════════════════ -->
+    <section class="content-section" aria-labelledby="services-heading">
+      <div class="container">
+        <p class="section-label">What We Deliver</p>
+        <h2 id="services-heading" class="section-title">Analytics &amp; BI Services</h2>
+        <p class="section-lead">Six analytics services designed to help organisations collect, understand, and use data to improve business performance — from strategy through to managed delivery.</p>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg></div>
+            <h3>Analytics Strategy &amp; Planning</h3>
+            <p>Build the right foundation before investing in analytics infrastructure — aligning business objectives with data architecture and tooling.</p>
+            <ul class="service-bullets">
+              <li>Business data assessment and gap analysis</li>
+              <li>Analytics roadmap and KPI framework</li>
+              <li>Tool selection and stack design</li>
+              <li>Data governance model</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3>Data Engineering &amp; Integration</h3>
+            <p>Prepare reliable, high-quality data for reporting and advanced analytics — connecting all your business systems into a single, trusted source of truth.</p>
+            <ul class="service-bullets">
+              <li>ETL/ELT pipeline development</li>
+              <li>Data cleansing and transformation</li>
+              <li>API and system integrations</li>
+              <li>Real-time and batch processing</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h7v9H3z"/>
+<path d="M14 3h7v5h-7z"/>
+<path d="M14 12h7v9h-7z"/>
+<path d="M3 16h7v5H3z"/></svg></div>
+            <h3>Reporting &amp; Dashboard Services</h3>
+            <p>End-to-end delivery of BI platforms — from semantic layer design to executive dashboards — using the tool that fits your team and your stack.</p>
+            <ul class="service-bullets">
+              <li>Looker, Power BI, Tableau, Metabase, Superset</li>
+              <li>Executive and operational dashboards</li>
+              <li>Self-service analytics environments</li>
+              <li>Automated alerts and report scheduling</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+            <h3>Predictive &amp; Advanced Analytics</h3>
+            <p>Statistical models, machine learning, and cohort analysis to answer the questions that standard dashboards cannot — and to surface what is coming, not just what happened.</p>
+            <ul class="service-bullets">
+              <li>Forecasting and demand modelling</li>
+              <li>Customer cohort and funnel analysis</li>
+              <li>Churn prediction and lead scoring</li>
+              <li>Attribution modelling</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg></div>
+            <h3>Analytics Platform Engineering</h3>
+            <p>Design and build the data platform your analytics runs on — data warehouse, semantic layer, and dbt-based data modelling for consistent, maintainable metrics.</p>
+            <ul class="service-bullets">
+              <li>Snowflake, BigQuery, Redshift, Synapse</li>
+              <li>dbt semantic layer and data modelling</li>
+              <li>Data quality testing and monitoring</li>
+              <li>Performance optimisation</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Managed Analytics Services</h3>
+            <p>Ongoing analytics engineering — new metrics, new data sources, model maintenance, and performance monitoring — without the overhead of a full-time hire.</p>
+            <ul class="service-bullets">
+              <li>Monthly analytics development retainer</li>
+              <li>New metric and dashboard delivery</li>
+              <li>Incident response and data quality SLAs</li>
+              <li>Quarterly analytics strategy reviews</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TECHNOLOGY STACK
+    ══════════════════════════════════════════════ -->
+    <section class="content-section bg-light" aria-labelledby="tech-heading">
+      <div class="container">
+        <p class="section-label">Our Stack</p>
+        <h2 id="tech-heading" class="section-title">Technology Stack</h2>
+        <p class="section-lead">We work across the full modern data stack — engineering, warehousing, BI, cloud, and AI — selecting tools that fit your existing infrastructure and team.</p>
+        <div class="tech-stack-grid">
+          <div class="tech-category">
+            <h3>BI &amp; Visualisation</h3>
+            <div class="tech-pills">
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">Looker</span>
+            <span class="tech-pill">Tableau</span>
+            <span class="tech-pill">Metabase</span>
+            <span class="tech-pill">Apache Superset</span>
+            <span class="tech-pill">Qlik Sense</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>Data Warehousing</h3>
+            <div class="tech-pills">
+            <span class="tech-pill">Snowflake</span>
+            <span class="tech-pill">Google BigQuery</span>
+            <span class="tech-pill">Amazon Redshift</span>
+            <span class="tech-pill">Azure Synapse Analytics</span>
+            <span class="tech-pill">DuckDB</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>Data Engineering &amp; ETL</h3>
+            <div class="tech-pills">
+            <span class="tech-pill">dbt</span>
+            <span class="tech-pill">Apache Airflow</span>
+            <span class="tech-pill">Apache Kafka</span>
+            <span class="tech-pill">Apache Spark</span>
+            <span class="tech-pill">Fivetran</span>
+            <span class="tech-pill">Airbyte</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>Cloud Platforms</h3>
+            <div class="tech-pills">
+            <span class="tech-pill">Amazon Web Services</span>
+            <span class="tech-pill">Google Cloud Platform</span>
+            <span class="tech-pill">Microsoft Azure</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>Databases</h3>
+            <div class="tech-pills">
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">SQL Server</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Redis</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h3>AI &amp; Advanced Analytics</h3>
+            <div class="tech-pills">
+            <span class="tech-pill">Python (pandas, scikit-learn)</span>
+            <span class="tech-pill">Jupyter</span>
+            <span class="tech-pill">TensorFlow</span>
+            <span class="tech-pill">OpenAI API</span>
+            <span class="tech-pill">Databricks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROCESS
+    ══════════════════════════════════════════════ -->
+    <section class="content-section" aria-labelledby="process-heading">
+      <div class="container">
+        <p class="section-label">How We Work</p>
+        <h2 id="process-heading" class="section-title">Our Analytics Process</h2>
+        <p class="section-lead">A structured five-step approach that turns raw data into reliable insights — and reliable insights into measurable business outcomes.</p>
+        <div class="process-track">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <div>
+              <h3>Discover</h3>
+              <p>Understand business goals, identify data sources, and define the KPIs and success metrics that matter.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <div>
+              <h3>Prepare</h3>
+              <p>Build clean, reliable, analytics-ready data pipelines and a semantic layer all reports will trust.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <div>
+              <h3>Analyse</h3>
+              <p>Develop dashboards, reports, and advanced analytics models tailored to each team's specific decisions.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <div>
+              <h3>Deploy</h3>
+              <p>Integrate analytics into business systems, workflows, and the decision-making processes of real users.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="step-number">05</div>
+            <div>
+              <h3>Optimise</h3>
+              <p>Continuously improve data quality, reporting performance, and the accuracy of insights as the business evolves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         INDUSTRIES
+    ══════════════════════════════════════════════ -->
+    <section class="content-section bg-light" aria-labelledby="industries-heading">
+      <div class="container" style="text-align:center;">
+        <p class="section-label">Sectors</p>
+        <h2 id="industries-heading" class="section-title">Industries We Serve</h2>
+        <p class="section-lead" style="margin-left:auto;margin-right:auto;">We deliver analytics solutions across the industries where data complexity is highest and business insight has the most direct impact on performance.</p>
+        <div class="industry-strip">
+          <a href="/industries/financial-technology/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            Financial Technology
+          </a>
+
+          <a href="/industries/healthcare/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Healthcare
+          </a>
+
+          <a href="/industries/retail-ecommerce/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+<path d="M3 6h18"/>
+<path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            Retail &amp; eCommerce
+          </a>
+
+          <a href="/industries/logistics/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1 3h15v13H1z"/>
+<path d="M16 8h4l3 3v5h-7V8z"/>
+<path d="M5.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+<path d="M18.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg>
+            Logistics
+          </a>
+
+          <a href="/industries/education-elearning/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            Education &amp; e-Learning
+          </a>
+
+          <a href="/industries/media-entertainment/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23 7l-7 5 7 5V7z"/>
+<path d="M1 5h15v14H1z"/></svg>
+            Media &amp; Entertainment
+          </a>
+
+          <a href="/who-we-serve/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+<path d="M9 22V12h6v10"/></svg>
+            Government
+          </a>
+
+          <a href="/industries/real-estate/" class="industry-tag">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 7h-9"/>
+<path d="M14 17H5"/>
+<path d="M17 17h.01"/>
+<path d="M17 11h.01"/>
+<path d="M17 5h.01"/></svg>
+            Real Estate
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ENGAGEMENT MODELS
+    ══════════════════════════════════════════════ -->
+    <section class="content-section" aria-labelledby="engage-heading">
+      <div class="container">
+        <p class="section-label">How to Engage</p>
+        <h2 id="engage-heading" class="section-title">Choose Your Engagement Model</h2>
+        <p class="section-lead">We work with organisations at every stage — from a single defined project through to an ongoing analytics function that evolves with the business.</p>
+        <div class="engage-grid">
+          <div class="engage-card">
+            <div class="engage-num">01</div>
+            <h3>Project-Based Delivery</h3>
+            <p>A defined scope, timeline, and cost — for organisations with a clear analytics objective they need delivered end-to-end.</p>
+            <ul class="engage-bullets">
+              <li>Fixed-price or time-and-materials</li><li>Dedicated delivery team</li><li>Full handover and documentation</li><li>Post-launch support window</li>
+            </ul>
+          </div>
+
+          <div class="engage-card">
+            <div class="engage-num">02</div>
+            <h3>Managed Analytics Retainer</h3>
+            <p>Ongoing analytics development and maintenance on a monthly retainer — the equivalent of an in-house analytics function without the headcount.</p>
+            <ul class="engage-bullets">
+              <li>Monthly development hours guaranteed</li><li>Prioritised backlog management</li><li>Data quality monitoring and SLAs</li><li>Quarterly strategy and roadmap review</li>
+            </ul>
+          </div>
+
+          <div class="engage-card">
+            <div class="engage-num">03</div>
+            <h3>Staff Augmentation</h3>
+            <p>Embed one or more of our analytics engineers directly into your team — using your tools, your stack, and your processes.</p>
+            <ul class="engage-bullets">
+              <li>Analytics engineers and BI developers</li><li>Data engineers and dbt specialists</li><li>Scales up and down as workload changes</li><li>Works inside your existing delivery workflow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════ -->
+    <section class="content-section bg-light" aria-labelledby="faq-heading">
+      <div class="container">
+        <p class="section-label">Common Questions</p>
+        <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q">How do you approach a data analytics implementation project?</summary>
+          <div class="faq-a">
+            <p>Every engagement starts with understanding your business goals, your existing data landscape, and the decisions you need analytics to support. We focus on building solutions that deliver reliable business insights, not just dashboards.</p>
+<ul>
+  <li>Assess existing data sources and business needs</li>
+  <li>Design scalable analytics architecture</li>
+  <li>Validate insights before deployment</li>
+</ul>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Can you modernise our legacy reporting and analytics systems?</summary>
+          <div class="faq-a">
+            <p>Yes. We help organisations modernise outdated analytics platforms without disrupting live business operations.</p>
+<ul>
+  <li>Upgrade legacy reporting environments to modern BI tools</li>
+  <li>Migrate analytics workloads to the cloud</li>
+  <li>Improve performance, scalability, and data freshness</li>
+</ul>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Which BI tools do you work with?</summary>
+          <div class="faq-a">
+            <p>We work with Power BI, Looker, Tableau, Metabase, and Apache Superset — and we select the tool that fits your team's technical comfort and your budget, not the one that generates the most consulting revenue for us. We also implement dbt for the semantic layer that underpins whichever tool you use.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How do you ensure data quality in analytics projects?</summary>
+          <div class="faq-a">
+            <p>Data quality is built into the pipeline, not checked at the end. We use dbt tests for model validation, monitoring for schema changes and pipeline failures, and business-logic tests that catch discrepancies before they reach a dashboard.</p>
+<ul>
+  <li>dbt schema and business logic tests</li>
+  <li>Pipeline monitoring and alerting</li>
+  <li>Data quality SLAs for managed retainer clients</li>
+</ul>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Can you integrate data from multiple business systems?</summary>
+          <div class="faq-a">
+            <p>Yes. Integrating disparate data sources — ERP, CRM, marketing platforms, payment systems, custom applications — is typically the first and most critical step in any analytics project. We use Fivetran, Airbyte, and custom-built connectors to centralise data reliably.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Who owns the data models, dashboards, and code you build?</summary>
+          <div class="faq-a">
+            <p>Everything we build — data models, dbt code, dashboard definitions, pipeline scripts, and documentation — belongs to you. We sign an NDA before work begins, and all intellectual property transfers to your organisation upon final payment.</p>
+          </div>
+        </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CTA BAND
+    ══════════════════════════════════════════════ -->
     <section class="cta-band" aria-labelledby="cta-heading">
       <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Ready to turn your data into decisions?</h2><p>Talk to our analytics team about your BI requirements.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Discuss Analytics</a><a href="/what-we-do/data/warehouse/" class="btn-outline-white">Data Warehouse</a></div>
+        <div>
+          <h2 id="cta-heading">Ready to turn your data into decisions?</h2>
+          <p>Talk to our analytics team about your BI requirements — we respond within two business hours.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="/contact/" class="btn-primary">Discuss Analytics</a>
+          <a href="/what-we-do/data/warehouse/" class="btn-ghost">Data Warehouse</a>
+        </div>
       </div>
     </section>
 
   </main>
-  </main>
+
 
   <!-- ============================================================
        FOOTER
