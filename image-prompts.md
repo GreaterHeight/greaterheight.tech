@@ -310,4 +310,144 @@ Brand colours should appear as **environmental accents** — office plants in te
 
 ---
 
+---
+
+## Digital Reputation Services Page
+
+> These images are for the alternating-layout service detail page at `/what-we-do/marketing/digital-reputation-services/`. Each image occupies a full-bleed panel alongside a service description block. All shots must be professional editorial photography — no cinematic colour grades, no overlay washes, no dramatic composite lighting. Brand colours appear as environmental accents only (plant foliage, screen glows, clothing accents, office panels).
+
+---
+
+### `/assets/images/digital-rep-services/svc-insight.jpg`
+**Purpose:** Service panel image — Insight & Clarity (Foundation service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional — a woman or man in their late 30s — seated at a large monitor in a modern open-plan office. The screen shows a data dashboard with charts, graphs, and a search results page representing a digital audit. The professional leans slightly forward, one elbow on the desk, reviewing the content with focused attention. The office background is contemporary — glass partitions, timber accents, a large forest green (`#0D3D28`) wall panel or plant visible. Screen glow is the dominant light source, with natural daylight from a window to the side. Clothing is business-casual smart. No colour filters. Shot at eye level, mid-distance. The image should read as a consulting professional examining a client's digital footprint for the first time.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Insight & Clarity section
+
+---
+
+### `/assets/images/digital-rep-services/svc-digital-rep.jpg`
+**Purpose:** Service panel image — Digital Reputation Management (Search service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional in a smart business suit seated in front of two large monitors. One screen shows a Google search results page with a prominent positive listing at the top. The other screen shows a content management or SEO analytics dashboard. The professional is typing or gesturing at the screen. Office is modern and clean — large windows, one teal (`#005A3C`) accent wall or upholstered panel in the background. Warm directional natural light. No colour overlays. Shot at mid-distance, the screens legible but not perfectly sharp. Conveys control, strategy, and digital expertise.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Digital Reputation Management section
+
+---
+
+### `/assets/images/digital-rep-services/svc-pr-media.jpg`
+**Purpose:** Service panel image — PR & Media Relations (Earned Media service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian communications professional — a man or woman in their early 40s in professional attire — being interviewed by a journalist or media anchor. The setting is a television studio green room, a media centre lobby, or a branded press background. A microphone or small lapel mic is visible. The professional speaks with composed authority, making eye contact with the interviewer. Studio lights are soft and directional. Background shows teal (`#1EB496`) or forest green (`#0D3D28`) in the branded backdrop or a lush interior plant. No colour filters. Conveys earned media authority, executive visibility, and professional credibility.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for PR & Media Relations section
+
+---
+
+### `/assets/images/digital-rep-services/svc-review.jpg`
+**Purpose:** Service panel image — Review & Rating Management (Reviews service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional at a desk, looking at a laptop screen showing a review management interface — star ratings, response fields, and review platform logos. The professional holds a stylus or pen and appears to be crafting a response with care. The desk is tidy and professional — a small mint (`#97EFC9`) plant or teal pen holder as the only colour accent. Office background is neutral and calm — white walls, natural daylight. Shot at mid-close distance, the screen visible but not perfectly legible. No colour filters or overlays. Conveys careful, professional engagement with public customer feedback.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Review & Rating Management section
+
+---
+
+### `/assets/images/digital-rep-services/svc-crisis.jpg`
+**Purpose:** Service panel image — Crisis Management (Crisis service).
+
+**Prompt:**
+> Editorial photograph of a small team of Black Nigerian professionals — three people — seated around a conference table in an urgent but controlled working session. Laptops are open, one large screen on the wall shows a news monitoring or social media alert dashboard. The atmosphere is focused and calm — these are experienced people managing a situation, not panicking. One person is on a phone call while the others review content on a shared screen. Conference room is sleek and modern — forest green (`#0D3D28`) accent wall or dark upholstered chairs. Overhead lighting is sharp and professional. No colour filters. Shot at mid-distance. Conveys coordinated crisis response, professionalism under pressure, and strategic communication.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Crisis Management section
+
+---
+
+### `/assets/images/digital-rep-services/svc-thought-leadership.jpg`
+**Purpose:** Service panel image — Thought Leadership (Authority service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian thought leader — a man in his late 40s or early 50s — standing at a podium or speaking at a small executive conference. The audience is partially visible in the foreground — attentive, professional. The speaker gestures with quiet confidence, speaking from notes or directly to the audience. The stage or speaking environment is clean and modern — a teal (`#1EB496`) or forest green (`#0D3D28`) branded banner or backdrop behind the speaker. Lighting is warm and directional — stage lighting without dramatic spot effects. Shot from a low or mid angle looking slightly up at the speaker. No colour filters. Conveys intellectual authority, executive gravitas, and confident public presence.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Thought Leadership section
+
+---
+
+### `/assets/images/digital-rep-services/svc-social-pr.jpg`
+**Purpose:** Service panel image — Social Media PR & Marketing (Social service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian digital marketing professional — a woman in her late 20s or early 30s — seated at a standing desk or creative workstation, managing multiple social media feeds visible across a large monitor and a tablet. The screens show LinkedIn, Instagram, or Twitter/X dashboards with active content and notifications. The office is modern and bright — large windows, one mint (`#97EFC9`) or teal (`#005A3C`) plant on the desk. The professional is smiling slightly while reviewing engagement metrics. Shot at mid-distance, natural window light dominant. No colour filters. Conveys proactive, strategic, and professional social media management.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Social Media PR & Marketing section
+
+---
+
+### `/assets/images/digital-rep-services/svc-entrepreneur.jpg`
+**Purpose:** Service panel image — For Entrepreneurs / Personal Brand (Personal Brand service).
+
+**Prompt:**
+> Editorial portrait photograph of a Black Nigerian entrepreneur — a man or woman in their mid-30s — dressed in well-cut business-casual attire (open-collar shirt, tailored trousers, or a smart fitted blazer). They stand in a bright, airy office or co-working space — large windows, natural greenery in the background including a tall forest green (`#0D3D28`) plant. The person is half-turned toward the camera with a composed, quietly confident expression. One hand rests on a desk or chair back. Shot at mid-distance, natural directional light from the side. No studio backdrops, no colour filters. The image should read as a professional personal brand portrait for a founder or executive — confident, approachable, real.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for For Entrepreneurs section
+
+---
+
+### `/assets/images/digital-rep-services/svc-google-ai.jpg`
+**Purpose:** Service panel image — Google & AI Visibility (Search & AI service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional at a bright modern workstation, examining a large monitor displaying a Google search results page or an AI-generated answer card (like Gemini or Perplexity). The screen clearly shows a Knowledge Panel-style result or a prominent featured snippet. The professional leans forward with interest, one hand raised toward the screen in a pointing or framing gesture. Office environment is clean and contemporary — teal (`#1EB496`) accent in the screen glow or a plant on the desk. Natural window light from one side. Shot at mid-distance. No colour overlays or filters. Conveys digital intelligence, search strategy, and technical authority.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Google & AI Visibility section
+
+---
+
+### `/assets/images/digital-rep-services/svc-exec-visibility.jpg`
+**Purpose:** Service panel image — Founder & Executive Visibility (Executive Profile service).
+
+**Prompt:**
+> Editorial portrait photograph of a Black Nigerian business leader — a man in his late 40s — in a premium executive environment: a glass-walled boardroom, a high-rise office with a city view, or a hotel business lounge. The subject wears a well-tailored dark suit — charcoal or navy — with a white shirt and a teal (`#005A3C`) or forest green pocket square. He sits or stands with composed, direct authority — not stiff, not performative. Expression is calm and focused. Background is sharp enough to establish location but softly out of focus — Zuma Rock, Lagos skyline, or a modern Nigerian cityscape visible through the glass. Shot at a slight angle, natural window light from the side. No colour filters. The image should read as a Bloomberg Businessweek executive profile — global authority, distinctly Nigerian.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Founder & Executive Visibility section
+
+---
+
+### `/assets/images/digital-rep-services/svc-event-pr.jpg`
+**Purpose:** Service panel image — Event PR & TV Coverage (Events & Media service).
+
+**Prompt:**
+> Editorial photograph taken at a corporate conference or summit in Nigeria. The main subject is a Black Nigerian professional — a presenter or MC — at a branded podium or stage, speaking to a medium-sized audience. TV camera crew or a broadcast journalist is visible at the side of the frame, filming the event. The audience is attentive and professional — business attire, diverse mix. Stage backdrop includes a teal (`#005A3C`) or forest green branded banner or pull-up display. Venue lighting is professional conference-style — overhead LEDs, no dramatic spotlights. Shot from a mid-angle across the room. No colour filters. Conveys professional event visibility, broadcast media coordination, and executive media presence.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Event PR & TV Coverage section
+
+---
+
+### `/assets/images/digital-rep-services/svc-knowledge-panel.jpg`
+**Purpose:** Service panel image — Google Knowledge Panel (Entity Signals service).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional seated in a modern office, looking at a laptop screen showing a Google Knowledge Panel — a branded entity card on the right side of search results, with a photo, description, and official links. The professional points at or gestures toward the screen with a composed, satisfied expression. The office is clean and bright — a large mint (`#97EFC9`) or teal plant visible in the background. Natural window light from the side, screen glow adds warmth. Shot at mid-close distance. No colour filters. The image should convey digital authority, brand recognition in search, and the precision of entity-level SEO work.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 portrait or tall landscape
+**Placement:** `.svc-img` panel for Google Knowledge Panel section
+
+---
+
 *Last updated: 2026-11-24*
