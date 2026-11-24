@@ -120,7 +120,7 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Service card image — Insight & Clarity card.
 
 **Prompt:**
-> Editorial close-up photograph of a Black professional man reviewing printed analytics and brand audit reports spread across a desk. His hands are visible — pointing at a printed chart or graph. Well-lit, daylit workspace. Modern desk setting with laptop in soft background focus. Confident, analytical mood. Shot top-down at 45 degrees. No text readable. No colour overlays. Clean and professional.
+> Editorial photograph of a Black professional in their early 40s seated at a desk, looking at a large monitor showing a web browser with Google search results for a company or personal name — multiple listings, news articles, and a knowledge panel visible on screen. Their expression is analytical and focused. A printed brand audit document and pen sit beside the keyboard. Bright, clean, modern office. Natural daylight. Shot at mid-distance from a 45-degree angle. No text on screen legible. No colour overlays.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the Insight & Clarity card
@@ -128,10 +128,10 @@ All prompts must look like **professional editorial photography** — no dramati
 ---
 
 ### `/assets/images/reputation/service-digital-rep.jpg`
-**Purpose:** Service card image — Digital Reputation Management card.
+**Purpose:** Service card image — Digital Reputation Management (SERP).
 
 **Prompt:**
-> Editorial photograph looking over the shoulder of a Black professional at a large desktop monitor showing a Google search results page. The search results clearly show a brand name appearing prominently at the top. The person is pointing at the screen. Bright, modern office. Natural light. No visible face — shot from behind. Clean desk with minimal objects. The screen shows a recognisable SERP layout but no legible text. Professional and clear.
+> Editorial photograph of a Black professional man in a sharp grey or navy suit, seated at a modern desk, reviewing a laptop screen clearly showing a Google search results page. He leans slightly forward, one hand on the trackpad, expression concentrated. The SERP layout on screen is recognisable — headline links, descriptions, images panel — but no text is legible. Bright office interior with large windows. Natural light. Shot from a 45-degree front angle, chest to screen in frame. Clean, authoritative feel.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the Digital Reputation Management card
@@ -142,7 +142,7 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Service card image — PR & Media Relations card.
 
 **Prompt:**
-> Editorial photograph of a Black professional woman being interviewed — a microphone held toward her, lights from a camera crew slightly visible in soft background. She is dressed formally, seated in a chair, speaking confidently. Shot in a modern office or conference room setting. Bright and clean. Natural expression, not posed. Journalistic feel. No text overlays.
+> Editorial photograph of a confident Black professional woman in her 40s, seated and speaking in a formal television or podcast interview setting. A broadcast microphone is held toward her from one side; a camera and tripod are softly visible in the background out of focus. She is dressed in a formal blazer, expression composed and articulate — mid-sentence, not stiff. Warm studio or office lighting — natural, not dramatic. Shot from a slight angle at conversational height. The environment reads as a professional media production, not a press conference or staged shoot. No text overlays.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the PR & Media Relations card
@@ -153,7 +153,7 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Service card image — Review & Rating Management card.
 
 **Prompt:**
-> Editorial photograph of a person's hand holding a smartphone clearly displaying a 5-star rating interface — like a Google review or Trustpilot page. Background is a blurred coffee shop or office. The phone is in sharp focus, the background softly out of focus. Shot at an angle. Clean and contemporary. The stars and review format visible but no text legible. No colour filters. Natural ambient light.
+> Editorial photograph of a business owner — Black woman in her 30s — seated at a café counter or small business desk, holding a smartphone showing a 5-star Google Business review page. She reads the screen with a composed, satisfied expression. The star rating and card layout of a review platform are clearly visible but no text is legible. The background is a warm, blurred interior — a café, boutique, or small studio. Natural ambient light. Phone in sharp focus. Shot at a mid-angle. No colour overlays.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the Review & Rating Management card
@@ -164,7 +164,7 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Service card image — Crisis Management card.
 
 **Prompt:**
-> Editorial photograph of a Black professional team of three people in a modern conference room, gathered around a laptop screen, in a focused and serious discussion. Documents on the table. One person is on a mobile phone. Shot from outside the glass-walled room looking in, natural office light. The mood is purposeful and controlled — not panicked. Business formal attire. No text overlays. No dramatic colour.
+> Editorial photograph of a small team of two or three Black professionals in a modern open office or glass-walled war room, gathered urgently around a laptop. One person stands and types, two others lean in — all focused on the screen. A mobile phone on the table displays a notification alert. Printed documents are scattered across the desk. Expression: controlled urgency, not panic. Business formal attire. Shot from just outside, looking in through the glass — environment slightly blurred in foreground, team sharp. Bright, clinical office lighting. No text legible on screens. No dramatic colour.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the Crisis Management card
@@ -175,7 +175,7 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Service card image — Thought Leadership card.
 
 **Prompt:**
-> Editorial photograph of a Black professional man speaking at a podium or panel at a business conference. He is mid-sentence, hands gesturing, an audience visible out of focus in the background. Conference banners or branding visible but not readable. Smart formal wear. Bright, clean stage lighting — not dramatic. Shot from audience level. Confident and authoritative atmosphere.
+> Editorial photograph of a confident Black professional man in his 50s, speaking at a corporate panel or business conference stage. He sits at a panel table with a microphone in front of him, hands expressive mid-gesture, audience of business professionals visible and softly out of focus behind him. Conference room or hotel ballroom setting — professional banners in background, not readable. Dark suit, pocket square. Stage or overhead lighting — clean, bright, not dramatic. Shot from the front at a slight low angle. Authoritative, commanding presence.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the Thought Leadership card
@@ -183,13 +183,13 @@ All prompts must look like **professional editorial photography** — no dramati
 ---
 
 ### `/assets/images/reputation/service-social-pr.jpg`
-**Purpose:** Service card image — Social Media PR card.
+**Purpose:** Service card image — Social Media PR & Marketing card.
 
 **Prompt:**
-> Editorial photograph of a Black professional woman in her 20s or 30s working at a standing desk or high table, with a laptop and a second phone propped beside it showing a social media feed — Twitter/X or LinkedIn clearly visible. She is typing or scrolling thoughtfully. Bright, modern co-working style space. Natural light. No filters. Shot from a 45-degree angle at mid-height. Contemporary professional fashion. No text legible on screens.
+> Editorial photograph of a Black professional woman in her late 20s or early 30s at a bright, modern workspace. She sits in front of a large monitor showing a social media content calendar or scheduling tool — grid of posts, analytics figures visible but not legible. A smartphone on a small ring-light stand is propped beside the desk, suggesting content creation. She is in the act of reviewing or adjusting content — focused, strategic, not casual. Contemporary professional attire. Co-working space or agency office interior. Natural light from large windows. Shot from a 45-degree front angle. No text readable on screens.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
-**Placement:** `.service-card-img` for the Social Media PR card
+**Placement:** `.service-card-img` for the Social Media PR & Marketing card
 
 ---
 
@@ -197,10 +197,54 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Service card image — For Entrepreneurs / Personal Brand card.
 
 **Prompt:**
-> Editorial portrait photograph of a confident Black male entrepreneur in his 30s or 40s, standing in a modern office or studio space. He faces the camera directly, arms loosely at his sides or one hand in a pocket. Smart casual attire — blazer, no tie. The background is an office or modern workspace, slightly out of focus. Shot at mid-distance, waist to above head framing. Natural light from a window to one side. Direct, assured expression. No colour overlays. No props in his hands.
+> Editorial portrait photograph of a confident Black male entrepreneur in his mid-30s to early 40s. He stands in a sleek, modern office interior — glass, steel, and greenery in the background, softly out of focus. He faces the camera with composed, direct eye contact. Smart-casual attire: fitted blazer over a clean open-collar shirt, no tie. Arms relaxed at sides or one hand in a pocket. Shot from mid-chest to just above the head. Natural light from a large window to one side. The expression reads as founder-energy — assured, forward-thinking. No colour overlays. No props in hands.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.service-card-img` for the For Entrepreneurs / Personal Brand card
+
+---
+
+### `/assets/images/reputation/service-google-ai.jpg`
+**Purpose:** Service card image — Google & AI Visibility card.
+
+**Prompt:**
+> Editorial photograph of a well-dressed Black professional man in his late 30s — charcoal or medium-grey suit, white shirt, no tie — seated at a modern desk, working on a laptop. The screen clearly shows a Google search results page with a name or brand prominently at the top alongside an AI overview panel (the kind generated by Google AI or Bing Copilot). He leans slightly forward, one hand on the keyboard, reading attentively. Bright, airy corporate office with floor-to-ceiling windows. Natural daylight. Shot from a 45-degree front angle. No text on screen is legible. No colour overlays.
+
+**Dimensions:** 600 × 400 px minimum, 3:2 landscape
+**Placement:** `.service-card-img` for the Google & AI Visibility card
+
+---
+
+### `/assets/images/reputation/service-exec-visibility.jpg`
+**Purpose:** Service card image — Founder & Executive Visibility card.
+
+**Prompt:**
+> Editorial photograph of a distinguished Black executive man in his 50s — dark suit, white shirt, patterned silk tie — seated in a formal interview chair in a warmly lit studio or high-end office interior. A professional TV camera on a tripod is clearly visible in the foreground, partially in frame, suggesting he is being filmed or profiled. He speaks animatedly with composed authority, hands lightly gesturing. Bookcase or executive interior in soft background. Warm, premium lighting — think broadcast interview segment on a business news channel. Shot from a 45-degree angle at conversational height. No text overlays.
+
+**Dimensions:** 600 × 400 px minimum, 3:2 landscape
+**Placement:** `.service-card-img` for the Founder & Executive Visibility card
+
+---
+
+### `/assets/images/reputation/service-event-pr.jpg`
+**Purpose:** Service card image — Event PR & TV Coverage card.
+
+**Prompt:**
+> Editorial photograph of a busy corporate event — a business leadership forum, product launch, or conference — with a large crowd of Black professionals in business attire networking and conversing. In the foreground or midground, a TV camera crew (operator and boom) is filming the event. A branded conference banner or screen is visible but not legible in the background. Event lighting — overhead, warm, professional. Shot at mid-height from within or at the edge of the crowd, capturing the scale and energy of the event. Busy but professional atmosphere. No staged poses — everyone in genuine motion. No colour overlays.
+
+**Dimensions:** 600 × 400 px minimum, 3:2 landscape
+**Placement:** `.service-card-img` for the Event PR & TV Coverage card
+
+---
+
+### `/assets/images/reputation/service-knowledge-panel.jpg`
+**Purpose:** Service card image — Google Knowledge Panel card.
+
+**Prompt:**
+> Editorial photograph of a Black professional woman in her 30s, seated at a bright, modern desk in front of a large monitor showing a Google Knowledge Panel — the sidebar box that appears in search results for a named person or organisation, showing a photo, title, description, and social links. She points at or taps the screen with one finger, reviewing the panel with a focused, satisfied expression. Clean office environment. Natural window light. Shot from a 45-degree angle. Screen content clearly shows a knowledge panel layout but no text is legible. No colour overlays.
+
+**Dimensions:** 600 × 400 px minimum, 3:2 landscape
+**Placement:** `.service-card-img` for the Google Knowledge Panel card
 
 ---
 
