@@ -255,6 +255,17 @@ Brand colours should appear as **environmental accents** — office plants in te
 
 ---
 
+### `/assets/images/reputation/audience-featured.jpg`
+**Purpose:** Background image for the "Our Core Client Profile" featured card inside the Who We Serve section. Displays behind a dark gradient overlay — the image must read clearly through a semi-transparent forest-green and crimson colour wash, so it needs strong natural light, clear human presence, and an uncluttered mid-ground. Wider, landscape orientation so the composition fills the card at different viewport widths.
+
+**Prompt:**
+> Wide editorial photograph of a high-rise executive boardroom in Nigeria — Abuja or Lagos — with a panoramic view of the city and a prominent rock formation (Zuma Rock or Aso Rock) through floor-to-ceiling glass windows. The room is bright with natural daylight. Six Black Nigerian professionals of mixed ages and genders are arranged around a wide conference table: two standing on the left side — a woman in her 30s in a fitted navy blazer holding a notebook, and a distinguished older man in his 60s in a charcoal suit with a subtle crimson pocket square — and four seated at the table: a younger woman in a coloured blazer speaking expressively with hands in motion, a young man in glasses leaning forward with a tablet, a woman in a black top with pearl earrings taking notes, and a senior man in a dark suit at the right end. All are engaged in a focused working discussion. The table has glasses of water, printed documents, and open notebooks. On the wall, a modern abstract artwork with teal (`#005A3C`) and ochre tones. Office plants with deep forest green foliage (`#0D3D28`) in the background. Shot at mid-height from across the room, capturing the full table and all six people. Natural ambient light, no artificial flash. The image should feel premium, boardroom-level, West African executive register — not a stock-photo cliché. Colour palette: natural daylight, forest green and teal environmental accents, warm wood table surface.
+
+**Dimensions:** 1200 × 600 px minimum, 2:1 wide landscape ratio
+**Placement:** `.audience-featured` div — background image with dark gradient overlay. Text (eyebrow, h3, paragraph) is overlaid on top.
+
+---
+
 ### `/assets/images/reputation/case-study-featured.jpg`
 **Purpose:** Featured case study card — left image column.
 
