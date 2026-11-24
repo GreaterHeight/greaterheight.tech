@@ -1342,7 +1342,10 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
 }
 .audience-section h2 .txt-cr { color: var(--cr-mid); }
 .audience-featured {
-  background: rgba(140,13,12,.14);
+  background:
+    linear-gradient(135deg, rgba(0,48,32,.88) 0%, rgba(140,13,12,.62) 100%),
+    url('/assets/images/reputation/audience-featured.jpg') center/cover no-repeat;
+  background-color: rgba(140,13,12,.14); /* fallback until image loads */
   border: 1px solid rgba(140,13,12,.35);
   border-radius: 12px; padding: 2rem 2.5rem; margin-bottom: 1.25rem;
 }
