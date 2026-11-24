@@ -1004,6 +1004,575 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+
+/* ============================================================
+   REPUTATION PAGE — EDITORIAL REDESIGN (DigitalReputation.png)
+============================================================ */
+
+/* ---- Hero (full-bleed dark, bg-image) ---- */
+.rep-hero {
+  position: relative;
+  min-height: 580px;
+  background-color: #0a0a0a;
+  background-image: url('/assets/images/reputation/hero-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.rep-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,.88) 0%, rgba(0,0,0,.65) 55%, rgba(0,0,0,.35) 100%);
+  pointer-events: none;
+}
+.rep-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 5.5rem 0 4.5rem;
+}
+.rep-hero-eyebrow {
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--cr-mid);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.rep-hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--cr);
+}
+.rep-hero h1 {
+  font-size: clamp(2.1rem, 5vw, 3.75rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+.rep-hero h1 .txt-cr { color: var(--cr-mid); }
+.rep-hero-lead {
+  font-size: 1rem;
+  color: rgba(255,255,255,.75);
+  line-height: 1.8;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+.rep-hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn-rep-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: var(--cr);
+  color: #fff;
+  border-radius: 6px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  transition: background .2s, transform .2s;
+}
+.btn-rep-primary:hover { background: var(--cr-mid); transform: translateY(-1px); }
+.btn-rep-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border: 2px solid rgba(255,255,255,.4);
+  color: #fff;
+  border-radius: 6px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  transition: border-color .2s, background .2s;
+}
+.btn-rep-outline:hover { border-color: rgba(255,255,255,.8); background: rgba(255,255,255,.08); }
+
+/* ---- Search trust strip (white) ---- */
+.search-strip {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 1.75rem 0;
+}
+.search-strip-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.search-strip-left p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--txt);
+  line-height: 1.5;
+  margin-bottom: .9rem;
+}
+.search-strip-left p strong { font-weight: 800; }
+.txt-cr { color: var(--cr); }
+.search-strip-right p {
+  font-size: .88rem;
+  color: var(--txt-2);
+  line-height: 1.75;
+}
+.btn-strip-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  background: var(--cr);
+  color: #fff;
+  border-radius: 6px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-top: .75rem;
+  transition: background .2s;
+}
+.btn-strip-cta:hover { background: var(--cr-mid); }
+
+/* ---- Pain points (white) ---- */
+.pain-section { background: #fff; padding: 5rem 0; }
+.rep-section-eyebrow {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--cr);
+  margin-bottom: .6rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.rep-section-eyebrow::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: var(--cr);
+}
+.rep-section-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--txt);
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  margin-bottom: .75rem;
+}
+.rep-section-title .txt-cr { color: var(--cr); }
+.rep-section-lead {
+  font-size: .93rem;
+  color: var(--txt-2);
+  line-height: 1.75;
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+}
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.pain-card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color .2s, box-shadow .2s;
+}
+.pain-card:hover { border-color: var(--cr); box-shadow: 0 4px 20px rgba(140,13,12,.08); }
+.pain-icon {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: var(--cr-lite);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+}
+.pain-icon svg {
+  width: 18px; height: 18px;
+  stroke: var(--cr); fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.pain-card h3 { font-size: .93rem; font-weight: 700; color: var(--txt); margin-bottom: .4rem; }
+.pain-card p { font-size: .82rem; color: var(--txt-2); line-height: 1.65; }
+
+/* ---- PR + Search (dark) ---- */
+.pr-search-section { background: #0a0a0a; padding: 5rem 0; }
+.pr-search-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.pr-search-eyebrow {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--cr-mid);
+  margin-bottom: .9rem;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.pr-search-eyebrow::before {
+  content: ''; display: block;
+  width: 16px; height: 2px; background: var(--cr);
+}
+.pr-search-left h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  margin-bottom: 1.5rem;
+}
+.pr-search-left h2 .txt-cr { color: var(--cr-mid); }
+.pr-bullets { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-direction: column; gap: .85rem; }
+.pr-bullets li {
+  display: flex; align-items: flex-start; gap: .75rem;
+  font-size: .9rem; color: rgba(255,255,255,.8); line-height: 1.65;
+}
+.pr-bullets li::before {
+  content: ''; width: 8px; height: 8px; border-radius: 50%;
+  background: var(--cr-mid); flex-shrink: 0; margin-top: 7px;
+}
+.pr-search-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .8rem; font-weight: 700; color: var(--cr-mid);
+  letter-spacing: .05em; text-transform: uppercase; transition: gap .2s;
+}
+.pr-search-link:hover { gap: 10px; }
+.pr-search-img {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background-color: #1a2a22;
+  background-image: url('/assets/images/reputation/pr-search.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---- Services (bg-alt, 4-col cards) ---- */
+.services-section { background: var(--bg-alt); padding: 5rem 0; }
+.services-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.rep-view-all {
+  font-size: .78rem; font-weight: 700; color: var(--cr);
+  letter-spacing: .05em; text-transform: uppercase; white-space: nowrap;
+  transition: color .2s;
+}
+.rep-view-all:hover { color: var(--cr-mid); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow .25s, transform .25s;
+}
+.service-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,.1); transform: translateY(-3px); }
+.service-card-img {
+  height: 155px;
+  background-color: var(--forest);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.service-card-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.08) 0%, rgba(0,0,0,.45) 100%);
+}
+.service-card-body { padding: 1.2rem; }
+.service-card-eyebrow {
+  font-size: .62rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--cr); margin-bottom: .35rem;
+}
+.service-card h3 {
+  font-size: .92rem; font-weight: 700; color: var(--txt);
+  margin-bottom: .45rem; line-height: 1.3;
+}
+.service-card p { font-size: .78rem; color: var(--txt-2); line-height: 1.6; margin-bottom: .7rem; }
+.service-card-link {
+  font-size: .72rem; font-weight: 700; color: var(--cr);
+  display: inline-flex; align-items: center; gap: 4px;
+  letter-spacing: .05em; text-transform: uppercase;
+}
+.service-card-link:hover { text-decoration: underline; }
+
+/* ---- Audience (dark) ---- */
+.audience-section { background: #0a0a0a; padding: 5rem 0; }
+.audience-head { text-align: center; margin-bottom: 2.5rem; }
+.audience-eyebrow {
+  font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--cr-mid);
+  margin-bottom: .6rem; display: flex; align-items: center;
+  justify-content: center; gap: .6rem;
+}
+.audience-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700; color: #fff; line-height: 1.2;
+  letter-spacing: -.025em; max-width: 640px;
+  margin: 0 auto;
+}
+.audience-section h2 .txt-cr { color: var(--cr-mid); }
+.audience-featured {
+  background: rgba(140,13,12,.14);
+  border: 1px solid rgba(140,13,12,.35);
+  border-radius: 12px; padding: 2rem 2.5rem; margin-bottom: 1.25rem;
+}
+.audience-featured-eyebrow {
+  font-size: .62rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--cr-mid); margin-bottom: .5rem;
+}
+.audience-featured h3 {
+  font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: .75rem;
+}
+.audience-featured p {
+  font-size: .9rem; color: rgba(255,255,255,.7); line-height: 1.75; max-width: 640px;
+}
+.audience-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+}
+.audience-card {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 10px; padding: 1.25rem 1.4rem;
+  transition: border-color .2s, background .2s;
+}
+.audience-card:hover { border-color: rgba(140,13,12,.4); background: rgba(140,13,12,.08); }
+.audience-card-icon {
+  width: 32px; height: 32px; background: rgba(140,13,12,.2);
+  border-radius: 7px; display: flex; align-items: center; justify-content: center;
+  margin-bottom: .75rem;
+}
+.audience-card-icon svg {
+  width: 15px; height: 15px; stroke: var(--cr-mid); fill: none;
+  stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.audience-card h3 { font-size: .88rem; font-weight: 700; color: #fff; margin-bottom: .35rem; }
+.audience-card p { font-size: .78rem; color: rgba(255,255,255,.58); line-height: 1.6; }
+
+/* ---- Ecosystem (bg) ---- */
+.ecosystem-section { background: var(--bg); padding: 5rem 0; }
+.ecosystem-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+.ecosystem-step {
+  padding: 1.5rem; border: 1px solid var(--border);
+  border-radius: 10px; background: #fff;
+  transition: border-color .2s, box-shadow .2s;
+}
+.ecosystem-step:hover { border-color: var(--cr); box-shadow: 0 4px 20px rgba(140,13,12,.07); }
+.ecosystem-num {
+  font-size: 2.2rem; font-weight: 800; color: var(--cr);
+  line-height: 1; margin-bottom: .6rem; opacity: .18;
+}
+.ecosystem-step h3 { font-size: .98rem; font-weight: 700; color: var(--txt); margin-bottom: .45rem; }
+.ecosystem-step p { font-size: .82rem; color: var(--txt-2); line-height: 1.65; }
+
+/* ---- Our Work ---- */
+.work-section { background: var(--bg-alt); padding: 5rem 0; }
+.work-top-row {
+  display: flex; justify-content: space-between;
+  align-items: flex-end; margin-bottom: 2rem; gap: 2rem; flex-wrap: wrap;
+}
+.work-top-row h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; color: var(--txt); margin: 0; }
+.work-top-row a { font-size: .78rem; font-weight: 700; color: var(--cr); letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+.work-top-row a:hover { text-decoration: underline; }
+.work-card {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; border-radius: 12px; overflow: hidden;
+  border: 1px solid var(--border); background: #fff;
+}
+.work-card-img {
+  min-height: 340px;
+  background-color: var(--forest-deep);
+  background-image: url('/assets/images/reputation/case-study-featured.jpg');
+  background-size: cover; background-position: center;
+}
+.work-card-body {
+  padding: 2.5rem 2rem; display: flex;
+  flex-direction: column; justify-content: center;
+}
+.work-tag {
+  display: inline-block; font-size: .62rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  background: var(--cr-lite); color: var(--cr);
+  border-radius: 4px; padding: 3px 10px; margin-bottom: 1rem;
+}
+.work-card-body h3 {
+  font-size: 1.3rem; font-weight: 700; color: var(--txt);
+  line-height: 1.3; margin-bottom: .75rem;
+}
+.work-card-body p { font-size: .88rem; color: var(--txt-2); line-height: 1.75; margin-bottom: 1.25rem; }
+.work-stats { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+.work-stat-num { font-size: 1.75rem; font-weight: 800; color: var(--cr); line-height: 1; }
+.work-stat-label { font-size: .72rem; color: var(--txt-3); margin-top: 2px; }
+.work-read-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .78rem; font-weight: 700; color: var(--cr);
+  letter-spacing: .05em; text-transform: uppercase;
+}
+.work-read-link:hover { text-decoration: underline; }
+
+/* ---- Testimonials (dark) ---- */
+.testimonials-section { background: #0a0a0a; padding: 5rem 0; }
+.testimonials-head { text-align: center; margin-bottom: 2.5rem; }
+.testimonials-eyebrow {
+  font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--cr-mid);
+  margin-bottom: .6rem; display: flex; align-items: center;
+  justify-content: center; gap: .6rem;
+}
+.testimonials-section h2 {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700;
+  color: #fff; letter-spacing: -.025em;
+}
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.testimonial-card {
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px; padding: 2rem 1.75rem;
+  transition: border-color .2s, background .2s;
+}
+.testimonial-card:hover { border-color: rgba(140,13,12,.4); background: rgba(255,255,255,.07); }
+.testimonial-stars { display: flex; gap: 3px; margin-bottom: 1rem; }
+.testimonial-stars svg { width: 14px; height: 14px; fill: var(--cr-mid); }
+.testimonial-quote {
+  font-size: .88rem; color: rgba(255,255,255,.8);
+  line-height: 1.8; margin-bottom: 1.5rem; font-style: italic;
+}
+.testimonial-name { font-size: .85rem; font-weight: 700; color: #fff; }
+.testimonial-role { font-size: .75rem; color: rgba(255,255,255,.5); margin-top: 2px; }
+
+/* ---- Reputation Insights ---- */
+.insights-section { background: var(--bg); padding: 5rem 0; }
+.insights-top-row {
+  display: flex; justify-content: space-between;
+  align-items: flex-end; margin-bottom: 2rem; gap: 2rem; flex-wrap: wrap;
+}
+.insights-top-row h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; color: var(--txt); margin: 0; }
+.insights-top-row a { font-size: .78rem; font-weight: 700; color: var(--cr); letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+.insights-top-row a:hover { text-decoration: underline; }
+.insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.insight-card {
+  background: #fff; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--border);
+  transition: box-shadow .25s, transform .25s;
+}
+.insight-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
+.insight-card-img {
+  height: 175px;
+  background-color: var(--forest);
+  background-size: cover; background-position: center;
+}
+.insight-card-body { padding: 1.25rem 1.25rem 1.5rem; }
+.insight-tag { font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--cr); margin-bottom: .45rem; }
+.insight-card h3 { font-size: .93rem; font-weight: 700; color: var(--txt); line-height: 1.4; margin-bottom: .45rem; }
+.insight-card p { font-size: .8rem; color: var(--txt-2); line-height: 1.6; margin-bottom: .7rem; }
+.insight-read { font-size: .72rem; font-weight: 700; color: var(--cr); letter-spacing: .05em; text-transform: uppercase; }
+.insight-read:hover { text-decoration: underline; }
+
+/* ---- CTA Band (crimson) ---- */
+.rep-cta-band { background: var(--cr); padding: 4rem 0; }
+.rep-cta-band-inner {
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 2rem; flex-wrap: wrap;
+}
+.rep-cta-band h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 700;
+  color: #fff; line-height: 1.2; max-width: 420px;
+}
+.rep-cta-form { display: flex; gap: 0; flex-wrap: nowrap; flex-shrink: 0; }
+.rep-cta-form input {
+  padding: 14px 20px; font-size: .88rem; border: none; outline: none;
+  border-radius: 6px 0 0 6px; width: 280px; font-family: var(--font); color: var(--txt);
+}
+.rep-cta-form input::placeholder { color: var(--txt-3); }
+.rep-cta-form button {
+  padding: 14px 24px; background: #0a0a0a; color: #fff;
+  border: none; border-radius: 0 6px 6px 0; font-size: .8rem;
+  font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+  cursor: pointer; font-family: var(--font); white-space: nowrap; transition: background .2s;
+}
+.rep-cta-form button:hover { background: var(--forest-deep); }
+
+/* ---- Final dark CTA ---- */
+.final-cta-section { background: #0a0a0a; padding: 5rem 0; text-align: center; }
+.final-cta-eyebrow {
+  font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--cr-mid);
+  margin-bottom: .9rem; display: flex; align-items: center;
+  justify-content: center; gap: .6rem;
+}
+.final-cta-section h2 {
+  font-size: clamp(1.9rem, 3.5vw, 3rem); font-weight: 700; color: #fff;
+  letter-spacing: -.025em; line-height: 1.2; margin-bottom: 1.5rem;
+  max-width: 640px; margin-left: auto; margin-right: auto;
+}
+.final-cta-section h2 .txt-cr { color: var(--cr-mid); }
+.final-cta-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 16px 36px; background: var(--cr); color: #fff;
+  border-radius: 6px; font-size: .86rem; font-weight: 700;
+  letter-spacing: .05em; text-transform: uppercase;
+  transition: background .2s, transform .2s;
+}
+.final-cta-btn:hover { background: var(--cr-mid); transform: translateY(-1px); }
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .pain-grid { grid-template-columns: repeat(2, 1fr); }
+  .ecosystem-grid { grid-template-columns: repeat(2, 1fr); }
+  .audience-grid { grid-template-columns: repeat(2, 1fr); }
+  .search-strip-inner { grid-template-columns: 1fr; }
+  .pr-search-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .pr-search-img { aspect-ratio: 16/7; }
+  .work-card { grid-template-columns: 1fr; }
+  .work-card-img { min-height: 220px; }
+}
+@media (max-width: 768px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .pain-grid { grid-template-columns: 1fr; }
+  .ecosystem-grid { grid-template-columns: 1fr; }
+  .audience-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .insights-grid { grid-template-columns: 1fr; }
+  .rep-cta-band-inner { flex-direction: column; align-items: flex-start; }
+  .rep-cta-form { flex-direction: column; width: 100%; }
+  .rep-cta-form input { border-radius: 6px; width: 100%; }
+  .rep-cta-form button { border-radius: 6px; }
+  .work-top-row, .insights-top-row, .services-top-row { flex-direction: column; align-items: flex-start; }
+  .audience-featured { padding: 1.5rem; }
+}
     </style>
 </head>
 <body>
@@ -1392,54 +1961,474 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
+    <!-- ============================================================
+         HERO — full-bleed dark with background image
+    ============================================================ -->
+    <section class="rep-hero" aria-labelledby="hero-heading">
+      <div class="wrap rep-hero-inner">
+        <p class="rep-hero-eyebrow">Digital Marketing · Online Reputation</p>
+        <h1 id="hero-heading">
+          We Build Reputations People Can <span class="txt-cr">Find,</span><br>
+          Trust and <span class="txt-cr">Remember.</span>
+        </h1>
+        <p class="rep-hero-lead">Your online reputation is part of your commercial reality. Negative reviews, damaging search results, and unmonitored brand mentions all affect buying decisions. GreaterHeight monitors your brand across every channel, manages reviews, and builds the positive digital presence that gives potential customers confidence in choosing you.</p>
+        <div class="rep-hero-btns">
+          <a href="/contact/" class="btn-rep-primary">Request a Reputation Audit</a>
+          <a href="/insights/case-studies/" class="btn-rep-outline">View Our Work</a>
+        </div>
+      </div>
+    </section>
 
-    <section class="page-hero" aria-labelledby="hero-heading">
-      <div class="page-hero-inner">
-        <div class="hero-copy">
-          <p class="hero-eyebrow">Digital Marketing</p>
-          <h1 id="hero-heading">What the internet says<br><strong>about you, managed.</strong></h1>
-          <p class="page-hero-lead">Your online reputation is part of your commercial reality. Negative reviews, damaging search results, and unmonitored brand mentions all affect buying decisions. GreaterHeight monitors your brand across every channel, manages reviews, and builds the positive digital presence that gives potential customers confidence in choosing you.</p>
-          <div class="hero-meta" role="list">
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">24/7</span><span class="hero-meta-label">Brand Monitoring</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">SERP</span><span class="hero-meta-label">Management</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">Rev.</span><span class="hero-meta-label">Generation</span></div>
+    <!-- ============================================================
+         SEARCH TRUST STRIP
+    ============================================================ -->
+    <section class="search-strip" aria-label="When people search your name">
+      <div class="wrap search-strip-inner reveal">
+        <div class="search-strip-left">
+          <p>When people search your name, <strong><span class="txt-cr">what do they find?</span></strong></p>
+          <a href="/contact/?subject=reputation-assessment" class="btn-strip-cta">Get a Free Assessment &#8594;</a>
+        </div>
+        <div class="search-strip-right">
+          <p>People — clients, investors, partners and employers — turn to search to make decisions. What your brand says about you matters more than what you say about yourself. Your digital footprint is working for you or against you, right now.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PAIN POINTS — 6 cards
+    ============================================================ -->
+    <section class="pain-section" aria-labelledby="pain-heading">
+      <div class="wrap reveal">
+        <p class="rep-section-eyebrow">The Reality</p>
+        <h2 class="rep-section-title" id="pain-heading">Your Reputation Exists Online.<br><span class="txt-cr">Whether You Manage It or Not.</span></h2>
+        <p class="rep-section-lead">Connect these corporate patterns for reputation: founders and high-growth businesses that avoid this lose authority to peers with proven, Google-first digital systems. Here is what we consistently encounter.</p>
+        <div class="pain-grid">
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <h3>Difficult to Find</h3>
+            <p>Your name or brand does not appear prominently in search when it should — leaving decision-makers unable to verify who you are.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+            </div>
+            <h3>Credibility Without Visibility</h3>
+            <p>Strong work and credentials exist, but the digital representation does not reflect them — credibility is invisible where it matters most.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Competitors Dominate Search</h3>
+            <p>Rivals appear above you in search results for branded and industry terms — capturing attention and trust that should be yours.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Important Milestones Coming</h3>
+            <p>A funding round, board appointment, media appearance, or strategic partnership that demands a strong digital footprint — but it is not ready.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3>Unprepared for Reputation Risks</h3>
+            <p>No monitoring or response plan in place for the moment something negative appears — leaving the brand exposed and reactive rather than prepared.</p>
+          </div>
+          <div class="pain-card reveal">
+            <div class="pain-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Systems Misrepresent You</h3>
+            <p>Outdated profiles, inconsistent information, or old coverage that no longer reflects who you are or what you now stand for.</p>
           </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">What We Monitor</p><p>Google reviews, Trustpilot, app store reviews, social media mentions, news coverage, industry forums, and competitor comparison content — wherever your brand appears.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">Brands and Individuals</p><p>We work with companies managing corporate reputation and with senior executives, founders, and public-facing professionals building or protecting a personal brand.</p></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WE CONNECT PR WITH SEARCH — dark split section
+    ============================================================ -->
+    <section class="pr-search-section" aria-labelledby="pr-search-heading">
+      <div class="wrap pr-search-grid">
+        <div class="pr-search-left reveal">
+          <p class="pr-search-eyebrow">Our Approach</p>
+          <h2 id="pr-search-heading">We Connect PR <span class="txt-cr">With Search.</span></h2>
+          <ul class="pr-bullets">
+            <li>We architect the digital narrative around your brand — from media coverage to search visibility — so every touchpoint tells a consistent, authoritative story.</li>
+            <li>Your story surfaces on Google, AI-powered search tools, and the platforms people consult before making trust-based decisions.</li>
+            <li>Manage PR, monitor mentions, and respond to coverage as one integrated system — not disconnected campaigns that contradict each other.</li>
+          </ul>
+          <a href="/contact/" class="pr-search-link">Learn More About Our Approach &#8594;</a>
+        </div>
+        <div class="pr-search-img reveal" role="img" aria-label="Team working on reputation strategy"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CORE SERVICES — 4-column image cards (8 cards, 2 rows)
+    ============================================================ -->
+    <section class="services-section" aria-labelledby="services-heading">
+      <div class="wrap">
+        <div class="services-top-row reveal">
+          <div>
+            <p class="rep-section-eyebrow">What We Do</p>
+            <h2 class="rep-section-title" id="services-heading" style="margin-bottom:0">Core Digital Reputation &amp; <span class="txt-cr">PR Solutions</span></h2>
+          </div>
+          <a href="/contact/" class="rep-view-all">Talk to Us &#8594;</a>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-insight.jpg')" role="img" aria-label="Insight and Clarity"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Foundation</p>
+              <h3>Insight &amp; Clarity</h3>
+              <p>We start by auditing your complete digital footprint — search results, reviews, mentions, and narrative gaps — to understand exactly how you appear online and where the work must begin.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-digital-rep.jpg')" role="img" aria-label="Digital Reputation Management"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Search</p>
+              <h3>Digital Reputation Management</h3>
+              <p>Optimising what appears when someone searches your name or brand — building positive content that ranks and reduces visibility of damaging search results across SERP positions.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-pr-media.jpg')" role="img" aria-label="PR and Media Relations"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Earned Media</p>
+              <h3>PR &amp; Media Relations</h3>
+              <p>Earned media coverage, thought leadership placement, and journalist relationships that build lasting authority in your sector — with a persistent, searchable digital footprint.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-review.jpg')" role="img" aria-label="Review and Rating Management"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Reviews</p>
+              <h3>Review &amp; Rating Management</h3>
+              <p>Response strategy and management for Google, Trustpilot, Glassdoor, and industry review platforms — including campaigns to build a stronger, more credible positive review base.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-crisis.jpg')" role="img" aria-label="Crisis Management"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Crisis</p>
+              <h3>Crisis Management</h3>
+              <p>Rapid response planning and execution for reputational crises — coordinated messaging, platform response, content publishing, and media monitoring during high-risk moments.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-thought-leadership.jpg')" role="img" aria-label="Thought Leadership"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Authority</p>
+              <h3>Thought Leadership</h3>
+              <p>Positioning you as the authority in your space through expert content, speaking opportunities, and strategic publishing on the platforms your audience and stakeholders trust.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-social-pr.jpg')" role="img" aria-label="Social Media PR"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Social</p>
+              <h3>Social Media PR</h3>
+              <p>Building and protecting your social presence across the platforms where your audience and stakeholders are most active — with consistent messaging, monitoring, and rapid response.</p>
+              <a href="/contact/" class="service-card-link">Learn More &#8594;</a>
+            </div>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-card-img" style="background-image:url('/assets/images/reputation/service-entrepreneur.jpg')" role="img" aria-label="For Entrepreneurs"></div>
+            <div class="service-card-body">
+              <p class="service-card-eyebrow">Personal Brand</p>
+              <h3>For Entrepreneurs</h3>
+              <p>Executive and founder reputation management — building a positive search presence, managing social profiles, monitoring for issues, and responding to coverage professionally.</p>
+              <a href="/what-we-do/marketing/personal-branding/" class="service-card-link">Personal Branding &#8594;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AUDIENCE — dark, featured card + 6-card grid
+    ============================================================ -->
+    <section class="audience-section" aria-labelledby="audience-heading">
+      <div class="wrap">
+        <div class="audience-head reveal">
+          <p class="audience-eyebrow">Who We Serve</p>
+          <h2 id="audience-heading">Built for Leaders and Organisations <span class="txt-cr">Where Trust Matters.</span></h2>
+        </div>
+
+        <div class="audience-featured reveal">
+          <p class="audience-featured-eyebrow">Our Core Client Profile</p>
+          <h3>High-Stakes Entities &amp; Visionary Leaders</h3>
+          <p>Our clients operate in spaces where reputation is infrastructure — not a marketing nice-to-have. We work with those whose digital footprint must reflect the scale of their ambitions: founders raising capital, executives stepping into public roles, and brands entering markets where scrutiny is high and trust is earned.</p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card reveal">
+            <div class="audience-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <h3>Founders &amp; Entrepreneurs</h3>
+            <p>Building authority that attracts investors, partners, and talent — before the moment you need them.</p>
+          </div>
+          <div class="audience-card reveal">
+            <div class="audience-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            </div>
+            <h3>CEOs &amp; Executives</h3>
+            <p>Senior leaders whose personal brand shapes how the market perceives their organisation and their decisions.</p>
+          </div>
+          <div class="audience-card reveal">
+            <div class="audience-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Professionals &amp; Partners</h3>
+            <p>High-value professionals — consultants, advisors, and partners — for whom credibility is their most valuable commercial asset.</p>
+          </div>
+          <div class="audience-card reveal">
+            <div class="audience-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>Public Figures</h3>
+            <p>Individuals in public life whose digital narrative must be managed with precision, consistency, and care.</p>
+          </div>
+          <div class="audience-card reveal">
+            <div class="audience-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>High-Trust Businesses</h3>
+            <p>Companies in fintech, healthcare, legal, and professional services — where a single trust deficit can cost a client relationship.</p>
+          </div>
+          <div class="audience-card reveal">
+            <div class="audience-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <h3>African Brands Going Online</h3>
+            <p>Businesses making their first serious digital presence investment — building from a strong foundation rather than repairing a weak one.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="reveal">
-          <p class="section-label">Services</p>
-          <div class="rule-line"></div>
-          <h2 class="section-title" id="services-heading">Reputation management services</h2>
-        </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>Brand Monitoring</h3><p>Continuous monitoring of brand mentions across search, social media, review platforms, and news — real-time alerts for anything that requires a response, and weekly reports on brand sentiment.</p></div>
-          <div class="value-card reveal"><h3>Review Management</h3><p>Response strategy and management for Google, Trustpilot, Glassdoor, and industry review platforms — including review generation campaigns to build a stronger positive review base.</p></div>
-          <div class="value-card reveal"><h3>SERP Reputation Management</h3><p>Optimising what appears when someone searches your name or brand — building positive content that ranks and reduces the visibility of damaging search results.</p></div>
-          <div class="value-card reveal"><h3>Crisis Response</h3><p>Rapid response planning and execution for reputational crises — coordinated messaging, platform response, content publishing, and media monitoring during high-risk moments.</p></div>
-          <div class="value-card reveal"><h3>Review Generation</h3><p>Structured programmes that encourage satisfied customers to leave genuine reviews — increasing review volume on the platforms that matter most to your buyers.</p></div>
-          <div class="value-card reveal"><h3>Personal Brand Management</h3><p>Executive and founder reputation management — building a positive search presence, managing social profiles, monitoring for issues, and responding to coverage professionally.</p></div>
+    <!-- ============================================================
+         ECOSYSTEM — 6 steps (white)
+    ============================================================ -->
+    <section class="ecosystem-section" aria-labelledby="ecosystem-heading">
+      <div class="wrap reveal">
+        <p class="rep-section-eyebrow">How It Works</p>
+        <h2 class="rep-section-title" id="ecosystem-heading">Visibility Is Not Enough.<br><span class="txt-cr">We Build the Ecosystem.</span></h2>
+        <p class="rep-section-lead">GreaterHeight designs and deploys an integrated reputation system — not a single campaign or one-off fix. Each phase builds on the last, compounding your authority over time.</p>
+        <div class="ecosystem-grid">
+          <div class="ecosystem-step reveal">
+            <div class="ecosystem-num">01</div>
+            <h3>Understand</h3>
+            <p>We audit your current digital footprint: search results, reviews, mentions, existing content, and narrative gaps that create vulnerability or missed opportunity.</p>
+          </div>
+          <div class="ecosystem-step reveal">
+            <div class="ecosystem-num">02</div>
+            <h3>Position</h3>
+            <p>We define the reputation architecture — the story, the search profile, the content strategy, and the platform priorities that reflect who you are and where you are going.</p>
+          </div>
+          <div class="ecosystem-step reveal">
+            <div class="ecosystem-num">03</div>
+            <h3>Build</h3>
+            <p>We produce the content, assets, and coverage that establishes your authority — articles, media placements, profiles, and review foundations that work in concert.</p>
+          </div>
+          <div class="ecosystem-step reveal">
+            <div class="ecosystem-num">04</div>
+            <h3>Amplify</h3>
+            <p>We place and distribute across search, media, and social — building reach and signals simultaneously, so that your story reaches the people whose decisions matter.</p>
+          </div>
+          <div class="ecosystem-step reveal">
+            <div class="ecosystem-num">05</div>
+            <h3>Monitor</h3>
+            <p>Continuous monitoring across search, social, review platforms, and news — with real-time alerts for anything that requires a response, and regular brand sentiment reports.</p>
+          </div>
+          <div class="ecosystem-step reveal">
+            <div class="ecosystem-num">06</div>
+            <h3>Strengthen</h3>
+            <p>Ongoing optimisation, review generation, and narrative expansion as your profile grows — compounding digital authority that becomes harder for competitors to displace.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" aria-labelledby="cta-heading">
-      <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Is your online reputation working for you or against you?</h2><p>Talk to our reputation team for an honest audit of your current brand presence.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Request a Reputation Audit</a><a href="/what-we-do/marketing/personal-branding/" class="btn-outline-white">Personal Branding</a></div>
+    <!-- ============================================================
+         OUR WORK — featured case study
+    ============================================================ -->
+    <section class="work-section" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="work-top-row reveal">
+          <div>
+            <p class="rep-section-eyebrow">Our Work</p>
+            <h2 id="work-heading">From Limited Visibility to a Stronger Digital Footprint</h2>
+          </div>
+          <a href="/insights/case-studies/">View All Case Studies &#8594;</a>
+        </div>
+        <div class="work-card reveal">
+          <div class="work-card-img" role="img" aria-label="Case study: Digital reputation transformation"></div>
+          <div class="work-card-body">
+            <span class="work-tag">Case Study · Reputation</span>
+            <h3>How We Rebuilt a Founder's Search Presence Before a Major Funding Round</h3>
+            <p>A Lagos-based technology founder was preparing for a Series A pitch. A competitor's negative coverage and sparse personal search results were creating friction with potential investors. Within four months, we rebuilt the digital narrative — earned media, optimised profiles, and a content programme that placed them in front of the right audiences.</p>
+            <div class="work-stats">
+              <div>
+                <div class="work-stat-num">4×</div>
+                <div class="work-stat-label">Search visibility</div>
+              </div>
+              <div>
+                <div class="work-stat-num">12</div>
+                <div class="work-stat-label">Media placements</div>
+              </div>
+              <div>
+                <div class="work-stat-num">90d</div>
+                <div class="work-stat-label">Time to results</div>
+              </div>
+            </div>
+            <a href="/insights/case-studies/" class="work-read-link">Read the Full Story &#8594;</a>
+          </div>
+        </div>
       </div>
     </section>
 
-  </main>
+    <!-- ============================================================
+         TESTIMONIALS — dark, 3-card grid
+    ============================================================ -->
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="wrap">
+        <div class="testimonials-head reveal">
+          <p class="testimonials-eyebrow">Client Reviews</p>
+          <h2 id="testimonials-heading">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">"GreaterHeight helped us understand our online PR clearly. They worked quickly and professionally to establish a digital presence that actually reflects what we have built. The difference in how potential partners now engage with us is significant."</p>
+            <div class="testimonial-name">Tunde Adeyemi</div>
+            <div class="testimonial-role">Co-Founder, Fintech Startup · Lagos</div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">"They understood that our PR strategy had to be tied to how we appear in search — not just press releases in the air. The integrated approach produced results that are still working for us eighteen months later."</p>
+            <div class="testimonial-name">Ngozi Okafor</div>
+            <div class="testimonial-role">Managing Director · Professional Services Firm</div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">"Before working with GreaterHeight, our online reputation was essentially what other people said about us. Now we control the narrative — our best work is what surfaces first. The team's monitoring alone has saved us from two potential crisis situations."</p>
+            <div class="testimonial-name">Emeka Obi</div>
+            <div class="testimonial-role">CEO · Healthcare Technology Company</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REPUTATION INSIGHTS — 3 article cards
+    ============================================================ -->
+    <section class="insights-section" aria-labelledby="insights-heading">
+      <div class="wrap">
+        <div class="insights-top-row reveal">
+          <div>
+            <p class="rep-section-eyebrow">Insights</p>
+            <h2 id="insights-heading">Reputation Insights</h2>
+          </div>
+          <a href="/insights/blog/">View All Articles &#8594;</a>
+        </div>
+        <div class="insights-grid">
+          <article class="insight-card reveal">
+            <div class="insight-card-img" style="background-image:url('/assets/images/reputation/insight-seo-vs-orm.jpg')" role="img" aria-label="SEO vs Reputation Management article cover"></div>
+            <div class="insight-card-body">
+              <p class="insight-tag">Reputation · SEO</p>
+              <h3>SEO vs Reputation Management: What Is the Difference and Why You Need Both</h3>
+              <p>Both shape what appears when someone searches your name. Understanding where they overlap — and where they diverge — matters for building authority that lasts.</p>
+              <a href="/insights/blog/" class="insight-read">Read Article &#8594;</a>
+            </div>
+          </article>
+          <article class="insight-card reveal">
+            <div class="insight-card-img" style="background-image:url('/assets/images/reputation/insight-google-business.jpg')" role="img" aria-label="Google Business Profile article cover"></div>
+            <div class="insight-card-body">
+              <p class="insight-tag">Reviews · Strategy</p>
+              <h3>How to Delete a Fake Google Review: A Guide for Businesses</h3>
+              <p>Fake reviews can damage trust overnight. Here is the step-by-step process for identifying, flagging, and responding — and when to escalate to a reputation specialist.</p>
+              <a href="/insights/blog/" class="insight-read">Read Article &#8594;</a>
+            </div>
+          </article>
+          <article class="insight-card reveal">
+            <div class="insight-card-img" style="background-image:url('/assets/images/reputation/insight-personal-brand.jpg')" role="img" aria-label="Personal branding article cover"></div>
+            <div class="insight-card-body">
+              <p class="insight-tag">Personal Brand</p>
+              <h3>Personal Branding for Nigerian CEOs: Why It Matters More Than Ever</h3>
+              <p>The global market is now a local market. Nigerian executives building cross-border authority need a digital presence that travels — here is how to build one deliberately.</p>
+              <a href="/insights/blog/" class="insight-read">Read Article &#8594;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BAND — crimson with email input
+    ============================================================ -->
+    <section class="rep-cta-band" aria-label="Stay ahead of the reputation curve">
+      <div class="wrap rep-cta-band-inner reveal">
+        <h2>Stay Ahead of the Reputation Curve.</h2>
+        <form class="rep-cta-form" onsubmit="event.preventDefault(); window.location.href='/contact/?subject=reputation-newsletter';" role="search" aria-label="Email sign-up">
+          <input type="email" placeholder="Your email address" aria-label="Email address" required>
+          <button type="submit">Get Started &#8594;</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FINAL DARK CTA
+    ============================================================ -->
+    <section class="final-cta-section" aria-labelledby="final-cta-heading">
+      <div class="wrap reveal">
+        <p class="final-cta-eyebrow">Your Reputation Starts Here</p>
+        <h2 id="final-cta-heading">What Does the Internet <span class="txt-cr">Say About You?</span></h2>
+        <a href="/contact/?subject=reputation-audit" class="final-cta-btn">Request a Free Reputation Audit &#8594;</a>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================
