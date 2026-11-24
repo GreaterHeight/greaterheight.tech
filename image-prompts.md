@@ -241,7 +241,7 @@ All prompts must look like **professional editorial photography** — no dramati
 **Purpose:** Blog/article card image — Personal Branding for Nigerian CEOs article.
 
 **Prompt:**
-> Editorial photograph of a Black professional man — mid-40s, dressed in a well-fitted traditional Ankara or kaftan outfit combined with a modern blazer — looking confidently at the camera in a contemporary office setting. Shot from the chest up, natural window light on one side. Clean, modern background, slightly out of focus. The image should feel like a magazine cover portrait — composed, authoritative, specific to West African professional culture. No colour grading. No text overlays.
+> Editorial portrait photograph of a Black Nigerian man in his mid-40s dressed in a sharply tailored dark navy or charcoal wool suit — the cut precise and expensive, as worn by a Fortune 500 CEO: notch lapels, pocket square in white linen, white barrel-cuff shirt, no tie. He stands or sits slightly turned toward camera with composed, direct eye contact. Expression is quietly authoritative — not smiling, not severe. Shot in a premium executive environment: a glass-walled boardroom, a hotel lobby with marble finishes, or a sleek high-rise office interior. Background is clean and professional, softly out of focus. Lighting is natural and slightly directional — one large window to the side. No studio backdrops, no dramatic shadows, no colour overlays. The image should read as a Financial Times or Bloomberg Businessweek cover portrait — global executive register, West African identity.
 
 **Dimensions:** 600 × 400 px minimum, 3:2 landscape
 **Placement:** `.insight-card-img` for the Nigerian CEO personal brand article card
