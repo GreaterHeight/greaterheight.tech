@@ -268,20 +268,31 @@
        HERO
     ============================================================ */
     .drs-hero {
-      background:
-        linear-gradient(rgba(0,48,32,.88) 0%, rgba(0,48,32,.72) 60%, rgba(0,48,32,.50) 100%),
-        url('/assets/images/digital-rep-services/hero-bg.jpg') center/cover no-repeat;
+      position: relative;
+      min-height: 540px;
       background-color: var(--bg-dark);
-      padding: 6rem 0 5rem;
-      position: relative; overflow: hidden;
+      background-image: url('/assets/images/reputation/hero-bg.jpg');
+      background-size: cover;
+      background-position: center top;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .drs-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(0,48,32,.92) 0%, rgba(0,48,32,.72) 55%, rgba(0,48,32,.38) 100%);
+      pointer-events: none; z-index: 0;
     }
     .drs-hero::after {
       content: '';
       position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
-      background: var(--grad-rule);
+      background: var(--grad-rule); z-index: 1;
     }
     .drs-hero-inner {
-      max-width: 760px;
+      position: relative; z-index: 1;
+      max-width: 680px;
+      padding: 5.5rem 0 4.5rem;
     }
     .drs-hero-eyebrow {
       font-size: .68rem; font-weight: 700; letter-spacing: .15em;
@@ -342,6 +353,8 @@
       display: grid;
       grid-template-columns: 480px 1fr;
       min-height: 480px;
+      max-width: 1240px;
+      margin: 0 auto;
     }
     /* Even rows flip the image to the right */
     .svc-section:nth-child(even) .svc-row {
@@ -439,41 +452,47 @@
     /* ============================================================
        FOOTER
     ============================================================ */
-    footer { background: var(--bg-dark); color: rgba(255,255,255,.75); font-size: var(--ts-sm); }
-    .footer-main { padding: var(--sp-9) 0 var(--sp-7); }
+    footer { background: var(--wine); color: rgba(255,255,255,.88); }
+    .footer-main { padding: 3.5rem 0 2.5rem; }
     .footer-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1.5fr 1fr 1fr;
-      gap: var(--sp-7);
+      grid-template-columns: 190px 1fr 1.4fr 1.4fr 1fr;
+      gap: 2rem;
     }
-    .footer-brand-logo { display: inline-block; margin-bottom: var(--sp-4); }
-    .footer-brand-tagline { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--teal-glow); margin-bottom: var(--sp-3); }
-    .footer-brand-p { font-size: var(--ts-sm); color: rgba(255,255,255,.55); line-height: 1.6; margin-bottom: var(--sp-4); }
-    .footer-brand-addr { font-style: normal; font-size: var(--ts-sm); color: rgba(255,255,255,.55); line-height: 1.8; }
-    .footer-brand-addr a { color: rgba(255,255,255,.55); transition: color var(--dur-fast); }
-    .footer-brand-addr a:hover { color: var(--teal-glow); }
-    .footer-col-head { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--white); margin-bottom: var(--sp-4); }
-    .footer-col-subhead { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--white); margin-top: var(--sp-5); margin-bottom: var(--sp-3); }
-    .footer-col-list { display: flex; flex-direction: column; gap: var(--sp-2); }
-    .footer-col-list li a { color: rgba(255,255,255,.55); font-size: var(--ts-sm); transition: color var(--dur-fast); }
-    .footer-col-list li a:hover { color: var(--teal-glow); }
-    .footer-lower { border-top: 1px solid rgba(255,255,255,.1); padding: var(--sp-5) 0; }
-    .footer-lower-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--sp-6); flex-wrap: wrap; }
-    .footer-follow-label { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.4); margin-bottom: var(--sp-3); }
-    .footer-social-row { display: flex; gap: var(--sp-3); }
-    .footer-social-row a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(255,255,255,.08); color: rgba(255,255,255,.6); transition: background var(--dur-fast), color var(--dur-fast); }
-    .footer-social-row a:hover { background: var(--teal); color: var(--white); }
-    .footer-social-row svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-    .footer-resources-label { font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.4); margin-bottom: var(--sp-3); }
-    .footer-resources-links { font-size: var(--ts-xs); line-height: 2; }
-    .footer-resources-links a { color: rgba(255,255,255,.45); transition: color var(--dur-fast); }
-    .footer-resources-links a:hover { color: var(--teal-glow); }
-    .footer-resources-links .sep { color: rgba(255,255,255,.2); margin: 0 var(--sp-2); }
-    .footer-copyright { background: rgba(0,0,0,.2); padding: var(--sp-4) 0; }
-    .footer-copyright-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--sp-3); font-size: var(--ts-xs); color: rgba(255,255,255,.35); }
-    .footer-copyright-inner a { color: rgba(255,255,255,.35); transition: color var(--dur-fast); }
-    .footer-copyright-inner a:hover { color: var(--teal-glow); }
-    .footer-copyright-policy { display: flex; gap: var(--sp-4); }
+    .footer-brand-logo { display: inline-block; margin-bottom: .9rem; }
+    .footer-brand-tagline { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--teal-glow); margin-bottom: .6rem; }
+    .footer-brand-p { font-size: .77rem; color: rgba(255,255,255,.65); line-height: 1.65; margin-bottom: .9rem; }
+    .footer-brand-addr { font-style: normal; font-size: .77rem; color: rgba(255,255,255,.65); line-height: 1.8; }
+    .footer-brand-addr a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+    .footer-brand-addr a:hover { color: var(--mint); }
+    .footer-col-head { font-size: .58rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; color: #fff; margin-bottom: .85rem; padding-bottom: .45rem; border-bottom: 1px solid rgba(255,255,255,.14); }
+    .footer-col-subhead { font-size: .58rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; color: #fff; margin-top: 1.1rem; margin-bottom: .6rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(255,255,255,.1); }
+    .footer-col-list { display: flex; flex-direction: column; gap: .28rem; }
+    .footer-col-list li { display: flex; align-items: baseline; gap: .32rem; font-size: .77rem; color: rgba(255,255,255,.75); }
+    .footer-col-list li::before { content: "✓"; font-size: .6rem; color: var(--mint); flex-shrink: 0; }
+    .footer-col-list a { color: inherit; text-decoration: none; transition: color .2s; }
+    .footer-col-list a:hover { color: var(--mint); }
+    .footer-lower { background: rgba(0,0,0,.28); padding: 1.3rem 0; }
+    .footer-lower-inner { display: grid; grid-template-columns: auto 1fr; gap: 3rem; align-items: start; }
+    .footer-follow-label { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,.45); margin-bottom: .55rem; }
+    .footer-social-row { display: flex; gap: .5rem; }
+    .footer-social-row a { width: 33px; height: 33px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,.28); color: rgba(255,255,255,.7); transition: background .2s, border-color .2s, color .2s; }
+    .footer-social-row a:hover { background: var(--teal); border-color: var(--teal); color: #fff; }
+    .footer-social-row svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .footer-resources-label { font-size: .58rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,.45); margin-bottom: .55rem; }
+    .footer-resources-links { display: flex; flex-wrap: wrap; align-items: center; gap: .08rem; font-size: .75rem; line-height: 2; }
+    .footer-resources-links a { color: rgba(255,255,255,.68); text-decoration: none; transition: color .2s; }
+    .footer-resources-links a:hover { color: var(--mint); }
+    .footer-resources-links .sep { color: rgba(255,255,255,.17); padding: 0 .22rem; }
+    .footer-copyright { background: rgba(0,0,0,.4); padding: .85rem 0; }
+    .footer-copyright-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem; font-size: .71rem; color: rgba(255,255,255,.52); }
+    .footer-copyright-inner a { color: rgba(255,255,255,.65); text-decoration: none; transition: color .2s; }
+    .footer-copyright-inner a:hover { color: var(--mint); }
+    .footer-copyright-policy { display: flex; flex-wrap: wrap; gap: .15rem .1rem; }
+    .footer-copyright-policy a + a::before { content: "·"; color: rgba(255,255,255,.18); padding: 0 .22rem; }
+    @media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
+    @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;gap:1.5rem;}}
+    @media(max-width:540px){.footer-grid{grid-template-columns:1fr;}}
 
     /* WhatsApp float */
     .whatsapp-float {
@@ -1064,10 +1083,7 @@
     <div class="wrap footer-copyright-inner">
       <span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span>
       <div class="footer-copyright-policy">
-        <a href="/legal/privacy-policy">Privacy Policy</a>
-        <a href="/legal/terms">Terms of Use</a>
-        <a href="/legal/disclaimer">Disclaimer</a>
-        <a href="/legal/cookies">Cookie Policy</a>
+        <a href="/legal/privacy-policy">Privacy Policy</a><a href="/legal/terms">Terms of Use</a><a href="/legal/disclaimer">Disclaimer</a><a href="/legal/cookies">Cookie Policy</a>
       </div>
       <span>Developed by <a href="/">GreaterHeight Technologies</a></span>
     </div>
