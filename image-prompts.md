@@ -712,4 +712,152 @@ These prompts cover all six Digital Marketing sub-service pages. Each page has a
 
 ---
 
+---
+
+## Who We Serve Pages
+
+> Images for the four audience segment pages. All images should feature real, diverse people — no stock-photo sterility, no overly cinematic drama. Professional photographer aesthetic: documentary warmth, natural light where possible, credible environments. People should represent African and global diversity in professional contexts.
+
+---
+
+### Who We Serve: Individuals (`/who-we-serve/individuals/`)
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background image — Professionals, Founders & Creators page.
+
+**Prompt:**
+> Wide-format editorial photograph of a confident Black African professional woman in her mid-30s, seated at a clean, well-lit desk in a modern co-working space or private office in Lagos or Nairobi. She looks directly into camera with quiet authority — not a smile, a composed confidence. A laptop screen glows softly in front of her, out of focus. Natural window light from the left. Warm-toned workspace with subtle greenery or indoor plants in the background. The image feels like a documentary portrait from a business magazine — no dramatic editing, natural colour grading, shallow depth of field. She wears smart-casual professional attire. The composition is wide with significant negative space on the right third of the frame for headline text overlay.
+
+**Dimensions:** 2400 × 1400 px minimum, 16:9 landscape
+**Placement:** Page hero — full-bleed with dark gradient overlay
+
+---
+
+#### `professional-working.jpg`
+**Purpose:** In-page story grid — The Visibility Problem section.
+
+**Prompt:**
+> Editorial photograph of a Black African male professional in his late 30s or early 40s, working at a standing desk or seated at a large monitor in a bright, modern Lagos office or home office environment. He is writing notes in a notebook while reviewing something on-screen, clearly in a state of focused work rather than posing. Nearby: a cup of coffee, a few business books, natural plants. Shot from a 45-degree angle — slightly above eye level. Natural daylight from a window. Warm neutral tones, no artificial colour enhancement. The image reads as genuine productivity, not stock-photo performance. No props that signal "tech startup" stereotypically. Conveys professional seriousness and expertise.
+
+**Dimensions:** 1200 × 900 px minimum, 4:3 portrait or square
+**Placement:** Story grid — left column image beside "The Visibility Problem" copy
+
+---
+
+#### `digital-authority.jpg`
+**Purpose:** In-page story grid — The Digital Trust Economy section (dark background).
+
+**Prompt:**
+> Wide editorial photograph of a Black African professional woman in her early 40s, shot from behind or at a 3/4 angle, looking at a large monitor or dual-screen setup showing website analytics, LinkedIn data, or a professional personal website. The room is dimly lit except for the screen glow — evening or controlled studio light. The image is moody but not dramatic: she is reading data or reviewing her digital presence, not posing. The monitors show graphs, profile pages, or dashboards in cool blue-green tones. Shot with natural shallow depth of field. The image conveys the idea of monitoring and building a digital presence — quiet professional authority. No text visible on screen. Cinematic restraint, not cinematic excess.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "The Digital Trust Economy" copy
+
+---
+
+### Who We Serve: Businesses (`/who-we-serve/businesses/`)
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background image — Startups, SMEs & Enterprises page.
+
+**Prompt:**
+> Wide-format editorial photograph of a diverse team of three to four African professionals gathered around a large table covered with laptops, printed reports, and sticky-note planning materials. The setting is a modern co-working space or open-plan tech office in Lagos or Accra — glass-walled meeting room, exposed ceiling, contemporary furniture. The team is mid-discussion — one person is pointing at something on a laptop, others are leaning in. Faces are visible and show professional engagement, not posed smiles. Mix of genders and ages (late 20s to early 40s). Shot wide at a slight overhead angle to capture the whole table environment. Natural or large-format office light, warm-neutral colour balance. Significant space on the left or right edge for headline text overlay. No obvious corporate branding visible. Conveys capable, collaborative business technology work.
+
+**Dimensions:** 2400 × 1400 px minimum, 16:9 landscape
+**Placement:** Page hero — full-bleed with dark gradient overlay
+
+---
+
+#### `team-working.jpg`
+**Purpose:** In-page story grid — The Business Problem section.
+
+**Prompt:**
+> Editorial photograph of two Black African software engineers or technical professionals — one man, one woman, both in their late 20s or early 30s — reviewing code on dual monitors side by side. They are leaning in slightly, in a focused discussion about what is on screen. The setting is a real working environment — a software development studio or tech company office, not a staged background. Shot at a natural angle, mid-distance. The screens show code or a technical diagram, not illegible blur. Good ambient office light with no artificial colour effects. No props that feel forced. The image conveys collaborative technical work and professional competence. Both individuals look engaged and capable.
+
+**Dimensions:** 1200 × 900 px minimum, 4:3 landscape
+**Placement:** Story grid — left column image beside "The Business Problem" copy
+
+---
+
+#### `delivery-approach.jpg`
+**Purpose:** In-page story grid — How We Deliver section (dark background).
+
+**Prompt:**
+> Editorial photograph of a Black African male software engineer or DevOps professional in his early 30s, standing in front of a large monitor or display showing a CI/CD pipeline dashboard, deployment logs, or a production monitoring interface. He has his arms folded, looking at the screen with concentration — not at the camera. The room is a modern server room, tech operations centre, or dark-mode developer environment. Blue and green screen light is the dominant ambient illumination. Shot from a slight angle, capturing the person and the screens in the same frame. No stock-photo posing. The image conveys infrastructure thinking, technical depth, and production focus — not design or business process.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "How We Deliver" copy (dark section)
+
+---
+
+### Who We Serve: Organisations (`/who-we-serve/organisations/`)
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background image — NGOs, Institutions & Associations page.
+
+**Prompt:**
+> Wide editorial photograph of a diverse group of African professionals in an NGO or institutional meeting environment — a conference room or community centre with large windows, natural light, and simple but professional furnishings. Five to six people are seated or standing around a table. Ages range from late 20s to early 50s. Mix of professional attire and smart-casual. One person is presenting from a laptop. Others are listening attentively, some with notebooks. The atmosphere is purposeful and collaborative — not corporate glamour, not poverty-signalling development-sector tropes. Shot wide to capture the full group, with space in the upper third for headline text overlay. Warm natural daylight. The image reads as mission-driven competence. No visible logos or identifiable branding.
+
+**Dimensions:** 2400 × 1400 px minimum, 16:9 landscape
+**Placement:** Page hero — full-bleed with dark gradient overlay
+
+---
+
+#### `mission-team.jpg`
+**Purpose:** In-page story grid — The Paradox section.
+
+**Prompt:**
+> Editorial photograph of three or four African professionals — representing a mix of genders and ages, from late 20s to early 50s — seated around a conference table in an NGO or institutional office. The table has printed reports, laptops, and a whiteboard visible in the background with planning notes. The group is mid-discussion: one person is speaking, others are actively listening or writing. The environment looks like a real working NGO or association office — practical furnishings, some organisational signage on the wall (not legible). Natural light from a window. Shot at a 45-degree angle, capturing the group dynamic. The image conveys people genuinely working toward a collective purpose — not a staged collaboration photo.
+
+**Dimensions:** 1200 × 900 px minimum, 4:3 landscape
+**Placement:** Story grid — left column image beside "The Paradox" copy
+
+---
+
+#### `community-impact.jpg`
+**Purpose:** In-page story grid — Our Commitment section (dark background).
+
+**Prompt:**
+> Editorial photograph of a Black African woman in her mid-30s or 40s — the kind of person who runs a community programme or manages an association — sitting with a small group of community members around a table in a community hall or church hall. She is showing them something on a tablet or laptop. The group includes older men and women, a younger person. The setting is humble but dignified — not photogenic poverty, not corporate glamour. Natural light from windows. Shot at a slight distance with a medium focal length to capture the full scene. The image conveys a real service relationship and the responsibility of running a mission-driven organisation well. Warm tones, unposed.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Our Commitment" copy (dark section)
+
+---
+
+### Who We Serve: Nations (`/who-we-serve/nations/`)
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background image — Government & Public Sector page.
+
+**Prompt:**
+> Wide editorial photograph of a modern government operations centre or ministerial conference room in a West African context — Nigeria, Ghana, or similar. A group of four to five senior public servants and officials in professional attire (some in traditional formal wear, others in suits) are standing or seated around a large table with laptops and printed documents. One person is presenting data on a wall-mounted display showing a dashboard or government portal interface. The room has the aesthetic of a modern African government institution — professional, functional, serious. No cartoon-villain bureaucracy or poverty tropes. Shot wide with the group and the display both visible. Significant space in the frame for headline overlay. The image conveys effective, capable government work.
+
+**Dimensions:** 2400 × 1400 px minimum, 16:9 landscape
+**Placement:** Page hero — full-bleed with dark gradient overlay
+
+---
+
+#### `government-digital.jpg`
+**Purpose:** In-page story grid — The Public Sector Mandate section.
+
+**Prompt:**
+> Editorial photograph of two or three African government officials or public sector professionals in a modern office environment — a ministry or agency operations room — reviewing large monitor screens showing a government digital services portal or public data dashboard. The professionals are Black African, mix of genders, early 30s to mid-40s, in formal professional or smart-casual attire. One is pointing at the screen, another is taking notes. The screens show a clean government portal interface (no actual identifiable branding). Shot at a natural mid-distance, slightly to the side. Good office lighting. No dramatic post-processing. The image conveys careful, deliberate attention to public digital infrastructure — not a photo op.
+
+**Dimensions:** 1200 × 900 px minimum, 4:3 landscape
+**Placement:** Story grid — left column image beside "The Public Sector Mandate" copy
+
+---
+
+#### `public-servants.jpg`
+**Purpose:** In-page story grid — Delivery Principles section (dark background).
+
+**Prompt:**
+> Editorial photograph of three African public sector officials or government IT professionals — two men and one woman, mix of ages 30s to 50s, in formal attire — in a planning or strategy session in a modern government conference room. One is standing at a whiteboard that has system architecture or project phases diagrammed in simple markers. Others are seated, reviewing printed documents or laptops. The environment is a real institutional space — not a glossy corporate boardroom, not a rundown civil service office. Practical, professional, purposeful. Natural office light. Shot from a slight angle. The image conveys structured, rigorous government technology planning — the kind that happens before a system goes live. No stock-photo dynamics.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Delivery Principles" copy (dark section)
+
+---
+
 *Last updated: 2026-11-25*

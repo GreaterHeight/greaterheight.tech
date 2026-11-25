@@ -968,6 +968,55 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+    /* ============================================================
+       PREMIUM PAGE COMPONENTS — Who We Serve: Individuals
+    ============================================================ */
+    .page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+    .page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+    .stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+    .stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+    .stat-item:last-child{border-right:none;}
+    .stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+    .stat-unit{color:var(--teal-glow);}
+    .stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+    .process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+    .process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+    .process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+    .process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+    .pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+    .pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+    .pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+    .pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+    .pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+    .pillar-list li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+    .pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+    .pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+    .pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+    .pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+    .persona-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .persona-grid.cols-4{grid-template-columns:repeat(4,1fr);}
+    .persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+    .persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+    .persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+    .persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .benefit-list{margin-top:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-4);}
+    .benefit-item{display:flex;align-items:flex-start;gap:var(--sp-3);}
+    .benefit-dot{width:8px;height:8px;border-radius:50%;background:var(--teal-glow);flex-shrink:0;margin-top:7px;}
+    .benefit-text{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .benefit-text strong{color:var(--txt);font-weight:700;display:block;font-size:var(--ts-base);margin-bottom:2px;}
+    @media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.persona-grid.cols-4{grid-template-columns:1fr 1fr;}}
+    @media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.persona-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.persona-grid.cols-4{grid-template-columns:1fr;}.story-grid{grid-template-columns:1fr;}}
+    @media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}}
+
     </style>
 </head>
 <body>
@@ -1355,7 +1404,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <main id="main-content">
 
     <!-- ── HERO ─────────────────────────────────────────────────── -->
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/who-we-serve/individuals/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
@@ -1371,128 +1420,209 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <!-- ── THE CHALLENGE ────────────────────────────────────────────── -->
-    <section class="content-section bg-light" aria-labelledby="challenge-heading">
+    <!-- ── STATS BAND ─────────────────────────────────────────────── -->
+    <div class="stats-band" aria-hidden="true">
       <div class="container">
-        <div class="two-col-prose">
-          <div>
-            <h2 id="challenge-heading">The Visibility Problem</h2>
-            <p>Most professionals are more capable than their online presence suggests. They have years of experience, genuine expertise, and clients who would refer them enthusiastically — but when a new prospect searches for them, they find an outdated LinkedIn profile, a generic website, or nothing at all.</p>
-            <p>In a world where trust is built online before a first conversation, an invisible professional is an inaccessible professional. The opportunity cost is invisible precisely because you never see the clients who looked, formed a first impression, and moved on.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-number">81<span class="stat-unit">%</span></span>
+            <span class="stat-label">of buyers research a person online before engaging them</span>
           </div>
-          <div>
-            <h2>What We Do About It</h2>
-            <p>We build the digital infrastructure of authority — the systems that make your expertise visible, your positioning clear, and your credibility undeniable to the right people. Whether you are a consultant, a founder building a thought-leadership platform, a coach, a creative professional, or an executive building your next chapter, we design and build digital presence that works while you work.</p>
-            <p>This is not branding for its own sake. Every element we build is designed to earn attention, establish trust, and convert interest into conversation.</p>
+          <div class="stat-item">
+            <span class="stat-number">70<span class="stat-unit">%</span></span>
+            <span class="stat-label">of hiring decisions are influenced by an online search</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3<span class="stat-unit">x</span></span>
+            <span class="stat-label">more inbound leads reported by professionals with authority websites</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15<span class="stat-unit">+</span></span>
+            <span class="stat-label">years building digital presence for professionals across Africa and beyond</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── THE VISIBILITY PROBLEM — story grid ───────────────────── -->
+    <section class="section" aria-labelledby="visibility-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <img src="/assets/images/who-we-serve/individuals/professional-working.jpg"
+                 onerror="this.style.display='none'"
+                 alt="Professional working on digital presence strategy" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">20<span style="font-size:1.2rem">+</span></div>
+              <div class="badge-label">Years of delivery</div>
+            </div>
+          </div>
+          <div class="story-content reveal">
+            <div class="section-label">The Visibility Problem</div>
+            <h2 id="visibility-heading" class="section-title">Most professionals are more capable than their online presence suggests.</h2>
+            <p>Years of experience. A strong referral network. Clients who would speak warmly about your work. And yet — when a new prospect looks you up, they find an outdated LinkedIn profile, a generic website, or nothing at all.</p>
+            <p>In a world where trust is built online before the first conversation, an invisible professional is an inaccessible one. The cost of that invisibility is hidden — you never see the clients who looked, formed an impression, and moved on. But the pipeline reflects it.</p>
+            <p>We build the digital infrastructure of authority: the systems that make your expertise visible, your positioning clear, and your credibility undeniable to the right people. This is not branding for its own sake. <strong>Every element we build is designed to earn attention, establish trust, and convert interest into conversation.</strong></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── WHAT WE BUILD ─────────────────────────────────────────────── -->
-    <section class="content-section" id="what-we-build" aria-labelledby="build-heading">
+    <!-- ── WHO THIS IS FOR — persona grid ────────────────────────── -->
+    <section class="section section-alt" id="who-this-is-for" aria-labelledby="for-heading">
       <div class="container">
-        <h2 id="build-heading" class="section-heading">What We Build for Individuals</h2>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
-            <h3>Personal Brand Platform</h3>
-            <p>A comprehensive digital authority system: positioning strategy, brand identity, authority website, LinkedIn profile engineering, and the content infrastructure to sustain visibility over time. Our flagship engagement for individuals serious about their professional reputation.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Authority Website</h3>
-            <p>A professionally designed, fast-loading personal site that communicates who you are, what you do, who you serve, and why you are the right choice — with a clear path for visitors to engage, enquire, or hire you.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Portfolio &amp; Case Study Site</h3>
-            <p>For designers, developers, consultants, and creative professionals, a portfolio site that showcases your best work with the context that turns a viewer into a client — not just a gallery of images, but a demonstration of your thinking.</p>
-          </article>
-          <article class="feature-card">
-            <h3>LinkedIn Profile Engineering</h3>
-            <p>A fully rewritten and optimised LinkedIn presence — headline, About section, experience framing, featured content, and recommendation strategy — built to perform in LinkedIn's search algorithm and position you as a category leader.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Content &amp; Publishing System</h3>
-            <p>A content strategy and publishing infrastructure — newsletter platform, blog, SEO-optimised articles, social content templates — designed so that your ideas reach the right audience consistently, without requiring a full-time marketing team.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Speaking &amp; Coaching Platform</h3>
-            <p>For speakers, trainers, coaches, and mentors: a platform that handles programme discovery, booking, course delivery, and community engagement — giving your audience a professional experience from first click to completed programme.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── WHO THIS IS FOR ───────────────────────────────────────────── -->
-    <section class="content-section bg-light" aria-labelledby="for-heading">
-      <div class="container">
-        <h2 id="for-heading" class="section-heading">Who This Is For</h2>
-        <p class="section-intro">We work with individuals at pivotal professional moments — building something new, repositioning for a bigger audience, or making expertise visible for the first time.</p>
-        <div class="grid-4">
-          <div class="audience-card">
+        <div class="section-label">Who We Work With</div>
+        <h2 id="for-heading" class="section-title">Built for professionals at pivotal moments</h2>
+        <p class="section-lead">We work with individuals who are building something new, repositioning for a bigger audience, or making their expertise visible for the first time.</p>
+        <div class="persona-grid cols-4">
+          <div class="persona-card reveal">
+            <div class="persona-role">Independent Professionals</div>
             <h3>Consultants &amp; Advisers</h3>
-            <p>Independent professionals whose reputation is their pipeline. We build the digital presence that replaces cold outreach with inbound enquiries from the clients you actually want to work with.</p>
+            <p>Your reputation is your pipeline. We build the digital presence that replaces cold outreach with inbound enquiries from the clients you actually want to work with.</p>
           </div>
-          <div class="audience-card">
+          <div class="persona-card reveal">
+            <div class="persona-role">Company Builders</div>
             <h3>Founders &amp; Executives</h3>
-            <p>Leaders who recognise that personal brand amplifies company brand — and who want a professional digital presence that reflects the size of the opportunity they are pursuing.</p>
+            <p>Personal brand amplifies company brand. We build a professional digital presence that reflects the ambition and credibility of the opportunity you are pursuing.</p>
           </div>
-          <div class="audience-card">
+          <div class="persona-card reveal">
+            <div class="persona-role">Knowledge Practitioners</div>
             <h3>Coaches &amp; Educators</h3>
-            <p>Practitioners whose knowledge is the product. We build the platforms, course infrastructure, and content systems that let you package your expertise and deliver it at scale.</p>
+            <p>Your knowledge is the product. We build the platforms, course infrastructure, and content systems that let you package your expertise and deliver it at scale.</p>
           </div>
-          <div class="audience-card">
+          <div class="persona-card reveal">
+            <div class="persona-role">Domain Specialists</div>
             <h3>Creatives &amp; Specialists</h3>
-            <p>Designers, architects, photographers, writers, and domain specialists who need their work to speak for itself — in a format that is discoverable, credible, and built to convert.</p>
+            <p>Designers, architects, writers, and domain experts who need their work to speak for itself — in a format that is discoverable, credible, and built to convert.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── PROCESS ───────────────────────────────────────────────────── -->
-    <section class="content-section" aria-labelledby="process-heading">
+    <!-- ── WHAT WE BUILD — pillar grid ────────────────────────────── -->
+    <section class="section" id="what-we-build" aria-labelledby="build-heading">
       <div class="container">
-        <h2 id="process-heading" class="section-heading">How We Work with You</h2>
-        <div class="steps-grid grid-4">
-          <div class="step-card">
-            <span class="step-num" aria-hidden="true">1</span>
+        <div class="section-label">What We Deliver</div>
+        <h2 id="build-heading" class="section-title">The digital infrastructure of authority</h2>
+        <p class="section-lead">We build the systems that make your expertise findable, your positioning compelling, and your digital presence worth arriving at.</p>
+        <div class="pillar-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-num">01</div>
+            <div class="pillar-title">Personal Brand Platform</div>
+            <p class="pillar-desc">Our flagship engagement for individuals serious about professional authority. A comprehensive system covering positioning strategy, brand identity, authority website, LinkedIn engineering, and the content infrastructure to sustain visibility over time.</p>
+            <ul class="pillar-list">
+              <li>Positioning strategy and messaging architecture</li>
+              <li>Brand identity and visual language</li>
+              <li>Authority website, designed and built for conversion</li>
+              <li>LinkedIn profile engineering and content programme</li>
+              <li>SEO and content infrastructure</li>
+            </ul>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-num">02</div>
+            <div class="pillar-title">Authority Website</div>
+            <p class="pillar-desc">A professionally designed, fast-loading personal site that answers the three questions every visitor is silently asking: who are you, what do you do, and why should I trust you? Built with a clear path to engagement.</p>
+            <ul class="pillar-list">
+              <li>Custom design matched to your professional identity</li>
+              <li>Mobile-first, performance-optimised build</li>
+              <li>Portfolio, case study, or testimony integration</li>
+              <li>Contact and enquiry flow designed to convert</li>
+              <li>CMS for self-managed content updates</li>
+            </ul>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-num">03</div>
+            <div class="pillar-title">Content &amp; Publishing System</div>
+            <p class="pillar-desc">For professionals who know that consistent content is how authority compounds over time. A content strategy and publishing infrastructure — newsletter, blog, social — that reaches the right audience without requiring a full-time marketing operation.</p>
+            <ul class="pillar-list">
+              <li>Content strategy and editorial calendar</li>
+              <li>Newsletter platform setup and design</li>
+              <li>SEO-optimised article production</li>
+              <li>Social content templates and publishing workflow</li>
+              <li>Performance tracking and optimisation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STORY GRID 2 — the digital trust economy ──────────────── -->
+    <section class="section section-dark" aria-labelledby="trust-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content reveal">
+            <div class="section-label" style="color:var(--teal-glow);">Why This Matters Now</div>
+            <h2 id="trust-heading" class="section-title light">The first impression happens before you speak.</h2>
+            <p style="color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:var(--sp-4);">Before a potential client calls, a potential employer interviews, or a potential partner reaches out — they look you up. What they find in those first thirty seconds shapes every conversation that follows.</p>
+            <p style="color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:var(--sp-4);">A strong digital presence does not just reflect your credibility. It creates it. The professional who appears in search results, publishes expert content, and maintains a coherent online identity is perceived as more authoritative — often before a single conversation has taken place.</p>
+            <p style="color:rgba(255,255,255,.75);line-height:1.8;">We build the systems that make sure that first impression is accurate, compelling, and working for you around the clock.</p>
+          </div>
+          <div class="story-image reveal">
+            <img src="/assets/images/who-we-serve/individuals/digital-authority.jpg"
+                 onerror="this.style.display='none'"
+                 alt="Professional digital authority and online presence" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">360°</div>
+              <div class="badge-label">Digital presence audit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESS ────────────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-label">How We Work</div>
+        <h2 id="process-heading" class="section-title">From first conversation to live platform</h2>
+        <p class="section-lead">Every engagement follows a structured process — built to remove uncertainty, align expectations, and deliver a platform that performs.</p>
+        <div class="process-grid">
+          <div class="process-step reveal">
             <h3>Discovery</h3>
-            <p>We start with a deep conversation about your expertise, your target audience, what you want to be known for, and what you want digital presence to do for your career or business.</p>
+            <p>A deep conversation about your expertise, your target audience, what you want to be known for, and what success looks like. No assumptions, no templates — we start from your actual situation.</p>
           </div>
-          <div class="step-card">
-            <span class="step-num" aria-hidden="true">2</span>
+          <div class="process-step reveal">
             <h3>Strategy &amp; Positioning</h3>
-            <p>We define your positioning, messaging architecture, and the digital channels where your target audience spends time — so every element we build points in the same direction.</p>
+            <p>We define your positioning, messaging architecture, and the digital channels where your audience is active — so everything we build points in the same direction and speaks to the right people.</p>
           </div>
-          <div class="step-card">
-            <span class="step-num" aria-hidden="true">3</span>
+          <div class="process-step reveal">
             <h3>Design &amp; Build</h3>
-            <p>Our team designs and builds your digital platform — website, profiles, content infrastructure — with your brand identity, SEO requirements, and conversion goals built in from the start.</p>
+            <p>Our team designs and builds your digital platform — website, profiles, content infrastructure — with your brand identity, SEO requirements, and conversion goals built in from day one.</p>
           </div>
-          <div class="step-card">
-            <span class="step-num" aria-hidden="true">4</span>
-            <h3>Launch &amp; Sustain</h3>
-            <p>We launch your platform, train you on how to maintain and update it, and remain available for ongoing support, content production, and optimisation as your platform grows.</p>
+          <div class="process-step reveal">
+            <h3>Launch &amp; Grow</h3>
+            <p>We launch your platform, train you to manage and update it, and remain available for ongoing support, content production, and optimisation as your platform scales with your ambition.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── CTA ───────────────────────────────────────────────────────── -->
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <!-- ── PULL QUOTE ─────────────────────────────────────────────── -->
+    <section class="section section-teal" aria-label="Positioning statement">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Ready to build a digital presence that earns attention?</h2>
-            <p>Whether you need a complete personal brand platform or a focused project — a new website, a LinkedIn overhaul, a content system — start with a conversation. We will help you identify the highest-impact work and scope a project that fits your goals and timeline.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
-            <a href="/what-we-do/" class="btn btn-ghost">See All Services</a>
-          </div>
+        <div class="pull-quote">
+          <blockquote>Your expertise took years to build. Your digital presence should reflect that — not as decoration, but as <strong>infrastructure that earns trust</strong> before you are ever in the room.</blockquote>
+          <p class="pull-quote-attr">GreaterHeight Technologies — Personal Brand &amp; Digital Authority</p>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- ── CTA BAND ───────────────────────────────────────────────── -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band-inner">
+        <div>
+          <h2 id="cta-heading">Ready to build a digital presence that earns attention?</h2>
+          <p>Whether you need a complete personal brand platform or a focused project — a new website, a LinkedIn overhaul, a content system — start with a conversation. We will identify the highest-impact work and scope a project that fits your goals and timeline.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/what-we-do/" class="btn-outline-white">See All Services</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

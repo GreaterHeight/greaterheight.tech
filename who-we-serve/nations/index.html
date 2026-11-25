@@ -968,6 +968,63 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+/* PREMIUM PAGE COMPONENTS — Who We Serve: Nations */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;}
+.page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,15,25,.97) 0%,rgba(13,61,40,.9) 50%,rgba(13,61,40,.55) 75%,transparent 100%);}
+.stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+.stat-item:last-child{border-right:none;}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+.stat-unit{color:var(--teal-glow);}
+.stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.reverse{direction:rtl;}.story-grid.reverse>*{direction:ltr;}
+.story-image{position:relative;border-radius:20px;overflow:hidden;min-height:420px;background:linear-gradient(135deg,var(--teal) 0%,var(--forest) 100%);}
+.story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.story-image .img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,15,.4) 0%,transparent 60%);}
+.story-badge{position:absolute;bottom:var(--sp-5);left:var(--sp-5);background:rgba(5,25,15,.88);backdrop-filter:blur(8px);border:1px solid rgba(30,180,150,.35);border-radius:14px;padding:var(--sp-3) var(--sp-4);text-align:center;}
+.badge-num{font-size:1.8rem;font-weight:700;color:var(--white);line-height:1;}
+.badge-label{font-size:.68rem;color:var(--teal-glow);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;}
+.story-content .section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.story-content .section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+.story-content .section-title.light{color:var(--white);}
+.story-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.8;margin-bottom:var(--sp-4);}
+.story-content p:last-child{margin-bottom:0;}
+.section{padding:var(--sp-11) 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.section-teal{background:var(--teal-lite);}
+.section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.section-title{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:var(--sp-5);}
+.section-lead{font-size:var(--ts-base);color:var(--txt-2);line-height:1.75;max-width:700px;margin-bottom:0;}
+.capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.capability-card{border-radius:20px;padding:var(--sp-7) var(--sp-6);border:1px solid var(--border);background:var(--bg-card);display:flex;gap:var(--sp-5);align-items:flex-start;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.capability-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);}
+.capability-num{font-size:1.5rem;font-weight:700;color:var(--teal-glow);flex-shrink:0;line-height:1;padding-top:4px;}
+.capability-body h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.capability-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.principle-card-prem{padding:var(--sp-6);border-top:3px solid var(--teal-glow);}
+.principle-card-prem h3{font-size:var(--ts-base);font-weight:700;color:var(--white);margin-bottom:var(--sp-3);}
+.principle-card-prem p{font-size:var(--ts-sm);color:rgba(255,255,255,.65);line-height:1.7;}
+.pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+.pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+.pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+.pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+.cta-band{background:linear-gradient(135deg,rgba(5,15,25,1) 0%,rgba(13,61,40,1) 100%);padding:var(--sp-11) 0;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.9rem 2.2rem;background:var(--cr);color:var(--white);border-radius:999px;font-weight:700;font-size:var(--ts-sm);text-decoration:none;transition:background var(--dur-fast);}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-outline-white{display:inline-block;padding:.9rem 2.2rem;border:2px solid rgba(255,255,255,.4);color:var(--white);border-radius:999px;font-weight:600;font-size:var(--ts-sm);text-decoration:none;transition:border-color var(--dur-fast);}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.8);}
+@media(max-width:1100px){.capability-grid{grid-template-columns:1fr;}.principles-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.story-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){.principles-grid{grid-template-columns:1fr;}}
+@media(max-width:540px){.stats-row{grid-template-columns:1fr 1fr;}}
     </style>
 </head>
 <body>
@@ -1355,7 +1412,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <main id="main-content">
 
     <!-- ── HERO ─────────────────────────────────────────────────── -->
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/who-we-serve/nations/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
@@ -1371,106 +1428,178 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
-    <!-- ── THE CHALLENGE ────────────────────────────────────────────── -->
-    <section class="content-section bg-light" aria-labelledby="challenge-heading">
+    <!-- ── STATS BAND ─────────────────────────────────────────────── -->
+    <div class="stats-band" aria-hidden="true">
       <div class="container">
-        <div class="two-col-prose">
-          <div>
-            <h2 id="challenge-heading">The Public Sector Technology Challenge</h2>
-            <p>Government technology procurement in Africa moves slowly — but the pressure on public services does not. Citizens increasingly expect the digital convenience they experience in commercial settings to be available when they interact with government agencies. The gap between citizen expectation and public service delivery is widening, and technology is one of the most powerful levers available to close it.</p>
-            <p>At the same time, the stakes for public sector systems are uniquely high. Security, accessibility, availability, and data privacy are not optional features — they are foundational requirements. And systems must often integrate with existing national infrastructure, comply with regulatory frameworks, and be maintainable by government teams long after an implementation partner has delivered.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-number">15<span class="stat-unit">+</span></span>
+            <span class="stat-label">years of delivery experience across public and private sectors</span>
           </div>
-          <div>
-            <h2>Our Public Sector Approach</h2>
-            <p>GreaterHeight Technologies brings fifteen years of delivery experience to public sector engagements — including the governance rigour, documentation standards, and security posture that public institutions require. We understand how to work alongside existing government IT teams rather than around them, how to manage the stakeholder complexity that public projects involve, and how to deliver systems that remain operable and updatable after handover.</p>
-            <p>We bring genuine belief in the transformative potential of well-designed public technology — and the discipline to deliver it under real-world government constraints.</p>
+          <div class="stat-item">
+            <span class="stat-number">6</span>
+            <span class="stat-label">core public sector capability areas from e-government to data infrastructure</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">WCAG<span class="stat-unit">2.2</span></span>
+            <span class="stat-label">accessibility standard — every citizen service we build</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">0</span>
+            <span class="stat-label">proprietary lock-in — we build on open standards by default</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── THE MANDATE — story grid ──────────────────────────────── -->
+    <section class="section" aria-labelledby="challenge-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <img src="/assets/images/who-we-serve/nations/government-digital.jpg"
+                 onerror="this.style.display='none'"
+                 alt="Government officials reviewing digital service deployment on screens" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">e-Gov</div>
+              <div class="badge-label">Digital Services</div>
+            </div>
+          </div>
+          <div class="story-content reveal">
+            <div class="section-label">The Public Sector Mandate</div>
+            <h2 id="challenge-heading" class="section-title">Citizens deserve government services that work as well as the best commercial experiences.</h2>
+            <p>Government technology procurement in Africa moves slowly — but the pressure on public services does not. Citizens increasingly expect the digital convenience they experience commercially to be available when interacting with government agencies. The gap between citizen expectation and public service delivery is widening, and technology is one of the most powerful levers to close it.</p>
+            <p>The stakes for public sector systems are uniquely high. Security, accessibility, availability, and data privacy are not optional features — they are foundational requirements. Systems must integrate with existing national infrastructure, comply with regulatory frameworks, and be maintainable by government teams long after an implementation partner has delivered.</p>
+            <p>We bring fifteen years of delivery experience to public sector engagements — including the governance rigour, documentation standards, and security posture public institutions require. We work alongside existing government IT teams rather than around them, and we build systems that <strong>remain operable and updatable after handover.</strong></p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── WHAT WE BUILD ─────────────────────────────────────────────── -->
-    <section class="content-section" id="what-we-build" aria-labelledby="build-heading">
+    <!-- ── CAPABILITIES ───────────────────────────────────────────── -->
+    <section class="section section-alt" id="what-we-build" aria-labelledby="build-heading">
       <div class="container">
-        <h2 id="build-heading" class="section-heading">Our Public Sector Capabilities</h2>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
-            <h3>e-Government Portals</h3>
-            <p>Citizen-facing digital service portals that consolidate multiple government touchpoints — licence applications, permit requests, regulatory filings, and information services — into a single, accessible, and mobile-optimised interface.</p>
-          </article>
-          <article class="feature-card">
-            <h3>National Data Infrastructure</h3>
-            <p>Data management platforms, national registries, and shared infrastructure that enable evidence-based policymaking — interoperable architectures that allow data to flow between agencies securely, with appropriate access controls and audit trails.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Public Financial Management Systems</h3>
-            <p>Budget planning, expenditure tracking, procurement management, and financial reporting systems for government agencies — designed with the transparency, audit capability, and IFRS-compatibility requirements of public finance.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Health Information Systems</h3>
-            <p>Patient management platforms, health facility registries, disease surveillance systems, and public health data infrastructure — enabling Ministry of Health agencies to manage health service delivery and respond to public health challenges with better data.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Education Technology Platforms</h3>
-            <p>National learning management systems, student registration and examination platforms, results portals, and institution management systems for ministries of education and examination bodies managing millions of learners.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Digital Identity &amp; Verification</h3>
-            <p>Secure identity verification systems, credential management infrastructure, and digital signature platforms — the foundational layer that enables citizens to interact with government services digitally with confidence.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── DELIVERY PRINCIPLES ───────────────────────────────────────── -->
-    <section class="content-section bg-light" aria-labelledby="principles-heading">
-      <div class="container">
-        <h2 id="principles-heading" class="section-heading">Our Delivery Principles for Government</h2>
-        <div class="grid-3">
-          <div class="principle-card">
-            <h3>Security by Design</h3>
-            <p>Government systems handle sensitive citizen data at scale. We build security into architecture from the first line — threat modelling, penetration testing, data encryption at rest and in transit, and role-based access control as standard, not afterthoughts.</p>
+        <div class="section-label">Public Sector Practice</div>
+        <h2 id="build-heading" class="section-title">Our six core government capabilities</h2>
+        <p class="section-lead">From citizen-facing services to national data infrastructure — we build the digital layer that enables effective government.</p>
+        <div class="capability-grid">
+          <div class="capability-card reveal">
+            <div class="capability-num">01</div>
+            <div class="capability-body">
+              <h3>e-Government Portals</h3>
+              <p>Citizen-facing digital service portals that consolidate multiple government touchpoints — licence applications, permit requests, regulatory filings, and information services — into a single, accessible, mobile-optimised interface. Designed around citizen need, not agency structure.</p>
+            </div>
           </div>
-          <div class="principle-card">
-            <h3>Accessible to All Citizens</h3>
-            <p>Public services must be usable by every citizen, regardless of device, connectivity, or ability. We design to WCAG 2.2 AA standards, test on low-bandwidth connections, and ensure that digital services do not exclude the people who most need them.</p>
+          <div class="capability-card reveal">
+            <div class="capability-num">02</div>
+            <div class="capability-body">
+              <h3>National Data Infrastructure</h3>
+              <p>Data management platforms, national registries, and shared infrastructure that enable evidence-based policymaking. Interoperable architectures that allow data to flow between agencies securely, with appropriate access controls and full audit trails.</p>
+            </div>
           </div>
-          <div class="principle-card">
-            <h3>Built to Be Handed Over</h3>
-            <p>A government system that only works while the original contractor is in the room is a liability. We document thoroughly, train internal teams, and architect for maintainability — so the system continues to serve citizens long after delivery.</p>
+          <div class="capability-card reveal">
+            <div class="capability-num">03</div>
+            <div class="capability-body">
+              <h3>Public Financial Management Systems</h3>
+              <p>Budget planning, expenditure tracking, procurement management, and financial reporting systems for government agencies — designed with the transparency, audit capability, and IFRS-compatibility requirements that public finance demands.</p>
+            </div>
           </div>
-          <div class="principle-card">
-            <h3>Open Standards</h3>
-            <p>We avoid vendor lock-in by building on open standards and widely-supported technologies — ensuring government retains sovereignty over its systems and can extend, migrate, or retender without being held hostage by proprietary platforms.</p>
+          <div class="capability-card reveal">
+            <div class="capability-num">04</div>
+            <div class="capability-body">
+              <h3>Health Information Systems</h3>
+              <p>Patient management platforms, health facility registries, disease surveillance systems, and public health data infrastructure — enabling Ministry of Health agencies to manage health service delivery and respond to public health challenges with real data.</p>
+            </div>
           </div>
-          <div class="principle-card">
-            <h3>Phased Delivery</h3>
-            <p>Large government projects benefit from phased approaches that deliver value early, allow course-correction, and manage risk incrementally. We structure engagements to show measurable progress at every stage — not just at the end.</p>
+          <div class="capability-card reveal">
+            <div class="capability-num">05</div>
+            <div class="capability-body">
+              <h3>Education Technology Platforms</h3>
+              <p>National learning management systems, student registration and examination platforms, results portals, and institution management systems for ministries of education and examination bodies managing millions of learners across a national footprint.</p>
+            </div>
           </div>
-          <div class="principle-card">
-            <h3>Interoperability</h3>
-            <p>Government systems rarely stand alone. We design for integration — with national identity infrastructure, existing agency systems, and international standards bodies — so the systems we build connect cleanly with the broader digital government ecosystem.</p>
+          <div class="capability-card reveal">
+            <div class="capability-num">06</div>
+            <div class="capability-body">
+              <h3>Digital Identity &amp; Verification</h3>
+              <p>Secure identity verification systems, credential management infrastructure, and digital signature platforms — the foundational layer that enables citizens to interact with government services digitally with full confidence in security and privacy.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── CTA ───────────────────────────────────────────────────────── -->
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <!-- ── DELIVERY PRINCIPLES — dark section ────────────────────── -->
+    <section class="section section-dark" aria-labelledby="principles-heading">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Partner with us on your digital government initiative</h2>
-            <p>Whether you are a ministry, agency, regulatory body, or parastatal organisation with a technology initiative at any stage — from early conception through to delivery — we welcome the conversation. We bring the technical capability, the project governance experience, and the commitment to public-sector values that your initiative deserves.</p>
+        <div class="story-grid reverse">
+          <div class="story-image reveal">
+            <img src="/assets/images/who-we-serve/nations/public-servants.jpg"
+                 onerror="this.style.display='none'"
+                 alt="Public sector officials in a modern government office environment" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">6</div>
+              <div class="badge-label">Delivery principles</div>
+            </div>
           </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
-            <a href="/contact/" class="btn btn-ghost">Request a Capabilities Brief</a>
+          <div class="story-content reveal">
+            <div class="section-label" style="color:var(--teal-glow);">How We Deliver</div>
+            <h2 id="principles-heading" class="section-title light">The principles that govern every public sector engagement.</h2>
+            <div class="principles-grid">
+              <div class="principle-card-prem">
+                <h3>Security by Design</h3>
+                <p>Threat modelling, penetration testing, encryption at rest and in transit, and role-based access control from the first line of code.</p>
+              </div>
+              <div class="principle-card-prem">
+                <h3>Accessible to All</h3>
+                <p>WCAG 2.2 AA as standard. Tested on low-bandwidth connections. Digital services that reach every citizen, not just those with modern devices.</p>
+              </div>
+              <div class="principle-card-prem">
+                <h3>Built to Be Handed Over</h3>
+                <p>Full documentation, internal team training, and architecture designed for maintainability — so the system works long after delivery.</p>
+              </div>
+              <div class="principle-card-prem">
+                <h3>Open Standards</h3>
+                <p>No vendor lock-in. Open standards and widely-supported technologies that keep sovereign control with government, not the contractor.</p>
+              </div>
+              <div class="principle-card-prem">
+                <h3>Phased Delivery</h3>
+                <p>Measurable progress at every stage. Value delivered early. Risk managed incrementally rather than concentrated at go-live.</p>
+              </div>
+              <div class="principle-card-prem">
+                <h3>Interoperability</h3>
+                <p>Designed to integrate with national identity infrastructure, existing agency systems, and international standards — not to stand alone.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- ── PULL QUOTE ─────────────────────────────────────────────── -->
+    <section class="section section-teal" aria-label="Public sector statement">
+      <div class="container">
+        <div class="pull-quote">
+          <blockquote>When public technology works, it is invisible. When it fails, the consequences fall hardest on the citizens who depend on it most. We build <strong>as though that responsibility is real</strong> — because it is.</blockquote>
+          <p class="pull-quote-attr">GreaterHeight Technologies — Government &amp; Public Sector Practice</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA BAND ───────────────────────────────────────────────── -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band-inner">
+        <h2 id="cta-heading">Partner with us on your digital government initiative</h2>
+        <p>Whether you are a ministry, agency, regulatory body, or parastatal organisation with a technology initiative at any stage — from early conception through to delivery — we welcome the conversation. We bring the technical capability, the governance experience, and the commitment to public-sector values that your initiative deserves.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/contact/" class="btn-outline-white">Request a Capabilities Brief</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================
