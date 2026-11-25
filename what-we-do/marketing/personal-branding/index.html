@@ -1003,6 +1003,75 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
+    /* ============================================================
+       PREMIUM SERVICE PAGES — additional components
+    ============================================================ */
+    .page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+    .page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+    .stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+    .stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+    .stat-item:last-child{border-right:none;}
+    .stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+    .stat-unit{color:var(--teal-glow);}
+    .stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+    .process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+    .process-grid.steps-5{grid-template-columns:repeat(5,1fr);}
+    .process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+    .process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+    .process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+    .pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+    .pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+    .pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+    .pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+    .pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+    .pillar-list li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+    .pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+    .pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+    .pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+    .pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+    .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+    .persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+    .persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+    .persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .honest-box{background:var(--bg-alt);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7);}
+    .honest-title{font-size:var(--ts-xl);font-weight:700;color:var(--txt);margin-bottom:var(--sp-6);line-height:1.3;}
+    .honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);}
+    .honest-col h4{font-size:var(--ts-sm);font-weight:700;color:var(--txt);margin-bottom:var(--sp-4);padding-bottom:var(--sp-3);border-bottom:2px solid var(--border);}
+    .honest-list{display:flex;flex-direction:column;gap:var(--sp-3);}
+    .honest-item{display:flex;align-items:flex-start;gap:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .hi-icon{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+    .hi-icon.check{background:var(--teal-pale);}
+    .hi-icon.cross{background:var(--cr-lite);}
+    .hi-icon svg{width:11px;height:11px;stroke-width:3;fill:none;}
+    .hi-icon.check svg{stroke:var(--teal-mid);}
+    .hi-icon.cross svg{stroke:var(--cr);}
+    .platform-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .platform-card{border:1px solid var(--border);border-radius:20px;overflow:hidden;background:var(--bg-card);transition:box-shadow var(--dur-med),border-color var(--dur-med);}
+    .platform-card:hover{box-shadow:var(--sh-md);border-color:var(--teal-glow);}
+    .platform-img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--forest) 0%,var(--teal-mid) 100%);position:relative;overflow:hidden;}
+    .platform-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+    .platform-body{padding:var(--sp-5);}
+    .platform-name{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .platform-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .values-strip.cols-3{grid-template-columns:repeat(3,1fr);}
+    .benefit-list{margin-top:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-4);}
+    .benefit-item{display:flex;align-items:flex-start;gap:var(--sp-3);}
+    .benefit-dot{width:8px;height:8px;border-radius:50%;background:var(--teal-glow);flex-shrink:0;margin-top:7px;}
+    .benefit-text{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .benefit-text strong{color:var(--txt);font-weight:700;display:block;font-size:var(--ts-base);margin-bottom:2px;}
+    @media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.process-grid.steps-5{grid-template-columns:repeat(3,1fr);}}
+    @media(max-width:900px){.persona-grid{grid-template-columns:1fr 1fr;}.platform-grid{grid-template-columns:1fr;}.honest-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}}
+    @media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.values-strip.cols-3{grid-template-columns:1fr;}}
+    @media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}}
 
     </style>
 </head>
@@ -1392,54 +1461,204 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/personal-branding/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="page-hero-inner">
         <div class="hero-copy">
           <p class="hero-eyebrow">Digital Marketing</p>
           <h1 id="hero-heading">Your name becomes<br><strong>your competitive edge.</strong></h1>
-          <p class="page-hero-lead">In professional services and technology, people buy from people they trust. A well-built personal brand — genuine expertise made consistently visible — is a business development asset that no advertising budget can replicate. GreaterHeight builds authentic personal brands for founders, executives, and professionals who want their knowledge to open doors.</p>
+          <p class="page-hero-lead">In professional services and technology, people buy from people they trust. A well-built personal brand — genuine expertise made consistently visible — is a business development asset that no advertising budget can replicate. GreaterHeight builds authentic personal brands for founders, executives, and professionals whose knowledge deserves a bigger audience.</p>
           <div class="hero-meta" role="list">
             <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">LI</span><span class="hero-meta-label">LinkedIn Specialists</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">B2B</span><span class="hero-meta-label">Focus</span></div>
+            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">B2B</span><span class="hero-meta-label">Executive Focus</span></div>
             <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">100%</span><span class="hero-meta-label">Authentic Voice</span></div>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">Our Commitment</p><p>Every piece of personal brand content is rooted in your actual expertise, your genuine perspective, and your real voice — not fabricated positions or ghost-written opinions you do not hold.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">Who We Work With</p><p>Technology founders, C-suite executives, management consultants, professional services partners, and senior professionals building influence in their industry.</p></div>
+            <div class="hero-fact-card"><p class="fact-label">Our Commitment</p><p>Every piece of content we produce is rooted in your actual expertise, your genuine perspective, and your real voice — not fabricated positions or ghost-written opinions you do not hold.</p></div>
+            <div class="hero-fact-card"><p class="fact-label">Who We Work With</p><p>Technology founders, C-suite executives, management consultants, professional services partners, and senior professionals building authority in their industry.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="services-heading">
+    <!-- PERSONA CARDS: who it's for -->
+    <section class="section" aria-labelledby="personas-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Who this is for</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="personas-heading">Personal branding for professionals with expertise worth amplifying</h2>
+          <p class="section-lead">Personal branding is not for everyone at every stage. It delivers its highest return for professionals who already have genuine expertise, established credibility in their field, and a commercial reason to make that expertise visible to a larger audience.</p>
+        </div>
+        <div class="persona-grid reveal">
+          <div class="persona-card">
+            <div class="persona-role">Founder &amp; CEO</div>
+            <h3>The business leader whose reputation should be generating inbound</h3>
+            <p>You have built a credible business and have genuine insight to share — but your digital presence is minimal or generic. Your name should be working as a business development channel, not sitting dormant. We build the LinkedIn presence, the content programme, and the external profile that makes you the visible expert in your category.</p>
+          </div>
+          <div class="persona-card">
+            <div class="persona-role">Management Consultant</div>
+            <h3>The practitioner whose expertise is worth more than their current rate suggests</h3>
+            <p>Consulting is a trust business. The consultants who command premium fees are the ones who are known — through their writing, their speaking, their networks. We build the content infrastructure that makes your intellectual frameworks and your track record visible to the clients who most need what you do.</p>
+          </div>
+          <div class="persona-card">
+            <div class="persona-role">Senior Executive</div>
+            <h3>The leader building external influence for future opportunities</h3>
+            <p>Whether preparing for a board role, building towards a portfolio career, or establishing a voice in your industry that extends beyond your current organisation — a deliberately built personal brand opens doors that internal reputation alone cannot. We build the external profile to match your internal standing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKEDIN + IMAGE: story grid -->
+    <section class="section section-alt" aria-labelledby="linkedin-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <img src="/assets/images/personal-branding/linkedin-profile.jpg" alt="LinkedIn profile optimisation session" loading="lazy" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">1bn+</div>
+              <div class="badge-label">LinkedIn users</div>
+            </div>
+          </div>
+          <div class="story-content reveal">
+            <p class="section-label">LinkedIn as the platform</p>
+            <div class="rule-line"></div>
+            <h2 class="section-title" id="linkedin-heading">Why LinkedIn is where B2B personal brands are built</h2>
+            <p>For founders, executives, and professional service providers, LinkedIn is the primary arena for professional authority. It is where your buyers, your peers, your future clients, and the media go to assess your credibility. A minimal profile or inconsistent content presence is a missed opportunity at significant scale.</p>
+            <p>LinkedIn's algorithm rewards genuine thought leadership — content that earns comments, questions, and shares from people in your target audience. We build the content programme that generates that engagement: consistently, in your voice, around the ideas that matter to your business.</p>
+            <div class="benefit-list">
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Profile as landing page</strong>Your LinkedIn profile is the first place most professional contacts go to assess you — we build it to position you exactly as you want to be positioned.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Content that compounds</strong>Regular, high-quality posts and articles that build authority over months — not a burst of activity that disappears when time pressure increases.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Your voice, our craft</strong>We interview you, extract your ideas, and produce content that sounds exactly like you at your best — not generic industry commentary that could be anyone.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">How we work</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="process-heading">From positioning to consistent visible presence</h2>
+        </div>
+        <div class="process-grid steps-5 reveal">
+          <div class="process-step">
+            <h3>Presence audit</h3>
+            <p>We review your entire digital footprint — LinkedIn, search results, publications, speaking history — and identify what currently communicates when someone searches your name, and what needs to change.</p>
+          </div>
+          <div class="process-step">
+            <h3>Positioning &amp; content pillars</h3>
+            <p>Defining your positioning — who you serve, what you stand for, what perspective you bring — and the three to five content pillars that your brand content will consistently return to.</p>
+          </div>
+          <div class="process-step">
+            <h3>LinkedIn profile rebuild</h3>
+            <p>Headline, about section, experience framing, skills, featured content, and media — a profile that positions you accurately and performs in LinkedIn search for your target audience.</p>
+          </div>
+          <div class="process-step">
+            <h3>Ongoing content programme</h3>
+            <p>Regular posts, articles, and carousels produced in your voice — calibrated to your content pillars, optimised for LinkedIn reach, and reviewed by you before publication.</p>
+          </div>
+          <div class="process-step">
+            <h3>Amplification &amp; growth</h3>
+            <p>External bylines, speaking submissions, media commentary, and cross-platform amplification — expanding your audience beyond LinkedIn and building the profile that earns inbound opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES: 3-col -->
+    <section class="section section-alt" aria-labelledby="services-heading">
       <div class="container">
         <div class="reveal">
           <p class="section-label">Services</p>
           <div class="rule-line"></div>
           <h2 class="section-title" id="services-heading">Personal branding services</h2>
         </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>Personal Brand Strategy</h3><p>Defining your positioning, your audience, your key messages, and your content pillars — the strategic foundation that makes everything else consistent and credible.</p></div>
-          <div class="value-card reveal"><h3>LinkedIn Profile Optimisation</h3><p>Headline, summary, experience, skills, and featured content — a LinkedIn profile that positions you accurately, communicates your value clearly, and performs in search.</p></div>
-          <div class="value-card reveal"><h3>LinkedIn Content Programme</h3><p>Regular content production in your authentic voice — articles, posts, carousels, and commentaries that build engagement, grow your audience, and demonstrate expertise consistently.</p></div>
-          <div class="value-card reveal"><h3>Thought Leadership Content</h3><p>Byline articles, whitepapers, and opinion pieces for industry publications — placing your expertise in front of audiences beyond your existing network.</p></div>
-          <div class="value-card reveal"><h3>Speaker Positioning</h3><p>Speaker bio development, media kit creation, conference submission strategy, and speaking opportunity identification — building the profile that earns platform invitations.</p></div>
-          <div class="value-card reveal"><h3>Online Presence Audit</h3><p>Comprehensive review of your current digital footprint — what appears when people search your name, what your existing profiles communicate, and what needs to change.</p></div>
+        <div class="values-strip cols-3">
+          <div class="value-card reveal">
+            <h3>Personal Brand Strategy</h3>
+            <p>Positioning definition, audience identification, key message development, and content pillar architecture — the strategic foundation without which every other activity is inconsistent.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>LinkedIn Profile Optimisation</h3>
+            <p>Headline, summary, experience, skills, and featured content — a LinkedIn profile built to position you accurately, communicate your value clearly, and perform for the searches your buyers run.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>LinkedIn Content Programme</h3>
+            <p>Regular posts, articles, and carousels in your authentic voice — consistent content that builds engagement, grows your professional network, and makes your expertise visible to the right people.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Thought Leadership Content</h3>
+            <p>Byline articles, opinion pieces, and whitepapers placed in industry publications — extending your authority to audiences beyond your existing network and creating content assets that persist.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Speaker Positioning</h3>
+            <p>Speaker bio, media kit, conference submission strategy, and opportunity identification — building the profile and the supporting materials that earn platform invitations and media enquiries.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Online Presence Audit</h3>
+            <p>Comprehensive review of your existing digital footprint — what appears when people search your name, what your profiles communicate, what the gap is between current presence and desired positioning.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" aria-labelledby="cta-heading">
-      <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Ready for your name to work harder for your business?</h2><p>Talk to our personal branding team about your goals and your audience.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Discuss Personal Branding</a><a href="/what-we-do/marketing/social-media/" class="btn-outline-white">Social Media Marketing</a></div>
+    <!-- PULL QUOTE -->
+    <section class="section" aria-labelledby="quote-heading">
+      <div class="container">
+        <div class="pull-quote reveal">
+          <blockquote>
+            "Your personal brand is what people say about you when you are not in the room. The question is not whether you have a personal brand — you do. The question is whether you have <strong>built it deliberately</strong>, or left it to chance."
+          </blockquote>
+          <p class="pull-quote-attr">— The GreaterHeight personal branding team</p>
+        </div>
       </div>
     </section>
 
-  </main>
+    <!-- SPEAKING EVENT SECTION -->
+    <section class="section section-alt" aria-labelledby="speaking-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content reveal">
+            <p class="section-label">Beyond LinkedIn</p>
+            <div class="rule-line"></div>
+            <h2 class="section-title" id="speaking-heading">Speaking builds authority that writing alone cannot</h2>
+            <p>A strong LinkedIn presence is the foundation of a professional personal brand. But the executives and thought leaders who command the highest professional authority are also visible on platforms — speaking at conferences, appearing on podcasts, contributing to media conversations, and publishing in respected publications.</p>
+            <p>We help you build the profile that earns those invitations: a speaker bio that positions you correctly, a media kit that makes the booking decision easy, and a content presence that shows hosts and event organisers what you bring to a room.</p>
+            <div class="benefit-list">
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Conference submissions</strong>Identifying the right events for your positioning and helping craft submissions that get accepted.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Media commentary</strong>Building your profile as a go-to expert for journalists and editors covering your industry.</div></div>
+            </div>
+          </div>
+          <div class="story-image reveal">
+            <img src="/assets/images/personal-branding/speaking-event.jpg" alt="Executive speaking at industry conference" loading="lazy" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-heading">
+      <div class="cta-band-inner">
+        <div>
+          <h2 id="cta-heading">Ready for your name to work harder for your business?</h2>
+          <p>Talk to our personal branding team about your goals, your audience, and your timeline.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/what-we-do/marketing/social-media/" class="btn-outline-white">Social Media Marketing</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

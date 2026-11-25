@@ -1003,6 +1003,75 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
+    /* ============================================================
+       PREMIUM SERVICE PAGES — additional components
+    ============================================================ */
+    .page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+    .page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+    .stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+    .stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+    .stat-item:last-child{border-right:none;}
+    .stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+    .stat-unit{color:var(--teal-glow);}
+    .stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+    .process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+    .process-grid.steps-5{grid-template-columns:repeat(5,1fr);}
+    .process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+    .process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+    .process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+    .pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+    .pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+    .pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+    .pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+    .pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+    .pillar-list li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+    .pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+    .pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+    .pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+    .pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+    .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+    .persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+    .persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+    .persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .honest-box{background:var(--bg-alt);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7);}
+    .honest-title{font-size:var(--ts-xl);font-weight:700;color:var(--txt);margin-bottom:var(--sp-6);line-height:1.3;}
+    .honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);}
+    .honest-col h4{font-size:var(--ts-sm);font-weight:700;color:var(--txt);margin-bottom:var(--sp-4);padding-bottom:var(--sp-3);border-bottom:2px solid var(--border);}
+    .honest-list{display:flex;flex-direction:column;gap:var(--sp-3);}
+    .honest-item{display:flex;align-items:flex-start;gap:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .hi-icon{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+    .hi-icon.check{background:var(--teal-pale);}
+    .hi-icon.cross{background:var(--cr-lite);}
+    .hi-icon svg{width:11px;height:11px;stroke-width:3;fill:none;}
+    .hi-icon.check svg{stroke:var(--teal-mid);}
+    .hi-icon.cross svg{stroke:var(--cr);}
+    .platform-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .platform-card{border:1px solid var(--border);border-radius:20px;overflow:hidden;background:var(--bg-card);transition:box-shadow var(--dur-med),border-color var(--dur-med);}
+    .platform-card:hover{box-shadow:var(--sh-md);border-color:var(--teal-glow);}
+    .platform-img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--forest) 0%,var(--teal-mid) 100%);position:relative;overflow:hidden;}
+    .platform-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+    .platform-body{padding:var(--sp-5);}
+    .platform-name{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .platform-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .values-strip.cols-3{grid-template-columns:repeat(3,1fr);}
+    .benefit-list{margin-top:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-4);}
+    .benefit-item{display:flex;align-items:flex-start;gap:var(--sp-3);}
+    .benefit-dot{width:8px;height:8px;border-radius:50%;background:var(--teal-glow);flex-shrink:0;margin-top:7px;}
+    .benefit-text{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .benefit-text strong{color:var(--txt);font-weight:700;display:block;font-size:var(--ts-base);margin-bottom:2px;}
+    @media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.process-grid.steps-5{grid-template-columns:repeat(3,1fr);}}
+    @media(max-width:900px){.persona-grid{grid-template-columns:1fr 1fr;}.platform-grid{grid-template-columns:1fr;}.honest-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}}
+    @media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.values-strip.cols-3{grid-template-columns:1fr;}}
+    @media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}}
 
     </style>
 </head>
@@ -1392,13 +1461,13 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/content/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="page-hero-inner">
         <div class="hero-copy">
           <p class="hero-eyebrow">Digital Marketing</p>
           <h1 id="hero-heading">Content that earns<br><strong>attention and trust.</strong></h1>
-          <p class="page-hero-lead">Content that exists is not content that works. GreaterHeight creates content marketing strategies built around what your audience is actually searching for, what questions they need answered, and what positions your brand as the credible choice — not just a vendor presence.</p>
+          <p class="page-hero-lead">Content that exists is not content that works. GreaterHeight creates content marketing strategies built around what your audience is actually searching for, what questions they need answered, and what positions your brand as the credible choice — not just another vendor presence in a crowded feed.</p>
           <div class="hero-meta" role="list">
             <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">SEO</span><span class="hero-meta-label">-First Content</span></div>
             <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">B2B</span><span class="hero-meta-label">Tech Specialised</span></div>
@@ -1407,39 +1476,201 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
         </div>
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">What We Produce</p><p>Articles, case studies, whitepapers, technical guides, thought leadership pieces, video scripts, and newsletter content — all written with genuine subject-matter knowledge.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">Who We Write For</p><p>Technology companies, SaaS products, IT service providers, and organisations whose buyers research extensively before deciding. Content that shortcuts that research to a decision.</p></div>
+            <div class="hero-fact-card"><p class="fact-label">What We Produce</p><p>Articles, case studies, whitepapers, technical guides, thought leadership pieces, and newsletter content — written with genuine subject-matter knowledge, not approximated expertise.</p></div>
+            <div class="hero-fact-card"><p class="fact-label">Who We Write For</p><p>Technology companies, SaaS products, IT service providers, and organisations whose buyers research extensively before deciding. Content that earns trust first.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="services-heading">
+    <!-- STATS BAND -->
+    <div class="stats-band" aria-hidden="true">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">3<span class="stat-unit">×</span></span><span class="stat-label">More leads generated by content vs outbound marketing</span></div>
+          <div class="stat-item"><span class="stat-number">62<span class="stat-unit">%</span></span><span class="stat-label">Lower cost per lead than traditional advertising</span></div>
+          <div class="stat-item"><span class="stat-number">70<span class="stat-unit">%</span></span><span class="stat-label">Of buyers prefer content to ads when researching decisions</span></div>
+          <div class="stat-item"><span class="stat-number">16<span class="stat-unit">+</span></span><span class="stat-label">Years producing content in tech and professional services</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY CONTENT FAILS: pillar grid -->
+    <section class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">The Problem</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="why-heading">Why most content doesn't work</h2>
+          <p class="section-lead">Content produced for the sake of producing it is a resource drain. The difference between content that builds a business and content that disappears is strategy, intent, and execution. These are the three failure points we start by addressing.</p>
+        </div>
+        <div class="pillar-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-num">01</div>
+            <h3 class="pillar-title">No audience clarity</h3>
+            <p class="pillar-desc">Content produced without a defined audience serves everyone and no one. If you cannot articulate who reads your content, what they're trying to accomplish, and what they already know — there is no foundation to build on.</p>
+            <ul class="pillar-list">
+              <li>Audience persona development</li>
+              <li>Search intent mapping by buying stage</li>
+              <li>Competitive content gap analysis</li>
+            </ul>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-num">02</div>
+            <h3 class="pillar-title">Missing editorial system</h3>
+            <p class="pillar-desc">Individual pieces cannot build authority on their own. Only a connected system — covering your audience's questions from awareness to decision — creates the compounding effect that content marketing promises.</p>
+            <ul class="pillar-list">
+              <li>Topic cluster architecture</li>
+              <li>Content calendar development</li>
+              <li>Pillar page and sub-page planning</li>
+            </ul>
+          </div>
+          <div class="pillar-card reveal">
+            <div class="pillar-num">03</div>
+            <h3 class="pillar-title">Weak distribution</h3>
+            <p class="pillar-desc">Great content with no audience is not content marketing. Distribution — across organic search, social media, email, and partnerships — is what turns a well-written piece into a demand-generating asset.</p>
+            <ul class="pillar-list">
+              <li>SEO integration from brief to publish</li>
+              <li>Multi-channel amplification strategy</li>
+              <li>Performance tracking and iteration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH: story grid with image -->
+    <section class="section section-alt" aria-labelledby="approach-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <img src="/assets/images/content/strategy-session.jpg" alt="Content strategy session at GreaterHeight" loading="lazy" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">16+</div>
+              <div class="badge-label">Years in content</div>
+            </div>
+          </div>
+          <div class="story-content reveal">
+            <p class="section-label">Our Approach</p>
+            <div class="rule-line"></div>
+            <h2 class="section-title" id="approach-heading">Strategy before a single word is written</h2>
+            <p>Every content engagement starts with a strategy phase — not because it fills scope, but because content produced without a strategy is content we do not want your name on. We learn your audience, your competitive landscape, your existing content assets, and your commercial objectives before proposing a single content format.</p>
+            <p>The result is a content system: a connected architecture of pieces that build on each other, speak to buyers at different stages of their journey, and are designed to rank, to circulate, and to close.</p>
+            <div class="benefit-list">
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Brief before brief</strong>We interview your subject matter experts before writing, not after a first draft fails review — ensuring the final article reflects real expertise.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>SEO is upstream</strong>Keyword and intent research informs every content brief — not an afterthought tacked on at the end of the production process.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Your voice, our craft</strong>Every piece is calibrated to your brand voice — specific, not generic; expert, not corporate; direct, not padded.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="section" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">How it works</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="process-heading">From strategy to measurable results</h2>
+        </div>
+        <div class="process-grid reveal">
+          <div class="process-step">
+            <h3>Audience &amp; competitive research</h3>
+            <p>We map your target audience's questions, search behaviour, and content consumption — then analyse what competitors produce and where the gaps are that you can own.</p>
+          </div>
+          <div class="process-step">
+            <h3>Content strategy &amp; architecture</h3>
+            <p>A topic cluster map, priority content list, and editorial calendar — covering the right formats, frequencies, and channels for your specific commercial objectives.</p>
+          </div>
+          <div class="process-step">
+            <h3>Creation &amp; expert review</h3>
+            <p>Brief-driven writing by specialists with genuine subject-matter expertise, reviewed by your team before finalisation. No thin AI content dressed as editorial.</p>
+          </div>
+          <div class="process-step">
+            <h3>Distribution &amp; performance</h3>
+            <p>Publication with full SEO implementation, multi-channel distribution, and monthly performance reporting against agreed metrics — not just pageview counts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES: 3-col cards -->
+    <section class="section section-teal" aria-labelledby="services-heading">
       <div class="container">
         <div class="reveal">
           <p class="section-label">Services</p>
           <div class="rule-line"></div>
           <h2 class="section-title" id="services-heading">Content marketing services</h2>
+          <p class="section-lead">We produce content across the full marketing stack — from strategic assets that build long-term authority to tactical content that supports immediate demand generation.</p>
         </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>Content Strategy</h3><p>Keyword research, topic cluster architecture, buyer persona mapping, and content calendar — a strategy that covers every stage of the buying journey and every question your audience has.</p></div>
-          <div class="value-card reveal"><h3>SEO-Led Article Production</h3><p>In-depth articles that rank for the terms your buyers search — written to a standard that earns trust and demonstrates expertise, not thin content that exists only for a keyword.</p></div>
-          <div class="value-card reveal"><h3>Technical Content</h3><p>Technical documentation, developer guides, engineering blog posts, and architectural explainers — content that earns credibility with technical audiences who immediately spot shallow work.</p></div>
-          <div class="value-card reveal"><h3>Case Studies &amp; Social Proof</h3><p>Client case studies and success narratives that move deals forward — structured to make the buyer recognise themselves in the problem and the outcome.</p></div>
-          <div class="value-card reveal"><h3>Thought Leadership</h3><p>Executive bylines, industry commentary, white papers, and research reports that position your leadership team as credible voices in the conversations your buyers are having.</p></div>
-          <div class="value-card reveal"><h3>Content Distribution</h3><p>Publication strategy, newsletter management, social distribution, community seeding, and syndication — ensuring the content you produce reaches the audience who needs it.</p></div>
+        <div class="values-strip cols-3">
+          <div class="value-card reveal">
+            <h3>Content Strategy</h3>
+            <p>Audience research, topic cluster architecture, editorial calendar, channel strategy, and content governance — the strategic foundation that makes individual content pieces part of a coherent, compounding system rather than isolated articles nobody reads.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>SEO-Led Article Production</h3>
+            <p>Long-form articles, guides, and resources built around high-value search queries — written to E-E-A-T standards, optimised from brief to publication, and designed to rank and retain position through algorithm changes.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Technical Content</h3>
+            <p>Technical documentation, developer content, API guides, and solution briefs — written by people who understand the material, not generalist copywriters approximating expertise they do not have.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Case Studies &amp; Proof</h3>
+            <p>Client success stories, ROI summaries, and before-and-after narratives that give prospective buyers the evidence they need to trust you — written to the standard of business journalism, not marketing copy.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Thought Leadership</h3>
+            <p>Byline articles, executive commentary, LinkedIn content, and opinion pieces that position your leadership team as the credible voice on the subjects your buyers care about most.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Content Distribution</h3>
+            <p>Multi-channel content amplification — email sequences, social reformatting, syndication, and PR placement — ensuring the content we create actually reaches the audience it was written for.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- WHO WE WORK WITH: story grid with image -->
+    <section class="section" aria-labelledby="clients-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content reveal">
+            <p class="section-label">Who we work with</p>
+            <div class="rule-line"></div>
+            <h2 class="section-title" id="clients-heading">Technology and professional services brands</h2>
+            <p>Our content practice focuses on sectors where expertise matters — where readers can tell the difference between someone who knows the subject and someone who does not. We do not write commodity content for commodity markets.</p>
+            <div class="benefit-list">
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Technology companies</strong>SaaS, enterprise software, cloud infrastructure, cybersecurity, fintech, and AI — brands that need to explain complex products clearly and build trust with technical buyers.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>IT consultancies and agencies</strong>Firms that sell expertise and need their content to demonstrate it — not describe it in marketing language that means nothing to practitioners.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Professional services</strong>Management consulting, finance, legal, and HR brands building authority in their discipline through strategic content programmes that compound over time.</div></div>
+            </div>
+          </div>
+          <div class="story-image reveal">
+            <img src="/assets/images/content/writing-team.jpg" alt="GreaterHeight content production team" loading="lazy" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
     <section class="cta-band" aria-labelledby="cta-heading">
       <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Ready for content that actually builds your pipeline?</h2><p>Talk to our content team about your audience, your product, and what a content strategy should produce for you.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Discuss Content Strategy</a><a href="/what-we-do/marketing/seo/" class="btn-outline-white">SEO Services</a></div>
+        <div>
+          <h2 id="cta-heading">Ready for content that actually builds your pipeline?</h2>
+          <p>Start with a content audit or discuss a full content strategy engagement.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/what-we-do/marketing/seo/" class="btn-outline-white">SEO Services</a>
+        </div>
       </div>
     </section>
 
-  </main>
   </main>
 
   <!-- ============================================================

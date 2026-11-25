@@ -1003,6 +1003,75 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
+    /* ============================================================
+       PREMIUM SERVICE PAGES — additional components
+    ============================================================ */
+    .page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+    .page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+    .stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+    .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+    .stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+    .stat-item:last-child{border-right:none;}
+    .stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+    .stat-unit{color:var(--teal-glow);}
+    .stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+    .process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+    .process-grid.steps-5{grid-template-columns:repeat(5,1fr);}
+    .process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+    .process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+    .process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+    .pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+    .pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+    .pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+    .pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+    .pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+    .pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+    .pillar-list li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+    .pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+    .pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+    .pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+    .pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+    .persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+    .persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+    .persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+    .persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .honest-box{background:var(--bg-alt);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7);}
+    .honest-title{font-size:var(--ts-xl);font-weight:700;color:var(--txt);margin-bottom:var(--sp-6);line-height:1.3;}
+    .honest-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);}
+    .honest-col h4{font-size:var(--ts-sm);font-weight:700;color:var(--txt);margin-bottom:var(--sp-4);padding-bottom:var(--sp-3);border-bottom:2px solid var(--border);}
+    .honest-list{display:flex;flex-direction:column;gap:var(--sp-3);}
+    .honest-item{display:flex;align-items:flex-start;gap:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .hi-icon{width:20px;height:20px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+    .hi-icon.check{background:var(--teal-pale);}
+    .hi-icon.cross{background:var(--cr-lite);}
+    .hi-icon svg{width:11px;height:11px;stroke-width:3;fill:none;}
+    .hi-icon.check svg{stroke:var(--teal-mid);}
+    .hi-icon.cross svg{stroke:var(--cr);}
+    .platform-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+    .platform-card{border:1px solid var(--border);border-radius:20px;overflow:hidden;background:var(--bg-card);transition:box-shadow var(--dur-med),border-color var(--dur-med);}
+    .platform-card:hover{box-shadow:var(--sh-md);border-color:var(--teal-glow);}
+    .platform-img{aspect-ratio:16/9;background:linear-gradient(135deg,var(--forest) 0%,var(--teal-mid) 100%);position:relative;overflow:hidden;}
+    .platform-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+    .platform-body{padding:var(--sp-5);}
+    .platform-name{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .platform-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .values-strip.cols-3{grid-template-columns:repeat(3,1fr);}
+    .benefit-list{margin-top:var(--sp-5);display:flex;flex-direction:column;gap:var(--sp-4);}
+    .benefit-item{display:flex;align-items:flex-start;gap:var(--sp-3);}
+    .benefit-dot{width:8px;height:8px;border-radius:50%;background:var(--teal-glow);flex-shrink:0;margin-top:7px;}
+    .benefit-text{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+    .benefit-text strong{color:var(--txt);font-weight:700;display:block;font-size:var(--ts-base);margin-bottom:2px;}
+    @media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.process-grid.steps-5{grid-template-columns:repeat(3,1fr);}}
+    @media(max-width:900px){.persona-grid{grid-template-columns:1fr 1fr;}.platform-grid{grid-template-columns:1fr;}.honest-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}}
+    @media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.values-strip.cols-3{grid-template-columns:1fr;}}
+    @media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}}
 
     </style>
 </head>
@@ -1392,54 +1461,169 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/social-media/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="page-hero-inner">
         <div class="hero-copy">
           <p class="hero-eyebrow">Digital Marketing</p>
           <h1 id="hero-heading">Social presence<br><strong>that means something.</strong></h1>
-          <p class="page-hero-lead">A large following with no engagement is a vanity metric. An active community that trusts your brand, shares your content, and converts to customers is a business asset. GreaterHeight builds the latter — social media strategies grounded in what your audience cares about, not in generic content calendars.</p>
+          <p class="page-hero-lead">A large following with no engagement is a vanity metric. An active community that trusts your brand, shares your content, and converts to customers is a business asset. GreaterHeight builds the latter — social strategies grounded in what your audience actually cares about, not in generic content calendars that could belong to any brand.</p>
           <div class="hero-meta" role="list">
             <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">LI</span><span class="hero-meta-label">LinkedIn Specialists</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">X</span><span class="hero-meta-label">Twitter/X</span></div>
+            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">X</span><span class="hero-meta-label">Twitter/X Strategy</span></div>
             <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">IG</span><span class="hero-meta-label">Instagram &amp; TikTok</span></div>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">Platform Strategy</p><p>Not all platforms suit all brands. We start with where your buyers actually spend time — not with posting everywhere and measuring nothing.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">Content Mix</p><p>Educational content, behind-the-scenes, customer proof, industry commentary, and promotional content — the right mix for your brand voice and growth stage.</p></div>
+            <div class="hero-fact-card"><p class="fact-label">Platform Strategy</p><p>Not all platforms suit all brands. We start with where your buyers actually spend time — not with posting everywhere and measuring nothing at all.</p></div>
+            <div class="hero-fact-card"><p class="fact-label">Content Mix</p><p>Educational content, behind-the-scenes, customer proof, and industry commentary — the right mix for your brand voice and growth stage.</p></div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- STATS BAND -->
+    <div class="stats-band" aria-hidden="true">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">4.9<span class="stat-unit">bn</span></span><span class="stat-label">Active social media users globally — your buyers are already there</span></div>
+          <div class="stat-item"><span class="stat-number">73<span class="stat-unit">%</span></span><span class="stat-label">Of B2B marketers report social media as their most effective demand channel</span></div>
+          <div class="stat-item"><span class="stat-number">80<span class="stat-unit">%</span></span><span class="stat-label">Of LinkedIn users drive business decisions — no other platform comes close for B2B</span></div>
+          <div class="stat-item"><span class="stat-number">6<span class="stat-unit">×</span></span><span class="stat-label">Higher conversion rates from social leads vs outbound across B2B industries</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLATFORM CARDS -->
+    <section class="section" aria-labelledby="platforms-heading">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Platform Focus</p>
+          <div class="rule-line"></div>
+          <h2 class="section-title" id="platforms-heading">The right platforms, used with purpose</h2>
+          <p class="section-lead">Platform selection is not a matter of personal preference — it is a strategic choice based on where your buyers spend time and what format your message is best communicated in. We manage the platforms that fit your audience, not the platforms we find easiest to populate.</p>
+        </div>
+        <div class="platform-grid reveal">
+          <div class="platform-card">
+            <div class="platform-img">
+              <img src="/assets/images/social-media/linkedin-strategy.jpg" alt="LinkedIn B2B strategy" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="platform-body">
+              <div class="platform-name">LinkedIn</div>
+              <p class="platform-desc">The primary channel for B2B brands. We handle company page management, executive personal branding, LinkedIn Newsletter, thought leadership content, and LinkedIn Ads — all working as a unified strategy rather than separate activities.</p>
+            </div>
+          </div>
+          <div class="platform-card">
+            <div class="platform-img">
+              <img src="/assets/images/social-media/instagram-content.jpg" alt="Instagram content creation" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="platform-body">
+              <div class="platform-name">Instagram</div>
+              <p class="platform-desc">For brands with a visual story to tell — product, lifestyle, behind-the-brand, and service process. Reels, Stories, and static content managed to a consistent aesthetic and posting rhythm that builds genuine followers, not inflated numbers.</p>
+            </div>
+          </div>
+          <div class="platform-card">
+            <div class="platform-img">
+              <img src="/assets/images/social-media/twitter-engagement.jpg" alt="Twitter X brand engagement" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="platform-body">
+              <div class="platform-name">X (Twitter)</div>
+              <p class="platform-desc">Real-time brand voice and industry commentary for brands where visibility in fast-moving conversations matters. We manage the account, the engagement, and the tone — keeping your brand present without overexposing it to unnecessary controversy.</p>
+            </div>
+          </div>
+          <div class="platform-card">
+            <div class="platform-img">
+              <img src="/assets/images/social-media/meta-ads.jpg" alt="Meta paid social advertising" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="platform-body">
+              <div class="platform-name">Meta (Facebook &amp; Instagram Ads)</div>
+              <p class="platform-desc">Paid social with precise audience targeting — lead generation, retargeting sequences, lookalike audiences, and conversion campaigns. We manage creative testing, budget allocation, and audience refinement to continuously improve cost-per-result.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE VS COMMUNITY: story grid with image -->
+    <section class="section section-alt" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image reveal">
+            <img src="/assets/images/social-media/content-creation.jpg" alt="Social media content production team" loading="lazy" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">12+</div>
+              <div class="badge-label">Platforms managed</div>
+            </div>
+          </div>
+          <div class="story-content reveal">
+            <p class="section-label">Our Distinction</p>
+            <div class="rule-line"></div>
+            <h2 class="section-title" id="community-heading">Audience versus community — only one of these converts</h2>
+            <p>An audience watches. A community participates. The difference between a brand social account with 50,000 followers that generates no business, and one with 8,000 followers that generates consistent pipeline, is not follower count — it is the quality of the relationship behind each follow.</p>
+            <p>We build social media programmes that prioritise community quality over vanity metrics. That means posting less often when it means posting better. It means engaging genuinely with replies rather than ignoring them. And it means measuring business outcomes — enquiries, demos booked, revenue influenced — not just reach and impressions.</p>
+            <div class="benefit-list">
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Voice consistency</strong>Every post, reply, and caption sounds like your brand — not like a generic agency template with your logo pasted on it.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Content that travels</strong>We produce content designed to be shared — not boosted — because organic reach comes from quality, not spend.</div></div>
+              <div class="benefit-item"><span class="benefit-dot"></span><div class="benefit-text"><strong>Monthly review cadence</strong>Regular performance calls, not just emailed reports. We discuss what is working, what is not, and what changes we are making.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES: 3-col -->
     <section class="section" aria-labelledby="services-heading">
       <div class="container">
         <div class="reveal">
           <p class="section-label">Services</p>
           <div class="rule-line"></div>
-          <h2 class="section-title" id="services-heading">Social media services</h2>
+          <h2 class="section-title" id="services-heading">Social media management services</h2>
         </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>Platform Strategy</h3><p>Platform selection, audience research, competitive analysis, and channel strategy — defining where to focus and what success looks like before producing a single post.</p></div>
-          <div class="value-card reveal"><h3>Content Creation</h3><p>Copywriting, design, short-form video, and graphics — content that reflects your brand voice accurately and performs for the algorithm without sacrificing quality for quantity.</p></div>
-          <div class="value-card reveal"><h3>Community Management</h3><p>Active response management, community moderation, follower engagement, and brand monitoring — ensuring your audience feels heard and your brand is represented well in every interaction.</p></div>
-          <div class="value-card reveal"><h3>LinkedIn Marketing</h3><p>LinkedIn-specific strategy for B2B brands — executive personal brand building, company page management, LinkedIn Newsletter, and thought leadership content that drives professional authority.</p></div>
-          <div class="value-card reveal"><h3>Paid Social</h3><p>Meta, LinkedIn, and TikTok paid campaigns — audience targeting, creative testing, bid management, and conversion optimisation for lead generation and brand awareness objectives.</p></div>
-          <div class="value-card reveal"><h3>Analytics &amp; Reporting</h3><p>Monthly performance reporting against agreed KPIs — engagement, reach, follower growth, and pipeline contribution — with honest assessment of what is and is not working.</p></div>
+        <div class="values-strip cols-3">
+          <div class="value-card reveal">
+            <h3>Social Media Strategy</h3>
+            <p>Audience research, platform selection, content pillar definition, channel architecture, and measurement framework — the strategic foundation that stops your social media spend being a cost centre and makes it a channel with predictable returns.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Content Creation</h3>
+            <p>Copywriting, graphic design, short-form video scripts, and carousel production — content in your brand voice that performs for the algorithm without sacrificing quality for posting frequency.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Community Management</h3>
+            <p>Active response management, comment moderation, follower engagement, and brand monitoring — ensuring every interaction with your brand on social media is handled with the same quality as your sales conversations.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>LinkedIn Marketing</h3>
+            <p>LinkedIn-specific strategy for B2B brands — company page growth, executive content programmes, LinkedIn Newsletter management, and thought leadership content that positions your team as the credible choice in your category.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Paid Social Advertising</h3>
+            <p>Meta, LinkedIn, TikTok, and X paid campaigns — audience targeting, creative testing, bid management, and conversion optimisation. No vanity metrics; every campaign is evaluated against pipeline contribution.</p>
+          </div>
+          <div class="value-card reveal">
+            <h3>Analytics &amp; Reporting</h3>
+            <p>Monthly reporting against agreed KPIs — engagement rates, follower quality, reach, and business outcomes — with an honest view of what is performing and what requires adjustment in the following period.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="cta-band" aria-labelledby="cta-heading">
       <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Want a social media presence that builds your business?</h2><p>Talk to our social team about your brand, your audience, and what results should look like.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Discuss Social Strategy</a><a href="/what-we-do/marketing/content/" class="btn-outline-white">Content Marketing</a></div>
+        <div>
+          <h2 id="cta-heading">Want a social media presence that builds your business?</h2>
+          <p>Talk to our social team about your brand, your audience, and what results should actually look like.</p>
+        </div>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Discuss Social Strategy</a>
+          <a href="/what-we-do/marketing/content/" class="btn-outline-white">Content Marketing</a>
+        </div>
       </div>
     </section>
 
-  </main>
   </main>
 
   <!-- ============================================================
