@@ -450,4 +450,266 @@ Brand colours should appear as **environmental accents** — office plants in te
 
 ---
 
-*Last updated: 2026-11-24*
+---
+
+## Digital Marketing Service Pages
+
+These prompts cover all six Digital Marketing sub-service pages. Each page has a full-bleed hero and in-page images placed at contextually relevant sections.
+
+---
+
+### Content Marketing Page — `/assets/images/content/`
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background — Content Marketing page.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian content strategist or writer working at a clean desk in a modern Lagos office. The professional is focused on a large monitor showing a content calendar or editorial plan — coloured task columns, headings, keyword clusters. A printed outline and a coffee mug sit beside the keyboard. Bookshelves with well-ordered professional books visible in the background. Natural window light from the side with warm overhead LEDs. Office accent colours include teal (`#005A3C`) cushion, forest green (`#0D3D28`) plant, and a small crimson-spined book on the shelf. Shallow depth of field on the subject. Shot from a slight low angle to convey authority. No colour filters. Conveys craft, strategic thinking, and content production at a professional scale.
+
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** `.page-hero.photo-hero` background
+
+---
+
+#### `strategy-session.jpg`
+**Purpose:** In-page image — content strategy session section.
+
+**Prompt:**
+> Editorial photograph of a small team of Black Nigerian professionals in a bright, modern conference room engaged in a content strategy session. A whiteboard behind them shows a mind map or content pillar diagram — teal marker lines on white. One person is presenting while two others take notes. Laptops and printed briefs on the table. A teal (`#1EB496`) accent plant and forest green (`#0D3D28`) wall panel visible in the background. Professional business-casual attire. Natural window light. Shot at a 3/4 angle from outside the table. No colour filters. Conveys collaborative strategy, structured planning, and professional content thinking.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left image beside strategy section copy
+
+---
+
+#### `writing-team.jpg`
+**Purpose:** In-page image — writing and production team section.
+
+**Prompt:**
+> Editorial photograph of two or three Black Nigerian professionals at adjacent desks in a modern open-plan office, each focused on their screens. One is visibly editing a long-form article on a document editor; another reviews analytics on a dashboard. Quiet, focused energy. Teal (`#005A3C`) plant, mint (`#97EFC9`) cushion on office chair, and a forest green-framed artwork on the wall. Warm overhead lighting. Shot from a slight distance showing both workstations. No colour filters. Conveys a skilled in-house writing team, professional production, and organised editorial workflow.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right image beside writing team section copy
+
+---
+
+### Social Media Marketing Page — `/assets/images/social-media/`
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background — Social Media Marketing page.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian social media strategist or content creator at a bright, modern Lagos studio workspace. The professional is reviewing a content schedule on a large monitor showing a grid of post thumbnails, platform icons (LinkedIn, Instagram, X, Meta), and an analytics graph. A ring light is visible slightly out of frame; a smartphone with a branded profile is propped beside the monitor. Teal (`#1EB496`) plant in the background, forest green (`#0D3D28`) accent chair. Natural light and studio lighting combined. Shot at mid-close distance from a slight angle. No colour filters. Conveys platform expertise, creative production, and strategic social media management.
+
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** `.page-hero.photo-hero` background
+
+---
+
+#### `linkedin-strategy.jpg`
+**Purpose:** In-page image — LinkedIn strategy platform card.
+
+**Prompt:**
+> Close-up editorial photograph of a laptop screen showing a polished LinkedIn profile page of a Nigerian executive — professional headshot, compelling headline, strong About section visible. A Black Nigerian professional's hands are visible on the keyboard, slightly blurred, as if reviewing or editing. Desk surface is clean — a branded notebook and pen beside the laptop. Office background softly blurred: teal plant, forest green wall panel. Natural window light from the left. No colour filters. Conveys LinkedIn brand engineering, executive digital presence, and professional profile strategy.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Platform card image — LinkedIn section
+
+---
+
+#### `instagram-content.jpg`
+**Purpose:** In-page image — Instagram content creation platform card.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian creative professional photographing a styled flat-lay setup — a branded product or book, stationery, and a teal accent fabric — with a smartphone on a small tripod. The professional is adjusting the composition carefully. Bright, airy creative studio. White background, natural light. Teal (`#1EB496`) and mint (`#97EFC9`) accent props in the flat-lay. Shot from a slight overhead-angle to include both the person and the subject. No colour filters. Conveys creative content production, Instagram aesthetic intentionality, and visual brand consistency.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Platform card image — Instagram section
+
+---
+
+#### `twitter-engagement.jpg`
+**Purpose:** In-page image — X (Twitter) engagement platform card.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional at a home office desk, engaged in a conversation on X (Twitter) on a laptop. The screen shows a thread with multiple replies — text visible but not legible. The professional leans slightly forward, focused and thoughtful. A notebook with handwritten talking points is open beside the laptop. Teal (`#005A3C`) plant, warm overhead lighting, wood desk. Shot at mid-close distance from a 3/4 angle. No colour filters. Conveys thought leadership, real-time engagement, and consistent presence on X.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Platform card image — X (Twitter) section
+
+---
+
+#### `meta-ads.jpg`
+**Purpose:** In-page image — Meta Ads (Facebook/Instagram) platform card.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian digital marketing professional reviewing Meta Ads Manager on a large monitor. The dashboard shows active campaigns, audience targeting panels, and performance graphs. The professional has a focused, analytical expression — one hand resting on the mouse, the other holding a printed report. Office is modern and bright. Forest green (`#0D3D28`) wall panel visible in background. Warm overhead LEDs. Shot at mid-distance from a slight side angle. No colour filters. Conveys paid social strategy, data-driven campaign management, and advertising expertise.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Platform card image — Meta Ads section
+
+---
+
+#### `content-creation.jpg`
+**Purpose:** In-page image — community vs. audience story grid section.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian content creator recording a short-form video in a well-lit home studio setup. A ring light illuminates the professional, who speaks directly to camera with an engaged, natural expression. A branded backdrop (teal `#005A3C` or forest green `#0D3D28` tones) is visible behind. A smartphone on a gimbal captures the shot. Shot from a slight side angle to show both the creator and the camera setup. No colour filters. Conveys authentic content creation, platform-native video production, and community-building intent.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — image beside community vs. audience section copy
+
+---
+
+### SEO Page — `/assets/images/seo/`
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background — SEO page.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian SEO specialist at a dual-monitor workstation in a modern Lagos office. The left monitor shows a technical SEO audit tool (crawl report, error list, site structure visualisation); the right shows Google Search Console with performance graphs. The professional is mid-analysis — focused, slightly leaning forward. Forest green (`#0D3D28`) wall panel behind, teal (`#1EB496`) plant on the desk corner. Overhead LEDs, screen glow adds secondary light. Shot from a slight low angle at mid distance. No colour filters. Conveys technical rigour, analytical authority, and deep SEO expertise.
+
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** `.page-hero.photo-hero` background
+
+---
+
+#### `technical-audit.jpg`
+**Purpose:** In-page image — technical SEO audit team story grid section.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian technical SEO professional presenting a site audit report on a wall-mounted screen in a small meeting room. The screen shows a crawl map or technical error report — coloured nodes and lines. Two colleagues (also Black Nigerian professionals) are seated, reviewing printed reports. Conference table is clean; branded notebooks and laptops visible. Teal (`#005A3C`) plant in the corner, forest green `#0D3D28` accent on wall. Warm conference lighting. Shot from a 3/4 angle outside the table. No colour filters. Conveys technical depth, structured audit process, and collaborative analysis.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — image beside technical SEO team section copy
+
+---
+
+#### `content-team.jpg`
+**Purpose:** In-page image — content/E-E-A-T SEO pillar section (optional in-page).
+
+**Prompt:**
+> Editorial photograph of two Black Nigerian professionals co-reviewing content on a laptop — one is a writer, the other a subject-matter expert (suggested by a bookshelf with professional titles behind them). They are discussing a long-form article draft visible on screen, one pointing at a paragraph. Warm, natural office lighting. Teal (`#1EB496`) plant, clean desk, printed research notes. Shot at mid-close distance from a slight angle. No colour filters. Conveys the expertise + authoritativeness + trustworthiness standard (E-E-A-T), content credibility, and expert-led editorial production.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Optional in-page image — E-E-A-T / Content SEO section
+
+---
+
+#### `analytics-review.jpg`
+**Purpose:** In-page image — SEO results and reporting section (optional).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian SEO account manager presenting organic search performance data on a laptop in a client meeting. The laptop screen shows a GA4 or Google Search Console graph — traffic trend lines showing clear upward movement. The client (also a Black Nigerian professional) leans in with interest. Meeting table is clean and modern. Teal (`#005A3C`) wall accent, natural light from a window. Shot at a 3/4 angle from the client's side of the table. No colour filters. Conveys measurable SEO results, transparent reporting, and client-agency trust.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Optional in-page image — results/reporting section
+
+---
+
+### PPC / Paid Advertising Page — `/assets/images/ppc/`
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background — PPC & Paid Advertising page.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian PPC specialist at a wide workstation with two monitors — one showing Google Ads campaign manager with active campaigns, bids, and quality scores; the other showing a live conversion graph. The professional is focused and analytical, one hand on the mouse. Modern open-plan office, mid-afternoon. Forest green (`#0D3D28`) wall panel, teal (`#1EB496`) plant on desk edge. Overhead LEDs with screen glow. Shot from a slight low angle at mid distance. No colour filters. Conveys paid advertising precision, platform expertise, and data-driven campaign management.
+
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** `.page-hero.photo-hero` background
+
+---
+
+#### `campaign-setup.jpg`
+**Purpose:** In-page image — account ownership / campaign setup story grid section.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian digital advertising professional setting up a new Google Ads campaign on a laptop. The screen shows the campaign creation flow — campaign goal selection, targeting options, budget fields. The professional types carefully, with a printed campaign brief open beside the laptop. Quiet, focused workspace. Teal (`#1EB496`) plant in the background. Warm overhead light. Shot at mid-close distance from a slight angle showing both the person and the screen. No colour filters. Conveys careful setup, professional campaign architecture, and transparent account management.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — image beside account ownership section copy
+
+---
+
+#### `reporting-review.jpg`
+**Purpose:** In-page image — reporting and results section (optional).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian PPC account manager presenting a monthly performance report to a client in a modern meeting room. The report on a printed or tablet screen shows ROAS, CPL, and conversion graphs — with an upward trend line highlighted. The client (also a Black Nigerian professional) is engaged, leaning slightly forward. Conference table is tidy. Forest green (`#0D3D28`) wall, teal plant, natural light from window. Shot at a 3/4 angle from the manager's side. No colour filters. Conveys results accountability, transparent reporting, and professional client partnership.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Optional in-page image — results/reporting section
+
+---
+
+### Link Building Page — `/assets/images/link-building/`
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background — Link Building page.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian digital PR and link-building specialist at a laptop in a modern Lagos office. The screen shows an outreach CRM or link prospecting tool — a list of media contacts, domains, and outreach status columns. The professional is mid-composition of an outreach email. Printed media list and branded notepad visible on the desk. Teal (`#005A3C`) plant, forest green (`#0D3D28`) wall panel behind. Natural window light from the side. Shot at mid distance from a slight side angle. No colour filters. Conveys methodical outreach, media relationship building, and authoritative link acquisition.
+
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** `.page-hero.photo-hero` background
+
+---
+
+#### `outreach-team.jpg`
+**Purpose:** In-page image — transparency / outreach team story grid section.
+
+**Prompt:**
+> Editorial photograph of two Black Nigerian digital PR professionals working side by side at adjacent desks — one drafting a media pitch on a laptop, the other reviewing a list of target publications on a second monitor. A sticky-note board behind them shows a campaign timeline and media targets. Teal (`#1EB496`) plant, clean professional office. Warm overhead lighting. Shot from a slight distance at a 3/4 angle to show both workstations. No colour filters. Conveys team-based outreach, editorial targeting, and a structured link-building process.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — image beside transparency/outreach section copy
+
+---
+
+#### `media-room.jpg`
+**Purpose:** In-page image — digital PR / media placement section (optional).
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian professional reviewing a live news article featuring their client's brand on a large monitor. The article headline is visible (not legible) on a recognisable editorial layout. The professional has a satisfied, focused expression — reviewing coverage on what is clearly a media monitoring dashboard. Teal (`#005A3C`) plant in background, warm office lighting, wood desk. Shot at mid-close distance from a slight side angle showing face and screen. No colour filters. Conveys earned media placement, editorial credibility, and digital PR outcomes.
+
+**Dimensions:** 800 × 600 px minimum, 4:3 landscape
+**Placement:** Optional in-page image — digital PR / media placement section
+
+---
+
+### Personal Branding Page — `/assets/images/personal-branding/`
+
+#### `hero-bg.jpg`
+**Purpose:** Full-bleed hero background — Personal Branding page.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian executive or founder in a modern Lagos office, seated at a well-appointed desk — confident posture, professional attire (dark suit, forest green `#0D3D28` or teal `#005A3C` accent tie). The professional looks slightly off-camera toward an unseen horizon, conveying vision and authority. Behind them: a floor-to-ceiling bookshelf with well-ordered professional books, a teal plant, and a large window with Lagos cityscape softly visible. Warm, premium office lighting — no harsh shadows. Shot at mid-distance, slight low angle. No colour filters. Conveys executive authority, personal brand gravitas, and leadership presence.
+
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** `.page-hero.photo-hero` background
+
+---
+
+#### `linkedin-profile.jpg`
+**Purpose:** In-page image — LinkedIn brand engineering story grid section.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian executive reviewing their own LinkedIn profile on a large desktop monitor. The profile is polished and complete — professional headshot, featured banner, compelling headline visible at a readable size. The professional is seated, reviewing the page with a composed, strategic expression. Modern home office or executive suite. Teal (`#1EB496`) plant beside the monitor, natural window light. Shot at mid-close distance showing both subject and screen in frame. No colour filters. Conveys executive LinkedIn engineering, digital authority positioning, and personal brand visibility.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — image beside LinkedIn brand section copy
+
+---
+
+#### `speaking-event.jpg`
+**Purpose:** In-page image — speaking and visibility story grid section.
+
+**Prompt:**
+> Editorial photograph of a Black Nigerian executive or thought leader speaking on stage at a professional conference or corporate forum in Nigeria. The speaker stands at a branded podium or open-stage position, addressing a medium-to-large professional audience. Stage lighting is bright and professional. Audience is attentive — business professionals, diverse mix. A large presentation screen behind the speaker shows a branded slide (teal `#005A3C` or forest green `#0D3D28` colour scheme). Shot from mid-hall at a slight angle, capturing both speaker and audience reaction. No colour filters. Conveys speaking authority, industry visibility, and executive thought leadership.
+
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — image beside speaking/visibility section copy
+
+---
+
+*Last updated: 2026-11-25*
