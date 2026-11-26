@@ -1023,6 +1023,108 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+
+.page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+.page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+.stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+.stat-item:last-child{border-right:none;}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+.stat-unit{color:var(--teal-glow);}
+.stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.reverse{direction:rtl;}.story-grid.reverse>*{direction:ltr;}
+.story-image{position:relative;border-radius:20px;overflow:hidden;min-height:420px;background:linear-gradient(135deg,var(--teal) 0%,var(--forest) 100%);}
+.story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.story-image .img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,15,.4) 0%,transparent 60%);}
+.story-badge{position:absolute;bottom:var(--sp-5);left:var(--sp-5);background:rgba(5,25,15,.88);backdrop-filter:blur(8px);border:1px solid rgba(30,180,150,.35);border-radius:14px;padding:var(--sp-3) var(--sp-4);text-align:center;}
+.badge-num{font-size:1.8rem;font-weight:700;color:var(--white);line-height:1;}
+.badge-label{font-size:.68rem;color:var(--teal-glow);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;}
+.story-content .section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.story-content .section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+.story-content .section-title.light{color:var(--white);}
+.story-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.8;margin-bottom:var(--sp-4);}
+.story-content p:last-child{margin-bottom:0;}
+.section{padding:var(--sp-11) 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.section-title{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:var(--sp-5);}
+.section-lead{font-size:var(--ts-base);color:var(--txt-2);line-height:1.75;max-width:700px;margin-bottom:0;}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+.process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+.process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+.process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+.process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+.pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+.pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+.pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+.pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+.pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.pillar-list li::before{content:'&#8594;';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+.pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+.pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+.pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+.pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+.persona-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.persona-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.persona-grid.cols-4{grid-template-columns:repeat(4,1fr);}
+.persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+.persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+.persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+.persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.stage-card-prem{border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;}
+.stage-card-prem:nth-child(1){background:var(--teal-lite);border:1px solid var(--teal-glow);}
+.stage-card-prem:nth-child(2){background:var(--forest);color:var(--white);}
+.stage-card-prem:nth-child(3){background:var(--cr-lite);border:1px solid var(--cr);}
+.stage-card-prem .stage-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) .stage-label{color:var(--teal);}
+.stage-card-prem:nth-child(2) .stage-label{color:var(--teal-glow);}
+.stage-card-prem:nth-child(3) .stage-label{color:var(--cr);}
+.stage-card-prem h3{font-size:var(--ts-lg);font-weight:700;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) h3,.stage-card-prem:nth-child(3) h3{color:var(--txt);}
+.stage-card-prem:nth-child(2) h3{color:var(--white);}
+.stage-card-prem p{font-size:var(--ts-sm);line-height:1.7;}
+.stage-card-prem:nth-child(1) p,.stage-card-prem:nth-child(3) p{color:var(--txt-2);}
+.stage-card-prem:nth-child(2) p{color:rgba(255,255,255,.75);}
+.sector-bands{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7);}
+.sector-pill{padding:var(--sp-2) var(--sp-5);border-radius:999px;border:1px solid var(--border);font-size:var(--ts-sm);color:var(--txt-2);background:var(--bg-card);transition:border-color var(--dur-fast),color var(--dur-fast);}
+.sector-pill:hover{border-color:var(--teal-glow);color:var(--teal);}
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.mission-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);}
+.mission-icon{font-size:1.6rem;margin-bottom:var(--sp-3);}
+.mission-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.mission-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.capability-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);display:flex;gap:var(--sp-5);align-items:flex-start;}
+.capability-num{font-size:2.5rem;font-weight:700;color:var(--teal-lite);line-height:1;min-width:3rem;flex-shrink:0;}
+.capability-body h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.capability-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4);margin-top:var(--sp-6);}
+.principle-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:var(--sp-5);}
+.principle-card h4{font-size:var(--ts-sm);font-weight:700;color:var(--mint);margin-bottom:var(--sp-2);}
+.principle-card p{font-size:var(--ts-xs);color:rgba(255,255,255,.7);line-height:1.6;}
+.cta-band{background:var(--forest);padding:var(--sp-11) 0;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.9rem 2.2rem;background:var(--cr);color:var(--white);border-radius:999px;font-weight:700;font-size:var(--ts-sm);text-decoration:none;transition:background var(--dur-fast);}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-outline-white{display:inline-block;padding:.9rem 2.2rem;border:2px solid rgba(255,255,255,.4);color:var(--white);border-radius:999px;font-weight:600;font-size:var(--ts-sm);text-decoration:none;transition:border-color var(--dur-fast);}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.8);}
+@media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.persona-grid.cols-3{grid-template-columns:1fr 1fr;}.persona-grid.cols-4{grid-template-columns:1fr 1fr;}.mission-grid{grid-template-columns:1fr 1fr;}.principles-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.stage-grid{grid-template-columns:1fr;}.story-grid{grid-template-columns:1fr;}.capability-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.persona-grid.cols-3{grid-template-columns:1fr;}.persona-grid.cols-4{grid-template-columns:1fr;}.mission-grid{grid-template-columns:1fr;}.principles-grid{grid-template-columns:1fr;}}
+@media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}.stage-grid{grid-template-columns:1fr;}}
     </style>
 </head>
 <body>
@@ -1409,117 +1511,124 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/industries/healthcare/hero-bg.jpg');background-position:center 20%;" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Industries</span>
-            <h1 id="hero-heading">Healthcare</h1>
-            <p class="page-hero-lead">Healthcare technology in Africa carries consequences that commercial software does not. When a clinical system fails or a patient record is missing, the cost is not a delayed order or a lost transaction — it is a compromised care decision. We build healthcare technology with that weight clearly in mind.</p>
-                        <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">HIPAA</span>
-                <span class="hero-meta-label">Aware Builds</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">99.9<em>%</em></span>
-                <span class="hero-meta-label">Uptime SLA</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Clinical</span>
-                <span class="hero-meta-label">Workflow Expertise</span>
-              </div>
-            </div>
-            <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Discuss Your Initiative</a>
-              <a href="#services" class="btn btn-ghost">Our Services</a>
-            </div>
-          </div>
-        
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">The Healthcare Challenge</div>
-                <p>African healthcare systems need to simultaneously modernise, improve data governance, and reach populations that have never had reliable access to formal care.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Our Expertise</div>
-                <p>Clinical workflow understanding, healthcare data governance, and systems designed to work on standard hardware under intermittent connectivity.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Who We Work With</div>
-                <p>Hospital groups, digital health startups, health ministries, diagnostic labs, and development organisations improving health infrastructure.</p>
-              </div>
-            </div>
+        <div style="max-width:720px;padding:var(--sp-11) 0;">
+          <span class="section-label">Industries &rsaquo; HealthCare</span>
+          <h1 id="hero-heading" style="font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:var(--sp-5);">HealthTech That Puts<br><span style="color:var(--mint);">Better Care Within Reach</span></h1>
+          <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.85);line-height:1.75;max-width:620px;margin-bottom:var(--sp-7);">Africa's healthcare workforce shortage and infrastructure gap cannot be solved by training alone. Digital health platforms extend the reach of every clinician, every facility, and every diagnostic tool. We build the systems that make that extension possible.</p>
+          <div class="cta-pair" style="justify-content:flex-start;">
+            <a href="/contact/" class="btn-primary">Discuss Your HealthTech Project</a>
+            <a href="#services" class="btn-outline-white">Healthcare Services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="challenge-heading">
+    <!-- STATS -->
+    <div class="stats-band" aria-hidden="true">
       <div class="container">
-        <div class="two-col-prose">
-          <div>
-            <h2 id="challenge-heading">The Healthcare Technology Challenge</h2>
-            <p>African healthcare systems are under simultaneous pressure to modernise and to reach populations that have never had reliable access to formal healthcare. Paper-based records create dangerous information gaps. Manual processes add preventable delays to care pathways. And the data that could help healthcare leaders allocate resources effectively is trapped in disconnected systems across dozens of facilities.</p>
-            <p>At the same time, healthcare data requires a level of security and privacy governance that general-purpose software development often underestimates. Patient confidentiality, clinical data integrity, and regulatory compliance are non-negotiable in every context.</p>
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">1<span class="stat-unit">:5000</span></span><span class="stat-label">Doctor-Patient Ratio in Nigeria</span></div>
+          <div class="stat-item"><span class="stat-number">4<span class="stat-unit">x</span></span><span class="stat-label">Telemedicine Growth Post-2020</span></div>
+          <div class="stat-item"><span class="stat-number">15<span class="stat-unit">+</span></span><span class="stat-label">Years Building HealthTech</span></div>
+          <div class="stat-item"><span class="stat-number">6</span><span class="stat-label">Core Health Platform Types</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORY 1 -->
+    <section class="section reveal" aria-labelledby="imperative-h">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image">
+            <img src="/assets/images/industries/healthcare/healthcare-team.jpg" alt="Nigerian doctor and nurse reviewing patient records on a digital tablet in a modern clinic" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge"><span class="badge-num">1:5000</span><span class="badge-label">Doctor to Patient Ratio</span></div>
           </div>
-          <div>
-            <h2>Our Approach to Healthcare Technology</h2>
-            <p>We bring domain sensitivity to healthcare engagements — including an understanding of clinical workflows, healthcare facility hierarchies, and the regulatory environment governing health data in Nigeria and other African markets. Our systems are designed with the end user — often a time-pressured nurse or doctor — as the primary design constraint.</p>
-            <p>We build for the reality of healthcare infrastructure in Africa: systems that degrade gracefully under intermittent connectivity, that work on standard hardware, and that can be used by clinical staff without extensive technical training.</p>
+          <div class="story-content">
+            <span class="section-label">The Imperative</span>
+            <h2 class="section-title" id="imperative-h">HealthTech Is Not a Convenience. It Is Infrastructure.</h2>
+            <p>At a doctor-to-patient ratio of approximately 1 to 5,000 in Nigeria, the healthcare workforce deficit is structural. No training programme or facility expansion can address it at the pace the population requires. Digital health platforms are not a supplement to the healthcare system in this environment. They are part of the infrastructure that makes it function.</p>
+            <p>Building healthcare technology for African markets requires understanding the operational constraints of clinics and hospitals that may have intermittent power, variable connectivity, and clinical staff whose time for technology onboarding is extremely limited. Systems that work in these conditions are significantly harder to build than those designed for well-resourced Western hospital environments.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="services" aria-labelledby="services-heading">
+    <!-- CAPABILITY GRID -->
+    <section class="section section-alt reveal" id="services" aria-labelledby="services-h">
       <div class="container">
-        <h2 id="services-heading" class="section-heading">What We Build for Healthcare</h2>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
-            <h3>Patient Management Systems</h3>
-            <p>Electronic patient record systems, appointment scheduling, admission and discharge management, billing integration, and inter-departmental workflow tools designed for Nigerian and African healthcare facility workflows.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Telemedicine Platforms</h3>
-            <p>Video consultation infrastructure, asynchronous messaging between clinicians and patients, prescription management, remote monitoring data integration, and appointment booking for digital-first and hybrid healthcare providers.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Health Information Systems</h3>
-            <p>Facility management platforms, supply chain and pharmacy inventory systems, disease surveillance reporting, and data aggregation infrastructure for health ministries and multi-facility networks.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Laboratory &amp; Diagnostic Systems</h3>
-            <p>Sample tracking, results management, quality control workflows, and integration with diagnostic equipment — connecting laboratory data to clinical records and clinician dashboards.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Healthcare Analytics</h3>
-            <p>Population health dashboards, clinical performance metrics, bed occupancy and resource utilisation analytics, and epidemiological reporting tools for healthcare administrators and public health decision-makers.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Digital Health Products</h3>
-            <p>Consumer-facing health apps, chronic disease management platforms, maternal health tracking tools, and community health worker data collection systems designed for African user contexts.</p>
-          </article>
+        <span class="section-label">What We Build</span>
+        <h2 class="section-title" id="services-h">Six Core HealthTech Platform Areas</h2>
+        <div class="capability-grid">
+          <div class="capability-card reveal">
+            <div class="capability-num">01</div>
+            <div class="capability-body"><h3>Electronic Medical Records</h3><p>EMR and EHR systems designed for African clinical workflows: patient registration, consultation records, diagnosis coding, prescription management, lab result integration, and referral tracking for primary care through tertiary hospital settings.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">02</div>
+            <div class="capability-body"><h3>Telemedicine Platforms</h3><p>Video consultation platforms, asynchronous messaging between patients and clinicians, remote monitoring integration, prescription and referral management, and telemedicine practice management tools for virtual-first and hybrid care models.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">03</div>
+            <div class="capability-body"><h3>Hospital Management Systems</h3><p>End-to-end hospital operations platforms covering patient admission, bed management, theatre scheduling, pharmacy, laboratory, radiology ordering, and discharge management for private hospitals and clinical groups.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">04</div>
+            <div class="capability-body"><h3>Medical Billing &amp; Insurance</h3><p>HMO claims management, pre-authorisation workflows, medical billing and coding, insurance verification, patient co-pay management, and revenue cycle management tools for health facilities operating in the HMO ecosystem.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">05</div>
+            <div class="capability-body"><h3>Patient Portals &amp; Engagement</h3><p>Patient-facing mobile apps and web portals for appointment booking, medical record access, medication reminders, test result delivery, and health education content, designed for the mobile-first African patient.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">06</div>
+            <div class="capability-body"><h3>Health Analytics &amp; Surveillance</h3><p>Population health dashboards, disease surveillance platforms, clinical outcome analytics, facility performance reporting, and public health monitoring infrastructure for health organisations managing programmes at scale.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <!-- DARK: COMPLIANCE -->
+    <section class="section section-dark reveal" aria-labelledby="compliance-h">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Let's discuss your healthcare technology initiative</h2>
-            <p>Whether you are a hospital group modernising your patient record infrastructure, a digital health startup building a new product, or a health ministry implementing a national health information system, we bring the domain knowledge and engineering capability your initiative requires.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Discuss Your Initiative</a>
-            <a href="/what-we-do/" class="btn btn-ghost">All Services</a>
-          </div>
+        <span class="section-label" style="color:var(--teal-glow);">Standards &amp; Compliance</span>
+        <h2 class="section-title light" id="compliance-h">We Build to Clinical and Data Standards</h2>
+        <p class="section-lead" style="color:rgba(255,255,255,.75);max-width:720px;margin-bottom:var(--sp-7);">Healthcare technology carries obligations that general software does not. We build with these standards as requirements, not afterthoughts.</p>
+        <div class="principles-grid">
+          <div class="principle-card reveal"><h4>Patient Data Privacy</h4><p>Patient data handled in compliance with Nigeria's NDPR and applicable international standards, with explicit consent management and data access audit trails.</p></div>
+          <div class="principle-card reveal"><h4>HL7 / FHIR Standards</h4><p>Clinical data structured to international interoperability standards so health records can follow patients across facilities and systems.</p></div>
+          <div class="principle-card reveal"><h4>End-to-End Encryption</h4><p>All patient data encrypted in transit and at rest. Access controlled at the user, role, and facility level with full logging.</p></div>
+          <div class="principle-card reveal"><h4>Audit Trails</h4><p>Immutable audit logs for all clinical record access and modification, supporting regulatory compliance and clinical governance requirements.</p></div>
+          <div class="principle-card reveal"><h4>Role-Based Access Control</h4><p>Granular permission systems that ensure clinical staff see only the data relevant to their role, function, and patient relationship.</p></div>
+          <div class="principle-card reveal"><h4>Offline Resilience</h4><p>Clinical systems designed to remain functional during power outages and connectivity interruptions, with reliable sync when connectivity is restored.</p></div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- PULL QUOTE -->
+    <section class="section section-alt">
+      <div class="container" style="max-width:860px;">
+        <div class="pull-quote reveal">
+          <blockquote>When one doctor needs to effectively serve five thousand patients, <strong>technology is not a productivity tool. It is the difference between care and no care at all.</strong></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-h">
+      <div class="cta-band-inner">
+        <h2 id="cta-h">Building HealthTech for Africa?</h2>
+        <p>From hospital management systems to telemedicine platforms to population health dashboards, our HealthTech team builds with the clinical rigour and contextual understanding that healthcare software requires.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/what-we-do/" class="btn-outline-white">All Services</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

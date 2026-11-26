@@ -1023,6 +1023,108 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+
+.page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+.page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+.stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+.stat-item:last-child{border-right:none;}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+.stat-unit{color:var(--teal-glow);}
+.stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.reverse{direction:rtl;}.story-grid.reverse>*{direction:ltr;}
+.story-image{position:relative;border-radius:20px;overflow:hidden;min-height:420px;background:linear-gradient(135deg,var(--teal) 0%,var(--forest) 100%);}
+.story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.story-image .img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,15,.4) 0%,transparent 60%);}
+.story-badge{position:absolute;bottom:var(--sp-5);left:var(--sp-5);background:rgba(5,25,15,.88);backdrop-filter:blur(8px);border:1px solid rgba(30,180,150,.35);border-radius:14px;padding:var(--sp-3) var(--sp-4);text-align:center;}
+.badge-num{font-size:1.8rem;font-weight:700;color:var(--white);line-height:1;}
+.badge-label{font-size:.68rem;color:var(--teal-glow);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;}
+.story-content .section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.story-content .section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+.story-content .section-title.light{color:var(--white);}
+.story-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.8;margin-bottom:var(--sp-4);}
+.story-content p:last-child{margin-bottom:0;}
+.section{padding:var(--sp-11) 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.section-title{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:var(--sp-5);}
+.section-lead{font-size:var(--ts-base);color:var(--txt-2);line-height:1.75;max-width:700px;margin-bottom:0;}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+.process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+.process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+.process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+.process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+.pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+.pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+.pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+.pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+.pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.pillar-list li::before{content:'&#8594;';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+.pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+.pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+.pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+.pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+.persona-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.persona-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.persona-grid.cols-4{grid-template-columns:repeat(4,1fr);}
+.persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+.persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+.persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+.persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.stage-card-prem{border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;}
+.stage-card-prem:nth-child(1){background:var(--teal-lite);border:1px solid var(--teal-glow);}
+.stage-card-prem:nth-child(2){background:var(--forest);color:var(--white);}
+.stage-card-prem:nth-child(3){background:var(--cr-lite);border:1px solid var(--cr);}
+.stage-card-prem .stage-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) .stage-label{color:var(--teal);}
+.stage-card-prem:nth-child(2) .stage-label{color:var(--teal-glow);}
+.stage-card-prem:nth-child(3) .stage-label{color:var(--cr);}
+.stage-card-prem h3{font-size:var(--ts-lg);font-weight:700;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) h3,.stage-card-prem:nth-child(3) h3{color:var(--txt);}
+.stage-card-prem:nth-child(2) h3{color:var(--white);}
+.stage-card-prem p{font-size:var(--ts-sm);line-height:1.7;}
+.stage-card-prem:nth-child(1) p,.stage-card-prem:nth-child(3) p{color:var(--txt-2);}
+.stage-card-prem:nth-child(2) p{color:rgba(255,255,255,.75);}
+.sector-bands{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7);}
+.sector-pill{padding:var(--sp-2) var(--sp-5);border-radius:999px;border:1px solid var(--border);font-size:var(--ts-sm);color:var(--txt-2);background:var(--bg-card);transition:border-color var(--dur-fast),color var(--dur-fast);}
+.sector-pill:hover{border-color:var(--teal-glow);color:var(--teal);}
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.mission-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);}
+.mission-icon{font-size:1.6rem;margin-bottom:var(--sp-3);}
+.mission-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.mission-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.capability-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);display:flex;gap:var(--sp-5);align-items:flex-start;}
+.capability-num{font-size:2.5rem;font-weight:700;color:var(--teal-lite);line-height:1;min-width:3rem;flex-shrink:0;}
+.capability-body h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.capability-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4);margin-top:var(--sp-6);}
+.principle-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:var(--sp-5);}
+.principle-card h4{font-size:var(--ts-sm);font-weight:700;color:var(--mint);margin-bottom:var(--sp-2);}
+.principle-card p{font-size:var(--ts-xs);color:rgba(255,255,255,.7);line-height:1.6;}
+.cta-band{background:var(--forest);padding:var(--sp-11) 0;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.9rem 2.2rem;background:var(--cr);color:var(--white);border-radius:999px;font-weight:700;font-size:var(--ts-sm);text-decoration:none;transition:background var(--dur-fast);}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-outline-white{display:inline-block;padding:.9rem 2.2rem;border:2px solid rgba(255,255,255,.4);color:var(--white);border-radius:999px;font-weight:600;font-size:var(--ts-sm);text-decoration:none;transition:border-color var(--dur-fast);}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.8);}
+@media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.persona-grid.cols-3{grid-template-columns:1fr 1fr;}.persona-grid.cols-4{grid-template-columns:1fr 1fr;}.mission-grid{grid-template-columns:1fr 1fr;}.principles-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.stage-grid{grid-template-columns:1fr;}.story-grid{grid-template-columns:1fr;}.capability-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.persona-grid.cols-3{grid-template-columns:1fr;}.persona-grid.cols-4{grid-template-columns:1fr;}.mission-grid{grid-template-columns:1fr;}.principles-grid{grid-template-columns:1fr;}}
+@media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}.stage-grid{grid-template-columns:1fr;}}
     </style>
 </head>
 <body>
@@ -1409,117 +1511,125 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/industries/logistics/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Industries</span>
-            <h1 id="hero-heading">Logistics</h1>
-            <p class="page-hero-lead">African logistics is one of the most operationally complex environments in the world — and one of the most consequential for the continent's economic development. The companies solving the last-mile challenge, making supply chains visible, and moving goods reliably across unreliable infrastructure need technology that is as resilient as they are.</p>
-                        <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Real-Time</span>
-                <span class="hero-meta-label">Fleet Tracking</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Last-Mile</span>
-                <span class="hero-meta-label">Focus</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">14<em>+</em></span>
-                <span class="hero-meta-label">Years in Market</span>
-              </div>
-            </div>
-            <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Discuss Your Project</a>
-              <a href="#services" class="btn btn-ghost">Our Services</a>
-            </div>
-          </div>
-        
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">The Logistics Challenge</div>
-                <p>Africa's logistics sector is growing fast — but fragmented infrastructure, cash-heavy operations, and manual coordination create costly inefficiencies.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Our Expertise</div>
-                <p>Real-time tracking, fleet management, driver apps, route optimisation, warehouse management systems, and last-mile delivery platforms.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Who We Work With</div>
-                <p>3PL providers, courier companies, freight forwarders, e-commerce logistics arms, and supply chain operators across Africa.</p>
-              </div>
-            </div>
+        <div style="max-width:720px;padding:var(--sp-11) 0;">
+          <span class="section-label">Industries &rsaquo; Logistics</span>
+          <h1 id="hero-heading" style="font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:var(--sp-5);">Logistics Technology Built<br><span style="color:var(--mint);">for African Complexity</span></h1>
+          <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.85);line-height:1.75;max-width:620px;margin-bottom:var(--sp-7);">African logistics operates across road networks, regulatory environments, and urban geographies that most off-the-shelf logistics software was not designed for. We build fleet management, dispatch, tracking, and warehousing systems that work in the context you operate in.</p>
+          <div class="cta-pair" style="justify-content:flex-start;">
+            <a href="/contact/" class="btn-primary">Discuss Your Requirements</a>
+            <a href="#services" class="btn-outline-white">Logistics Services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="challenge-heading">
+    <!-- STATS -->
+    <div class="stats-band" aria-hidden="true">
       <div class="container">
-        <div class="two-col-prose">
-          <div>
-            <h2 id="challenge-heading">The Logistics Technology Challenge</h2>
-            <p>Logistics in Nigeria and across Africa operates against a persistent set of infrastructure challenges: inconsistent address systems, congested urban corridors, unreliable connectivity in rural areas, and a fuel cost environment that makes route efficiency a financial imperative rather than an optimisation nice-to-have. Standard logistics software built for predictable western infrastructure underperforms in these conditions.</p>
-            <p>The visibility problem is equally significant. Shippers want to know where their goods are. E-commerce merchants want to give customers accurate delivery updates. Operations managers want to know why a vehicle is two hours late. Current systems provide fragmented, delayed data — and the operational decisions that depend on that data are made too slowly.</p>
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">$300<span class="stat-unit">B+</span></span><span class="stat-label">Africa Logistics Market</span></div>
+          <div class="stat-item"><span class="stat-number">40<span class="stat-unit">%</span></span><span class="stat-label">Last-Mile Cost of Total Logistics</span></div>
+          <div class="stat-item"><span class="stat-number">15<span class="stat-unit">+</span></span><span class="stat-label">Years Building Logistics Tech</span></div>
+          <div class="stat-item"><span class="stat-number">6</span><span class="stat-label">Core Platform Areas</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORY 1 -->
+    <section class="section reveal" aria-labelledby="challenge-h">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image">
+            <img src="/assets/images/industries/logistics/warehouse-team.jpg" alt="Logistics team of diverse Nigerian workers organising packages in a modern warehouse" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge"><span class="badge-num">40%</span><span class="badge-label">of Cost is Last-Mile</span></div>
           </div>
-          <div>
-            <h2>Our Approach</h2>
-            <p>We build logistics technology that works in the African context — systems that function when drivers are offline, route algorithms that account for traffic patterns in Lagos, Nairobi, and Accra, and driver apps that work on mid-range Android phones with 3G data.</p>
-            <p>Our integration expertise allows us to connect logistics platforms to the e-commerce systems, ERP platforms, and payment infrastructure that logistics companies need to interact with — creating the joined-up data environment that makes real supply chain visibility possible.</p>
+          <div class="story-content">
+            <span class="section-label">The Challenge</span>
+            <h2 class="section-title" id="challenge-h">African Last-Mile Logistics Is a Distinct Problem</h2>
+            <p>Last-mile logistics in African urban environments presents challenges that do not appear in the textbooks written for Western markets: address systems that do not follow standard formats, road infrastructure that changes seasonally, regulatory checkpoints that add unpredictable time to intercity routes, and customers who expect real-time delivery tracking on the same mobile-first interfaces used for every other service.</p>
+            <p>The logistics businesses that are winning in Africa have invested in technology specifically designed for this context. Generic European or American logistics software, adapted to run in Lagos or Nairobi, rarely delivers the operational efficiency its vendors promise. The mismatch between platform assumptions and operational reality is too significant.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="services" aria-labelledby="services-heading">
+    <!-- CAPABILITY GRID -->
+    <section class="section section-alt reveal" id="services" aria-labelledby="services-h">
       <div class="container">
-        <h2 id="services-heading" class="section-heading">What We Build for Logistics</h2>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
-            <h3>Fleet Management Systems</h3>
-            <p>Vehicle tracking, driver performance monitoring, maintenance scheduling, fuel management, and dispatch management for fleet operators — from motorcycle courier fleets to long-haul trucking companies.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Last-Mile Delivery Platforms</h3>
-            <p>Delivery orchestration systems for e-commerce fulfilment — order batching, route optimisation, driver assignment, proof-of-delivery capture, and real-time customer notifications for last-mile logistics providers.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Shipment Tracking &amp; Visibility</h3>
-            <p>Customer-facing tracking portals, proactive notification systems, and internal visibility dashboards that give every stakeholder in the delivery chain a clear view of where a shipment is and when it will arrive.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Warehouse Management Systems</h3>
-            <p>Inbound receiving, putaway, picking, packing, and despatch management — barcode and QR scanning, inventory accuracy, FIFO and FEFO management, and integration with ERP and e-commerce platforms.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Route Optimisation</h3>
-            <p>Intelligent route planning that minimises fuel cost and delivery time across multiple stops — factoring in vehicle capacity, delivery time windows, traffic patterns, and driver working hours.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Supply Chain Analytics</h3>
-            <p>End-to-end supply chain visibility dashboards, on-time delivery performance analytics, cost-per-shipment analysis, and carrier performance benchmarking for operations managers and logistics leadership.</p>
-          </article>
+        <span class="section-label">What We Build</span>
+        <h2 class="section-title" id="services-h">Six Platform Areas That Power Logistics Operations</h2>
+        <div class="capability-grid">
+          <div class="capability-card reveal">
+            <div class="capability-num">01</div>
+            <div class="capability-body"><h3>Fleet Management Systems</h3><p>Vehicle tracking, maintenance scheduling, fuel management, driver performance monitoring, and compliance management for logistics operators running fleets from five vehicles to five hundred.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">02</div>
+            <div class="capability-body"><h3>Route Optimisation</h3><p>AI-assisted route planning that accounts for African road conditions, traffic patterns, checkpoint locations, and delivery time windows to reduce fuel costs and improve on-time delivery rates.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">03</div>
+            <div class="capability-body"><h3>Warehouse Management Systems</h3><p>Inventory management, receiving, put-away, picking and packing, dispatch management, and third-party logistics (3PL) billing for warehousing operations of all sizes.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">04</div>
+            <div class="capability-body"><h3>Order Tracking &amp; Visibility</h3><p>Real-time shipment tracking for end customers, automated delivery notifications via SMS and WhatsApp, and proof-of-delivery capture that works with or without an internet connection at point of delivery.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">05</div>
+            <div class="capability-body"><h3>Driver &amp; Rider Apps</h3><p>Mobile applications for delivery agents with offline capability, turn-by-turn navigation, delivery task management, proof-of-delivery capture, and earnings tracking for platforms managing large delivery networks.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">06</div>
+            <div class="capability-body"><h3>Dispatch &amp; Operations Analytics</h3><p>Operations control dashboards giving logistics managers real-time visibility across the entire network: fleet location, delivery status, exceptions, SLA compliance, and cost-per-delivery analytics.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <!-- STORY 2 (dark) -->
+    <section class="section section-dark reveal" aria-labelledby="ops-h">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Let's build your logistics technology platform</h2>
-            <p>From last-mile delivery startups building their core platform to established 3PL operators digitising their operations, we bring the logistics domain knowledge and engineering capability to build systems that work in the real conditions of African logistics.</p>
+        <div class="story-grid reverse">
+          <div class="story-image">
+            <img src="/assets/images/industries/logistics/dispatch-centre.jpg" alt="Logistics operations centre with Nigerian dispatch managers monitoring fleet on screens" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
           </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Discuss Your Project</a>
-            <a href="/what-we-do/" class="btn btn-ghost">All Services</a>
+          <div class="story-content">
+            <span class="section-label" style="color:var(--teal-glow);">The Difference</span>
+            <h2 class="section-title light" id="ops-h">Built for the African Logistics Reality</h2>
+            <p style="color:rgba(255,255,255,.8);">Our logistics platforms are designed for the operational context of African logistics businesses: low-bandwidth modes that keep driver apps functional on 2G connections, offline capability so delivery agents can capture proof of delivery without connectivity, WhatsApp-native customer notifications that reach customers on the channel they actually check, and address handling that works in environments where "17B, Debo Aina Street, Omole Phase 1" is a typical delivery address.</p>
+            <p style="color:rgba(255,255,255,.8);">We build for scale from the start. Whether you are managing 50 deliveries a day or 50,000, the data model and architecture we design will accommodate growth without requiring a rebuild at every inflection point.</p>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- PULL QUOTE -->
+    <section class="section section-alt">
+      <div class="container" style="max-width:860px;">
+        <div class="pull-quote reveal">
+          <blockquote>The last mile is where logistics businesses win or lose customer loyalty. <strong>Technology that makes the last mile reliable</strong> is not an operational expense. It is a competitive advantage.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-h">
+      <div class="cta-band-inner">
+        <h2 id="cta-h">Solving a Logistics Technology Challenge?</h2>
+        <p>From courier startups building their first dispatch platform to 3PL operators replacing legacy warehouse management software, we build logistics technology that works in the African operational environment your business actually runs in.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/what-we-do/" class="btn-outline-white">All Services</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

@@ -1023,6 +1023,108 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+
+.page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+.page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+.stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+.stat-item:last-child{border-right:none;}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+.stat-unit{color:var(--teal-glow);}
+.stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.reverse{direction:rtl;}.story-grid.reverse>*{direction:ltr;}
+.story-image{position:relative;border-radius:20px;overflow:hidden;min-height:420px;background:linear-gradient(135deg,var(--teal) 0%,var(--forest) 100%);}
+.story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.story-image .img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,15,.4) 0%,transparent 60%);}
+.story-badge{position:absolute;bottom:var(--sp-5);left:var(--sp-5);background:rgba(5,25,15,.88);backdrop-filter:blur(8px);border:1px solid rgba(30,180,150,.35);border-radius:14px;padding:var(--sp-3) var(--sp-4);text-align:center;}
+.badge-num{font-size:1.8rem;font-weight:700;color:var(--white);line-height:1;}
+.badge-label{font-size:.68rem;color:var(--teal-glow);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;}
+.story-content .section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.story-content .section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+.story-content .section-title.light{color:var(--white);}
+.story-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.8;margin-bottom:var(--sp-4);}
+.story-content p:last-child{margin-bottom:0;}
+.section{padding:var(--sp-11) 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.section-title{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:var(--sp-5);}
+.section-lead{font-size:var(--ts-base);color:var(--txt-2);line-height:1.75;max-width:700px;margin-bottom:0;}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+.process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+.process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+.process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+.process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+.pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+.pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+.pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+.pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+.pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.pillar-list li::before{content:'&#8594;';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+.pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+.pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+.pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+.pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+.persona-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.persona-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.persona-grid.cols-4{grid-template-columns:repeat(4,1fr);}
+.persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+.persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+.persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+.persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.stage-card-prem{border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;}
+.stage-card-prem:nth-child(1){background:var(--teal-lite);border:1px solid var(--teal-glow);}
+.stage-card-prem:nth-child(2){background:var(--forest);color:var(--white);}
+.stage-card-prem:nth-child(3){background:var(--cr-lite);border:1px solid var(--cr);}
+.stage-card-prem .stage-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) .stage-label{color:var(--teal);}
+.stage-card-prem:nth-child(2) .stage-label{color:var(--teal-glow);}
+.stage-card-prem:nth-child(3) .stage-label{color:var(--cr);}
+.stage-card-prem h3{font-size:var(--ts-lg);font-weight:700;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) h3,.stage-card-prem:nth-child(3) h3{color:var(--txt);}
+.stage-card-prem:nth-child(2) h3{color:var(--white);}
+.stage-card-prem p{font-size:var(--ts-sm);line-height:1.7;}
+.stage-card-prem:nth-child(1) p,.stage-card-prem:nth-child(3) p{color:var(--txt-2);}
+.stage-card-prem:nth-child(2) p{color:rgba(255,255,255,.75);}
+.sector-bands{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7);}
+.sector-pill{padding:var(--sp-2) var(--sp-5);border-radius:999px;border:1px solid var(--border);font-size:var(--ts-sm);color:var(--txt-2);background:var(--bg-card);transition:border-color var(--dur-fast),color var(--dur-fast);}
+.sector-pill:hover{border-color:var(--teal-glow);color:var(--teal);}
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.mission-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);}
+.mission-icon{font-size:1.6rem;margin-bottom:var(--sp-3);}
+.mission-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.mission-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.capability-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);display:flex;gap:var(--sp-5);align-items:flex-start;}
+.capability-num{font-size:2.5rem;font-weight:700;color:var(--teal-lite);line-height:1;min-width:3rem;flex-shrink:0;}
+.capability-body h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.capability-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4);margin-top:var(--sp-6);}
+.principle-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:var(--sp-5);}
+.principle-card h4{font-size:var(--ts-sm);font-weight:700;color:var(--mint);margin-bottom:var(--sp-2);}
+.principle-card p{font-size:var(--ts-xs);color:rgba(255,255,255,.7);line-height:1.6;}
+.cta-band{background:var(--forest);padding:var(--sp-11) 0;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.9rem 2.2rem;background:var(--cr);color:var(--white);border-radius:999px;font-weight:700;font-size:var(--ts-sm);text-decoration:none;transition:background var(--dur-fast);}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-outline-white{display:inline-block;padding:.9rem 2.2rem;border:2px solid rgba(255,255,255,.4);color:var(--white);border-radius:999px;font-weight:600;font-size:var(--ts-sm);text-decoration:none;transition:border-color var(--dur-fast);}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.8);}
+@media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.persona-grid.cols-3{grid-template-columns:1fr 1fr;}.persona-grid.cols-4{grid-template-columns:1fr 1fr;}.mission-grid{grid-template-columns:1fr 1fr;}.principles-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.stage-grid{grid-template-columns:1fr;}.story-grid{grid-template-columns:1fr;}.capability-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.persona-grid.cols-3{grid-template-columns:1fr;}.persona-grid.cols-4{grid-template-columns:1fr;}.mission-grid{grid-template-columns:1fr;}.principles-grid{grid-template-columns:1fr;}}
+@media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}.stage-grid{grid-template-columns:1fr;}}
     </style>
 </head>
 <body>
@@ -1409,117 +1511,124 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/industries/education-elearning/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Industries</span>
-            <h1 id="hero-heading">Education &amp; eLearning</h1>
-            <p class="page-hero-lead">Education technology in Africa has the potential to extend quality learning to millions of people who have never had reliable access to it. Realising that potential requires technology that is affordable, accessible under real-world connectivity conditions, and built for the learning contexts of African students, not imported assumptions.</p>
-                        <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">300M<em>+</em></span>
-                <span class="hero-meta-label">African Learners</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Mobile</span>
-                <span class="hero-meta-label">First by Design</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Offline</span>
-                <span class="hero-meta-label">Capable Platforms</span>
-              </div>
-            </div>
-            <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Start Your Project</a>
-              <a href="#services" class="btn btn-ghost">Our Services</a>
-            </div>
-          </div>
-        
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">The EdTech Opportunity</div>
-                <p>Africa's young, growing population represents the world's largest untapped education market — but infrastructure gaps demand a different kind of platform.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Our Approach</div>
-                <p>Mobile-first, offline-capable learning systems designed for the reality of African connectivity — not repurposed tools built for high-bandwidth markets.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Who We Work With</div>
-                <p>EdTech startups, universities, schools, corporate training teams, vocational training programmes, and government education agencies.</p>
-              </div>
-            </div>
+        <div style="max-width:720px;padding:var(--sp-11) 0;">
+          <span class="section-label">Industries &rsaquo; Education &amp; eLearning</span>
+          <h1 id="hero-heading" style="font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:var(--sp-5);">Technology That Puts<br><span style="color:var(--mint);">Learning Within Reach</span></h1>
+          <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.85);line-height:1.75;max-width:620px;margin-bottom:var(--sp-7);">Africa's education system faces access and quality challenges that no amount of physical infrastructure can solve alone. Digital learning platforms, done right, change what is possible for a student in Kano as much as one in Lagos. We build the systems that make that true.</p>
+          <div class="cta-pair" style="justify-content:flex-start;">
+            <a href="/contact/" class="btn-primary">Discuss Your EdTech Project</a>
+            <a href="#services" class="btn-outline-white">Education Services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="challenge-heading">
+    <!-- STATS -->
+    <div class="stats-band" aria-hidden="true">
       <div class="container">
-        <div class="two-col-prose">
-          <div>
-            <h2 id="challenge-heading">The EdTech Challenge</h2>
-            <p>African education systems are managing a paradox: unprecedented demand for quality education alongside infrastructure, resource, and access constraints that commercial EdTech solutions — built for broadband-connected classrooms in wealthy markets — were never designed to address. Most off-the-shelf LMS platforms are too expensive, too heavy, and too culturally generic for African educational contexts.</p>
-            <p>Meanwhile, the rapid growth of private training organisations, professional development bodies, and corporate learning functions is creating demand for custom digital learning infrastructure that legacy institutional systems cannot satisfy.</p>
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">20<span class="stat-unit">M+</span></span><span class="stat-label">Out-of-School Children in Nigeria</span></div>
+          <div class="stat-item"><span class="stat-number">600<span class="stat-unit">M+</span></span><span class="stat-label">Mobile Learners by 2030</span></div>
+          <div class="stat-item"><span class="stat-number">15<span class="stat-unit">+</span></span><span class="stat-label">Years Building EdTech</span></div>
+          <div class="stat-item"><span class="stat-number">6</span><span class="stat-label">Education Platforms Built</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORY 1 -->
+    <section class="section reveal" aria-labelledby="gap-h">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image">
+            <img src="/assets/images/industries/education-elearning/students-learning.jpg" alt="Nigerian secondary school students using tablets in a modern classroom" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge"><span class="badge-num">20M+</span><span class="badge-label">Children without School Access</span></div>
           </div>
-          <div>
-            <h2>Our Approach</h2>
-            <p>We build education technology that works where students actually are — on mobile data connections, with intermittent power, using shared devices. Offline-capable content delivery, data-light video streaming, and mobile-first interfaces are baseline design requirements, not premium features.</p>
-            <p>We also work closely with pedagogical stakeholders — teachers, trainers, curriculum developers — to ensure that the technology serves the learning process rather than imposing a technology framework on it.</p>
+          <div class="story-content">
+            <span class="section-label">The Gap</span>
+            <h2 class="section-title" id="gap-h">The Learning Access Crisis Is a Technology Problem</h2>
+            <p>Africa's education challenge is well-documented: too few qualified teachers, too little physical infrastructure, and too many students in areas that conventional schooling struggles to reach. What is less often said is that this is precisely the kind of problem that well-designed digital platforms can address, not entirely, but significantly, and at a scale that building new schools cannot match.</p>
+            <p>The EdTech solutions that work in Africa are not repurposed Western learning management systems. They are platforms designed for the actual constraints of the environment: variable bandwidth, shared devices, offline-first access, local language content, and assessment models that work for teachers who are managing large class sizes with limited time for marking.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="services" aria-labelledby="services-heading">
+    <!-- CAPABILITY GRID -->
+    <section class="section section-alt reveal" id="services" aria-labelledby="services-h">
       <div class="container">
-        <h2 id="services-heading" class="section-heading">What We Build for Education</h2>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
-            <h3>Learning Management Systems</h3>
-            <p>Custom and configured LMS platforms for schools, universities, training bodies, and corporate learning teams — course management, learner enrolment, assessments, progress tracking, and eCertMan-integrated digital certificates.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Student Information Systems</h3>
-            <p>Comprehensive student record management — admission, enrolment, timetabling, attendance, examination results, fee payment, and alumni management — for secondary schools, polytechnics, and universities.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Examination &amp; Results Platforms</h3>
-            <p>Online and computer-based testing infrastructure, marking and moderation workflows, secure results generation and publication, and transcript portals for examination boards and institutional assessments.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Digital Content Delivery</h3>
-            <p>Content management systems for educational materials — video lectures, interactive exercises, assessments, and resource libraries — designed for low-bandwidth delivery and mobile-first learner experiences.</p>
-          </article>
-          <article class="feature-card">
-            <h3>EdTech Product Development</h3>
-            <p>End-to-end development of EdTech products — from concept and MVP through to scaled platform — for founders building in tutoring, skills development, professional certification, or language learning.</p>
-          </article>
-          <article class="feature-card">
-            <h3>School &amp; Institution Websites</h3>
-            <p>Professional, SEO-optimised websites for schools, colleges, and training organisations — with parent portals, student resources, event management, and news publishing built in.</p>
-          </article>
+        <span class="section-label">What We Build</span>
+        <h2 class="section-title" id="services-h">Six Platforms, One Mission: Better Learning Outcomes</h2>
+        <div class="capability-grid">
+          <div class="capability-card reveal">
+            <div class="capability-num">01</div>
+            <div class="capability-body"><h3>Learning Management Systems</h3><p>Full-featured LMS platforms with course authoring, learner progress tracking, assessment and grading, discussion forums, and content libraries. Built for institutions that need more than an off-the-shelf tool.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">02</div>
+            <div class="capability-body"><h3>Virtual Classroom Platforms</h3><p>Live and asynchronous virtual classroom infrastructure with video conferencing integration, whiteboard tools, breakout room functionality, session recording, and attendance tracking for remote and hybrid instruction.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">03</div>
+            <div class="capability-body"><h3>Assessment &amp; Examination Systems</h3><p>Computer-based testing platforms with question bank management, adaptive testing, anti-fraud controls, automated grading, and results management for schools, examination bodies, and corporate training programmes.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">04</div>
+            <div class="capability-body"><h3>Student Information Systems</h3><p>End-to-end school management software covering admissions, enrolment, timetabling, attendance, grade records, parent communication, and fee management for primary, secondary, and tertiary institutions.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">05</div>
+            <div class="capability-body"><h3>Certification Management</h3><p>Digital certificate issuance, verification, and blockchain-anchored credentials for professional bodies, examination organisations, and training institutions that need verifiable, tamper-proof records.</p></div>
+          </div>
+          <div class="capability-card reveal">
+            <div class="capability-num">06</div>
+            <div class="capability-body"><h3>Learning Analytics Dashboards</h3><p>Data platforms that surface learner engagement, completion rates, assessment performance, and intervention signals for education administrators, funders, and academic leadership making decisions about programme effectiveness.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <!-- DARK: WHO WE BUILD FOR -->
+    <section class="section section-dark reveal" aria-labelledby="for-h">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Building an education technology platform?</h2>
-            <p>Whether you are a university digitising student records, a training organisation launching an online learning platform, or an EdTech founder building from scratch, our team brings both the technical capability and the African educational context to your project.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Start Your Project</a>
-            <a href="/what-we-do/" class="btn btn-ghost">All Services</a>
-          </div>
+        <span class="section-label" style="color:var(--teal-glow);">Who We Build For</span>
+        <h2 class="section-title light" id="for-h">Every Segment of the Education Ecosystem</h2>
+        <p class="section-lead light" style="color:rgba(255,255,255,.75);margin-bottom:var(--sp-7);">Our EdTech work spans every level of the formal and non-formal education system, from early childhood through continuous professional development.</p>
+        <div class="principles-grid">
+          <div class="principle-card reveal"><h4>Higher Education</h4><p>Universities, polytechnics, and colleges of education building blended learning capability, student portals, and digital examination infrastructure.</p></div>
+          <div class="principle-card reveal"><h4>K-12 Schools</h4><p>Primary and secondary schools implementing digital learning, school management systems, and parent engagement platforms.</p></div>
+          <div class="principle-card reveal"><h4>Corporate Training</h4><p>Organisations building internal learning academies, compliance training systems, and skills development platforms for their workforce.</p></div>
+          <div class="principle-card reveal"><h4>Vocational Institutions</h4><p>Technical and vocational colleges requiring practical skills assessments, competency tracking, and industry certification management.</p></div>
+          <div class="principle-card reveal"><h4>EdTech Founders</h4><p>Startups building consumer or B2B education products who need a technical partner to take their platform from MVP to production scale.</p></div>
+          <div class="principle-card reveal"><h4>Education Development Organisations</h4><p>NGOs, government agencies, and international organisations implementing digital learning programmes at community or national scale.</p></div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- PULL QUOTE -->
+    <section class="section section-alt">
+      <div class="container" style="max-width:860px;">
+        <div class="pull-quote reveal">
+          <blockquote>The best education technology does not replace the teacher. It gives every teacher <strong>the capacity to reach every student</strong>, regardless of geography or class size.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-h">
+      <div class="cta-band-inner">
+        <h2 id="cta-h">Building for Education?</h2>
+        <p>Whether you are an institution upgrading your learning infrastructure, an EdTech founder bringing a new product to market, or a development organisation scaling a learning programme, we bring both technical depth and contextual understanding of African education.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/products/digitalsiwes/" class="btn-outline-white">See DigitalSIWES</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

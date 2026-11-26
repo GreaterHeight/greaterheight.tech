@@ -1023,6 +1023,108 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+
+.page-hero.photo-hero{background-size:cover;background-position:center top;min-height:600px;}
+.page-hero.photo-hero::before{background:linear-gradient(108deg,rgba(5,25,15,.95) 0%,rgba(13,61,40,.85) 45%,rgba(13,61,40,.5) 72%,transparent 100%);}
+.stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+.stat-item:last-child{border-right:none;}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+.stat-unit{color:var(--teal-glow);}
+.stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.reverse{direction:rtl;}.story-grid.reverse>*{direction:ltr;}
+.story-image{position:relative;border-radius:20px;overflow:hidden;min-height:420px;background:linear-gradient(135deg,var(--teal) 0%,var(--forest) 100%);}
+.story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.story-image .img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,15,.4) 0%,transparent 60%);}
+.story-badge{position:absolute;bottom:var(--sp-5);left:var(--sp-5);background:rgba(5,25,15,.88);backdrop-filter:blur(8px);border:1px solid rgba(30,180,150,.35);border-radius:14px;padding:var(--sp-3) var(--sp-4);text-align:center;}
+.badge-num{font-size:1.8rem;font-weight:700;color:var(--white);line-height:1;}
+.badge-label{font-size:.68rem;color:var(--teal-glow);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;}
+.story-content .section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.story-content .section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+.story-content .section-title.light{color:var(--white);}
+.story-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.8;margin-bottom:var(--sp-4);}
+.story-content p:last-child{margin-bottom:0;}
+.section{padding:var(--sp-11) 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.section-title{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:var(--sp-5);}
+.section-lead{font-size:var(--ts-base);color:var(--txt-2);line-height:1.75;max-width:700px;margin-bottom:0;}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);counter-reset:steps;margin-top:var(--sp-7);}
+.process-grid.steps-3{grid-template-columns:repeat(3,1fr);}
+.process-step{counter-increment:steps;position:relative;padding-top:3.5rem;}
+.process-step::before{content:counter(steps,decimal-leading-zero);position:absolute;top:0;left:0;font-size:2.4rem;font-weight:700;color:var(--teal-lite);line-height:1;}
+.process-step h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.process-step p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.pillar-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.pillar-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+.pillar-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+.pillar-num{font-size:3.5rem;font-weight:700;line-height:1;color:var(--teal-lite);margin-bottom:var(--sp-4);}
+.pillar-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.pillar-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-4);}
+.pillar-list{display:flex;flex-direction:column;gap:var(--sp-2);list-style:none;}
+.pillar-list li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.pillar-list li::before{content:'&#8594;';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+.pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+.pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+.pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+.pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+.persona-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.persona-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.persona-grid.cols-4{grid-template-columns:repeat(4,1fr);}
+.persona-card{border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);background:var(--bg-card);transition:box-shadow var(--dur-med),transform var(--dur-med),border-color var(--dur-med);}
+.persona-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px);border-color:var(--teal-glow);}
+.persona-role{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cr);margin-bottom:var(--sp-2);}
+.persona-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.persona-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
+.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.stage-card-prem{border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;}
+.stage-card-prem:nth-child(1){background:var(--teal-lite);border:1px solid var(--teal-glow);}
+.stage-card-prem:nth-child(2){background:var(--forest);color:var(--white);}
+.stage-card-prem:nth-child(3){background:var(--cr-lite);border:1px solid var(--cr);}
+.stage-card-prem .stage-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) .stage-label{color:var(--teal);}
+.stage-card-prem:nth-child(2) .stage-label{color:var(--teal-glow);}
+.stage-card-prem:nth-child(3) .stage-label{color:var(--cr);}
+.stage-card-prem h3{font-size:var(--ts-lg);font-weight:700;margin-bottom:var(--sp-3);}
+.stage-card-prem:nth-child(1) h3,.stage-card-prem:nth-child(3) h3{color:var(--txt);}
+.stage-card-prem:nth-child(2) h3{color:var(--white);}
+.stage-card-prem p{font-size:var(--ts-sm);line-height:1.7;}
+.stage-card-prem:nth-child(1) p,.stage-card-prem:nth-child(3) p{color:var(--txt-2);}
+.stage-card-prem:nth-child(2) p{color:rgba(255,255,255,.75);}
+.sector-bands{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-7);}
+.sector-pill{padding:var(--sp-2) var(--sp-5);border-radius:999px;border:1px solid var(--border);font-size:var(--ts-sm);color:var(--txt-2);background:var(--bg-card);transition:border-color var(--dur-fast),color var(--dur-fast);}
+.sector-pill:hover{border-color:var(--teal-glow);color:var(--teal);}
+.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.mission-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);}
+.mission-icon{font-size:1.6rem;margin-bottom:var(--sp-3);}
+.mission-card h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.mission-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.capability-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-6);display:flex;gap:var(--sp-5);align-items:flex-start;}
+.capability-num{font-size:2.5rem;font-weight:700;color:var(--teal-lite);line-height:1;min-width:3rem;flex-shrink:0;}
+.capability-body h3{font-size:var(--ts-base);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+.capability-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;}
+.principles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4);margin-top:var(--sp-6);}
+.principle-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:var(--sp-5);}
+.principle-card h4{font-size:var(--ts-sm);font-weight:700;color:var(--mint);margin-bottom:var(--sp-2);}
+.principle-card p{font-size:var(--ts-xs);color:rgba(255,255,255,.7);line-height:1.6;}
+.cta-band{background:var(--forest);padding:var(--sp-11) 0;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.9rem 2.2rem;background:var(--cr);color:var(--white);border-radius:999px;font-weight:700;font-size:var(--ts-sm);text-decoration:none;transition:background var(--dur-fast);}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-outline-white{display:inline-block;padding:.9rem 2.2rem;border:2px solid rgba(255,255,255,.4);color:var(--white);border-radius:999px;font-weight:600;font-size:var(--ts-sm);text-decoration:none;transition:border-color var(--dur-fast);}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.8);}
+@media(max-width:1100px){.pillar-grid{grid-template-columns:1fr 1fr;}.persona-grid.cols-3{grid-template-columns:1fr 1fr;}.persona-grid.cols-4{grid-template-columns:1fr 1fr;}.mission-grid{grid-template-columns:1fr 1fr;}.principles-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.stage-grid{grid-template-columns:1fr;}.story-grid{grid-template-columns:1fr;}.capability-grid{grid-template-columns:1fr;}}
+@media(max-width:768px){.process-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.persona-grid{grid-template-columns:1fr;}.persona-grid.cols-3{grid-template-columns:1fr;}.persona-grid.cols-4{grid-template-columns:1fr;}.mission-grid{grid-template-columns:1fr;}.principles-grid{grid-template-columns:1fr;}}
+@media(max-width:540px){.process-grid{grid-template-columns:1fr;}.stats-row{grid-template-columns:1fr 1fr;}.stage-grid{grid-template-columns:1fr;}}
     </style>
 </head>
 <body>
@@ -1409,117 +1511,131 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/industries/real-estate/hero-bg.jpg')" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Industries</span>
-            <h1 id="hero-heading">Real Estate</h1>
-            <p class="page-hero-lead">Real estate in Nigeria and across Africa is a massive economic force — and one of the least digitised. Property transactions still happen largely through informal networks, opaque pricing, and paper documentation. The PropTech opportunity is enormous, and the organisations moving earliest to build digital infrastructure are establishing durable competitive advantage.</p>
-                        <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">PropTech</span>
-                <span class="hero-meta-label">Specialists</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Smart</span>
-                <span class="hero-meta-label">Building Integration</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">14<em>+</em></span>
-                <span class="hero-meta-label">Years Delivering</span>
-              </div>
-            </div>
-            <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
-              <a href="#services" class="btn btn-ghost">Our Services</a>
-            </div>
-          </div>
-        
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">The PropTech Opportunity</div>
-                <p>Africa's property market is growing — but outdated infrastructure, manual processes, and poor data quality limit the sector's potential for investors, agents, and buyers.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Our Expertise</div>
-                <p>Property listing platforms, CRM systems for agents, property management software, smart building integration, and investment analytics.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Who We Work With</div>
-                <p>Real estate developers, property management companies, estate agencies, PropTech startups, and commercial real estate operators.</p>
-              </div>
-            </div>
+        <div style="max-width:720px;padding:var(--sp-11) 0;">
+          <span class="section-label">Industries &rsaquo; Real Estate</span>
+          <h1 id="hero-heading" style="font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:var(--sp-5);">PropTech for Africa's<br><span style="color:var(--mint);">Fastest-Growing Property Market</span></h1>
+          <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.85);line-height:1.75;max-width:620px;margin-bottom:var(--sp-7);">Africa's real estate market is urbanising faster than its digital infrastructure. We build the property listing platforms, facility management systems, real estate CRMs, and investment platforms that help property businesses move at the pace the market demands.</p>
+          <div class="cta-pair" style="justify-content:flex-start;">
+            <a href="/contact/" class="btn-primary">Discuss Your PropTech Build</a>
+            <a href="#services" class="btn-outline-white">Real Estate Services</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section bg-light" aria-labelledby="challenge-heading">
+    <!-- STATS -->
+    <div class="stats-band" aria-hidden="true">
       <div class="container">
-        <div class="two-col-prose">
-          <div>
-            <h2 id="challenge-heading">The Real Estate Technology Challenge</h2>
-            <p>Nigerian real estate operates with less data transparency than almost any other major market globally. Property prices in the same street can vary by 50% with no public record explaining the difference. Title verification is manual, slow, and expensive. Rental agreements are enforced through social relationships rather than digital records. And property searches happen through WhatsApp groups and word of mouth rather than reliable listing platforms.</p>
-            <p>For property developers, the project sales management challenge is equally significant: tracking customer expressions of interest, managing instalment payment schedules, issuing allotment letters, and managing the documentation flow from reservation to completion — all of which is typically managed in spreadsheets.</p>
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">$17<span class="stat-unit">B+</span></span><span class="stat-label">Nigeria Real Estate Market</span></div>
+          <div class="stat-item"><span class="stat-number">28<span class="stat-unit">M</span></span><span class="stat-label">Housing Unit Deficit in Nigeria</span></div>
+          <div class="stat-item"><span class="stat-number">15<span class="stat-unit">+</span></span><span class="stat-label">Years Building PropTech</span></div>
+          <div class="stat-item"><span class="stat-number">6</span><span class="stat-label">Platform Types We Build</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORY 1 -->
+    <section class="section reveal" aria-labelledby="moment-h">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image">
+            <img src="/assets/images/industries/real-estate/property-team.jpg" alt="Real estate professionals reviewing property listings on digital devices in a modern Nigerian property office" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
+            <div class="story-badge"><span class="badge-num">28M</span><span class="badge-label">Unit Housing Deficit</span></div>
           </div>
-          <div>
-            <h2>Our Approach</h2>
-            <p>We build PropTech for the Nigerian and African market context — not adapted from platforms designed for Rightmove or Zillow. That means building trust infrastructure (verified listings, agent verification, title document management), designing for the payment structures of the market (staggered deposits, instalment plans, mortgage integration), and understanding the developer-to-buyer lifecycle.</p>
-            <p>We have built property listing platforms, developer CRM systems, and estate agency management tools, and we bring that domain experience to every new engagement.</p>
+          <div class="story-content">
+            <span class="section-label">The Moment</span>
+            <h2 class="section-title" id="moment-h">Africa's PropTech Window Is Open Now</h2>
+            <p>African real estate is experiencing the collision of rapid urbanisation, a young and digitally native buying population, and an industry infrastructure that remains largely analogue. Property search is moving online. Transactions are increasingly being initiated digitally. Investors are seeking real-time data on markets that have historically been opaque. The window for technology-first real estate businesses is wide open.</p>
+            <p>Building PropTech for African markets requires understanding both the opportunity and the operational constraints: title registry systems that are still largely paper-based, payment infrastructure that varies by country, and buyers and renters who are making the largest financial decisions of their lives on mobile phones. The platforms that earn trust in this environment are built for it specifically.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="services" aria-labelledby="services-heading">
+    <!-- MISSION GRID: 6 PLATFORM TYPES -->
+    <section class="section section-alt reveal" id="services" aria-labelledby="services-h">
       <div class="container">
-        <h2 id="services-heading" class="section-heading">What We Build for Real Estate</h2>
-        <div class="feature-grid grid-3">
-          <article class="feature-card">
+        <span class="section-label">What We Build</span>
+        <h2 class="section-title" id="services-h">Six PropTech Platform Categories</h2>
+        <div class="mission-grid">
+          <div class="mission-card reveal">
+            <div class="mission-icon">&#127968;</div>
             <h3>Property Listing Platforms</h3>
-            <p>Verified property listing portals — search and filter by location, type, price, and features — with agent profiles, direct enquiry management, and virtual tour integration for property portals and agency networks.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Developer CRM &amp; Sales Management</h3>
-            <p>End-to-end project sales platforms for property developers — lead capture, unit allocation, reservation management, instalment payment scheduling, documentation workflows, and completion tracking.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Estate Agency Management Systems</h3>
-            <p>Agency back-office systems — client relationship management, property portfolio management, viewing scheduling, offer management, and commission tracking for estate agencies and franchises.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Property Investment Platforms</h3>
-            <p>Digital platforms for real estate investment — fractional ownership, REIT investor portals, property crowdfunding, investment performance dashboards, and compliance documentation for regulated real estate investment products.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Facility Management Systems</h3>
-            <p>Property management platforms for landlords and facility managers — tenant management, maintenance request tracking, utility billing, service charge management, and occupancy dashboards.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Virtual Tours &amp; Digital Marketing</h3>
-            <p>360-degree virtual tour integration, CGI-ready presentation infrastructure, and digital marketing systems for off-plan property sales — helping developers sell units before a shovel breaks ground.</p>
-          </article>
+            <p>Marketplace platforms for residential, commercial, and land listings with advanced search, map integration, virtual tours, lead capture, agent management, and listing verification workflows.</p>
+          </div>
+          <div class="mission-card reveal">
+            <div class="mission-icon">&#128736;</div>
+            <h3>Facility &amp; Property Management</h3>
+            <p>End-to-end property management software for landlords, estate managers, and facility management companies: tenant management, rent collection, maintenance request tracking, and financial reporting.</p>
+          </div>
+          <div class="mission-card reveal">
+            <div class="mission-icon">&#128101;</div>
+            <h3>Real Estate CRM</h3>
+            <p>Customer relationship management platforms designed for real estate sales workflows: lead tracking, pipeline management, agent performance, follow-up automation, and transaction milestone management.</p>
+          </div>
+          <div class="mission-card reveal">
+            <div class="mission-icon">&#128200;</div>
+            <h3>Real Estate Investment Platforms</h3>
+            <p>Fractional ownership platforms, real estate investment portals, REIT management systems, and investor reporting dashboards for real estate investment businesses democratising property ownership.</p>
+          </div>
+          <div class="mission-card reveal">
+            <div class="mission-icon">&#127981;</div>
+            <h3>Mortgage &amp; Finance Technology</h3>
+            <p>Mortgage origination platforms, home finance eligibility tools, mortgage broker management systems, and loan management infrastructure for institutions and fintechs serving the housing finance market.</p>
+          </div>
+          <div class="mission-card reveal">
+            <div class="mission-icon">&#128274;</div>
+            <h3>Smart Building &amp; IoT</h3>
+            <p>Building management systems, access control platforms, energy monitoring, predictive maintenance systems, and IoT sensor integration for commercial properties and residential estates with smart infrastructure.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-section cta-band" aria-labelledby="cta-heading">
+    <!-- STORY 2 (dark): WHO WE SERVE -->
+    <section class="section section-dark reveal" aria-labelledby="for-h">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2 id="cta-heading">Building a PropTech platform or digitising your real estate business?</h2>
-            <p>From property developers launching sales management platforms to PropTech founders building the next generation of real estate products, our team brings both the technical capability and the Nigerian property market knowledge to build platforms that work.</p>
+        <div class="story-grid reverse">
+          <div class="story-image">
+            <img src="/assets/images/industries/real-estate/property-development.jpg" alt="Aerial view of a residential development in Lagos with construction teams on site" onerror="this.style.display='none'">
+            <div class="img-overlay"></div>
           </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
-            <a href="/what-we-do/" class="btn btn-ghost">All Services</a>
+          <div class="story-content">
+            <span class="section-label" style="color:var(--teal-glow);">Who We Serve</span>
+            <h2 class="section-title light" id="for-h">Every Corner of the Real Estate Ecosystem</h2>
+            <p style="color:rgba(255,255,255,.8);">Our PropTech work covers the full breadth of the real estate value chain: property developers building their own sales portals and investor platforms, estate agencies digitising their sales and rental operations, property management companies moving from spreadsheets to purpose-built software, and PropTech founders building the platforms that will define how African real estate transactions happen in the next decade.</p>
+            <p style="color:rgba(255,255,255,.8);">We build platforms that earn trust in a market where the stakes are high and the digital infrastructure is still maturing. That means rigorous attention to data security, transparent transaction records, and user interfaces that communicate reliability at every step.</p>
           </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- PULL QUOTE -->
+    <section class="section section-alt">
+      <div class="container" style="max-width:860px;">
+        <div class="pull-quote reveal">
+          <blockquote>African cities are adding millions of residents every year. The property platforms that earn those residents' trust <strong>are being built now. The question is whether yours is one of them.</strong></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band" aria-labelledby="cta-h">
+      <div class="cta-band-inner">
+        <h2 id="cta-h">Building a PropTech Platform?</h2>
+        <p>From property listing marketplaces to fractional investment platforms to building management systems, our PropTech team brings the domain understanding and engineering depth that real estate technology requires.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Start the Conversation</a>
+          <a href="/what-we-do/" class="btn-outline-white">All Services</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ============================================================

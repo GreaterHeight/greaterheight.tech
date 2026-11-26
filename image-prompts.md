@@ -860,4 +860,295 @@ These prompts cover all six Digital Marketing sub-service pages. Each page has a
 
 ---
 
-*Last updated: 2026-11-25*
+*Last updated: 2026-11-26*
+
+---
+
+## Industries Pages
+
+The following prompts cover the 12 industry-specific pages. Each page has three images: the hero background and two in-body images woven into the layout. All images must look like photographs taken by a professional editorial photographer — natural, candid where appropriate, technically excellent. No overly cinematic or hyper-saturated look. People in every image should be diverse in age, gender, and appearance. Where Nigerian or African settings apply, they should feel authentic, not stock-photo generic.
+
+---
+
+### Agriculture
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle aerial photograph of a large-scale Nigerian farm at golden hour — rows of crops stretching to the horizon, with two farmers (one man, one woman, both in their 30s, wearing practical work clothing) visible in the mid-ground reviewing something on a rugged tablet. Natural light, warm tones. No text or graphic overlays. Shot from a low drone angle. Farm background includes red clay soil typical of West Africa. Brand accent: one piece of clothing in deep forest green.
+
+**Path:** `/assets/images/industries/agriculture/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `farmers-tablet.jpg`
+**Prompt:** A close-up photograph of two Nigerian farmers — a woman in her 40s wearing a wide-brimmed sun hat, and a man in his late 30s — both leaning over a durable tablet together in an open field. The tablet screen shows what appears to be a farm data dashboard. The background is blurred green farmland. Natural daylight. Relaxed, documentary-style composition. No stock-photo stiffness — these look like real farmers engaging with technology that matters to them.
+
+**Path:** `/assets/images/industries/agriculture/farmers-tablet.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Challenge" copy
+
+---
+
+#### `agritech-dashboard.jpg`
+**Prompt:** A professional photograph of a laptop screen showing an agricultural data analytics dashboard — charts, maps, crop yield metrics — placed on a desk in a bright, modern Lagos office. A Black woman in her 30s, in business casual attire, sits in the background partially visible, working. Clean, editorial look. Office environment includes a plant in teal-green. The screen is sharp and readable. Natural window light supplemented by indoor lighting.
+
+**Path:** `/assets/images/industries/agriculture/agritech-dashboard.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Our Approach" copy (dark section)
+
+---
+
+### Media & Entertainment
+
+#### `hero-bg.jpg`
+**Prompt:** A production studio photograph — a modern Lagos film set with professional lighting rigs, cameras, and crew members at work. The scene shows approximately four crew members (diverse — two men, two women, mixed ages) in a high-energy but controlled environment. Dramatic directional studio lighting with deep shadows and warm key lights. The look is cinematic but editorial — a real production, not a posed ad. No text overlays. Rich, atmospheric tones.
+
+**Path:** `/assets/images/industries/media-entertainment/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `media-team.jpg`
+**Prompt:** A professional documentary photograph of a diverse Nigerian media production team in a modern studio — four people (two men, two women) in their 20s and 30s gathered around a monitor reviewing footage. Relaxed but focused energy. Visible equipment: camera rigs, lighting stands. The room has a creative, professional feel — dark walls, coloured lighting accents in teal-green. Candid, editorial style. No posing for the camera.
+
+**Path:** `/assets/images/industries/media-entertainment/media-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Landscape" copy
+
+---
+
+#### `streaming-platform.jpg`
+**Prompt:** A photograph of multiple screens — a laptop, a large monitor, and a tablet — all displaying a streaming platform interface with video thumbnails, a search bar, and a recommendation carousel. The screens are arranged on a desk in a modern Lagos office. Ambient office background, partially blurred. The screens are sharp and the UI design looks clean and professional. Natural and office lighting blend. No people visible — focused on the technology.
+
+**Path:** `/assets/images/industries/media-entertainment/streaming-platform.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Our Technology" copy (dark section)
+
+---
+
+### Education & eLearning
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle photograph of a modern Nigerian secondary school classroom with 20–25 students — diverse, ages 14–17, mixed gender — using laptops and tablets in a bright, well-lit room. The teacher (a woman in her early 40s) stands near a large digital whiteboard at the front. The energy is engaged and productive. Daylight through large windows. No stock-photo stiffness — this looks like a real, well-resourced classroom.
+
+**Path:** `/assets/images/industries/education-elearning/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `students-learning.jpg`
+**Prompt:** A close-up documentary photograph of three Nigerian secondary school students (two girls, one boy, ages 15–17) gathered around a single tablet, working together on something. Their expressions are curious and engaged. The classroom background is blurred but visible — desks, windows, natural light. One student points at the screen. Editorial, candid style. The image should feel warm and positive without being saccharine.
+
+**Path:** `/assets/images/industries/education-elearning/students-learning.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Gap" copy
+
+---
+
+### Travel & Hospitality
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle exterior photograph of a modern upscale Nigerian hotel — a clean architectural building with a landscaped entrance, palm trees, and a broad driveway. Shot at dusk with warm golden interior lights visible through the lobby windows against a blue-purple twilight sky. No people. Architecture photography style — sharp, well-composed, aspirational but not exaggerated. The building has contemporary African architectural details.
+
+**Path:** `/assets/images/industries/travel-hospitality/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `hotel-lobby.jpg`
+**Prompt:** An interior photograph of a modern, upscale hotel lobby in Nigeria — marble floors, natural wood accents, large plants, and warm lighting. At the reception desk, a male hotel guest (Black, 30s, business attire) uses a digital self-check-in kiosk. Behind the desk, a female receptionist (Black, late 20s, in hotel uniform) is visible in the background. The lobby feels spacious and premium. Natural and artificial lighting blend. Editorial, architectural photography style.
+
+**Path:** `/assets/images/industries/travel-hospitality/hotel-lobby.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Shift" copy
+
+---
+
+#### `booking-platform.jpg`
+**Prompt:** A photograph of a Black man (40s, in a professional hotel manager's suit) holding a tablet showing a hotel property management dashboard. He stands in the corridor of a modern hotel with rooms visible behind him. The screen shows occupancy charts and booking stats. Sharp screen, slightly blurred background. Confident, working pose — not staged. Natural hotel corridor lighting supplemented by fill light. Editorial style.
+
+**Path:** `/assets/images/industries/travel-hospitality/booking-platform.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "What We Build" copy (dark section)
+
+---
+
+### Logistics
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle photograph inside a large modern logistics warehouse in Nigeria — high metal shelving stacked with organised parcels and packages, a wide central aisle, and several workers visible in the mid-ground. Industrial overhead lighting. The scene feels busy, organised, and professional. No stock photo staging — the people are working, not posing. Shot from a low angle to emphasise the scale of the shelving. Brand colour accent in one worker's safety vest.
+
+**Path:** `/assets/images/industries/logistics/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `warehouse-team.jpg`
+**Prompt:** A documentary photograph of three Nigerian warehouse workers — two men and one woman, in their 30s, wearing high-visibility vests — examining and sorting packages on a conveyor belt. Focused, candid expressions. The warehouse environment is visible in the background: industrial shelving, overhead lights, forklifts. Editorial style — this looks like a real operation, not a photoshoot. One high-vis vest has a forest green colour.
+
+**Path:** `/assets/images/industries/logistics/warehouse-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Challenge" copy
+
+---
+
+#### `dispatch-centre.jpg`
+**Prompt:** A photograph of a logistics operations control room — three large monitors on a wall showing a live fleet tracking map with GPS dots, delivery status panels, and route visualisations. Three managers (two Black women, one Black man, all in their 30s and 40s) stand or sit watching the screens and taking notes. Modern office environment. The room is lit mainly by screen glow with overhead office lighting. Professional, editorial style.
+
+**Path:** `/assets/images/industries/logistics/dispatch-centre.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Built for the African Logistics Reality" copy (dark section)
+
+---
+
+### Financial Technology
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle exterior photograph of a modern fintech office building in Lagos — a contemporary glass-and-steel structure with Nigerian architectural touches, shot in bright midday light. The entrance area shows a few professionals walking in and out. Clean, corporate but dynamic feel. No text or graphics visible. Clear sky, strong light. The image feels like it belongs in a fintech company's annual report.
+
+**Path:** `/assets/images/industries/financial-technology/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `fintech-team.jpg`
+**Prompt:** A professional photograph of four fintech professionals — two men and two women (Black Nigerians, ages 25–40) gathered around a large monitor showing financial analytics charts. The office environment is modern and open-plan with natural light. The team are engaged in discussion, pointing at the screen. Casual business attire. Editorial, candid style — not a posed shot. The workspace feels like a real Lagos tech company: clean, well-resourced, energetic.
+
+**Path:** `/assets/images/industries/financial-technology/fintech-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Opportunity" copy
+
+---
+
+### Retail & eCommerce
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle photograph inside a modern, well-stocked Nigerian retail store — bright overhead lighting, clean product shelving, and a few shoppers visible. The store has a premium feel without being a luxury boutique. Shot from the entrance looking in, capturing the full depth of the retail space. A digital display near the entrance shows product offers. No clutter — this is a well-organised, aspirational retail environment.
+
+**Path:** `/assets/images/industries/retail-ecommerce/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `marketplace-team.jpg`
+**Prompt:** A close-up documentary photograph of a Nigerian small business owner — a woman in her 30s — sitting at a desk in her small but well-organised Lagos store, reviewing eCommerce analytics on an open laptop. The screen shows order counts and sales charts. Relaxed, candid expression. Products visible in the background (fabric, goods). Natural window light. The image should feel like a portrait of a real entrepreneur working, not a stock photo.
+
+**Path:** `/assets/images/industries/retail-ecommerce/marketplace-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Shift" copy
+
+---
+
+### Healthcare
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle interior photograph of a modern, well-lit Nigerian private hospital reception area — clean, contemporary design with marble or tile floors, natural light from large windows, and a staffed reception desk. A few patients and healthcare workers are visible in the background, moving naturally. No posing. Warm, reassuring atmosphere. The space looks well-resourced and professional without being sterile or cold.
+
+**Path:** `/assets/images/industries/healthcare/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `healthcare-team.jpg`
+**Prompt:** A professional documentary photograph of a Nigerian doctor (a man in his early 40s, in a white coat) and a nurse (a woman in her 30s, in scrubs) standing together in a modern clinic corridor, reviewing patient data on a tablet. The tablet screen is visible showing what appears to be an electronic medical record. Both look focused and engaged. Candid, editorial style. Hospital corridor behind them is clean and modern. Natural window light and clinic lighting.
+
+**Path:** `/assets/images/industries/healthcare/healthcare-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Imperative" copy
+
+---
+
+### Automotive
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle exterior photograph of a modern car dealership in Lagos — a bright, well-branded showroom with floor-to-ceiling glass, several cars visible inside, and the forecourt showing a few vehicles under display canopies. Shot in midday light. Clean, corporate, aspirational. A few customers and a salesperson visible through the glass or in the forecourt, naturally positioned. No posing. The image should feel like editorial automotive photography.
+
+**Path:** `/assets/images/industries/automotive/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `car-dealership.jpg`
+**Prompt:** A professional interior photograph of a modern Nigerian car dealership showroom — two customers (a Black couple, mid-30s, casually dressed) standing beside a new SUV, interacting with a touchscreen display panel showing vehicle specifications. A salesperson (Black woman, late 20s, in professional attire) stands nearby facilitating. The showroom floor is clean and bright with overhead lighting. The atmosphere is relaxed and positive. Editorial, candid style.
+
+**Path:** `/assets/images/industries/automotive/car-dealership.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Shift" copy
+
+---
+
+### ISVs & Product Companies
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle open-plan office photograph of a modern Nigerian software company — rows of developer workstations, large monitors, good natural light from wide windows, plants, and a generally energetic atmosphere. Several developers (diverse — men and women, ages 24–35) are at their stations working. The office feels professional and creative without being a cliché startup ping-pong room. Shot from a slight elevated angle to show the depth of the space.
+
+**Path:** `/assets/images/industries/isvs-product-companies/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `product-team.jpg`
+**Prompt:** A close-up documentary photograph of three software developers (two men, one woman, all Black Nigerians in their late 20s to mid-30s) gathered at one workstation, reviewing code or a technical diagram on a large monitor. Engaged, collaborative. The workspace has visible monitors, sticky notes, and a coffee cup. Natural and monitor light blend. Candid style — not posed. The energy feels like a real product team doing real work.
+
+**Path:** `/assets/images/industries/isvs-product-companies/product-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Challenge" copy
+
+---
+
+### Digital & Marketing Agencies
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle open-plan creative agency office in Lagos — large creative monitors showing design and campaign work, whiteboards covered in strategy notes, and a diverse team of creatives (men and women, ages 24–38) in a mix of focused desk work and small group discussion. The office feels energetic and creative: exposed ceilings, good lighting, plants, one accent wall in deep green. Shot from a mid-level angle capturing the full breadth of the space.
+
+**Path:** `/assets/images/industries/digital-marketing-agencies/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `agency-team.jpg`
+**Prompt:** A professional documentary photograph of four marketing agency professionals (two Black women, one Black man, one mixed ethnicity woman, ages 25–38) gathered around a large monitor showing a campaign analytics dashboard — click-through rates, audience data, and social metrics visible on screen. The room is a modern Lagos agency meeting space. The team is engaged in discussion. Candid, editorial style. Modern office lighting, natural light from a window.
+
+**Path:** `/assets/images/industries/digital-marketing-agencies/agency-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Opportunity" copy
+
+---
+
+### Real Estate
+
+#### `hero-bg.jpg`
+**Prompt:** A wide-angle aerial photograph of a modern residential development in Lagos — rows of well-designed houses or apartments with landscaped communal areas, shot from a drone at medium altitude in daylight. The development looks contemporary and aspirational without being out of reach. Palm trees, clean roads, and green spaces visible. The image has the quality of professional real estate marketing photography — sharp, balanced, beautiful light.
+
+**Path:** `/assets/images/industries/real-estate/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Page hero background
+
+---
+
+#### `property-team.jpg`
+**Prompt:** A professional photograph of a real estate team — two men and one woman (Black Nigerians, ages 30–45) in a modern property agency office, gathered around a table with a laptop showing property listings and printed floor plans. The team looks engaged in a client discussion or internal review. Office environment is professional: branded signage, clean desk, good lighting. Editorial, candid style. The atmosphere is confident and competent.
+
+**Path:** `/assets/images/industries/real-estate/property-team.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "The Moment" copy
+
+---
+
+#### `property-development.jpg`
+**Prompt:** A wide-angle aerial photograph of an active residential construction site in Lagos — multiple buildings at various stages of construction, with cranes, scaffolding, and construction workers visible at ground level. Shot in midday light from a drone angle that shows both the scale of the development and the urban context surrounding it. The image should feel like high-quality architectural and development photography — not a stock image of generic construction.
+
+**Path:** `/assets/images/industries/real-estate/property-development.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Who We Serve" copy (dark section)
