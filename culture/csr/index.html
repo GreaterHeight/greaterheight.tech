@@ -1003,9 +1003,23 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 /* === CSR PAGE =================================== */
-.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
-.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(140deg,rgba(14,42,32,.9) 0%,rgba(14,70,50,.7) 60%,rgba(0,100,70,.4) 100%);pointer-events:none;}
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:680px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(140deg,rgba(14,42,32,.92) 0%,rgba(14,70,50,.73) 60%,rgba(0,100,70,.4) 100%);pointer-events:none;}
 .page-hero.photo-hero .container{position:relative;z-index:1;}
+/* Two-column hero */
+.ph-inner{display:grid;grid-template-columns:1fr 360px;gap:var(--sp-9);align-items:center;padding:140px 0 100px;}
+.ph-left{display:flex;flex-direction:column;gap:var(--sp-5);}
+.ph-eyebrow{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--mint);opacity:.85;}
+.ph-hl{font-size:clamp(2.5rem,5vw,3.75rem);font-weight:300;line-height:1.1;color:var(--white);margin:0;}
+.ph-hl span{color:var(--mint);font-weight:700;}
+.ph-lead{font-size:1.1rem;line-height:1.75;color:rgba(255,255,255,.8);max-width:52ch;margin:0;}
+.hero-ctas{display:flex;gap:var(--sp-4);flex-wrap:wrap;margin-top:var(--sp-2);}
+.ph-right{display:flex;flex-direction:column;gap:var(--sp-4);}
+.ph-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;backdrop-filter:blur(10px);padding:var(--sp-5);}
+.ph-card-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mint);margin-bottom:var(--sp-2);}
+.ph-card p{font-size:.875rem;line-height:1.65;color:rgba(255,255,255,.8);margin:0;}
+@media(max-width:900px){.ph-inner{grid-template-columns:1fr;padding:100px 0 60px;}.ph-right{display:none;}}
+/* Sections */
 .section{padding:96px 0;}
 .section-alt{background:var(--bg-alt);}
 .section-dark{background:var(--forest);color:var(--white);}
@@ -1020,19 +1034,21 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 .impact-row{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);text-align:center;}
 .impact-item .impact-val{font-size:2.5rem;font-weight:800;color:var(--teal-glow,#4ecdc4);line-height:1;}
 .impact-item .impact-lbl{font-size:.8rem;font-weight:500;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);}
-/* CSR pillar cards with photo variant */
+/* CSR pillar cards — premium model card pattern */
 .csr-pillars{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);margin-top:var(--sp-7);}
-.csr-card{background:var(--white);border-radius:12px;overflow:hidden;border:1px solid var(--border);}
+.csr-card{position:relative;background:var(--white);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:box-shadow .25s,transform .25s;}
+.csr-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-rule);z-index:1;}
+.csr-card:hover{box-shadow:0 16px 48px rgba(0,0,0,.1);transform:translateY(-4px);}
 .csr-card-img{height:200px;overflow:hidden;}
 .csr-card-img img{width:100%;height:100%;object-fit:cover;display:block;}
-.csr-card-body{padding:var(--sp-5);}
-.csr-card-body .pillar-icon{width:40px;height:40px;border-radius:8px;background:var(--teal-lite,#e6f4f1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-3);}
-.csr-card-body .pillar-icon svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:1.75;}
+.csr-card-body{padding:var(--sp-6);}
+.csr-card-body .pillar-icon{width:44px;height:44px;border-radius:12px;background:var(--teal-lite,#e6f4f1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);}
+.csr-card-body .pillar-icon svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:1.75;}
 .csr-card-body h3{font-size:1.1rem;font-weight:700;margin-bottom:var(--sp-3);}
 .csr-card-body p{font-size:.9rem;color:var(--text-muted);line-height:1.7;}
 /* Story grid */
 .csr-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
-.csr-story-img img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:block;}
+.csr-story-img img{width:100%;height:420px;object-fit:cover;border-radius:20px;display:block;box-shadow:0 20px 60px rgba(0,0,0,.2);}
 .csr-story-body .story-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow,#4ecdc4);margin-bottom:var(--sp-3);}
 .csr-story-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;color:var(--white);}
 .csr-story-body p{color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-4);}
@@ -1431,18 +1447,28 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     <!-- HERO -->
     <section class="page-hero photo-hero" style="background-image:url('/assets/images/culture/csr/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Our Culture</span>
-            <h1 id="hero-heading">Corporate Social Responsibility</h1>
-            <p class="page-hero-lead">We are a technology company founded in Africa, built by Africans, and committed to creating technology-driven value for Africa and the world. Our CSR commitments are not separate from our commercial strategy — they are an expression of it.</p>
-            <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item"><span class="hero-meta-value">14<em>+</em></span><span class="hero-meta-label">Years in Africa</span></div>
-              <div class="hero-meta-item"><span class="hero-meta-value">Lagos</span><span class="hero-meta-label">Headquarters</span></div>
-              <div class="hero-meta-item"><span class="hero-meta-value">Structural</span><span class="hero-meta-label">Not Seasonal</span></div>
-            </div>
+        <div class="ph-inner">
+          <div class="ph-left">
+            <span class="ph-eyebrow">Our Culture</span>
+            <h1 id="hero-heading" class="ph-hl">Social <span>Responsibility</span></h1>
+            <p class="ph-lead">We are a technology company founded in Africa, built by Africans, and committed to creating technology-driven value for Africa and the world. Our CSR is structural, not seasonal.</p>
             <div class="hero-ctas">
               <a href="/contact/" class="btn-primary">Start the Conversation</a>
+              <a href="/who-we-are/core-purpose-mission/" class="btn-outline-white">Our Purpose</a>
+            </div>
+          </div>
+          <div class="ph-right">
+            <div class="ph-card">
+              <div class="ph-card-label">14+ Years in Africa</div>
+              <p>Founded in Lagos. Built for Africa. Our social commitments are embedded in every hire, every partnership, and every delivery decision we make.</p>
+            </div>
+            <div class="ph-card">
+              <div class="ph-card-label">Four Pillars</div>
+              <p>Digital Skills, Community Investment, Environmental Responsibility, and Responsible Technology — four structured areas of ongoing commitment.</p>
+            </div>
+            <div class="ph-card">
+              <div class="ph-card-label">Structural, Not Seasonal</div>
+              <p>Our CSR is not separate from our commercial strategy. We do not separate the work from the responsibility.</p>
             </div>
           </div>
         </div>
