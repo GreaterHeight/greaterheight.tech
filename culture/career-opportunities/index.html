@@ -1003,11 +1003,27 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 /* === CAREER OPPORTUNITIES ======================== */
-.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
-.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(14,42,32,.92) 0%,rgba(14,74,56,.75) 60%,rgba(0,100,80,.5) 100%);pointer-events:none;}
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:680px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(14,42,32,.93) 0%,rgba(14,74,56,.78) 60%,rgba(0,100,80,.5) 100%);pointer-events:none;}
 .page-hero.photo-hero .container{position:relative;z-index:1;}
+/* Two-column hero */
+.ph-inner{display:grid;grid-template-columns:1fr 360px;gap:var(--sp-9);align-items:center;padding:140px 0 100px;}
+.ph-left{display:flex;flex-direction:column;gap:var(--sp-5);}
+.ph-eyebrow{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--mint);opacity:.85;}
+.ph-hl{font-size:clamp(2.5rem,5vw,3.75rem);font-weight:300;line-height:1.1;color:var(--white);margin:0;}
+.ph-hl span{color:var(--mint);font-weight:700;}
+.ph-lead{font-size:1.1rem;line-height:1.75;color:rgba(255,255,255,.8);max-width:52ch;margin:0;}
+.hero-ctas{display:flex;gap:var(--sp-4);flex-wrap:wrap;margin-top:var(--sp-2);}
+.ph-right{display:flex;flex-direction:column;gap:var(--sp-4);}
+.ph-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;backdrop-filter:blur(10px);padding:var(--sp-5);}
+.ph-card-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mint);margin-bottom:var(--sp-2);}
+.ph-card p{font-size:.875rem;line-height:1.65;color:rgba(255,255,255,.8);margin:0;}
+@media(max-width:900px){.ph-inner{grid-template-columns:1fr;padding:100px 0 60px;}.ph-right{display:none;}}
+/* Sections */
 .section{padding:96px 0;}
 .section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--bg-dark);color:var(--white);}
+.section-dark .section-label{color:var(--teal-glow);}
 .section-teal-lite{background:var(--teal-lite,#e6f4f1);}
 .cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
 .cta-band::before{display:none !important;}
@@ -1015,32 +1031,32 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 .cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
 .cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
 .cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
-/* Discipline grid */
+/* Discipline cards — premium model card pattern */
 .discipline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
-.discipline-card{padding:var(--sp-6);border-radius:10px;background:var(--white);border:1px solid var(--border);transition:box-shadow .2s;}
-.discipline-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);}
-.discipline-icon{width:40px;height:40px;border-radius:8px;background:var(--teal-lite,#e6f4f1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);}
-.discipline-icon svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:1.75;}
-.discipline-card h3{font-size:1rem;font-weight:700;margin-bottom:var(--sp-3);}
-.discipline-card p{font-size:.875rem;color:var(--text-muted);line-height:1.6;}
-/* Process steps */
-.process-track{display:flex;gap:0;margin-top:var(--sp-7);position:relative;}
-.process-track::before{content:'';position:absolute;top:28px;left:28px;right:28px;height:2px;background:var(--border);}
-.process-step{flex:1;text-align:center;position:relative;padding:0 var(--sp-3);}
-.process-step-num{width:56px;height:56px;border-radius:50%;background:var(--white);border:2px solid var(--teal);color:var(--teal);font-size:1.1rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp-4);position:relative;z-index:1;}
-.process-step h3{font-size:.95rem;font-weight:700;margin-bottom:var(--sp-2);}
-.process-step p{font-size:.825rem;color:var(--text-muted);line-height:1.6;}
-/* Graduate track — split layout */
+.discipline-card{position:relative;padding:var(--sp-6);border-radius:20px;background:var(--white);border:1px solid var(--border);overflow:hidden;transition:box-shadow .25s,transform .25s;}
+.discipline-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-rule);}
+.discipline-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.1);transform:translateY(-4px);}
+.discipline-icon{width:44px;height:44px;border-radius:10px;background:var(--teal-lite,#e6f4f1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-5);}
+.discipline-icon svg{width:22px;height:22px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.discipline-card h3{font-size:1.05rem;font-weight:700;margin-bottom:var(--sp-3);}
+.discipline-card p{font-size:.875rem;color:var(--text-muted);line-height:1.65;}
+@media(max-width:768px){.discipline-grid{grid-template-columns:1fr;}}
+/* Process track — rendered on dark section */
+.process-track{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-7);margin-top:var(--sp-7);}
+.process-step-num{width:56px;height:56px;border-radius:50%;background:var(--teal-glow);border:none;color:var(--white);font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);flex-shrink:0;}
+.process-step h3{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:var(--sp-3);}
+.process-step p{font-size:.875rem;line-height:1.65;color:rgba(255,255,255,.75);}
+@media(max-width:768px){.process-track{grid-template-columns:1fr;gap:var(--sp-5);}}
+/* Graduate track */
 .grad-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
-.grad-img img{width:100%;height:380px;object-fit:cover;border-radius:12px;display:block;}
+.grad-img img{width:100%;height:420px;object-fit:cover;border-radius:20px;display:block;box-shadow:0 20px 60px rgba(0,0,0,.12);}
 .grad-body .grad-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:var(--sp-3);}
 .grad-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;}
 .grad-body p{color:var(--text-muted);line-height:1.75;margin-bottom:var(--sp-4);}
-.track-list{list-style:none;padding:0;margin:var(--sp-4) 0 0;display:flex;flex-direction:column;gap:var(--sp-3);}
-.track-list li{display:flex;align-items:center;gap:var(--sp-3);font-size:.9rem;color:var(--text);}
-.track-dot{width:8px;height:8px;min-width:8px;border-radius:50%;background:var(--teal);}
-@media(max-width:900px){.discipline-grid{grid-template-columns:1fr 1fr;}.process-track{flex-direction:column;}.process-track::before{display:none;}.process-step{padding:var(--sp-4) 0;text-align:left;display:flex;gap:var(--sp-4);align-items:flex-start;}.process-step-num{min-width:56px;margin:0;}.grad-grid{grid-template-columns:1fr;}}
-@media(max-width:600px){.discipline-grid{grid-template-columns:1fr;}}
+.track-list{list-style:none;padding:0;margin:var(--sp-4) 0;display:flex;flex-direction:column;gap:var(--sp-3);}
+.track-list li{display:flex;align-items:center;gap:var(--sp-3);font-size:.9rem;color:var(--text-muted);}
+.track-dot{width:8px;height:8px;min-width:8px;border-radius:50%;background:linear-gradient(135deg,var(--cr),var(--teal-glow));}
+@media(max-width:900px){.grad-grid{grid-template-columns:1fr;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1290,7 +1306,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
 
       <!-- CTA -->
       <li class="nav-item nav-cta">
-        <a href="/contact" class="btn btn-primary">Start a Project</a>
+        <a href="/contact" class="btn-primary">Start a Project</a>
       </li>
     </ul>
 
@@ -1387,7 +1403,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
       <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
       <div class="drawer-cta">
-        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+        <a href="/contact" class="btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
       </div>
     </nav>
   </div>
@@ -1432,19 +1448,28 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     <!-- HERO -->
     <section class="page-hero photo-hero" style="background-image:url('/assets/images/culture/career-opportunities/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
-        <div class="page-hero-inner">
-          <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Our Culture</span>
-            <h1 id="hero-heading">Career Opportunities</h1>
-            <p class="page-hero-lead">We hire engineers, architects, project leads, data specialists, and digital marketing professionals who want to do meaningful work on real challenges. If that describes you, we would like to hear from you.</p>
-            <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item"><span class="hero-meta-value">Technical</span><span class="hero-meta-label">&amp; Digital Roles</span></div>
-              <div class="hero-meta-item"><span class="hero-meta-value">Paid</span><span class="hero-meta-label">Internships</span></div>
-              <div class="hero-meta-item"><span class="hero-meta-value">Clear</span><span class="hero-meta-label">Interview Process</span></div>
-            </div>
+        <div class="ph-inner">
+          <div class="ph-left">
+            <span class="ph-eyebrow">Our Culture</span>
+            <h1 id="hero-heading" class="ph-hl">Career <span>Opportunities</span></h1>
+            <p class="ph-lead">We hire engineers, architects, project leads, data specialists, and delivery managers across our Lagos, London, Dubai, and United States offices. Build a career that grows with the work.</p>
             <div class="hero-ctas">
-              <a href="/contact/" class="btn btn-primary">Contact the Talent Team</a>
-              <a href="/culture/career-overview/" class="btn btn-outline-white">Our Culture</a>
+              <a href="/contact/" class="btn-primary">Contact the Talent Team</a>
+              <a href="/culture/career-overview/" class="btn-outline-white">Our Culture</a>
+            </div>
+          </div>
+          <div class="ph-right">
+            <div class="ph-card">
+              <div class="ph-card-label">Roles Available</div>
+              <p>Engineering, architecture, data, cloud, delivery, and project leadership roles — full-time, contract, and graduate tracks.</p>
+            </div>
+            <div class="ph-card">
+              <div class="ph-card-label">Graduate Track</div>
+              <p>A structured paid programme for new graduates — mentored delivery experience across real client engagements from day one.</p>
+            </div>
+            <div class="ph-card">
+              <div class="ph-card-label">Interview Process</div>
+              <p>Three stages: an initial call, a technical or domain assessment, and a panel conversation. Clear timelines. No mystery.</p>
             </div>
           </div>
         </div>
@@ -1505,11 +1530,11 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
     </section>
 
     <!-- OUR PROCESS — visual steps -->
-    <section class="section">
+    <section class="section section-dark">
       <div class="container">
         <span class="section-label reveal">How We Hire</span>
-        <h2 class="section-title reveal">Our Interview Process</h2>
-        <p class="section-lead reveal">Three stages, designed to be respectful of your time while giving us enough signal to make a sound decision. We communicate clearly at every stage — including when the answer is no.</p>
+        <h2 class="section-title light reveal">Our Interview Process</h2>
+        <p class="section-lead light reveal">Three stages, designed to be respectful of your time while giving us enough signal to make a sound decision. We communicate clearly at every stage — including when the answer is no.</p>
         <div class="process-track">
           <div class="process-step reveal">
             <div class="process-step-num">01</div>
@@ -1559,8 +1584,8 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
         <h2>Apply or make a speculative enquiry</h2>
         <p>Whether you are applying for a specific role or introducing yourself for future opportunities, contact our talent team to start the conversation.</p>
         <div class="cta-pair">
-          <a href="/contact/" class="btn btn-primary">Contact the Talent Team</a>
-          <a href="/culture/career-overview/" class="btn btn-outline-white">Our Culture</a>
+          <a href="/contact/" class="btn-primary">Contact the Talent Team</a>
+          <a href="/culture/career-overview/" class="btn-outline-white">Our Culture</a>
         </div>
       </div>
     </section>
