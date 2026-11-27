@@ -1155,14 +1155,14 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 
 ---
 
-## What We Do — Processes Pages
+## Who We Are — Processes Pages
 
-### Development Methodology (`/what-we-do/processes/methodology/`)
+### Development Methodology (`/who-we-are/processes/methodology/`)
 
 #### `methodology/hero-bg.jpg`
 **Prompt:** A professional photograph of a diverse software engineering team in a modern Lagos technology office. Five people — three men and two women (Black Nigerians and one East African, ages 25–38) — gathered around a large standing desk with multiple monitors showing code editors, sprint board software, and architecture diagrams. The scene captures a natural planning or review conversation — some pointing at screens, one taking notes on a tablet. Shot from a slightly elevated wide angle. Bright, contemporary open-plan office environment. The mood is focused, collaborative, and high-performing. Editorial, candid style — not posed or staged.
 
-**Path:** `/assets/images/processes/methodology/hero-bg.jpg`
+**Path:** `/assets/images/who-we-are/processes/methodology/hero-bg.jpg`
 **Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
 **Placement:** Full-bleed hero background image
 
@@ -1171,7 +1171,7 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 #### `methodology/team-planning.jpg`
 **Prompt:** A professional photograph of two or three Nigerian software engineers — mixed gender (one woman, one man, ages 28–36) — in a sprint planning session. One person stands at a whiteboard covered in sticky notes and user story cards while another reviews notes on a laptop. Shot at medium distance in a bright, modern Lagos tech workspace. The mood is purposeful and conversational — this is real work being done, not a staged boardroom photo. Natural light preferred. Editorial, environmental portrait style.
 
-**Path:** `/assets/images/processes/methodology/team-planning.jpg`
+**Path:** `/assets/images/who-we-are/processes/methodology/team-planning.jpg`
 **Dimensions:** 1200 × 800 px minimum, 3:2 landscape
 **Placement:** Story grid — left column image beside "Why Methodology Matters" copy
 
@@ -1180,18 +1180,18 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 #### `methodology/delivery-cycle.jpg`
 **Prompt:** A professional photograph of two Nigerian software engineers — one man and one woman (ages 25–35) — seated at adjacent workstations reviewing code on a large monitor during what appears to be a code review or sprint review session. The monitor shows a real code editor with syntax highlighting. The environment is a professional open-plan technology office with good natural and artificial light. Shot at medium-close distance, slightly to the side. Candid, editorial style — both people engaged with what is on screen, not looking at the camera.
 
-**Path:** `/assets/images/processes/methodology/delivery-cycle.jpg`
+**Path:** `/assets/images/who-we-are/processes/methodology/delivery-cycle.jpg`
 **Dimensions:** 1200 × 800 px minimum, 3:2 landscape
 **Placement:** Story grid — sticky right-column image beside the five-phase process steps
 
 ---
 
-### Delivery Models (`/what-we-do/processes/delivery-models/`)
+### Delivery Models (`/who-we-are/processes/delivery-models/`)
 
 #### `delivery-models/hero-bg.jpg`
 **Prompt:** A professional photograph of a business consulting meeting in a modern, light-filled Lagos office boardroom. Four people are present — two GreaterHeight consultants (one man, one woman, Black Nigerians ages 30–40) seated across from two clients (one Nigerian man in his 40s in a business suit, one Nigerian woman in her 30s with a notepad). A document or proposal is open on the table between them. The room is professional: glass walls, clean table, branded notebooks. Shot from a slightly elevated wide angle. Confident, professional editorial photography — not a stock image of a generic boardroom.
 
-**Path:** `/assets/images/processes/delivery-models/hero-bg.jpg`
+**Path:** `/assets/images/who-we-are/processes/delivery-models/hero-bg.jpg`
 **Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
 **Placement:** Full-bleed hero background image
 
@@ -1200,7 +1200,7 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 #### `delivery-models/client-meeting.jpg`
 **Prompt:** A professional photograph of a Nigerian business executive (man, early 40s, business casual) seated at a table reviewing a printed proposal document with two GreaterHeight consultants — one man and one woman (Black Nigerians, ages 28–36). The consultants are walking him through the document, pointing at sections. The setting is a modern Lagos corporate office meeting room with large windows, a clean meeting table, and professional furniture. Shot at medium range, three-quarter angle. Editorial, candid photography style — the executive appears to be genuinely reading and asking questions, not posing.
 
-**Path:** `/assets/images/processes/delivery-models/client-meeting.jpg`
+**Path:** `/assets/images/who-we-are/processes/delivery-models/client-meeting.jpg`
 **Dimensions:** 1200 × 800 px minimum, 3:2 landscape
 **Placement:** Story grid — right column image beside "Why This Matters" copy
 
@@ -1209,18 +1209,18 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 #### `delivery-models/team-environment.jpg`
 **Prompt:** A professional photograph of a diverse GreaterHeight development team in an open-plan Lagos technology office. Six people visible — mixed gender (three men, three women), Black Nigerians and West Africans, ages 23–38. Some are at standing desks reviewing large monitors with code and dashboards; two are having a standing conversation near a whiteboard; one is working alone with headphones on. The office is bright, modern, and professional — the kind that signals real investment in the work environment. Shot at a wide angle that captures the full team dynamic. Editorial documentary photography style.
 
-**Path:** `/assets/images/processes/delivery-models/team-environment.jpg`
+**Path:** `/assets/images/who-we-are/processes/delivery-models/team-environment.jpg`
 **Dimensions:** 1200 × 800 px minimum, 3:2 landscape
 **Placement:** Story grid — left column image beside "What Stays Constant" copy (dark section)
 
 ---
 
-### Pricing Models (`/what-we-do/processes/pricing-models/`)
+### Pricing Models (`/who-we-are/processes/pricing-models/`)
 
 #### `pricing-models/hero-bg.jpg`
 **Prompt:** A professional photograph of a GreaterHeight account director (Black Nigerian woman, early 30s, professional dress) presenting a detailed cost breakdown on a large wall-mounted screen to a client (Nigerian man, 40s, business attire) in a modern Lagos boardroom. The screen shows a clear table or chart — not generic finance imagery. Shot from a wide angle that captures both the presenter and the client's engagement with the material. Office environment is high-end: glass walls, good lighting, brand-consistent design. The mood communicates transparency, confidence, and trust. Editorial photography style.
 
-**Path:** `/assets/images/processes/pricing-models/hero-bg.jpg`
+**Path:** `/assets/images/who-we-are/processes/pricing-models/hero-bg.jpg`
 **Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
 **Placement:** Full-bleed hero background image
 
@@ -1229,7 +1229,7 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 #### `pricing-models/proposal-review.jpg`
 **Prompt:** A professional photograph of a GreaterHeight account manager (Black Nigerian man, mid-30s, business casual) presenting a printed pricing proposal across a meeting table to a Nigerian business executive (woman, 40s, professional attire). Both are looking at the document, the account manager is pointing at a specific section. Shot from a medium-close three-quarter angle in a modern, well-lit Lagos corporate meeting room. Natural light from large windows. Editorial style — the conversation appears genuine and professional, not staged.
 
-**Path:** `/assets/images/processes/pricing-models/proposal-review.jpg`
+**Path:** `/assets/images/who-we-are/processes/pricing-models/proposal-review.jpg`
 **Dimensions:** 1200 × 800 px minimum, 3:2 landscape
 **Placement:** Story grid — left column image beside "Why Commercial Structure Matters" copy
 
@@ -1238,7 +1238,7 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 #### `pricing-models/transparency-culture.jpg`
 **Prompt:** A professional photograph of a GreaterHeight finance and project manager (Black Nigerian woman, early 30s) seated at a modern desk reviewing a detailed itemised cost breakdown on a laptop screen with a client (Nigerian man, late 30s, business casual). The client is leaning in and reading the screen closely. The setting is a glass-walled meeting room or open working space in a professional Lagos office. Shot at a medium range, slightly over-shoulder to suggest what they are both looking at. The mood is open, transparent, and collaborative. Editorial photography style.
 
-**Path:** `/assets/images/processes/pricing-models/transparency-culture.jpg`
+**Path:** `/assets/images/who-we-are/processes/pricing-models/transparency-culture.jpg`
 **Dimensions:** 1200 × 800 px minimum, 3:2 landscape
 **Placement:** Story grid — right column image beside "What Pricing Transparency Actually Means" copy (dark section)
 
