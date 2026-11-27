@@ -17,8 +17,8 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../assets/images/logo/favicon.png">
-  <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+  <link rel="icon" type="image/png" href="/assets/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo/favicon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -615,12 +615,12 @@
     .cta-pair { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; background: var(--white); color: var(--cr);
-      border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
-      transition: transform var(--dur-fast), box-shadow var(--dur-fast);
-      white-space: nowrap;
+      padding: .72rem 1.6rem; background: var(--cr); color: #fff;
+      border-radius: 6px; font-size: .82rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; text-decoration: none; white-space: nowrap;
+      transition: background .2s;
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+    .btn-primary:hover { background: var(--cr-mid); }
     .btn-outline-white {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 14px 28px; border: 2px solid rgba(255,255,255,.6);
@@ -1056,6 +1056,10 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 .principle-bar{padding:var(--sp-6) 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);margin:var(--sp-7) 0;}
 .principle-bar p{font-size:1.15rem;font-style:italic;line-height:1.65;color:var(--white);text-align:center;max-width:700px;margin:0 auto;}
 @media(max-width:900px){.csr-pillars{grid-template-columns:1fr;}.csr-story-grid{grid-template-columns:1fr;}.impact-row{grid-template-columns:1fr 1fr;gap:var(--sp-5);}}
+.story-img,.grad-img,.ag-img,.as-img,.rs-img,.csr-story-img{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal-mid) 60%,var(--teal-glow) 100%);border-radius:20px;overflow:hidden;min-height:260px;}
+.csr-card-img{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal-mid) 100%);overflow:hidden;min-height:200px;}
+.story-img img,.grad-img img,.ag-img img,.as-img img,.rs-img img,.csr-story-img img,.csr-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .4s;}
+.page-hero.photo-hero{background-color:var(--forest-deep);}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1067,7 +1071,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <!-- Preloader (first visit only) -->
   <div id="preloader" role="status" aria-label="Loading">
     <div class="preloader-mark">
-      <img src="../../assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
+      <img src="/assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
     </div>
   </div>
 
@@ -1077,7 +1081,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <nav id="main-nav" role="navigation" aria-label="Main navigation">
   <div class="wrap nav-inner">
     <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
-      <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
+      <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
     </a>
 
     <!-- Desktop nav -->
@@ -1305,7 +1309,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
 
       <!-- CTA -->
       <li class="nav-item nav-cta">
-        <a href="/contact" class="btn-primary">Start a Project</a>
+        <a href="/contact" class="btn btn-primary">Start a Project</a>
       </li>
     </ul>
 
@@ -1322,7 +1326,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <div class="mobile-drawer">
     <div class="drawer-head">
       <a href="/" class="logo" aria-label="GreaterHeight home">
-        <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
+        <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
       </a>
       <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
         <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -1402,7 +1406,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
       <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
       <div class="drawer-cta">
-        <a href="/contact" class="btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
       </div>
     </nav>
   </div>
@@ -1496,7 +1500,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
         <div class="csr-pillars">
           <div class="csr-card reveal">
             <div class="csr-card-img">
-              <img src="/assets/images/culture/csr/skills-development.jpg" alt="Young Nigerian women learning technology skills in a GreaterHeight Academy classroom" loading="lazy">
+              <img src="/assets/images/culture/csr/skills-development.jpg" alt="Young Nigerian women learning technology skills in a GreaterHeight Academy classroom" loading="lazy" onerror="this.style.opacity='0'">
             </div>
             <div class="csr-card-body">
               <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
@@ -1506,7 +1510,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           </div>
           <div class="csr-card reveal">
             <div class="csr-card-img">
-              <img src="/assets/images/culture/csr/community-investment.jpg" alt="GreaterHeight team members participating in a Lagos technology community event" loading="lazy">
+              <img src="/assets/images/culture/csr/community-investment.jpg" alt="GreaterHeight team members participating in a Lagos technology community event" loading="lazy" onerror="this.style.opacity='0'">
             </div>
             <div class="csr-card-body">
               <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
@@ -1516,7 +1520,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           </div>
           <div class="csr-card reveal">
             <div class="csr-card-img">
-              <img src="/assets/images/culture/csr/environmental.jpg" alt="A GreaterHeight team meeting discussing sustainability and green cloud strategy" loading="lazy">
+              <img src="/assets/images/culture/csr/environmental.jpg" alt="A GreaterHeight team meeting discussing sustainability and green cloud strategy" loading="lazy" onerror="this.style.opacity='0'">
             </div>
             <div class="csr-card-body">
               <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M2 22 16 8"/><path d="M17.5 6.5a4.95 4.95 0 0 1 0 7l-5 5a4.95 4.95 0 1 1-7-7l3-3a4.95 4.95 0 0 1 7 0l1 1 1-1a2.83 2.83 0 0 0 0-4"/></svg></div>
@@ -1526,7 +1530,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           </div>
           <div class="csr-card reveal">
             <div class="csr-card-img">
-              <img src="/assets/images/culture/csr/responsible-tech.jpg" alt="A GreaterHeight engineer reviewing accessible, privacy-compliant code on a large monitor" loading="lazy">
+              <img src="/assets/images/culture/csr/responsible-tech.jpg" alt="A GreaterHeight engineer reviewing accessible, privacy-compliant code on a large monitor" loading="lazy" onerror="this.style.opacity='0'">
             </div>
             <div class="csr-card-body">
               <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
@@ -1552,7 +1556,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
             </div>
           </div>
           <div class="csr-story-img reveal">
-            <img src="/assets/images/culture/csr/africa-first.jpg" alt="A GreaterHeight engineer training a group of young Nigerians in a technology skills programme" loading="lazy">
+            <img src="/assets/images/culture/csr/africa-first.jpg" alt="A GreaterHeight engineer training a group of young Nigerians in a technology skills programme" loading="lazy" onerror="this.style.opacity='0'">
           </div>
         </div>
       </div>
@@ -1586,7 +1590,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       <!-- Col 1: Brand -->
       <div>
         <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
-          <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
+          <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
         </a>
         <div class="footer-brand-tagline">...helping you succeed</div>
         <p class="footer-brand-p">AI-augmented engineering teams that ship production software. Lagos, Nigeria — serving the world.</p>

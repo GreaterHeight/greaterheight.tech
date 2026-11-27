@@ -17,8 +17,8 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../assets/images/logo/favicon.png">
-  <link rel="apple-touch-icon" href="../../assets/images/logo/favicon.png">
+  <link rel="icon" type="image/png" href="/assets/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo/favicon.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -615,12 +615,12 @@
     .cta-pair { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; background: var(--white); color: var(--cr);
-      border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
-      transition: transform var(--dur-fast), box-shadow var(--dur-fast);
-      white-space: nowrap;
+      padding: .72rem 1.6rem; background: var(--cr); color: #fff;
+      border-radius: 6px; font-size: .82rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; text-decoration: none; white-space: nowrap;
+      transition: background .2s;
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
+    .btn-primary:hover { background: var(--cr-mid); }
     .btn-outline-white {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 14px 28px; border: 2px solid rgba(255,255,255,.6);
@@ -1035,6 +1035,10 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 .pillar-card h3{font-size:1.05rem;font-weight:700;margin-bottom:var(--sp-3);}
 .pillar-card p{font-size:.875rem;color:var(--text-muted);line-height:1.65;}
 @media(max-width:768px){.pillar-grid{grid-template-columns:1fr;}.affiliate-story{grid-template-columns:1fr;padding:64px 0;}}
+.story-img,.grad-img,.ag-img,.as-img,.rs-img,.csr-story-img{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal-mid) 60%,var(--teal-glow) 100%);border-radius:20px;overflow:hidden;min-height:260px;}
+.csr-card-img{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal-mid) 100%);overflow:hidden;min-height:200px;}
+.story-img img,.grad-img img,.ag-img img,.as-img img,.rs-img img,.csr-story-img img,.csr-card-img img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .4s;}
+.page-hero.photo-hero{background-color:var(--forest-deep);}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1046,7 +1050,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <!-- Preloader (first visit only) -->
   <div id="preloader" role="status" aria-label="Loading">
     <div class="preloader-mark">
-      <img src="../../assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
+      <img src="/assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
     </div>
   </div>
 
@@ -1056,7 +1060,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <nav id="main-nav" role="navigation" aria-label="Main navigation">
   <div class="wrap nav-inner">
     <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
-      <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
+      <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
     </a>
 
     <!-- Desktop nav -->
@@ -1284,7 +1288,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
 
       <!-- CTA -->
       <li class="nav-item nav-cta">
-        <a href="/contact" class="btn-primary">Start a Project</a>
+        <a href="/contact" class="btn btn-primary">Start a Project</a>
       </li>
     </ul>
 
@@ -1301,7 +1305,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <div class="mobile-drawer">
     <div class="drawer-head">
       <a href="/" class="logo" aria-label="GreaterHeight home">
-        <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
+        <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
       </a>
       <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
         <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -1381,7 +1385,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
       <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
       <div class="drawer-cta">
-        <a href="/contact" class="btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
+        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
       </div>
     </nav>
   </div>
@@ -1538,7 +1542,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <p>If your audience trusts your judgement on technology decisions, your recommendation of GreaterHeight carries real weight. That is what converts — and that is what the programme rewards.</p>
         </div>
         <div class="as-img reveal">
-          <img src="/assets/images/partners/affiliate/affiliate-creator.jpg" alt="A Nigerian professional content creator filming a business-focused video in a modern home office setup" loading="lazy">
+          <img src="/assets/images/partners/affiliate/affiliate-creator.jpg" alt="A Nigerian professional content creator filming a business-focused video in a modern home office setup" loading="lazy" onerror="this.style.opacity='0'">
         </div>
       </div>
     </div>
@@ -1624,7 +1628,7 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       <!-- Col 1: Brand -->
       <div>
         <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
-          <img src="../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
+          <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
         </a>
         <div class="footer-brand-tagline">...helping you succeed</div>
         <p class="footer-brand-p">AI-augmented engineering teams that ship production software. Lagos, Nigeria — serving the world.</p>
