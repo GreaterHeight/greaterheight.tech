@@ -1243,3 +1243,168 @@ The following prompts cover the 12 industry-specific pages. Each page has three 
 **Placement:** Story grid — right column image beside "What Pricing Transparency Actually Means" copy (dark section)
 
 ---
+
+### Career Overview (`/culture/career-overview/`)
+
+#### `career-overview/hero-bg.jpg`
+**Prompt:** A professional photograph of a diverse GreaterHeight technology team in a modern Lagos open-plan office. Seven people visible — four women and three men, Black Nigerians and West Africans, ages 23–38 — in a natural collaborative moment: some gathered around a monitor reviewing work, one woman presenting at a standing whiteboard, two men in conversation at a desk. The office environment is high-spec: good natural light from large windows, clean workstations with large monitors, branded elements visible. Shot wide at a low angle to emphasise depth and energy. Candid editorial photography — the team is engaged in real work, not posing.
+
+**Path:** `/assets/images/culture/career-overview/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Full-bleed hero background image
+
+---
+
+#### `career-overview/team-at-work.jpg`
+**Prompt:** A professional photograph of three GreaterHeight engineers working together in a modern Lagos tech office — two men and one woman (Black Nigerians, ages 25–35) — gathered around a large monitor reviewing code during what appears to be a code review or sprint planning session. One person is pointing at the screen while the others look on, clearly engaged. The monitor shows a real code editor with visible syntax-highlighted code. The office is professional and well-lit, with open-plan desks and good natural light. Shot at a medium-close three-quarter angle. Candid, editorial photography style — not posed.
+
+**Path:** `/assets/images/culture/career-overview/team-at-work.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "The GreaterHeight Career" copy
+
+---
+
+#### `career-overview/mentorship-session.jpg`
+**Prompt:** A professional photograph of a GreaterHeight mentorship session: a senior Nigerian engineer (man, mid-30s) seated beside a junior engineer (woman, early 20s) at a shared workstation, both looking at a laptop screen together. The senior engineer is pointing at something on the screen while the junior engineer takes notes on a notepad. The environment is a modern Lagos tech office, well-lit with a professional but relaxed atmosphere. Shot from slightly over the shoulder to suggest what they are both looking at. Candid editorial photography — the conversation feels genuine and professional.
+
+**Path:** `/assets/images/culture/career-overview/mentorship-session.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — left column image beside "What We Look For" criteria list
+
+---
+
+### Career Opportunities (`/culture/career-opportunities/`)
+
+#### `career-opportunities/hero-bg.jpg`
+**Prompt:** A professional photograph of a GreaterHeight hiring or team meeting scene in a modern Lagos boardroom. Five people visible — three interviewers (two women, one man, Black Nigerians, ages 28–40) seated across from two candidates (one Nigerian man in his late 20s, one Nigerian woman in her mid-20s, both professionally dressed). Documents and laptops are open on the table. The setting is professional: a clean meeting table, branded water bottles, large windows with natural light. Shot from a wide slightly elevated angle that captures the whole group. Editorial, candid photography — the conversation appears genuine, not staged.
+
+**Path:** `/assets/images/culture/career-opportunities/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Full-bleed hero background image
+
+---
+
+#### `career-opportunities/graduate-track.jpg`
+**Prompt:** A professional photograph of a GreaterHeight intern (Nigerian woman, early 20s, professional dress) working alongside a senior software engineer (Nigerian man, early 30s) at a shared workstation in a modern Lagos tech office. The intern is at the keyboard writing code while the senior engineer looks on and points at the screen, explaining something. Both appear focused and engaged. The office is bright and professional. Shot at medium-close range, slightly to the side. Candid editorial photography — the working relationship feels authentic and productive.
+
+**Path:** `/assets/images/culture/career-opportunities/graduate-track.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Split layout — left column image beside "Internships & Early Careers" copy
+
+---
+
+### Corporate Social Responsibility (`/culture/csr/`)
+
+#### `csr/hero-bg.jpg`
+**Prompt:** A professional photograph of a GreaterHeight digital skills training session in a bright, modern classroom in Lagos. Twelve to fifteen young Nigerians — mixed gender (seven women, five to eight men), ages 18–26 — are seated at laptops working through a coding exercise. A female trainer (Black Nigerian, early 30s, professional attire) is standing at the front beside a projected screen showing code. The environment is professional and purposeful: good lighting, branded signage visible, laptops uniform. Shot from the back of the room at a wide angle that captures both the trainer and the full cohort of learners. Candid editorial photography.
+
+**Path:** `/assets/images/culture/csr/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Full-bleed hero background image
+
+---
+
+#### `csr/skills-development.jpg`
+**Prompt:** A professional photograph of four young Nigerian women (ages 18–24) learning technology skills at laptops in a modern training room. They are working through a practical exercise, some comparing screens with each other, one consulting a printed workbook. The setting is bright and professional: clean desks, good light, a projected screen visible at the edge of the frame. Shot at medium range from a slight angle. Candid editorial photography — the women are engaged and focused, not posing.
+
+**Path:** `/assets/images/culture/csr/skills-development.jpg`
+**Dimensions:** 1200 × 600 px minimum, 2:1 landscape
+**Placement:** CSR pillar card — image above "Digital Skills Development" card body
+
+---
+
+#### `csr/community-investment.jpg`
+**Prompt:** A professional photograph of a Lagos technology community event with GreaterHeight involvement. A panel of four speakers (mixed gender, Black Nigerians, ages 28–45) is seated on a raised stage in a modern event venue, with an audience of around fifty professionals visible in the foreground. A branded banner or screen is partially visible behind the panel. The venue is well-lit and professional — a corporate event space, not a conference hall. Shot from a wide angle at the back of the room. Candid editorial photography.
+
+**Path:** `/assets/images/culture/csr/community-investment.jpg`
+**Dimensions:** 1200 × 600 px minimum, 2:1 landscape
+**Placement:** CSR pillar card — image above "Community Investment" card body
+
+---
+
+#### `csr/environmental.jpg`
+**Prompt:** A professional photograph of a GreaterHeight team meeting focused on sustainability planning. Three people (two women and one man, Black Nigerians, ages 27–38) are gathered around a laptop in a glass-walled meeting room, reviewing what appears to be a data dashboard or report on the screen. One woman is making a note on a tablet, the man is pointing at something on the laptop screen. The environment is a modern, well-lit Lagos corporate office. Shot at medium range from a slight angle. Candid editorial photography — the conversation appears substantive and professional.
+
+**Path:** `/assets/images/culture/csr/environmental.jpg`
+**Dimensions:** 1200 × 600 px minimum, 2:1 landscape
+**Placement:** CSR pillar card — image above "Environmental Responsibility" card body
+
+---
+
+#### `csr/responsible-tech.jpg`
+**Prompt:** A professional photograph of a GreaterHeight software engineer (Black Nigerian woman, late 20s) seated at a large monitor reviewing what appears to be a code accessibility audit — a web accessibility tool or colour-contrast checker is visible on a secondary monitor. The primary screen shows well-structured HTML code. The setting is a modern tech office with good natural light. Shot at a medium-close range, slightly to the side. The engineer is focused and working, not posing.
+
+**Path:** `/assets/images/culture/csr/responsible-tech.jpg`
+**Dimensions:** 1200 × 600 px minimum, 2:1 landscape
+**Placement:** CSR pillar card — image above "Responsible Technology Practice" card body
+
+---
+
+#### `csr/africa-first.jpg`
+**Prompt:** A professional photograph of a GreaterHeight software engineer (Black Nigerian man, early 30s, branded T-shirt) standing at the front of a small group of young Nigerians (mixed gender, ages 17–22) gathered around a laptop during what appears to be a free skills training session in a community space or university room in Lagos. The engineer is demonstrating something on the screen, the learners are leaning in and engaged. The room is functional but not corporate: plastic chairs, a projector visible, afternoon natural light from windows. Shot at medium range from the side. Candid editorial photography.
+
+**Path:** `/assets/images/culture/csr/africa-first.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Story grid — right column image beside "Structural commitment, not seasonal charity" copy (dark section)
+
+---
+
+### Strategic Partnership (`/partners/strategic/`)
+
+#### `partners/strategic/hero-bg.jpg`
+**Prompt:** A professional photograph of a formal partnership discussion between two organisations in a high-end Lagos boardroom. Six people visible — three representing GreaterHeight (two men and one woman, Black Nigerians, ages 30–45) seated across from three representing a partner organisation (mixed Nigerian and British professionals, ages 32–48). A partnership proposal document is open on the table, along with laptops. The boardroom is premium: glass walls, branded signage, executive chairs, good natural light. Shot from a wide slightly elevated angle that captures both sides of the table. Confident, editorial photography — the participants appear to be in substantive discussion, not posing.
+
+**Path:** `/assets/images/partners/strategic/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Full-bleed hero background image
+
+---
+
+#### `partners/strategic/alliance-meeting.jpg`
+**Prompt:** A professional photograph of two senior professionals reviewing a joint partnership proposal together — one is a Black Nigerian man (late 30s, business formal attire), the other is a British South Asian woman (early 40s, professional attire). They are seated at a modern conference table, both looking at the same open document between them, the Nigerian man is pointing at a specific section. The environment is a clean, well-lit corporate meeting room with large windows. Shot at a medium three-quarter angle. Editorial photography — the interaction appears genuine and professional, neither person is looking at the camera.
+
+**Path:** `/assets/images/partners/strategic/alliance-meeting.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Alliance story grid — left column image beside "What a strategic alliance actually looks like" copy
+
+---
+
+### Affiliate Programme (`/partners/affiliate/`)
+
+#### `partners/affiliate/hero-bg.jpg`
+**Prompt:** A professional photograph of a Nigerian business professional and content creator (man, early 30s, smart casual attire) in a modern home-office or co-working setup, recording a video or hosting a live session on a laptop with a ring light and professional microphone visible. His desk is well-organised with a branded notebook and additional monitor. He is mid-sentence, clearly engaged with his content. The environment is professional and aspirational — the kind of setup that communicates both authenticity and commercial intent. Shot at a medium-close three-quarter angle. Editorial photography.
+
+**Path:** `/assets/images/partners/affiliate/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Full-bleed hero background image
+
+---
+
+#### `partners/affiliate/affiliate-creator.jpg`
+**Prompt:** A professional photograph of a Nigerian woman (late 20s to early 30s, professional attire) in a bright, modern Lagos co-working space, seated at a desk with a laptop open showing what appears to be a content dashboard or analytics screen. She is mid-recording — a small ring light and mounted phone or camera is visible on her desk, though she is currently looking at her laptop with a professional expression. The co-working space is modern and well-lit. Shot at a medium-close range from the side. Candid editorial photography — she appears to be a credible professional creator, not a lifestyle influencer.
+
+**Path:** `/assets/images/partners/affiliate/affiliate-creator.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Affiliate story split — right column image beside "Who Thrives in This Programme" copy
+
+---
+
+### Referral Programme (`/partners/referral/`)
+
+#### `partners/referral/hero-bg.jpg`
+**Prompt:** A professional photograph of two Nigerian business professionals — a man and a woman (both ages 35–48, business attire) — shaking hands in a modern Lagos office lobby or corridor. Both are smiling in a natural, professional way. The handshake is genuine — it marks the conclusion of a brief conversation, not a staged photo. The environment is professional: clean corporate space, good light, branded signage or modern décor visible in the background. Shot at a medium range from a slight angle. Editorial photography — this is a credible introduction moment, not a corporate stock photo.
+
+**Path:** `/assets/images/partners/referral/hero-bg.jpg`
+**Dimensions:** 1920 × 1080 px minimum, 16:9 landscape
+**Placement:** Full-bleed hero background image
+
+---
+
+#### `partners/referral/warm-introduction.jpg`
+**Prompt:** A professional photograph of two Nigerian business professionals (one man in his 40s, one woman in her 30s, both business casual attire) having an informal conversation at a Lagos café or co-working space coffee bar. The man is leaning forward slightly, making a point, while the woman listens attentively with her phone on the table between them. The setting is bright, modern, and professional — not a restaurant scene, but a business-appropriate casual environment. Shot at a medium-close three-quarter angle. Candid editorial photography — the conversation appears genuine and business-focused.
+
+**Path:** `/assets/images/partners/referral/warm-introduction.jpg`
+**Dimensions:** 1200 × 800 px minimum, 3:2 landscape
+**Placement:** Referral trust story split — left column image beside "Your credibility is the introduction" copy
+
+---
