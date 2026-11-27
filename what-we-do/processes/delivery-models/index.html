@@ -1004,6 +1004,153 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
+    
+/* ── PHOTO HERO ───────────────────────────────────────────── */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;pointer-events:none;}
+.page-hero.photo-hero .container{position:relative;z-index:1;}
+
+/* ── STATS BAND ───────────────────────────────────────────── */
+.stats-band{background:var(--forest);padding:var(--sp-7) 0;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.stat-item{text-align:center;padding:var(--sp-5) var(--sp-4);border-right:1px solid rgba(255,255,255,.08);}
+.stat-item:last-child{border-right:none;}
+.stat-number{font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1;display:block;}
+.stat-unit{color:var(--teal-glow);}
+.stat-label{font-size:var(--ts-xs);color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);display:block;line-height:1.5;}
+
+/* ── STORY GRID ───────────────────────────────────────────── */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.reverse{direction:rtl;}.story-grid.reverse>*{direction:ltr;}
+.story-image{position:relative;border-radius:20px;overflow:hidden;min-height:420px;background:linear-gradient(135deg,var(--teal) 0%,var(--forest) 100%);}
+.story-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.story-image .img-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,25,15,.4) 0%,transparent 60%);}
+.story-badge{position:absolute;bottom:var(--sp-5);left:var(--sp-5);background:rgba(5,25,15,.88);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:var(--sp-3) var(--sp-4);}
+.badge-num{font-size:1.4rem;font-weight:700;color:var(--mint);line-height:1;}
+.badge-label{font-size:.68rem;color:var(--teal-glow);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;}
+.story-content .section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.story-content .section-title{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+.story-content .section-title.light{color:var(--white);}
+.story-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.8;margin-bottom:var(--sp-4);}
+.story-content p:last-child{margin-bottom:0;}
+
+/* ── GENERIC SECTION ──────────────────────────────────────── */
+.section{padding:96px 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.section-dark-deep{background:var(--forest-deep);color:var(--white);}
+.section-teal{background:var(--teal-lite);}
+.section-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+.section-title{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.2;margin-bottom:var(--sp-5);}
+.section-title.light{color:var(--white);}
+.section-lead{font-size:var(--ts-base);color:var(--txt-2);line-height:1.75;max-width:720px;margin-bottom:var(--sp-7);}
+.section-lead.light{color:rgba(255,255,255,.75);}
+
+/* ── PHASE STEPS (methodology) ────────────────────────────── */
+.phase-wrap{display:flex;flex-direction:column;gap:0;}
+.phase-item{display:grid;grid-template-columns:72px 1fr;gap:0 var(--sp-6);position:relative;padding-bottom:var(--sp-7);}
+.phase-item:last-child{padding-bottom:0;}
+.phase-item::before{content:'';position:absolute;top:40px;left:36px;width:2px;bottom:0;background:linear-gradient(to bottom,var(--teal-glow) 0%,rgba(30,180,150,.1) 100%);}
+.phase-item:last-child::before{display:none;}
+.phase-num-wrap{display:flex;flex-direction:column;align-items:center;gap:var(--sp-2);flex-shrink:0;}
+.phase-num{width:72px;height:72px;border-radius:50%;background:var(--forest);border:2px solid var(--teal-glow);display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:700;color:var(--mint);flex-shrink:0;position:relative;z-index:1;}
+.phase-body{padding-top:var(--sp-3);}
+.phase-title{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.phase-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.75;margin-bottom:var(--sp-3);}
+.phase-bullets{list-style:none;display:flex;flex-direction:column;gap:var(--sp-2);}
+.phase-bullets li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.phase-bullets li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+
+/* ── PRINCIPLE GRID (methodology) ────────────────────────── */
+.principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.principle-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:var(--sp-6);}
+.principle-icon{font-size:1.8rem;margin-bottom:var(--sp-3);}
+.principle-card h3{font-size:var(--ts-base);font-weight:700;color:var(--white);margin-bottom:var(--sp-3);}
+.principle-card p{font-size:var(--ts-sm);color:rgba(255,255,255,.65);line-height:1.7;}
+
+/* ── MODEL CARDS (delivery) ───────────────────────────────── */
+.model-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.model-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.model-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+.model-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+.model-tag{display:inline-block;padding:var(--sp-1) var(--sp-4);border-radius:999px;font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-4);}
+.model-tag.ongoing{background:var(--teal-lite);color:var(--teal);}
+.model-tag.project{background:var(--cr-lite);color:var(--cr);}
+.model-tag.advisory{background:rgba(201,168,76,.12);color:#8A6B1A;}
+.model-card h3{font-size:var(--ts-lg);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.model-card .model-lead{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.75;margin-bottom:var(--sp-5);}
+.model-when{background:var(--teal-pale);border-radius:10px;padding:var(--sp-4);margin-bottom:var(--sp-4);}
+.model-when-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:var(--sp-2);}
+.model-when p{font-size:var(--ts-xs);color:var(--txt-2);line-height:1.6;margin:0;}
+.model-bullets{list-style:none;display:flex;flex-direction:column;gap:var(--sp-2);}
+.model-bullets li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.model-bullets li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+
+/* ── COMPARISON TABLE (delivery) ──────────────────────────── */
+.compare-table{width:100%;border-collapse:collapse;margin-top:var(--sp-7);font-size:var(--ts-sm);}
+.compare-table th{background:var(--forest);color:var(--white);padding:var(--sp-4) var(--sp-5);text-align:left;font-weight:700;}
+.compare-table td{padding:var(--sp-4) var(--sp-5);border-bottom:1px solid var(--border);color:var(--txt-2);vertical-align:top;}
+.compare-table tr:last-child td{border-bottom:none;}
+.compare-table tr:nth-child(even) td{background:var(--bg-alt);}
+.compare-table td:first-child{font-weight:700;color:var(--txt);}
+.check{color:var(--teal-glow);font-weight:700;}
+.cross{color:var(--cr);font-weight:700;}
+
+/* ── PRICING CARDS ────────────────────────────────────────── */
+.pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.pricing-card{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:var(--sp-7) var(--sp-6);position:relative;overflow:hidden;transition:box-shadow var(--dur-med),transform var(--dur-med);}
+.pricing-card:hover{box-shadow:var(--sh-lg);transform:translateY(-4px);}
+.pricing-card.featured{border-color:var(--teal-glow);background:var(--teal-pale);}
+.pricing-card::after{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-rule);}
+.pricing-card.featured::after{background:linear-gradient(to right,var(--teal),var(--teal-glow));}
+.pricing-label{display:inline-block;padding:var(--sp-1) var(--sp-4);border-radius:999px;font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-4);background:var(--teal-lite);color:var(--teal);}
+.pricing-card.featured .pricing-label{background:var(--teal);color:var(--white);}
+.pricing-card h3{font-size:var(--ts-xl);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+.pricing-desc{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.75;margin-bottom:var(--sp-5);}
+.pricing-use{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--teal-glow);margin-bottom:var(--sp-2);}
+.pricing-when{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;border-left:3px solid var(--teal-glow);padding-left:var(--sp-4);margin-bottom:var(--sp-5);}
+.pricing-bullets{list-style:none;display:flex;flex-direction:column;gap:var(--sp-2);}
+.pricing-bullets li{font-size:var(--ts-sm);color:var(--txt-2);display:flex;align-items:flex-start;gap:var(--sp-2);line-height:1.5;}
+.pricing-bullets li::before{content:'→';color:var(--teal-glow);flex-shrink:0;font-weight:700;}
+
+/* ── PULL QUOTE ───────────────────────────────────────────── */
+.pull-quote{border-left:4px solid var(--cr);padding:var(--sp-6) var(--sp-7);background:var(--cr-lite);border-radius:0 var(--r) var(--r) 0;}
+.pull-quote blockquote{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:300;color:var(--txt);line-height:1.6;letter-spacing:-.01em;}
+.pull-quote blockquote strong{font-weight:700;color:var(--cr);}
+.pull-quote-attr{margin-top:var(--sp-3);font-size:var(--ts-sm);color:var(--txt-3);font-style:italic;}
+
+/* ── SCOPING CALLOUT ──────────────────────────────────────── */
+.scoping-callout{background:var(--forest);border-radius:20px;padding:var(--sp-8) var(--sp-7);display:grid;grid-template-columns:1fr 280px;gap:var(--sp-7);align-items:center;margin-top:var(--sp-7);}
+.scoping-callout h3{font-size:var(--ts-xl);font-weight:700;color:var(--white);margin-bottom:var(--sp-4);}
+.scoping-callout p{font-size:var(--ts-sm);color:rgba(255,255,255,.75);line-height:1.75;}
+.scoping-callout-cta{text-align:center;}
+.scoping-callout-price{font-size:var(--ts-xs);color:var(--teal-glow);text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-2);}
+.scoping-callout-title{font-size:var(--ts-lg);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);}
+
+/* ── TRUST ROW ────────────────────────────────────────────── */
+.trust-row{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.trust-item{text-align:center;padding:var(--sp-6);background:var(--bg-card);border:1px solid var(--border);border-radius:16px;}
+.trust-num{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;color:var(--teal-glow);line-height:1;margin-bottom:var(--sp-2);}
+.trust-label{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.5;}
+
+/* ── CTA BAND (overrides) ─────────────────────────────────── */
+.cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
+.cta-band::before{display:none !important;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);position:relative;z-index:1;display:block !important;}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+.btn-primary{display:inline-block;padding:.9rem 2.2rem;background:var(--cr);color:var(--white);border-radius:999px;font-weight:700;font-size:var(--ts-sm);text-decoration:none;transition:background var(--dur-fast);}
+.btn-primary:hover{background:var(--cr-mid);}
+.btn-outline-white{display:inline-block;padding:.9rem 2.2rem;border:2px solid rgba(255,255,255,.4);color:var(--white);border-radius:999px;font-weight:600;font-size:var(--ts-sm);text-decoration:none;transition:border-color var(--dur-fast);}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.8);}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media(max-width:1024px){.principle-grid{grid-template-columns:1fr 1fr;}.trust-row{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:900px){.stats-row{grid-template-columns:repeat(2,1fr);}.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}.story-grid{grid-template-columns:1fr;}.model-grid{grid-template-columns:1fr;}.pricing-grid{grid-template-columns:1fr;}.scoping-callout{grid-template-columns:1fr;}.compare-table{font-size:var(--ts-xs);}}}
+@media(max-width:768px){.phase-item{grid-template-columns:52px 1fr;}.phase-num{width:52px;height:52px;font-size:1rem;}.principle-grid{grid-template-columns:1fr;}.trust-row{grid-template-columns:1fr 1fr;}}
+@media(max-width:540px){.trust-row{grid-template-columns:1fr;}}
+
     </style>
 </head>
 <body>
@@ -1392,55 +1539,214 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-
-    <section class="page-hero" aria-labelledby="hero-heading">
-      <div class="page-hero-inner">
-        <div class="hero-copy">
-          <p class="hero-eyebrow">Processes</p>
-          <h1 id="hero-heading">An engagement model<br><strong>that fits your situation.</strong></h1>
-          <p class="page-hero-lead">A dedicated team makes sense when you need ongoing development capacity. A fixed-scope project makes sense when the requirements are known and stable. Staff augmentation makes sense when you need specific skills inside an existing team. GreaterHeight offers all three — and helps you choose the right one, not the most expensive one.</p>
-          <div class="hero-meta" role="list">
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">4</span><span class="hero-meta-label">Delivery Models</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">Flex</span><span class="hero-meta-label">-ible Contracts</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">No</span><span class="hero-meta-label">Lock-in</span></div>
-          </div>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">Our Commitment</p><p>We recommend the delivery model that fits your requirements — not the one that maximises our revenue. Getting this right matters for the relationship more than any single project.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">Hybrid is Fine</p><p>Many clients combine delivery models — a dedicated product team alongside a fixed-scope data migration, or staff augmentation within a broader managed services agreement.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="models-heading">
+<!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/processes/delivery-models/hero-bg.jpg')" aria-labelledby="hero-heading">
+      <style>.page-hero.photo-hero::before{background:linear-gradient(135deg,rgba(13,61,40,.96) 0%,rgba(13,61,40,.85) 40%,rgba(13,61,40,.5) 70%,transparent 100%);}</style>
       <div class="container">
-        <div class="reveal">
-          <p class="section-label">Delivery Models</p>
-          <div class="rule-line"></div>
-          <h2 class="section-title" id="models-heading">Four ways to work with us</h2>
-        </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>Dedicated Team</h3><p>A full team (developers, QA, designer, BA, PM) working exclusively on your product — managed by GreaterHeight, reporting into your product roadmap. Best for ongoing product development with evolving requirements. Typically structured on a monthly retainer.</p></div>
-          <div class="value-card reveal"><h3>Staff Augmentation</h3><p>Individual engineers or specialists embedded in your existing team — filling a skill gap or adding capacity without the overhead of a hire. You manage them day-to-day; we handle contracts, payroll, and technical line management. Best for teams with strong internal structure but a temporary skills shortage.</p></div>
-          <div class="value-card reveal"><h3>Fixed-Scope Project</h3><p>A defined deliverable, timeline, and price — agreed upfront and delivered to specification. Best for well-defined work with stable requirements: an MVP, a data migration, a specific integration, or a bounded feature set. Requires thorough discovery before contract signature.</p></div>
-          <div class="value-card reveal"><h3>Managed Services</h3><p>Ongoing operations, maintenance, monitoring, and support for systems already in production — with defined SLAs, incident response, and regular improvement cycles. Best for organisations that want reliable ongoing operations without managing the team internally.</p></div>
-          <div class="value-card reveal"><h3>Advisory Retainer</h3><p>A defined number of hours per month with our senior engineering, architecture, or strategic advisory team — for ongoing strategic input, code review, architecture guidance, and second-opinion support. Best for organisations with strong internal teams who want access to senior outside perspective.</p></div>
-          <div class="value-card reveal"><h3>Discovery Sprint</h3><p>A structured 2–4 week engagement to scope a larger project — producing requirements documentation, architecture recommendations, effort estimates, and a roadmap. Best when you have a product idea but need to understand what it will take before committing to a full build.</p></div>
+        <div style="max-width:760px;padding:130px 0;">
+          <span class="section-label">What We Do &rsaquo; Processes</span>
+          <h1 id="hero-heading" style="font-size:clamp(2rem,5vw,3.5rem);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:var(--sp-5);">An Engagement Structure<br><span style="color:var(--mint);">That Fits Your Situation</span></h1>
+          <p style="font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.85);line-height:1.75;max-width:640px;margin-bottom:var(--sp-7);">A dedicated team makes sense when you need ongoing development capacity. A fixed-scope project makes sense when requirements are known and stable. Staff augmentation makes sense when you need a specific skill inside an existing team. GreaterHeight offers all of these — and helps you choose the right one, not the most expensive one.</p>
+          <div class="cta-pair" style="justify-content:flex-start;">
+            <a href="/contact/" class="btn-primary">Find Your Model</a>
+            <a href="#models" class="btn-outline-white">See All Models</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band" aria-labelledby="cta-heading">
+    <!-- STATS BAND -->
+    <div class="stats-band" aria-hidden="true">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item"><span class="stat-number">6</span><span class="stat-label">distinct delivery models — each built for a specific engagement type</span></div>
+          <div class="stat-item"><span class="stat-number" style="font-size:1.5rem;color:var(--teal-glow);">Flex</span><span class="stat-label">Hybrid models available — combine what you need</span></div>
+          <div class="stat-item"><span class="stat-number">No</span><span class="stat-label">lock-in contracts — you are not penalised for outgrowing a model</span></div>
+          <div class="stat-item"><span class="stat-number" style="font-size:1.5rem;color:var(--teal-glow);">Honest</span><span class="stat-label">We recommend the model that fits, not the one that earns most</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STORY 1 — the right model -->
+    <section class="section" aria-labelledby="why-h">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-content reveal">
+            <div class="section-label">Why This Matters</div>
+            <h2 id="why-h" class="section-title">The wrong engagement model is as damaging as the wrong technology choice.</h2>
+            <p>A fixed-price contract on ambiguous requirements does not protect the client — it just determines who absorbs the cost of that ambiguity. Time-and-materials on a team with no accountability produces drift. Staff augmentation without proper integration into an existing team wastes the capacity you paid for.</p>
+            <p>Delivery model selection is a commercial and operational decision, and it has consequences that play out over the entire engagement. We take this conversation seriously before the contract is signed because getting it wrong is expensive for both parties.</p>
+            <p>Many of our clients use a combination of models: a dedicated product team running on a monthly retainer alongside a fixed-scope data migration, or advisory hours embedded in a broader managed services agreement. The model is a tool — we use the right one for the job.</p>
+          </div>
+          <div class="story-image reveal">
+            <img src="/assets/images/processes/delivery-models/client-meeting.jpg" alt="A Nigerian business executive and two GreaterHeight consultants reviewing an engagement proposal document in a modern Lagos office" onerror="this.style.display='none'" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">6</div>
+              <div class="badge-label">Delivery Models</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODEL CARDS -->
+    <section class="section section-alt" id="models" aria-labelledby="models-h">
+      <div class="container">
+        <div class="section-label">Delivery Models</div>
+        <h2 id="models-h" class="section-title">Six ways to work with GreaterHeight</h2>
+        <p class="section-lead">Each model is built for a specific type of engagement. The right choice depends on the nature of your requirements, the degree of internal capability you already have, and how you prefer to manage risk and cost.</p>
+        <div class="model-grid">
+          <div class="model-card reveal">
+            <span class="model-tag ongoing">Ongoing Engagement</span>
+            <h3>Dedicated Team</h3>
+            <p class="model-lead">A full cross-functional team — developers, QA engineers, a designer, a business analyst, and a project manager — working exclusively on your product. The team is managed by GreaterHeight but reports directly into your roadmap and business priorities.</p>
+            <div class="model-when"><div class="model-when-label">Best when</div><p>You need sustained, ongoing development capacity. Requirements evolve continuously. You want a team that understands your product deeply rather than context-switching between projects.</p></div>
+            <ul class="model-bullets">
+              <li>Full-time team allocated exclusively to your product</li>
+              <li>Structured on a monthly retainer with clear SLAs</li>
+              <li>Team composition adapts as the product evolves</li>
+              <li>Transparent velocity and progress reporting</li>
+            </ul>
+          </div>
+          <div class="model-card reveal">
+            <span class="model-tag project">Project-Based</span>
+            <h3>Fixed-Scope Project</h3>
+            <p class="model-lead">A defined deliverable, agreed timeline, and fixed price — with the scope, acceptance criteria, and change-request process established in writing before work begins. We absorb scope risk; you absorb the risk that requirements change after the contract is signed.</p>
+            <div class="model-when"><div class="model-when-label">Best when</div><p>Requirements are well understood and stable. The deliverable is clearly bounded: an MVP, a data migration, a specific integration, or a defined feature set. Thorough discovery must precede any fixed-price agreement.</p></div>
+            <ul class="model-bullets">
+              <li>Requires a completed discovery and scoping engagement first</li>
+              <li>Defined deliverable, timeline, and acceptance criteria</li>
+              <li>Formal change-request process for scope evolution</li>
+              <li>Milestone-based payment schedule available</li>
+            </ul>
+          </div>
+          <div class="model-card reveal">
+            <span class="model-tag ongoing">Ongoing Engagement</span>
+            <h3>Staff Augmentation</h3>
+            <p class="model-lead">Individual engineers or specialists embedded within your existing team — filling a skill gap, adding capacity, or providing specific technical expertise without the overhead of a permanent hire. You manage them day-to-day; we handle contracts, payroll, and technical line management.</p>
+            <div class="model-when"><div class="model-when-label">Best when</div><p>Your internal team has strong structure and leadership but a temporary or specific skills gap. You need someone who integrates into your processes rather than a team managing its own delivery.</p></div>
+            <ul class="model-bullets">
+              <li>Individuals or small groups embedded in your team</li>
+              <li>You direct the work; we handle the employment relationship</li>
+              <li>Scales up or down without recruitment overhead</li>
+              <li>Access to specialist skills not available locally</li>
+            </ul>
+          </div>
+          <div class="model-card reveal">
+            <span class="model-tag ongoing">Ongoing Engagement</span>
+            <h3>Managed Services</h3>
+            <p class="model-lead">Ongoing operations, maintenance, monitoring, and support for systems already in production — with defined SLAs, structured incident response, and regular improvement cycles. For organisations that want reliable ongoing operations without managing the team internally.</p>
+            <div class="model-when"><div class="model-when-label">Best when</div><p>You have production systems that need reliable ongoing management but do not want or need to build an internal operations team. You want defined response times and accountability for uptime.</p></div>
+            <ul class="model-bullets">
+              <li>Defined SLAs for uptime and incident response</li>
+              <li>24/7 monitoring and alerting infrastructure</li>
+              <li>Scheduled maintenance and security patching</li>
+              <li>Quarterly reviews with improvement recommendations</li>
+            </ul>
+          </div>
+          <div class="model-card reveal">
+            <span class="model-tag advisory">Advisory</span>
+            <h3>Advisory Retainer</h3>
+            <p class="model-lead">A defined number of hours per month with our senior engineering, architecture, or strategic advisory team — for ongoing second-opinion support, architecture guidance, code review, and technology strategy input. Best for organisations with capable internal teams who want access to experienced outside perspective.</p>
+            <div class="model-when"><div class="model-when-label">Best when</div><p>Your team is strong but would benefit from periodic senior review. You are making architectural decisions with long-term implications. You need a trusted outside perspective without a full engagement.</p></div>
+            <ul class="model-bullets">
+              <li>Fixed monthly hour allocation — carry-over available</li>
+              <li>Access to senior engineers and solution architects</li>
+              <li>Architecture review, code audit, and tech strategy input</li>
+              <li>No long-term lock-in — monthly notice period</li>
+            </ul>
+          </div>
+          <div class="model-card reveal">
+            <span class="model-tag project">Project-Based</span>
+            <h3>Discovery Sprint</h3>
+            <p class="model-lead">A structured two-to-four week engagement to scope a larger project — producing detailed requirements documentation, architecture recommendations, realistic effort estimates, and a delivery roadmap. This is the prerequisite for any fixed-price engagement and strongly recommended before major builds of any kind.</p>
+            <div class="model-when"><div class="model-when-label">Best when</div><p>You have a product vision or a significant technical challenge but need to understand what it will actually take — in time, cost, and team — before committing to a full build. The investment in discovery consistently prevents far larger costs of poorly-scoped engagements.</p></div>
+            <ul class="model-bullets">
+              <li>Fixed fee — typically two to four weeks</li>
+              <li>Deliverables: requirements, architecture, estimate, roadmap</li>
+              <li>De-risks any subsequent fixed-price or T&M engagement</li>
+              <li>Can be conducted independently of any subsequent build</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE — dark section -->
+    <section class="section section-dark" aria-labelledby="compare-h">
+      <div class="container">
+        <div class="section-label" style="color:var(--teal-glow);">Quick Comparison</div>
+        <h2 id="compare-h" class="section-title light">Which model fits your situation?</h2>
+        <p class="section-lead light">Use this as a guide, not a prescription. Many engagements use more than one model simultaneously.</p>
+        <div style="overflow-x:auto;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Pricing</th>
+                <th>Scope Flexibility</th>
+                <th>Minimum Commitment</th>
+                <th>Ideal Team Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Dedicated Team</td><td>Monthly retainer</td><td>High — evolves with product</td><td>3 months</td><td>3 to 8 people</td></tr>
+              <tr><td>Fixed-Scope Project</td><td>Fixed price</td><td>Low — formal change requests</td><td>Per project</td><td>2 to 6 people</td></tr>
+              <tr><td>Staff Augmentation</td><td>Day/month rate</td><td>You define the work</td><td>1 month</td><td>1 to 4 individuals</td></tr>
+              <tr><td>Managed Services</td><td>Monthly retainer</td><td>Low — SLA-bound</td><td>6 months</td><td>2 to 4 people</td></tr>
+              <tr><td>Advisory Retainer</td><td>Monthly hours</td><td>High — you direct the agenda</td><td>1 month</td><td>1 to 2 senior advisors</td></tr>
+              <tr><td>Discovery Sprint</td><td>Fixed fee</td><td>Fixed scope, defined output</td><td>2 to 4 weeks</td><td>2 to 3 people</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY 2 — What we always do -->
+    <section class="section" aria-labelledby="always-h">
+      <div class="container">
+        <div class="story-grid reverse">
+          <div class="story-image reveal">
+            <img src="/assets/images/processes/delivery-models/team-environment.jpg" alt="A diverse GreaterHeight development team working at standing desks in an open-plan Lagos technology office, reviewing code on large monitors" onerror="this.style.display='none'" loading="lazy">
+            <div class="img-overlay"></div>
+            <div class="story-badge">
+              <div class="badge-num">Zero</div>
+              <div class="badge-label">Lock-in</div>
+            </div>
+          </div>
+          <div class="story-content reveal">
+            <div class="section-label" style="color:var(--teal-glow);">What Stays Constant</div>
+            <h2 id="always-h" class="section-title">Every model. The same standards.</h2>
+            <p style="color:rgba(255,255,255,.75);">Regardless of the delivery model you choose, certain things do not change. The engineering quality standards, the communication cadence, the transparency about progress and risk — these are not variables we adjust based on what you are paying for.</p>
+            <p style="color:rgba(255,255,255,.75);">You will always have visibility into what the team is working on, when it will be ready, and what risks exist. You will never receive a progress update that tells you everything is fine two weeks before a deadline that will not be met.</p>
+            <p style="color:rgba(255,255,255,.75);">The delivery model governs how we structure the commercial relationship and team allocation. How we operate within that relationship is not negotiable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PULL QUOTE -->
+    <section class="section section-teal" aria-label="Delivery statement">
+      <div class="container">
+        <div class="pull-quote">
+          <blockquote>We will recommend the delivery model that fits your requirements — even if it is <strong>not the most profitable one for us.</strong> Getting this right matters more than the first invoice.</blockquote>
+          <p class="pull-quote-attr">GreaterHeight Technologies — Delivery Practice</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-labelledby="cta-h">
       <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Not sure which model fits your situation?</h2><p>Tell us what you are trying to achieve — we will recommend the right engagement structure honestly.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Discuss Your Needs</a><a href="/what-we-do/processes/pricing-models/" class="btn-outline-white">Pricing Models</a></div>
+        <h2 id="cta-h">Not sure which model fits your situation?</h2>
+        <p>Tell us what you are trying to achieve — your timeline, your internal team structure, your budget constraints. We will recommend the right engagement model honestly, explain the trade-offs, and structure the commercial terms clearly.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn-primary">Discuss Your Needs</a>
+          <a href="/what-we-do/processes/pricing-models/" class="btn-outline-white">Pricing Models</a>
+        </div>
       </div>
     </section>
-
-  </main>
-  </main>
 
   <!-- ============================================================
        FOOTER
