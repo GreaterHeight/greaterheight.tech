@@ -1058,6 +1058,23 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
+/* === STRATEGIC PARTNERSHIP ===================== */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(145deg,rgba(14,42,32,.92) 0%,rgba(14,74,56,.75) 55%,rgba(0,80,60,.45) 100%);pointer-events:none;}
+.page-hero.photo-hero .container{position:relative;z-index:1;}
+.cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
+.cta-band::before{display:none !important;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);position:relative;z-index:1;display:block !important;}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+/* Alliance story grid */
+.alliance-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;padding:96px 0;}
+.alliance-grid .ag-img img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:block;}
+.alliance-grid .ag-body .ag-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:var(--sp-3);}
+.alliance-grid .ag-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;}
+.alliance-grid .ag-body p{color:var(--text-muted);line-height:1.75;margin-bottom:var(--sp-4);}
+@media(max-width:900px){.alliance-grid{grid-template-columns:1fr;padding:64px 0;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1447,11 +1464,11 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <main id="main-content">
 
     <!-- ── HERO ──────────────────────────────────────────── -->
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/partners/strategic/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <div class="hero-eyebrow">Partners</div>
+            <div class="hero-eyebrow">Become a Partner</div>
             <h1 id="hero-heading">Strategic <strong>Partnership</strong></h1>
             <p class="page-hero-lead">A formal alliance between two organisations whose capabilities are genuinely complementary — and whose collaboration creates more value for shared clients than either could create independently.</p>
             <div class="hero-meta">
@@ -1551,6 +1568,22 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
+    <!-- ── ALLIANCE IN PRACTICE — STORY GRID WITH PHOTO ── -->
+    <div class="container">
+      <div class="alliance-grid">
+        <div class="ag-img reveal">
+          <img src="/assets/images/partners/strategic/alliance-meeting.jpg" alt="Two senior professionals — one Nigerian, one British — reviewing a joint partnership proposal in a modern boardroom" loading="lazy">
+        </div>
+        <div class="ag-body reveal">
+          <div class="ag-label">Partnership in Practice</div>
+          <h2>What a strategic alliance actually looks like on the ground</h2>
+          <p>Strategic partnerships with GreaterHeight are substantive, not nominal. They are formal alliances built on genuine complementarity, joint commitment, and shared investment in outcomes for the clients we both serve.</p>
+          <p>From co-developed propositions to shared delivery frameworks, the structure of a strategic partnership means both organisations enter each engagement as genuine co-principals — not as a prime and a subcontractor.</p>
+          <a href="/contact/" class="btn btn-primary" style="margin-top:var(--sp-4);">Start the Conversation</a>
+        </div>
+      </div>
+    </div>
+
     <!-- ── MARKET REACH — DARK SECTION WITH FLAGS ── -->
     <section class="section section-dark" aria-labelledby="reach-heading">
       <div class="container">
@@ -1646,8 +1679,8 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <p class="reveal">Contact our partnership team to start an exploratory conversation about whether a strategic alliance makes sense for both organisations.</p>
         </div>
         <div class="cta-pair">
-          <a href="/contact/" class="btn-primary">Contact Partnership Team</a>
-          <a href="/partners/" class="btn-outline-white">All Partnership Types</a>
+          <a href="/contact/" class="btn btn-primary">Contact Partnership Team</a>
+          <a href="/partners/" class="btn btn-outline-white">All Partnership Types</a>
         </div>
       </div>
     </section>

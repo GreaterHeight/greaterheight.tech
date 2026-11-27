@@ -1002,6 +1002,44 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
+/* === CSR PAGE =================================== */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(140deg,rgba(14,42,32,.9) 0%,rgba(14,70,50,.7) 60%,rgba(0,100,70,.4) 100%);pointer-events:none;}
+.page-hero.photo-hero .container{position:relative;z-index:1;}
+.section{padding:96px 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
+.cta-band::before{display:none !important;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);position:relative;z-index:1;display:block !important;}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+/* Impact stats — dark strip */
+.impact-strip{background:var(--forest-deep,#061a10);padding:var(--sp-8) 0;}
+.impact-row{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-5);text-align:center;}
+.impact-item .impact-val{font-size:2.5rem;font-weight:800;color:var(--teal-glow,#4ecdc4);line-height:1;}
+.impact-item .impact-lbl{font-size:.8rem;font-weight:500;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);}
+/* CSR pillar cards with photo variant */
+.csr-pillars{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-6);margin-top:var(--sp-7);}
+.csr-card{background:var(--white);border-radius:12px;overflow:hidden;border:1px solid var(--border);}
+.csr-card-img{height:200px;overflow:hidden;}
+.csr-card-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.csr-card-body{padding:var(--sp-5);}
+.csr-card-body .pillar-icon{width:40px;height:40px;border-radius:8px;background:var(--teal-lite,#e6f4f1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-3);}
+.csr-card-body .pillar-icon svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:1.75;}
+.csr-card-body h3{font-size:1.1rem;font-weight:700;margin-bottom:var(--sp-3);}
+.csr-card-body p{font-size:.9rem;color:var(--text-muted);line-height:1.7;}
+/* Story grid */
+.csr-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.csr-story-img img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:block;}
+.csr-story-body .story-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow,#4ecdc4);margin-bottom:var(--sp-3);}
+.csr-story-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;color:var(--white);}
+.csr-story-body p{color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-4);}
+/* Principle bar */
+.principle-bar{padding:var(--sp-6) 0;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);margin:var(--sp-7) 0;}
+.principle-bar p{font-size:1.15rem;font-style:italic;line-height:1.65;color:var(--white);text-align:center;max-width:700px;margin:0 auto;}
+@media(max-width:900px){.csr-pillars{grid-template-columns:1fr;}.csr-story-grid{grid-template-columns:1fr;}.impact-row{grid-template-columns:1fr 1fr;gap:var(--sp-5);}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1390,96 +1428,118 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/culture/csr/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Culture</span>
+            <span class="page-hero-eyebrow">Our Culture</span>
             <h1 id="hero-heading">Corporate Social Responsibility</h1>
-            <p class="page-hero-lead">We are a technology company that was founded in Africa, is built by Africans, and exists to create technology-driven value for Africa and the world. Our CSR commitments are not separate from our commercial strategy — they are an expression of it.</p>
+            <p class="page-hero-lead">We are a technology company founded in Africa, built by Africans, and committed to creating technology-driven value for Africa and the world. Our CSR commitments are not separate from our commercial strategy — they are an expression of it.</p>
             <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">14<em>+</em></span>
-                <span class="hero-meta-label">Years in Africa</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Lagos</span>
-                <span class="hero-meta-label">Headquarters</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Structural</span>
-                <span class="hero-meta-label">Not Seasonal</span>
-              </div>
+              <div class="hero-meta-item"><span class="hero-meta-value">14<em>+</em></span><span class="hero-meta-label">Years in Africa</span></div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Lagos</span><span class="hero-meta-label">Headquarters</span></div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Structural</span><span class="hero-meta-label">Not Seasonal</span></div>
             </div>
             <div class="hero-ctas">
               <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
             </div>
           </div>
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">Technology for Good</div>
-                <p>We believe technology built responsibly has more commercial value — and we build our own practice to demonstrate that.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Africa First</div>
-                <p>Our CSR investment is concentrated where our commercial activity is concentrated: in the African technology ecosystem.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Structural, Not Seasonal</div>
-                <p>Our social commitments are embedded in how we hire, what we build, and who we partner with — not an annual report entry.</p>
-              </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT STATS STRIP -->
+    <div class="impact-strip">
+      <div class="container">
+        <div class="impact-row">
+          <div class="impact-item"><div class="impact-val">14+</div><div class="impact-lbl">Years of Operation</div></div>
+          <div class="impact-item"><div class="impact-val">500+</div><div class="impact-lbl">Learners Trained</div></div>
+          <div class="impact-item"><div class="impact-val">10+</div><div class="impact-lbl">NGOs Supported</div></div>
+          <div class="impact-item"><div class="impact-val">100%</div><div class="impact-lbl">Remote-First Operations</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOUR PILLARS — with photo cards -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-label reveal">Our Commitments</span>
+        <h2 class="section-title reveal">Where We Invest Our Responsibility</h2>
+        <p class="section-lead reveal">Four areas where GreaterHeight makes structured, ongoing investment in the communities and ecosystems we operate within.</p>
+        <div class="csr-pillars">
+          <div class="csr-card reveal">
+            <div class="csr-card-img">
+              <img src="/assets/images/culture/csr/skills-development.jpg" alt="Young Nigerian women learning technology skills in a GreaterHeight Academy classroom" loading="lazy">
+            </div>
+            <div class="csr-card-body">
+              <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+              <h3>Digital Skills Development</h3>
+              <p>We invest directly in skills through the GreaterHeight Academy, mentorship programmes, university partnerships, and free training initiatives for underserved communities — including dedicated programmes for women entering technology.</p>
+            </div>
+          </div>
+          <div class="csr-card reveal">
+            <div class="csr-card-img">
+              <img src="/assets/images/culture/csr/community-investment.jpg" alt="GreaterHeight team members participating in a Lagos technology community event" loading="lazy">
+            </div>
+            <div class="csr-card-body">
+              <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <h3>Community Investment</h3>
+              <p>We sponsor community events, participate actively in Lagos' technology ecosystem, and provide pro-bono technology support to registered non-profits working on education, healthcare, and food security.</p>
+            </div>
+          </div>
+          <div class="csr-card reveal">
+            <div class="csr-card-img">
+              <img src="/assets/images/culture/csr/environmental.jpg" alt="A GreaterHeight team meeting discussing sustainability and green cloud strategy" loading="lazy">
+            </div>
+            <div class="csr-card-body">
+              <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M2 22 16 8"/><path d="M17.5 6.5a4.95 4.95 0 0 1 0 7l-5 5a4.95 4.95 0 1 1-7-7l3-3a4.95 4.95 0 0 1 7 0l1 1 1-1a2.83 2.83 0 0 0 0-4"/></svg></div>
+              <h3>Environmental Responsibility</h3>
+              <p>As a remote-first, digital-native business, we prioritise cloud providers with strong environmental commitments and are actively working toward formal carbon accounting and a clear net-zero roadmap.</p>
+            </div>
+          </div>
+          <div class="csr-card reveal">
+            <div class="csr-card-img">
+              <img src="/assets/images/culture/csr/responsible-tech.jpg" alt="A GreaterHeight engineer reviewing accessible, privacy-compliant code on a large monitor" loading="lazy">
+            </div>
+            <div class="csr-card-body">
+              <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <h3>Responsible Technology Practice</h3>
+              <p>We apply privacy-by-design principles, advocate for WCAG accessibility compliance, and actively build our team's capability in the ethical dimensions of AI and data systems.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <!-- AFRICA FIRST — dark section with story layout -->
+    <section class="section section-dark">
       <div class="container">
-        <span class="section-label">Our Commitments</span>
-        <h2 class="section-title">Where We Invest Our Responsibility</h2>
-        <p class="section-lead">Four areas where GreaterHeight makes structured, ongoing investment in the communities and ecosystems we operate within.</p>
-        <div class="pillar-grid">
-              <div class="pillar-card">
-                <div class="pillar-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-<path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-                <h3>Digital Skills Development</h3>
-                <p>We invest directly in skills through the GreaterHeight Academy, mentorship programmes, university partnerships, and free training initiatives for underserved communities — including programmes for women entering technology.</p>
-              </div>
-              <div class="pillar-card">
-                <div class="pillar-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-<path d="M9 7a4 4 0 1 0 8 0 4 4 0 0 0-8 0"/>
-<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-<path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-                <h3>Community Investment</h3>
-                <p>We sponsor community events, participate actively in Lagos' technology ecosystem, and provide pro-bono technology support to registered non-profits working on education, healthcare, and food security.</p>
-              </div>
-              <div class="pillar-card">
-                <div class="pillar-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2 22 16 8"/>
-<path d="M17.5 6.5a4.95 4.95 0 0 1 0 7l-5 5a4.95 4.95 0 1 1-7-7l3-3a4.95 4.95 0 0 1 7 0l1 1 1-1a2.83 2.83 0 0 0 0-4"/></svg></div>
-                <h3>Environmental Responsibility</h3>
-                <p>As a remote-first, digital-native business, we prioritise cloud providers with strong environmental commitments and are actively working toward formal carbon accounting and a clear net-zero roadmap.</p>
-              </div>
-              <div class="pillar-card">
-                <div class="pillar-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-                <h3>Responsible Technology Practice</h3>
-                <p>We apply privacy-by-design principles, advocate for WCAG accessibility compliance, and actively build our team's capability in the ethical dimensions of AI and data systems.</p>
-              </div>
+        <div class="csr-story-grid">
+          <div class="csr-story-body reveal">
+            <div class="story-label">Africa First</div>
+            <h2>Structural commitment, not seasonal charity</h2>
+            <p>Our social commitments are embedded in how we hire, what we build, and who we partner with. They appear in every new cohort of interns we bring through the GreaterHeight Academy, in every pro-bono engagement we commit to, and in every responsible technology decision we make on behalf of our clients.</p>
+            <p>We do not separate the work from the responsibility. Building technology for Africa means building technology that works for everyone in Africa — not just the clients who can afford enterprise pricing.</p>
+            <div class="principle-bar">
+              <p>Technology built with responsibility has more commercial value. We believe that — and we build our practice to demonstrate it.</p>
+            </div>
+          </div>
+          <div class="csr-story-img reveal">
+            <img src="/assets/images/culture/csr/africa-first.jpg" alt="A GreaterHeight engineer training a group of young Nigerians in a technology skills programme" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- CTA BAND -->
     <section class="cta-band">
-      <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2>Partner with us on social impact</h2>
-            <p>Whether you are a non-profit seeking technology support, an organisation looking to co-invest in digital skills development, or a company interested in a CSR partnership, we welcome the conversation.</p>
-          </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
-          </div>
+      <div class="cta-band-inner">
+        <h2>Partner with us on social impact</h2>
+        <p>Whether you are a non-profit seeking technology support, an organisation co-investing in digital skills, or a company interested in a CSR partnership, we welcome the conversation.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn btn-primary">Start the Conversation</a>
+          <a href="/who-we-are/core-purpose-mission/" class="btn btn-outline-white">Our Purpose</a>
         </div>
       </div>
     </section>

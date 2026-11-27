@@ -1002,6 +1002,45 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
+/* === CAREER OPPORTUNITIES ======================== */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(160deg,rgba(14,42,32,.92) 0%,rgba(14,74,56,.75) 60%,rgba(0,100,80,.5) 100%);pointer-events:none;}
+.page-hero.photo-hero .container{position:relative;z-index:1;}
+.section{padding:96px 0;}
+.section-alt{background:var(--bg-alt);}
+.section-teal-lite{background:var(--teal-lite,#e6f4f1);}
+.cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
+.cta-band::before{display:none !important;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);position:relative;z-index:1;display:block !important;}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+/* Discipline grid */
+.discipline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.discipline-card{padding:var(--sp-6);border-radius:10px;background:var(--white);border:1px solid var(--border);transition:box-shadow .2s;}
+.discipline-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);}
+.discipline-icon{width:40px;height:40px;border-radius:8px;background:var(--teal-lite,#e6f4f1);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);}
+.discipline-icon svg{width:20px;height:20px;stroke:var(--teal);fill:none;stroke-width:1.75;}
+.discipline-card h3{font-size:1rem;font-weight:700;margin-bottom:var(--sp-3);}
+.discipline-card p{font-size:.875rem;color:var(--text-muted);line-height:1.6;}
+/* Process steps */
+.process-track{display:flex;gap:0;margin-top:var(--sp-7);position:relative;}
+.process-track::before{content:'';position:absolute;top:28px;left:28px;right:28px;height:2px;background:var(--border);}
+.process-step{flex:1;text-align:center;position:relative;padding:0 var(--sp-3);}
+.process-step-num{width:56px;height:56px;border-radius:50%;background:var(--white);border:2px solid var(--teal);color:var(--teal);font-size:1.1rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto var(--sp-4);position:relative;z-index:1;}
+.process-step h3{font-size:.95rem;font-weight:700;margin-bottom:var(--sp-2);}
+.process-step p{font-size:.825rem;color:var(--text-muted);line-height:1.6;}
+/* Graduate track — split layout */
+.grad-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.grad-img img{width:100%;height:380px;object-fit:cover;border-radius:12px;display:block;}
+.grad-body .grad-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:var(--sp-3);}
+.grad-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;}
+.grad-body p{color:var(--text-muted);line-height:1.75;margin-bottom:var(--sp-4);}
+.track-list{list-style:none;padding:0;margin:var(--sp-4) 0 0;display:flex;flex-direction:column;gap:var(--sp-3);}
+.track-list li{display:flex;align-items:center;gap:var(--sp-3);font-size:.9rem;color:var(--text);}
+.track-dot{width:8px;height:8px;min-width:8px;border-radius:50%;background:var(--teal);}
+@media(max-width:900px){.discipline-grid{grid-template-columns:1fr 1fr;}.process-track{flex-direction:column;}.process-track::before{display:none;}.process-step{padding:var(--sp-4) 0;text-align:left;display:flex;gap:var(--sp-4);align-items:flex-start;}.process-step-num{min-width:56px;margin:0;}.grad-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.discipline-grid{grid-template-columns:1fr;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1390,83 +1429,138 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/culture/career-opportunities/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Culture</span>
+            <span class="page-hero-eyebrow">Our Culture</span>
             <h1 id="hero-heading">Career Opportunities</h1>
             <p class="page-hero-lead">We hire engineers, architects, project leads, data specialists, and digital marketing professionals who want to do meaningful work on real challenges. If that describes you, we would like to hear from you.</p>
             <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Technical</span>
-                <span class="hero-meta-label">& Digital Roles</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Paid</span>
-                <span class="hero-meta-label">Internships</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Clear</span>
-                <span class="hero-meta-label">Interview Process</span>
-              </div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Technical</span><span class="hero-meta-label">&amp; Digital Roles</span></div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Paid</span><span class="hero-meta-label">Internships</span></div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Clear</span><span class="hero-meta-label">Interview Process</span></div>
             </div>
             <div class="hero-ctas">
               <a href="/contact/" class="btn btn-primary">Contact the Talent Team</a>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">What We Hire For</div>
-                <p>Engineers, architects, project leads, data specialists, and digital marketing professionals across our practice areas.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Our Process</div>
-                <p>Respectful of your time: an initial conversation, a practical exercise, and a final conversation with the team you would join.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Graduate Track</div>
-                <p>Structured, mentored, and paid internships in software engineering, data science, cloud computing, and digital marketing.</p>
-              </div>
+              <a href="/culture/career-overview/" class="btn btn-outline-white">Our Culture</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- WHAT WE HIRE — discipline grid -->
     <section class="section section-alt">
       <div class="container">
-        <span class="section-label">Join the Team</span>
-        <h2 class="section-title">How We Hire</h2>
-        <p class="section-lead">Our process is designed to be respectful of your time while giving us enough signal to make a good decision.</p>
-        <div class="feature-grid grid-3" style="margin-top:var(--sp-6);">
-          <article class="feature-card">
-            <h3>Current Openings</h3>
-            <p>We maintain an active roster of open roles across our practice areas. Contact our talent team directly for current opportunities, or to submit a speculative application — we welcome strong profiles at any time.</p>
-          </article>
-          <article class="feature-card">
-            <h3>The Interview Process</h3>
-            <p>An initial conversation, a practical exercise relevant to the role (not abstract whiteboard problems), and a final conversation with the team. We communicate clearly at every stage — including when the answer is no.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Internships & Graduates</h3>
-            <p>Structured, mentored, and paid programmes in software engineering, data science, cloud computing, and digital marketing. A significant number of our current team began their careers at GreaterHeight as interns.</p>
-          </article>
+        <span class="section-label reveal">Practice Areas</span>
+        <h2 class="section-title reveal">What We Hire For</h2>
+        <p class="section-lead reveal">Our team covers five core disciplines, each with specialist and generalist tracks at multiple career stages. Speculative applications are always open — we keep strong profiles on file.</p>
+        <div class="discipline-grid">
+          <div class="discipline-card reveal">
+            <div class="discipline-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Software Engineering</h3>
+            <p>Backend, frontend, full-stack, mobile, and cross-platform engineers across the enterprise and product delivery teams. Experience with modern frameworks and production deployment environments.</p>
+          </div>
+          <div class="discipline-card reveal">
+            <div class="discipline-icon">
+              <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Data &amp; Analytics</h3>
+            <p>Data engineers, analysts, and data scientists working across the data lifecycle — pipeline design, warehousing, BI, and predictive analytics for financial services, healthcare, and enterprise clients.</p>
+          </div>
+          <div class="discipline-card reveal">
+            <div class="discipline-icon">
+              <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Cloud &amp; Infrastructure</h3>
+            <p>Cloud architects, DevOps engineers, and site reliability specialists. We work across AWS, Azure, and GCP, with strong delivery footprints in hybrid enterprise environments.</p>
+          </div>
+          <div class="discipline-card reveal">
+            <div class="discipline-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>AI &amp; Automation</h3>
+            <p>AI engineers, LLM specialists, and automation architects working on enterprise AI implementations, generative AI integrations, and intelligent process automation.</p>
+          </div>
+          <div class="discipline-card reveal">
+            <div class="discipline-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Content strategists, SEO specialists, and social media professionals with a track record delivering measurable results for technology, B2B, and professional services brands.</p>
+          </div>
+          <div class="discipline-card reveal">
+            <div class="discipline-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Project &amp; Programme Management</h3>
+            <p>Delivery-focused project managers and programme leads with experience managing complex multi-stakeholder technology engagements from requirements through live deployment.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band">
+    <!-- OUR PROCESS — visual steps -->
+    <section class="section">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2>Apply or make a speculative enquiry</h2>
-            <p>Whether you are applying for a specific role or making a speculative enquiry about future opportunities, contact our talent team to start the conversation.</p>
+        <span class="section-label reveal">How We Hire</span>
+        <h2 class="section-title reveal">Our Interview Process</h2>
+        <p class="section-lead reveal">Three stages, designed to be respectful of your time while giving us enough signal to make a sound decision. We communicate clearly at every stage — including when the answer is no.</p>
+        <div class="process-track">
+          <div class="process-step reveal">
+            <div class="process-step-num">01</div>
+            <h3>Initial Conversation</h3>
+            <p>A 30-minute call with a member of our talent team. We learn about your background and what you are looking for; you learn about GreaterHeight and the specific role.</p>
           </div>
-          <div class="cta-band-actions">
-            <a href="/contact/" class="btn btn-primary">Contact the Talent Team</a>
+          <div class="process-step reveal">
+            <div class="process-step-num">02</div>
+            <h3>Practical Exercise</h3>
+            <p>A role-relevant practical exercise — not abstract whiteboard problems. We are assessing how you approach the work, not how well you memorise algorithms.</p>
           </div>
+          <div class="process-step reveal">
+            <div class="process-step-num">03</div>
+            <h3>Team Conversation</h3>
+            <p>A final conversation with two or three people from the team you would join. This is as much your opportunity to assess us as it is ours to assess you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRADUATE TRACK — split layout with photo -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="grad-grid">
+          <div class="grad-body reveal">
+            <div class="grad-label">Graduate Track</div>
+            <h2>Internships &amp; Early Careers</h2>
+            <p>A significant number of our current team began their careers at GreaterHeight as interns or graduate hires. Our structured internship programme is paid, mentored, and built to give you real experience — not administrative tasks.</p>
+            <p>We run intakes across software engineering, data science, cloud computing, and digital marketing. Each intern works directly on live client engagements under senior mentorship from their first week.</p>
+            <ul class="track-list">
+              <li><span class="track-dot"></span>Paid programme across all disciplines</li>
+              <li><span class="track-dot"></span>Dedicated senior mentor from day one</li>
+              <li><span class="track-dot"></span>Live client project involvement</li>
+              <li><span class="track-dot"></span>Formal review and conversion pathway</li>
+            </ul>
+          </div>
+          <div class="grad-img reveal">
+            <img src="/assets/images/culture/career-opportunities/graduate-track.jpg" alt="A GreaterHeight intern working alongside a senior engineer in a professional office environment" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="cta-band-inner">
+        <h2>Apply or make a speculative enquiry</h2>
+        <p>Whether you are applying for a specific role or introducing yourself for future opportunities, contact our talent team to start the conversation.</p>
+        <div class="cta-pair">
+          <a href="/contact/" class="btn btn-primary">Contact the Talent Team</a>
+          <a href="/culture/career-overview/" class="btn btn-outline-white">Our Culture</a>
         </div>
       </div>
     </section>

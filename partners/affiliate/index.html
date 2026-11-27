@@ -994,6 +994,23 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
+/* === AFFILIATE PROGRAMME ======================= */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(145deg,rgba(14,42,32,.92) 0%,rgba(14,74,56,.75) 55%,rgba(0,80,60,.45) 100%);pointer-events:none;}
+.page-hero.photo-hero .container{position:relative;z-index:1;}
+.cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
+.cta-band::before{display:none !important;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);position:relative;z-index:1;display:block !important;}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+/* Affiliate story split */
+.affiliate-story{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;padding:96px 0;}
+.affiliate-story .as-img img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:block;}
+.affiliate-story .as-body .as-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:var(--sp-3);}
+.affiliate-story .as-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;}
+.affiliate-story .as-body p{color:var(--text-muted);line-height:1.75;margin-bottom:var(--sp-4);}
+@media(max-width:900px){.affiliate-story{grid-template-columns:1fr;padding:64px 0;}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1383,11 +1400,11 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   <main id="main-content">
 
     <!-- ── HERO ── -->
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/partners/affiliate/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <div class="hero-eyebrow">Partners</div>
+            <div class="hero-eyebrow">Become a Partner</div>
             <h1 id="hero-heading">Affiliate <strong>Programme</strong></h1>
             <p class="page-hero-lead">Earn commission by introducing businesses to GreaterHeight Technologies. Our affiliate programme rewards individuals and organisations with an audience of technology decision-makers.</p>
             <div class="hero-meta">
@@ -1487,6 +1504,21 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
       </div>
     </section>
 
+    <!-- ── WHO IS A GOOD AFFILIATE — STORY SPLIT ── -->
+    <div class="container">
+      <div class="affiliate-story">
+        <div class="as-body reveal">
+          <div class="as-label">Who Thrives in This Programme</div>
+          <h2>Credibility over volume. Warm introductions over broadcast promotion.</h2>
+          <p>The most effective affiliates in this programme are those who already have established relationships with business owners and technology decision-makers — not those chasing link clicks. We prioritise affiliates who can make contextualised, credible introductions over those who promote at scale without depth.</p>
+          <p>If your audience trusts your judgement on technology decisions, your recommendation of GreaterHeight carries real weight. That is what converts — and that is what the programme rewards.</p>
+        </div>
+        <div class="as-img reveal">
+          <img src="/assets/images/partners/affiliate/affiliate-creator.jpg" alt="A Nigerian professional content creator filming a business-focused video in a modern home office setup" loading="lazy">
+        </div>
+      </div>
+    </div>
+
     <!-- ── WHO SHOULD APPLY — SECTORS ── -->
     <section class="section section-alt" aria-labelledby="who-heading">
       <div class="container">
@@ -1546,8 +1578,8 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
           <p class="reveal">If you have an audience of businesses and technology decision-makers, we'd welcome a conversation about joining the programme.</p>
         </div>
         <div class="cta-pair">
-          <a href="/contact/" class="btn-primary">Apply Now</a>
-          <a href="/partners/" class="btn-outline-white">All Partnership Types</a>
+          <a href="/contact/" class="btn btn-primary">Apply to the Programme</a>
+          <a href="/partners/" class="btn btn-outline-white">All Partnership Types</a>
         </div>
       </div>
     </section>

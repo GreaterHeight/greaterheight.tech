@@ -1002,6 +1002,46 @@ footer{background:var(--wine);color:rgba(255,255,255,.88);}
 @media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
 @media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
 @media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
+/* === CAREER OVERVIEW ============================= */
+.page-hero.photo-hero{background-size:cover;background-position:center;min-height:620px;position:relative;overflow:hidden;}
+.page-hero.photo-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(16,42,32,.88) 0%,rgba(14,74,56,.72) 55%,rgba(0,120,100,.45) 100%);pointer-events:none;}
+.page-hero.photo-hero .container{position:relative;z-index:1;}
+.section{padding:96px 0;}
+.section-alt{background:var(--bg-alt);}
+.section-dark{background:var(--forest);color:var(--white);}
+.cta-band{background:var(--forest) !important;padding:96px 0 !important;position:relative;overflow:hidden;}
+.cta-band::before{display:none !important;}
+.cta-band-inner{max-width:900px;margin:0 auto;text-align:center;padding:0 var(--sp-6);position:relative;z-index:1;display:block !important;}
+.cta-band-inner h2{font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:700;color:var(--white);margin-bottom:var(--sp-5);text-align:center;max-width:none;}
+.cta-band-inner p{font-size:var(--ts-base);color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:var(--sp-7);}
+.cta-pair{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+/* Story grid */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-9);align-items:center;}
+.story-grid.flip .story-img{order:2;}
+.story-grid.flip .story-body{order:1;}
+.story-img img{width:100%;height:420px;object-fit:cover;border-radius:12px;display:block;}
+.story-body .story-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);margin-bottom:var(--sp-3);}
+.story-body h2{font-size:clamp(1.5rem,2.8vw,2rem);font-weight:700;margin-bottom:var(--sp-4);line-height:1.25;}
+.story-body p{color:var(--text-muted);line-height:1.75;margin-bottom:var(--sp-4);}
+/* Growth pillars */
+.growth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5);margin-top:var(--sp-7);}
+.growth-card{padding:var(--sp-6);border-radius:10px;border:1px solid rgba(255,255,255,.12);}
+.growth-card .growth-num{font-size:2.4rem;font-weight:800;color:var(--teal-glow);line-height:1;margin-bottom:var(--sp-3);}
+.growth-card h3{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:var(--sp-3);}
+.growth-card p{font-size:.9rem;color:rgba(255,255,255,.65);line-height:1.6;}
+/* Criteria list */
+.criteria-list-2col{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-5);margin-top:var(--sp-5);}
+.criteria-item{display:flex;gap:var(--sp-4);align-items:flex-start;}
+.criteria-check{width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.criteria-check svg{width:14px;height:14px;stroke:var(--white);fill:none;stroke-width:2.5;}
+.criteria-item-body h3{font-size:.95rem;font-weight:700;margin-bottom:var(--sp-2);}
+.criteria-item-body p{font-size:.875rem;color:var(--text-muted);line-height:1.6;}
+/* Stats band */
+.stats-band{background:var(--teal);padding:var(--sp-8) 0;}
+.stats-row-4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-6);text-align:center;}
+.stat-item .stat-val{font-size:2.5rem;font-weight:800;color:var(--white);line-height:1;}
+.stat-item .stat-lbl{font-size:.75rem;font-weight:600;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.08em;margin-top:var(--sp-2);}
+@media(max-width:900px){.story-grid,.story-grid.flip{grid-template-columns:1fr;}.story-grid.flip .story-img,.story-grid.flip .story-body{order:unset;}.growth-grid{grid-template-columns:1fr;}.criteria-list-2col{grid-template-columns:1fr;}.stats-row-4{grid-template-columns:1fr 1fr;gap:var(--sp-5);}}
 footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
 
     </style>
@@ -1390,83 +1430,126 @@ footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-are
   ============================================================ -->
   <main id="main-content">
 
-    <section class="page-hero" aria-labelledby="hero-heading">
+    <!-- HERO -->
+    <section class="page-hero photo-hero" style="background-image:url('/assets/images/culture/career-overview/hero-bg.jpg');" aria-labelledby="hero-heading">
       <div class="container">
         <div class="page-hero-inner">
           <div class="page-hero-content">
-            <span class="page-hero-eyebrow">Culture</span>
+            <span class="page-hero-eyebrow">Our Culture</span>
             <h1 id="hero-heading">Career Overview</h1>
-            <p class="page-hero-lead">GreaterHeight Technologies is a place where technology professionals grow — not just in technical skill, but in the judgment, leadership, and commercial awareness that make the difference between a good engineer and a great one.</p>
+            <p class="page-hero-lead">GreaterHeight Technologies is a place where technology professionals grow — not just in technical skill, but in the judgment, leadership, and commercial awareness that separate a good engineer from a great one.</p>
             <div class="hero-meta" style="margin-top:var(--sp-5);">
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Remote</span>
-                <span class="hero-meta-label">First Culture</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">4</span>
-                <span class="hero-meta-label">Global Locations</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-value">Mentorship</span>
-                <span class="hero-meta-label">Driven Growth</span>
-              </div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Remote</span><span class="hero-meta-label">First Culture</span></div>
+              <div class="hero-meta-item"><span class="hero-meta-value">4</span><span class="hero-meta-label">Global Locations</span></div>
+              <div class="hero-meta-item"><span class="hero-meta-value">Mentorship</span><span class="hero-meta-label">Driven Growth</span></div>
             </div>
             <div class="hero-ctas">
               <a href="/culture/career-opportunities/" class="btn btn-primary">View Current Openings</a>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="hero-card-stack">
-              <div class="hero-fact-card">
-                <div class="fact-label">Real Work</div>
-                <p>Our team works on real systems, at real scale, for demanding clients across some of the world's most dynamic technology markets.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Genuine Investment</div>
-                <p>Structured mentorship, continuous learning budgets, and diverse project exposure — not performance review checkboxes.</p>
-              </div>
-              <div class="hero-fact-card">
-                <div class="fact-label">Global Reach</div>
-                <p>Our team is distributed across Lagos, London, the US, and Dubai — with a culture built for collaboration across time zones.</p>
-              </div>
+              <a href="/contact/" class="btn btn-outline-white">Talk to the Team</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- STORY — The GreaterHeight Career Experience -->
     <section class="section section-alt">
       <div class="container">
-        <span class="section-label">Life at GreaterHeight</span>
-        <h2 class="section-title">What Makes Us Different</h2>
-        <p class="section-lead">An African technology company operating at global standards — which means the technical challenges are genuine, the clients are demanding, and the opportunity to learn is constant.</p>
-        <div class="feature-grid grid-3" style="margin-top:var(--sp-6);">
-          <article class="feature-card">
-            <h3>Why GreaterHeight</h3>
-            <p>An African technology company at global standards — real technical challenges, demanding clients, and an opportunity to grow that few firms in the continent can match.</p>
-          </article>
-          <article class="feature-card">
-            <h3>What We Look For</h3>
-            <p>Strong fundamentals, genuine curiosity, and clear communication. We care more about how you think and whether you take responsibility for quality than the specific technologies on your CV.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Our Team</h3>
-            <p>Distributed across Lagos, London, the US, and Dubai. Primarily remote. A diverse team by background and perspective — which makes us better at the work and better as a company.</p>
-          </article>
+        <div class="story-grid">
+          <div class="story-body reveal">
+            <div class="story-label">The GreaterHeight Career</div>
+            <h2>An African technology company operating at global standards</h2>
+            <p>That means the technical challenges are genuine, the clients are demanding, and the opportunity to learn is constant. We build systems at real scale, for real enterprises — across financial services, telecoms, healthcare, and digital commerce in Africa and beyond.</p>
+            <p>Our team is primarily remote and distributed across Lagos, London, Dubai, and the United States. The work environment is built for professional growth, genuine investment in people, and the kind of career momentum that most technology companies describe but few actually deliver.</p>
+            <a href="/culture/career-opportunities/" class="btn btn-primary" style="margin-top:var(--sp-4);">See Open Roles</a>
+          </div>
+          <div class="story-img reveal">
+            <img src="/assets/images/culture/career-overview/team-at-work.jpg" alt="GreaterHeight engineers collaborating on a project in a modern Lagos office" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-band">
+    <!-- STATS BAND -->
+    <div class="stats-band">
       <div class="container">
-        <div class="cta-band-inner">
-          <div>
-            <h2>See current openings</h2>
-            <p>If the GreaterHeight culture sounds like a fit, explore our current open roles.</p>
+        <div class="stats-row-4">
+          <div class="stat-item"><div class="stat-val">14+</div><div class="stat-lbl">Years in Operation</div></div>
+          <div class="stat-item"><div class="stat-val">4</div><div class="stat-lbl">Global Locations</div></div>
+          <div class="stat-item"><div class="stat-val">50+</div><div class="stat-lbl">Enterprise Clients</div></div>
+          <div class="stat-item"><div class="stat-val">100%</div><div class="stat-lbl">Mentorship Access</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHAT REAL GROWTH LOOKS LIKE — dark section -->
+    <section class="section section-dark">
+      <div class="container">
+        <span class="section-label reveal" style="color:var(--teal-glow);">Career Development</span>
+        <h2 class="section-title light reveal">What Real Growth Looks Like</h2>
+        <p class="section-lead light reveal">We do not describe career development through HR policy language. We describe it through what we actually do — structured mentorship, diverse project exposure, and investment in the whole professional.</p>
+        <div class="growth-grid">
+          <div class="growth-card reveal">
+            <div class="growth-num">01</div>
+            <h3>Real Work at Real Scale</h3>
+            <p>From day one, our team works on production systems for demanding clients. There is no long onboarding queue of inconsequential tasks — you are on live engagements from the start.</p>
           </div>
-          <div class="cta-band-actions">
-            <a href="/culture/career-opportunities/" class="btn btn-primary">View Current Openings</a>
+          <div class="growth-card reveal">
+            <div class="growth-num">02</div>
+            <h3>Structured Mentorship</h3>
+            <p>Every team member is paired with a senior mentor across their practice area. Mentorship at GreaterHeight is a structured programme, not an informal arrangement that may or may not happen.</p>
           </div>
+          <div class="growth-card reveal">
+            <div class="growth-num">03</div>
+            <h3>Continuous Learning Investment</h3>
+            <p>We provide learning budgets, platform access, conference sponsorship, and allocated learning time. We expect our team to grow continuously — and we invest accordingly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE LOOK FOR — split image + criteria list -->
+    <section class="section">
+      <div class="container">
+        <div class="story-grid flip">
+          <div class="story-img reveal">
+            <img src="/assets/images/culture/career-overview/mentorship-session.jpg" alt="A senior GreaterHeight engineer in a mentorship session with a junior colleague, reviewing code together" loading="lazy">
+          </div>
+          <div class="story-body reveal">
+            <div class="story-label">What We Look For</div>
+            <h2>Strong fundamentals. Genuine curiosity. Clear communication.</h2>
+            <p>We care more about how you think and whether you take responsibility for quality than the specific technologies listed on your CV. The right person for GreaterHeight takes the work seriously, communicates honestly, and wants to build a career — not just fill a role.</p>
+            <div class="criteria-list-2col">
+              <div class="criteria-item">
+                <div class="criteria-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="criteria-item-body"><h3>Technical Fundamentals</h3><p>Solid grounding in your core discipline — engineering, data, cloud, or digital marketing.</p></div>
+              </div>
+              <div class="criteria-item">
+                <div class="criteria-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="criteria-item-body"><h3>Intellectual Curiosity</h3><p>Genuine interest in the problem, not just the deliverable. We want people who ask questions.</p></div>
+              </div>
+              <div class="criteria-item">
+                <div class="criteria-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="criteria-item-body"><h3>Ownership Mindset</h3><p>People who take responsibility for quality and follow through without needing to be managed to the last detail.</p></div>
+              </div>
+              <div class="criteria-item">
+                <div class="criteria-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="criteria-item-body"><h3>Clear Communication</h3><p>The ability to explain technical decisions to both technical and non-technical stakeholders.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="cta-band-inner">
+        <h2>Ready to build something worth building?</h2>
+        <p>Explore our current open roles or contact our talent team directly. We welcome strong profiles at any time — including speculative applications.</p>
+        <div class="cta-pair">
+          <a href="/culture/career-opportunities/" class="btn btn-primary">View Current Openings</a>
+          <a href="/contact/" class="btn btn-outline-white">Talk to the Team</a>
         </div>
       </div>
     </section>
