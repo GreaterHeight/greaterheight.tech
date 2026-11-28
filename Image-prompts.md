@@ -1455,4 +1455,286 @@ Placement: Challenge split section — left image column
 
 ---
 
+---
+
+## Custom Software Development Page
+
+## [engineering/custom-software/hero.jpg]
+Page Name: /what-we-do/engineering/custom-software/
+Prompt: Wide-angle shot of a modern software engineering office in Lagos. Four Nigerian professionals — two men and two women, ages 28 to 42, mixed smart-casual attire — gathered around a large conference table covered with printed architecture diagrams, sticky notes, and two open laptops. One person points to something on a wall-mounted monitor showing a system diagram. Natural daylight from large windows on the left. Forest green accent wall in the background with a whiteboard partially visible. The scene feels collaborative, focused, and professional. Shot at f/2.0 on 24mm, slight elevation above table height. No stock-photo poses; candid working moment.
+
+Path: /assets/images/engineering/custom-software/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section — full-bleed background image with dark gradient overlay. Subject cluster offset slightly left of centre.
+
+---
+
+## [engineering/custom-software/discovery.jpg]
+Page Name: /what-we-do/engineering/custom-software/
+Prompt: Two Nigerian professionals in a focused working session at a glass-top desk. A woman in her mid-thirties (product manager, light grey blazer) and a man in his late twenties (lead engineer, dark polo shirt) are studying a whiteboard filled with hand-drawn system flow diagrams, boxes, and arrows. The man holds a marker and gestures to part of the diagram. A laptop is open between them showing a database schema. Office environment, afternoon natural light from one side. Shot on 50mm at f/1.8, eye level. Candid and genuine — not posed. Colour accent: teal-coloured sticky notes on the whiteboard.
+
+Path: /assets/images/engineering/custom-software/discovery.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: "What Custom Actually Means" split section — full-height left visual column.
+
+---
+
+## [engineering/custom-software/clients-established.jpg]
+Page Name: /what-we-do/engineering/custom-software/
+Prompt: Nigerian operations manager (man, mid-forties, in a crisp white shirt and dark trousers) sitting at a large desk with two monitors displaying business dashboards and spreadsheets. He holds a pen and leans forward reviewing printed reports on his desk. Busy modern Lagos office background with colleagues visible out of focus. Overhead fluorescent and natural light. Shot on 85mm at f/2.2, eye level. Professional and focused, not staged. The scene feels like a real working environment under real workload.
+
+Path: /assets/images/engineering/custom-software/clients-established.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: "Who It's For" section — Established Businesses card image.
+
+---
+
+## [engineering/custom-software/clients-startup.jpg]
+Page Name: /what-we-do/engineering/custom-software/
+Prompt: Two young Nigerian startup founders (a man and a woman, both late twenties) working side-by-side at a wooden table in a co-working space. Both have laptops open. The woman is showing the man something on her screen; both are looking at it with engaged expressions. Modern open-plan co-working background — plants, exposed concrete walls, other workers in soft focus. Afternoon light from windows behind them. Shot on 50mm at f/2.0, eye level. Natural and candid, not promotional.
+
+Path: /assets/images/engineering/custom-software/clients-startup.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: "Who It's For" section — Product Startups card image.
+
+---
+
+## [engineering/custom-software/clients-enterprise.jpg]
+Page Name: /what-we-do/engineering/custom-software/
+Prompt: Nigerian enterprise IT director (woman, early fifties, formal navy blazer and pearl earrings) standing at the head of a boardroom table, presenting to four seated executives. She gestures toward a projected slide showing a technology migration roadmap with phases and timelines. Glass-walled modern boardroom with a Lagos cityscape faintly visible through the windows. Overhead lighting. Shot on 35mm at f/2.5 from across the table. Professional, authoritative, candid.
+
+Path: /assets/images/engineering/custom-software/clients-enterprise.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: "Who It's For" section — Enterprises card image.
+
+---
+
+## [engineering/custom-software/team.jpg]
+Page Name: /what-we-do/engineering/custom-software/
+Prompt: Five-person GreaterHeight Technologies engineering team gathered around a large monitor during a sprint review session in their Lagos office. Mix of men and women, ages 25 to 40, smart-casual attire. The monitor shows a web application being reviewed. One person points to the screen; others look engaged. The office has forest-green wall panels and teal-accented branding elements. Afternoon natural light. Shot on 24mm at f/2.8, slight low angle looking up at the team. Real team dynamic — not a stock photo pose.
+
+Path: /assets/images/engineering/custom-software/team.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Proof Strip section — left visual column alongside statistics.
+
+---
+
 *Last updated: 2026-11-28*
+
+## Cross Platform App Development Page
+
+## engineering/cross-platform/hero.jpg
+Page Name: /what-we-do/engineering/cross-platform/
+Prompt: A Nigerian professional in a crisp white shirt holds a smartphone in his right hand and a tablet in his left, both displaying the same mobile app interface, in a bright open-plan office in Lagos with floor-to-ceiling windows and natural afternoon light. He looks at the tablet screen with a focused, confident expression. Shot from slightly above at a slight angle. Other colleagues working at desks are softly blurred in the background. Professional editorial photography, natural window light, true-to-life colour, candid professional feel.
+
+Path: /assets/images/engineering/cross-platform/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section full-bleed background
+
+## engineering/cross-platform/codebase.jpg
+Page Name: /what-we-do/engineering/cross-platform/
+Prompt: A Black male software developer in his mid-thirties stands at a sit-stand desk, leaning forward with one hand on the desk edge, examining an ultrawide curved monitor. The monitor shows a code editor open on the left side of the screen and two mobile device simulators on the right — one showing an iPhone interface and one showing an Android interface, both displaying the same app. The office is modern and well-lit with natural daylight from a window to the right. The scene has depth — a secondary monitor and some plants are visible behind him. Candid professional photography style, natural office light, sharp focus on the developer and screen.
+
+Path: /assets/images/engineering/cross-platform/codebase.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: "One Codebase" split section left visual panel
+
+## engineering/cross-platform/testing.jpg
+Page Name: /what-we-do/engineering/cross-platform/
+Prompt: A female QA engineer sits at a testing workstation with four smartphones and two tablets mounted on angled stands arranged in a row in front of her, each displaying the same app under test. She is using a stylus to interact with one of the phones while glancing at a laptop screen showing test logs. The devices include a mix of iOS and Android. The workstation has cables, charging bricks, and sticky notes with test notes. Bright, even studio-style office lighting. Shot from a three-quarter angle. Professional photography, sharp focus on the devices and tester, natural workplace context.
+
+Path: /assets/images/engineering/cross-platform/testing.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Proof split section right visual panel
+
+---
+
+## Web Application Development Page
+
+## engineering/web-application/hero.jpg
+Page Name: /what-we-do/engineering/web-application/
+Prompt: Three professionals — two women and one man — sit around a glass-topped meeting table in a bright, modern Lagos office with floor-to-ceiling windows behind them. The largest wall-mounted monitor shows a detailed web application dashboard with charts, navigation menus, and data tables. One woman is standing slightly, gesturing toward the screen while the others listen and take notes. The room has a whiteboard with diagrams visible to the side. Natural afternoon light from the windows creates warm shadows. Professional corporate photography, candid collaboration pose, sharp focus on the team and the displayed application interface.
+
+Path: /assets/images/engineering/web-application/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section right-panel split image
+
+## engineering/web-application/portals.jpg
+Page Name: /what-we-do/engineering/web-application/
+Prompt: A Nigerian professional woman in her late twenties sits at a clean desk in a modern open-plan office, logged into a customer portal on a laptop. The screen shows a well-designed account management interface with a sidebar navigation, status cards, and a list of records. She is reading the screen with focused attention, one hand resting on the trackpad. Soft natural light from a nearby window. Professional photography style, shallow depth of field with the screen and face both in focus, contemporary office environment.
+
+Path: /assets/images/engineering/web-application/portals.jpg
+Dimensions: 900 × 600 px minimum, 3:2
+Placement: Customer and Partner Portals app-type card image
+
+## engineering/web-application/dashboard.jpg
+Page Name: /what-we-do/engineering/web-application/
+Prompt: A business analyst in a crisp button-down shirt reviews an analytics dashboard on a large widescreen monitor. The screen displays bar charts, line graphs, and KPI summary cards in a clean, modern layout. He is leaning slightly forward in an ergonomic chair, holding a pen and a notepad with handwritten notes beside the keyboard. The office is bright with neutral tones, two additional monitors visible in the background. Professional photography, sharp and well-lit, candid working pose.
+
+Path: /assets/images/engineering/web-application/dashboard.jpg
+Dimensions: 900 × 600 px minimum, 3:2
+Placement: Operational Dashboards app-type card image
+
+## engineering/web-application/workflow.jpg
+Page Name: /what-we-do/engineering/web-application/
+Prompt: A team lead in a coloured shirt sits at a standing desk station, reviewing a business process management screen on a laptop. A second monitor to his right shows a workflow queue with approval stages and status indicators. His hand is on the mouse. Behind him, a team member at another workstation is also visible but slightly out of focus. The office is bright with warm tones. Shot from a slight side angle. Candid professional photography, real workplace environment, natural light blended with overhead lighting.
+
+Path: /assets/images/engineering/web-application/workflow.jpg
+Dimensions: 900 × 600 px minimum, 3:2
+Placement: Workflow and Business Process Tools app-type card image
+
+## engineering/web-application/security.jpg
+Page Name: /what-we-do/engineering/web-application/
+Prompt: A focused cybersecurity engineer sits at a dual-monitor workstation in a secure operations environment. The left screen shows a security event monitoring dashboard with alert severity indicators and log entries. The right screen displays a code review panel. He is writing notes on a notepad beside the keyboard, expression concentrated. The room has subdued ambient lighting with the screens as the primary light source. Some framed IT certifications visible on the wall behind him. Professional photography style, slightly cinematic mood, sharp focus on the engineer and the monitoring screens.
+
+Path: /assets/images/engineering/web-application/security.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Security and Reliability split section left image panel
+
+---
+
+## Mobile App Development Page
+
+## engineering/mobile-app/hero.jpg
+Page Name: /what-we-do/engineering/mobile-app/
+Prompt: A developer and a UI designer sit side by side at a bright, well-equipped studio workstation reviewing mobile app screens on a large tablet propped between them. Several smartphones with the app open are arranged on the desk, along with sticky notes and wireframe sketches. Both are focused on the tablet screen, one pointing at a UI element. Natural light streams in from a window on the left. Laptops are visible in the background. Professional photography, warm creative studio atmosphere, shallow depth of field with both people and the tablet in focus.
+
+Path: /assets/images/engineering/mobile-app/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background image (full-bleed, overlaid with dark gradient)
+
+## engineering/mobile-app/proof.jpg
+Page Name: /what-we-do/engineering/mobile-app/
+Prompt: A wide-angle shot of a modern app development team in a large open-plan workspace. Multiple engineers and designers are at their workstations, some with dual monitors showing code or design tools, others in small impromptu groups discussing around a standing desk. Phones and tablets with app interfaces on screen are scattered around the space. The environment is bright and professional, with large windows letting in natural light. Shot from a slightly elevated angle to capture the energy of the full team. Professional commercial photography.
+
+Path: /assets/images/engineering/mobile-app/proof.jpg
+Dimensions: 1600 × 900 px minimum, 16:9
+Placement: Proof band background image (decorative, overlaid with solid red gradient)
+
+## engineering/mobile-app/standards.jpg
+Page Name: /what-we-do/engineering/mobile-app/
+Prompt: A mobile developer sits at a clean desk reviewing app performance metrics on a laptop. He holds a test phone in his right hand with the app open and running. The laptop screen shows a performance dashboard with CPU, memory, and frame-rate metrics. A second phone and a tablet are on the desk beside a notepad with handwritten notes. The workspace is tidy and professional, natural light from a window behind him. Shot from a three-quarter angle. Candid professional photography, real working environment, sharp focus on the developer and the test devices.
+
+Path: /assets/images/engineering/mobile-app/standards.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Our Standards split section right image panel
+
+---
+
+## MVP Development Page
+
+## engineering/mvp/hero.jpg
+Page Name: /what-we-do/engineering/mvp/
+Prompt: A founder and a software engineer stand together at a whiteboard in a small, well-lit meeting room. The whiteboard is covered in user journey diagrams, decision trees, and prioritised feature notes written in different coloured markers. The founder is mid-sentence, one hand gesturing at the board; the engineer has a marker in hand and is nodding. A laptop and scattered printed wireframe pages are on the table in the foreground. The atmosphere is focused and collaborative. Natural light from a window on the right. Professional commercial photography, candid working moment, shallow depth of field with both people in focus.
+
+Path: /assets/images/engineering/mvp/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background image (full-bleed, left column, overlaid with dark gradient fade to right)
+
+## engineering/mvp/founders-session.jpg
+Page Name: /what-we-do/engineering/mvp/
+Prompt: Two startup founders — a man and a woman — sit across from each other at a round table in a bright, minimal co-working space. Between them on the table are printed user research notes, sticky note clusters, and rough hand-drawn wireframe sketches. The woman is writing on a notepad; the man leans forward reviewing a printed sheet. A laptop is open beside the notes but angled away. The room has large windows with natural light and a couple of potted plants in the corner. Professional commercial photography, warm and energised tone, candid and documentary-style.
+
+Path: /assets/images/engineering/mvp/founders-session.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Image panel right side of the "Signs You Are Ready" content-image split
+
+---
+
+## SaaS Development Page
+
+## engineering/saas/hero.jpg
+Page Name: /what-we-do/engineering/saas/
+Prompt: A product team of four people stands and sits around a long conference table in a modern, well-lit boardroom. The wall behind them displays a large screen showing a SaaS analytics dashboard with charts for subscriber growth, monthly recurring revenue, and churn rate. The person at the head of the table points at the screen and addresses the group. Laptops are open on the table, some showing dashboard views. The atmosphere is alert and collaborative. Professional commercial photography, natural and overhead office lighting, wide shot capturing the full group and the screen.
+
+Path: /assets/images/engineering/saas/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section full-bleed background image (overlaid with dark upward gradient)
+
+## engineering/saas/architecture.jpg
+Page Name: /what-we-do/engineering/saas/
+Prompt: A backend engineer sits at a wide curved-screen monitor in a dimly lit office. The monitor displays a system architecture diagram in a dark-mode IDE — showing tenant isolation layers, database schemas, and API gateway configuration as a network of connected nodes and labelled boxes. The engineer leans forward with one elbow on the desk, studying the diagram with focused concentration. A second monitor shows code on the left. The scene is atmospheric: soft ambient blue-green light from the screens. Professional commercial photography, shallow depth of field on the engineer and monitor, candid working moment.
+
+Path: /assets/images/engineering/saas/architecture.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Left image panel of the Architecture Decisions split section
+
+---
+
+## Software App Maintenance Page
+
+## engineering/maintenance/hero.jpg
+Page Name: /what-we-do/engineering/maintenance/
+Prompt: A DevOps engineer in his late thirties sits at a curved workstation in a network operations centre. The room behind him has a wall of large monitors showing server status dashboards — green uptime bars, response time graphs, and alert panels. The engineer's immediate workspace has two screens: one showing a monitoring dashboard with all systems green, and another showing a command-line terminal where he is actively resolving a notification. His posture is calm and in control. Professional commercial photography, blue and teal ambient lighting from the screens, wide shot capturing both the engineer and the status wall behind him.
+
+Path: /assets/images/engineering/maintenance/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section full-bleed background image (left panel, overlaid with dark directional gradient)
+
+## engineering/maintenance/review.jpg
+Page Name: /what-we-do/engineering/maintenance/
+Prompt: Two software engineers — one man and one woman — stand at a standing desk reviewing a system health dashboard on a large wall-mounted monitor. The dashboard shows server response time trends over a 30-day period, with a highlighted anomaly in the middle of the chart. The man points at the chart while the woman takes notes on a notepad. On the desk are open laptops, coffee mugs, and printed report sheets. The office is modern, well-lit with natural light from a window to the left. Professional commercial photography, warm and analytical atmosphere, candid moment of collaborative review.
+
+Path: /assets/images/engineering/maintenance/review.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Right image panel of the "What Maintenance Covers" content split section
+
+---
+
+## Quality Assurance & Testing Page
+
+## engineering/qa/testing.jpg
+Page Name: /what-we-do/engineering/qa/
+Prompt: A QA engineer — a woman in her early thirties — sits at a wide desk with two monitors. The left monitor shows a test runner interface with a list of automated test results: most lines are green checkmarks indicating passing tests, but two lines are highlighted in red with failure messages. The right monitor shows test coverage statistics as a percentage bar chart across different modules. On the desk beside her keyboard are open notebooks with handwritten test case notes and a coffee mug. The office is bright with natural light from large windows. Professional commercial photography, warm and focused atmosphere, shallow depth of field on the screens and her face in profile.
+
+Path: /assets/images/engineering/qa/testing.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Left image panel of the "What We Test" testing types section
+
+---
+
+## Product Maintenance & Support Page
+
+## engineering/support/hero.jpg
+Page Name: /what-we-do/engineering/support/
+Prompt: A support engineer in his early forties stands at a height-adjustable desk in a modern open-plan office. He has two large monitors: the left shows a ticketing dashboard with support tickets sorted by priority — a red "Critical" row at the top, then amber "High" rows, then several green "Resolved" rows below. The right monitor shows a server health timeline graph with uptime statistics for the past 30 days. He wears a smart dark blazer over a collared shirt, hands resting on the keyboard. Behind him other engineers work at their stations. Natural light comes from large windows to one side. Professional commercial photography, clean and organised atmosphere, calm and in-control mood.
+
+Path: /assets/images/engineering/support/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Full-bleed hero background image with dark overlay gradient
+
+## engineering/support/team.jpg
+Page Name: /what-we-do/engineering/support/
+Prompt: Two support engineers — a man and a woman — sit side by side at a shared workstation. The man, in his mid-thirties, is on the phone with a client, speaking calmly and making notes on a yellow pad. The woman beside him, in her late twenties, is typing at a keyboard, both looking at the same open ticket on a shared monitor showing a production incident log with timestamps, severity labels, and status updates. The desk has two laptops, a desk phone, and coffee mugs. The office has open-plan seating visible in the background. Professional commercial photography, collaborative and focused atmosphere, candid documentary style, warm natural light.
+
+Path: /assets/images/engineering/support/team.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Left image panel of the "When Things Escalate" escalation path section
+
+---
+
+## Product Prototyping Page
+
+## engineering/prototyping/sketch.jpg
+Page Name: /what-we-do/engineering/prototyping/
+Prompt: A close-up of a designer's desk covered in large A3 sheets of hand-drawn wireframe sketches for a mobile app. The sheets show rough boxes, arrows, and scribbled labels indicating navigation flows — a login screen, a dashboard, a list view — with sticky notes in yellow and orange annotating user journey decisions. A stylus rests on the top sheet. In the background, slightly out of focus, a laptop is open to a design tool showing early wireframes. The desk also has a glass of water and scattered marker pens. Natural daylight floods the scene from a window to the left. Professional commercial photography, overhead-angled perspective, creative studio atmosphere, slightly documentary in feel.
+
+Path: /assets/images/engineering/prototyping/sketch.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Left hero panel background — the "sketch" side of the diagonal split hero
+
+## engineering/prototyping/rendered.jpg
+Page Name: /what-we-do/engineering/prototyping/
+Prompt: A clean, polished high-fidelity UI prototype displayed on a laptop and a smartphone side by side on a white minimalist desk. The laptop screen shows a fintech dashboard: a sidebar with navigation icons, a main panel with account balance figures, two line charts showing spending trends over 30 days, and a transactions list with category tags. The smartphone beside it shows the same dashboard adapted for mobile with a bottom navigation bar. The desk is white with no clutter except a single potted succulent in the far corner. The background is a plain light grey wall. Professional product photography, studio lighting, clean and aspirational aesthetic, sharp focus on both screens.
+
+Path: /assets/images/engineering/prototyping/rendered.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Right hero panel — the "rendered product" side of the diagonal split hero
+
+## engineering/prototyping/session.jpg
+Page Name: /what-we-do/engineering/prototyping/
+Prompt: A product designer — a woman in her late twenties — sits across a small table from a user in a usability testing session. The user, a man in his forties, is interacting with a clickable prototype on a tablet, tapping through screens with focused attention. The designer has a clipboard on the table with a printed test script and a pen in hand, watching the user's interactions carefully and making notes. Through a glass partition in the background, two other team members sit and observe, one with a laptop open. The testing room is a clean, well-lit research studio with neutral walls. Professional commercial photography, candid documentary style, collaborative and focused atmosphere, warm natural light.
+
+Path: /assets/images/engineering/prototyping/session.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Right image panel of the "What Questions We Answer" section
