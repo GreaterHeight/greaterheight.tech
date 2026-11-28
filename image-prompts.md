@@ -1738,3 +1738,87 @@ Prompt: A product designer — a woman in her late twenties — sits across a sm
 Path: /assets/images/engineering/prototyping/session.jpg
 Dimensions: 1200 × 800 px minimum, 3:2
 Placement: Right image panel of the "What Questions We Answer" section
+
+---
+
+## AI & Automation Pages
+
+## ai/consulting/hero.jpg
+Page Name: /what-we-do/ai/consulting/
+Prompt: A senior AI consultant — a Black Nigerian woman in her mid-forties, dressed in a sharp charcoal blazer over a white blouse — sits at a wide conference table in a sleek corporate meeting room in Lagos. Across from her are three business leaders listening attentively: a man in a traditional agbada taking notes on a tablet, a younger woman with natural hair in a tailored suit, and an older male executive with reading glasses. On the wall behind the consultant is a large display showing a data flow diagram with interconnected nodes labelled with AI workflow stages. The table has open laptops, printed reports, and a water carafe. Floor-to-ceiling windows behind the clients reveal a Lagos skyline at golden hour. Professional commercial photography, wide-angle editorial style, warm natural and artificial light, sharp foreground focus, slightly shallow depth of field on background.
+
+Path: /assets/images/ai/consulting/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Right column of the split hero — the consultant-and-client image panel filling 48% of viewport width
+
+## ai/consulting/assessment.jpg
+Page Name: /what-we-do/ai/consulting/
+Prompt: A close-up overhead view of a workspace during an AI readiness assessment session. A large printed audit framework is spread across a wooden desk, divided into labelled columns: Data Infrastructure, Governance, Talent, Use Cases. Post-it notes in four colours are arranged across the columns — green for ready, yellow for partial, red for gaps, blue for opportunities. Two hands are visible: one man's hand placing a yellow post-it note in the Governance column, and one woman's hand pointing to a cell in the Data Infrastructure column with a pen. Nearby on the desk are two open laptops, a coffee mug, and a ruled notebook with handwritten assessment notes. The desk is in a bright, natural-light co-working space. Commercial photography, eye-level overhead shot, clean and organised aesthetic, shallow depth of field.
+
+Path: /assets/images/ai/consulting/assessment.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Right image panel of the "What Our Engagement Delivers" deliverables section
+
+## ai/augmented-development/hero.jpg
+Page Name: /what-we-do/ai/augmented-development/
+Prompt: A software engineering team at work in a modern open-plan technology office. In the foreground, a young Black male developer in his late twenties sits at a curved desk with two monitors: the left monitor shows a code editor with an AI code completion suggestion highlighted in a teal tooltip, the right monitor displays a CI/CD pipeline dashboard with green build indicators. Beside him, a woman engineer leans over slightly, reviewing his screen and pointing at the AI suggestion. In the background, three more engineers at adjacent desks, all focused on their screens, creating an atmosphere of quiet collaborative momentum. The office has exposed brick, pendant lighting, and a glass partition wall. Professional editorial photography, natural window light mixed with warm artificial overhead light, candid team activity, sharp main subjects.
+
+Path: /assets/images/ai/augmented-development/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Full-bleed hero background image behind the glassmorphism content overlay
+
+## ai/augmented-development/team.jpg
+Page Name: /what-we-do/ai/augmented-development/
+Prompt: A pair-programming session between a GreaterHeight engineer and a client developer at a standing desk. Both are men — one in his thirties wearing a printed Ankara shirt, the other in his forties in a casual navy polo. The standing desk has a monitor showing a code review interface with AI-generated comments highlighted in yellow sidebar annotations alongside human review comments. The man in the Ankara shirt holds a stylus pen, gesturing at a specific block of code on the screen. The man in the navy polo has his arms folded, nodding and listening. The background shows a bright technology office with a floor plant and other workstations with colleagues visible but blurred. Natural daylight from large windows. Commercial photography, candid editorial style, warm tones.
+
+Path: /assets/images/ai/augmented-development/team.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Image panel within the "How It Works" process section
+
+## ai/generative-ai-llms/hero.jpg
+Page Name: /what-we-do/ai/generative-ai-llms/
+Prompt: A specialist AI engineer — a Nigerian woman in her early thirties with locs, wearing a dark teal high-neck top — sits alone in a dimly lit server room corridor. She holds an open laptop showing a JSON prompt structure and model output side by side in a split-pane terminal interface. The corridor behind her has blinking blue indicator lights on stacked server racks receding into the distance, creating a dramatic tunnel of light. Her face is lit by the glow of the laptop screen. The atmosphere is concentrated and technical. Professional editorial photography, cinematic blue and teal colour palette, wide-aperture lens with shallow depth of field, dramatic depth and bokeh on server lights.
+
+Path: /assets/images/ai/generative-ai-llms/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Full-bleed dark atmospheric hero background image
+
+## ai/generative-ai-llms/responsible.jpg
+Page Name: /what-we-do/ai/generative-ai-llms/
+Prompt: A product team gathers around a conference table in a bright meeting room for an AI governance review. The table has four people: a senior woman in her fifties pointing at a printed AI risk assessment document, a young man across from her with a laptop open to a model evaluation dashboard, a third colleague with a physical notebook, and a fourth person at the end reviewing a slide deck on a wall-mounted screen showing an "Output Quality" chart. The slide on the screen is clean and minimal — white background, one bar chart in green, two data points in red flagged for review. The room has a large window behind the group showing soft daylight. Commercial photography, editorial documentary style, professional group dynamics, natural light dominant.
+
+Path: /assets/images/ai/generative-ai-llms/responsible.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Right image column in the "Responsible by Design" section
+
+## ai/agents-automation/hero.jpg
+Page Name: /what-we-do/ai/agents-automation/
+Prompt: A lead automation engineer — a tall Nigerian man in his late thirties in a dark long-sleeve shirt — stands confidently in front of a large wall-mounted monitor in a technology operations room. The monitor behind him shows an orchestration dashboard: multiple AI agent nodes represented as circular icons connected by animated flow lines, with status indicators (green running, yellow waiting, one red flagged). He is in mid-explanation, gesturing toward one node cluster on the screen with his right hand. Around him are other team members at workstations — a woman in glasses typing, a younger man reviewing logs on a tablet. The room has a blue-tinted ambient glow from the screens. Professional editorial photography, wide-angle, cinematic depth of field, blue and teal ambient lighting mixed with overhead warm light.
+
+Path: /assets/images/ai/agents-automation/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Right image panel of the diagonal-split hero, filling the right 50% of the viewport
+
+## ai/agents-automation/process.jpg
+Page Name: /what-we-do/ai/agents-automation/
+Prompt: A close-up of a technical whiteboard in a workshop session. The whiteboard shows a hand-drawn agent workflow diagram: boxes labelled "Trigger", "Agent Router", "Data Agent", "Decision Node", and "Output Handler" connected by arrows with handwritten labels — "condition met", "fetch records", "evaluate", "escalate". A male engineer's hand is mid-stroke adding a new arrow between "Decision Node" and a new box being drawn. He is holding a blue whiteboard marker. At the bottom of the whiteboard are two sticky notes — one green (approved), one orange (review). In the background, partially visible, two colleagues sit with printouts of an earlier version of the diagram. Natural light floods the room from the left. Commercial photography, candid documentary style, tight crop, shallow depth of field.
+
+Path: /assets/images/ai/agents-automation/process.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Sticky sidebar image panel within the "How We Build Your Agent" process section
+
+## ai/production-assurance/hero.jpg
+Page Name: /what-we-do/ai/production-assurance/
+Prompt: A production AI monitoring engineer — a focused Black Nigerian woman in her mid-thirties wearing a crisp white shirt — sits in a modern operations centre at a curved multi-monitor workstation. The three monitors in front of her show: a live model performance dashboard with time-series accuracy charts, a drift detection alert panel with one amber warning highlighted, and an infrastructure health display with green uptime indicators. She holds a stylus and is annotating something on a tablet beside the keyboard, slightly leaning forward with professional intensity. The room behind her has other analysts at similar stations, the space softly lit with cool blue ambient overhead lighting. Reflections of data visualisations are visible on the glossy desk surface. Professional editorial photography, wide-angle, cool-toned cinematic palette, sharp foreground focus.
+
+Path: /assets/images/ai/production-assurance/hero.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Full-bleed hero background image with heavy left-gradient overlay anchoring content on the left side
+
+## ai/production-assurance/monitoring.jpg
+Page Name: /what-we-do/ai/production-assurance/
+Prompt: An overhead flat-lay of a monitoring review session. A printed AI system health report sits on a large white table, its pages showing line graphs with highlighted anomaly windows circled in red pen, and a summary table with RAG-status columns (green, amber, red dots). Beside the report is an open laptop showing a live log stream in a dark terminal interface, and a smartphone with a notification card visible reading "Latency alert — P95 response degraded." A glass of water, a yellow legal pad with handwritten notes, and a black pen complete the scene. Two pairs of hands are visible at the edges — one making notes, one scrolling on the laptop trackpad. The table is a clean white surface under even natural window light. Commercial photography, overhead shot, clean editorial style, cool natural light, sharp detail across the entire frame.
+
+Path: /assets/images/ai/production-assurance/monitoring.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Left image panel in the "Monitoring Stack" section alongside the 2x2 capability cards
