@@ -3,1890 +3,763 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IoT Solutions | GreaterHeight Technologies</title>
-  <meta name="description" content="GreaterHeight Technologies builds IoT solutions — connected device systems, sensor networks, edge computing, and IoT data platforms for industrial, commercial, and smart-city applications.">
+  <title>Internet of Things (IoT) | GreaterHeight Technologies</title>
+  <meta name="description" content="IoT strategy, architecture, and integration for Nigerian and African enterprises. Connected devices, edge computing, industrial monitoring, and real-time data platforms — GreaterHeight Technologies.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://greaterheight.tech/what-we-do/enterprise/iot/">
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://greaterheight.tech/what-we-do/enterprise/iot/">
-  <meta property="og:title" content="IoT Solutions | GreaterHeight Technologies">
-  <meta property="og:description" content="IoT solutions from GreaterHeight Technologies: connected device systems, edge computing, IoT data pipelines, and platform engineering for industrial and commercial IoT applications.">
+  <meta property="og:title" content="Internet of Things (IoT) | GreaterHeight Technologies">
+  <meta property="og:description" content="IoT strategy, architecture, and integration for Nigerian and African enterprises. Connected devices, edge computing, industrial monitoring, and real-time data platforms.">
   <meta property="og:image" content="https://greaterheight.tech/assets/images/og/og-iot.jpg">
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../../../assets/images/logo/favicon.png">
-  <link rel="apple-touch-icon" href="../../../assets/images/logo/favicon.png">
-
-  <!-- Fonts -->
+  <link rel="icon" type="image/png" href="/assets/images/logo/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://greaterheight.tech/#organization",
-      "name": "GreaterHeight Technologies Limited",
-      "url": "https://greaterheight.tech",
-      "logo": "https://greaterheight.tech/assets/images/logo/greaterheight-logo.png",
-      "foundingDate": "2010",
-      "foundingLocation": "Lagos, Nigeria",
-      "description": "GreaterHeight Technologies is a Lagos-based IT consultancy specialising in software engineering, cloud, AI, data, and digital transformation for businesses across Africa and globally.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "17B Debo Aina Street, Omole Phase 1, Ikeja",
-        "addressLocality": "Lagos",
-        "addressCountry": "NG"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+234-913-999-9700",
-        "contactType": "customer service",
-        "email": "info@mail.greaterheight.tech"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/greaterheight-tech"
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://greaterheight.tech/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "What We Do",
-          "item": "https://greaterheight.tech/what-we-do/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "IoT Solutions",
-          "item": "https://greaterheight.tech/what-we-do/enterprise/iot/"
-        }
-      ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://greaterheight.tech/what-we-do/enterprise/iot/#service",
-      "name": "IoT Solutions",
-      "description": "GreaterHeight Technologies builds IoT solutions — connected device systems, sensor networks, edge computing, and IoT data platforms for industrial, commercial, and smart-city applications.",
-      "provider": {
-        "@id": "https://greaterheight.tech/#organization"
-      },
-      "areaServed": [
-        {
-          "@type": "Country",
-          "name": "Nigeria"
-        },
-        {
-          "@type": "Continent",
-          "name": "Africa"
-        }
-      ],
-      "serviceType": "IoT Solutions",
-      "url": "https://greaterheight.tech/what-we-do/enterprise/iot/"
-    }
-  ]
-}
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type":"Organization","@id":"https://greaterheight.tech/#organization","name":"GreaterHeight Technologies Limited","url":"https://greaterheight.tech"},
+      {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://greaterheight.tech/"},{"@type":"ListItem","position":2,"name":"What We Do","item":"https://greaterheight.tech/what-we-do/"},{"@type":"ListItem","position":3,"name":"Internet of Things (IoT)","item":"https://greaterheight.tech/what-we-do/enterprise/iot/"}]},
+      {"@type":"Service","name":"Internet of Things (IoT)","description":"IoT strategy, architecture, and integration for enterprise organisations in Nigeria and Africa. Connected devices, edge computing, industrial monitoring, and real-time data platforms.","provider":{"@id":"https://greaterheight.tech/#organization"},"url":"https://greaterheight.tech/what-we-do/enterprise/iot/"}
+    ]
+  }
   </script>
 
   <style>
-    /* ============================================================
-       DESIGN TOKENS — GreaterHeight Brand v3.2
-    ============================================================ */
     :root {
-      --forest:      #0D3D28;
-      --forest-deep: #003020;
-      --teal:        #005A3C;
-      --teal-mid:    #1A7A5E;
-      --teal-glow:   #1EB496;
-      --mint:        #97EFC9;
-      --teal-lite:   #EAF5F1;
-      --teal-pale:   #F4FBF8;
-      --cr:          #8C0D0C;
-      --cr-mid:      #B41414;
-      --cr-lite:     #F5EDED;
-      --cr-pale:     #FDF6F6;
-      --wine:        #6B0F1A;
-      --cream:       #FDFAF4;
-      --light:       #E8E4DC;
-      --white:       #FFFFFF;
-      --gold:        #C9A84C;
-      --grad-hero:   linear-gradient(135deg,#8C0D0C 0%,#B41414 40%,#CC3030 60%,#1EB496 100%);
-      --grad-rule:   linear-gradient(to right,#8C0D0C,#1EB496);
-      --bg:          #FDFAF4;
-      --bg-alt:      #F7F3EC;
-      --bg-dark:     #003020;
-      --bg-card:     #FFFFFF;
-      --border:      #E8E4DC;
-      --txt:         #2E2E2C;
-      --txt-2:       #6A6A64;
-      --txt-3:       #9A9A94;
-      --font:        "Lato", Arial, sans-serif;
-      --r:           12px;
-      color-scheme:  light;
+      --forest:#0D3D28;--forest-deep:#003020;--teal:#005A3C;--teal-mid:#1A7A5E;--teal-glow:#1EB496;--mint:#97EFC9;--teal-lite:#EAF5F1;--teal-pale:#F4FBF8;--cr:#8C0D0C;--cr-mid:#B41414;--cr-lite:#F5EDED;--cr-pale:#FDF6F6;--wine:#6B0F1A;--cream:#FDFAF4;--light:#E8E4DC;--white:#FFFFFF;--gold:#C9A84C;--grad-hero:linear-gradient(135deg,#8C0D0C 0%,#B41414 40%,#CC3030 60%,#1EB496 100%);--grad-rule:linear-gradient(to right,#8C0D0C,#1EB496);--bg:#FDFAF4;--bg-alt:#F7F3EC;--bg-dark:#003020;--bg-card:#FFFFFF;--border:#E8E4DC;--txt:#2E2E2C;--txt-2:#6A6A64;--txt-3:#9A9A94;--font:"Lato",Arial,sans-serif;--r:12px;color-scheme:light;
+      --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;--sp-9:96px;--sp-10:128px;
+      --ts-xs:.75rem;--ts-sm:.875rem;--ts-base:1rem;--ts-md:1.125rem;--ts-lg:1.25rem;--ts-xl:1.5rem;--ts-2xl:1.875rem;--ts-3xl:2.25rem;--ts-4xl:3rem;--ts-5xl:3.75rem;
+      --sh-sm:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);--sh-md:0 4px 16px rgba(0,0,0,.07),0 2px 6px rgba(0,0,0,.04);--sh-lg:0 12px 40px rgba(0,0,0,.09),0 4px 12px rgba(0,0,0,.05);
+      --ease-out:cubic-bezier(.16,1,.3,1);--dur-fast:220ms;--dur-med:380ms;--dur-slow:600ms;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;font-size:16px;}
+    body{font-family:var(--font);background:var(--bg);color:var(--txt);line-height:1.6;-webkit-font-smoothing:antialiased;}
+    img{max-width:100%;height:auto;display:block;}
+    a{color:inherit;text-decoration:none;}
+    ul{list-style:none;}
+    ::selection{background:var(--teal-mid);color:var(--white);}
+    :focus-visible{outline:2px solid var(--teal-glow);outline-offset:3px;}
+    .skip-link{position:absolute;top:-40px;left:16px;padding:8px 16px;background:var(--cr);color:var(--white);border-radius:0 0 8px 8px;font-size:var(--ts-sm);font-weight:700;z-index:9999;transition:top var(--dur-fast);}
+    .skip-link:focus{top:0;}
+    #scroll-progress{position:fixed;top:0;left:0;height:3px;width:0%;background:var(--grad-rule);z-index:9998;transition:width 80ms linear;}
+    #preloader{position:fixed;inset:0;background:var(--bg-dark);display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity var(--dur-slow) var(--ease-out),visibility var(--dur-slow);}
+    #preloader.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+    .preloader-mark{width:52px;height:52px;background:var(--bg-dark);border-radius:10px;display:flex;align-items:center;justify-content:center;animation:preloaderPulse 1s ease-in-out infinite alternate;}
+    .preloader-mark img{width:38px;height:38px;object-fit:contain;}
+    @keyframes preloaderPulse{from{opacity:.5;transform:scale(.92);}to{opacity:1;transform:scale(1);}}
+    @media(prefers-reduced-motion:reduce){.preloader-mark{animation:none;}}
+    .site-header{position:sticky;top:0;z-index:900;background:rgba(253,250,244,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow var(--dur-fast);}
+    .site-header.scrolled{box-shadow:var(--sh-md);}
+    .header-inner{max-width:1400px;margin:0 auto;padding:0 var(--sp-6);height:72px;display:flex;align-items:center;gap:var(--sp-7);}
+    .header-logo{display:flex;align-items:center;flex-shrink:0;}
+    .logo-img{height:38px;width:auto;}
+    .nav-links{display:flex;align-items:center;gap:0;margin-left:auto;list-style:none;}
+    .nav-item{position:relative;}
+    .nav-item>button,.nav-item>a{display:flex;align-items:center;gap:5px;padding:10px 14px;font-size:var(--ts-sm);font-weight:600;color:var(--txt);letter-spacing:.01em;border-radius:6px;transition:color var(--dur-fast),background var(--dur-fast);white-space:nowrap;cursor:pointer;background:none;border:none;font-family:var(--font);}
+    .nav-item>button:hover,.nav-item>a:hover,.nav-item>button[aria-expanded="true"]{color:var(--cr);background:var(--cr-pale);}
+    .nav-item>button svg{width:14px;height:14px;transition:transform var(--dur-fast);stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
+    .nav-item>button[aria-expanded="true"] svg{transform:rotate(180deg);}
+    .mega-panel{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(-8px);background:var(--white);border:1px solid var(--border);border-radius:16px;box-shadow:var(--sh-lg);padding:var(--sp-6);opacity:0;visibility:hidden;pointer-events:none;transition:opacity var(--dur-med) var(--ease-out),transform var(--dur-med) var(--ease-out),visibility var(--dur-med);min-width:520px;}
+    .mega-panel.xxwide{min-width:880px;}
+    .mega-panel.wide{min-width:640px;}
+    .nav-item[aria-expanded="true"] .mega-panel{opacity:1;visibility:visible;pointer-events:all;transform:translateX(-50%) translateY(0);}
+    .mega-cols{display:grid;gap:var(--sp-4);}
+    .mega-cols.c4{grid-template-columns:repeat(4,1fr);}
+    .mega-cols.c3{grid-template-columns:repeat(3,1fr);}
+    .mega-col-head{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-3);margin-bottom:var(--sp-3);padding-bottom:var(--sp-2);border-bottom:1px solid var(--border);}
+    .mega-col-subhead{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-3);margin-top:var(--sp-5);margin-bottom:var(--sp-2);}
+    .mega-links li a{display:block;padding:6px 10px;border-radius:8px;font-size:var(--ts-sm);color:var(--txt-2);transition:color var(--dur-fast),background var(--dur-fast);}
+    .mega-links li a:hover{color:var(--cr);background:var(--cr-pale);}
+    .mega-panel-hd{margin-bottom:var(--sp-5);}
+    .mega-panel-eyebrow{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--cr);margin-bottom:4px;}
+    .mega-hdesc{font-size:var(--ts-sm);color:var(--txt-2);}
+    .mega-panel-ft{margin-top:var(--sp-5);padding-top:var(--sp-4);border-top:1px solid var(--border);display:flex;align-items:center;gap:var(--sp-6);font-size:var(--ts-sm);color:var(--txt-2);}
+    .mega-cta-link{font-weight:700;color:var(--cr);white-space:nowrap;}
+    .mega-cta-link:hover{text-decoration:underline;}
+    .nav-cta .btn-primary{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:var(--cr);color:var(--white);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:background var(--dur-fast),transform var(--dur-fast),box-shadow var(--dur-fast);border:none;cursor:pointer;font-family:var(--font);white-space:nowrap;}
+    .nav-cta .btn-primary:hover{background:var(--cr-mid);transform:translateY(-1px);box-shadow:0 4px 14px rgba(140,13,12,.3);}
+    .nav-search-trigger button{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:none;background:none;cursor:pointer;border-radius:6px;color:var(--txt-2);transition:color var(--dur-fast),background var(--dur-fast);}
+    .nav-search-trigger button:hover{color:var(--cr);background:var(--cr-pale);}
+    .ham-btn{display:none;background:none;border:none;cursor:pointer;padding:6px;}
+    .ham-btn svg{stroke:var(--txt);fill:none;stroke-width:2;stroke-linecap:round;}
+    #mobile-nav{display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.5);}
+    #mobile-nav.open{display:block;}
+    .mobile-drawer{position:absolute;right:0;top:0;bottom:0;width:min(360px,90vw);background:var(--white);overflow-y:auto;display:flex;flex-direction:column;}
+    .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:var(--sp-5) var(--sp-6);border-bottom:1px solid var(--border);}
+    .drawer-close{background:none;border:none;cursor:pointer;padding:4px;}
+    .drawer-close svg{stroke:var(--txt);fill:none;stroke-width:2;stroke-linecap:round;width:20px;height:20px;}
+    .drawer-links{padding:var(--sp-4) var(--sp-6);}
+    .drawer-item{border-bottom:1px solid var(--border);}
+    .drawer-item>button,.drawer-item>a{display:flex;justify-content:space-between;align-items:center;width:100%;padding:14px 0;font-size:var(--ts-sm);font-weight:600;color:var(--txt);background:none;border:none;cursor:pointer;font-family:var(--font);}
+    .drawer-sub{display:none;padding-bottom:var(--sp-4);}
+    .drawer-sub.open{display:block;}
+    .drawer-sub-head{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--txt-3);margin:var(--sp-3) 0 var(--sp-2);}
+    .drawer-sub a{display:block;padding:6px 0;font-size:var(--ts-sm);color:var(--txt-2);}
+    .drawer-cta{padding:var(--sp-5) 0;}
+    .btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 28px;background:var(--cr);color:var(--white);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:background var(--dur-fast),transform var(--dur-fast),box-shadow var(--dur-fast);cursor:pointer;font-family:var(--font);}
+    .btn-primary:hover{background:var(--cr-mid);transform:translateY(-1px);box-shadow:0 4px 14px rgba(140,13,12,.3);}
+    .btn-outline{display:inline-flex;align-items:center;gap:6px;padding:12px 28px;border:2px solid rgba(255,255,255,.5);color:var(--white);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:border-color var(--dur-fast),background var(--dur-fast);}
+    .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.12);}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 var(--sp-6);}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity var(--dur-slow) var(--ease-out),transform var(--dur-slow) var(--ease-out);}
+    .reveal.visible{opacity:1;transform:none;}
+    @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;}}
+    .eyebrow{display:inline-block;font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--cr);margin-bottom:var(--sp-3);}
+    .eyebrow-lt{color:var(--mint);}
+    .eyebrow-teal{color:var(--teal-glow);}
+    section{padding:var(--sp-10) 0;}
+    .section-head{text-align:center;max-width:700px;margin:0 auto var(--sp-8);}
+    .section-head h2{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-4);}
+    .section-head p{font-size:var(--ts-md);color:var(--txt-2);line-height:1.7;}
+    .rule{height:3px;width:64px;background:var(--grad-rule);border-radius:2px;margin:var(--sp-5) auto 0;}
 
-      /* Spacing scale */
-      --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
-      --sp-5: 24px; --sp-6: 32px; --sp-7: 48px; --sp-8: 64px;
-      --sp-9: 96px; --sp-10: 128px;
+    /* HERO */
+    .hero{position:relative;min-height:88vh;display:flex;align-items:center;overflow:hidden;background:var(--bg-dark);}
+    .hero-bg{position:absolute;inset:0;z-index:0;}
+    .hero-bg-layer{position:absolute;inset:0;background:linear-gradient(140deg,rgba(0,0,0,.97) 0%,rgba(0,80,50,.70) 55%,rgba(30,180,150,.1) 100%);}
+    .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.22;}
+    .hero-grid-overlay{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(30,180,150,.07) 1px,transparent 1px),linear-gradient(to right,rgba(30,180,150,.07) 1px,transparent 1px);background-size:48px 48px;}
+    .hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:var(--sp-10) var(--sp-6);display:grid;grid-template-columns:1fr 340px;gap:var(--sp-8);align-items:start;padding-top:calc(var(--sp-10) + 40px);}
+    .hero-breadcrumb{font-size:var(--ts-xs);color:rgba(255,255,255,.4);margin-bottom:var(--sp-5);letter-spacing:.04em;}
+    .hero-breadcrumb a{color:rgba(255,255,255,.5);}
+    .hero-breadcrumb a:hover{color:var(--mint);}
+    .hero-left h1{font-size:clamp(2rem,4vw,3.4rem);font-weight:700;color:var(--white);line-height:1.12;margin-bottom:var(--sp-5);}
+    .hero-left p{font-size:var(--ts-md);color:rgba(255,255,255,.65);line-height:1.75;max-width:530px;margin-bottom:var(--sp-7);}
+    .hero-btns{display:flex;gap:var(--sp-4);flex-wrap:wrap;}
+    .hero-stats{display:flex;gap:var(--sp-5);flex-wrap:wrap;margin-top:var(--sp-7);padding-top:var(--sp-7);border-top:1px solid rgba(255,255,255,.1);}
+    .hero-stat span{display:block;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;color:var(--teal-glow);line-height:1;}
+    .hero-stat p{font-size:var(--ts-xs);color:rgba(255,255,255,.45);margin-top:4px;}
 
-      /* Type scale */
-      --ts-xs: 0.75rem; --ts-sm: 0.875rem; --ts-base: 1rem;
-      --ts-md: 1.125rem; --ts-lg: 1.25rem; --ts-xl: 1.5rem;
-      --ts-2xl: 1.875rem; --ts-3xl: 2.25rem; --ts-4xl: 3rem;
-      --ts-5xl: 3.75rem;
+    /* STACK PREVIEW — right col of hero */
+    .stack-preview{background:rgba(0,0,0,.35);border:1px solid rgba(30,180,150,.2);border-radius:14px;padding:var(--sp-5);backdrop-filter:blur(8px);}
+    .stack-preview-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-glow);margin-bottom:var(--sp-5);}
+    .stack-layer{padding:var(--sp-3) var(--sp-4);border-radius:8px;margin-bottom:var(--sp-2);border-left:3px solid;}
+    .stack-layer:last-child{margin-bottom:0;}
+    .stack-layer-name{font-size:var(--ts-sm);font-weight:700;color:var(--white);line-height:1;}
+    .stack-layer-desc{font-size:var(--ts-xs);color:rgba(255,255,255,.45);margin-top:3px;}
 
-      /* Shadows */
-      --sh-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-      --sh-md: 0 4px 16px rgba(0,0,0,.07), 0 2px 6px rgba(0,0,0,.04);
-      --sh-lg: 0 12px 40px rgba(0,0,0,.09), 0 4px 12px rgba(0,0,0,.05);
+    /* ARCHITECTURE SECTION */
+    .arch-section{background:var(--bg-dark);padding:var(--sp-10) 0;}
+    .arch-section .section-head h2{color:var(--white);}
+    .arch-section .section-head p{color:rgba(255,255,255,.6);}
+    .arch-section .rule{background:var(--grad-rule);}
+    .arch-layers{display:flex;flex-direction:column;gap:var(--sp-3);max-width:900px;margin:0 auto;}
+    .arch-layer{display:grid;grid-template-columns:120px 1fr;gap:0;border-radius:10px;overflow:hidden;}
+    .arch-layer-num{display:flex;align-items:center;justify-content:center;padding:var(--sp-5) var(--sp-4);font-size:var(--ts-3xl);font-weight:700;color:rgba(255,255,255,.12);line-height:1;}
+    .arch-layer-body{padding:var(--sp-5) var(--sp-6);}
+    .arch-layer-name{font-size:var(--ts-sm);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--sp-2);}
+    .arch-layer-desc{font-size:var(--ts-sm);color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:var(--sp-3);}
+    .arch-layer-examples{display:flex;flex-wrap:wrap;gap:6px;}
+    .arch-ex-tag{font-size:var(--ts-xs);padding:3px 10px;border-radius:12px;background:rgba(255,255,255,.07);color:rgba(255,255,255,.5);font-weight:600;}
 
-      /* Motion */
-      --ease-out: cubic-bezier(.16,1,.3,1);
-      --dur-fast: 220ms; --dur-med: 380ms; --dur-slow: 600ms;
-    }
+    /* INDUSTRIES */
+    .industries-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-5);}
+    .industry-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
+    .industry-card-img{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal-mid) 100%);aspect-ratio:3/2;overflow:hidden;}
+    .industry-card-img img{width:100%;height:100%;object-fit:cover;}
+    .industry-card-body{padding:var(--sp-5) var(--sp-6);}
+    .industry-card-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--teal-mid);margin-bottom:var(--sp-2);}
+    .industry-card-body h3{font-size:var(--ts-md);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);line-height:1.3;}
+    .industry-card-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.65;margin-bottom:var(--sp-4);}
+    .use-cases{display:flex;flex-direction:column;gap:var(--sp-2);}
+    .use-case{font-size:var(--ts-xs);color:var(--txt-2);display:flex;gap:var(--sp-3);align-items:flex-start;line-height:1.5;}
+    .use-case::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal-glow);flex-shrink:0;margin-top:5px;}
 
-    /* ============================================================
-       RESET + BASE
-    ============================================================ */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
-    body {
-      font-family: var(--font);
-      background: var(--bg);
-      color: var(--txt);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; text-decoration: none; }
-    ul { list-style: none; }
-    ::selection { background: var(--cr-mid); color: var(--white); }
-    :focus-visible { outline: 2px solid var(--teal-glow); outline-offset: 3px; }
+    /* WHAT WE BUILD */
+    .build-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4);}
+    .build-card{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--r);padding:var(--sp-6);position:relative;}
+    .build-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;border-radius:0 0 var(--r) var(--r);background:var(--grad-rule);}
+    .build-icon{width:44px;height:44px;border-radius:10px;background:var(--teal-pale);border:1px solid var(--teal-lite);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);}
+    .build-icon svg{stroke:var(--teal-mid);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;width:22px;height:22px;}
+    .build-card h3{font-size:var(--ts-sm);font-weight:700;color:var(--txt);margin-bottom:var(--sp-3);}
+    .build-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
 
-    /* Skip link */
-    .skip-link {
-      position: absolute; top: -40px; left: 16px; padding: 8px 16px;
-      background: var(--cr); color: var(--white); border-radius: 0 0 8px 8px;
-      font-size: var(--ts-sm); font-weight: 700; z-index: 9999;
-      transition: top var(--dur-fast);
-    }
-    .skip-link:focus { top: 0; }
+    /* INTEGRATION CHALLENGE SPLIT */
+    .challenge-split{display:grid;grid-template-columns:1fr 1fr;min-height:520px;}
+    .challenge-visual{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal) 100%);overflow:hidden;position:relative;}
+    .challenge-visual img{width:100%;height:100%;object-fit:cover;}
+    .challenge-visual-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0) 60%,rgba(0,48,32,.7) 100%);}
+    .challenge-content{background:var(--bg-alt);padding:var(--sp-9) var(--sp-8);display:flex;flex-direction:column;justify-content:center;}
+    .challenge-content h2{font-size:clamp(1.5rem,2.5vw,2.1rem);font-weight:700;color:var(--txt);line-height:1.25;margin-bottom:var(--sp-5);}
+    .challenge-content p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;margin-bottom:var(--sp-5);}
+    .challenge-items{display:flex;flex-direction:column;gap:var(--sp-4);}
+    .challenge-item{padding:var(--sp-4);background:var(--white);border:1px solid var(--border);border-radius:10px;border-left:3px solid var(--cr);}
+    .challenge-item h4{font-size:var(--ts-sm);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .challenge-item p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;margin:0;}
 
-    /* Scroll progress bar */
-    #scroll-progress {
-      position: fixed; top: 0; left: 0; height: 3px; width: 0%;
-      background: var(--grad-rule); z-index: 9998;
-      transition: width 80ms linear;
-    }
+    /* WHO THIS IS FOR */
+    .audience-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-4);}
+    .audience-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:var(--sp-6);}
+    .audience-icon{width:40px;height:40px;border-radius:8px;background:var(--teal-pale);border:1px solid var(--teal-lite);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-4);}
+    .audience-icon svg{stroke:var(--teal-mid);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;width:20px;height:20px;}
+    .audience-card h3{font-size:var(--ts-sm);font-weight:700;color:var(--txt);margin-bottom:var(--sp-2);}
+    .audience-card p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.6;}
 
-    /* ============================================================
-       PRELOADER
-    ============================================================ */
-    #preloader {
-      position: fixed; inset: 0; background: var(--bg-dark);
-      display: flex; align-items: center; justify-content: center;
-      z-index: 9999; transition: opacity var(--dur-slow) var(--ease-out), visibility var(--dur-slow);
-    }
-    #preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-    .preloader-mark {
-      width: 52px; height: 52px; background: var(--bg-dark);
-      border-radius: 10px; display: flex; align-items: center; justify-content: center;
-      animation: preloaderPulse 1s ease-in-out infinite alternate;
-    }
-    .preloader-mark img { width: 38px; height: 38px; object-fit: contain; display: block; }
-    @keyframes preloaderPulse {
-      from { opacity: .5; transform: scale(.92); }
-      to   { opacity: 1;  transform: scale(1); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .preloader-mark { animation: none; }
-    }
+    /* FAQ */
+    .faq-wrap{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
+    .accordion-item{border-bottom:1px solid var(--border);}
+    .accordion-item:last-child{border-bottom:0;}
+    .accordion-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:var(--sp-5);padding:var(--sp-5) var(--sp-6);background:none;border:none;cursor:pointer;text-align:left;font-family:var(--font);transition:background var(--dur-fast);}
+    .accordion-btn:hover{background:var(--teal-pale);}
+    .accordion-item.open .accordion-btn{background:var(--cr-pale);}
+    .accordion-btn h4{font-size:var(--ts-sm);font-weight:700;color:var(--txt);line-height:1.4;}
+    .accordion-icon{font-size:var(--ts-lg);font-weight:300;color:var(--cr);flex-shrink:0;transition:transform var(--dur-fast);}
+    .accordion-item.open .accordion-icon{transform:rotate(45deg);}
+    .accordion-body{display:none;padding:0 var(--sp-6) var(--sp-5);}
+    .accordion-item.open .accordion-body{display:block;}
+    .accordion-body p{font-size:var(--ts-sm);color:var(--txt-2);line-height:1.7;}
 
-    /* ============================================================
-       HEADER & MEGA MENU
-    ============================================================ */
-    .site-header {
-      position: sticky; top: 0; z-index: 900;
-      background: rgba(253,250,244,.97);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      transition: box-shadow var(--dur-fast);
-    }
-    .site-header.scrolled { box-shadow: var(--sh-md); }
-    .header-inner {
-      max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
-      height: 72px; display: flex; align-items: center; gap: var(--sp-7);
-    }
-    .header-logo { display: flex; align-items: center; flex-shrink: 0; }
-    .logo-img { height: 38px; width: auto; }
+    /* CTA */
+    .cta-band{background:linear-gradient(135deg,var(--forest-deep) 0%,var(--teal) 60%,var(--teal-mid) 100%);padding:var(--sp-10) 0;}
+    .cta-band .wrap{text-align:center;}
+    .cta-band h2{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;color:var(--white);line-height:1.25;margin-bottom:var(--sp-4);}
+    .cta-band p{font-size:var(--ts-md);color:rgba(255,255,255,.7);max-width:620px;margin:0 auto var(--sp-7);line-height:1.7;}
+    .cta-btns{display:flex;gap:var(--sp-4);justify-content:center;flex-wrap:wrap;}
+    .btn-primary-dark{display:inline-flex;align-items:center;gap:6px;padding:12px 28px;background:var(--white);color:var(--forest-deep);border-radius:8px;font-size:var(--ts-sm);font-weight:700;transition:background var(--dur-fast),transform var(--dur-fast);}
+    .btn-primary-dark:hover{background:var(--mint);transform:translateY(-1px);}
 
-    /* Primary nav */
-    .primary-nav { display: flex; align-items: center; gap: 0; margin-left: auto; }
-    .nav-item { position: relative; }
-    .nav-link {
-      display: flex; align-items: center; gap: 5px;
-      padding: 10px 14px; font-size: var(--ts-sm); font-weight: 600;
-      color: var(--txt); letter-spacing: .01em;
-      border-radius: 6px; transition: color var(--dur-fast), background var(--dur-fast);
-      white-space: nowrap; cursor: pointer; background: none; border: none;
-      font-family: var(--font);
-    }
-    .nav-link:hover, .nav-link[aria-expanded="true"] { color: var(--cr); background: var(--cr-pale); }
-    .nav-link[aria-current="page"] { color: var(--cr); }
-    .nav-chevron {
-      width: 14px; height: 14px; transition: transform var(--dur-fast);
-      stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
-    }
-    .nav-link[aria-expanded="true"] .nav-chevron { transform: rotate(180deg); }
+    /* FOOTER */
+    footer{background:var(--bg-dark);color:rgba(255,255,255,.8);}
+    .footer-main{padding:var(--sp-10) 0;}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:var(--sp-8);align-items:start;}
+    .footer-brand-logo{display:block;margin-bottom:var(--sp-4);}
+    .footer-brand-logo .logo-img{filter:brightness(0) invert(1);height:34px;}
+    .footer-brand-tagline{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--teal-glow);margin-bottom:var(--sp-3);}
+    .footer-brand-p{font-size:var(--ts-sm);color:rgba(255,255,255,.5);line-height:1.6;margin-bottom:var(--sp-5);}
+    .footer-brand-addr{font-style:normal;font-size:var(--ts-sm);color:rgba(255,255,255,.45);line-height:1.8;}
+    .footer-brand-addr a{color:rgba(255,255,255,.55);}
+    .footer-brand-addr a:hover{color:var(--teal-glow);}
+    .footer-col-head{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:var(--sp-5);padding-bottom:var(--sp-2);border-bottom:1px solid rgba(255,255,255,.08);}
+    .footer-col-subhead{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.3);margin-top:var(--sp-5);margin-bottom:var(--sp-3);}
+    .footer-col-list li{margin-bottom:var(--sp-3);}
+    .footer-col-list li a{font-size:var(--ts-sm);color:rgba(255,255,255,.5);transition:color var(--dur-fast);}
+    .footer-col-list li a:hover{color:var(--teal-glow);}
+    .footer-lower{padding:var(--sp-5) 0;border-top:1px solid rgba(255,255,255,.08);}
+    .footer-lower-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--sp-7);}
+    .footer-follow-label,.footer-resources-label{font-size:var(--ts-xs);font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:var(--sp-3);}
+    .footer-social-row{display:flex;gap:var(--sp-4);}
+    .footer-social-row a{color:rgba(255,255,255,.4);transition:color var(--dur-fast);}
+    .footer-social-row a:hover{color:var(--teal-glow);}
+    .footer-social-row svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;}
+    .footer-resources-links{display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center;}
+    .footer-resources-links a{font-size:var(--ts-xs);color:rgba(255,255,255,.4);transition:color var(--dur-fast);}
+    .footer-resources-links a:hover{color:var(--teal-glow);}
+    .footer-resources-links .sep{color:rgba(255,255,255,.2);font-size:var(--ts-xs);}
+    .footer-copyright{padding:var(--sp-4) 0;border-top:1px solid rgba(255,255,255,.06);}
+    .footer-copyright-inner{display:flex;justify-content:space-between;align-items:center;gap:var(--sp-5);flex-wrap:wrap;}
+    .footer-copyright-inner span{font-size:var(--ts-xs);color:rgba(255,255,255,.3);}
+    .footer-copyright-inner a{color:rgba(255,255,255,.35);}
+    .footer-copyright-inner a:hover{color:var(--teal-glow);}
+    .footer-copyright-policy{display:flex;gap:var(--sp-5);}
+    .footer-copyright-policy a{font-size:var(--ts-xs);}
+    .wa-float{position:fixed;bottom:var(--sp-7);right:var(--sp-6);z-index:800;background:#25D366;border-radius:50%;width:52px;height:52px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.4);transition:transform var(--dur-fast),box-shadow var(--dur-fast);}
+    .wa-float:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(37,211,102,.55);}
+    .wa-float svg{width:28px;height:28px;fill:white;}
+    #back-top{position:fixed;bottom:var(--sp-7);right:calc(var(--sp-6) + 60px);z-index:800;background:var(--cr);border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;visibility:hidden;transition:opacity var(--dur-fast),visibility var(--dur-fast),background var(--dur-fast);}
+    #back-top.visible{opacity:1;visibility:visible;}
+    #back-top:hover{background:var(--cr-mid);}
+    #back-top svg{width:16px;height:16px;stroke:white;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;}
 
-    /* Mega panel */
-    .mega-panel {
-      position: absolute; top: calc(100% + 8px); left: 50%;
-      transform: translateX(-50%) translateY(-8px);
-      background: var(--white); border: 1px solid var(--border);
-      border-radius: 16px; box-shadow: var(--sh-lg); padding: var(--sp-6);
-      opacity: 0; visibility: hidden; pointer-events: none;
-      transition: opacity var(--dur-med) var(--ease-out), transform var(--dur-med) var(--ease-out), visibility var(--dur-med);
-      min-width: 520px;
-    }
-    .mega-panel.xxwide { min-width: 880px; }
-    .mega-panel.wide { min-width: 640px; }
-    .mega-panel.open {
-      opacity: 1; visibility: visible; pointer-events: all;
-      transform: translateX(-50%) translateY(0);
-    }
-    .mega-grid { display: grid; gap: var(--sp-4); }
-    .mega-grid.cols-4 { grid-template-columns: repeat(4,1fr); }
-    .mega-grid.cols-3 { grid-template-columns: repeat(3,1fr); }
-    .mega-grid.cols-2 { grid-template-columns: repeat(2,1fr); }
-    .mega-col-head {
-      font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--txt-3); margin-bottom: var(--sp-3);
-      padding-bottom: var(--sp-2); border-bottom: 1px solid var(--border);
-    }
-    .mega-link {
-      display: block; padding: 7px 10px; border-radius: 8px;
-      font-size: var(--ts-sm); color: var(--txt-2);
-      transition: color var(--dur-fast), background var(--dur-fast);
-    }
-    .mega-link:hover { color: var(--cr); background: var(--cr-pale); }
-    .mega-link strong { display: block; color: var(--txt); font-weight: 600; font-size: var(--ts-sm); }
-    .mega-link span { font-size: var(--ts-xs); color: var(--txt-3); }
-
-    /* Direct nav links */
-    .nav-direct { text-decoration: none; }
-
-    /* Header actions */
-    .header-actions { display: flex; align-items: center; gap: var(--sp-3); flex-shrink: 0; }
-    .btn-search {
-      width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
-      border: none; background: none; cursor: pointer; border-radius: 6px;
-      color: var(--txt-2); transition: color var(--dur-fast), background var(--dur-fast);
-    }
-    .btn-search:hover { color: var(--cr); background: var(--cr-pale); }
-    .btn-cta {
-      display: inline-flex; align-items: center; gap: 6px;
-      padding: 10px 22px; background: var(--cr); color: var(--white);
-      border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
-      transition: background var(--dur-fast), transform var(--dur-fast), box-shadow var(--dur-fast);
-      border: none; cursor: pointer; font-family: var(--font); white-space: nowrap;
-    }
-    .btn-cta:hover { background: var(--cr-mid); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(140,13,12,.3); }
-
-    /* Mobile toggle */
-    .mobile-toggle {
-      display: none; flex-direction: column; gap: 5px;
-      background: none; border: none; cursor: pointer; padding: 6px;
-    }
-    .mobile-toggle span {
-      display: block; width: 24px; height: 2px; background: var(--txt);
-      border-radius: 2px; transition: transform var(--dur-fast), opacity var(--dur-fast);
-    }
-
-    /* Mobile nav overlay */
-    .mobile-nav {
-      display: none; position: fixed; inset: 72px 0 0;
-      background: var(--white); overflow-y: auto; z-index: 850;
-      padding: var(--sp-5) var(--sp-5) var(--sp-8);
-    }
-    .mobile-nav.open { display: block; }
-    .mobile-nav-section { margin-bottom: var(--sp-5); }
-    .mobile-nav-head {
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--txt-3); margin-bottom: var(--sp-3);
-    }
-    .mobile-nav-link {
-      display: block; padding: 10px 12px; border-radius: 8px;
-      font-size: var(--ts-sm); color: var(--txt); font-weight: 500;
-      transition: background var(--dur-fast), color var(--dur-fast);
-    }
-    .mobile-nav-link:hover { background: var(--cr-pale); color: var(--cr); }
-
-    /* ============================================================
-       BREADCRUMB
-    ============================================================ */
-    .breadcrumb-bar {
-      background: var(--teal-pale); border-bottom: 1px solid var(--teal-lite);
-    }
-    .breadcrumb-inner {
-      max-width: 1400px; margin: 0 auto; padding: 10px var(--sp-6);
-      display: flex; align-items: center; gap: 6px;
-      font-size: var(--ts-xs); color: var(--txt-3);
-    }
-    .breadcrumb-inner a { color: var(--txt-3); transition: color var(--dur-fast); }
-    .breadcrumb-inner a:hover { color: var(--cr); }
-    .breadcrumb-sep { color: var(--txt-3); font-size: 10px; }
-    .breadcrumb-inner span[aria-current] { color: var(--txt-2); }
-
-    /* ============================================================
-       PAGE HERO — asymmetric editorial layout
-    ============================================================ */
-    .page-hero {
-      background: var(--bg-dark);
-      padding: var(--sp-10) 0 var(--sp-9);
-      position: relative; overflow: hidden;
-    }
-    .page-hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 80% at 80% 50%, rgba(30,180,150,.12) 0%, transparent 60%),
-                  radial-gradient(ellipse 40% 60% at 15% 30%, rgba(140,13,12,.15) 0%, transparent 55%);
-      pointer-events: none;
-    }
-    .page-hero-inner {
-      max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
-      display: grid; grid-template-columns: 1fr 420px; gap: var(--sp-8); align-items: center;
-      position: relative; z-index: 1;
-    }
-    .hero-eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-4);
-    }
-    .hero-eyebrow::before {
-      content: ''; display: block; width: 24px; height: 2px; background: var(--teal-glow);
-    }
-    .page-hero h1 {
-      font-size: clamp(2.4rem, 5vw, 3.5rem); font-weight: 300;
-      color: var(--white); line-height: 1.15; letter-spacing: -.02em;
-      margin-bottom: var(--sp-5);
-    }
-    .page-hero h1 strong { font-weight: 700; color: var(--mint); }
-    .page-hero-lead {
-      font-size: var(--ts-md); color: rgba(255,255,255,.7);
-      line-height: 1.7; max-width: 560px; margin-bottom: var(--sp-6);
-    }
-    .hero-meta {
-      display: flex; gap: var(--sp-6); flex-wrap: wrap;
-    }
-    .hero-meta-item { }
-    .hero-meta-value {
-      display: block; font-size: clamp(1.75rem, 3vw, 2.5rem);
-      font-weight: 700; color: var(--white); line-height: 1;
-    }
-    .hero-meta-value em { font-style: normal; color: var(--teal-glow); }
-    .hero-meta-label {
-      display: block; font-size: var(--ts-xs); color: rgba(255,255,255,.5);
-      text-transform: uppercase; letter-spacing: .08em; margin-top: 4px;
-    }
-    .hero-visual {
-      position: relative;
-    }
-    .hero-card-stack {
-      display: flex; flex-direction: column; gap: var(--sp-4);
-    }
-    .hero-fact-card {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 16px; padding: var(--sp-5);
-      backdrop-filter: blur(8px);
-    }
-    .hero-fact-card .fact-label {
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--teal-glow); margin-bottom: var(--sp-2);
-    }
-    .hero-fact-card p {
-      font-size: var(--ts-sm); color: rgba(255,255,255,.75); line-height: 1.6;
-    }
-    .hero-fact-card .fact-year {
-      font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1;
-      margin-bottom: 4px;
-    }
-
-    /* ============================================================
-       SECTION UTILITIES
-    ============================================================ */
-    .section { padding: var(--sp-9) 0; }
-    .section-alt { background: var(--bg-alt); }
-    .section-dark { background: var(--bg-dark); color: var(--white); }
-    .section-teal { background: var(--teal-pale); }
-    .container { max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6); }
-    .section-label {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--cr); margin-bottom: var(--sp-4);
-    }
-    .section-label::before {
-      content: ''; display: block; width: 20px; height: 2px;
-      background: var(--grad-rule);
-    }
-    .section-title {
-      font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 700;
-      color: var(--txt); line-height: 1.2; letter-spacing: -.02em;
-      margin-bottom: var(--sp-4);
-    }
-    .section-title.light { color: var(--white); }
-    .section-lead {
-      font-size: var(--ts-md); color: var(--txt-2); line-height: 1.7;
-      max-width: 640px; margin-bottom: var(--sp-7);
-    }
-    .section-lead.light { color: rgba(255,255,255,.7); }
-    .rule-line {
-      width: 56px; height: 3px; border-radius: 2px;
-      background: var(--grad-rule); margin-bottom: var(--sp-5);
-    }
-
-    /* reveal */
-    .reveal { opacity: 0; transform: translateY(28px); transition: opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out); }
-    .reveal.visible { opacity: 1; transform: none; }
-    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } }
-
-    /* ============================================================
-       STORY — full-width editorial split
-    ============================================================ */
-    .story-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-9);
-      align-items: center;
-    }
-    .story-image {
-      border-radius: 20px; overflow: hidden;
-      box-shadow: var(--sh-lg);
-      aspect-ratio: 4/3;
-      background: linear-gradient(135deg, var(--forest) 0%, var(--teal-mid) 60%, var(--teal-glow) 100%);
-      position: relative;
-    }
-    .story-image img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-    }
-    .story-image .img-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, var(--forest-deep) 0%, transparent 60%);
-      opacity: .45;
-    }
-    .story-badge {
-      position: absolute; bottom: 24px; left: 24px;
-      background: rgba(0,48,32,.9); border: 1px solid rgba(30,180,150,.3);
-      border-radius: 12px; padding: 16px 20px;
-      backdrop-filter: blur(8px);
-    }
-    .story-badge .badge-num {
-      font-size: 2rem; font-weight: 700; color: var(--white); line-height: 1;
-    }
-    .story-badge .badge-label {
-      font-size: var(--ts-xs); color: var(--mint); text-transform: uppercase;
-      letter-spacing: .07em; margin-top: 3px;
-    }
-    .story-content { }
-    .story-content p {
-      font-size: var(--ts-base); color: var(--txt-2); line-height: 1.8;
-      margin-bottom: var(--sp-4);
-    }
-    .story-content p:last-of-type { margin-bottom: 0; }
-    .story-content strong { color: var(--txt); font-weight: 700; }
-
-    /* ============================================================
-       MILESTONES TIMELINE
-    ============================================================ */
-    .timeline-section { }
-    .timeline {
-      position: relative; padding-left: 32px; margin-top: var(--sp-7);
-    }
-    .timeline::before {
-      content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px;
-      width: 2px; background: linear-gradient(to bottom, var(--cr), var(--teal-glow));
-      border-radius: 2px;
-    }
-    .timeline-item { position: relative; margin-bottom: var(--sp-7); }
-    .timeline-item:last-child { margin-bottom: 0; }
-    .timeline-dot {
-      position: absolute; left: -32px; top: 6px;
-      width: 14px; height: 14px; border-radius: 50%;
-      background: var(--white); border: 3px solid var(--cr);
-      transition: background var(--dur-fast), border-color var(--dur-fast);
-    }
-    .timeline-item:hover .timeline-dot { background: var(--cr); }
-    .timeline-year {
-      font-size: var(--ts-xs); font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--cr); margin-bottom: 6px;
-    }
-    .timeline-title {
-      font-size: var(--ts-lg); font-weight: 700; color: var(--txt);
-      margin-bottom: 6px; line-height: 1.3;
-    }
-    .timeline-desc {
-      font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.7;
-    }
-
-    /* ============================================================
-       VALUES STRIP — horizontal scroll at mobile
-    ============================================================ */
-    .values-strip {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-5);
-    }
-    .value-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 16px; padding: var(--sp-6);
-      transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med);
-    }
-    .value-card:hover {
-      box-shadow: var(--sh-lg); transform: translateY(-4px);
-      border-color: var(--teal-glow);
-    }
-    .value-icon {
-      width: 48px; height: 48px; border-radius: 12px;
-      background: var(--teal-pale); display: flex; align-items: center;
-      justify-content: center; margin-bottom: var(--sp-4);
-    }
-    .value-icon svg { width: 24px; height: 24px; stroke: var(--teal-mid); fill: none; stroke-width: 1.8; }
-    .value-card h3 {
-      font-size: var(--ts-base); font-weight: 700; color: var(--txt);
-      margin-bottom: var(--sp-2);
-    }
-    .value-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
-
-    /* ============================================================
-       REACH — global presence
-    ============================================================ */
-    .reach-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-5);
-      margin-top: var(--sp-6);
-    }
-    .reach-card {
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 16px; padding: var(--sp-6);
-      transition: border-color var(--dur-med), background var(--dur-med);
-    }
-    .reach-card:hover {
-      border-color: rgba(30,180,150,.4);
-      background: rgba(255,255,255,.08);
-    }
-    .reach-card.hq {
-      border-color: rgba(140,13,12,.5);
-      background: rgba(140,13,12,.08);
-    }
-    .reach-flag {
-      font-size: 2rem; margin-bottom: var(--sp-3); line-height: 1;
-    }
-    .reach-country {
-      font-size: var(--ts-sm); font-weight: 700; color: var(--white);
-      margin-bottom: 4px; text-transform: uppercase; letter-spacing: .05em;
-    }
-    .reach-detail {
-      font-size: var(--ts-xs); color: rgba(255,255,255,.55); line-height: 1.6;
-    }
-    .hq-badge {
-      display: inline-block; font-size: 10px; font-weight: 700;
-      letter-spacing: .08em; text-transform: uppercase;
-      background: var(--cr); color: var(--white);
-      padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle;
-    }
-
-    /* ============================================================
-       SECTOR FOCUS
-    ============================================================ */
-    .sector-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-4);
-    }
-    .sector-item {
-      display: flex; align-items: center; gap: var(--sp-3);
-      padding: var(--sp-4); border-radius: 12px;
-      border: 1px solid var(--border); background: var(--bg-card);
-      transition: border-color var(--dur-fast), background var(--dur-fast);
-    }
-    .sector-item:hover { border-color: var(--teal-glow); background: var(--teal-pale); }
-    .sector-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--teal-glow); flex-shrink: 0;
-    }
-    .sector-name { font-size: var(--ts-sm); font-weight: 600; color: var(--txt); }
-
-    /* ============================================================
-       CTA BAND
-    ============================================================ */
-    .cta-band {
-      background: var(--grad-hero); padding: var(--sp-9) 0;
-      position: relative; overflow: hidden;
-    }
-    .cta-band::before {
-      content: '';
-      position: absolute; top: -40%; right: -10%; width: 600px; height: 600px;
-      border-radius: 50%; background: rgba(255,255,255,.05); pointer-events: none;
-    }
-    .cta-band-inner {
-      max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
-      display: flex; justify-content: space-between; align-items: center;
-      gap: var(--sp-6); position: relative; z-index: 1;
-    }
-    .cta-band h2 {
-      font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700;
-      color: var(--white); max-width: 540px; line-height: 1.25;
-    }
-    .cta-band p { font-size: var(--ts-base); color: rgba(255,255,255,.8); margin-top: var(--sp-2); }
-    .cta-pair { display: flex; gap: var(--sp-3); flex-wrap: wrap; flex-shrink: 0; }
-    .btn-primary {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; background: var(--white); color: var(--cr);
-      border-radius: 8px; font-size: var(--ts-sm); font-weight: 700;
-      transition: transform var(--dur-fast), box-shadow var(--dur-fast);
-      white-space: nowrap;
-    }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.2); }
-    .btn-outline-white {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 14px 28px; border: 2px solid rgba(255,255,255,.6);
-      color: var(--white); border-radius: 8px;
-      font-size: var(--ts-sm); font-weight: 700;
-      transition: border-color var(--dur-fast), background var(--dur-fast);
-      white-space: nowrap;
-    }
-    .btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,.1); }
-
-    /* ============================================================
-       WHO WE SERVE TEASER
-    ============================================================ */
-    .serve-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4);
-      margin-top: var(--sp-6);
-    }
-    .serve-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: 16px; padding: var(--sp-6); text-align: center;
-      transition: box-shadow var(--dur-med), transform var(--dur-med), border-color var(--dur-med);
-    }
-    .serve-card:hover {
-      box-shadow: var(--sh-md); transform: translateY(-3px); border-color: var(--cr-mid);
-    }
-    .serve-card svg {
-      width: 40px; height: 40px; stroke: var(--cr); fill: none;
-      stroke-width: 1.6; margin: 0 auto var(--sp-3);
-    }
-    .serve-card h3 {
-      font-size: var(--ts-base); font-weight: 700; color: var(--txt); margin-bottom: var(--sp-2);
-    }
-    .serve-card p { font-size: var(--ts-sm); color: var(--txt-2); line-height: 1.6; }
-    .serve-card-link {
-      display: inline-flex; align-items: center; gap: 4px; margin-top: var(--sp-3);
-      font-size: var(--ts-xs); font-weight: 700; color: var(--cr); text-transform: uppercase;
-      letter-spacing: .05em;
-    }
-    .serve-card-link:hover { text-decoration: underline; }
-
-    /* ============================================================
-       SEARCH MODAL
-    ============================================================ */
-    .search-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,.7);
-      display: flex; align-items: flex-start; justify-content: center;
-      padding-top: 120px; z-index: 9000;
-      opacity: 0; visibility: hidden; transition: opacity var(--dur-med), visibility var(--dur-med);
-    }
-    .search-overlay.open { opacity: 1; visibility: visible; }
-    .search-modal {
-      background: var(--white); border-radius: 16px; padding: var(--sp-5);
-      width: 90%; max-width: 600px; box-shadow: var(--sh-lg);
-    }
-    .search-modal input {
-      width: 100%; border: 2px solid var(--border); border-radius: 10px;
-      padding: 14px 16px; font-size: var(--ts-base); font-family: var(--font);
-      color: var(--txt); background: var(--bg); outline: none;
-      transition: border-color var(--dur-fast);
-    }
-    .search-modal input:focus { border-color: var(--teal-glow); }
-    .search-results { margin-top: var(--sp-4); max-height: 300px; overflow-y: auto; }
-    .search-result-item {
-      display: block; padding: 10px 12px; border-radius: 8px;
-      font-size: var(--ts-sm); color: var(--txt);
-      transition: background var(--dur-fast);
-    }
-    .search-result-item:hover { background: var(--bg-alt); }
-    .search-result-item strong { color: var(--cr); display: block; }
-
-    /* ============================================================
-       WHATSAPP FLOAT + BACK TO TOP
-    ============================================================ */
-    .whatsapp-float {
-      position: fixed; bottom: 88px; right: 24px;
-      width: 52px; height: 52px; border-radius: 50%;
-      background: #25D366; box-shadow: 0 4px 16px rgba(37,211,102,.4);
-      display: flex; align-items: center; justify-content: center;
-      z-index: 800; transition: transform var(--dur-fast), box-shadow var(--dur-fast);
-    }
-    .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(37,211,102,.5); }
-    .whatsapp-float svg { width: 28px; height: 28px; fill: var(--white); }
-    .back-to-top {
-      position: fixed; bottom: 24px; right: 24px;
-      width: 44px; height: 44px; border-radius: 50%;
-      background: var(--cr); color: var(--white); border: none; cursor: pointer;
-      display: none; align-items: center; justify-content: center;
-      z-index: 800; box-shadow: var(--sh-md);
-      transition: background var(--dur-fast), transform var(--dur-fast);
-    }
-    .back-to-top.visible { display: flex; }
-    .back-to-top:hover { background: var(--cr-mid); transform: translateY(-2px); }
-    .back-to-top svg { width: 18px; height: 18px; stroke: var(--white); fill: none; stroke-width: 2.5; }
-
-    /* ============================================================
-       COOKIE BANNER
-    ============================================================ */
-    /* ====== COOKIE CONSENT ====== */
-#cookie-overlay{position:fixed;inset:0;z-index:3000;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .35s ease;}
-#cookie-overlay.visible{opacity:1;pointer-events:auto;}
-#cookie-banner{background:#fff;color:#1a1a1a;border-radius:12px 12px 0 0;width:100%;max-width:900px;padding:1.75rem 2rem 1.5rem;box-shadow:0 -8px 32px rgba(0,0,0,.18);transform:translateY(24px);transition:transform .35s ease;}
-#cookie-overlay.visible #cookie-banner{transform:none;}
-.cookie-title{font-size:1rem;font-weight:700;color:#002a1e;margin-bottom:.75rem;}
-#cookie-banner>p{font-size:.82rem;line-height:1.7;color:#444;margin-bottom:1.25rem;}
-#cookie-banner>p a{color:#0e8a6c;text-decoration:underline;}
-#cookie-banner>p a:hover{color:#007557;}
-.cookie-btns{display:flex;gap:.625rem;flex-wrap:wrap;justify-content:flex-end;align-items:center;}
-.cookie-btn{font-size:.78rem;font-weight:600;border-radius:6px;padding:.55rem 1.1rem;cursor:pointer;transition:all .2s;border:1px solid transparent;white-space:nowrap;font-family:inherit;}
-.cookie-btn.accept{background:#003020;color:#fff;border-color:#003020;}
-.cookie-btn.accept:hover{background:#004d33;}
-.cookie-btn.necessary{background:#fff;color:#333;border-color:#ccc;}
-.cookie-btn.necessary:hover{background:#f5f5f5;}
-.cookie-btn.settings{background:transparent;color:#666;border-color:transparent;}
-.cookie-btn.settings:hover{color:#222;}
-@media(max-width:520px){.cookie-btns{flex-direction:column-reverse;}.cookie-btn{width:100%;text-align:center;}}
-
-    /* ============================================================
-       FOOTER
-    ============================================================ */
-    .footer { background: var(--bg-dark); color: rgba(255,255,255,.75); }
-    .footer-offices {
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      padding: var(--sp-5) 0;
-    }
-    .footer-offices-grid {
-      max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-4);
-    }
-    .fo-item { }
-    .fo-country {
-      font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--teal-glow); margin-bottom: 4px;
-    }
-    .fo-detail { font-size: var(--ts-xs); color: rgba(255,255,255,.5); line-height: 1.5; }
-    .footer-main { padding: var(--sp-8) 0 var(--sp-6); }
-    .footer-grid {
-      max-width: 1400px; margin: 0 auto; padding: 0 var(--sp-6);
-      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1.4fr; gap: var(--sp-6);
-    }
-    .footer-brand .logo-img { height: 32px; width: auto; margin-bottom: var(--sp-3); filter: brightness(1); }
-    .footer-tagline { font-size: var(--ts-sm); color: rgba(255,255,255,.5); line-height: 1.6; margin-bottom: var(--sp-4); }
-    .footer-address { font-size: var(--ts-xs); color: rgba(255,255,255,.4); line-height: 1.7; }
-    .footer-col-head {
-      font-size: var(--ts-xs); font-weight: 700; text-transform: uppercase;
-      letter-spacing: .08em; color: rgba(255,255,255,.9); margin-bottom: var(--sp-4);
-    }
-    .footer-links { display: flex; flex-direction: column; gap: 10px; }
-    .footer-links a {
-      font-size: var(--ts-sm); color: rgba(255,255,255,.5);
-      transition: color var(--dur-fast);
-    }
-    .footer-links a:hover { color: var(--mint); }
-    .footer-lower {
-      max-width: 1400px; margin: 0 auto; padding: var(--sp-5) var(--sp-6) 0;
-      border-top: 1px solid rgba(255,255,255,.08);
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-4);
-    }
-    .footer-social { display: flex; gap: var(--sp-3); }
-    .social-icon {
-      width: 36px; height: 36px; border-radius: 8px;
-      border: 1px solid rgba(255,255,255,.12); display: flex; align-items: center; justify-content: center;
-      transition: border-color var(--dur-fast), background var(--dur-fast);
-    }
-    .social-icon:hover { border-color: var(--teal-glow); background: rgba(30,180,150,.1); }
-    .social-icon svg { width: 16px; height: 16px; fill: rgba(255,255,255,.6); }
-    .footer-resources {
-      display: flex; gap: var(--sp-4); flex-wrap: wrap; align-items: center;
-    }
-    .footer-resources a {
-      font-size: var(--ts-xs); color: rgba(255,255,255,.4);
-      transition: color var(--dur-fast);
-    }
-    .footer-resources a:hover { color: var(--mint); }
-    .footer-resources span { color: rgba(255,255,255,.2); font-size: var(--ts-xs); }
-    .footer-copyright {
-      max-width: 1400px; margin: 0 auto; padding: var(--sp-4) var(--sp-6);
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-3);
-    }
-    .footer-copyright p { font-size: var(--ts-xs); color: rgba(255,255,255,.3); line-height: 1.5; }
-    .footer-copyright a { color: rgba(255,255,255,.4); transition: color var(--dur-fast); }
-    .footer-copyright a:hover { color: var(--mint); }
-
-    /* ============================================================
-       RESPONSIVE
-    ============================================================ */
-    @media (max-width: 1100px) {
-      .page-hero-inner { grid-template-columns: 1fr; }
-      .hero-visual { display: none; }
-      .values-strip { grid-template-columns: repeat(2, 1fr); }
-      .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
-      .footer-grid > *:nth-child(4), .footer-grid > *:nth-child(5) { grid-column: span 1; }
-    }
-    @media (max-width: 900px) {
-      .story-grid { grid-template-columns: 1fr; }
-      .serve-grid { grid-template-columns: repeat(2, 1fr); }
-      .reach-grid { grid-template-columns: 1fr; }
-      .sector-grid { grid-template-columns: repeat(2, 1fr); }
-      .footer-offices-grid { grid-template-columns: repeat(2, 1fr); }
-      .cta-band-inner { flex-direction: column; text-align: center; }
-      .cta-pair { justify-content: center; }
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 768px) {
-      .primary-nav, .header-actions .btn-cta { display: none; }
-      .mobile-toggle { display: flex; }
-      .header-inner { gap: var(--sp-4); }
-      .values-strip { grid-template-columns: 1fr; }
-      .serve-grid { grid-template-columns: 1fr; }
-      .sector-grid { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-lower { flex-direction: column; align-items: flex-start; }
-      .footer-copyright { flex-direction: column; }
-    }
-  
-/* ── Mega panel header/footer (all pages) ── */
-.mega-panel-hd{padding:1.25rem 1.5rem .75rem;border-bottom:1px solid var(--border);margin-bottom:.5rem;}
-.mega-panel-eyebrow{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--cr);margin-bottom:4px;}
-.mega-hdesc{font-size:.82rem;color:var(--txt-2);line-height:1.5;}
-.mega-hdesc span{color:var(--txt-3);}
-.mega-panel-ft{padding:.75rem 1.5rem 1.25rem;border-top:1px solid var(--border);margin-top:.5rem;display:flex;align-items:center;justify-content:flex-end;gap:1rem;flex-wrap:wrap;}
-.mega-panel-ft p{font-size:.78rem;color:var(--txt-2);line-height:1.5;flex:1;min-width:200px;}
-.mega-cta-link{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:var(--cr);color:var(--white);border-radius:6px;font-size:.78rem;font-weight:700;white-space:nowrap;transition:background .15s;}
-.mega-cta-link:hover{background:var(--cr-mid);}
-.mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
-
-/* ============================================================
-   CANONICAL NAV & MEGA MENU (injected for nav consistency)
-============================================================ */
-.wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}#main-nav{position:sticky;top:0;z-index:100;background:rgba(253,250,244,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;}#main-nav .nav-inner{padding-block:.85rem;}
-.logo{display:inline-flex;align-items:center;text-decoration:none;}
-.logo-img{height:40px;width:auto;display:block;}
-.nav-links{display:flex;align-items:center;gap:.2rem;list-style:none;margin:0;padding:0;}
-.nav-item{position:relative;}
-.nav-item:not(.nav-cta) > a,.nav-item > button{font-family:var(--font);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);background:none;border:none;cursor:pointer;padding:.5rem .8rem;border-radius:6px;transition:color .2s,background .2s;display:flex;align-items:center;gap:.3rem;}
-.nav-item:not(.nav-cta) > a:hover,.nav-item > button:hover,.nav-item:not(.nav-cta) > a:focus,.nav-item > button:focus{color:var(--cr);background:var(--cr-lite);outline:none;}
-.nav-item > button svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .2s;}
-.nav-item[aria-expanded="true"] > button svg{transform:rotate(180deg);}
-.nav-cta{margin-left:.8rem;}
-.btn.btn-primary{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font);font-size:.82rem;letter-spacing:.06em;border-radius:6px;padding:.72rem 1.6rem;cursor:pointer;border:none;transition:all .2s;text-transform:uppercase;background:var(--cr);color:#fff;}
-.btn.btn-primary:hover{background:var(--cr-mid);}
-.mega-panel{position:absolute;top:calc(100% + 12px);left:50%;transform:translateX(-50%) translateY(6px);background:#fff;border:1px solid var(--border);border-radius:var(--r);box-shadow:0 16px 48px rgba(0,0,0,.12);min-width:280px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:200;}
-.mega-panel.wide{min-width:640px;}
-.mega-panel.xwide{min-width:860px;}
-.mega-panel.xxwide{min-width:1060px;}
-.nav-item[aria-expanded="true"] .mega-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
-.mega-inner{padding:1.5rem;}
-.mega-cols{display:grid;gap:1.5rem;}
-.mega-cols.c2{grid-template-columns:1fr 1fr;}
-.mega-cols.c3{grid-template-columns:repeat(3,1fr);}
-.mega-cols.c4{grid-template-columns:repeat(4,1fr);}
-.mega-col-head{font-family:var(--font);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);border-bottom:1px solid var(--border);padding-bottom:.5rem;margin-bottom:.75rem;}
-.mega-col-subhead{font-family:var(--font);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .3rem;margin-top:.4rem;border-top:1px solid var(--border);}
-.mega-links{display:flex;flex-direction:column;gap:.2rem;list-style:none;margin:0;padding:0;}
-.mega-links a{font-size:.82rem;color:var(--txt);padding:.28rem .5rem;border-radius:6px;transition:background .15s,color .15s;display:flex;align-items:center;gap:.5rem;white-space:nowrap;text-decoration:none;}
-.mega-links a:hover{background:var(--teal-lite);color:var(--forest);}
-.mega-panel-hd{padding:1.25rem 1.5rem .75rem;border-bottom:1px solid var(--border);margin-bottom:.5rem;}
-.mega-panel-eyebrow{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--cr);margin-bottom:4px;}
-.mega-hdesc{font-size:.82rem;color:var(--txt-2);}
-.mega-panel-ft{padding:.75rem 1.5rem 1.25rem;border-top:1px solid var(--border);margin-top:.5rem;display:flex;align-items:center;justify-content:flex-end;gap:1rem;flex-wrap:wrap;}
-.mega-panel-ft p{font-size:.78rem;color:var(--txt-2);line-height:1.5;flex:1;min-width:200px;}
-.mega-cta-link{font-size:.78rem;font-weight:700;color:var(--cr);text-decoration:none;white-space:nowrap;}
-.mega-cta-link:hover{text-decoration:underline;}
-.drawer-sub-head{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 0 .2rem;font-weight:700;}
-.ham-btn{display:none;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--txt);}
-.ham-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;}
-@media(max-width:900px){.nav-links{display:none;}.ham-btn{display:flex;align-items:center;}}
-.nav-search-trigger button{padding:.4rem .55rem;}
-#search-overlay{position:fixed;inset:0;z-index:8000;background:rgba(10,20,40,.88);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding-top:8vh;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s;}
-#search-overlay.open{opacity:1;visibility:visible;}
-.search-modal{background:#fff;border-radius:14px;width:min(840px,94vw);box-shadow:0 24px 80px rgba(0,0,0,.3);overflow:hidden;max-height:80vh;display:flex;flex-direction:column;}
-.search-input-row{display:flex;align-items:center;gap:.75rem;padding:1rem 1.25rem;border-bottom:1px solid var(--border);}
-.search-input-row svg{flex-shrink:0;color:var(--txt-3);}
-.search-input-row input{flex:1;border:none;outline:none;font-family:var(--font);font-size:1rem;color:var(--txt);background:transparent;}
-.search-input-row input::placeholder{color:var(--txt-3);}
-.search-esc-badge{font-family:var(--font);font-size:.72rem;border:1px solid var(--border);border-radius:5px;padding:.2rem .55rem;color:var(--txt-3);cursor:pointer;flex-shrink:0;background:none;}
-.search-results{overflow-y:auto;flex:1;}
-.search-results:empty::before{content:"Start typing to search...";display:block;padding:2rem 1.25rem;color:var(--txt-3);font-size:.9rem;}
-.search-result-group-head{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--txt-3);padding:.7rem 1.25rem .3rem;background:var(--bg);}
-.search-result-item{display:flex;align-items:center;gap:.9rem;padding:.65rem 1.25rem;cursor:pointer;transition:background .12s;text-decoration:none;}
-.search-result-item:hover,.search-result-item.active{background:#F0F4FF;}
-.search-result-title{font-size:.9rem;font-weight:600;color:var(--txt);}
-.search-result-path{font-size:.75rem;color:var(--txt-3);margin-top:.1rem;}
-.search-kbd-bar{padding:.55rem 1.25rem;border-top:1px solid var(--border);display:flex;gap:1.2rem;font-size:.72rem;color:var(--txt-3);}
-.search-kbd-bar kbd{font-family:var(--font);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.68rem;}
-#mobile-nav{position:fixed;inset:0;z-index:5000;background:rgba(0,48,32,.92);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s;}
-#mobile-nav.open{opacity:1;visibility:visible;}
-.mobile-drawer{position:absolute;top:0;right:0;width:min(340px,92vw);height:100%;background:var(--bg);overflow-y:auto;transform:translateX(100%);transition:transform .3s ease;}
-#mobile-nav.open .mobile-drawer{transform:none;}
-.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;border-bottom:1px solid var(--border);}
-.drawer-close{background:none;border:none;cursor:pointer;padding:.3rem;color:var(--txt-2);}
-.drawer-close svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;}
-.drawer-links{padding:1rem 0 2rem;}
-.drawer-item{border-bottom:1px solid var(--border);}
-.drawer-item > a,.drawer-item > button{width:100%;display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.25rem;font-family:var(--font);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--txt);background:none;border:none;cursor:pointer;}
-.drawer-item > a:hover,.drawer-item > button:hover{color:var(--cr);}
-.drawer-sub{padding:0 1.25rem .5rem 1.5rem;display:none;}
-.drawer-sub.open{display:block;}
-.drawer-sub a{display:block;padding:.4rem 0;font-size:.82rem;color:var(--txt-2);text-decoration:none;}
-.drawer-sub a:hover{color:var(--cr);}
-.drawer-cta{padding:1.25rem 1.25rem .5rem;}
-/* Footer */
-footer{background:var(--wine);color:rgba(255,255,255,.88);}
-.footer-offices{background:var(--forest);}
-.footer-offices-inner{display:grid;grid-template-columns:repeat(4,1fr);}
-.footer-office{padding:.9rem 1.2rem;border-right:1px solid rgba(255,255,255,.1);text-align:center;}
-.footer-office:last-child{border-right:none;}
-.footer-office-country{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.72);margin-bottom:.22rem;}
-.footer-office-phone{font-size:.88rem;font-weight:700;color:#fff;}
-.footer-office-phone a{color:inherit;text-decoration:none;}
-.footer-main{padding:3.5rem 0 2.5rem;}
-.footer-grid{display:grid;grid-template-columns:190px 1fr 1.4fr 1.4fr 1fr;gap:2rem;max-width:none;padding:0;}
-.footer-brand-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;margin-bottom:1.1rem;}
-.footer-brand-tagline{font-style:italic;font-size:.7rem;color:var(--mint);margin-top:.15rem;letter-spacing:.02em;}
-.footer-brand-p{font-size:.8rem;color:rgba(255,255,255,.68);line-height:1.8;margin-bottom:1rem;}
-.footer-brand-addr{font-style:normal;font-size:.76rem;color:rgba(255,255,255,.58);line-height:2;}
-.footer-brand-addr a{color:rgba(255,255,255,.65);text-decoration:none;transition:color .2s;}
-.footer-brand-addr a:hover{color:var(--mint);}
-.footer-col-head{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff;margin-bottom:.85rem;padding-bottom:.45rem;border-bottom:1px solid rgba(255,255,255,.14);}
-.footer-col-list{list-style:none;padding:0;margin:0 0 .3rem;display:flex;flex-direction:column;gap:.32rem;}
-.footer-col-list li{display:flex;align-items:baseline;gap:.32rem;font-size:.77rem;color:rgba(255,255,255,.75);}
-.footer-col-list li::before{content:"\2713";font-size:.6rem;color:var(--mint);flex-shrink:0;}
-.footer-col-list a{color:inherit;text-decoration:none;transition:color .2s;}
-.footer-col-list a:hover{color:var(--mint);}
-.footer-col-subhead{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:#fff;margin:1rem 0 .65rem;padding-bottom:.38rem;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer-lower{background:rgba(0,0,0,.28);padding:1.3rem 0;max-width:none;margin:0;border-top:none;display:block;}
-.footer-lower-inner{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:start;}
-.footer-follow-label,.footer-resources-label{font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,.65);margin-bottom:.6rem;}
-.footer-social-row{display:flex;gap:.4rem;}
-.footer-social-row a{width:33px;height:33px;border-radius:50%;border:1px solid rgba(255,255,255,.28);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.65);transition:background .2s,border-color .2s,color .2s;text-decoration:none;}
-.footer-social-row a:hover{background:var(--teal);border-color:var(--teal);color:#fff;}
-.footer-social-row svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-.footer-resources-links{display:flex;flex-wrap:wrap;align-items:center;gap:.08rem;font-size:.75rem;line-height:2;}
-.footer-resources-links a{color:rgba(255,255,255,.68);text-decoration:none;transition:color .2s;}
-.footer-resources-links a:hover{color:var(--mint);}
-.footer-resources-links .sep{color:rgba(255,255,255,.17);padding:0 .22rem;user-select:none;}
-.footer-copyright{background:rgba(0,0,0,.4);padding:.85rem 0;max-width:none;margin:0;display:block;}
-.footer-copyright-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.55rem;font-size:.71rem;color:rgba(255,255,255,.52);}
-.footer-copyright-inner a{color:rgba(255,255,255,.65);}
-.footer-copyright-policy{display:flex;flex-wrap:wrap;gap:0;}
-.footer-copyright-policy a{padding:0 .35rem;}
-.footer-copyright-policy a+a::before{content:"·";color:rgba(255,255,255,.18);}
-@media(max-width:1100px){.footer-grid{grid-template-columns:1fr 1fr 1fr;}}
-@media(max-width:900px){.footer-offices-inner{grid-template-columns:repeat(2,1fr);}.footer-grid{grid-template-columns:1fr 1fr;}.footer-lower-inner{grid-template-columns:1fr;}}
-@media(max-width:540px){.footer-offices-inner{grid-template-columns:1fr 1fr;}.footer-grid{grid-template-columns:1fr;}.footer-copyright-inner{flex-direction:column;text-align:center;}}
-footer .wrap{max-width:1240px;margin:0 auto;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px));}
-
-    </style>
+    @media(max-width:1100px){
+      .build-grid{grid-template-columns:repeat(2,1fr);}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:var(--sp-6);}
+    }
+    @media(max-width:900px){
+      .nav-links{display:none;}
+      .ham-btn{display:flex;align-items:center;}
+      .hero-content{grid-template-columns:1fr;}
+      .stack-preview{display:none;}
+      .industries-grid{grid-template-columns:1fr;}
+      .challenge-split{grid-template-columns:1fr;}
+      .challenge-visual{min-height:300px;}
+      .audience-cols{grid-template-columns:1fr;}
+    }
+    @media(max-width:640px){
+      .build-grid{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="preloader" aria-hidden="true"><div class="preloader-mark"><img src="/assets/images/logo/favicon.png" alt="" role="presentation"></div></div>
+<div id="scroll-progress" aria-hidden="true"></div>
 
-  <!-- Preloader (first visit only) -->
-  <div id="preloader" role="status" aria-label="Loading">
-    <div class="preloader-mark">
-      <img src="../../../assets/images/logo/favicon.png" alt="" aria-hidden="true" width="38" height="38">
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <div class="header-logo">
+      <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
+        <img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
+      </a>
     </div>
-  </div>
-
-  <!-- ============================================================
-       HEADER
-  ============================================================ -->
-  <nav id="main-nav" role="navigation" aria-label="Main navigation">
-  <div class="wrap nav-inner">
-    <a href="/" class="logo" aria-label="GreaterHeight Technologies — home">
-      <img src="../../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="40" class="logo-img">
-    </a>
-
-    <!-- Desktop nav -->
     <ul class="nav-links" role="list">
-
-      <!-- 1. WHO WE ARE -->
       <li class="nav-item" id="nav-who-we-are">
-        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-are">
-          Who We Are
-          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-are">Who We Are<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <div class="mega-panel xxwide" id="panel-who-we-are" role="region" aria-label="Who We Are submenu">
-          <div class="mega-panel-hd">
-            <div class="mega-panel-eyebrow">Who We Are</div>
-            <div class="mega-hdesc">Over two decades of IT Consulting and Software Development</div>
-          </div>
+          <div class="mega-panel-hd"><div class="mega-panel-eyebrow">Who We Are</div><div class="mega-hdesc">Over two decades of IT Consulting and Software Development</div></div>
           <div class="mega-inner mega-cols c4">
-            <div>
-              <div class="mega-col-head">About Us</div>
-              <ul class="mega-links">
-                <li><a href="/who-we-are/company-overview/">Company Overview</a></li>
-                <li><a href="/who-we-are/core-purpose-mission/">Core Purpose &amp; Mission</a></li>
-                <li><a href="/who-we-are/our-values/">Our Values</a></li>
-                <li><a href="/who-we-are/why-greaterheight/">Why GreaterHeight</a></li>
-                <li><a href="/who-we-are/our-team/">Our Team</a></li>
-                <li><a href="/who-we-are/our-approach/">Our Approach</a></li>
-              </ul>
-            </div>
-            <div>
-              <div class="mega-col-head">Insights</div>
-              <ul class="mega-links">
-                <li><a href="/insights/brochure/">Brochure</a></li>
-                <li><a href="/insights/webinars/">Webinars</a></li>
-                <li><a href="/insights/case-studies/">Case Studies</a></li>
-                <li><a href="/insights/faq/">FAQ</a></li>
-                <li><a href="/insights/white-papers/">White Papers</a></li>
-                <li><a href="/insights/testimonials/">Client Reviews &amp; Testimonials</a></li>
-                <li><a href="/insights/blog/">Blog &amp; Articles</a></li>
-              </ul>
-            </div>
-            <div>
-              <div class="mega-col-head">Become a Partner</div>
-              <ul class="mega-links">
-                <li><a href="/partners/strategic/">Strategic Partnership</a></li>
-                <li><a href="/partners/affiliate/">Affiliate Partnership</a></li>
-                <li><a href="/partners/referral/">Referral Partnership</a></li>
-              </ul>
-            </div>
-            <div>
-              <div class="mega-col-head">Our Culture</div>
-              <ul class="mega-links">
-                <li><a href="/culture/career-overview/">Career Overview</a></li>
-                <li><a href="/culture/career-opportunities/">Career Opportunities</a></li>
-                <li><a href="/culture/csr/">Corporate Social Responsibility</a></li>
-              </ul>
-            </div>
+            <div><div class="mega-col-head">About Us</div><ul class="mega-links"><li><a href="/who-we-are/company-overview/">Company Overview</a></li><li><a href="/who-we-are/core-purpose-mission/">Core Purpose &amp; Mission</a></li><li><a href="/who-we-are/our-values/">Our Values</a></li><li><a href="/who-we-are/why-greaterheight/">Why GreaterHeight</a></li><li><a href="/who-we-are/our-team/">Our Team</a></li><li><a href="/who-we-are/our-approach/">Our Approach</a></li></ul></div>
+            <div><div class="mega-col-head">Insights</div><ul class="mega-links"><li><a href="/insights/brochure/">Brochure</a></li><li><a href="/insights/webinars/">Webinars</a></li><li><a href="/case-studies/">Case Studies</a></li><li><a href="/insights/faq/">FAQ</a></li><li><a href="/insights/white-papers/">White Papers</a></li><li><a href="/insights/testimonials/">Client Reviews &amp; Testimonials</a></li><li><a href="/insights/blog/">Blog &amp; Articles</a></li></ul></div>
+            <div><div class="mega-col-head">Become a Partner</div><ul class="mega-links"><li><a href="/partners/strategic/">Strategic Partnership</a></li><li><a href="/partners/affiliate/">Affiliate Partnership</a></li><li><a href="/partners/referral/">Referral Partnership</a></li></ul></div>
+            <div><div class="mega-col-head">Our Culture</div><ul class="mega-links"><li><a href="/culture/career-overview/">Career Overview</a></li><li><a href="/culture/career-opportunities/">Career Opportunities</a></li><li><a href="/culture/csr/">Corporate Social Responsibility</a></li></ul></div>
           </div>
-          <div class="mega-panel-ft">
-            <a href="/contact/" class="mega-cta-link">Talk to Us &#8594;</a>
-          </div>
+          <div class="mega-panel-ft"><a href="/contact/" class="mega-cta-link">Talk to Us &#8594;</a></div>
         </div>
       </li>
-
-      <!-- 2. WHAT WE DO -->
       <li class="nav-item" id="nav-what-we-do">
-        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-what-we-do">
-          What We Do
-          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-what-we-do">What We Do<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <div class="mega-panel xxwide" id="panel-what-we-do" role="region" aria-label="What We Do submenu">
-          <div class="mega-panel-hd">
-            <div class="mega-panel-eyebrow">What We Do</div>
-            <div class="mega-hdesc">Governed delivery in the AI era.</div>
-          </div>
+          <div class="mega-panel-hd"><div class="mega-panel-eyebrow">What We Do</div><div class="mega-hdesc">Governed delivery in the AI era.</div></div>
           <div class="mega-inner mega-cols c4">
-            <div>
-              <div class="mega-col-head">Products &amp; Solutions</div>
-              <ul class="mega-links">
-                <li><a href="/products/digitalsiwes/">DigitalSIWES</a></li>
-                <li><a href="/products/searchartisans/">SearchArtisans</a></li>
-                <li><a href="/products/ecertman/">eCertMan</a></li>
-                <li><a href="/products/matrimonyroll/">MatrimonyRoll</a></li>
-                <li><a href="/products/greaterheight-academy/">GreaterHeight Academy</a></li>
-              </ul>
-              <div class="mega-col-subhead">AI &amp; Automation</div>
-              <ul class="mega-links">
-                <li><a href="/what-we-do/ai/consulting/">AI Consulting</a></li>
-                <li><a href="/what-we-do/ai/augmented-development/">AI-Augmented Development</a></li>
-                <li><a href="/what-we-do/ai/generative-ai-llms/">Generative AI &amp; LLMs</a></li>
-                <li><a href="/what-we-do/ai/agents-automation/">AI Agents &amp; Automation</a></li>
-                <li><a href="/what-we-do/ai/production-assurance/">Production Assurance</a></li>
-              </ul>
-            </div>
-            <div>
-              <div class="mega-col-head">Product Engineering</div>
-              <ul class="mega-links">
-                <li><a href="/what-we-do/engineering/custom-software/">Custom Software Development</a></li>
-                <li><a href="/what-we-do/engineering/cross-platform/">Cross Platform App Development</a></li>
-                <li><a href="/what-we-do/engineering/web-application/">Web Application Development</a></li>
-                <li><a href="/what-we-do/engineering/mobile-app/">Mobile App Development</a></li>
-                <li><a href="/what-we-do/engineering/mvp/">MVP Development</a></li>
-                <li><a href="/what-we-do/engineering/saas/">SaaS Development</a></li>
-                <li><a href="/what-we-do/engineering/maintenance/">Software App Maintenance</a></li>
-                <li><a href="/what-we-do/engineering/qa/">Quality Assurance &amp; Testing</a></li>
-                <li><a href="/what-we-do/engineering/support/">Product Maintenance &amp; Support</a></li>
-                <li><a href="/what-we-do/engineering/prototyping/">Product Prototyping</a></li>
-              </ul>
-            </div>
-            <div>
-              <div class="mega-col-head">Data &amp; Cloud</div>
-              <ul class="mega-links">
-                <li><a href="/what-we-do/data/engineering/">Data Engineering</a></li>
-                <li><a href="/what-we-do/data/analytics-bi/">Analytics &amp; BI</a></li>
-                <li><a href="/what-we-do/data/warehouse/">Data Warehouse</a></li>
-                <li><a href="/what-we-do/data/cloud-migration/">Cloud Migration</a></li>
-                <li><a href="/what-we-do/data/cloud-devops/">Cloud &amp; DevOps</a></li>
-                <li><a href="/what-we-do/data/devops-solutions/">DevOps Solutions</a></li>
-                <li><a href="/what-we-do/data/cloud-solutions/">Cloud Solutions</a></li>
-              </ul>
-              <div class="mega-col-subhead">Enterprise &amp; Advisory</div>
-              <ul class="mega-links">
-                <li><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a></li>
-                <li><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a></li>
-                <li><a href="/what-we-do/enterprise/consulting/">Business / Technology Consulting</a></li>
-                <li><a href="/what-we-do/enterprise/it-strategy/">IT Strategy &amp; Consulting</a></li>
-                <li><a href="/what-we-do/enterprise/iot/">Internet of Things (IoT)</a></li>
-              </ul>
-            </div>
-            <div>
-              <div class="mega-col-head">Digital Marketing</div>
-              <ul class="mega-links">
-                <li><a href="/what-we-do/marketing/content/">Content Development Services</a></li>
-                <li><a href="/what-we-do/marketing/social-media/">Social Media Marketing</a></li>
-                <li><a href="/what-we-do/marketing/reputation/">Online Reputation Management</a></li>
-                <li><a href="/what-we-do/marketing/seo/">Search Engine Optimisation</a></li>
-                <li><a href="/what-we-do/marketing/ppc/">Pay Per Click</a></li>
-                <li><a href="/what-we-do/marketing/link-building/">Link Building Service</a></li>
-                <li><a href="/what-we-do/marketing/personal-branding/">Personal Branding</a></li>
-              </ul>
-              <div class="mega-col-subhead">Processes</div>
-              <ul class="mega-links">
-                <li><a href="/who-we-are/processes/methodology/">Development Methodology</a></li>
-                <li><a href="/who-we-are/processes/delivery-models/">Delivery Models</a></li>
-                <li><a href="/who-we-are/processes/pricing-models/">Pricing Models</a></li>
-              </ul>
-            </div>
+            <div><div class="mega-col-head">Products &amp; Solutions</div><ul class="mega-links"><li><a href="/products/digitalsiwes/">DigitalSIWES</a></li><li><a href="/products/searchartisans/">SearchArtisans</a></li><li><a href="/products/ecertman/">eCertMan</a></li><li><a href="/products/matrimonyroll/">MatrimonyRoll</a></li><li><a href="/products/greaterheight-academy/">GreaterHeight Academy</a></li></ul><div class="mega-col-subhead">AI &amp; Automation</div><ul class="mega-links"><li><a href="/what-we-do/ai/consulting/">AI Consulting</a></li><li><a href="/what-we-do/ai/augmented-development/">AI-Augmented Development</a></li><li><a href="/what-we-do/ai/generative-ai-llms/">Generative AI &amp; LLMs</a></li><li><a href="/what-we-do/ai/agents-automation/">AI Agents &amp; Automation</a></li><li><a href="/what-we-do/ai/production-assurance/">Production Assurance</a></li></ul></div>
+            <div><div class="mega-col-head">Product Engineering</div><ul class="mega-links"><li><a href="/what-we-do/engineering/custom-software/">Custom Software Development</a></li><li><a href="/what-we-do/engineering/cross-platform/">Cross Platform App Development</a></li><li><a href="/what-we-do/engineering/web-application/">Web Application Development</a></li><li><a href="/what-we-do/engineering/mobile-app/">Mobile App Development</a></li><li><a href="/what-we-do/engineering/mvp/">MVP Development</a></li><li><a href="/what-we-do/engineering/saas/">SaaS Development</a></li><li><a href="/what-we-do/engineering/maintenance/">Software App Maintenance</a></li><li><a href="/what-we-do/engineering/qa/">Quality Assurance &amp; Testing</a></li><li><a href="/what-we-do/engineering/support/">Product Maintenance &amp; Support</a></li><li><a href="/what-we-do/engineering/prototyping/">Product Prototyping</a></li></ul></div>
+            <div><div class="mega-col-head">Data &amp; Cloud</div><ul class="mega-links"><li><a href="/what-we-do/data/engineering/">Data Engineering</a></li><li><a href="/what-we-do/data/analytics-bi/">Analytics &amp; BI</a></li><li><a href="/what-we-do/data/warehouse/">Data Warehouse</a></li><li><a href="/what-we-do/data/cloud-migration/">Cloud Migration</a></li><li><a href="/what-we-do/data/cloud-devops/">Cloud &amp; DevOps</a></li><li><a href="/what-we-do/data/devops-solutions/">DevOps Solutions</a></li><li><a href="/what-we-do/data/cloud-solutions/">Cloud Solutions</a></li></ul><div class="mega-col-subhead">Enterprise &amp; Advisory</div><ul class="mega-links"><li><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a></li><li><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a></li><li><a href="/what-we-do/enterprise/consulting/">Business / Technology Consulting</a></li><li><a href="/what-we-do/enterprise/it-strategy/">IT Strategy &amp; Consulting</a></li><li><a href="/what-we-do/enterprise/iot/" style="color:var(--cr);font-weight:700;">Internet of Things (IoT)</a></li></ul></div>
+            <div><div class="mega-col-head">Digital Marketing</div><ul class="mega-links"><li><a href="/what-we-do/marketing/content/">Content Development Services</a></li><li><a href="/what-we-do/marketing/social-media/">Social Media Marketing</a></li><li><a href="/what-we-do/marketing/reputation/">Online Reputation Management</a></li><li><a href="/what-we-do/marketing/seo/">Search Engine Optimisation</a></li><li><a href="/what-we-do/marketing/ppc/">Pay Per Click</a></li><li><a href="/what-we-do/marketing/link-building/">Link Building Service</a></li><li><a href="/what-we-do/marketing/personal-branding/">Personal Branding</a></li></ul><div class="mega-col-subhead">Processes</div><ul class="mega-links"><li><a href="/who-we-are/processes/methodology/">Development Methodology</a></li><li><a href="/who-we-are/processes/delivery-models/">Delivery Models</a></li><li><a href="/who-we-are/processes/pricing-models/">Pricing Models</a></li></ul></div>
           </div>
-          <div class="mega-panel-ft">
-            <p>Not sure where to start? Project Scoping is a fixed-fee 2&#8211;4 week engagement that de-risks any build &#8212; proof before estimate.</p>
-            <a href="/contact/" class="mega-cta-link">Scope Your Project &#8594;</a>
-          </div>
+          <div class="mega-panel-ft"><p>Not sure where to start? Project Scoping is a fixed-fee 2&#8211;4 week engagement that de-risks any build &#8212; proof before estimate.</p><a href="/contact/" class="mega-cta-link">Scope Your Project &#8594;</a></div>
         </div>
       </li>
-
-      <!-- 3. HOW WE DO IT -->
-      <li class="nav-item">
-        <a href="/how-we-do-it/">How We Do It</a>
-      </li>
-
-      <!-- 4. WHO WE SERVE -->
+      <li class="nav-item"><a href="/how-we-do-it/">How We Do It</a></li>
       <li class="nav-item" id="nav-who-we-serve">
-        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-serve">
-          Who We Serve
-          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="mega-panel" id="panel-who-we-serve" role="region" aria-label="Who We Serve submenu">
-          <div class="mega-inner">
-            <ul class="mega-links">
-              <li><a href="/who-we-serve/individuals">Individuals</a></li>
-              <li><a href="/who-we-serve/businesses">Businesses</a></li>
-              <li><a href="/who-we-serve/organisations">Organisations</a></li>
-              <li><a href="/who-we-serve/nations">Nations</a></li>
-            </ul>
-          </div>
-        </div>
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-who-we-serve">Who We Serve<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="mega-panel" id="panel-who-we-serve" role="region" aria-label="Who We Serve submenu"><div class="mega-inner"><ul class="mega-links"><li><a href="/who-we-serve/individuals">Individuals</a></li><li><a href="/who-we-serve/businesses">Businesses</a></li><li><a href="/who-we-serve/organisations">Organisations</a></li><li><a href="/who-we-serve/nations">Nations</a></li></ul></div></div>
       </li>
-
-      <!-- 5. INDUSTRIES -->
       <li class="nav-item" id="nav-industries">
-        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-industries">
-          Industries
-          <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="panel-industries">Industries<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <div class="mega-panel wide" id="panel-industries" role="region" aria-label="Industries submenu">
           <div class="mega-inner mega-cols c3">
-            <div>
-              <ul class="mega-links">
-                <li><a href="/industries/agriculture">Agriculture</a></li>
-                <li><a href="/industries/media-entertainment">Media &amp; Entertainment</a></li>
-                <li><a href="/industries/education-elearning">Education &amp; eLearning</a></li>
-                <li><a href="/industries/travel-hospitality">Travel &amp; Hospitality</a></li>
-              </ul>
-            </div>
-            <div>
-              <ul class="mega-links">
-                <li><a href="/industries/logistics">Logistics</a></li>
-                <li><a href="/industries/financial-technology">Financial Technology</a></li>
-                <li><a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a></li>
-                <li><a href="/industries/healthcare">HealthCare</a></li>
-              </ul>
-            </div>
-            <div>
-              <ul class="mega-links">
-                <li><a href="/industries/automotive">Automotive</a></li>
-                <li><a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a></li>
-                <li><a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a></li>
-                <li><a href="/industries/real-estate">Real Estate</a></li>
-              </ul>
-            </div>
+            <div><ul class="mega-links"><li><a href="/industries/agriculture">Agriculture</a></li><li><a href="/industries/media-entertainment">Media &amp; Entertainment</a></li><li><a href="/industries/education-elearning">Education &amp; eLearning</a></li><li><a href="/industries/travel-hospitality">Travel &amp; Hospitality</a></li></ul></div>
+            <div><ul class="mega-links"><li><a href="/industries/logistics">Logistics</a></li><li><a href="/industries/financial-technology">Financial Technology</a></li><li><a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a></li><li><a href="/industries/healthcare">HealthCare</a></li></ul></div>
+            <div><ul class="mega-links"><li><a href="/industries/automotive">Automotive</a></li><li><a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a></li><li><a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a></li><li><a href="/industries/real-estate">Real Estate</a></li></ul></div>
           </div>
         </div>
       </li>
-
-      <!-- 6. WHERE WE ARE -->
-      <li class="nav-item">
-        <a href="/contact/">Where We Are</a>
-      </li>
-
-      <!-- Search trigger -->
-      <li class="nav-item nav-search-trigger">
-        <button id="search-btn" aria-label="Search site" aria-haspopup="dialog" aria-controls="search-overlay">
-          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        </button>
-      </li>
-
-      <!-- CTA -->
-      <li class="nav-item nav-cta">
-        <a href="/contact" class="btn btn-primary">Start a Project</a>
-      </li>
+      <li class="nav-item"><a href="/contact/">Where We Are</a></li>
+      <li class="nav-item nav-search-trigger"><button id="search-btn" aria-label="Search site"><svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button></li>
+      <li class="nav-item nav-cta"><a href="/contact" class="btn btn-primary">Start a Project</a></li>
     </ul>
-
-    <!-- Hamburger -->
-    <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
+    <button class="ham-btn" id="ham-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
   </div>
-</nav>
+</header>
 
-  <!-- Mobile nav -->
-  <!-- Mobile Nav -->
 <div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <div class="mobile-drawer">
     <div class="drawer-head">
-      <a href="/" class="logo" aria-label="GreaterHeight home">
-        <img src="../../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img">
-      </a>
-      <button class="drawer-close" id="drawer-close" aria-label="Close navigation">
-        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
+      <a href="/" class="logo" aria-label="GreaterHeight home"><img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="140" height="38" class="logo-img"></a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     </div>
     <nav class="drawer-links" aria-label="Mobile navigation">
-      <div class="drawer-item">
-        <button onclick="toggleDrawer(this)">Who We Are <span>+</span></button>
-        <div class="drawer-sub">
-          <div class="drawer-sub-head">About Us</div>
-          <a href="/who-we-are/company-overview">Company Overview</a>
-          <a href="/who-we-are/core-purpose-mission">Core Purpose &amp; Mission</a>
-          <a href="/who-we-are/our-values">Our Values</a>
-          <a href="/who-we-are/our-team">Our Team</a>
-          <div class="drawer-sub-head">Insights</div>
-          <a href="/insights/case-studies">Case Studies</a>
-          <a href="/insights/blog">Blog &amp; Articles</a>
-          <a href="/insights/testimonials">Testimonials</a>
-          <div class="drawer-sub-head">Culture &amp; Partners</div>
-          <a href="/culture/career-opportunities">Career Opportunities</a>
-          <a href="/partners/strategic">Become a Partner</a>
-        </div>
-      </div>
-      <div class="drawer-item">
-        <button onclick="toggleDrawer(this)">What We Do <span>+</span></button>
-        <div class="drawer-sub">
-          <div class="drawer-sub-head">Products &amp; Solutions</div>
-          <a href="/products/digitalsiwes">DigitalSIWES</a>
-          <a href="/products/searchartisans">SearchArtisans</a>
-          <a href="/products/ecertman">eCertMan</a>
-          <a href="/products/matrimonyroll">MatrimonyRoll</a>
-          <a href="/products/greaterheight-academy">GreaterHeight Academy</a>
-          <div class="drawer-sub-head">AI &amp; Automation</div>
-          <a href="/what-we-do/ai/consulting">AI Consulting</a>
-          <a href="/what-we-do/ai/augmented-development">AI-Augmented Development</a>
-          <a href="/what-we-do/ai/generative-ai-llms">Generative AI &amp; LLMs</a>
-          <div class="drawer-sub-head">Product Engineering</div>
-          <a href="/what-we-do/engineering/custom-software">Custom Software Development</a>
-          <a href="/what-we-do/engineering/web-application">Web Application Development</a>
-          <a href="/what-we-do/engineering/mobile-app">Mobile App Development</a>
-          <div class="drawer-sub-head">Data &amp; Cloud</div>
-          <a href="/what-we-do/data/engineering">Data Engineering</a>
-          <a href="/what-we-do/data/analytics-bi">Analytics &amp; BI</a>
-          <a href="/what-we-do/data/cloud-solutions">Cloud Solutions</a>
-          <div class="drawer-sub-head">Digital Marketing</div>
-          <a href="/what-we-do/marketing/content">Content Development</a>
-          <a href="/what-we-do/marketing/seo">SEO</a>
-          <a href="/what-we-do/marketing/social-media">Social Media Marketing</a>
-        </div>
-      </div>
+      <div class="drawer-item"><button onclick="toggleDrawer(this)">Who We Are <span>+</span></button><div class="drawer-sub"><div class="drawer-sub-head">About Us</div><a href="/who-we-are/company-overview">Company Overview</a><a href="/who-we-are/our-team">Our Team</a><div class="drawer-sub-head">Insights</div><a href="/insights/blog/">Blog &amp; Articles</a><a href="/case-studies/">Case Studies</a></div></div>
+      <div class="drawer-item"><button onclick="toggleDrawer(this)">What We Do <span>+</span></button><div class="drawer-sub"><div class="drawer-sub-head">Products &amp; Solutions</div><a href="/products/digitalsiwes/">DigitalSIWES</a><a href="/products/searchartisans/">SearchArtisans</a><div class="drawer-sub-head">AI &amp; Automation</div><a href="/what-we-do/ai/consulting/">AI Consulting</a><div class="drawer-sub-head">Product Engineering</div><a href="/what-we-do/engineering/custom-software/">Custom Software</a><div class="drawer-sub-head">Data &amp; Cloud</div><a href="/what-we-do/data/engineering/">Data Engineering</a><a href="/what-we-do/data/cloud-solutions/">Cloud Solutions</a><div class="drawer-sub-head">Enterprise &amp; Advisory</div><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a><a href="/what-we-do/enterprise/consulting/">Business / Technology Consulting</a><a href="/what-we-do/enterprise/it-strategy/">IT Strategy &amp; Consulting</a><a href="/what-we-do/enterprise/iot/" style="color:var(--cr);font-weight:700;">Internet of Things (IoT)</a></div></div>
       <div class="drawer-item"><a href="/how-we-do-it/">How We Do It</a></div>
-      <div class="drawer-item">
-        <button onclick="toggleDrawer(this)">Who We Serve <span>+</span></button>
-        <div class="drawer-sub">
-          <a href="/who-we-serve/individuals">Individuals</a>
-          <a href="/who-we-serve/businesses">Businesses</a>
-          <a href="/who-we-serve/organisations">Organisations</a>
-          <a href="/who-we-serve/nations">Nations</a>
-        </div>
-      </div>
-      <div class="drawer-item">
-        <button onclick="toggleDrawer(this)">Industries <span>+</span></button>
-        <div class="drawer-sub">
-          <a href="/industries/agriculture">Agriculture</a>
-          <a href="/industries/media-entertainment">Media &amp; Entertainment</a>
-          <a href="/industries/education-elearning">Education &amp; eLearning</a>
-          <a href="/industries/travel-hospitality">Travel &amp; Hospitality</a>
-          <a href="/industries/logistics">Logistics</a>
-          <a href="/industries/financial-technology">Financial Technology</a>
-          <a href="/industries/retail-ecommerce">Retail &amp; eCommerce</a>
-          <a href="/industries/healthcare">HealthCare</a>
-          <a href="/industries/automotive">Automotive</a>
-          <a href="/industries/isvs-product-companies">ISVs &amp; Product Companies</a>
-          <a href="/industries/digital-marketing-agencies">Digital &amp; Marketing Agencies</a>
-          <a href="/industries/real-estate">Real Estate</a>
-        </div>
-      </div>
+      <div class="drawer-item"><button onclick="toggleDrawer(this)">Who We Serve <span>+</span></button><div class="drawer-sub"><a href="/who-we-serve/individuals">Individuals</a><a href="/who-we-serve/businesses">Businesses</a><a href="/who-we-serve/organisations">Organisations</a></div></div>
+      <div class="drawer-item"><button onclick="toggleDrawer(this)">Industries <span>+</span></button><div class="drawer-sub"><a href="/industries/financial-technology">Financial Technology</a><a href="/industries/healthcare">HealthCare</a><a href="/industries/education-elearning">Education &amp; eLearning</a><a href="/industries/logistics">Logistics</a></div></div>
       <div class="drawer-item"><a href="/contact/">Where We Are</a></div>
-      <div class="drawer-cta">
-        <a href="/contact" class="btn btn-primary" style="width:100%;justify-content:center;">Start a Project</a>
-      </div>
+      <div class="drawer-cta"><a href="/contact" class="btn-primary" style="width:100%;justify-content:center;">Start a Project</a></div>
     </nav>
   </div>
 </div>
 
-<!-- Search overlay -->
-<div id="search-overlay" role="dialog" aria-modal="true" aria-label="Site search" aria-hidden="true">
-  <div class="search-modal">
-    <div class="search-input-row">
-      <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-      <input type="search" placeholder="Search services, solutions, roles, pages..." autocomplete="off" spellcheck="false" aria-label="Search">
-      <button class="search-esc-badge" aria-label="Close search">esc</button>
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="hero-bg">
+      <div style="background:var(--bg-dark);width:100%;height:100%;">
+        <img src="/assets/images/enterprise/iot/hero-iot.jpg" alt="IoT sensor hardware installed on industrial equipment in a Nigerian manufacturing facility, with a technician reviewing a laptop showing real-time data" loading="eager" onerror="this.style.opacity='0'" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="hero-bg-layer"></div>
     </div>
-    <div class="search-results" role="listbox" aria-live="polite"></div>
-    <div class="search-kbd-bar" aria-hidden="true">
-      <span><kbd>&#8593;</kbd><kbd>&#8595;</kbd> navigate</span>
-      <span><kbd>&#8629;</kbd> open</span>
-      <span><kbd>esc</kbd> close</span>
-      <span><kbd>/</kbd> or <kbd>Ctrl K</kbd> to open</span>
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-breadcrumb"><a href="/">Home</a> / <a href="/what-we-do/">What We Do</a> / <a href="/what-we-do/enterprise/">Enterprise</a> / Internet of Things (IoT)</div>
+        <span class="eyebrow eyebrow-teal" style="margin-bottom:var(--sp-5);">Enterprise &amp; Advisory</span>
+        <h1 id="hero-h1">The physical world generates data continuously. The question is whether your organisation is capturing it and acting on it.</h1>
+        <p>GreaterHeight Technologies designs and builds IoT systems for Nigerian and African enterprises: device connectivity, edge processing, data platforms, and the operational dashboards and alerts that make sensor data into usable intelligence. From oil field monitoring to cold chain tracking to smart facility management.</p>
+        <div class="hero-btns">
+          <a href="/contact" class="btn-primary">Discuss Your Use Case</a>
+          <a href="#architecture" class="btn-outline">See the Architecture</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span>5</span><p>Architecture layers from device to dashboard</p></div>
+          <div class="hero-stat"><span>4</span><p>Key industries we serve with IoT solutions</p></div>
+          <div class="hero-stat"><span>&lt;100ms</span><p>Edge processing latency target for critical alerts</p></div>
+        </div>
+      </div>
+      <div class="stack-preview" aria-label="IoT five-layer stack overview">
+        <div class="stack-preview-label">The Five-Layer Stack</div>
+        <div class="stack-layer" style="background:rgba(140,13,12,.15);border-left-color:var(--cr);">
+          <div class="stack-layer-name">05 — Application</div>
+          <div class="stack-layer-desc">Dashboards, alerts, integrations, decisions</div>
+        </div>
+        <div class="stack-layer" style="background:rgba(26,122,94,.15);border-left-color:var(--teal-mid);">
+          <div class="stack-layer-name">04 — Platform</div>
+          <div class="stack-layer-desc">Data ingestion, storage, processing, APIs</div>
+        </div>
+        <div class="stack-layer" style="background:rgba(13,61,40,.2);border-left-color:var(--forest);">
+          <div class="stack-layer-name">03 — Edge</div>
+          <div class="stack-layer-desc">Local processing, filtering, pre-aggregation</div>
+        </div>
+        <div class="stack-layer" style="background:rgba(201,168,76,.12);border-left-color:var(--gold);">
+          <div class="stack-layer-name">02 — Connectivity</div>
+          <div class="stack-layer-desc">Network protocols, gateways, security</div>
+        </div>
+        <div class="stack-layer" style="background:rgba(30,180,150,.1);border-left-color:var(--teal-glow);">
+          <div class="stack-layer-name">01 — Perception</div>
+          <div class="stack-layer-desc">Sensors, devices, actuators in the field</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section id="architecture" class="arch-section" aria-labelledby="arch-h2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow-teal">System Architecture</span>
+        <h2 id="arch-h2">Five layers from physical sensor to business decision</h2>
+        <p style="color:rgba(255,255,255,.6);">Every IoT system we build is designed across all five layers from the outset. Attempting to design one layer independently of the others is what produces systems that work in a proof-of-concept and fail under production conditions.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="arch-layers reveal">
+        <div class="arch-layer" style="background:rgba(30,180,150,.08);">
+          <div class="arch-layer-num" style="color:rgba(30,180,150,.2);">01</div>
+          <div class="arch-layer-body">
+            <div class="arch-layer-name" style="color:var(--teal-glow);">Perception Layer</div>
+            <div class="arch-layer-desc">The physical instrumentation: sensors and devices that measure or detect conditions in the real world. Sensor selection, environmental hardening for field conditions, power management (mains, solar, battery), and device provisioning strategy all sit at this layer. Choosing the wrong sensor for an environment — or the wrong mounting approach — means the data is wrong from the start regardless of how good the rest of the stack is.</div>
+            <div class="arch-layer-examples">
+              <span class="arch-ex-tag">Temperature &amp; humidity sensors</span><span class="arch-ex-tag">Flow meters</span><span class="arch-ex-tag">Pressure transducers</span><span class="arch-ex-tag">GPS trackers</span><span class="arch-ex-tag">Level sensors</span><span class="arch-ex-tag">Vibration monitors</span><span class="arch-ex-tag">CCTV cameras</span><span class="arch-ex-tag">Fuel probes</span>
+            </div>
+          </div>
+        </div>
+        <div class="arch-layer" style="background:rgba(201,168,76,.08);">
+          <div class="arch-layer-num" style="color:rgba(201,168,76,.2);">02</div>
+          <div class="arch-layer-body">
+            <div class="arch-layer-name" style="color:var(--gold);">Connectivity Layer</div>
+            <div class="arch-layer-desc">How device data travels from the field to processing infrastructure. In Nigeria and many African markets, connectivity is not a commodity — it is a design variable. We evaluate GSM/4G, LPWAN (LoRaWAN, NB-IoT), satellite, and local radio options against coverage, bandwidth, latency, power consumption, and cost per device before making protocol decisions. Gateway design, message queuing, and connection resilience under intermittent signal are designed at this layer.</div>
+            <div class="arch-layer-examples">
+              <span class="arch-ex-tag">MQTT</span><span class="arch-ex-tag">CoAP</span><span class="arch-ex-tag">LoRaWAN</span><span class="arch-ex-tag">NB-IoT</span><span class="arch-ex-tag">4G/LTE cellular</span><span class="arch-ex-tag">Satellite uplink</span><span class="arch-ex-tag">Industrial gateways</span>
+            </div>
+          </div>
+        </div>
+        <div class="arch-layer" style="background:rgba(13,61,40,.2);">
+          <div class="arch-layer-num" style="color:rgba(13,100,60,.4);">03</div>
+          <div class="arch-layer-body">
+            <div class="arch-layer-name" style="color:var(--mint);">Edge Computing Layer</div>
+            <div class="arch-layer-desc">Local processing that happens before data reaches the cloud or central platform. In environments where connectivity is unreliable or where response time under 500ms is required — such as equipment protection shutdowns — waiting for a cloud round-trip is not viable. Edge devices run filtering, normalisation, threshold alerting, and local storage for resilience. Edge processing also reduces data volumes, lowering cloud ingestion cost and connectivity bandwidth requirements.</div>
+            <div class="arch-layer-examples">
+              <span class="arch-ex-tag">Edge gateways</span><span class="arch-ex-tag">Raspberry Pi / industrial SBCs</span><span class="arch-ex-tag">OPC-UA bridging</span><span class="arch-ex-tag">Local alert logic</span><span class="arch-ex-tag">Store-and-forward</span>
+            </div>
+          </div>
+        </div>
+        <div class="arch-layer" style="background:rgba(26,122,94,.12);">
+          <div class="arch-layer-num" style="color:rgba(26,122,94,.3);">04</div>
+          <div class="arch-layer-body">
+            <div class="arch-layer-name" style="color:var(--teal-glow);">Platform Layer</div>
+            <div class="arch-layer-desc">The cloud or on-premise backend that ingests, stores, processes, and exposes device data at scale. This includes the time-series database, stream processing pipelines for real-time analytics, batch processing for historical analysis, the data retention and archiving strategy, and the APIs through which application-layer systems consume the data. We design this layer to handle both the volume of data the current deployment generates and the growth the roadmap projects.</div>
+            <div class="arch-layer-examples">
+              <span class="arch-ex-tag">AWS IoT Core / Azure IoT Hub</span><span class="arch-ex-tag">InfluxDB / TimescaleDB</span><span class="arch-ex-tag">Apache Kafka</span><span class="arch-ex-tag">REST &amp; WebSocket APIs</span><span class="arch-ex-tag">Data warehousing</span>
+            </div>
+          </div>
+        </div>
+        <div class="arch-layer" style="background:rgba(140,13,12,.1);">
+          <div class="arch-layer-num" style="color:rgba(140,13,12,.25);">05</div>
+          <div class="arch-layer-body">
+            <div class="arch-layer-name" style="color:var(--cr-mid);">Application Layer</div>
+            <div class="arch-layer-desc">The interfaces and systems through which humans and business processes interact with the IoT data. Operational dashboards showing current equipment status and alarms, analytics reports for maintenance planning, threshold-triggered alerts delivered to mobile devices or email, integrations with ERP and SCADA systems, and the automated business rules that trigger actions based on sensor readings. This is the layer that determines whether the IoT investment changes how the organisation operates.</div>
+            <div class="arch-layer-examples">
+              <span class="arch-ex-tag">Operational dashboards</span><span class="arch-ex-tag">Mobile alerts</span><span class="arch-ex-tag">ERP integration</span><span class="arch-ex-tag">SCADA bridge</span><span class="arch-ex-tag">Maintenance scheduling</span><span class="arch-ex-tag">Management reports</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section aria-labelledby="industries-h2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Industry Applications</span>
+        <h2 id="industries-h2">Where IoT creates measurable operational value in Nigerian enterprises</h2>
+        <p>IoT technology is not industry-neutral. The sensor types, connectivity requirements, latency tolerance, and integration demands vary substantially between sectors. These are the industries where we have deployed or are actively building IoT systems.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-card reveal">
+          <div class="industry-card-img">
+            <img src="/assets/images/enterprise/iot/iot-oil-gas.jpg" alt="Nigerian oil and gas field engineer checking sensor readings on a rugged tablet at an upstream facility with drilling equipment visible in the background" loading="lazy" onerror="this.style.opacity='0'">
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-card-label">Oil, Gas &amp; Energy</div>
+            <h3>Equipment monitoring and production intelligence across upstream, midstream, and downstream operations</h3>
+            <p>Remote monitoring of wellheads, flow stations, pipelines, and storage tanks eliminates the guesswork that leads to unplanned shutdowns and costly maintenance dispatches. Real-time production data surfaces underperforming wells and anomalies before they become critical incidents.</p>
+            <div class="use-cases">
+              <div class="use-case">Tank level and flow monitoring with automated custody transfer logging</div>
+              <div class="use-case">Generator fuel consumption tracking and remote start/stop management</div>
+              <div class="use-case">Pipeline pressure and leak detection monitoring</div>
+              <div class="use-case">Production well performance dashboards updated every minute</div>
+            </div>
+          </div>
+        </div>
+        <div class="industry-card reveal" style="transition-delay:.08s;">
+          <div class="industry-card-img">
+            <img src="/assets/images/enterprise/iot/iot-manufacturing.jpg" alt="Nigerian manufacturing plant floor with connected machinery and a supervisor reviewing production data on a large screen showing real-time efficiency metrics" loading="lazy" onerror="this.style.opacity='0'">
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-card-label">Manufacturing &amp; Industry</div>
+            <h3>Machine health monitoring and production line intelligence that reduces downtime and waste</h3>
+            <p>Unplanned machine downtime is one of the highest-cost events in manufacturing. Vibration, temperature, and power consumption data from production equipment, analysed over time, makes the difference between reactive repairs and scheduled preventive maintenance at a fraction of the cost.</p>
+            <div class="use-cases">
+              <div class="use-case">Predictive maintenance alerts based on vibration and temperature trend analysis</div>
+              <div class="use-case">OEE (Overall Equipment Effectiveness) measurement and reporting</div>
+              <div class="use-case">Energy consumption monitoring per machine and production line</div>
+              <div class="use-case">Quality control integration: sensor data correlated with product defect rates</div>
+            </div>
+          </div>
+        </div>
+        <div class="industry-card reveal" style="transition-delay:.04s;">
+          <div class="industry-card-img">
+            <img src="/assets/images/enterprise/iot/iot-healthcare.jpg" alt="Nigerian hospital biomedical technician reviewing device monitoring data on a laptop in a medical equipment room with connected patient monitoring hardware visible" loading="lazy" onerror="this.style.opacity='0'">
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-card-label">Healthcare</div>
+            <h3>Medical equipment monitoring, cold chain compliance, and facility environment management</h3>
+            <p>Healthcare IoT in Nigeria addresses the specific operational risks of the sector: pharmaceutical cold chain compliance under power instability, medical equipment availability, and the gap between what the equipment log says and what actually happened. Automated monitoring removes that gap.</p>
+            <div class="use-cases">
+              <div class="use-case">Pharmacy cold storage temperature monitoring with power-failure alerting</div>
+              <div class="use-case">Medical gas pressure monitoring and inventory management</div>
+              <div class="use-case">Generator uptime tracking for facilities reliant on backup power</div>
+              <div class="use-case">Laboratory sample temperature monitoring and audit trail</div>
+            </div>
+          </div>
+        </div>
+        <div class="industry-card reveal" style="transition-delay:.12s;">
+          <div class="industry-card-img">
+            <img src="/assets/images/enterprise/iot/iot-logistics.jpg" alt="Nigerian logistics fleet manager reviewing vehicle tracking data and delivery status on a wall-mounted display in a modern dispatch centre" loading="lazy" onerror="this.style.opacity='0'">
+          </div>
+          <div class="industry-card-body">
+            <div class="industry-card-label">Logistics &amp; Supply Chain</div>
+            <h3>Fleet tracking, cold chain compliance, and warehouse environment monitoring for goods in transit</h3>
+            <p>Cargo condition and vehicle location are only useful data points if they are real-time and verifiable. IoT enables logistics operators to offer customers documented proof that temperature-sensitive cargo was handled within specification throughout the journey, and to identify route and driver inefficiencies before they erode margins.</p>
+            <div class="use-cases">
+              <div class="use-case">Fleet GPS tracking with geofencing and route deviation alerts</div>
+              <div class="use-case">Refrigerated vehicle temperature monitoring with continuous logging</div>
+              <div class="use-case">Warehouse cold room monitoring with automatic customer notification</div>
+              <div class="use-case">Fuel monitoring and driver behaviour analytics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE BUILD -->
+  <section style="background:var(--bg-alt);" aria-labelledby="build-h2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Build</span>
+        <h2 id="build-h2">The specific systems our IoT engagements deliver</h2>
+        <p>IoT is an umbrella term. These are the specific system types we design and build, described precisely enough to judge whether they match what you are trying to accomplish.</p>
+        <div class="rule"></div>
+      </div>
+      <div class="build-grid">
+        <div class="build-card reveal">
+          <div class="build-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Remote Monitoring Systems</h3>
+          <p>End-to-end systems that connect field sensors to a central dashboard, with alerting, historical data storage, and reporting. Designed around your specific assets, communication environment, and the operational decisions the data should support.</p>
+        </div>
+        <div class="build-card reveal" style="transition-delay:.06s;">
+          <div class="build-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <h3>Predictive Maintenance Platforms</h3>
+          <p>Continuous monitoring of equipment health indicators — vibration, temperature, acoustic emission, and power draw — combined with analytics that surface degradation trends before they become failures. Maintenance alerts delivered to technicians before the equipment stops.</p>
+        </div>
+        <div class="build-card reveal" style="transition-delay:.12s;">
+          <div class="build-icon"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Fleet &amp; Asset Tracking</h3>
+          <p>Vehicle location tracking, journey logging, geofencing, and driver behaviour monitoring. Integrated with fuel consumption sensors where required. Built to work across Nigeria's varied GSM coverage landscape, with local data buffering for areas of poor signal.</p>
+        </div>
+        <div class="build-card reveal" style="transition-delay:.06s;">
+          <div class="build-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <h3>Environmental &amp; Compliance Monitoring</h3>
+          <p>Temperature, humidity, and air quality monitoring for facilities where environmental conditions are either regulated or operationally critical. Automatic alerting on breach, continuous logging for audit purposes, and integration with facility management workflows.</p>
+        </div>
+        <div class="build-card reveal" style="transition-delay:.12s;">
+          <div class="build-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <h3>Energy &amp; Utility Monitoring</h3>
+          <p>Sub-metering of electricity, water, and fuel consumption at facility, line, and machine level. Identification of waste and anomalies, benchmarking against targets, and dashboards that give facility managers the data to reduce utility costs with specific interventions rather than general appeals.</p>
+        </div>
+        <div class="build-card reveal" style="transition-delay:.18s;">
+          <div class="build-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+          <h3>ERP &amp; SCADA Integration</h3>
+          <p>Bridging IoT platform data into existing enterprise systems so that sensor readings drive business processes — triggering maintenance work orders, updating inventory systems as levels fall, or feeding production data into ERP reporting — rather than sitting in a separate IoT dashboard that nobody opens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATION CHALLENGE SPLIT -->
+  <div class="challenge-split">
+    <div class="challenge-visual">
+      <img src="/assets/images/enterprise/iot/iot-deployment.jpg" alt="Nigerian IoT engineer installing a sensor gateway unit on industrial piping at a production facility, working in natural daylight with professional safety equipment" loading="lazy" onerror="this.style.opacity='0'">
+      <div class="challenge-visual-overlay"></div>
+    </div>
+    <div class="challenge-content">
+      <span class="eyebrow">Why IoT Projects Fail</span>
+      <h2>The problems are almost never the hardware</h2>
+      <p>Most IoT projects that underperform do so not because the sensors failed or the connectivity was insufficient, but because the system was designed around what the technology could do rather than around what the organisation needs to decide. The hardware works. The data flows. Nobody looks at the dashboard because it does not tell them anything they can act on.</p>
+      <div class="challenge-items">
+        <div class="challenge-item">
+          <h4>No defined use case before procurement</h4>
+          <p>When a system is built before the specific decisions it should support are defined, it generates data volumes nobody has time to interpret and dashboards that measure things no one has authority to change.</p>
+        </div>
+        <div class="challenge-item">
+          <h4>Underestimated connectivity requirements</h4>
+          <p>Proof-of-concept deployments in well-serviced urban locations then rolled out to remote or industrial sites where GSM coverage is intermittent. Data loss in the connectivity layer means the monitoring system has gaps exactly where the conditions are most severe.</p>
+        </div>
+        <div class="challenge-item">
+          <h4>No integration with existing workflows</h4>
+          <p>IoT alerts that require a technician to log into a separate platform to see them, rather than arriving in the WhatsApp group or the ERP system where the team already operates, are routinely missed.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-  <!-- ============================================================
-       BREADCRUMB
-  ============================================================ -->
-  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
-      <a href="/">Home</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <a href="/what-we-do/">What We Do</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <a href="/what-we-do/enterprise/">Enterprise &amp; Advisory</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <span aria-current="page">IoT Solutions</span>
+  <!-- WHO THIS IS FOR -->
+  <section aria-labelledby="audience-h2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Who We Work With</span>
+        <h2 id="audience-h2">Organisations ready to instrument their physical operations</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="audience-cols">
+        <div class="audience-card reveal">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+          <h3>Industrial and Manufacturing Operators</h3>
+          <p>Organisations with significant capital equipment whose performance, availability, and operating condition determines production output. They have been managing equipment reactively and want to move to data-driven maintenance and performance optimisation.</p>
+        </div>
+        <div class="audience-card reveal" style="transition-delay:.08s;">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+          <h3>Regulated Businesses with Compliance Requirements</h3>
+          <p>Pharmaceutical distributors, food and beverage manufacturers, healthcare facilities, and financial institutions that must demonstrate continuous compliance with temperature, environmental, or security conditions and produce auditable records to regulators or customers.</p>
+        </div>
+        <div class="audience-card reveal" style="transition-delay:.16s;">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/><line x1="16" y1="11" x2="16" y2="21"/></svg></div>
+          <h3>Logistics and Supply Chain Operators</h3>
+          <p>Haulage, cold chain, and third-party logistics companies that need to give customers verified, documented proof of condition for cargo in transit, and that want to reduce fuel cost and improve fleet utilisation through accurate data on vehicle usage.</p>
+        </div>
+        <div class="audience-card reveal" style="transition-delay:.24s;">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg></div>
+          <h3>Organisations with Distributed Remote Assets</h3>
+          <p>Energy companies, water utilities, telecoms tower operators, and similar organisations managing assets spread across multiple locations who cannot economically station personnel at every site but need visibility into asset status and performance from a central location.</p>
+        </div>
+      </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- ============================================================
-       MAIN CONTENT
-  ============================================================ -->
-  <main id="main-content">
-
-
-    <section class="page-hero" aria-labelledby="hero-heading">
-      <div class="page-hero-inner">
-        <div class="hero-copy">
-          <p class="hero-eyebrow">Enterprise &amp; Advisory</p>
-          <h1 id="hero-heading">Sensors to insight.<br><strong>IoT end-to-end.</strong></h1>
-          <p class="page-hero-lead">IoT projects that stall do so because the gap between a working prototype and a production-grade connected system is wider than most teams expect. GreaterHeight builds IoT solutions from device firmware through edge computing, connectivity, data ingestion, and operational dashboards — the full stack, reliably.</p>
-          <div class="hero-meta" role="list">
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">Edge</span><span class="hero-meta-label">Computing</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">OTA</span><span class="hero-meta-label">Updates</span></div>
-            <div class="hero-meta-item" role="listitem"><span class="hero-meta-value">MQTT</span><span class="hero-meta-label">/ AMQP Protocols</span></div>
-          </div>
+  <!-- FAQ -->
+  <section style="background:var(--bg-alt);" aria-labelledby="faq-h2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Common Questions</span>
+        <h2 id="faq-h2">What organisations ask before commissioning an IoT system</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="faq-wrap">
+        <div class="accordion-item open reveal">
+          <button class="accordion-btn" onclick="toggleAccordion(this)" aria-expanded="true"><h4>How do you handle connectivity in locations with poor or unreliable GSM coverage?</h4><span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><p>This is the first question we ask in any Nigerian IoT engagement because it determines the architecture of the connectivity and edge layers. We evaluate the specific site locations against available network options — 2G, 3G, 4G LTE, LoRaWAN, NB-IoT, and satellite uplinks where other options are insufficient. Edge devices store data locally during outages and transmit in bulk when connectivity is restored, so there are no gaps in the historical record. For applications where real-time alerting is critical regardless of connectivity, we design local alert logic that operates without cloud connectivity.</p></div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-card-stack">
-            <div class="hero-fact-card"><p class="fact-label">Where We Work</p><p>Agriculture, manufacturing, smart buildings, logistics, utilities, and urban infrastructure — IoT use cases where remote monitoring and control deliver measurable operational value.</p></div>
-            <div class="hero-fact-card"><p class="fact-label">Platform Engineering</p><p>Device management platforms, firmware over-the-air update infrastructure, device provisioning, and fleet monitoring — the operational layer that makes large device deployments manageable.</p></div>
-          </div>
+        <div class="accordion-item reveal" style="transition-delay:.04s;">
+          <button class="accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false"><h4>What is the typical cost of an IoT deployment?</h4><span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><p>This varies enormously based on the number of assets being monitored, the sensor types required, the connectivity approach, and the complexity of the application layer. A cold chain monitoring system for a 10-vehicle fleet is a very different cost profile from a predictive maintenance system for 60 production machines with vibration and acoustic sensors. We provide detailed estimates after a scoping engagement in which we define the system boundaries, sensor specifications, connectivity requirements, and application features. We do not quote without scoping because an unscoped quote is not a useful number.</p></div>
+        </div>
+        <div class="accordion-item reveal" style="transition-delay:.08s;">
+          <button class="accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false"><h4>Can you integrate with our existing ERP or SCADA system?</h4><span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><p>Yes, in most cases. The platform layer of an IoT system exposes data through APIs, and we build integration connectors between those APIs and existing enterprise systems. The complexity and feasibility depend on what integration capabilities the target system exposes. We assess this during scoping and will tell you clearly if the target system's integration options are insufficient for the use case you have in mind. SAP, Oracle, and most modern ERP platforms have well-documented APIs. Older SCADA systems sometimes require a bespoke OPC-UA bridge to extract the data at all.</p></div>
+        </div>
+        <div class="accordion-item reveal" style="transition-delay:.12s;">
+          <button class="accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false"><h4>How long does it take to have sensors deployed and data flowing?</h4><span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><p>A proof-of-concept deployment covering a small number of assets — enough to validate the architecture and demonstrate value at a specific site — can be live within 6 to 10 weeks from project start. A full production deployment across all target assets, with the application layer, alerting, integrations, and reporting fully developed, typically takes 4 to 9 months depending on scale. The longest lead times are usually hardware procurement and site access scheduling, not development time.</p></div>
+        </div>
+        <div class="accordion-item reveal" style="transition-delay:.16s;">
+          <button class="accordion-btn" onclick="toggleAccordion(this)" aria-expanded="false"><h4>Who owns the platform after deployment?</h4><span class="accordion-icon">+</span></button>
+          <div class="accordion-body"><p>The client owns the platform. We build on cloud infrastructure registered to the client's accounts and hand over full access and documentation at deployment. We offer ongoing managed service contracts for organisations that prefer not to manage the platform infrastructure themselves — covering monitoring, updates, and hardware replacement under agreed SLAs. We also offer post-deployment support engagements for clients whose internal teams will manage the platform but who want access to our engineers for problem-solving and system expansion. Neither is mandatory.</p></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" aria-labelledby="capabilities-heading">
-      <div class="container">
-        <div class="reveal">
-          <p class="section-label">Capabilities</p>
-          <div class="rule-line"></div>
-          <h2 class="section-title" id="capabilities-heading">IoT engineering capabilities</h2>
-        </div>
-        <div class="values-strip">
-          <div class="value-card reveal"><h3>Device &amp; Firmware Engineering</h3><p>Embedded firmware development for microcontrollers (ESP32, STM32, Raspberry Pi, Arduino), sensor integration, low-power design, and communication protocol implementation.</p></div>
-          <div class="value-card reveal"><h3>Connectivity &amp; Networking</h3><p>MQTT, AMQP, CoAP, and HTTP protocol implementation. Cellular (4G/5G), LoRaWAN, Wi-Fi, BLE, and Zigbee connectivity — selecting the right network technology for range, power, and data requirements.</p></div>
-          <div class="value-card reveal"><h3>Edge Computing</h3><p>Local processing on edge devices and gateways — reducing cloud dependency, improving response times, enabling offline operation, and managing bandwidth from high-volume sensor deployments.</p></div>
-          <div class="value-card reveal"><h3>IoT Data Platform</h3><p>High-throughput time-series data ingestion, storage (InfluxDB, TimescaleDB, AWS IoT), stream processing, and analytics — turning device telemetry into operational insight.</p></div>
-          <div class="value-card reveal"><h3>Device Management</h3><p>OTA firmware updates, remote configuration, device provisioning and decommissioning, fleet monitoring, and anomaly detection across large deployments.</p></div>
-          <div class="value-card reveal"><h3>Operational Dashboards</h3><p>Real-time monitoring dashboards, alert configuration, and operational interfaces — giving the teams responsible for physical assets visibility and control through connected devices.</p></div>
-        </div>
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="wrap reveal">
+      <span class="eyebrow eyebrow-teal">Start the Conversation</span>
+      <h2>Your physical operations produce data that your organisation is not yet using.</h2>
+      <p>The first step is a scoping conversation in which we understand your assets, your operational challenges, and what decisions you would make differently if you had reliable real-time data. No commitment required from that conversation.</p>
+      <div class="cta-btns">
+        <a href="/contact" class="btn-primary-dark">Discuss Your Use Case</a>
+        <a href="/what-we-do/enterprise/consulting/" class="btn-outline">Explore Advisory Consulting</a>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <section class="cta-band" aria-labelledby="cta-heading">
-      <div class="cta-band-inner">
-        <div><h2 id="cta-heading">Have a connected device project that needs proper engineering?</h2><p>Talk to our IoT team — from prototype validation to full fleet deployment.</p></div>
-        <div class="cta-pair"><a href="/contact/" class="btn-primary">Discuss Your IoT Project</a><a href="/what-we-do/enterprise/digital-transformation/" class="btn-outline-white">Digital Transformation</a></div>
-      </div>
-    </section>
+</main>
 
-  </main>
-  </main>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer>
-
-  <!-- ── Offices bar ──────────────────────────── -->
-  
-  <!-- ── Main footer body ────────────────── -->
+<footer>
   <div class="footer-main">
     <div class="wrap footer-grid">
-
-      <!-- Col 1: Brand -->
       <div>
-        <a href="/" class="footer-brand-logo" aria-label="GreaterHeight home">
-          <img src="../../../assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img">
-        </a>
+        <a href="/" class="footer-brand-logo"><img src="/assets/images/logo/greaterheight-logo.png" alt="GreaterHeight Technologies" width="160" height="44" class="logo-img"></a>
         <div class="footer-brand-tagline">...helping you succeed</div>
         <p class="footer-brand-p">AI-augmented engineering teams that ship production software. Lagos, Nigeria — serving the world.</p>
-        <address class="footer-brand-addr">
-          17B Debo Aina Street, Omole Phase 1<br>
-          Ikeja, Lagos, Nigeria<br>
-          <a href="tel:+2349139999700">+234 913 999 9700</a><br>
-          <a href="mailto:info@mail.greaterheight.tech">info@mail.greaterheight.tech</a>
-        </address>
+        <address class="footer-brand-addr">17B Debo Aina Street, Omole Phase 1<br>Ikeja, Lagos, Nigeria<br><a href="tel:+2349139999700">+234 913 999 9700</a><br><a href="mailto:info@mail.greaterheight.tech">info@mail.greaterheight.tech</a></address>
       </div>
-
-      <!-- Col 2: Company -->
-      <div>
-        <div class="footer-col-head">Company</div>
-        <ul class="footer-col-list">
-          <li><a href="/who-we-are/company-overview">Who We Are</a></li>
-          <li><a href="/who-we-are/core-purpose-mission">Purpose &amp; Mission</a></li>
-          <li><a href="/who-we-are/our-team">Leadership Team</a></li>
-          <li><a href="/insights/case-studies">Case Studies</a></li>
-          <li><a href="/insights">Insights</a></li>
-          <li><a href="/culture/career-opportunities">Careers</a></li>
-          <li><a href="/insights/testimonials">Clients &amp; Testimonials</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 3: Our Expertise -->
-      <div>
-        <div class="footer-col-head">Our Expertise</div>
-        <ul class="footer-col-list">
-          <li><a href="/what-we-do/engineering/custom-software">Software Product Engineering</a></li>
-          <li><a href="/what-we-do/engineering/mobile-app">Application Development</a></li>
-          <li><a href="/what-we-do/engineering/web-application">Web Application Development</a></li>
-          <li><a href="/what-we-do/engineering/mobile-app">Mobile App Development</a></li>
-          <li><a href="/what-we-do/engineering/cross-platform">Cross Platform App Development</a></li>
-          <li><a href="/what-we-do/enterprise/iot">Internet of Things (IoT)</a></li>
-          <li><a href="/what-we-do/enterprise/blockchain">Blockchain</a></li>
-          <li><a href="/what-we-do/enterprise/digital-transformation">Digital Transformation</a></li>
-          <li><a href="/what-we-do/data/engineering">Data Science &amp; Engineering</a></li>
-          <li><a href="/what-we-do/data/cloud-solutions">Cloud Services</a></li>
-          <li><a href="/what-we-do/ai/agents-automation">Artificial Intelligence &amp; ML</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Digital Marketing -->
-      <div>
-        <div class="footer-col-head">Digital Marketing</div>
-        <ul class="footer-col-list">
-          <li><a href="/what-we-do/marketing/content">Content Development Services</a></li>
-          <li><a href="/what-we-do/marketing/social-media">Social Media Marketing</a></li>
-          <li><a href="/what-we-do/marketing/reputation">Online Reputation Management</a></li>
-          <li><a href="/what-we-do/marketing/seo">Search Engine Optimisation</a></li>
-          <li><a href="/what-we-do/marketing/ppc">Pay-Per-Click (PPC)</a></li>
-          <li><a href="/what-we-do/marketing/link-building">Link Building Service</a></li>
-          <li><a href="/what-we-do/marketing/display">Display Advertising Campaigns</a></li>
-          <li><a href="/what-we-do/marketing/lead-gen">Lead Gen Campaign</a></li>
-          <li><a href="/what-we-do/marketing/cro">Conversion Rate Optimisation</a></li>
-          <li><a href="/what-we-do/marketing/pr">Digital PR</a></li>
-          <li><a href="/what-we-do/marketing/personal-branding">Personal Branding</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 5: Clients + Industries -->
-      <div>
-        <div class="footer-col-head">Clients We Serve</div>
-        <ul class="footer-col-list">
-          <li><a href="/who-we-serve/businesses">For Startups</a></li>
-          <li><a href="/who-we-serve/businesses">For Enterprises</a></li>
-        </ul>
-        <div class="footer-col-subhead">Industries</div>
-        <ul class="footer-col-list">
-          <li><a href="/industries/financial-technology">Fintech</a></li>
-          <li><a href="/industries/financial-technology">Banking</a></li>
-          <li><a href="/industries/healthcare">Healthcare</a></li>
-          <li><a href="/industries/telecoms">Telecommunications</a></li>
-          <li><a href="/industries/oil-gas">Oil &amp; Gas</a></li>
-          <li><a href="/industries/public-sector">Public Sector</a></li>
-          <li><a href="/industries/retail-ecommerce">E-Commerce</a></li>
-          <li><a href="/industries/education-elearning">Education</a></li>
-        </ul>
-      </div>
-
+      <div><div class="footer-col-head">Company</div><ul class="footer-col-list"><li><a href="/who-we-are/company-overview">Who We Are</a></li><li><a href="/who-we-are/core-purpose-mission">Purpose &amp; Mission</a></li><li><a href="/who-we-are/our-team">Leadership Team</a></li><li><a href="/case-studies/">Case Studies</a></li><li><a href="/insights">Insights</a></li><li><a href="/culture/career-opportunities">Careers</a></li></ul></div>
+      <div><div class="footer-col-head">Our Expertise</div><ul class="footer-col-list"><li><a href="/what-we-do/engineering/custom-software">Software Engineering</a></li><li><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a></li><li><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a></li><li><a href="/what-we-do/data/engineering">Data Engineering</a></li><li><a href="/what-we-do/data/cloud-solutions">Cloud Solutions</a></li><li><a href="/what-we-do/ai/agents-automation">AI &amp; ML</a></li></ul></div>
+      <div><div class="footer-col-head">Enterprise &amp; Advisory</div><ul class="footer-col-list"><li><a href="/what-we-do/enterprise/legacy-modernisation/">Legacy Modernisation</a></li><li><a href="/what-we-do/enterprise/digital-transformation/">Digital Transformation</a></li><li><a href="/what-we-do/enterprise/consulting/">Business / Technology Consulting</a></li><li><a href="/what-we-do/enterprise/it-strategy/">IT Strategy &amp; Consulting</a></li><li><a href="/what-we-do/enterprise/iot/">Internet of Things (IoT)</a></li></ul></div>
+      <div><div class="footer-col-head">Clients We Serve</div><ul class="footer-col-list"><li><a href="/who-we-serve/businesses">For Startups</a></li><li><a href="/who-we-serve/businesses">For Enterprises</a></li></ul><div class="footer-col-subhead">Industries</div><ul class="footer-col-list"><li><a href="/industries/financial-technology">Fintech</a></li><li><a href="/industries/healthcare">Healthcare</a></li><li><a href="/industries/logistics">Logistics</a></li><li><a href="/industries/oil-gas">Oil &amp; Gas</a></li><li><a href="/industries/public-sector">Public Sector</a></li></ul></div>
     </div>
   </div>
-
-  <!-- ── Social + Resources ───────────────────── -->
-  <div class="footer-lower">
-    <div class="wrap footer-lower-inner">
-      <div>
-        <div class="footer-follow-label">Follow Us</div>
-        <div class="footer-social-row">
-          <a href="https://www.facebook.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-          </a>
-          <a href="https://twitter.com/greaterheightng" target="_blank" rel="noopener" aria-label="X / Twitter">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/company/greaterheight-tech" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://www.instagram.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="https://www.youtube.com/@greaterheighttech" target="_blank" rel="noopener" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-resources-label">Resources &amp; Other Useful Links</div>
-        <div class="footer-resources-links">
-          <a href="/insights/blog">Blog and Articles</a><span class="sep">|</span>
-          <a href="/insights/events">Events, News &amp; Technologies</a><span class="sep">|</span>
-          <a href="/insights/white-papers">White Papers</a><span class="sep">|</span>
-          <a href="/insights/webinars">Webinar for Learning</a><span class="sep">|</span>
-          <a href="/insights/brochure">Brochure</a><span class="sep">|</span>
-          <a href="/insights/videos">Videos Articles for Learning</a><br>
-          <a href="/partners">Become a Partner</a><span class="sep">|</span>
-          <a href="/why-nigeria">Why Nigeria?</a><span class="sep">|</span>
-          <a href="/insights/faq">FAQs</a><span class="sep">|</span>
-          <a href="/legal/disclaimer">Disclaimer</a><span class="sep">|</span>
-          <a href="/legal/gdpr">GDPR Compliance</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── Copyright bar ──────────────────────── -->
-  <div class="footer-copyright">
-    <div class="wrap footer-copyright-inner">
-      <span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span>
-      <div class="footer-copyright-policy">
-        <a href="/legal/privacy-policy">Privacy Policy</a>
-        <a href="/legal/terms">Terms of Use</a>
-        <a href="/legal/disclaimer">Disclaimer</a>
-        <a href="/legal/cookies">Cookie Policy</a>
-      </div>
-      <span>Developed by <a href="/">GreaterHeight Technologies</a></span>
-    </div>
-  </div>
-
+  <div class="footer-lower"><div class="wrap footer-lower-inner"><div><div class="footer-follow-label">Follow Us</div><div class="footer-social-row"><a href="https://www.facebook.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://twitter.com/greaterheightng" target="_blank" rel="noopener" aria-label="X/Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a><a href="https://www.linkedin.com/company/greaterheight-tech" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.instagram.com/greaterheighttech" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://www.youtube.com/@greaterheighttech" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a></div></div><div><div class="footer-resources-label">Resources &amp; Useful Links</div><div class="footer-resources-links"><a href="/insights/blog">Blog and Articles</a><span class="sep">|</span><a href="/insights/white-papers">White Papers</a><span class="sep">|</span><a href="/insights/webinars">Webinars</a><span class="sep">|</span><a href="/partners">Become a Partner</a><span class="sep">|</span><a href="/insights/faq">FAQs</a><span class="sep">|</span><a href="/legal/privacy-policy">Privacy Policy</a><span class="sep">|</span><a href="/legal/terms">Terms of Use</a><span class="sep">|</span><a href="/legal/disclaimer">Disclaimer</a><span class="sep">|</span><a href="/legal/gdpr">GDPR Compliance</a></div></div></div></div>
+  <div class="footer-copyright"><div class="wrap footer-copyright-inner"><span>&copy; 2026 GreaterHeight Technologies. All Rights Reserved.</span><div class="footer-copyright-policy"><a href="/legal/privacy-policy">Privacy Policy</a><a href="/legal/terms">Terms of Use</a><a href="/legal/disclaimer">Disclaimer</a><a href="/legal/cookies">Cookie Policy</a></div><span>Developed by <a href="/">GreaterHeight Technologies</a></span></div></div>
 </footer>
 
-  <!-- WhatsApp float -->
-  <a href="https://wa.me/2349139999700?text=Hello%20GreaterHeight%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20project." class="whatsapp-float" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer" id="whatsapp-btn">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+<a href="https://wa.me/2349139999700" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.94 12.94 0 00-.569-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.096.541 4.064 1.489 5.776L0 24l6.395-1.676A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.37l-.36-.213-3.733.978.996-3.643-.234-.374A9.818 9.818 0 1112 21.818z"/></svg></a>
+<button id="back-top" aria-label="Back to top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
 
-  <!-- Back to top -->
-  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
-    <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
-
-  <!-- Cookie Consent -->
-<div id="cookie-overlay" role="dialog" aria-modal="true" aria-labelledby="cookie-title">
-  <div id="cookie-banner">
-    <p class="cookie-title" id="cookie-title">Cookie Consent</p>
-    <p>To improve your browsing experience on this website, GreaterHeight Technologies and its partners would like to place cookies and similar technologies (&ldquo;Cookies&rdquo;) on your device. That enables us to analyse website usage and optimise our marketing efforts for the best possible user experience. By clicking &ldquo;Accept All Cookies&rdquo; you agree to Cookie placement and respective use, as well as the subsequent processing of the collected data for the purposes of personalised advertising and marketing. Detailed information about the Cookies, the exact purposes, third-party recipients, Cookie lifetime, and more can be found in our <a href="/legal/cookies">Cookie Policy</a> and <a href="/privacy/">Privacy Policy</a>. You can always change your Cookie Settings to your own preference.</p>
-    <div class="cookie-btns">
-      <button class="cookie-btn settings" id="cookie-settings">Cookie Settings</button>
-      <button class="cookie-btn necessary" id="cookie-necessary">Only Necessary Cookies</button>
-      <button class="cookie-btn accept" id="cookie-accept">Accept All Cookies</button>
-    </div>
-  </div>
-</div>
-  </div>
-
-  <!-- ============================================================
-       SCRIPTS
-  ============================================================ -->
-  <script>
-  (function () {
-    'use strict';
-
-    /* ------- Preloader (first visit only) ------- */
-    const preloader = document.getElementById('preloader');
-    const visited = sessionStorage.getItem('gh_visited');
-    if (visited) {
-      preloader.classList.add('hidden');
-    } else {
-      window.addEventListener('load', function () {
-        setTimeout(function () {
-          preloader.classList.add('hidden');
-          sessionStorage.setItem('gh_visited', '1');
-        }, 600);
-      });
-    }
-
-    /* ------- Scroll progress ------- */
-    const progressBar = document.getElementById('scroll-progress');
-function onScroll() {
-      const scrolled = window.scrollY;
-      const docH = document.documentElement.scrollHeight - window.innerHeight;
-      progressBar.style.width = (docH > 0 ? (scrolled / docH) * 100 : 0) + '%';
-document.getElementById('back-to-top').classList.toggle('visible', scrolled > 400);
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-
-    /* ------- Back to top ------- */
-    document.getElementById('back-to-top').addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    
-
-    
-
-    
-
-    /* ------- Scroll reveal ------- */
-    if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-    } else {
-      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('visible'); });
-    }
-
-    /* ---- COOKIE BANNER ---- */
-var cookieOverlay=document.getElementById('cookie-overlay');
-function closeCookie(){if(cookieOverlay)cookieOverlay.classList.remove('visible');}
-function cookieDecision(v){closeCookie();localStorage.setItem('gh_cookies',v);if(v==='accepted'&&typeof loadAnalytics==='function')loadAnalytics();}
-if(!localStorage.getItem('gh_cookies')&&cookieOverlay){setTimeout(function(){cookieOverlay.classList.add('visible');},2500);}
-var ghAccept=document.getElementById('cookie-accept');
-var ghNecessary=document.getElementById('cookie-necessary');
-var ghSettings=document.getElementById('cookie-settings');
-if(ghAccept)ghAccept.addEventListener('click',function(){cookieDecision('accepted');});
-if(ghNecessary)ghNecessary.addEventListener('click',function(){cookieDecision('necessary');});
-if(ghSettings)ghSettings.addEventListener('click',function(){closeCookie();window.location.href='/legal/cookies';});
-
-
-/* ---- MEGA MENU (canonical) ---- */
-var navItems = document.querySelectorAll('.nav-item[id]');
-function closeAllPanels(){
-  navItems.forEach(function(ni){
-    ni.setAttribute('aria-expanded','false');
-    var b=ni.querySelector('button'); if(b) b.setAttribute('aria-expanded','false');
-    var p=ni.querySelector('.mega-panel'); if(p) p.style.transform='';
-  });
-}
-navItems.forEach(function(item){
-  var btn = item.querySelector('button');
-  var panel = item.querySelector('.mega-panel');
-  if(!btn || !panel) return;
-  function clampAndOpen(){
-    var btnRect = btn.getBoundingClientRect();
-    var btnCenter = btnRect.left + btnRect.width / 2;
-    var panelMin = parseFloat(getComputedStyle(panel).minWidth) || 280;
-    var vw = document.documentElement.clientWidth;
-    var margin = 16;
-    var leftEdge = btnCenter - panelMin / 2;
-    var rightEdge = btnCenter + panelMin / 2;
-    var shift = 0;
-    if(leftEdge < margin)            shift = margin - leftEdge;
-    else if(rightEdge > vw - margin) shift = (vw - margin) - rightEdge;
-    panel.style.transform = shift
-      ? 'translateX(calc(-50% + ' + Math.round(shift) + 'px)) translateY(0)'
-      : '';
-    item.setAttribute('aria-expanded','true');
-    btn.setAttribute('aria-expanded','true');
-  }
-  var _closeTimer;
-  function close(){
-    _closeTimer = setTimeout(function(){
-      item.setAttribute('aria-expanded','false');
-      btn.setAttribute('aria-expanded','false');
-      panel.style.transform = '';
-    }, 150);
-  }
-  item.addEventListener('mouseenter', function(){ clearTimeout(_closeTimer); clampAndOpen(); });
-  item.addEventListener('mouseleave', close);
-  panel.addEventListener('mouseenter', function(){ clearTimeout(_closeTimer); });
-  panel.addEventListener('mouseleave', close);
-  btn.addEventListener('click', function(){
-    var expanded = btn.getAttribute('aria-expanded')==='true';
-    closeAllPanels();
-    if(!expanded){ clampAndOpen(); }
-  });
-  btn.addEventListener('keydown', function(e){
-    if(e.key==='Escape'){close();btn.focus();}
-  });
-  panel.addEventListener('keydown', function(e){
-    if(e.key==='Escape'){close();btn.focus();}
-  });
-});
-document.addEventListener('click', function(e){
-  if(!e.target.closest('.nav-item')){ closeAllPanels(); }
-});
-
-/* ---- MOBILE NAV (canonical) ---- */
-var hamBtn = document.getElementById('ham-btn');
-var mobileNav = document.getElementById('mobile-nav');
-var drawerClose = document.getElementById('drawer-close');
-function openMobile(){
-  if(mobileNav) mobileNav.classList.add('open');
-  if(hamBtn) hamBtn.setAttribute('aria-expanded','true');
-  document.body.style.overflow='hidden';
-}
-function closeMobile(){
-  if(mobileNav) mobileNav.classList.remove('open');
-  if(hamBtn) hamBtn.setAttribute('aria-expanded','false');
-  document.body.style.overflow='';
-}
-if(hamBtn) hamBtn.addEventListener('click', openMobile);
-if(drawerClose) drawerClose.addEventListener('click', closeMobile);
-if(mobileNav) mobileNav.addEventListener('click', function(e){
-  if(e.target===mobileNav) closeMobile();
-});
-
-/* ---- MOBILE DRAWER TOGGLE ---- */
-window.toggleDrawer = function(btn){
-  var sub = btn.nextElementSibling;
-  var isOpen = sub.classList.contains('open');
-  document.querySelectorAll('.drawer-sub.open').forEach(function(s){s.classList.remove('open');});
-  if(!isOpen) sub.classList.add('open');
-};
-
-/* ---- SEARCH (canonical) ---- */
-var searchOverlay = document.getElementById('search-overlay');
-var searchInput = searchOverlay ? searchOverlay.querySelector('input[type="search"]') : null;
-var searchResults = searchOverlay ? searchOverlay.querySelector('.search-results') : null;
-var searchBtn = document.getElementById('search-btn');
-var searchEscBtn = searchOverlay ? searchOverlay.querySelector('.search-esc-badge') : null;
-
-var SEARCH_INDEX = [
-  {title:'Home',url:'/',cat:'Pages'},
-  {title:'Company Overview',url:'/who-we-are/company-overview/',cat:'Who We Are'},
-  {title:'Core Purpose & Mission',url:'/who-we-are/core-purpose-mission/',cat:'Who We Are'},
-  {title:'Our Values',url:'/who-we-are/our-values/',cat:'Who We Are'},
-  {title:'Why GreaterHeight',url:'/who-we-are/why-greaterheight/',cat:'Who We Are'},
-  {title:'Our Team',url:'/who-we-are/our-team/',cat:'Who We Are'},
-  {title:'Our Approach',url:'/who-we-are/our-approach/',cat:'Who We Are'},
-  {title:'AI Consulting',url:'/what-we-do/ai/consulting/',cat:'AI & Automation'},
-  {title:'AI-Augmented Development',url:'/what-we-do/ai/augmented-development/',cat:'AI & Automation'},
-  {title:'Generative AI & LLMs',url:'/what-we-do/ai/generative-ai-llms/',cat:'AI & Automation'},
-  {title:'AI Agents & Automation',url:'/what-we-do/ai/agents-automation/',cat:'AI & Automation'},
-  {title:'Custom Software Development',url:'/what-we-do/engineering/custom-software/',cat:'Product Engineering'},
-  {title:'Cross Platform App Development',url:'/what-we-do/engineering/cross-platform/',cat:'Product Engineering'},
-  {title:'Web Application Development',url:'/what-we-do/engineering/web-application/',cat:'Product Engineering'},
-  {title:'Mobile App Development',url:'/what-we-do/engineering/mobile-app/',cat:'Product Engineering'},
-  {title:'MVP Development',url:'/what-we-do/engineering/mvp/',cat:'Product Engineering'},
-  {title:'SaaS Development',url:'/what-we-do/engineering/saas/',cat:'Product Engineering'},
-  {title:'Quality Assurance & Testing',url:'/what-we-do/engineering/qa/',cat:'Product Engineering'},
-  {title:'Data Engineering',url:'/what-we-do/data/engineering/',cat:'Data & Cloud'},
-  {title:'Analytics & BI',url:'/what-we-do/data/analytics-bi/',cat:'Data & Cloud'},
-  {title:'Cloud Migration',url:'/what-we-do/data/cloud-migration/',cat:'Data & Cloud'},
-  {title:'Cloud Solutions',url:'/what-we-do/data/cloud-solutions/',cat:'Data & Cloud'},
-  {title:'Digital Transformation',url:'/what-we-do/enterprise/digital-transformation/',cat:'Enterprise & Advisory'},
-  {title:'Legacy Modernisation',url:'/what-we-do/enterprise/legacy-modernisation/',cat:'Enterprise & Advisory'},
-  {title:'Content Development Services',url:'/what-we-do/marketing/content/',cat:'Digital Marketing'},
-  {title:'SEO',url:'/what-we-do/marketing/seo/',cat:'Digital Marketing'},
-  {title:'Social Media Marketing',url:'/what-we-do/marketing/social-media/',cat:'Digital Marketing'},
-  {title:'DigitalSIWES',url:'/products/digitalsiwes/',cat:'Products'},
-  {title:'SearchArtisans',url:'/products/searchartisans/',cat:'Products'},
-  {title:'eCertMan',url:'/products/ecertman/',cat:'Products'},
-  {title:'MatrimonyRoll',url:'/products/matrimonyroll/',cat:'Products'},
-  {title:'GreaterHeight Academy',url:'/products/greaterheight-academy/',cat:'Products'},
-  {title:'Financial Technology',url:'/industries/financial-technology/',cat:'Industries'},
-  {title:'Healthcare',url:'/industries/healthcare/',cat:'Industries'},
-  {title:'Education & eLearning',url:'/industries/education-elearning/',cat:'Industries'},
-  {title:'Retail & eCommerce',url:'/industries/retail-ecommerce/',cat:'Industries'},
-  {title:'Logistics',url:'/industries/logistics/',cat:'Industries'},
-  {title:'Automotive',url:'/industries/automotive/',cat:'Industries'},
-  {title:'Agriculture',url:'/industries/agriculture/',cat:'Industries'},
-  {title:'Real Estate',url:'/industries/real-estate/',cat:'Industries'},
-  {title:'How We Do It',url:'/how-we-do-it/',cat:'Pages'},
-  {title:'Individuals',url:'/who-we-serve/individuals/',cat:'Who We Serve'},
-  {title:'Businesses',url:'/who-we-serve/businesses/',cat:'Who We Serve'},
-  {title:'Organisations',url:'/who-we-serve/organisations/',cat:'Who We Serve'},
-  {title:'Nations',url:'/who-we-serve/nations/',cat:'Who We Serve'},
-  {title:'Case Studies',url:'/insights/case-studies/',cat:'Insights'},
-  {title:'Testimonials',url:'/insights/testimonials/',cat:'Insights'},
-  {title:'Blog & Articles',url:'/insights/blog/',cat:'Insights'},
-  {title:'White Papers',url:'/insights/white-papers/',cat:'Insights'},
-  {title:'FAQ',url:'/insights/faq/',cat:'Insights'},
-  {title:'Contact & Offices',url:'/contact/',cat:'Pages'},
-  {title:'Strategic Partnership',url:'/partners/strategic/',cat:'Partners'},
-  {title:'Affiliate Partnership',url:'/partners/affiliate/',cat:'Partners'},
-  {title:'Referral Partnership',url:'/partners/referral/',cat:'Partners'},
-  {title:'Career Overview',url:'/culture/career-overview/',cat:'Culture'},
-  {title:'Career Opportunities',url:'/culture/career-opportunities/',cat:'Culture'},
-];
-
-function openSearch(){
-  if(!searchOverlay) return;
-  searchOverlay.setAttribute('aria-hidden','false');
-  searchOverlay.classList.add('open');
-  if(searchInput){ searchInput.value=''; searchInput.focus(); }
-  if(searchResults) searchResults.innerHTML='';
-}
-function closeSearch(){
-  if(!searchOverlay) return;
-  searchOverlay.setAttribute('aria-hidden','true');
-  searchOverlay.classList.remove('open');
-}
-if(searchBtn) searchBtn.addEventListener('click', openSearch);
-if(searchEscBtn) searchEscBtn.addEventListener('click', closeSearch);
-if(searchOverlay) searchOverlay.addEventListener('click', function(e){
-  if(e.target===searchOverlay) closeSearch();
-});
-document.addEventListener('keydown', function(e){
-  if(e.key==='Escape' && searchOverlay && searchOverlay.classList.contains('open')) closeSearch();
-  if((e.key==='/' || (e.ctrlKey && e.key==='k')) && !searchOverlay.classList.contains('open')){
-    e.preventDefault(); openSearch();
-  }
-});
-if(searchInput) searchInput.addEventListener('input', function(){
-  var q = this.value.trim().toLowerCase();
-  if(!searchResults) return;
-  searchResults.innerHTML = '';
-  if(!q) return;
-  var hits = SEARCH_INDEX.filter(function(item){
-    return item.title.toLowerCase().includes(q) || (item.cat && item.cat.toLowerCase().includes(q));
-  }).slice(0,8);
-  hits.forEach(function(item){
-    var a = document.createElement('a');
-    a.href = item.url;
-    a.className = 'search-result-item';
-    a.setAttribute('role','option');
-    a.innerHTML = '<div class="search-result-text"><div class="search-result-title">'+item.title+'</div><div class="search-result-path">'+item.url+'</div></div>';
-    searchResults.appendChild(a);
-  });
-});
-
-    }());
-  </script>
+<script>
+(function(){
+'use strict';
+var preloader=document.getElementById('preloader');
+function hidePreloader(){if(preloader)preloader.classList.add('hidden');}
+if(sessionStorage.getItem('gh_visited')||window.matchMedia('(prefers-reduced-motion:reduce)').matches){hidePreloader();}
+else{setTimeout(hidePreloader,1100);sessionStorage.setItem('gh_visited','1');}
+var prog=document.getElementById('scroll-progress');var backTop=document.getElementById('back-top');var hdr=document.getElementById('site-header');
+function onScroll(){var total=document.documentElement.scrollHeight-window.innerHeight;if(prog)prog.style.width=(total>0?(window.scrollY/total)*100:0)+'%';if(backTop){backTop.classList.toggle('visible',window.scrollY>400);}if(hdr){hdr.classList.toggle('scrolled',window.scrollY>10);}}
+window.addEventListener('scroll',onScroll,{passive:true});
+if(backTop)backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+var navItems=document.querySelectorAll('.nav-item[id]');
+function closeAll(){navItems.forEach(function(ni){ni.setAttribute('aria-expanded','false');var b=ni.querySelector('button');if(b)b.setAttribute('aria-expanded','false');var p=ni.querySelector('.mega-panel');if(p)p.style.transform='';})}
+navItems.forEach(function(item){var btn=item.querySelector('button');var panel=item.querySelector('.mega-panel');if(!btn||!panel)return;function clampOpen(){var r=btn.getBoundingClientRect();var c=r.left+r.width/2;var w=parseFloat(getComputedStyle(panel).minWidth)||280;var vw=document.documentElement.clientWidth;var m=16;var l=c-w/2;var ri=c+w/2;var sh=0;if(l<m)sh=m-l;else if(ri>vw-m)sh=(vw-m)-ri;panel.style.transform=sh?'translateX(calc(-50% + '+Math.round(sh)+'px)) translateY(0)':'';item.setAttribute('aria-expanded','true');btn.setAttribute('aria-expanded','true');}var t;function close(){t=setTimeout(function(){item.setAttribute('aria-expanded','false');btn.setAttribute('aria-expanded','false');panel.style.transform='';},150);}item.addEventListener('mouseenter',function(){clearTimeout(t);clampOpen();});item.addEventListener('mouseleave',close);panel.addEventListener('mouseenter',function(){clearTimeout(t);});panel.addEventListener('mouseleave',close);btn.addEventListener('click',function(){var ex=btn.getAttribute('aria-expanded')==='true';closeAll();if(!ex)clampOpen();});btn.addEventListener('keydown',function(e){if(e.key==='Escape'){close();btn.focus();}});panel.addEventListener('keydown',function(e){if(e.key==='Escape'){close();btn.focus();}});});
+document.addEventListener('click',function(e){if(!e.target.closest('.nav-item'))closeAll();});
+var hamBtn=document.getElementById('ham-btn');var mobileNav=document.getElementById('mobile-nav');var drawerClose=document.getElementById('drawer-close');
+function openMobile(){mobileNav.classList.add('open');hamBtn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+function closeMobile(){mobileNav.classList.remove('open');hamBtn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+if(hamBtn)hamBtn.addEventListener('click',openMobile);if(drawerClose)drawerClose.addEventListener('click',closeMobile);if(mobileNav)mobileNav.addEventListener('click',function(e){if(e.target===mobileNav)closeMobile();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobileNav&&mobileNav.classList.contains('open'))closeMobile();});
+window.toggleDrawer=function(btn){var sub=btn.nextElementSibling;var isOpen=sub.classList.contains('open');document.querySelectorAll('.drawer-sub.open').forEach(function(s){s.classList.remove('open');});if(!isOpen)sub.classList.add('open');};
+if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});}
+else{var ro=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});},{threshold:0.1});document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});}
+window.toggleAccordion=function(btn){var item=btn.closest('.accordion-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.accordion-item.open').forEach(function(el){el.classList.remove('open');el.querySelector('.accordion-btn').setAttribute('aria-expanded','false');});if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}};
+})();
+</script>
 </body>
 </html>

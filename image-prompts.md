@@ -1293,4 +1293,116 @@ Placement: Referral trust story split — left column image beside "Your credibi
 
 ---
 
-*Last updated: 2026-11-27*
+---
+
+## [enterprise/consulting/hero-consulting.jpg]
+Page Name: /what-we-do/enterprise/consulting/
+Prompt: Nigerian senior technology consultant (man, mid-forties) seated at the head of a glass-topped boardroom table in a modern Lagos office, mid-presentation to three attentive colleagues. A printed framework document and open laptop on the table. Floor-to-ceiling windows with Lagos skyline in soft background blur. Shot on 50mm at f/2.0, natural midday light. Professional business attire. Candid moment of engaged discussion, not staged.
+
+Path: /assets/images/enterprise/consulting/hero-consulting.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background
+
+---
+
+## [enterprise/consulting/advisory-session.jpg]
+Page Name: /what-we-do/enterprise/consulting/
+Prompt: Two Nigerian professionals — a woman (late thirties, consultant) and a man (early fifties, executive) — seated across from each other at a small conference table. The consultant is pointing at a printed roadmap document while the executive listens with one hand on the table. Shot at eye level on a 50mm lens, f/2.2, natural window light from the left. Modern office interior, plants and shelving in soft background. Warm, candid conversation, not posed.
+
+Path: /assets/images/enterprise/consulting/advisory-session.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Advisory philosophy section — split image column
+
+---
+
+## [enterprise/consulting/team-discussion.jpg]
+Page Name: /what-we-do/enterprise/consulting/
+Prompt: Four Nigerian technology professionals (two men, two women, mixed thirties and forties) seated around a round meeting table in an open-plan office. Laptops and printed documents spread on the table. Mid-discussion, two people speaking while two listen and take notes. Shot from a slight elevated angle on a 35mm lens, balanced overhead and natural ambient light. Business casual attire. Active working session, not formal.
+
+Path: /assets/images/enterprise/consulting/team-discussion.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Engagement model section — split image column
+
+---
+
+## [enterprise/it-strategy/hero-it-strategy.jpg]
+Page Name: /what-we-do/enterprise/it-strategy/
+Prompt: Nigerian IT director (man, mid-forties) leading a strategy planning session with three colleagues around a large conference table in a modern Lagos office. Printed technology roadmap documents spread across the table, one participant pointing at a section while others review their copies. Shot on 50mm at f/2.2, natural window light. Professional attire. Candid mid-discussion pose, not staged.
+
+Path: /assets/images/enterprise/it-strategy/hero-it-strategy.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background
+
+---
+
+## [enterprise/it-strategy/strategy-workshop.jpg]
+Page Name: /what-we-do/enterprise/it-strategy/
+Prompt: Nigerian technology consultant (woman, early forties) standing at a whiteboard covered in a hand-drawn infrastructure diagram. Three seated colleagues in business attire facing her, one taking notes on a laptop. Shot from behind and to the side of the presenter at 35mm, f/2.5, natural office light. Modern open-plan office environment. Candid working session, not posed for camera.
+
+Path: /assets/images/enterprise/it-strategy/strategy-workshop.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Image+differentiators split section — left image column
+
+---
+
+## [enterprise/iot/hero-iot.jpg]
+Page Name: /what-we-do/enterprise/iot/
+Prompt: Nigerian infrastructure engineer (man, mid-thirties) in a hard hat and safety vest standing beside a bank of industrial IoT gateway devices mounted on a rack in a large server room. Indicator lights visible on the rack panels. Looking at a tablet in hand, reviewing live data readings. Shot on 35mm at f/2.0, mixed industrial LED and natural light. Candid, working, not posed.
+
+Path: /assets/images/enterprise/iot/hero-iot.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background
+
+---
+
+## [enterprise/iot/iot-oil-gas.jpg]
+Page Name: /what-we-do/enterprise/iot/
+Prompt: Nigerian oil and gas field technician (man, early forties) in full PPE — hard hat, high-vis vest, gloves — using a handheld device to read sensor data at a pipeline junction in an outdoor facility. Metal piping and valves in the mid-ground. Bright outdoor natural light, midday. Shot on 50mm at f/2.5, slight tilt showing the depth of infrastructure behind him. Real field environment, candid working pose.
+
+Path: /assets/images/enterprise/iot/iot-oil-gas.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Industries grid — Oil & Gas card image
+
+---
+
+## [enterprise/iot/iot-manufacturing.jpg]
+Page Name: /what-we-do/enterprise/iot/
+Prompt: Nigerian manufacturing plant floor with two workers in hard hats and safety goggles reviewing a tablet screen next to an automated production line. Conveyor belts and machine components in the background, slightly out of focus. Industrial overhead lighting. Shot on 35mm at f/2.8, eye level. Candid moment, not posed for camera. Real industrial environment.
+
+Path: /assets/images/enterprise/iot/iot-manufacturing.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Industries grid — Manufacturing card image
+
+---
+
+## [enterprise/iot/iot-healthcare.jpg]
+Page Name: /what-we-do/enterprise/iot/
+Prompt: Nigerian hospital corridor with a nurse (woman, early thirties) checking a patient monitoring display mounted on a wheeled cart outside a ward. Medical equipment visible in the corridor. Clean, clinical environment with natural light from large windows at the far end. Shot on 50mm at f/2.2, slightly elevated angle. Professional nursing uniform, candid mid-task moment.
+
+Path: /assets/images/enterprise/iot/iot-healthcare.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Industries grid — Healthcare card image
+
+---
+
+## [enterprise/iot/iot-logistics.jpg]
+Page Name: /what-we-do/enterprise/iot/
+Prompt: Nigerian logistics warehouse supervisor (woman, late thirties) with a barcode scanner and clipboard, reviewing tracked items next to shelving loaded with packages. Overhead warehouse lighting. Goods-in-transit labels visible on boxes. Shot on 35mm at f/2.5, eye level. Candid working pose. Real warehouse environment with depth of shelving behind her.
+
+Path: /assets/images/enterprise/iot/iot-logistics.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Industries grid — Logistics card image
+
+---
+
+## [enterprise/iot/iot-deployment.jpg]
+Page Name: /what-we-do/enterprise/iot/
+Prompt: Two Nigerian field engineers (one man, one woman, both early thirties) installing a small IoT sensor unit on an exterior wall of an industrial building. One holds the device in place while the other uses a screwdriver. Both wearing polo shirts with high-vis panels. Outdoor natural light, midday. Shot on 50mm at f/2.0 from a slight low angle showing the building context behind them. Candid working shot.
+
+Path: /assets/images/enterprise/iot/iot-deployment.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Challenge split section — left image column
+
+---
+
+*Last updated: 2026-11-28*
