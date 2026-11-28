@@ -1295,6 +1295,56 @@ Placement: Referral trust story split — left column image beside "Your credibi
 
 ---
 
+## [enterprise/legacy-modernisation/hero-legacy.jpg]
+Page Name: /what-we-do/enterprise/legacy-modernisation/
+Prompt: Nigerian IT director (man, late forties) standing beside a large printed system architecture diagram pinned to a wall, reviewing it with two engineers seated at a table. Printed schematics and open laptops on the table surface. Modern Lagos office with floor-to-ceiling windows behind them, soft natural midday light. Shot on 50mm at f/2.0. Professional attire. Mid-review discussion, candid, not posed for camera.
+
+Path: /assets/images/enterprise/legacy-modernisation/hero-legacy.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background
+
+---
+
+## [enterprise/legacy-modernisation/team-review.jpg]
+Page Name: /what-we-do/enterprise/legacy-modernisation/
+Prompt: Nigerian IT engineering team — three people (two men, one woman, thirties to forties) — gathered at a whiteboard covered in a hand-drawn system architecture diagram. One person is writing while the other two point at sections and discuss. Shot from behind and to the side at 35mm, f/2.5, balanced natural office light. Business casual attire. Active working session, candid.
+
+Path: /assets/images/enterprise/legacy-modernisation/team-review.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Image split — approach intro section, left image column
+
+---
+
+## [enterprise/legacy-modernisation/stakeholder-meeting.jpg]
+Page Name: /what-we-do/enterprise/legacy-modernisation/
+Prompt: Nigerian executive stakeholders (four people — mixed gender, forties to fifties) seated around a large boardroom table in a corporate Lagos office. Printed modernisation roadmap documents spread on the table. One person gestures toward a laptop screen at the head of the table while others follow along. Shot at eye level on a 50mm lens, f/2.2, natural window light. Formal business attire. Engaged, candid mid-discussion pose.
+
+Path: /assets/images/enterprise/legacy-modernisation/stakeholder-meeting.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Audience section — image card within the why-modernise-now area
+
+---
+
+## [enterprise/digital-transformation/hero-digital.jpg]
+Page Name: /what-we-do/enterprise/digital-transformation/
+Prompt: Nigerian executive team (three people — two men, one woman, late thirties to fifties) gathered around a large conference table in a sleek Lagos boardroom. One stands at a wall-mounted screen displaying a digital roadmap, the others are leaning forward reviewing printed documents. Floor-to-ceiling windows behind them with Lagos cityscape in soft focus. Shot on 50mm at f/2.0, natural light. Business formal attire. Candid discussion, not staged.
+
+Path: /assets/images/enterprise/digital-transformation/hero-digital.jpg
+Dimensions: 1920 × 1080 px minimum, 16:9
+Placement: Hero section background
+
+---
+
+## [enterprise/digital-transformation/strategy-session.jpg]
+Page Name: /what-we-do/enterprise/digital-transformation/
+Prompt: Mixed group of Nigerian business executives and technology consultants (five people — diverse gender and age, thirties to fifties) seated around a rectangular table in a modern workshop room. Sticky notes and printed process maps visible on the wall behind them. Mid-discussion, animated conversation. Shot on 35mm at f/2.5, natural window light from one side. Business casual attire. Candid working session.
+
+Path: /assets/images/enterprise/digital-transformation/strategy-session.jpg
+Dimensions: 1200 × 800 px minimum, 3:2
+Placement: Approach split section — left image column
+
+---
+
 ## [enterprise/consulting/hero-consulting.jpg]
 Page Name: /what-we-do/enterprise/consulting/
 Prompt: Nigerian senior technology consultant (man, mid-forties) seated at the head of a glass-topped boardroom table in a modern Lagos office, mid-presentation to three attentive colleagues. A printed framework document and open laptop on the table. Floor-to-ceiling windows with Lagos skyline in soft background blur. Shot on 50mm at f/2.0, natural midday light. Professional business attire. Candid moment of engaged discussion, not staged.
